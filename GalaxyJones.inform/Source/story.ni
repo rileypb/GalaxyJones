@@ -1,6 +1,7 @@
 "Galaxy Jones" by Philip Riley
 
 Include Basic Screen Effects by Emily Short.
+Include Deluxe Doors by Emily Short.
 
 Include Galaxy Banner by Philip Riley.
 Include Third Person Narration by Philip Riley.
@@ -8,11 +9,13 @@ Include Pseudocontainers by Philip Riley.
 
 Volume 1 - Technical Stuff
 
+DEBUG is a truth state that varies. DEBUG is initially false.
+
 To start header style:
 	(- VM_Style(HEADER_VMSTY); -)
 	
 Before printing the banner text:
-	if the screen width is less than 625:
+	if the screen width is less than 64:
 		start header style;
 		say "Galaxy Jones[line break]";
 	print the galaxy banner;
@@ -84,14 +87,19 @@ Rule for supplying a missing second noun while shooting:
 	say "(with the disruptor pistol)[command clarification break]";
 	
 Check shooting something with something that is not the disruptor pistol:
-	say "You can't fire [the second noun]!" instead;
+	say "[the second noun] isn't a firearm." instead;
+	
+Typing it on is an action applying to one number and one thing. Understand "type [number] on [something]", "enter [number] on [something]" as typing it on.
+
+Check typing a number on something:
+	say "[The second noun] can't be typed on.";
 	
 Volume 3 - Plot
 
 Lobby Shootout is a scene. Lobby Shootout begins when the player is in the lobby for three turns.
 Lobby Shootout ends when the location of the red guard robot is not the lobby.
 
-A guard robot is a kind of thing. The description is "Definitely not a friendly humanoid. More of a spiny killer with a disruptor turret mounted on its head.".
+A guard robot is a kind of thing. The description is "Definitely not a friendly humanoid. More of a spiny killer with a disruptor barrel mounted on its head.".
 There is a guard robot called the red guard robot. It is undescribed.
 There is a guard robot called the green guard robot. It is undescribed.
 
@@ -103,7 +111,7 @@ When Lobby Shootout begins:
 	Move the green guard robot to the lobby;
 	
 Instead of looking during Lobby Shootout:
-	say "Red and green guard robots criss-cross the lobby, stalking [us].[run paragraph on] ";
+	say "[one of]Red and green guard robots criss-cross the lobby, stalking [us][or]Two guard robots, one red, one green, prowl the lobby, trying to outflank [us][at random].";
 	
 Every turn during lobby shootout:
 	let roll be a random number between 1 and 10;
@@ -119,10 +127,30 @@ Every turn during lobby shootout:
 		say "The [one of]green[or]red[purely at random] robot fires a blistering shot into the front desk.";
 	if roll is 6:
 		say "The two robots coordinate fire over the desk, narrowly missing [us].";
-	if roll >= 7:
-		say paragraph break;
 
-Volume 4 - Geography
+Volume 4 - Things
+
+The disruptor pistol is a thing.
+
+Does the player mean shooting something carried by the player with something:
+	it is very unlikely;
+	
+The Atmo-Suit is a wearable thing. "There is an Atmo-Suit hanging from a hook here."
+The description is "The Atmo-Suit is a pressure suit ideal for outside work in thin atmospheres like that of Mars."
+
+The doorcode is a number that varies.
+
+When play begins:
+	now the doorcode is a random number between 10000 and 99999;
+	if DEBUG is true:
+		now the doorcode is 0;
+		
+Check wearing the Atmo-Suit:
+	say "[We] needs to be able to move around quickly. Better not wear the [Atmo-Suit]." instead;
+	
+The drop key is a thing. "In one of the cubbies is [a drop key]." The description is "A drop key is a special device used to open an elevator door from the outside." 
+
+Volume 5 - Geography
 
 Book 1 - Ground Floor
 
@@ -132,33 +160,46 @@ the entry doorway is north of Speeder Dock. The preposition is "at".
 
 the entry door is a door. It is north of entry doorway and south of the lobby. It is scenery.
 
-the elevator banks are north of the lobby.
+the ground floor elevator hall is north of the lobby.
 
-A ground floor is a kind of room. It is privately-named. The printed name is "the ground floor". The preposition is "on".
+the ground floor elevator door is a door. It is west of the ground floor elevator hall. The printed name is "elevator door". Through the ground floor elevator door is the ground floor elevator shaft. 
 
-ground-floor-1 is west of Lobby. It is a ground floor.
+the ground floor elevator door-inside is a door. It is east of the ground floor elevator shaft. The printed name is "elevator door". Through the ground floor elevator door-inside is the ground floor elevator hall. The ground floor elevator door-inside is a half-door of the ground floor elevator door.
 
-ground-floor-2 is north of ground-floor-1. It is a ground floor.
+To say ground name of (D - a direction):
+	if D is north or D is south or D is east or D is west:
+		say "the [dir] side of the ground floor";
+	otherwise:
+		say "the [dir] corner of the ground floor";
 
-the elevator room is east of ground-floor-2.   It is a ground floor.
+A ground-floor is a kind of room. It is privately-named. The printed name is "[ground name of dir]". A ground-floor has a direction called dir.
 
-ground-floor-3 is north of ground-floor-2. It is a ground floor.
+ground-floor-1 is west of Lobby. It is a ground-floor. The dir is southwest.  The preposition is "at".
 
-ground-floor-4 is east of ground-floor-3 and north of the elevator banks. It is a ground floor.
+ground-floor-2 is north of ground-floor-1. It is a ground-floor. The dir is west. The preposition is "on".
 
-ground-floor-5 is east of ground-floor-4. It is a ground floor.
+the elevator-room-door is a door. It is privately-named. The printed name is "elevator room door". Understand "elevator/room/door" as elevator-room-door. It is east of ground-floor-2. Through the elevator-room-door is the elevator room.
+the elevator-room-door is closed, locked, lockable and openable. It has matching key the brass key.
 
-ground-floor-6 is south of ground-floor-5. It is a ground floor.
+the elevator-room-door-inside is a door. It is privately-named. The printed name is "elevator room door". Understand "elevator/room/door" as elevator-room-door-inside. It is west of the elevator room. The elevator-room-door-inside is a half-door of the elevator-room-door. Through the elevator-room-door-inside is ground-floor-2.
 
-the maintenance closet is west of ground-floor-6.
+ground-floor-3 is north of ground-floor-2. It is a ground-floor. The dir is northwest. The preposition is "at".
 
-ground-floor-7 is south of ground-floor-6 and east of the lobby. It is a ground floor.
+ground-floor-4 is east of ground-floor-3 and north of the elevator hall. It is a ground-floor. The dir is north. The preposition is "on".
 
-the ground floor stairwell is east of the elevator banks.
+ground-floor-5 is east of ground-floor-4. It is a ground-floor. The dir is northeast. The preposition is "at".
+
+ground-floor-6 is south of ground-floor-5. It is a ground-floor. The dir is east. The preposition is "on".
+
+the closet door is a door. it is west of ground-floor-6. Through the closet door is the maintenance closet. 
+
+the closet-door-inside is a door. It is privately-named. The printed name is "closet door". Understand "closet/door" as the closet-door-inside. It is east of the maintenance closet. Through the closet-door-inside is ground-floor-6. The closet-door-inside is a half-door of the closet door.
+
+ground-floor-7 is south of ground-floor-6 and east of the lobby. It is a ground-floor. The dir is southeast. The preposition is "at".
+
+the ground floor stairwell is east of the elevator hall.
 
 Book 2 - Lower Elevator Shaft
-
-the ground floor elevator shaft is west of the elevator banks.
 
 the second floor elevator shaft is above the ground floor elevator shaft.
 
@@ -178,11 +219,11 @@ the ninth floor elevator shaft is above the eighth floor elevator shaft.
 
 Book 3 - The Ninth Floor
 
-The elevator door is a door. It is east of the ninth floor elevator shaft and west of the ninth floor elevator banks.
+The ninth floor elevator door is a door. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall.
 
-The ninth floor north hallway is north of the ninth floor elevator banks.
+The ninth floor north hallway is north of the ninth floor elevator hall.
 
-The ninth floor south hallway is south of the ninth floor elevator banks.
+The ninth floor south hallway is south of the ninth floor elevator hall.
 
 the Cybernetica office is east of ninth floor north hallway.
 
@@ -191,6 +232,10 @@ the Martian Chronicle office is east of ninth floor south hallway.
 the north end of the Microthings office is west of ninth floor north hallway. the preposition is "at".
 
 the south end of the Microthings office is west of ninth floor south hallway and south of the north end of the Microthings office. the preposition is "at".
+
+a ledge is east of the Cybernetica office. The preposition is "on". It is always-indefinite.
+
+a window washing scaffold is a room. The preposition is "on". It is always-indefinite.
 
 Book 4 - The Tenth Floor
 
@@ -226,7 +271,7 @@ Book 6 - The 100th Floor
 
 Book 7 - The Roof
 
-Volume 5 - The Player Character
+Volume 6 - The Player Character
 	
 [Galaxy Jones is a woman in Prison.]
 Player's surname is "Jones".
@@ -241,7 +286,7 @@ When play begins:
 	now the story viewpoint is third person singular;
 	now the third singular pronoun of the player is she-pronoun;
 	
-Volume 6 - Room Implementations
+Volume 7 - Room Implementations
 
 Book 1 - Ground Floor
 
@@ -264,7 +309,7 @@ Some wings are part of the speeder-vehicle. The description is "Not technically 
 Some parking bays are scenery in the speeder dock. "Most of the parking bays are unfilled."
 
 Instead of entering the speeder-vehicle:
-	say "You have a job to do here.";
+	say "[We] has a job to do here.";
 
 The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.". Understand "entry/doorway/entrance/entranceway" as building entryway. Understand "exit" as building entryway when the location is the lobby.
 	
@@ -274,31 +319,31 @@ The description of the entry door is "A glass revolving door emblazoned with the
 
 Chapter 3 - Lobby
 
-The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats suspended a giant crystal sculpture.".
+The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. Above it floats suspended a giant crystal sculpture[end if].".
 
-The front desk is scenery in the lobby. It is a pseudocontainer. The contents description is "There's not much on the desk other than a note that says '82436'.". "There is nothing of interest on the front desk." 
-The note is in the front desk. The description is "The note says '82436'.".
+The front desk is scenery in the lobby. It is a pseudocontainer. The contents description is "There's not much on the desk other than a note that says '[doorcode]'.". "There is nothing of interest on the front desk." 
+The note is in the front desk. The description is "The note says '[doorcode]'.".
 
 Instead of doing something when the location is the lobby for the first time:
-	say "[italic type]Before [we] [get] a chance to do anything, two robot guards emerge from niches in the back wall! [We] [dive] behind the front desk and [draw] [our] disruptor pistol.[roman type][paragraph break]";
+	say "Before [we] [get] a chance to do anything, two robot guards emerge from niches in the back wall! [We] [dive] behind the front desk and [draw] [our] disruptor pistol.[paragraph break]";
 	
 The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/glass/crystal/monstrosity" as the giant sculpture. "It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan."
 	
 Report shooting a guard robot with the disruptor pistol:
-	say "[one of]Oops, [we] [miss][or][We] [stick] [our] head out from behind the desk and squeeze off a shot at [the noun]. In [our] haste it goes wide of the target[or]A barrage of fire from the robots prevents [us] from firing[or]Oof. Big miss[at random]. [run paragraph on]";
+	say "[one of]Oops! [we] [miss][or][We] [stick] [our] head out from behind the desk and squeeze off a shot at [the noun]. In [our] haste it goes wide of the target[or]A barrage of fire from the robots prevents [us] from firing[or]Oof. Big miss[at random].";
 	
 Check shooting something with the disruptor pistol:
 	if the noun is not a guard robot and the noun is not the giant sculpture:
 		say "Shooting that would accomplish nothing.";
 	
-The tangled ruin is a fixed in place pseudocontainer. "Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots." Understand "remains/sculpture/glass/guard/robots/robot/red/green" as the tangled ruin. 
-The description is "You search some more, but nothing further turns up."
-The contents description is "You dig through the ruins and find a thingy, which you take."
+The tangled ruin is a fixed in place pseudocontainer. "Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots." Understand "remains/sculpture/art/glass/guard/robots/robot/red/green" as the tangled ruin. 
+The description is "[We] searches some more, but nothing further turns up."
+The contents description is "[We] digs through the ruins and finds a thingy, which [we] takes."
 The tangled ruin is auto-take.
 The thingy is in the tangled ruin.
 	
 Carry out shooting the giant sculpture with the disruptor pistol:
-	say "[italic type][We] [fire] the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.[roman type][paragraph break]";
+	say "[We] [fire] the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.[paragraph break]";
 	remove the red guard robot from play;
 	remove the green guard robot from play;
 	remove the giant sculpture from play;
@@ -309,14 +354,57 @@ Carry out shooting the giant sculpture with the disruptor pistol:
 
 Instead of acting recklessly during Lobby Shootout:
 	say "As soon as [we] [start] to act, an energy beam zips past [our] head, forcing [us] back down behind the desk.";]
+	
+Chapter 4 - Ground Floor
 
-Volume 7 - Language
+The description of ground-floor-1 is "A lush waterfall here contrasts with the dusty red desolation of Mars beyond the window.".
+
+Chapter 5 - Maintenance Closet
+
+The closet door is closed, lockable, openable, and locked.
+A keypad is a part of the closet door.
+
+Check opening the closet door when the closet door is locked:
+	say "You'll have to enter the correct code on the keypad first." instead;
+	
+Instead of typing doorcode on the keypad:
+	say "An indicator light glows green.";
+	now the closet door is unlocked;
+	
+Instead of typing a number on the keypad:
+	say "An indicator light blinks red.";	
+	
+Does the player mean typing a number on the keypad:
+	it is very likely.
+	
+Check unlocking keylessly the closet door:
+	say "You'll have to enter the correct code on the keypad." instead;
+	
+Check unlocking the closet door with something:
+	say "You'll have to enter the correct code on the keypad instead." instead;
+
+The brass key is on the shelf.
+The shelf is scenery in the maintenance closet.
+
+The Atmo-Suit is in the maintenance closet.
+
+Chapter 6 - Ground Floor Elevator Hall
+
+Chapter 7 - Elevator Room
+
+The drop key is in the elevator room. 
+
+Chapter 8 - Ground Floor Stairwell
+
+Chapter 9 - Ground Floor Elevator Shaft
+
+Volume 8 - Language
 
 Book 1 - Verbs
 
 to approach is a verb. to enter is a verb. to dive is a verb. to miss is a verb. to start is a verb. to fire is a verb. To draw is a verb. to stick is a verb.
 
-Volume 8 - Prettiness
+Volume 9 - Prettiness
 
 Book 1 - Moving Between Rooms 
  
@@ -347,3 +435,6 @@ This is the new notify score changes rule:
 	
 The new notify score changes rule is listed instead of the notify score changes rule in the turn sequence rules.
 
+Volume 10 - Not for release
+
+DEBUG is true.

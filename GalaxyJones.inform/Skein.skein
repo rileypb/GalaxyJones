@@ -14,7 +14,7 @@
  \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
  _____________________________/ 
 An Interactive Fiction by Philip Riley
-Release 1 / Serial number 230219 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 1 / Serial number 230220 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
 
@@ -22,27 +22,10 @@ Jones's speeder, Galaxy One, sits in one of the parking bays.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1696"></child>
-            <child nodeId="node-1870"></child>
-            <child nodeId="node-1480"></child>
-            <child nodeId="node-1750"></child>
-            <child nodeId="node-1534"></child>
-            <child nodeId="node-1483"></child>
-            <child nodeId="node-1541"></child>
-            <child nodeId="node-1553"></child>
-            <child nodeId="node-2047"></child>
+        <children><child nodeId="node-2607"></child>
         </children>
     </item>
-    <item nodeId="node-2047">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2048"></child>
-        </children>
-    </item>
-    <item nodeId="node-2048">
+    <item nodeId="node-2607">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
 
@@ -50,10 +33,10 @@ Galaxy Jones is at the entry doorway.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2049"></child>
+        <children><child nodeId="node-2608"></child>
         </children>
     </item>
-    <item nodeId="node-2049">
+    <item nodeId="node-2608">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">(first opening the entry door)
 Jones enters the lobby warily, alert to any defenses.
@@ -62,857 +45,22 @@ Galaxy Jones is in the lobby. The ground floor of the Viking Building is breatht
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2050"></child>
+        <children><child nodeId="node-2649"></child>
+            <child nodeId="node-2609"></child>
         </children>
     </item>
-    <item nodeId="node-2050">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2051"></child>
-        </children>
-    </item>
-    <item nodeId="node-2051">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones.A robot intones "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1553">
-        <command xml:space="preserve">x one</command>
-        <result xml:space="preserve">Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1554"></child>
-        </children>
-    </item>
-    <item nodeId="node-1554">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the entry doorway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1555"></child>
-        </children>
-    </item>
-    <item nodeId="node-1555">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">(first opening the entry door)
-
-Galaxy Jones is in the lobby. There is a front desk here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1541">
-        <command xml:space="preserve">x engines</command>
-        <result xml:space="preserve">The engines cause Jones to recoil from the waves of heat rolling off of them.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1542"></child>
-        </children>
-    </item>
-    <item nodeId="node-1542">
-        <command xml:space="preserve">x wings</command>
-        <result xml:space="preserve">Not technically necessary as the speeder works via anti-gravity, the blade-like wings nonetheless give the vehicle a certain flair unobtainable by any other means.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1543"></child>
-        </children>
-    </item>
-    <item nodeId="node-1543">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the entry doorway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1544"></child>
-        </children>
-    </item>
-    <item nodeId="node-1544">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">(first opening the entry door)
-
-Galaxy Jones is in the lobby. There is a front desk here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1545"></child>
-        </children>
-    </item>
-    <item nodeId="node-1545">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">There's not much on the desk other than a note that says "82436".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1546"></child>
-        </children>
-    </item>
-    <item nodeId="node-1546">
-        <command xml:space="preserve">take note</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1547"></child>
-        </children>
-    </item>
-    <item nodeId="node-1547">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">The front desk is empty.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1483">
-        <command xml:space="preserve">x</command>
-        <result xml:space="preserve">(the speeder)
-Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1531"></child>
-            <child nodeId="node-1484"></child>
-        </children>
-    </item>
-    <item nodeId="node-1484">
-        <command xml:space="preserve">x</command>
-        <result xml:space="preserve">(the speeder)
-Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1531">
-        <command xml:space="preserve">enter speeder</command>
-        <result xml:space="preserve">You have a job to do here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1532"></child>
-        </children>
-    </item>
-    <item nodeId="node-1532">
-        <command xml:space="preserve">take it</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1533"></child>
-        </children>
-    </item>
-    <item nodeId="node-1533">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Jones is carrying:
-  a speeder
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1534">
-        <command xml:space="preserve">take speeder</command>
-        <result xml:space="preserve">Stop being silly.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1537"></child>
-        </children>
-    </item>
-    <item nodeId="node-1537">
-        <command xml:space="preserve">take bay</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1538"></child>
-        </children>
-    </item>
-    <item nodeId="node-1538">
-        <command xml:space="preserve">x bays</command>
-        <result xml:space="preserve">Most of the parking bays are unfilled.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1539"></child>
-        </children>
-    </item>
-    <item nodeId="node-1539">
-        <command xml:space="preserve">take bays</command>
-        <result xml:space="preserve">They're hardly portable.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1540"></child>
-        </children>
-    </item>
-    <item nodeId="node-1540">
-        <command xml:space="preserve">x engines</command>
-        <result xml:space="preserve">Still hot, the engines cause Jones to recoil from the waves of heat rolling off of them.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1750">
-        <command xml:space="preserve">scenes</command>
-        <result xml:space="preserve">Scene 'Entire Game' playing (for 0 mins now)
-(Scene monitoring now switched on. Type "scenes off" to switch it off again.)
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1751"></child>
-        </children>
-    </item>
-    <item nodeId="node-1751">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1752"></child>
-        </children>
-    </item>
-    <item nodeId="node-1752">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">(first opening the entry door)
-Jones enters the lobby warily, alert to any defenses.
-
-Galaxy Jones is in the lobby. There is a front desk here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1753"></child>
-            <child nodeId="node-1819"></child>
-        </children>
-    </item>
-    <item nodeId="node-1819">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk.
-
-[Scene 'Lobby Shootout' begins]
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1820"></child>
-        </children>
-    </item>
-    <item nodeId="node-1820">
-        <command xml:space="preserve">shoot sculpture</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-[Scene 'Lobby Shootout' ends]
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1821"></child>
-        </children>
-    </item>
-    <item nodeId="node-1821">
-        <command xml:space="preserve">showme</command>
-        <result xml:space="preserve">lobby - room
-    building entryway - backdrop
-    entry door - open door
-    Jones - person
-        disruptor pistol
-    front desk - pseudocontainer
-        note
-    giant sculpture
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1822"></child>
-        </children>
-    </item>
-    <item nodeId="node-1822">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">There's not much on the desk other than a note that says "82436".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1753">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1480">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1481"></child>
-            <child nodeId="node-1689"></child>
-            <child nodeId="node-2066"></child>
-        </children>
-    </item>
-    <item nodeId="node-2066">
-        <command xml:space="preserve">shoot door</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Shooting that would accomplish nothing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2067"></child>
-        </children>
-    </item>
-    <item nodeId="node-2067">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">(first opening the entry door)
-Jones enters the lobby warily, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats suspended a giant crystal sculpture.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2068"></child>
-        </children>
-    </item>
-    <item nodeId="node-2068">
-        <command xml:space="preserve">shoot sculpture</command>
+    <item nodeId="node-2609">
+        <command xml:space="preserve">shoot art</command>
         <result xml:space="preserve">(with the disruptor pistol)
 Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2069"></child>
+        <children><child nodeId="node-2610"></child>
         </children>
     </item>
-    <item nodeId="node-2069">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-A robot intones "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2070"></child>
-        </children>
-    </item>
-    <item nodeId="node-2070">
-        <command xml:space="preserve">shoot robot</command>
-        <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2071"></child>
-        </children>
-    </item>
-    <item nodeId="node-2071">
-        <command xml:space="preserve">red</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Oops, Jones misses.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1689">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into a fearsome Viking.
-
-Jones's speeder, Galaxy One, sits in one of the parking bays.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1690"></child>
-        </children>
-    </item>
-    <item nodeId="node-1690">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the entry doorway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1481">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">(first opening the entry door)
-Jones enters the lobby warily, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats suspended a giant crystal sculpture.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1726"></child>
-            <child nodeId="node-2149"></child>
-            <child nodeId="node-1735"></child>
-            <child nodeId="node-1703"></child>
-            <child nodeId="node-1742"></child>
-            <child nodeId="node-1854"></child>
-            <child nodeId="node-1482"></child>
-            <child nodeId="node-2142"></child>
-            <child nodeId="node-1898"></child>
-            <child nodeId="node-1805"></child>
-        </children>
-    </item>
-    <item nodeId="node-1805">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2088"></child>
-            <child nodeId="node-2081"></child>
-            <child nodeId="node-2094"></child>
-            <child nodeId="node-2055"></child>
-            <child nodeId="node-2075"></child>
-            <child nodeId="node-1815"></child>
-            <child nodeId="node-1806"></child>
-            <child nodeId="node-1844"></child>
-            <child nodeId="node-1941"></child>
-            <child nodeId="node-1903"></child>
-            <child nodeId="node-2003"></child>
-        </children>
-    </item>
-    <item nodeId="node-2003">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2004"></child>
-        </children>
-    </item>
-    <item nodeId="node-2004">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-The red robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2005"></child>
-        </children>
-    </item>
-    <item nodeId="node-2005">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-The two robots coordinate fire over the desk, narrowly missing her.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2040"></child>
-            <child nodeId="node-2006"></child>
-        </children>
-    </item>
-    <item nodeId="node-2006">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-The green robot tries to flank her, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2007"></child>
-        </children>
-    </item>
-    <item nodeId="node-2007">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2008"></child>
-        </children>
-    </item>
-    <item nodeId="node-2008">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-The red robot tries to flank her, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2009"></child>
-        </children>
-    </item>
-    <item nodeId="node-2009">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2010"></child>
-        </children>
-    </item>
-    <item nodeId="node-2010">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2011"></child>
-        </children>
-    </item>
-    <item nodeId="node-2011">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2012"></child>
-        </children>
-    </item>
-    <item nodeId="node-2012">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2013"></child>
-        </children>
-    </item>
-    <item nodeId="node-2013">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2014"></child>
-        </children>
-    </item>
-    <item nodeId="node-2014">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-A robot intones "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2015"></child>
-        </children>
-    </item>
-    <item nodeId="node-2015">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2016"></child>
-        </children>
-    </item>
-    <item nodeId="node-2016">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2017"></child>
-        </children>
-    </item>
-    <item nodeId="node-2017">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2018"></child>
-        </children>
-    </item>
-    <item nodeId="node-2018">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2019"></child>
-        </children>
-    </item>
-    <item nodeId="node-2019">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2020"></child>
-        </children>
-    </item>
-    <item nodeId="node-2020">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2021"></child>
-        </children>
-    </item>
-    <item nodeId="node-2021">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats suspended a giant crystal sculpture.
-
-Also here are the green guard robot and the red guard robot.
-
-One of the robots fires directly above Jones's head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2040">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2041"></child>
-        </children>
-    </item>
-    <item nodeId="node-2041">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2042"></child>
-        </children>
-    </item>
-    <item nodeId="node-2042">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2043"></child>
-        </children>
-    </item>
-    <item nodeId="node-2043">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones.
-
-The green robot tries to flank her, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2044"></child>
-        </children>
-    </item>
-    <item nodeId="node-2044">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones.
-
-The two robots coordinate fire over the desk, narrowly missing her.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2045"></child>
-        </children>
-    </item>
-    <item nodeId="node-2045">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2046"></child>
-        </children>
-    </item>
-    <item nodeId="node-2046">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones.
-
-The red robot tries to flank her, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1903">
-        <command xml:space="preserve">x sculpture</command>
-        <result xml:space="preserve">As soon as Jones starts to act, an energy beam zips past her head, forcing her back down behind the desk.
-
-A robot says, "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1904"></child>
-        </children>
-    </item>
-    <item nodeId="node-1904">
-        <command xml:space="preserve">x sculpture</command>
-        <result xml:space="preserve">As soon as Jones starts to act, an energy beam zips past her head, forcing her back down behind the desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1905"></child>
-        </children>
-    </item>
-    <item nodeId="node-1905">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As soon as Jones starts to act, an energy beam zips past her head, forcing her back down behind the desk.
-
-A robot says, "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1941">
-        <command xml:space="preserve">x art</command>
-        <result xml:space="preserve">It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan.
-
-A robot intones "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1942"></child>
-        </children>
-    </item>
-    <item nodeId="node-1942">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-A robot tries to flank her, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1943"></child>
-        </children>
-    </item>
-    <item nodeId="node-1943">
-        <command xml:space="preserve">x ne</command>
-        <result xml:space="preserve">Jones sees nothing unexpected in that direction.
-
-A robot intones "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1944"></child>
-        </children>
-    </item>
-    <item nodeId="node-1944">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1945"></child>
-        </children>
-    </item>
-    <item nodeId="node-1945">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1946"></child>
-        </children>
-    </item>
-    <item nodeId="node-1946">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-One of the robots fires directly above Jones's head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1947"></child>
-        </children>
-    </item>
-    <item nodeId="node-1947">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1948"></child>
-        </children>
-    </item>
-    <item nodeId="node-1948">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1949"></child>
-        </children>
-    </item>
-    <item nodeId="node-1949">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-A robot intones "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1950"></child>
-        </children>
-    </item>
-    <item nodeId="node-1950">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-A robot tries to flank Jones, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1951"></child>
-        </children>
-    </item>
-    <item nodeId="node-1951">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
-
-A robot intones "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1952"></child>
-        </children>
-    </item>
-    <item nodeId="node-1952">
-        <command xml:space="preserve">x couch</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1953"></child>
-        </children>
-    </item>
-    <item nodeId="node-1953">
-        <command xml:space="preserve">x sculpture</command>
-        <result xml:space="preserve">It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1954"></child>
-        </children>
-    </item>
-    <item nodeId="node-1954">
-        <command xml:space="preserve">shoot it</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1844">
-        <command xml:space="preserve">shoot sculpture</command>
+    <item nodeId="node-2610">
+        <command xml:space="preserve">shoot art</command>
         <result xml:space="preserve">(with the disruptor pistol)
 Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
 
@@ -927,1534 +75,308 @@ Jones fires the disruptor into the sculpture's main support cable, snapping it. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2104"></child>
-            <child nodeId="node-1845"></child>
+        <children><child nodeId="node-2611"></child>
         </children>
     </item>
-    <item nodeId="node-1845">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Galaxy Jones is in the lobby. There is a front desk here.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1846"></child>
-        </children>
-    </item>
-    <item nodeId="node-1846">
-        <command xml:space="preserve">take all from desk</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1847"></child>
-        </children>
-    </item>
-    <item nodeId="node-1847">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Jones is carrying:
-  a note
-  a disruptor pistol
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1848"></child>
-        </children>
-    </item>
-    <item nodeId="node-1848">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">lobby
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1849"></child>
-        </children>
-    </item>
-    <item nodeId="node-1849">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">lobby
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1850"></child>
-        </children>
-    </item>
-    <item nodeId="node-1850">
-        <command xml:space="preserve">actions</command>
-        <result xml:space="preserve">Actions listing on.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1851"></child>
-        </children>
-    </item>
-    <item nodeId="node-1851">
-        <command xml:space="preserve">take all from desk</command>
-        <result xml:space="preserve">[removing the note from the front desk]
-[(1) taking the note]
-Taken.
-[(1) taking the note - succeeded]
-
-[removing the note from the front desk - succeeded]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2104">
-        <command xml:space="preserve">fire at sculpture</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Shooting that would accomplish nothing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2105"></child>
-        </children>
-    </item>
-    <item nodeId="node-2105">
-        <command xml:space="preserve">x sculpture</command>
-        <result xml:space="preserve">You dig through the ruins and come up with a thingy.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2106"></child>
-            <child nodeId="node-2125"></child>
-        </children>
-    </item>
-    <item nodeId="node-2125">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">lobby
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2126"></child>
-        </children>
-    </item>
-    <item nodeId="node-2126">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">lobby
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2127"></child>
-        </children>
-    </item>
-    <item nodeId="node-2127">
-        <command xml:space="preserve">fire at sculpture</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Shooting that would accomplish nothing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2128"></child>
-        </children>
-    </item>
-    <item nodeId="node-2128">
-        <command xml:space="preserve">x it</command>
-        <result xml:space="preserve">You dig through the ruins and come up with a thingy.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2106">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Jones is carrying:
-  a thingy
-  a disruptor pistol
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1806">
-        <command xml:space="preserve">shoot robot</command>
-        <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1807"></child>
-        </children>
-    </item>
-    <item nodeId="node-1807">
-        <command xml:space="preserve">green</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1815">
-        <command xml:space="preserve">shoot red robot</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Oops, Jones misses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2075">
-        <command xml:space="preserve">shoot at robot</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2076"></child>
-        </children>
-    </item>
-    <item nodeId="node-2076">
-        <command xml:space="preserve">shoot robot</command>
-        <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2077"></child>
-        </children>
-    </item>
-    <item nodeId="node-2077">
-        <command xml:space="preserve">green</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-A barrage of fire from the robots prevents Jones from firing. Zip! Disruptor fire scorches a nearby couch.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2055">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones. One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2056"></child>
-        </children>
-    </item>
-    <item nodeId="node-2056">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones. One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2057"></child>
-        </children>
-    </item>
-    <item nodeId="node-2057">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones. The two robots coordinate fire over the desk, narrowly missing her.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2058"></child>
-        </children>
-    </item>
-    <item nodeId="node-2058">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones. The green robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2059"></child>
-        </children>
-    </item>
-    <item nodeId="node-2059">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2060"></child>
-        </children>
-    </item>
-    <item nodeId="node-2060">
-        <command xml:space="preserve">x</command>
-        <result xml:space="preserve">(the disruptor pistol)
-There seems to be nothing special about it.
-
-Zip! Disruptor fire scorches a nearby couch.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2061"></child>
-        </children>
-    </item>
-    <item nodeId="node-2061">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Jones is carrying:
-  a disruptor pistol
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2062"></child>
-        </children>
-    </item>
-    <item nodeId="node-2062">
-        <command xml:space="preserve">fire pistol at robot</command>
-        <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2063"></child>
-        </children>
-    </item>
-    <item nodeId="node-2063">
-        <command xml:space="preserve">red</command>
-        <result xml:space="preserve">Oops, Jones misses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2064"></child>
-        </children>
-    </item>
-    <item nodeId="node-2064">
-        <command xml:space="preserve">fire pistol at desk</command>
-        <result xml:space="preserve">The two robots coordinate fire over the desk, narrowly missing Jones.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2094">
-        <command xml:space="preserve">fire desk at red robot</command>
-        <result xml:space="preserve">&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2081">
-        <command xml:space="preserve">fire at robot</command>
-        <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2082"></child>
-        </children>
-    </item>
-    <item nodeId="node-2082">
-        <command xml:space="preserve">red</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Oof. Big miss. The green robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2083"></child>
-        </children>
-    </item>
-    <item nodeId="node-2083">
-        <command xml:space="preserve">shoot red robot</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Oof. Big miss. The two robots coordinate fire over the desk, narrowly missing Jones.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2084"></child>
-        </children>
-    </item>
-    <item nodeId="node-2084">
-        <command xml:space="preserve">shoot red robot</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-A barrage of fire from the robots prevents Jones from firing. The red robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2088">
-        <command xml:space="preserve">fire at red robot</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-A barrage of fire from the robots prevents Jones from firing. The green robot tries to flank her, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2089"></child>
-        </children>
-    </item>
-    <item nodeId="node-2089">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2090"></child>
-        </children>
-    </item>
-    <item nodeId="node-2090">
-        <command xml:space="preserve">shoot red robot with desk</command>
-        <result xml:space="preserve">&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1898">
-        <command xml:space="preserve">x sculpture</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2137"></child>
-            <child nodeId="node-1899"></child>
-        </children>
-    </item>
-    <item nodeId="node-1899">
-        <command xml:space="preserve">x sculpture</command>
-        <result xml:space="preserve">As soon as you start to act, an energy beam zips past your head, forcing you back down behind the desk.
-
-One of the robots fires directly above your head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2137">
-        <command xml:space="preserve">x robot</command>
-        <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2138"></child>
-        </children>
-    </item>
-    <item nodeId="node-2138">
-        <command xml:space="preserve">red</command>
-        <result xml:space="preserve">Definitely not a friendly humanoid. More of a spiny killer with a disruptor turret mounted on its head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2139"></child>
-        </children>
-    </item>
-    <item nodeId="node-2139">
-        <command xml:space="preserve">x green</command>
-        <result xml:space="preserve">Definitely not a friendly humanoid. More of a spiny killer with a disruptor turret mounted on its head.
-
-A robot intones "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2142">
-        <command xml:space="preserve">x pillar</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2143"></child>
-        </children>
-    </item>
-    <item nodeId="node-2143">
-        <command xml:space="preserve">x sculpture</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2144"></child>
-        </children>
-    </item>
-    <item nodeId="node-2144">
-        <command xml:space="preserve">x pistol</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-Zip! Disruptor fire scorches a nearby couch.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2145"></child>
-        </children>
-    </item>
-    <item nodeId="node-2145">
-        <command xml:space="preserve">fire desk</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Shooting that would accomplish nothing.
-
-One of the robots fires directly above Jones's head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2146"></child>
-        </children>
-    </item>
-    <item nodeId="node-2146">
-        <command xml:space="preserve">fire desk with pistol</command>
-        <result xml:space="preserve">Shooting that would accomplish nothing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1482">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1838"></child>
-            <child nodeId="node-1494"></child>
-            <child nodeId="node-1517"></child>
-        </children>
-    </item>
-    <item nodeId="node-1517">
-        <command xml:space="preserve">take note</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1523"></child>
-            <child nodeId="node-1518"></child>
-            <child nodeId="node-1552"></child>
-        </children>
-    </item>
-    <item nodeId="node-1552">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">The is a nice desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1518">
-        <command xml:space="preserve">put note in desk</command>
-        <result xml:space="preserve">Jones puts the sticky note into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1523">
-        <command xml:space="preserve">put it in desk</command>
-        <result xml:space="preserve">That can't contain things.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1524"></child>
-        </children>
-    </item>
-    <item nodeId="node-1524">
-        <command xml:space="preserve">put it on desk</command>
-        <result xml:space="preserve">Putting things on the front desk would achieve nothing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1525"></child>
-        </children>
-    </item>
-    <item nodeId="node-1525">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the elevator banks. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1526"></child>
-        </children>
-    </item>
-    <item nodeId="node-1526">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Jones is carrying:
-  a sticky note
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1527"></child>
-        </children>
-    </item>
-    <item nodeId="node-1527">
-        <command xml:space="preserve">x note</command>
-        <result xml:space="preserve">The note says "82436".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1528"></child>
-        </children>
-    </item>
-    <item nodeId="node-1528">
-        <command xml:space="preserve">drop note</command>
-        <result xml:space="preserve">Dropped.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1529"></child>
-        </children>
-    </item>
-    <item nodeId="node-1529">
-        <command xml:space="preserve">take note</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1494">
-        <command xml:space="preserve">take ball</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1495"></child>
-        </children>
-    </item>
-    <item nodeId="node-1495">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">The front desk is empty.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1838">
-        <command xml:space="preserve">shoot sculpture</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1839"></child>
-        </children>
-    </item>
-    <item nodeId="node-1839">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Galaxy Jones is in the lobby. There is a front desk here.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1840"></child>
-        </children>
-    </item>
-    <item nodeId="node-1840">
-        <command xml:space="preserve">x ruin</command>
-        <result xml:space="preserve">You search some more, but nothing further turns up.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1854">
-        <command xml:space="preserve">take all from desk</command>
-        <result xml:space="preserve">note: Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk.
-
-ball: Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1855"></child>
-        </children>
-    </item>
-    <item nodeId="node-1855">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">lobby
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1856"></child>
-        </children>
-    </item>
-    <item nodeId="node-1856">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">entry doorway
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1857"></child>
-        </children>
-    </item>
-    <item nodeId="node-1857">
-        <command xml:space="preserve">actions</command>
-        <result xml:space="preserve">Actions listing on.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1858"></child>
-        </children>
-    </item>
-    <item nodeId="node-1858">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">[going north]
-(first opening the entry door)
-[(1) opening the entry door - silently]
-[(1) opening the entry door - silently - succeeded]
-
-Jones enters the lobby warily, alert to any defenses.
-
-Galaxy Jones is in the lobby. There is a front desk here.
-
-[going north - succeeded]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1859"></child>
-        </children>
-    </item>
-    <item nodeId="node-1859">
-        <command xml:space="preserve">take all from desk</command>
-        <result xml:space="preserve">[removing the note from the front desk]
-note: Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk.
-
-[removing the note from the front desk - failed]
-[removing the ball from the front desk]
-ball: [(1) taking the ball]
-Taken.
-[(1) taking the ball - succeeded]
-[removing the ball from the front desk - succeeded]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1742">
-        <command xml:space="preserve">shoot desk</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1743"></child>
-            <child nodeId="node-1802"></child>
-        </children>
-    </item>
-    <item nodeId="node-1802">
-        <command xml:space="preserve">shoot desk</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1743">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-Galaxy Jones is at the entry doorway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1744"></child>
-        </children>
-    </item>
-    <item nodeId="node-1744">
-        <command xml:space="preserve">shoot door</command>
-        <result xml:space="preserve">&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1745"></child>
-        </children>
-    </item>
-    <item nodeId="node-1745">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones enters the lobby warily, alert to any defenses.
-
-Galaxy Jones is in the lobby. There is a front desk here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1746"></child>
-        </children>
-    </item>
-    <item nodeId="node-1746">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the elevator banks. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1747"></child>
-        </children>
-    </item>
-    <item nodeId="node-1747">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is on the ground floor. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1748"></child>
-        </children>
-    </item>
-    <item nodeId="node-1748">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1749"></child>
-        </children>
-    </item>
-    <item nodeId="node-1749">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1703">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1778"></child>
-            <child nodeId="node-2098"></child>
-            <child nodeId="node-1757"></child>
-            <child nodeId="node-1766"></child>
-            <child nodeId="node-1974"></child>
-            <child nodeId="node-1811"></child>
-            <child nodeId="node-1991"></child>
-            <child nodeId="node-1826"></child>
-            <child nodeId="node-1788"></child>
-            <child nodeId="node-1863"></child>
-            <child nodeId="node-1704"></child>
-            <child nodeId="node-2132"></child>
-            <child nodeId="node-1920"></child>
-        </children>
-    </item>
-    <item nodeId="node-1920">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2026"></child>
-            <child nodeId="node-1921"></child>
-        </children>
-    </item>
-    <item nodeId="node-1921">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1922"></child>
-        </children>
-    </item>
-    <item nodeId="node-1922">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1923"></child>
-        </children>
-    </item>
-    <item nodeId="node-1923">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1924"></child>
-        </children>
-    </item>
-    <item nodeId="node-1924">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1925"></child>
-        </children>
-    </item>
-    <item nodeId="node-1925">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1926"></child>
-        </children>
-    </item>
-    <item nodeId="node-1926">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-A robot says, "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1927"></child>
-        </children>
-    </item>
-    <item nodeId="node-1927">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1928"></child>
-        </children>
-    </item>
-    <item nodeId="node-1928">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-A robot says, "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1929"></child>
-        </children>
-    </item>
-    <item nodeId="node-1929">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1930"></child>
-        </children>
-    </item>
-    <item nodeId="node-1930">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1931"></child>
-        </children>
-    </item>
-    <item nodeId="node-1931">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-A robot says, "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1932"></child>
-        </children>
-    </item>
-    <item nodeId="node-1932">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-A robot says, "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1933"></child>
-        </children>
-    </item>
-    <item nodeId="node-1933">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1934"></child>
-        </children>
-    </item>
-    <item nodeId="node-1934">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-A robot says, "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1935"></child>
-        </children>
-    </item>
-    <item nodeId="node-1935">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-A robot says, "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1936"></child>
-        </children>
-    </item>
-    <item nodeId="node-1936">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1937"></child>
-        </children>
-    </item>
-    <item nodeId="node-1937">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-One of the robots fires directly above Jones's head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2026">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Red and green guard robots criss-cross the lobby, stalking Jones.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2032"></child>
-        </children>
-    </item>
-    <item nodeId="node-2032">
-        <command xml:space="preserve">x robots</command>
-        <result xml:space="preserve">You can't use multiple objects with that verb.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2033"></child>
-        </children>
-    </item>
-    <item nodeId="node-2033">
-        <command xml:space="preserve">x red robot</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2132">
-        <command xml:space="preserve">x robot</command>
-        <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2133"></child>
-        </children>
-    </item>
-    <item nodeId="node-2133">
-        <command xml:space="preserve">red</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1704">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">lobby
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1705"></child>
-        </children>
-    </item>
-    <item nodeId="node-1705">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">foo
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1863">
-        <command xml:space="preserve">take all from desk</command>
-        <result xml:space="preserve">As soon as Jones starts to act, an energy beam zips past her head, forcing her back down behind the desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1910"></child>
-        </children>
-    </item>
-    <item nodeId="node-1910">
-        <command xml:space="preserve">stand up</command>
-        <result xml:space="preserve">But Jones isn't in anything at the moment.
-
-One of the robots fires directly above your head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1911"></child>
-        </children>
-    </item>
-    <item nodeId="node-1911">
-        <command xml:space="preserve">move</command>
-        <result xml:space="preserve">(the disruptor pistol)
-Nothing obvious happens.
-
-One of the robots fires directly above your head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1912"></child>
-        </children>
-    </item>
-    <item nodeId="node-1912">
-        <command xml:space="preserve">x sculpture</command>
-        <result xml:space="preserve">It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1913"></child>
-        </children>
-    </item>
-    <item nodeId="node-1913">
-        <command xml:space="preserve">x me</command>
-        <result xml:space="preserve">As good-looking as ever.
-
-One of the robots fires directly above your head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1914"></child>
-        </children>
-    </item>
-    <item nodeId="node-1914">
-        <command xml:space="preserve">x entry</command>
-        <result xml:space="preserve">Which do you mean, the building entryway or the entry door?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1915"></child>
-        </children>
-    </item>
-    <item nodeId="node-1915">
-        <command xml:space="preserve">door</command>
-        <result xml:space="preserve">A glass revolving door emblazoned with the symbol of a Viking kind astride the planet Mars.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1916"></child>
-        </children>
-    </item>
-    <item nodeId="node-1916">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
-
-A robot says, "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1788">
-        <command xml:space="preserve">showme</command>
-        <result xml:space="preserve">lobby - room
-    green guard robot
-    red guard robot
-    building entryway - backdrop
-    entry door - open door
-    Jones - person
-        disruptor pistol
-    front desk - pseudocontainer
-        note
-    giant sculpture
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1798"></child>
-            <child nodeId="node-1789"></child>
-        </children>
-    </item>
-    <item nodeId="node-1789">
-        <command xml:space="preserve">x robots</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1790"></child>
-        </children>
-    </item>
-    <item nodeId="node-1790">
-        <command xml:space="preserve">x robots</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1791"></child>
-        </children>
-    </item>
-    <item nodeId="node-1791">
-        <command xml:space="preserve">x robots</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-One of the robots fires directly above your head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1792"></child>
-        </children>
-    </item>
-    <item nodeId="node-1792">
-        <command xml:space="preserve">shoot robot</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1793"></child>
-        </children>
-    </item>
-    <item nodeId="node-1793">
-        <command xml:space="preserve">shoot robots</command>
-        <result xml:space="preserve">&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1798">
-        <command xml:space="preserve">shoot red robot</command>
-        <result xml:space="preserve">&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1826">
-        <command xml:space="preserve">shoot sculpture</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Jones fires the disruptor into the sculpture's main support cable. The huge crystal blob starts to sag, straining the other cables. In quick succession they snap as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1833"></child>
-            <child nodeId="node-1827"></child>
-            <child nodeId="node-1882"></child>
-        </children>
-    </item>
-    <item nodeId="node-1882">
-        <command xml:space="preserve">x ruinb</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1883"></child>
-        </children>
-    </item>
-    <item nodeId="node-1883">
-        <command xml:space="preserve">x ruin</command>
-        <result xml:space="preserve">You dig through the ruins and come up with a thingy. Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1890"></child>
-        </children>
-    </item>
-    <item nodeId="node-1890">
-        <command xml:space="preserve">x</command>
-        <result xml:space="preserve">What do you want to examine?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1891"></child>
-        </children>
-    </item>
-    <item nodeId="node-1891">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Jones is carrying:
-  a thingy
-  a disruptor pistol
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1892"></child>
-        </children>
-    </item>
-    <item nodeId="node-1892">
-        <command xml:space="preserve">x thingy</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1893"></child>
-        </children>
-    </item>
-    <item nodeId="node-1893">
-        <command xml:space="preserve">x pistol</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1827">
-        <command xml:space="preserve">showme</command>
-        <result xml:space="preserve">lobby - room
-    smashed sculpture
-    wrecked green robot
-    wrecked red robot
-    building entryway - backdrop
-    entry door - open door
-    Jones - person
-        disruptor pistol
-    front desk - pseudocontainer
-        note
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1828"></child>
-        </children>
-    </item>
-    <item nodeId="node-1828">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Galaxy Jones is in the lobby. There is a front desk here.
-
-The remains of a huge sculpture are smashed on the floor here.
-
-Also here are a wrecked green robot and a wrecked red robot.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1833">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Galaxy Jones is in the lobby. There is a front desk here.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1834"></child>
-        </children>
-    </item>
-    <item nodeId="node-1834">
-        <command xml:space="preserve">x ruin</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1991">
-        <command xml:space="preserve">shoot robot</command>
-        <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1997"></child>
-            <child nodeId="node-1992"></child>
-        </children>
-    </item>
-    <item nodeId="node-1992">
-        <command xml:space="preserve">red</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Oops, Jones misses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1997">
-        <command xml:space="preserve">green</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Oops, Jones misses.
-
-A robot tries to flank her, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1998"></child>
-        </children>
-    </item>
-    <item nodeId="node-1998">
-        <command xml:space="preserve">shoot robot</command>
-        <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1999"></child>
-        </children>
-    </item>
-    <item nodeId="node-1999">
-        <command xml:space="preserve">red</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Oops, Jones misses.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1811">
-        <command xml:space="preserve">shoot red robot</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-A robot says, "Destroy Jones" in droning repetition.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1974">
-        <command xml:space="preserve">shoot art</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Jones fires the disruptor into the sculpture's main support cable. The huge crystal blob starts to sag, straining the other cables. In quick succession they snap as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1975"></child>
-        </children>
-    </item>
-    <item nodeId="node-1975">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">lobby
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1976"></child>
-        </children>
-    </item>
-    <item nodeId="node-1976">
-        <command xml:space="preserve">rules</command>
-        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
-
-[Rule "clear LPR rule" applies.]
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1977"></child>
-        </children>
-    </item>
-    <item nodeId="node-1977">
-        <command xml:space="preserve">shoot art</command>
-        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
-[Rule "Rule for supplying a missing second noun while shooting" applies.]
-(with the disruptor pistol)
-[Rule "announce items from multiple object lists rule" applies.]
-[Rule "set pronouns from items from multiple object lists rule" applies.]
-[Rule "before stage rule" applies.]
-[Rule "instead stage rule" applies.]
-[Rule "investigate player's awareness before action rule" applies.]
-[Rule "player aware of his own actions rule" applies.]
-[Rule "check stage rule" applies.]
-[Rule "carry out stage rule" applies.]
-[Rule "Carry out shooting the giant sculpture with the disruptor pistol" applies.]
-Jones fires the disruptor into the sculpture's main support cable. The huge crystal blob starts to sag, straining the other cables. In quick succession they snap as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
- _____________________________/ 
-[Rule "after stage rule" applies.]
-
-[Rule "investigate player's awareness after action rule" applies.]
-[Rule "report stage rule" applies.]
-[Rule "last specific action-processing rule" applies.]
-[Rule "A first turn sequence rule" applies.]
-[Rule "every turn stage rule" applies.]
-[Rule "A last turn sequence rule" applies.]
-[Rule "notify score changes rule" applies.]
-[Your score has just gone up by one point.]
-
-[Rule "clear LPR rule" applies.]
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1766">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1771"></child>
-        </children>
-    </item>
-    <item nodeId="node-1771">
+    <item nodeId="node-2611">
         <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the ground floor. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1772"></child>
+        <children><child nodeId="node-2612"></child>
         </children>
     </item>
-    <item nodeId="node-1772">
+    <item nodeId="node-2612">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the east side of the ground floor. 
+
+Also here is a closet door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2613"></child>
+        </children>
+    </item>
+    <item nodeId="node-2613">
         <command xml:space="preserve">w</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
+        <result xml:space="preserve">(first opening the closet door)
+(first unlocking the closet door)
+You'll have to enter the correct code on the keypad.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1773"></child>
+        <children><child nodeId="node-2614"></child>
         </children>
     </item>
-    <item nodeId="node-1773">
-        <command xml:space="preserve">mn</command>
+    <item nodeId="node-2614">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">You'll have to enter the correct code on the keypad.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2615"></child>
+        </children>
+    </item>
+    <item nodeId="node-2615">
+        <command xml:space="preserve">unlock door with pistol</command>
+        <result xml:space="preserve">You'll have to enter the correct code on the keypad instead.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2625"></child>
+        </children>
+    </item>
+    <item nodeId="node-2625">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">(first unlocking the closet door)
+You'll have to enter the correct code on the keypad.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2626"></child>
+        </children>
+    </item>
+    <item nodeId="node-2626">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">You'll have to enter the correct code on the keypad.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2627"></child>
+        </children>
+    </item>
+    <item nodeId="node-2627">
+        <command xml:space="preserve">min</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1774"></child>
+        <children><child nodeId="node-2628"></child>
         </children>
     </item>
-    <item nodeId="node-1774">
-        <command xml:space="preserve">ne</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
+    <item nodeId="node-2628">
+        <command xml:space="preserve">asdf</command>
+        <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1757">
-        <command xml:space="preserve">restart</command>
-        <result xml:space="preserve">Are you sure you want to restart? </result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1758"></child>
+        <children><child nodeId="node-2629"></child>
         </children>
     </item>
-    <item nodeId="node-1758">
-        <command xml:space="preserve">y</command>
+    <item nodeId="node-2629">
+        <command xml:space="preserve">enter 0</command>
+        <result xml:space="preserve">(on the keypad)
+An indicator light glows green.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2630"></child>
+        </children>
+    </item>
+    <item nodeId="node-2630">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the closet door)
+
+Galaxy Jones is in the maintenance closet. 
+
+There is an Atmo-Suit hanging from a hook here.
+
+On the shelf is a brass key.
+
+Also here is a closet door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2631"></child>
+        </children>
+    </item>
+    <item nodeId="node-2631">
+        <command xml:space="preserve">take all</command>
+        <result xml:space="preserve">Atmo-Suit: Taken.
+brass key: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2632"></child>
+        </children>
+    </item>
+    <item nodeId="node-2632">
+        <command xml:space="preserve">e</command>
         <result xml:space="preserve">
+Galaxy Jones is on the east side of the ground floor. 
 
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
- _____________________________/ 
-An Interactive Fiction by Philip Riley
-Release 1 / Serial number 230219 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
-
-Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into a fearsome Viking.
-
-Jones's speeder, Galaxy One, sits in one of the parking bays.
+Also here is a closet door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1759"></child>
+        <children><child nodeId="node-2633"></child>
         </children>
     </item>
-    <item nodeId="node-1759">
-        <command xml:space="preserve">scenes</command>
-        <result xml:space="preserve">Scene 'Entire Game' playing (for 0 mins now)
-(Scene monitoring now switched on. Type "scenes off" to switch it off again.)
+    <item nodeId="node-2633">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the ground floor. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1760"></child>
+        <children><child nodeId="node-2634"></child>
         </children>
     </item>
-    <item nodeId="node-1760">
+    <item nodeId="node-2634">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2635"></child>
+        </children>
+    </item>
+    <item nodeId="node-2635">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red desolation of Mars beyond the window.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2636"></child>
+        </children>
+    </item>
+    <item nodeId="node-2636">
         <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+        <result xml:space="preserve">
+Galaxy Jones is on the west side of the ground floor. 
 
-Galaxy Jones is at the entry doorway. 
+Also here is an elevator room door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1761"></child>
+        <children><child nodeId="node-2637"></child>
         </children>
     </item>
-    <item nodeId="node-1761">
+    <item nodeId="node-2637">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the elevator room door)
+(first unlocking the elevator room door)
+(with the brass key)
+
+Galaxy Jones is in the elevator room. 
+
+In one of the cubbies is a drop key.
+
+Also here is an elevator room door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2638"></child>
+        </children>
+    </item>
+    <item nodeId="node-2638">
+        <command xml:space="preserve">take all</command>
+        <result xml:space="preserve">drop key: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2639"></child>
+        </children>
+    </item>
+    <item nodeId="node-2639">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the west side of the ground floor. 
+
+Also here is an elevator room door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2640"></child>
+        </children>
+    </item>
+    <item nodeId="node-2640">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red desolation of Mars beyond the window.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2641"></child>
+        </children>
+    </item>
+    <item nodeId="node-2641">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2642"></child>
+        </children>
+    </item>
+    <item nodeId="node-2642">
         <command xml:space="preserve">n</command>
-        <result xml:space="preserve">(first opening the entry door)
-Jones enters the lobby warily, alert to any defenses.
-
-Galaxy Jones is in the lobby. There is a front desk here.
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator hall. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1762"></child>
+        <children><child nodeId="node-2643"></child>
         </children>
     </item>
-    <item nodeId="node-1762">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk.
-
-[Scene 'Lobby Shootout' begins]
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2098">
-        <command xml:space="preserve">fire desk at red robot</command>
-        <result xml:space="preserve">You can't fire the front desk!
-
-The green robot fires a blistering shot into the front desk.
+    <item nodeId="node-2643">
+        <command xml:space="preserve">open elevator door</command>
+        <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2099"></child>
+        <children><child nodeId="node-2644"></child>
         </children>
     </item>
-    <item nodeId="node-2099">
-        <command xml:space="preserve">fire at the sculpture</command>
+    <item nodeId="node-2644">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ground floor elevator shaft. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2645"></child>
+        </children>
+    </item>
+    <item nodeId="node-2645">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2646"></child>
+        </children>
+    </item>
+    <item nodeId="node-2646">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator hall. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2649">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2650"></child>
+        </children>
+    </item>
+    <item nodeId="node-2650">
+        <command xml:space="preserve">shoot art</command>
         <result xml:space="preserve">(with the disruptor pistol)
-Shooting that would accomplish nothing.
-
 Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
 
  _________      __                     _____                     
@@ -2468,279 +390,107 @@ Jones fires the disruptor into the sculpture's main support cable, snapping it. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2651"></child>
+        </children>
     </item>
-    <item nodeId="node-1778">
+    <item nodeId="node-2651">
         <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the ground floor. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1779"></child>
+        <children><child nodeId="node-2652"></child>
         </children>
     </item>
-    <item nodeId="node-1779">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1780"></child>
-        </children>
-    </item>
-    <item nodeId="node-1780">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1781"></child>
-        </children>
-    </item>
-    <item nodeId="node-1781">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1782"></child>
-        </children>
-    </item>
-    <item nodeId="node-1782">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
-
-One of the robots fires directly above your head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1783"></child>
-        </children>
-    </item>
-    <item nodeId="node-1783">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
-
-One of the robots fires directly above your head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1784"></child>
-        </children>
-    </item>
-    <item nodeId="node-1784">
-        <command xml:space="preserve">shoot robots</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1735">
-        <command xml:space="preserve">mn</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1736"></child>
-        </children>
-    </item>
-    <item nodeId="node-1736">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk.
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2149">
-        <command xml:space="preserve">fire desk</command>
-        <result xml:space="preserve">(at the disruptor pistol)
-Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2150"></child>
-        </children>
-    </item>
-    <item nodeId="node-2150">
-        <command xml:space="preserve">fire desk</command>
-        <result xml:space="preserve">(at the disruptor pistol)
-You can't fire the front desk!
-
-The green robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2151"></child>
-        </children>
-    </item>
-    <item nodeId="node-2151">
-        <command xml:space="preserve">dire pistol</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2152"></child>
-        </children>
-    </item>
-    <item nodeId="node-2152">
-        <command xml:space="preserve">fire pistol</command>
-        <result xml:space="preserve">(at the disruptor pistol)
-Shooting that would accomplish nothing.
-
-The green robot tries to flank Jones, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2153"></child>
-        </children>
-    </item>
-    <item nodeId="node-2153">
-        <command xml:space="preserve">fire pistol at red robot</command>
-        <result xml:space="preserve">A barrage of fire from the robots prevents Jones from firing. The green robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2154"></child>
-        </children>
-    </item>
-    <item nodeId="node-2154">
-        <command xml:space="preserve">fire pistol at red robot</command>
-        <result xml:space="preserve">Oof. Big miss. &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1726">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall!
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1870">
-        <command xml:space="preserve">m</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1871"></child>
-        </children>
-    </item>
-    <item nodeId="node-1871">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1872"></child>
-        </children>
-    </item>
-    <item nodeId="node-1872">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">(first opening the entry door)
-Jones enters the lobby warily, alert to any defenses.
-
-Galaxy Jones is in the lobby. There is a front desk here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1873"></child>
-        </children>
-    </item>
-    <item nodeId="node-1873">
-        <command xml:space="preserve">x art</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1874"></child>
-        </children>
-    </item>
-    <item nodeId="node-1874">
-        <command xml:space="preserve">shoot sculpture</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1875"></child>
-        </children>
-    </item>
-    <item nodeId="node-1875">
-        <command xml:space="preserve">x it</command>
-        <result xml:space="preserve">Jones can't see 'it' (nothing) at the moment.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1876"></child>
-        </children>
-    </item>
-    <item nodeId="node-1876">
-        <command xml:space="preserve">x art</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1877"></child>
-        </children>
-    </item>
-    <item nodeId="node-1877">
-        <command xml:space="preserve">x sculpture</command>
-        <result xml:space="preserve">You dig through the ruins and come up with a thingy which you take.
-
-Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1696">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Jones is carrying:
-  a disruptor gun
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1697"></child>
-        </children>
-    </item>
-    <item nodeId="node-1697">
-        <command xml:space="preserve">x gun</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1698"></child>
-        </children>
-    </item>
-    <item nodeId="node-1698">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1699"></child>
-        </children>
-    </item>
-    <item nodeId="node-1699">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">(first opening the entry door)
-Jones enters the lobby warily, alert to any defenses.
-
-Galaxy Jones is in the lobby. There is a front desk here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1700"></child>
-        </children>
-    </item>
-    <item nodeId="node-1700">
+    <item nodeId="node-2652">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
-Galaxy Jones is in the elevator banks. 
+Galaxy Jones is on the east side of the ground floor. 
+
+Also here is a closet door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2653"></child>
+        </children>
+    </item>
+    <item nodeId="node-2653">
+        <command xml:space="preserve">type 0</command>
+        <result xml:space="preserve">(on the keypad)
+An indicator light glows green.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2654"></child>
+        </children>
+    </item>
+    <item nodeId="node-2654">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the ground floor. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2655"></child>
+        </children>
+    </item>
+    <item nodeId="node-2655">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2656"></child>
+        </children>
+    </item>
+    <item nodeId="node-2656">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ground floor elevator hall. 
+
+Also here is an elevator door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2657"></child>
+        </children>
+    </item>
+    <item nodeId="node-2657">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the elevator door)
+
+Galaxy Jones is in the ground floor elevator shaft. 
+
+Also here is an elevator door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2658"></child>
+        </children>
+    </item>
+    <item nodeId="node-2658">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the elevator door)
+
+Galaxy Jones is in the ground floor elevator hall. 
+
+Also here is an elevator door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2659"></child>
+        </children>
+    </item>
+    <item nodeId="node-2659">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ground floor elevator shaft. 
+
+Also here is an elevator door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
