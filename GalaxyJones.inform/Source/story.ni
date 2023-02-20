@@ -52,6 +52,7 @@ To say location-title-case:
 
 When play begins:
 	now the left hand status line is "[location-title-case]";
+	now the right hand status line is "[score] points";
 
 Use scoring.
 Use the serial comma.
@@ -76,20 +77,23 @@ the can't take what's fixed in place rule response (A) is "That can't be taken."
 
 Volume 2 - Actions
 
-Shooting it with is an action applying to two things. Understand "shoot [something] with [something]" as shooting it with. Understand "shoot [something]" as shooting it with. Understand "shoot [something] at [something]", "fire [something] at [something]" as shooting it with (with nouns reversed).
+Shooting it with is an action applying to two things. Understand "shoot at/-- [something] with [something preferably held]", "fire at [something] with [something preferably held]" as shooting it with. Understand "shoot at/-- [something]", "fire at [something]" as shooting it with. Understand "shoot [something preferably held] at [something]", "fire [something preferably held] at [something]" as shooting it with (with nouns reversed).
 
 Rule for supplying a missing second noun while shooting:
 	now the second noun is the disruptor pistol;
 	say "(with the disruptor pistol)[command clarification break]";
+	
+Check shooting something with something that is not the disruptor pistol:
+	say "You can't fire [the second noun]!" instead;
 	
 Volume 3 - Plot
 
 Lobby Shootout is a scene. Lobby Shootout begins when the player is in the lobby for three turns.
 Lobby Shootout ends when the location of the red guard robot is not the lobby.
 
-A guard robot is a kind of thing.
-There is a guard robot called red guard robot.
-There is a guard robot called green guard robot.
+A guard robot is a kind of thing. The description is "Definitely not a friendly humanoid. More of a spiny killer with a disruptor turret mounted on its head.".
+There is a guard robot called the red guard robot. It is undescribed.
+There is a guard robot called the green guard robot. It is undescribed.
 
 Check going during lobby shootout:
 	say "Trying to reach an exit would surely get [us] shot." instead;
@@ -98,14 +102,25 @@ When Lobby Shootout begins:
 	Move the red guard robot to the lobby;
 	Move the green guard robot to the lobby;
 	
+Instead of looking during Lobby Shootout:
+	say "Red and green guard robots criss-cross the lobby, stalking [us].[run paragraph on] ";
+	
 Every turn during lobby shootout:
-	let roll be a random number between 1 and 6;
+	let roll be a random number between 1 and 10;
 	if roll is 1:
 		say "One of the robots fires directly above [our] head.";
 	if roll is 2:
-		say "A robot intones 'Destroy Jones' in droning repetition.";	
+		say "The robots intone 'Destroy Jones' in droning repetition.";	
 	if roll is 3:
-		say "A robot tries to flank [us], but a shot from [our] disruptor sends it scurrying back.";	
+		say "The [one of]green[or]red[purely at random] robot tries to flank [us], but a shot from [our] disruptor sends it scurrying back.";	
+	if roll is 4:
+		say "Zip! Disruptor fire scorches a nearby couch.";
+	if roll is 5:
+		say "The [one of]green[or]red[purely at random] robot fires a blistering shot into the front desk.";
+	if roll is 6:
+		say "The two robots coordinate fire over the desk, narrowly missing [us].";
+	if roll >= 7:
+		say paragraph break;
 
 Volume 4 - Geography
 
@@ -232,7 +247,7 @@ Book 1 - Ground Floor
 
 Chapter 1 -  Speeder Dock
 
-The description of the speeder dock is "A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into a fearsome Viking.".
+The description of the speeder dock is "A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.".
 
 The speeder-vehicle is a fixed in place thing in the speeder dock. It is privately-named. The printed name is "speeder". Understand "speeder/vehicle/car/landspeeder/galaxy/one" as speeder-vehicle. "[Our] speeder, Galaxy One, sits in one of the parking bays."
 The description is "Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.".
@@ -265,16 +280,20 @@ The front desk is scenery in the lobby. It is a pseudocontainer. The contents de
 The note is in the front desk. The description is "The note says '82436'.".
 
 Instead of doing something when the location is the lobby for the first time:
-	say "[italic type]Before [we] [get] a chance to do anything, two robot guards emerge from niches in the back wall! [We] [dive] behind the front desk.[roman type][paragraph break]";
+	say "[italic type]Before [we] [get] a chance to do anything, two robot guards emerge from niches in the back wall! [We] [dive] behind the front desk and [draw] [our] disruptor pistol.[roman type][paragraph break]";
 	
 The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/glass/crystal/monstrosity" as the giant sculpture. "It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan."
 	
 Report shooting a guard robot with the disruptor pistol:
-	say "Oops, [we] [miss].";
+	say "[one of]Oops, [we] [miss][or][We] [stick] [our] head out from behind the desk and squeeze off a shot at [the noun]. In [our] haste it goes wide of the target[or]A barrage of fire from the robots prevents [us] from firing[or]Oof. Big miss[at random]. [run paragraph on]";
+	
+Check shooting something with the disruptor pistol:
+	if the noun is not a guard robot and the noun is not the giant sculpture:
+		say "Shooting that would accomplish nothing.";
 	
 The tangled ruin is a fixed in place pseudocontainer. "Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots." Understand "remains/sculpture/glass/guard/robots/robot/red/green" as the tangled ruin. 
 The description is "You search some more, but nothing further turns up."
-The contents description is "You dig through the ruins and come up with a thingy."
+The contents description is "You dig through the ruins and find a thingy, which you take."
 The tangled ruin is auto-take.
 The thingy is in the tangled ruin.
 	
@@ -295,7 +314,7 @@ Volume 7 - Language
 
 Book 1 - Verbs
 
-to approach is a verb. to enter is a verb. to dive is a verb. to miss is a verb. to start is a verb. to fire is a verb.
+to approach is a verb. to enter is a verb. to dive is a verb. to miss is a verb. to start is a verb. to fire is a verb. To draw is a verb. to stick is a verb.
 
 Volume 8 - Prettiness
 
