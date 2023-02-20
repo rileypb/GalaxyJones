@@ -301,13 +301,6 @@ Galaxy Jones is in the lobby. There is a front desk here.
 
 Galaxy Jones is at the entry doorway. 
 
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1481"></child>
@@ -340,13 +333,6 @@ Galaxy Jones is in the entry doorway.
 Jones enters the lobby warily, alert to any defenses.
 
 Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats suspended a giant crystal sculpture.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
- _____________________________/ 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -966,13 +952,6 @@ Galaxy Jones is on the ground floor.
     <item nodeId="node-1703">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
- _____________________________/ 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

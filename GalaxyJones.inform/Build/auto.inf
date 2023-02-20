@@ -21162,13 +21162,13 @@ Array ActionHappened --> 0 0 0 0 0;
     if ((( (actor==player) && ((noun == I198_giant_sculpture) && (true)) && ((second == I189_disruptor_pistol) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_849, 849);
-    ! [2: say ~[italic type][We] [fire] the disruptor into the sculpture's main support cable. The huge crystal blob starts to sag, straining the other cables. In quick succession they snap as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.[roman type][paragraph break]~]
+    ! [2: say ~[italic type][We] [fire] the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.[roman type][paragraph break]~]
     say__p=1;! [3: italic type]
     ParaContent(); style underline;! [4: we]
     ParaContent(); (PHR_773_r4 ());! [5: ~ ~]
     ParaContent(); print " ";! [6: fire]
-    ConjugateVerb_93(CV_POS, PNToVP(), story_tense); say__p=1; ! [7: ~ the disruptor into the sculpture's main support cable. The huge crystal blob starts to sag, straining the other cables. In quick succession they snap as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.~]
-    ParaContent(); print " the disruptor into the sculpture's main support cable. The huge crystal blob starts to sag, straining the other cables. In quick succession they snap as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.";! [8: roman type]
+    ConjugateVerb_93(CV_POS, PNToVP(), story_tense); say__p=1; ! [7: ~ the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.~]
+    ParaContent(); print " the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.";! [8: roman type]
     ParaContent(); style roman;! [9: paragraph break]
     ParaContent(); DivideParagraphPoint(); new_line; .L_Say308; .L_SayX307;! [10: remove the red guard robot from play]
     RemoveFromPlay(I144_red_guard_robot);

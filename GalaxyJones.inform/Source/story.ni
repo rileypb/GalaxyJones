@@ -279,7 +279,7 @@ The tangled ruin is auto-take.
 The thingy is in the tangled ruin.
 	
 Carry out shooting the giant sculpture with the disruptor pistol:
-	say "[italic type][We] [fire] the disruptor into the sculpture's main support cable. The huge crystal blob starts to sag, straining the other cables. In quick succession they snap as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.[roman type][paragraph break]";
+	say "[italic type][We] [fire] the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.[roman type][paragraph break]";
 	remove the red guard robot from play;
 	remove the green guard robot from play;
 	remove the giant sculpture from play;
