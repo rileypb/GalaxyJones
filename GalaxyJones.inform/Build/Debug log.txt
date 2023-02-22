@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 3066 words long.
+I've now read your source text, which is 4103 words long.
 
 
 -----------------------------------------------------
@@ -26,7 +26,7 @@ I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
 I've also read Deluxe Doors by Emily Short, which is 2072 words long.
 I've also read Galaxy Banner by Philip Riley, which is 129 words long.
-I've also read Third Person Narration by Philip Riley, which is 683 words long.
+I've also read Third Person Narration by Philip Riley, which is 715 words long.
 I've also read Pseudocontainers by Philip Riley, which is 80 words long.
 I've also read Locksmith by Emily Short, which is 4122 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7673 words long.
@@ -183,7 +183,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 122 files written as streams.
-CPU time: 174 centiseconds
+CPU time: 279 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -103,6 +103,10 @@ To stand is a verb.
 
 The standard report waiting rule response (A) is "[We] [stand] around and [wait].".
 
+The parser clarification internal rule response (D) is "Whom should [the noun] [parser command so far]?" 
+
+The parser clarification internal rule response (E) is "What should [the noun] [parser command so far]?" 
+
 Volume 2 - More about locations
 
 A room has a text called the preposition. The preposition of a room is usually "in".

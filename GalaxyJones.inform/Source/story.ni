@@ -11,6 +11,12 @@ Volume 1 - Technical Stuff
 
 DEBUG is a truth state that varies. DEBUG is initially false.
 
+To continue:
+	if DEBUG is false:
+		say "[bracket]continue[close bracket]";
+		say paragraph break;
+		wait for any key;
+
 To start header style:
 	(- VM_Style(HEADER_VMSTY); -)
 	
@@ -18,8 +24,13 @@ Before printing the banner text:
 	if the screen width is less than 64:
 		start header style;
 		say "Galaxy Jones[line break]";
-	print the galaxy banner;
-	
+	otherwise:
+		print the galaxy banner;	
+		say line break;
+		
+After printing the banner text:
+	say "[line break]A sleek dark red speeder roars into the speeder dock of the Viking Building. A tall, strong, dark-brown-skinned woman in a battle-ready jumpsuit climbs out of it.";
+
 Include (-
 [ Banner;
    BeginActivity(PRINTING_BANNER_TEXT_ACT);
@@ -60,6 +71,8 @@ When play begins:
 Use scoring.
 Use the serial comma.
 
+The room of stuff is a room.
+
 Section 1 - Special text substitution code
 
 Include (-
@@ -78,13 +91,16 @@ Section 2 - Some responses
 
 the can't take what's fixed in place rule response (A) is "That can't be taken.".
 
+the futile to throw things at inanimate objects rule response (A) is "[We] thinks twice and decides not to throw it after all.".
+
 Volume 2 - Actions
 
 Shooting it with is an action applying to two things. Understand "shoot at/-- [something] with [something preferably held]", "fire at [something] with [something preferably held]" as shooting it with. Understand "shoot at/-- [something]", "fire at [something]" as shooting it with. Understand "shoot [something preferably held] at [something]", "fire [something preferably held] at [something]" as shooting it with (with nouns reversed).
 
 Rule for supplying a missing second noun while shooting:
-	now the second noun is the disruptor pistol;
-	say "(with the disruptor pistol)[command clarification break]";
+	if the disruptor pistol is touchable:
+		now the second noun is the disruptor pistol;
+		say "(with the disruptor pistol)[command clarification break]";
 	
 Check shooting something with something that is not the disruptor pistol:
 	say "[the second noun] isn't a firearm." instead;
@@ -96,12 +112,24 @@ Check typing a number on something:
 	
 Volume 3 - Plot
 
+When play begins:
+	say "The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.[paragraph break]";
+	say "'Yes?' she says in a voice thick with sleep.[paragraph break]";
+	say "'Hello, is this Galaxy Jones?' comes the voice from the speaker.[paragraph break]";
+	say "'Yes, this is she. To whom am I speaking?'[paragraph break]";
+	say "'Oh, hi, Ms Jones. This is Patty, I work for Admiral P. X. Thallium, CEO of Diversified Entanglements, LLC. He asked me to forward a message to you.'[paragraph break]";
+	say "'He did, did he? Now what would the Admiral want to say to me?'[paragraph break]";
+	say "'Oh, it's not from the Admiral himself. It's from one Miss Europa Callisto. I must say, the Admiral was quite surprised when I said I didn't know who she is. Apparently she's famous.'[paragraph break]";
+	say "'Yes, quite famous, but why would she send a message to me, and why on Mars would she send it through Thallium? But never mind, what's the message?'[paragraph break]";
+	say "Patty can be heard rustling paper. 'Let's see... it's here somewhere. Oh yes, here it is. The message is ['][bold type]Help.[roman type][']'[paragraph break]";
+	continue;
+	say "Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems, hostage. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in downtown New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's no-doubt impending demise. The Admiral has invited Ms Jones most cordially to break into his building and attempt a rescue.[paragraph break]";
+	say "'Oh I will,' Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.[paragraph break]";
+	say "Plus she'll get to meet Europa Callisto. That'll be totally sweet.[paragraph break]";
+	continue;
+
 Lobby Shootout is a scene. Lobby Shootout begins when the player is in the lobby for three turns.
 Lobby Shootout ends when the location of the red guard robot is not the lobby.
-
-A guard robot is a kind of thing. The description is "Definitely not a friendly humanoid. More of a spiny killer with a disruptor barrel mounted on its head.".
-There is a guard robot called the red guard robot. It is undescribed.
-There is a guard robot called the green guard robot. It is undescribed.
 
 Check going during lobby shootout:
 	say "Trying to reach an exit would surely get [us] shot." instead;
@@ -110,15 +138,15 @@ When Lobby Shootout begins:
 	Move the red guard robot to the lobby;
 	Move the green guard robot to the lobby;
 	
-Instead of looking during Lobby Shootout:
-	say "[one of]Red and green guard robots criss-cross the lobby, stalking [us][or]Two guard robots, one red, one green, prowl the lobby, trying to outflank [us][at random].";
+After looking during Lobby Shootout:
+	say "[one of]Red and green guard robots criss-cross the lobby, stalking [us][or]Two guard robots, one red, one green, prowl the lobby, trying to outflank [us][or]The guard robots, red and green, have their head cannons trained on the front desk[at random].";
 	
 Every turn during lobby shootout:
 	let roll be a random number between 1 and 10;
 	if roll is 1:
 		say "One of the robots fires directly above [our] head.";
 	if roll is 2:
-		say "The robots intone 'Destroy Jones' in droning repetition.";	
+		say "The robots intone 'Destroy Jones' in an eerie drone.";	
 	if roll is 3:
 		say "The [one of]green[or]red[purely at random] robot tries to flank [us], but a shot from [our] disruptor sends it scurrying back.";	
 	if roll is 4:
@@ -130,7 +158,7 @@ Every turn during lobby shootout:
 
 Volume 4 - Things
 
-The disruptor pistol is a thing.
+The disruptor pistol is a thing. The description is "A compact instrument of death, with only one setting: kill.".
 
 Does the player mean shooting something carried by the player with something:
 	it is very unlikely;
@@ -145,20 +173,60 @@ When play begins:
 	if DEBUG is true:
 		now the doorcode is 0;
 		
-Check wearing the Atmo-Suit:
-	say "[We] needs to be able to move around quickly. Better not wear the [Atmo-Suit]." instead;
+A room can be atmo-thin.
+
+After going from an atmo-thin room (called R1) to a room (called R2) when R2 is not atmo-thin:
+	if the player is wearing the atmo-suit:
+		silently try taking off the atmo-suit;
+		[if the player is not wearing the atmo-suit:
+			say "[We] doffs [the atmo-suit].";]
+	continue the action;		
 	
-The drop key is a thing. "In one of the cubbies is [a drop key]." The description is "A drop key is a special device used to open an elevator door from the outside." 
+After looking when the location was atmo-thin and the location is not atmo-thin:
+	if the player is not wearing the atmo-suit:
+		say "[We] doffs [the atmo-suit].";
+
+Before going from a room (called R1) to an atmo-thin room (called R2) when R1 is not atmo-thin:
+	if the player is not wearing the atmo-suit:
+		say "(first donning [the atmo-suit])[command clarification break]";
+		if the atmo-suit is not touchable:
+			say "The";
+			stop the action;
+		silently try wearing the atmo-suit;
+		if the player is not wearing the atmo-suit:
+			say "[We] can't go outside without an atmo-suit.";
+			stop the action;
+		
+Check wearing the Atmo-Suit when the location is not atmo-thin:
+	if the room gone to is nothing or the room gone to is not atmo-thin:
+		say "[We] needs to be able to move around quickly. Better not wear the [Atmo-Suit]." instead;
+		stop the action;
+	
+The drop key is a thing. "Leaning against the wall here is [a drop key]." The description is "A drop key is a special device used to open an elevator door from the outside." 
+
+A thing can be an enemy.
+
+A guard robot is a kind of enemy thing. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard" as a guard robot.
+There is a guard robot called the red guard robot. It is undescribed.
+There is a guard robot called the green guard robot. It is undescribed.
+
+Check taking a guard robot:
+	say "An interesting idea." instead;
+
+Instead of attacking an enemy thing:
+	say "You'll need to specify how [we] should attack [the noun]. For instance, you might say 'shoot [the noun] with [the disruptor pistol]'." 
 
 Volume 5 - Geography
 
 Book 1 - Ground Floor
 
-the speeder dock is a room. 
+the speeder dock is a room. The player is in the speeder dock.
 
 the entry doorway is north of Speeder Dock. The preposition is "at".
 
-the entry door is a door. It is north of entry doorway and south of the lobby. It is scenery.
+the entry door is scenery in entry doorway.
+
+the lobby is north of the entry doorway.
 
 the ground floor elevator hall is north of the lobby.
 
@@ -233,9 +301,9 @@ the north end of the Microthings office is west of ninth floor north hallway. th
 
 the south end of the Microthings office is west of ninth floor south hallway and south of the north end of the Microthings office. the preposition is "at".
 
-a ledge is east of the Cybernetica office. The preposition is "on". It is always-indefinite.
+a ledge is east of the Cybernetica office. The preposition is "on". It is always-indefinite. a ledge is atmo-thin.
 
-a window washing scaffold is a room. The preposition is "on". It is always-indefinite.
+a window washing scaffold is a room. The preposition is "on". It is always-indefinite. a window washing scaffold is atmo-thin.
 
 Book 4 - The Tenth Floor
 
@@ -253,7 +321,7 @@ sirius-1 is a sirius-room. It is south of the tenth floor. The dir is south. The
  
 sirius-2 is a sirius-room. It is west of sirius-1. The dir is southwest. The preposition is "at".
  
-sirius-3 is a sirius-room. It is north of sirius-2. The dir is west.The preposition is "on".
+sirius-3 is a sirius-room. It is north of sirius-2. The dir is west. The preposition is "on".
  
 sirius-4 is a sirius-room. It is north of sirius-3. The dir is northwest. The preposition is "at".
  
@@ -267,24 +335,47 @@ sirius-8 is a sirius-room. It is south of sirius-7 and east of sirius-1. The dir
 
 Book 5 - The Elevator
 
-Book 6 - The 100th Floor
+Book 6 - The 100th Floor 
 
 Book 7 - The Roof
 
 Volume 6 - The Player Character
 	
 [Galaxy Jones is a woman in Prison.]
-Player's surname is "Jones".
+Player's surname is "Jones". 
 Player's titled name is "Galaxy Jones".
 Understand "Galaxy/Jones" as yourself.
 
-The player carries the disruptor pistol.
+The player-actual is a thing in the room of stuff. It is privately-named. It is proper-named. The printed name is "you, the player". Understand "me/myself" as the player-actual. The description is "You? I don't know who you are and I don't really care. If you need to know what you look like, just look at yourself, for heaven's sake."
 
+After deciding the scope of the player:
+	place the player-actual in scope; 
+	 
+After doing something to yourself:
+	set pronouns from yourself;
+
+The description of the player is "Galaxy Jones stands at the ready.".
+
+The player carries the disruptor pistol.
+ 
 When play begins:
-	now the player is not male;
-	now the player is female;
+	now yourself is not male;
+	now yourself is not nomale;
+	now yourself is female;
 	now the story viewpoint is third person singular;
-	now the third singular pronoun of the player is she-pronoun;
+	now the third singular pronoun of yourself is she-pronoun; 	
+	
+After printing the name of yourself:
+	set pronouns from yourself;
+	
+Instead of doing something other than examining to player-actual:
+	say "Jones, or the narrator (that's the one who's talking right now), are unable to interact with you in any way, other than via keyboard and text, that is.";
+	
+Rule for reaching inside the room of stuff:
+	allow access;
+	
+Instead of shooting yourself with something:
+	say "Suicide is not an option.";
 	
 Volume 7 - Room Implementations
 
@@ -294,7 +385,7 @@ Chapter 1 -  Speeder Dock
 
 The description of the speeder dock is "A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.".
 
-The speeder-vehicle is a fixed in place thing in the speeder dock. It is privately-named. The printed name is "speeder". Understand "speeder/vehicle/car/landspeeder/galaxy/one" as speeder-vehicle. "[Our] speeder, Galaxy One, sits in one of the parking bays."
+The speeder-vehicle is a fixed in place thing in the speeder dock. It is privately-named. The printed name is "speeder". Understand "speeder/vehicle/car/landspeeder/galaxy/one" as speeder-vehicle. "[Our] speeder, Galaxy One, sits in one of the parking bays".
 The description is "Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.".
 
 Check taking the speeder-vehicle:
@@ -304,22 +395,24 @@ Some windows are part of the speeder-vehicle. The description is "The tint is to
 
 Some turbines are part of the speeder-vehicle. The description is "The engines cause [us] to recoil from the waves of heat rolling off of them." Understand "engines/thrusters/turbine/engine/thruster" as turbines.
  
-Some wings are part of the speeder-vehicle. The description is "Not technically necessary as the speeder works via anti-gravity, the blade-like wings nonetheless give the vehicle a certain flair unobtainable by any other means.".
+Some wings are part of the speeder-vehicle. The description is "Not technically necessary as the speeder works via anti-gravity, the blade-like wings nonetheless give the vehicle a certain flair unobtainable by other means.".
 
-Some parking bays are scenery in the speeder dock. "Most of the parking bays are unfilled."
+Some parking bays are scenery in the speeder dock. Understand "bay/spots/spot/places/place" as parking bays. "Most of the parking bays are unfilled."
 
 Instead of entering the speeder-vehicle:
 	say "[We] has a job to do here.";
 
-The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.". Understand "entry/doorway/entrance/entranceway" as building entryway. Understand "exit" as building entryway when the location is the lobby.
+The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.". Understand "entry/doorway/entrance/entranceway/facade/façade/red/stone/viking" as building entryway. Understand "exit" as building entryway when the location is the lobby.
 	
 Chapter 2 - Building Entryway
+
+The description of the entry doorway is "A glass revolving door leads into a large open space north of here. The speeder dock is to the south.".
 
 The description of the entry door is "A glass revolving door emblazoned with the symbol of a Viking kind astride the planet Mars."
 
 Chapter 3 - Lobby
 
-The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. Above it floats suspended a giant crystal sculpture[end if].".
+The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. Above it floats, suspended on almost invisible cables, a giant crystal sculpture[end if].".
 
 The front desk is scenery in the lobby. It is a pseudocontainer. The contents description is "There's not much on the desk other than a note that says '[doorcode]'.". "There is nothing of interest on the front desk." 
 The note is in the front desk. The description is "The note says '[doorcode]'.".
@@ -327,16 +420,16 @@ The note is in the front desk. The description is "The note says '[doorcode]'.".
 Instead of doing something when the location is the lobby for the first time:
 	say "Before [we] [get] a chance to do anything, two robot guards emerge from niches in the back wall! [We] [dive] behind the front desk and [draw] [our] disruptor pistol.[paragraph break]";
 	
-The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/glass/crystal/monstrosity" as the giant sculpture. "It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan."
+The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/glass/crystal/abstraction/cables/installation" as the giant sculpture. "It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan. It's held up by metal cables."
 	
-Report shooting a guard robot with the disruptor pistol:
-	say "[one of]Oops! [we] [miss][or][We] [stick] [our] head out from behind the desk and squeeze off a shot at [the noun]. In [our] haste it goes wide of the target[or]A barrage of fire from the robots prevents [us] from firing[or]Oof. Big miss[at random].";
+Report shooting a guard robot with the disruptor pistol during Lobby Shootout:
+	say "[one of]Oops! [we] [miss][or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In [our] haste it goes wide of the target[or]A barrage of fire from the robots prevents [us] from firing[or]Oof. Big miss[or][Our] shot hits [the noun] dead on, but nothing happens, almost as if the robot had absorbed the energy[or]A perfect shot! Yet, somehow, the robot is unscathed[at random].";
 	
 Check shooting something with the disruptor pistol:
 	if the noun is not a guard robot and the noun is not the giant sculpture:
 		say "Shooting that would accomplish nothing.";
-	
-The tangled ruin is a fixed in place pseudocontainer. "Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots." Understand "remains/sculpture/art/glass/guard/robots/robot/red/green" as the tangled ruin. 
+	 
+The tangled ruin is a fixed in place pseudocontainer. "Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots." Understand "remains/sculpture/art/glass/guard/robots/robot/red/green/ruins" as the tangled ruin. 
 The description is "[We] searches some more, but nothing further turns up."
 The contents description is "[We] digs through the ruins and finds a thingy, which [we] takes."
 The tangled ruin is auto-take.
@@ -350,10 +443,14 @@ Carry out shooting the giant sculpture with the disruptor pistol:
 	move the tangled ruin to the lobby;
 	increase the score by 1;
 	
-[taking is acting recklessly.
+entering is acting recklessly.
+taking is acting recklessly.
+jumping is acting recklessly.
 
 Instead of acting recklessly during Lobby Shootout:
-	say "As soon as [we] [start] to act, an energy beam zips past [our] head, forcing [us] back down behind the desk.";]
+	say "As soon as [we] [start] to act, an energy beam zips past [our] head, forcing [us] back down behind the desk.";
+	
+The couch is a scenery enterable supporter in the lobby. "Quite tasteful for a homicidal madman, really."
 	
 Chapter 4 - Ground Floor
 
@@ -365,7 +462,7 @@ The closet door is closed, lockable, openable, and locked.
 A keypad is a part of the closet door.
 
 Check opening the closet door when the closet door is locked:
-	say "You'll have to enter the correct code on the keypad first." instead;
+	say "[We] will have to enter the correct code on the keypad first." instead;
 	
 Instead of typing doorcode on the keypad:
 	say "An indicator light glows green.";
@@ -378,10 +475,10 @@ Does the player mean typing a number on the keypad:
 	it is very likely.
 	
 Check unlocking keylessly the closet door:
-	say "You'll have to enter the correct code on the keypad." instead;
+	say "[We] will have to enter the correct code on the keypad." instead;
 	
 Check unlocking the closet door with something:
-	say "You'll have to enter the correct code on the keypad instead." instead;
+	say "[We] will have to enter the correct code on the keypad instead." instead;
 
 The brass key is on the shelf.
 The shelf is scenery in the maintenance closet.
@@ -409,20 +506,27 @@ Volume 9 - Prettiness
 Book 1 - Moving Between Rooms 
  
 Table of Transitions
-source room (a room)	target room (a room)	transition text (a text)
-speeder dock	entry doorway	"[We] [approach] the Viking Building entryway, the dramatic façade towering over [us]."
-entry doorway	lobby	"[We] [enter] the lobby warily, alert to any defenses."
+source room (a room)	target room (a room)	transition text (a text)	shown (a number)
+speeder dock	entry doorway	"[We] [approach] the Viking Building entryway, the dramatic façade towering over [us]."	--
+entry doorway	lobby	"[We] passes through the revolving door and into the lobby, alert to any defenses."
+the Cybernetica office	ledge	"[We] climbs out the window."
 
 To decide which text is the transition for (source - a room) to (target - a room):
 	repeat through the Table of Transitions:
-		if (source room entry is source) and (target room entry is target):
+		if (source room entry is source) and (target room entry is target) and there is no shown entry:
 			decide on transition text entry;
 	decide on "none";
+	
+To mark transition text for (source - a room) to (target - a room) as used:
+	repeat through the Table of Transitions:
+		if (source room entry is source) and (target room entry is target) and there is no shown entry:
+			now shown entry is 1;
 
 After going from a room (called R1) to a room (called R2): 
 	let transition text be the transition for R1 to R2;
 	if transition text is not "none":
 		say "[transition text][paragraph break]";
+		mark transition text for R1 to R2 as used;
 	continue the action;
 	
 Book 2 - Points Banner
