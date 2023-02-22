@@ -39,26 +39,56 @@ Plus she'll get to meet Europa Callisto. That'll be totally sweet.
  _____________________________/ 
 
 An Interactive Fiction by Philip Riley
-Release 1 / Serial number 230221 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 1 / Serial number 230222 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 A sleek dark red speeder roars into the speeder dock of the Viking Building. A tall, strong, dark-brown-skinned woman in a battle-ready jumpsuit climbs out of it.
 
 Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
 
-Jones's speeder, Galaxy One, sits in one of the parking bays
+Jones's speeder, Galaxy One, sits in one of the parking bays.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3067"></child>
+        <children><child nodeId="node-4096"></child>
+            <child nodeId="node-4118"></child>
+            <child nodeId="node-4094"></child>
+            <child nodeId="node-3067"></child>
             <child nodeId="node-3142"></child>
             <child nodeId="node-3635"></child>
             <child nodeId="node-3113"></child>
             <child nodeId="node-3656"></child>
             <child nodeId="node-3705"></child>
             <child nodeId="node-3147"></child>
+            <child nodeId="node-4085"></child>
             <child nodeId="node-3115"></child>
             <child nodeId="node-2816"></child>
+            <child nodeId="node-4074"></child>
         </children>
+    </item>
+    <item nodeId="node-4074">
+        <command xml:space="preserve">x speeder</command>
+        <result xml:space="preserve">Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4075"></child>
+        </children>
+    </item>
+    <item nodeId="node-4075">
+        <command xml:space="preserve">x arcx</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4076"></child>
+        </children>
+    </item>
+    <item nodeId="node-4076">
+        <command xml:space="preserve">x arcs</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2816">
         <command xml:space="preserve">x red stone</command>
@@ -233,9 +263,9 @@ Galaxy Jones is in the lobby. The ground floor of the Viking Building is breatht
     </item>
     <item nodeId="node-2834">
         <command xml:space="preserve">green</command>
-        <result xml:space="preserve">Jones sticks her head out from behind the desk and squeezes off a shot at the green guard robot. In her haste it goes wide of the target.
+        <result xml:space="preserve">Jones's shot hits the green guard robot dead on, but nothing happens, almost as if the robot had absorbed the energy.
 
-The robots intone "Destroy Jones" in an eerie drone.
+Zip! Disruptor fire scorches a nearby couch.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -244,7 +274,9 @@ The robots intone "Destroy Jones" in an eerie drone.
     </item>
     <item nodeId="node-2835">
         <command xml:space="preserve">fire pistol at green robot</command>
-        <result xml:space="preserve">Oof. Big miss.
+        <result xml:space="preserve">Jones sticks her head out from behind the desk and squeezes off a shot at the green guard robot. In her haste it goes wide of the target.
+
+The two robots coordinate fire over the desk, narrowly missing her.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -255,6 +287,8 @@ The robots intone "Destroy Jones" in an eerie drone.
         <command xml:space="preserve">fire pistol at green robot</command>
         <result xml:space="preserve">A perfect shot! Yet, somehow, the robot is unscathed.
 
+The robots intone "Destroy Jones" in an eerie drone.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2837"></child>
@@ -262,9 +296,7 @@ The robots intone "Destroy Jones" in an eerie drone.
     </item>
     <item nodeId="node-2837">
         <command xml:space="preserve">fire pistol at red robot</command>
-        <result xml:space="preserve">A barrage of fire from the robots prevents Jones from firing.
-
-The red robot fires a blistering shot into the front desk.
+        <result xml:space="preserve">Jones's shot hits the red guard robot dead on, but nothing happens, almost as if the robot had absorbed the energy.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -284,7 +316,7 @@ The red robot fires a blistering shot into the front desk.
         <command xml:space="preserve">green</command>
         <result xml:space="preserve">Jones thinks twice and decides not to throw it after all.
 
-The robots intone "Destroy Jones" in an eerie drone.
+Zip! Disruptor fire scorches a nearby couch.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -305,8 +337,6 @@ The robots intone "Destroy Jones" in an eerie drone.
         <result xml:space="preserve">(the disruptor pistol)
 A compact instrument of death, with only one setting: kill.
 
-The two robots coordinate fire over the desk, narrowly missing Jones.
-
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2842"></child>
@@ -316,7 +346,7 @@ The two robots coordinate fire over the desk, narrowly missing Jones.
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
 
-Zip! Disruptor fire scorches a nearby couch.
+The green robot tries to flank her, but a shot from her disruptor sends it scurrying back.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -325,7 +355,9 @@ Zip! Disruptor fire scorches a nearby couch.
     </item>
     <item nodeId="node-2843">
         <command xml:space="preserve">x couch</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">Quite tasteful for a homicidal madman, really.
+
+The two robots coordinate fire over the desk, narrowly missing Jones.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -336,9 +368,7 @@ Zip! Disruptor fire scorches a nearby couch.
         <command xml:space="preserve">look</command>
         <result xml:space="preserve">Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture.
 
-Red and green guard robots criss-cross the lobby, stalking Jones.
-
-The green robot fires a blistering shot into the front desk.
+The guard robots, red and green, have their head cannons trained on the front desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -349,7 +379,7 @@ The green robot fires a blistering shot into the front desk.
         <command xml:space="preserve">x desk</command>
         <result xml:space="preserve">There's not much on the desk other than a note that says "0".
 
-The red robot fires a blistering shot into the front desk.
+The red robot tries to flank Jones, but a shot from her disruptor sends it scurrying back.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -359,6 +389,8 @@ The red robot fires a blistering shot into the front desk.
     <item nodeId="node-2846">
         <command xml:space="preserve">x sculpture</command>
         <result xml:space="preserve">It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan. It's held up by metal cables.
+
+The green robot fires a blistering shot into the front desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -396,223 +428,17 @@ The red robot fires a blistering shot into the front desk.
         <command xml:space="preserve">red</command>
         <result xml:space="preserve">You'll need to specify how Jones should attack the red guard robot. For instance, you might say "shoot the red guard robot with the disruptor pistol".
 
-Zip! Disruptor fire scorches a nearby couch.
-
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2851"></child>
-            <child nodeId="node-3960"></child>
         </children>
-    </item>
-    <item nodeId="node-3960">
-        <command xml:space="preserve">take</command>
-        <result xml:space="preserve">(the note)
-Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3961"></child>
-        </children>
-    </item>
-    <item nodeId="node-3961">
-        <command xml:space="preserve">take</command>
-        <result xml:space="preserve">What should Jones take?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3962"></child>
-        </children>
-    </item>
-    <item nodeId="node-3962">
-        <command xml:space="preserve">red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-One of the robots fires directly above her head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4001"></child>
-        </children>
-    </item>
-    <item nodeId="node-4001">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4002"></child>
-        </children>
-    </item>
-    <item nodeId="node-4002">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4003"></child>
-        </children>
-    </item>
-    <item nodeId="node-4003">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-The red robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4004"></child>
-        </children>
-    </item>
-    <item nodeId="node-4004">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4005"></child>
-        </children>
-    </item>
-    <item nodeId="node-4005">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-The green robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4006"></child>
-        </children>
-    </item>
-    <item nodeId="node-4006">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-The red robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4007"></child>
-        </children>
-    </item>
-    <item nodeId="node-4007">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-The red robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4008"></child>
-        </children>
-    </item>
-    <item nodeId="node-4008">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4009"></child>
-        </children>
-    </item>
-    <item nodeId="node-4009">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-The green robot tries to flank Jones, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4010"></child>
-        </children>
-    </item>
-    <item nodeId="node-4010">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4011"></child>
-        </children>
-    </item>
-    <item nodeId="node-4011">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-The robots intone "Destroy Jones" in an eerie drone.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4012"></child>
-        </children>
-    </item>
-    <item nodeId="node-4012">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4013"></child>
-        </children>
-    </item>
-    <item nodeId="node-4013">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-The green robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4014"></child>
-        </children>
-    </item>
-    <item nodeId="node-4014">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-One of the robots fires directly above Jones's head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4015"></child>
-        </children>
-    </item>
-    <item nodeId="node-4015">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-The green robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4016"></child>
-        </children>
-    </item>
-    <item nodeId="node-4016">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-Zip! Disruptor fire scorches a nearby couch.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4017"></child>
-        </children>
-    </item>
-    <item nodeId="node-4017">
-        <command xml:space="preserve">take red robot</command>
-        <result xml:space="preserve">An interesting idea.
-
-The green robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2851">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">Jones is carrying:
   a disruptor pistol
 
-The green robot tries to flank her, but a shot from her disruptor sends it scurrying back.
+The two robots coordinate fire over the desk, narrowly missing her.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -631,6 +457,44 @@ The green robot tries to flank her, but a shot from her disruptor sends it scurr
  _____________________________/ 
 
 [Your score has just gone up by one point.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4070"></child>
+        </children>
+    </item>
+    <item nodeId="node-4070">
+        <command xml:space="preserve">x ruin</command>
+        <result xml:space="preserve">Jones digs through the ruins and finds a thingy, which she takes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4071"></child>
+        </children>
+    </item>
+    <item nodeId="node-4071">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4072"></child>
+        </children>
+    </item>
+    <item nodeId="node-4072">
+        <command xml:space="preserve">x remains</command>
+        <result xml:space="preserve">Jones searches some more, but nothing further turns up.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4073"></child>
+        </children>
+    </item>
+    <item nodeId="node-4073">
+        <command xml:space="preserve">x sculpture</command>
+        <result xml:space="preserve">Jones searches some more, but nothing further turns up.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -867,6 +731,22 @@ Jones's speeder, Galaxy One, sits in one of the parking bays
 Galaxy
 
 [examining Jones - succeeded]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4085">
+        <command xml:space="preserve">x mars</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4086"></child>
+        </children>
+    </item>
+    <item nodeId="node-4086">
+        <command xml:space="preserve">x new reykjavik</command>
+        <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1272,6 +1152,7 @@ Galaxy Jones is in the lobby. The ground floor of the Viking Building is breatht
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3069"></child>
+            <child nodeId="node-4089"></child>
             <child nodeId="node-4020"></child>
             <child nodeId="node-3076"></child>
         </children>
@@ -1811,6 +1692,63 @@ One of the robots fires directly above Jones's head.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4089">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4090"></child>
+        </children>
+    </item>
+    <item nodeId="node-4090">
+        <command xml:space="preserve">look outside</command>
+        <result xml:space="preserve">Jones sees nothing unexpected in that direction.
+
+Zip! Disruptor fire scorches a nearby couch.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4091"></child>
+        </children>
+    </item>
+    <item nodeId="node-4091">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">(with the disruptor pistol)
+Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4092"></child>
+        </children>
+    </item>
+    <item nodeId="node-4092">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red desolation of Mars beyond the window.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4093"></child>
+        </children>
+    </item>
+    <item nodeId="node-4093">
+        <command xml:space="preserve">look outside</command>
+        <result xml:space="preserve">(New Reykjavik)
+foooooo
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-3069">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
@@ -1818,6 +1756,7 @@ One of the robots fires directly above Jones's head.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3070"></child>
+            <child nodeId="node-4080"></child>
             <child nodeId="node-4029"></child>
         </children>
     </item>
@@ -1859,6 +1798,60 @@ The red robot fires a blistering shot into the front desk.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4080">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">(with the disruptor pistol)
+Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4081"></child>
+        </children>
+    </item>
+    <item nodeId="node-4081">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red desolation of Mars beyond the window.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4082"></child>
+        </children>
+    </item>
+    <item nodeId="node-4082">
+        <command xml:space="preserve">x waterfall</command>
+        <result xml:space="preserve">The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. There is a coin in the basin.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4083"></child>
+        </children>
+    </item>
+    <item nodeId="node-4083">
+        <command xml:space="preserve">take coin</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4084"></child>
+        </children>
+    </item>
+    <item nodeId="node-4084">
+        <command xml:space="preserve">x waterfall</command>
+        <result xml:space="preserve">The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-3070">
         <command xml:space="preserve">fire pistol at guard</command>
         <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
@@ -1889,6 +1882,264 @@ The red robot fires a blistering shot into the front desk.
     <item nodeId="node-3073">
         <command xml:space="preserve">fire pistol at robots</command>
         <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4094">
+        <command xml:space="preserve">look outside</command>
+        <result xml:space="preserve">(New Reykjavik)
+foooooo
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4095"></child>
+        </children>
+    </item>
+    <item nodeId="node-4095">
+        <command xml:space="preserve">x planet</command>
+        <result xml:space="preserve">foooooo
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4118">
+        <command xml:space="preserve">gonear tenth</command>
+        <result xml:space="preserve">Galaxy Jones is on the tenth floor. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4119"></child>
+        </children>
+    </item>
+    <item nodeId="node-4119">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the south side of the Sirius Cybernetics office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4120"></child>
+        </children>
+    </item>
+    <item nodeId="node-4120">
+        <command xml:space="preserve">look outside</command>
+        <result xml:space="preserve">Jones sees nothing unexpected in that direction.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4121"></child>
+        </children>
+    </item>
+    <item nodeId="node-4121">
+        <command xml:space="preserve">x sity</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4122"></child>
+        </children>
+    </item>
+    <item nodeId="node-4122">
+        <command xml:space="preserve">x city</command>
+        <result xml:space="preserve">Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking building stands near the periphery, overlooking the vast red plain of Utopia Planitia.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4096">
+        <command xml:space="preserve">gonear ledge</command>
+        <result xml:space="preserve">Galaxy Jones is on a ledge. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4099"></child>
+            <child nodeId="node-4097"></child>
+        </children>
+    </item>
+    <item nodeId="node-4097">
+        <command xml:space="preserve">x down</command>
+        <result xml:space="preserve">(Perilous view of New Reykjavik)
+From Jones's perilous location, outside the comforting electrostatic field trapping the atmosphere of the building, she can see with striking clarity the lights of the city. The surrounding plains go on forever.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4099">
+        <command xml:space="preserve">look down</command>
+        <result xml:space="preserve">(the city)
+From Jones's perilous location, outside the comforting electrostatic field trapping the atmosphere of the building, she can see with striking clarity the lights of the city. The surrounding plains go on forever.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4100"></child>
+        </children>
+    </item>
+    <item nodeId="node-4100">
+        <command xml:space="preserve">gonear sirius-1</command>
+        <result xml:space="preserve">There seems to be no such object anywhere in the model world.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4101"></child>
+        </children>
+    </item>
+    <item nodeId="node-4101">
+        <command xml:space="preserve">gonear sirius north</command>
+        <result xml:space="preserve">There seems to be no such object anywhere in the model world.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4102"></child>
+        </children>
+    </item>
+    <item nodeId="node-4102">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4103"></child>
+        </children>
+    </item>
+    <item nodeId="node-4103">
+        <command xml:space="preserve">gonear tenth</command>
+        <result xml:space="preserve">Galaxy Jones is on the tenth floor. 
+
+Jones doffs the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4104"></child>
+        </children>
+    </item>
+    <item nodeId="node-4104">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the south side of the Sirius Cybernetics office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4105"></child>
+        </children>
+    </item>
+    <item nodeId="node-4105">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the tenth floor. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4106"></child>
+        </children>
+    </item>
+    <item nodeId="node-4106">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4107"></child>
+        </children>
+    </item>
+    <item nodeId="node-4107">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4108"></child>
+        </children>
+    </item>
+    <item nodeId="node-4108">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4109"></child>
+        </children>
+    </item>
+    <item nodeId="node-4109">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4110"></child>
+        </children>
+    </item>
+    <item nodeId="node-4110">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the south side of the Sirius Cybernetics office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4111"></child>
+        </children>
+    </item>
+    <item nodeId="node-4111">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southwest corner of the Sirius Cybernetics office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4112"></child>
+        </children>
+    </item>
+    <item nodeId="node-4112">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the west side of the Sirius Cybernetics office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4113"></child>
+        </children>
+    </item>
+    <item nodeId="node-4113">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the northwest corner of the Sirius Cybernetics office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4114"></child>
+        </children>
+    </item>
+    <item nodeId="node-4114">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Sirius Cybernetics office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4115"></child>
+        </children>
+    </item>
+    <item nodeId="node-4115">
+        <command xml:space="preserve">gonear sirius south</command>
+        <result xml:space="preserve">There seems to be no such object anywhere in the model world.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4116"></child>
+        </children>
+    </item>
+    <item nodeId="node-4116">
+        <command xml:space="preserve">x city</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4117"></child>
+        </children>
+    </item>
+    <item nodeId="node-4117">
+        <command xml:space="preserve">x outside</command>
+        <result xml:space="preserve">Jones sees nothing unexpected in that direction.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

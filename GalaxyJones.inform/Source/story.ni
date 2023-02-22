@@ -379,13 +379,48 @@ Instead of shooting yourself with something:
 	
 Volume 7 - Room Implementations
 
-Book 1 - Ground Floor
+Book 1 - City Backdrops
+
+First floor view of New Reykjavik is a backdrop. It is privately-named. It is in speeder dock, lobby,
+	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7.
+	
+The printed name is "outside".
+
+The description is "Outside the building are the red-dusted streets of New Reykjavik."
+
+Understand "city/planet/mars/outside/out" as first floor view of New Reykjavik.
+
+Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in south end of the Microthings office, north end of the Microthings office, ninth floor south hallway, ninth floor north hallway, Martian Chronicle office, Cybernetica office.
+
+The printed name is "outside".
+
+The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
+	
+Understand "city/planet/mars/outside/out" as ninth floor view of New Reykjavik.
+
+Perilous view of New Reykjavik is a backdrop. It is privately-named. It is in ledge, window washing scaffold.
+
+The printed name is "the city".
+
+The description is "From this perilous location, outside the comforting electrostatic field trapping the atmosphere of the building, one can see with striking clarity the lights of the city. The surrounding plains go on forever."
+
+Understand "city/planet/mars/down" as perilous view of New Reykjavik.
+
+Tenth floor view of New Reykjavik is a backdrop. It is privately-named. It is in sirius-1, sirius-2, sirius-3, sirius-4, sirius-5, sirius-6, sirius-7, sirius-8.
+
+The printed name is "outside".
+
+The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
+
+Understand "city/planet/mars/outside/out" as tenth floor view of New Reykjavik.
+
+Book 2 - Ground Floor
 
 Chapter 1 -  Speeder Dock
 
 The description of the speeder dock is "A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.".
 
-The speeder-vehicle is a fixed in place thing in the speeder dock. It is privately-named. The printed name is "speeder". Understand "speeder/vehicle/car/landspeeder/galaxy/one" as speeder-vehicle. "[Our] speeder, Galaxy One, sits in one of the parking bays".
+The speeder-vehicle is a fixed in place thing in the speeder dock. It is privately-named. The printed name is "speeder". Understand "speeder/vehicle/car/landspeeder/galaxy/one" as speeder-vehicle. "[Our] speeder, Galaxy One, sits in one of the parking bays.".
 The description is "Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.".
 
 Check taking the speeder-vehicle:
@@ -395,7 +430,7 @@ Some windows are part of the speeder-vehicle. The description is "The tint is to
 
 Some turbines are part of the speeder-vehicle. The description is "The engines cause [us] to recoil from the waves of heat rolling off of them." Understand "engines/thrusters/turbine/engine/thruster" as turbines.
  
-Some wings are part of the speeder-vehicle. The description is "Not technically necessary as the speeder works via anti-gravity, the blade-like wings nonetheless give the vehicle a certain flair unobtainable by other means.".
+Some wings are part of the speeder-vehicle. The description is "Not technically necessary as the speeder works via anti-gravity, the blade-like wings nonetheless give the vehicle a certain flair unobtainable by other means.". Understand "arcs" as wings.
 
 Some parking bays are scenery in the speeder dock. Understand "bay/spots/spot/places/place" as parking bays. "Most of the parking bays are unfilled."
 
@@ -454,7 +489,11 @@ The couch is a scenery enterable supporter in the lobby. "Quite tasteful for a h
 	
 Chapter 4 - Ground Floor
 
-The description of ground-floor-1 is "A lush waterfall here contrasts with the dusty red desolation of Mars beyond the window.".
+The description of ground-floor-1 is "A lush waterfall here contrasts with the dusty red desolation of Mars beyond the window."
+
+The waterfall is a scenery pseudocontainer in ground-floor-1. "The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again." The contents description is "The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin." 
+
+The coin is in the waterfall. The description is "A 1 Areo coin, with Ares on the front and the Viking 2 lander on the back.".
 
 Chapter 5 - Maintenance Closet
 
