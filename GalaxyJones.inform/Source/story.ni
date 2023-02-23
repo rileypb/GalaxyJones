@@ -1,7 +1,9 @@
-"Galaxy Jones" by Philip Riley
+"Galaxy Jones" by Phil Riley
 
 Include Basic Screen Effects by Emily Short.
 Include Deluxe Doors by Emily Short.
+
+Include Exit Lister by Eric Eve.
 
 Include Galaxy Banner by Philip Riley.
 Include Third Person Narration by Philip Riley.
@@ -17,19 +19,27 @@ To continue:
 		say paragraph break;
 		wait for any key;
 
+Table of New Exit Status
+left	central (text)	right
+"[location-title-case]"	""	"[score] points"
+""	"[exit list]"	""
+
+when play begins:
+	now status exit table is Table of New Exit Status;
+
 To start header style:
 	(- VM_Style(HEADER_VMSTY); -)
 	
 Before printing the banner text:
-	if the screen width is less than 64:
-		start header style;
+	if the screen width is less than 0:
+		start header style; 
 		say "Galaxy Jones[line break]";
 	otherwise:
 		print the galaxy banner;	
 		say line break;
 		
 After printing the banner text:
-	say "[line break]A sleek dark red speeder roars into the speeder dock of the Viking Building. A tall, strong, dark-brown-skinned woman in a battle-ready jumpsuit climbs out of it.";
+	say "[line break]A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it.";
 
 Include (-
 [ Banner;
@@ -64,14 +74,17 @@ To say location-title-case:
 	let L be the substituted form of "[location]" for comparison purposes;
 	say "[L in title case]";
 
-When play begins:
+[When play begins:
 	now the left hand status line is "[location-title-case]";
-	now the right hand status line is "[score] points";
+	now the right hand status line is "[score] points";]
 
 Use scoring.
 Use the serial comma.
 
 The room of stuff is a room.
+
+Instead of going nowhere:
+	     say "You can't go that way. [list the exits]";
 
 Section 1 - Special text substitution code
 
@@ -84,6 +97,7 @@ Include (-
     return to;
 ];
 -).
+
 To decide what text is the substituted form of (T - text) for comparison purposes:
     (- SubstituteForComparison({-new:text}, {-by-reference:T}) -).
 
@@ -112,6 +126,11 @@ Check typing a number on something:
 	
 Volume 3 - Plot
 
+Intro is a truth state that varies. Intro is initially true.
+
+Rule for constructing the status line while Intro is true:
+	do nothing;
+
 When play begins:
 	say "The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.[paragraph break]";
 	say "'Yes?' she says in a voice thick with sleep.[paragraph break]";
@@ -126,6 +145,7 @@ When play begins:
 	say "Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems, hostage. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in downtown New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's no-doubt impending demise. The Admiral has invited Ms Jones most cordially to break into his building and attempt a rescue.[paragraph break]";
 	say "'Oh I will,' Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.[paragraph break]";
 	say "Plus she'll get to meet Europa Callisto. That'll be totally sweet.[paragraph break]";
+	now Intro is false;
 	continue;
 
 Lobby Shootout is a scene. Lobby Shootout begins when the player is in the lobby for three turns.
@@ -165,6 +185,7 @@ Does the player mean shooting something carried by the player with something:
 	
 The Atmo-Suit is a wearable thing. "There is an Atmo-Suit hanging from a hook here."
 The description is "The Atmo-Suit is a pressure suit ideal for outside work in thin atmospheres like that of Mars."
+Understand "atmo/suit/vacuum/atmosphere/pressure" as the Atmo-Suit.
 
 The doorcode is a number that varies.
 
@@ -215,6 +236,8 @@ Check taking a guard robot:
 
 Instead of attacking an enemy thing:
 	say "You'll need to specify how [we] should attack [the noun]. For instance, you might say 'shoot [the noun] with [the disruptor pistol]'." 
+	
+A couch is a kind of enterable supporter. It is usually scenery.
 
 Volume 5 - Geography
 
@@ -246,10 +269,12 @@ ground-floor-1 is west of Lobby. It is a ground-floor. The dir is southwest.  Th
 
 ground-floor-2 is north of ground-floor-1. It is a ground-floor. The dir is west. The preposition is "on".
 
-the elevator-room-door is a door. It is privately-named. The printed name is "elevator room door". Understand "elevator/room/door" as elevator-room-door. It is east of ground-floor-2. Through the elevator-room-door is the elevator room.
+the elevator-room-door is a door. It is privately-named. It is scenery. The printed name is "utility door". Understand "elevator/room/door/utility" as elevator-room-door. It is east of ground-floor-2. Through the elevator-room-door is the elevator room.
 the elevator-room-door is closed, locked, lockable and openable. It has matching key the brass key.
+The description is "It's a white metal door, completely typical. It has a keyed lock right above the handle.".
 
-the elevator-room-door-inside is a door. It is privately-named. The printed name is "elevator room door". Understand "elevator/room/door" as elevator-room-door-inside. It is west of the elevator room. The elevator-room-door-inside is a half-door of the elevator-room-door. Through the elevator-room-door-inside is ground-floor-2.
+the elevator-room-door-inside is a door. It is privately-named. It is scenery. The printed name is "elevator room door". Understand "elevator/room/door" as elevator-room-door-inside. It is west of the elevator room. The elevator-room-door-inside is a half-door of the elevator-room-door. Through the elevator-room-door-inside is ground-floor-2.
+The description is "It's a white metal door, completely typical. It has a keyed lock right above the handle.".
 
 ground-floor-3 is north of ground-floor-2. It is a ground-floor. The dir is northwest. The preposition is "at".
 
@@ -394,7 +419,7 @@ Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in
 
 The printed name is "outside".
 
-The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
+The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking Building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
 	
 Understand "city/planet/mars/outside/out" as ninth floor view of New Reykjavik.
 
@@ -447,7 +472,7 @@ The description of the entry door is "A glass revolving door emblazoned with the
 
 Chapter 3 - Lobby
 
-The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. Above it floats, suspended on almost invisible cables, a giant crystal sculpture[end if].".
+The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. Above it floats, suspended on almost invisible cables, a giant crystal sculpture[end if]. You may go east and west from here, north to the elevators, or south out of the building.".
 
 The front desk is scenery in the lobby. It is a pseudocontainer. The contents description is "There's not much on the desk other than a note that says '[doorcode]'.". "There is nothing of interest on the front desk." 
 The note is in the front desk. The description is "The note says '[doorcode]'.".
@@ -485,15 +510,74 @@ jumping is acting recklessly.
 Instead of acting recklessly during Lobby Shootout:
 	say "As soon as [we] [start] to act, an energy beam zips past [our] head, forcing [us] back down behind the desk.";
 	
-The couch is a scenery enterable supporter in the lobby. "Quite tasteful for a homicidal madman, really."
+The tasteful couch is a couch in the lobby. "Quite tasteful for a homicidal madman, really."
 	
 Chapter 4 - Ground Floor
 
-The description of ground-floor-1 is "A lush waterfall here contrasts with the dusty red desolation of Mars beyond the window."
+Section 1 - ground-floor-1
+
+The description of ground-floor-1 is "A lush waterfall here contrasts with the dusty red desolation of Mars beyond the window. The ground floor extends north and east."
 
 The waterfall is a scenery pseudocontainer in ground-floor-1. "The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again." The contents description is "The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin." 
 
-The coin is in the waterfall. The description is "A 1 Areo coin, with Ares on the front and the Viking 2 lander on the back.".
+The coin is in the waterfall. The description is "A One Areo coin, with Ares on the front and the Viking 2 lander on the back.".
+
+Section 2 - ground-floor-2
+
+The description of ground-floor-2 is "Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door."
+
+The east semicircular couch is a couch in ground-floor-2. The description is "An inoffensive beige couch, shaped in a half-circle, opening towards the west.".
+The west semicircular couch is a couch in ground-floor-2. The description is "An inoffensive beige couch, shaped in a half-circle, opening towards the east.".
+
+The central carpeted path is scenery in ground-floor-2. The description is "A strip of grey carpet running north to south, in the midst of the marble floor. (Incidentally, the massive expense of moving real marble from Earth to the Mars is just further proof of Thallium's madness, seriously.)";
+
+The ground floor central pillar is a backdrop. It is in lobby,
+	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7.
+The description is "The central area where the elevators and utility rooms are."
+
+Section 3 - ground-floor-3
+
+The description of ground-floor-3 is "A large relief map of mars is mounted on the north wall here. One can leave here to the south or east.".
+
+The large relief map of mars is scenery in ground-floor-3. "The map is crafted of bronze and sports a star at the site of New Reykjavik.";
+
+Section 4 - ground-floor-4
+
+The description of ground-floor-4 is "The area is dominated by a towering statue of Admiral Thallium. The ground floor extends west and east from here. The elevator is to the south."
+
+The statue of admiral thallium is scenery in ground-floor-4. The description is "His nauseating visage seems to leer at [us], and [we] suppresses a shiver of disgust.".
+
+Section 5 - ground-floor-5
+
+The description of ground-floor-5 is "The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet.".
+
+Some military-detritus are scenery pseudocontainer in ground-floor-5. They are privately-named. The printed name is "medals, ribbons, and all". Understand "uniforms/uniform/medals/medal/ribbons/ribbon/miscellanea/showcases" as military-detritus.
+The contents description is "[We] yawns looking over the assortment of faux honors. They're all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.".
+"There's a remarkable array of faux honors here, all behind glass. One of the display cases is partly open and empty of the medal it once held."
+
+The garish medal is in the military-detritus.
+
+
+Section  6- ground-floor-6
+
+The description of ground-floor-6 is "Apparently some kind of function was happening here before Admiral Thallium commandeered the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west."
+
+The catering table is a scenery pseudocontainer in ground-floor-6. "The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.". 
+The catering table contains a fork. The catering table contains a shrimp tea sandwich. The catering table contains poached ostrich eggs in jelly.
+Understand "silverware/forks" as the fork.
+Understand "canape" as the shrimp tea sandwich.
+The shrimp tea sandwich is edible.
+
+Check eating the shrimp tea sandwich:
+	say "You're not hungry." instead;
+
+Check taking the poached ostrich eggs: 
+	say "Don't even." instead; 
+	
+
+Section 7 - ground-floor-7
+
+The description of ground-floor-7 is "".
 
 Chapter 5 - Maintenance Closet
 
@@ -532,7 +616,11 @@ The drop key is in the elevator room.
 
 Chapter 8 - Ground Floor Stairwell
 
-Chapter 9 - Ground Floor Elevator Shaft
+Book 3 - Elevator Shaft
+
+Book 4 - Ninth Floor
+
+Book 5 - Tenth Floor
 
 Volume 8 - Language
 

@@ -22,7 +22,7 @@ placeholder [IFID] = "8E621A76-873D-4820-82FC-12FC699572B3"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2023"
 placeholder [TITLE] = "Galaxy Jones"
-placeholder [AUTHOR] = "Philip Riley"
+placeholder [AUTHOR] = "Phil Riley"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
