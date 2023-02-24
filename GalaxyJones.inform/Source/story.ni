@@ -3,6 +3,7 @@
 Include Basic Screen Effects by Emily Short.
 Include Deluxe Doors by Emily Short.
 
+Include Epistemology by Eric Eve.
 Include Exit Lister by Eric Eve.
 
 Include Galaxy Banner by Philip Riley.
@@ -49,7 +50,7 @@ Include (-
 		!TEXT_TY_Say(Story);
 		VM_Style(NORMAL_VMSTY);
 		!new_line;
-		TEXT_TY_Say(Headline);
+		TEXT_TY_Say(Headline); 
 		#ifdef Story_Author;
 		print " by "; TEXT_TY_Say(Story_Author);
 		#endif; ! Story_Author
@@ -84,7 +85,7 @@ Use the serial comma.
 The room of stuff is a room.
 
 Instead of going nowhere:
-	     say "You can't go that way. [list the exits]";
+	     say "[We] can't go that way. [list the exits]";
 
 Section 1 - Special text substitution code
 
@@ -270,7 +271,7 @@ ground-floor-1 is west of Lobby. It is a ground-floor. The dir is southwest.  Th
 ground-floor-2 is north of ground-floor-1. It is a ground-floor. The dir is west. The preposition is "on".
 
 the elevator-room-door is a door. It is privately-named. It is scenery. The printed name is "utility door". Understand "elevator/room/door/utility" as elevator-room-door. It is east of ground-floor-2. Through the elevator-room-door is the elevator room.
-the elevator-room-door is closed, locked, lockable and openable. It has matching key the brass key.
+the elevator-room-door is closed, locked, lockable and openable. It has matching key the red key card.
 The description is "It's a white metal door, completely typical. It has a keyed lock right above the handle.".
 
 the elevator-room-door-inside is a door. It is privately-named. It is scenery. The printed name is "elevator room door". Understand "elevator/room/door" as elevator-room-door-inside. It is west of the elevator room. The elevator-room-door-inside is a half-door of the elevator-room-door. Through the elevator-room-door-inside is ground-floor-2.
@@ -286,7 +287,7 @@ ground-floor-6 is south of ground-floor-5. It is a ground-floor. The dir is east
 
 the closet door is a door. it is west of ground-floor-6. Through the closet door is the maintenance closet. 
 
-the closet-door-inside is a door. It is privately-named. The printed name is "closet door". Understand "closet/door" as the closet-door-inside. It is east of the maintenance closet. Through the closet-door-inside is ground-floor-6. The closet-door-inside is a half-door of the closet door.
+the closet-door-inside is a door. It is privately-named. It is scenery. The printed name is "closet door". Understand "closet/door" as the closet-door-inside. It is east of the maintenance closet. Through the closet-door-inside is ground-floor-6. The closet-door-inside is a half-door of the closet door.
 
 ground-floor-7 is south of ground-floor-6 and east of the lobby. It is a ground-floor. The dir is southeast. The preposition is "at".
 
@@ -472,7 +473,7 @@ The description of the entry door is "A glass revolving door emblazoned with the
 
 Chapter 3 - Lobby
 
-The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. Above it floats, suspended on almost invisible cables, a giant crystal sculpture[end if]. You may go east and west from here, north to the elevators, or south out of the building.".
+The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. Above it floats, suspended on almost invisible cables, a giant crystal sculpture[end if]. [We] may go east and west from here, north to the elevators, or south out of the building.".
 
 The front desk is scenery in the lobby. It is a pseudocontainer. The contents description is "There's not much on the desk other than a note that says '[doorcode]'.". "There is nothing of interest on the front desk." 
 The note is in the front desk. The description is "The note says '[doorcode]'.".
@@ -555,24 +556,33 @@ Some military-detritus are scenery pseudocontainer in ground-floor-5. They are p
 The contents description is "[We] yawns looking over the assortment of faux honors. They're all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.".
 "There's a remarkable array of faux honors here, all behind glass. One of the display cases is partly open and empty of the medal it once held."
 
-The garish medal is in the military-detritus.
+The garish medal is in the military-detritus. It is a pseudocontainer.
+The contents description is "While the front looks authentic, the reverse is engraved with Thallium's personal motto 'Planetas Vincam'. The ribbon conceals a safety pin. It looks like you could remove it if you wanted to.".
+The description is "While the front looks authentic, the reverse is engraved with Thallium's personal motto 'Planetas Vincam'. Earlier [we] removed the safety pin."
+The safety pin is in the garish medal.
+
+Instead of taking off the safety pin when the safety pin is in the garish medal:
+	try taking the safety pin;
 
 
 Section  6- ground-floor-6
 
 The description of ground-floor-6 is "Apparently some kind of function was happening here before Admiral Thallium commandeered the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west."
 
-The catering table is a scenery pseudocontainer in ground-floor-6. "The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.". 
+The catering table is a scenery pseudocontainer in ground-floor-6. "The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.". Understand "canapes", "hors d'oeuvres", "food", "snacks" as the catering table.
 The catering table contains a fork. The catering table contains a shrimp tea sandwich. The catering table contains poached ostrich eggs in jelly.
-Understand "silverware/forks" as the fork.
-Understand "canape" as the shrimp tea sandwich.
-The shrimp tea sandwich is edible.
+Understand "silverware/forks" as the fork. The description of the fork is "A very stylish silver-plated fork.".
+Understand "canape" as the shrimp tea sandwich. The description of shrimp tea sandwich is "Simply delightful."
+The shrimp tea sandwich is edible. The poached ostrich eggs in jelly is edible. The description is "Definitely not to [our] taste."
 
 Check eating the shrimp tea sandwich:
-	say "You're not hungry." instead;
+	say "[We] is not hungry." instead;
 
 Check taking the poached ostrich eggs: 
 	say "Don't even." instead; 
+
+Check eating the poached ostrich eggs: 
+	say "Sorry, no." instead; 
 	
 
 Section 7 - ground-floor-7
@@ -581,8 +591,8 @@ The description of ground-floor-7 is "".
 
 Chapter 5 - Maintenance Closet
 
-The closet door is closed, lockable, openable, and locked.
-A keypad is a part of the closet door.
+The closet door is closed, lockable, openable, and locked. It is scenery. "A typical white metal utility door. Next to it is a keypad with the digits 0-9."
+A keypad is a part of the closet door. The description is "An ordinary numerical keypad."
 
 Check opening the closet door when the closet door is locked:
 	say "[We] will have to enter the correct code on the keypad first." instead;
@@ -603,8 +613,8 @@ Check unlocking keylessly the closet door:
 Check unlocking the closet door with something:
 	say "[We] will have to enter the correct code on the keypad instead." instead;
 
-The brass key is on the shelf.
-The shelf is scenery in the maintenance closet.
+The red key card is on the shelf. The description of the red key card is "A anonymous red card with a magnetic stripe."
+The shelf is scenery in the maintenance closet. The description of the shelf is "A plain white plastic shelf mounted on the wall."
 
 The Atmo-Suit is in the maintenance closet.
 
@@ -635,7 +645,10 @@ Book 1 - Moving Between Rooms
 Table of Transitions
 source room (a room)	target room (a room)	transition text (a text)	shown (a number)
 speeder dock	entry doorway	"[We] [approach] the Viking Building entryway, the dramatic façade towering over [us]."	--
+entry doorway	speeder dock	"[We] slinks back to the speeder dock."
 entry doorway	lobby	"[We] passes through the revolving door and into the lobby, alert to any defenses."
+lobby	entry doorway	"[We] leaves the building."
+lobby	ground-floor-1	"[We] crosses the floor carefully, [disruptor pistol] at the ready."
 the Cybernetica office	ledge	"[We] climbs out the window."
 
 To decide which text is the transition for (source - a room) to (target - a room):

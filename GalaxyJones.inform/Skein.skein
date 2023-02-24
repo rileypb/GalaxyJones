@@ -39,7 +39,7 @@ Plus she'll get to meet Europa Callisto. That'll be totally sweet.
  _____________________________/ 
 
 An Interactive Fiction by Phil Riley
-Release 1 / Serial number 230222 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 1 / Serial number 230223 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it.
 
@@ -49,10 +49,10 @@ Jones's speeder, Galaxy One, sits in one of the parking bays.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4837"></child>
+        <children><child nodeId="node-5103"></child>
         </children>
     </item>
-    <item nodeId="node-4837">
+    <item nodeId="node-5103">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
 
@@ -60,31 +60,30 @@ Galaxy Jones is at the entry doorway. A glass revolving door leads into a large 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4838"></child>
-            <child nodeId="node-4850"></child>
+        <children><child nodeId="node-5104"></child>
         </children>
     </item>
-    <item nodeId="node-4850">
+    <item nodeId="node-5104">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">Jones passes through the revolving door and into the lobby, alert to any defenses.
 
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. You may go east and west from here, north to the elevators, or south out of the building.
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. She may go east and west from here, north to the elevators, or south out of the building.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4851"></child>
+        <children><child nodeId="node-5105"></child>
         </children>
     </item>
-    <item nodeId="node-4851">
+    <item nodeId="node-5105">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4852"></child>
+        <children><child nodeId="node-5106"></child>
         </children>
     </item>
-    <item nodeId="node-4852">
+    <item nodeId="node-5106">
         <command xml:space="preserve">shoot art</command>
         <result xml:space="preserve">(with the disruptor pistol)
 Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
@@ -100,247 +99,50 @@ Jones fires the disruptor into the sculpture's main support cable, snapping it. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4853"></child>
+        <children><child nodeId="node-5107"></child>
         </children>
     </item>
-    <item nodeId="node-4853">
+    <item nodeId="node-5107">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Galaxy Jones is at the southeast corner of the ground floor. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4869"></child>
-            <child nodeId="node-4854"></child>
+        <children><child nodeId="node-5108"></child>
         </children>
     </item>
-    <item nodeId="node-4854">
+    <item nodeId="node-5108">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium commandeered the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
 
-Also here is a closet door.
-
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4861"></child>
+        <children><child nodeId="node-5109"></child>
         </children>
     </item>
-    <item nodeId="node-4861">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet.
+    <item nodeId="node-5109">
+        <command xml:space="preserve">take canapes</command>
+        <result xml:space="preserve">That's hardly portable.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4862"></child>
+        <children><child nodeId="node-5117"></child>
         </children>
     </item>
-    <item nodeId="node-4862">
-        <command xml:space="preserve">x medals</command>
-        <result xml:space="preserve">It's all behind glass. One of the display cases is partly open and empty of the medal it once held.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4863"></child>
-        </children>
-    </item>
-    <item nodeId="node-4863">
-        <command xml:space="preserve">pronouns</command>
-        <result xml:space="preserve">At the moment, "it" means the closet door, "him" is unset, "her" means Jones, and "them" means the medals, ribbons, and all.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-4869">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">You can't go that way. The obvious exits are north and west (to the lobby).
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4870"></child>
-        </children>
-    </item>
-    <item nodeId="node-4870">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium commandeered the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-Also here is a closet door.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4871"></child>
-        </children>
-    </item>
-    <item nodeId="node-4871">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4872"></child>
-        </children>
-    </item>
-    <item nodeId="node-4872">
-        <command xml:space="preserve">x medals</command>
-        <result xml:space="preserve">Jones yawns looking over the assortment of faux honors. It's all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4890"></child>
-        </children>
-    </item>
-    <item nodeId="node-4890">
-        <command xml:space="preserve">x medals</command>
-        <result xml:space="preserve">Jones yawns looking over the assortment of faux honors. It's all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4891"></child>
-        </children>
-    </item>
-    <item nodeId="node-4891">
-        <command xml:space="preserve">take medal</command>
-        <result xml:space="preserve">(the garish medal)
-Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4892"></child>
-        </children>
-    </item>
-    <item nodeId="node-4892">
-        <command xml:space="preserve">x medal</command>
-        <result xml:space="preserve">(the garish medal)
-There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4893"></child>
-        </children>
-    </item>
-    <item nodeId="node-4893">
-        <command xml:space="preserve">x uniform</command>
-        <result xml:space="preserve">It's all behind glass. One of the display cases is partly open and empty of the medal it once held.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-4838">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">You can't go that way. The obvious exits are north and south (to the speeder dock).
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4839"></child>
-        </children>
-    </item>
-    <item nodeId="node-4839">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. You may go east and west from here, north to the elevators, or south out of the building.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4840"></child>
-        </children>
-    </item>
-    <item nodeId="node-4840">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4841"></child>
-        </children>
-    </item>
-    <item nodeId="node-4841">
-        <command xml:space="preserve">shoot art</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/_/ / / /  __ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ /  / /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /   \____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4842"></child>
-        </children>
-    </item>
-    <item nodeId="node-4842">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Galaxy Jones is at the southeast corner of the ground floor. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4843"></child>
-        </children>
-    </item>
-    <item nodeId="node-4843">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium began his caper, for there is an array of canapes on a catering table here.
-
-Also here is a closet door.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4844"></child>
-        </children>
-    </item>
-    <item nodeId="node-4844">
-        <command xml:space="preserve">x table</command>
+    <item nodeId="node-5117">
+        <command xml:space="preserve">x canapes</command>
         <result xml:space="preserve">The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4845"></child>
+        <children><child nodeId="node-5118"></child>
         </children>
     </item>
-    <item nodeId="node-4845">
-        <command xml:space="preserve">take all</command>
-        <result xml:space="preserve">fork: Taken.
-shrimp tea sandwich: Taken.
-poached ostrich eggs in jelly: Don't even.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4846"></child>
-        </children>
-    </item>
-    <item nodeId="node-4846">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the closet door)
-(first unlocking the closet door)
-Jones will have to enter the correct code on the keypad.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4847"></child>
-        </children>
-    </item>
-    <item nodeId="node-4847">
-        <command xml:space="preserve">eat sandwich</command>
-        <result xml:space="preserve">You're not hungry.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4848"></child>
-        </children>
-    </item>
-    <item nodeId="node-4848">
-        <command xml:space="preserve">eat fork</command>
-        <result xml:space="preserve">That's plainly inedible.
+    <item nodeId="node-5118">
+        <command xml:space="preserve">x canape</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
