@@ -36,6 +36,9 @@ when play begins:
 To start header style:
 	(- VM_Style(HEADER_VMSTY); -)
 	
+To say header style:
+	start header style;
+	
 Before printing the banner text:
 	if the screen width is less than 0:
 		start header style; 
@@ -45,7 +48,7 @@ Before printing the banner text:
 		say line break;
 		
 After printing the banner text:
-	say "[line break]A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it.";
+	say "[line break]A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it: [header style]Galaxy Jones.[roman type][line break]";
 
 Include (-
 [ Banner;
@@ -183,10 +186,12 @@ Beck is a man in the room of stuff.
 Book 2 - Conversation
 
 An object has a text called the conversation.
-An object can be used or unused. An object is usuall unused.
+An object can be used or unused. An object is usually unused.
 
 To converse (T - a text):
+	[say "[unicode 187] [unicode 187] [unicode 187] [unicode 187] [unicode 187] [unicode 187] [line break]";]
 	say "[special-style-1][T][roman type][line break]";
+	[say "[unicode 171] [unicode 171] [unicode 171] [unicode 171] [unicode 171] [unicode 171][paragraph break]";]
 
 report looking:
 	if the conversation of the location is not empty and the location is unused:
@@ -230,6 +235,8 @@ When play begins:
 	now Intro is false;
 	continue;
 
+Book 1 - Lobby Shootout
+
 Lobby Shootout is a scene. Lobby Shootout begins when the player is in the lobby for three turns.
 Lobby Shootout ends when the location of the red guard robot is not the lobby.
 
@@ -258,7 +265,65 @@ Every turn during lobby shootout:
 	if roll is 5:
 		say "The [one of]green[or]red[purely at random] robot fires a blistering shot into the front desk.";
 	if roll is 6:
-		say "The two robots coordinate fire over the desk, narrowly missing [us].";
+		say "The two robots coordinate fire over the desk, narrowly missing [us]."; 
+
+
+Book 2 - Cybernetica Battle		
+
+Cybernetica Battle is a scene. Cybernetica Battle begins when the player is in the Cybernetica office.
+
+When Cybernetica Battle begins:
+	move the purple guard robot to the Cybernetica office;
+	say "As soon as [we] steps into the office, a shot zaps just past [our] nose. [We] dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, [we] takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.";
+	converse "[line break]Jones (whispering): 'We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this [']bot.' 
+	 
+	Beck: 'What's the situation?'
+	
+	Jones: 'I[']m on the floor with desks and chairs all around. The target is a few yards off, coming this way. I might get a shot in, but it might just absorb it anyway.'
+	
+	Beck: 'Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses.'";	
+
+Sneaking up on is an action applying to one thing. Understand "sneak up on [something]" as sneaking up on.
+
+sneak index is a number that varies. The sneak index is initially 3.
+
+check sneaking up on something when the noun is not the purple guard robot:
+	say "There's no sneaking up on that right now." instead;
+	
+carry out sneaking up on the purple guard robot:
+	decrement the sneak index;
+	
+after doing something other than sneaking up on the guard robot during Cybernetica Battle:
+	if sneak index < 3 and the purple guard robot is in the Cybernetica office:
+		increment sneak index;
+		say "The guard robot moves a little farther away from you";
+	
+report sneaking up on the purple guard robot:
+	if sneak index is 2:
+		say "You creep a little ways toward the guard robot.";
+	otherwise if sneak index is 1:
+		say "Slowly, slowly, you get a little closer. Just a little more...";
+	otherwise:
+		say "You're right up next to the robot, crouched beneath a desk. You'll never get a better shot.";
+		
+carry out shooting purple guard robot with the disruptor pistol during Cybernetica Battle:
+	if sneak index > 0:
+		say "[We] raises [our] head and fires wide. The robot fires back. [We] ducks and crawls off among the labyrinth of desks.";
+	otherwise:
+		say "[We] aims the pistol upward under the robot's enhanced armor. [We] flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.";
+	remove the purple guard robot from play;
+	
+Cybernetica Battle ends when purple guard robot is not in the Cybernetica office.
+
+When Cybernetica Battle ends:
+	converse "Jones: 'Better than a video game. '
+	
+	Beck: 'Nice, but don[']t forget to credit your handler.'
+	
+	Jones: 'Yes, yes, thanks for helping me not get killed.'
+	
+	Beck: 'You're welcome.'";
+	increase score by 1;
 
 Volume 6 - Things
 
@@ -314,6 +379,7 @@ A thing can be an enemy.
 A guard robot is a kind of enemy thing. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard" as a guard robot.
 There is a guard robot called the red guard robot. It is undescribed.
 There is a guard robot called the green guard robot. It is undescribed.
+There is a guard robot called the purple guard robot. It is undescribed.
 
 Check taking a guard robot:
 	say "An interesting idea." instead;
@@ -399,19 +465,20 @@ the ninth floor elevator shaft is above the eighth floor elevator shaft.
 
 Book 3 - The Ninth Floor
 
-The ninth floor elevator door is a door. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall.
+The ninth floor elevator door is a door. It is scenery. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall.
 
 The ninth floor north hallway is north of the ninth floor elevator hall.
 
 The ninth floor south hallway is south of the ninth floor elevator hall.
 
-the Cybernetica office is east of ninth floor north hallway.
+The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office.
+The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door.
 
 the Martian Chronicle office is east of ninth floor south hallway.
 
-the north end of the Microthings office is west of ninth floor north hallway. the preposition is "at".
+the north end of the building management office is west of ninth floor north hallway. the preposition is "at".
 
-the south end of the Microthings office is west of ninth floor south hallway and south of the north end of the Microthings office. the preposition is "at".
+the south end of the building managements office is west of ninth floor south hallway and south of the north end of the Microthings office. the preposition is "at".
 
 a ledge is east of the Cybernetica office. The preposition is "on". It is always-indefinite. a ledge is atmo-thin.
 
@@ -421,29 +488,29 @@ Book 4 - The Tenth Floor
 
 the tenth floor is a room. The preposition is "on".
 
-To say sirius office name of (D - a direction):
+To say microthings office name of (D - a direction):
 	if D is north or D is south or D is east or D is west:
-		say "the [dir] side of the Sirius Cybernetics office";
+		say "the [dir] side of the Consolidated Microthings office";
 	otherwise:
-		say "the [dir] corner of the Sirius Cybernetics office";
+		say "the [dir] corner of the Consolidated Microthings office";
 
-A sirius-room is a kind of room. It is privately-named. The printed name is "[sirius office name of dir]". A sirius-room has a direction called dir.
+A microthings-room is a kind of room. It is privately-named. The printed name is "[microthings office name of dir]". A microthings-room has a direction called dir.
  
-sirius-1 is a sirius-room. It is south of the tenth floor. The dir is south. The preposition is "on".
+microthings-1 is a microthings-room. It is south of the tenth floor. The dir is south. The preposition is "on".
  
-sirius-2 is a sirius-room. It is west of sirius-1. The dir is southwest. The preposition is "at".
+microthings-2 is a microthings-room. It is west of microthings-1. The dir is southwest. The preposition is "at".
  
-sirius-3 is a sirius-room. It is north of sirius-2. The dir is west. The preposition is "on".
+microthings-3 is a microthings-room. It is north of microthings-2. The dir is west. The preposition is "on".
  
-sirius-4 is a sirius-room. It is north of sirius-3. The dir is northwest. The preposition is "at".
+microthings-4 is a microthings-room. It is north of microthings-3. The dir is northwest. The preposition is "at".
  
-sirius-5 is a sirius-room. It is east of sirius-4. The dir is north.The preposition is "on".
+microthings-5 is a microthings-room. It is east of microthings-4. The dir is north.The preposition is "on".
  
-sirius-6 is a sirius-room. It is east of sirius-5. The dir is northeast. The preposition is "at".
+microthings-6 is a microthings-room. It is east of microthings-5. The dir is northeast. The preposition is "at".
  
-sirius-7 is a sirius-room. It is south of sirius-6. The dir is east.The preposition is "on".
+microthings-7 is a microthings-room. It is south of microthings-6. The dir is east.The preposition is "on".
  
-sirius-8 is a sirius-room. It is south of sirius-7 and east of sirius-1. The dir is southeast. The preposition is "at".
+microthings-8 is a microthings-room. It is south of microthings-7 and east of microthings-1. The dir is southeast. The preposition is "at".
 
 Book 5 - The Elevator
 
@@ -481,7 +548,7 @@ The description is "From this perilous location, outside the comforting electros
 
 Understand "city/planet/mars/down" as perilous view of New Reykjavik.
 
-Tenth floor view of New Reykjavik is a backdrop. It is privately-named. It is in sirius-1, sirius-2, sirius-3, sirius-4, sirius-5, sirius-6, sirius-7, sirius-8.
+Tenth floor view of New Reykjavik is a backdrop. It is privately-named. It is in microthings-1, microthings-2, microthings-3, microthings-4, microthings-5, microthings-6, microthings-7, microthings-8.
 
 The printed name is "outside".
 
@@ -495,7 +562,7 @@ Chapter 1 -  Speeder Dock
 
 The description of the speeder dock is "A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.".
 
-The conversation of the speeder dock is "[Beck] comes over [our] headset. 'What's going on there? Where are you? Keep me posted.'
+The conversation of the speeder dock is "[reset LPR][Our] handler Beck comes over [our] headset. 'What's going on there? Where are you? Keep me posted.'
 
 [We] replies, 'I[']m in the speeder dock. No movement. What can I expect inside?'
 
@@ -518,13 +585,22 @@ Some parking bays are scenery in the speeder dock. Understand "bay/spots/spot/pl
 Instead of entering the speeder-vehicle:
 	say "[We] has a job to do here.";
 
-The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.". Understand "entry/doorway/entrance/entranceway/facade/façade/red/stone/viking" as building entryway. Understand "exit" as building entryway when the location is the lobby.
+The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.". Understand "entry/doorway/entrance/entranceway/facade/façade/viking" as building entryway. Understand "exit" as building entryway when the location is the lobby.
 	
 Chapter 2 - Building Entryway
 
 The description of the entry doorway is "A glass revolving door leads into a large open space north of here. The speeder dock is to the south.".
 
+The conversation of the entry doorway is "Jones peers upwards at the 100 stories of glass and steel. 'What do you want to bet Thallium's got Europa all the way at the top?'
+
+Beck: 'Oh, no doubt.'";
+
 The description of the entry door is "A glass revolving door emblazoned with the symbol of a Viking kind astride the planet Mars."
+
+Before going from entry doorway to lobby for the first time:
+	converse "Jones takes a deep breath. 'I[']m going in.'
+	
+	Beck replies, 'Be careful, Galaxy.'".
 
 Chapter 3 - Lobby
 
@@ -744,7 +820,7 @@ Instead of typing a number on the keypad for the second time:
 	
 Instead of typing a number on the keypad for the fourth time:
 	say "An indicator light blinks red.";	
-	if closet door has not been unlocked:
+	if closet door has not been unlocked: 
 		converse "[line break]Jones: 'it[']s not [number understood]...'";
 		converse "[line break]Beck: 'Seriously, Jones.'";
 	
@@ -790,6 +866,9 @@ Instead of using the elevator drop key when location is the ground floor elevato
 	
 Instead of using the elevator drop key with the ground floor elevator door:
 	try unlocking the ground floor elevator door with the elevator drop key;
+	
+Does the player mean using the elevator drop key with the elevator drop key:
+	it is very unlikely;
 	
 Instead of using the elevator drop key with the drop-key-hole:
 	try unlocking the ground floor elevator door with the elevator drop key;
@@ -891,6 +970,12 @@ Instead of unlocking the useless elevator doors with something:
 
 Book 4 - Ninth Floor
 
+The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled 'Inspiration Chamber.'".
+
+The description of the Cybernetica door is "This typical wooden office door displays the sign for Cybernetica Inc., a purveyor of game software."
+The description of the Cybernetica door-inside is "This side intentionally left blank.".
+	
+
 Book 5 - Tenth Floor
 
 Volume 9 - Language
@@ -903,7 +988,7 @@ Volume 10 - Prettiness
 
 Book 1 - Moving Between Rooms 
  
-[Table of Transitions
+Table of Transitions
 source room (a room)	target room (a room)	transition text (a text)	shown (a number)
 speeder dock	entry doorway	"[We] [approach] the Viking Building entryway, the dramatic façade towering over [us]."	--
 entry doorway	speeder dock	"[We] slinks back to the speeder dock."
@@ -930,7 +1015,7 @@ After going from a room (called R1) to a room (called R2):
 	if transition text is not "none":
 		say "[transition text][paragraph break]";
 		mark transition text for R1 to R2 as used;
-	continue the action;]
+	continue the action;
 	
 Book 2 - Points Banner
 
@@ -948,4 +1033,6 @@ DEBUG is true.
 
 Volume 12 - Tests
 
-test elevator with "n/n/z/shoot art/e/n/type 0/w/take all/e/s/w/w/n/e/take drop key/w/s/e/n/use drop key with elevator";
+test elevator with "n/n/z/shoot art/e/n/type 0/w/take all/e/s/w/w/n/e/take drop key/w/s/e/n/use drop key with elevator".
+test ninth with "test elevator/w/u/u/u/u/u/u/u/u/e".
+test cybernetica with "test ninth/n/e/sneak up on robot/sneak up on robot/sneak up on robot";
