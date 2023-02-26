@@ -3,6 +3,7 @@
 Include Basic Screen Effects by Emily Short.
 Include Deluxe Doors by Emily Short.
 Include Glulx Text Effects by Emily Short.
+Include Skeleton Keys by Emily Short.
 
 Include Epistemology by Eric Eve.
 Include Exit Lister by Eric Eve.
@@ -139,6 +140,11 @@ Typing it on is an action applying to one number and one thing. Understand "type
 Check typing a number on something:
 	say "[The second noun] can't be typed on.";
 
+Looking behind is an action applying to one thing. Understand "look behind [something]" as looking behind.
+
+Check looking behind:
+	say "[We] finds nothing of note." instead;
+
 Volume 3 - The Player Character
 	
 [Galaxy Jones is a woman in Prison.]
@@ -233,7 +239,7 @@ When play begins:
 	say "'Yes, quite famous, but why would she send a message to me, and why on Mars would she send it through Thallium? But never mind, what's the message?'[paragraph break]";
 	say "Patty can be heard rustling paper. 'Let's see... it's here somewhere. Oh yes, here it is. The message is ['][bold type]Help.[roman type][']'[paragraph break]";
 	continue;
-	say "Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems, hostage. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in downtown New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's inevitable demise. The Admiral has invited Ms Jones most cordially to break into his building and attempt a rescue.[paragraph break]";
+	say "Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems, hostage. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's inevitable demise. The Admiral has invited Ms Jones most cordially to break into his building and attempt a rescue.[paragraph break]";
 	say "'Oh I will,' Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.[paragraph break]";
 	say "Plus she'll get to meet Europa Callisto. That'll be totally sweet.[paragraph break]";
 	now Intro is false;
@@ -306,7 +312,7 @@ After doing something other than sneaking up on the guard robot during Cyberneti
 		say "The guard robot moves a little farther away from [us].";
 		stop the action;
 		
-Shoot out the window is a descriptive clip with conversation "[We] must have poked up [our] shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room."
+Shoot out the window is a descriptive clip with conversation "[We] must have poked up [our] shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out."
 	
 report sneaking up on the purple guard robot:
 	if sneak index is 2:
@@ -403,6 +409,8 @@ Instead of attacking an enemy thing:
 	
 A couch is a kind of enterable supporter. It is usually scenery.
 
+A container can be keyed. A door can be keyed. A container is usually not keyed. A door is usually not keyed.
+
 Volume 7 - Geography
 
 Book 1 - Ground Floor
@@ -485,14 +493,20 @@ The ninth floor north hallway is north of the ninth floor elevator hall.
 
 The ninth floor south hallway is south of the ninth floor elevator hall.
 
-The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office.
+The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable.
 The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door.
 
-the Martian Chronicle office is east of ninth floor south hallway.
+The Inspiration Chamber is south of Cybernetica office.
 
-the north end of the building management office is west of ninth floor north hallway. the preposition is "at".
+The Chronicle door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chronicle office. The Chronicle door is closed, openable, locked, and lockable.
 
-the south end of the building managements office is west of ninth floor south hallway and south of the north end of the building management office. the preposition is "at".
+The north building management door is a door. It is scenery. It is west of the ninth floor north hallway and east of the north end of the building management office.
+
+The preposition of the north end of the building management office is "at".
+
+the south end of the building management office is south of the north end of the building management office.  The preposition is "at".
+
+The south building management door is a door. It is scenery. It is west of the ninth floor south hallway and east of the south end of the building management office.
 
 a ledge is a room. The preposition is "on". It is always-indefinite. a ledge is atmo-thin.
 
@@ -520,11 +534,14 @@ microthings-4 is a microthings-room. It is north of microthings-3. The dir is no
  
 microthings-5 is a microthings-room. It is east of microthings-4. The dir is north.The preposition is "on".
  
-microthings-6 is a microthings-room. It is east of microthings-5. The dir is northeast. The preposition is "at".
- 
-microthings-7 is a microthings-room. It is south of microthings-6. The dir is east.The preposition is "on".
+microthings-7 is a microthings-room. It is southeast of microthings-5. The dir is east.The preposition is "on".
  
 microthings-8 is a microthings-room. It is south of microthings-7 and east of microthings-1. The dir is southeast. The preposition is "at".
+
+the air handling door is a door. It is east of microthings-5 and west of the air handling room. The air handling door is scenery.
+
+The vent access door is a door. It is inside from the air handling room. It is scenery. Through the vent access door is the window washing scaffold.
+
 
 Book 5 - The Elevator
 
@@ -546,7 +563,7 @@ The description is "Outside the building are the red-dusted streets of New Reykj
 
 Understand "city/planet/mars/outside/out" as first floor view of New Reykjavik.
 
-Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in south end of the Microthings office, north end of the Microthings office, ninth floor south hallway, ninth floor north hallway, Martian Chronicle office, Cybernetica office.
+Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in south end of the building management office, north end of the building management office, ninth floor south hallway, ninth floor north hallway, Martian Chronicle office, Cybernetica office.
 
 The printed name is "outside".
 
@@ -562,7 +579,7 @@ The description is "From this perilous location, outside the comforting electros
 
 Understand "city/planet/mars" as perilous view of New Reykjavik.
 
-Tenth floor view of New Reykjavik is a backdrop. It is privately-named. It is in microthings-1, microthings-2, microthings-3, microthings-4, microthings-5, microthings-6, microthings-7, microthings-8.
+Tenth floor view of New Reykjavik is a backdrop. It is privately-named. It is in microthings-1, microthings-2, microthings-3, microthings-4, microthings-5, microthings-7, microthings-8.
 
 The printed name is "outside".
 
@@ -576,7 +593,7 @@ Chapter 1 -  Speeder Dock
 
 The description of the speeder dock is "A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.".
 
-The conversation of the speeder dock is "[reset LPR][Our] handler Beck comes over [our] headset. 'What's going on there? Where are you? Keep me posted.'
+The conversation of the speeder dock is "[reset LPR][Our] handler Beck comes over [our] headset. 'You in?'
 
 [We] replies, 'I[']m in the speeder dock. No movement. What can I expect inside?'
 
@@ -975,6 +992,8 @@ Instead of unlocking the useless elevator doors with something:
 
 Book 4 - Ninth Floor
 
+Chapter 1 - Cybernetica office
+
 The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled 'Inspiration Chamber'[if cybernetica office is window-broken]. One of the windows along the east side of the office is broken[end if].".
 
 The description of the Cybernetica door is "This typical wooden office door displays the sign for Cybernetica Inc., a purveyor of game software."
@@ -988,6 +1007,16 @@ Before going from Cybernetica office to ledge for the first time:
 	Beck: 'Whoa whoa whoa, Jones. You know you're not good with heights.'
 	
 	Jones: 'Ask Thallium how how much that matters once I've kicked his ass.'";
+	
+garbage is a clip with conversation "Jones: 'This is some real B.S. here.'
+
+Beck: 'What's that?'
+
+Jones: 'Never mind.'";
+
+The description of the Inspiration Chamber is "One of the most unique features of the office is the 'inspiration chamber,' a specialized room designed to stimulate creativity and innovation. The room is filled with advanced technology, including AI-generated art, interactive displays, and sensory stimulation devices that can help employees think outside the box and come up with new ideas.[line break][garbage]"
+	
+Chapter 2 - Outside
 
 The description of the ledge is "".
 
@@ -1004,20 +1033,31 @@ Instead of examining down when the location is the ledge for the third time:
 	
 	Beck: 'Careful, Jones.'";
 	
-[Instead of going from Cybernetica office to Ledge when the floor of the window washing scaffold is 9:
-	move the player to the window washing scaffold;]
-	
 The description of the window washing scaffold is "lalala".
 
 The window washing scaffold has a number called the floor. The floor is usually 8.
+
+I hate it out here is a clip with conversation "Jones: 'Beck?'
+
+Beck: 'Yes?'
+
+Jones: 'I hate it out here.'
+
+Beck: 'Well, there's the open window right next to you.'";
+
+explaining the vent is a clip with conversation "Jones: 'Alright, I'm by the tenth floor now. What's this grill thing here?' 
+
+Beck: 'That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can get the cover off you should be able to access the whole floor from here.'"
 
 Carry out looking when the location is the window washing scaffold (this is the describe the scaffold rule):
 	if the floor of the window washing scaffold is 8:
 		say "It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.";
 	otherwise if the floor of the window washing scaffold is 9:
 		say "It's lined up with the ninth floor window. [We] could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.";
+		say I hate it out here;
 	otherwise if the floor of the window washing scaffold is 10:
 		say "It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.";
+		say explaining the vent;
 
 The room description body text rule does nothing when the location is the window washing scaffold.
 The describe the scaffold rule is listed last in the carry out looking rules.
@@ -1072,6 +1112,108 @@ Report pushing the scaffold down button:
 
 The exhaust vent is scenery. "It's a white metal grill held in place by four screws."
 The screws are part of the exhaust vent. "Plain screws painted with white enamel."
+
+Chapter 3 - Building Management Office
+
+The description of the north end of the building management office is "";
+
+The large desk is in the north end of the building management office. It is scenery. It is a container. It is closed, openable, locked, and lockable. 
+
+Instead of unlocking the large desk with the safety pin:
+	say "[We] pushes the pin into the keyhole and wiggles it around. After a few seconds the desk drawer pops open[if desk contains something]. It contains [a list of objects contained in the large desk][end if].";
+	now the large desk is unlocked;
+	now the large desk is open;
+	
+picking it with is an action applying to two things. Understand "pick [something] with [something]", "pick [something] lock with [something]", "pick lock of/on [something] with [something]" as picking it with. 
+picking with is an action applying to one thing. Understand "pick the/-- lock with [something]" as picking with.
+
+Check picking something with something:
+	say "Not likely." instead;
+
+Check unlocking a locked lockable thing with the safety pin when the noun is keyed:
+	say "[We] gives it a shot, but the lock won't turn." instead;
+
+Check unlocking a locked lockable thing with the safety pin when the noun is not keyed:
+	say "The lock doesn't take a regular key." instead;
+
+Check picking a locked lockable thing with the safety pin when the noun is keyed:
+	try unlocking the noun with the safety pin instead;
+
+Check picking a locked lockable thing with the safety pin when the noun is not keyed:
+	try unlocking the noun with the safety pin instead;
+	
+Check picking with something when the large desk is not touchable:
+	say "What do you want [us] to pick?" instead;
+	
+Carry out picking with safety pin when the large desk is touchable:
+	try unlocking the large desk with the safety pin;
+
+Instead of picking the large desk with the safety pin:
+	try unlocking the large desk with the safety pin;
+
+The black card key is in the large desk. Every door is unlocked by it.
+
+A filing cabinet is a container in the south end of the building management office. It is scenery. It is closed, locked, keyed, openable, and lockable. "An ordinary filing cabinet, with five drawers."
+
+A screwdriver is in the south end of the building management office. "A screwdriver sits atop the filing cabinet."
+
+The black cat is an animal. The description is "It's really a beautiful cat, sleek and black.". It is undescribed.
+
+The screwdriver can be behind the filing cabinet.
+
+Instead of taking the screwdriver when the screwdriver is not handled and the screwdriver is not behind the filing cabinet and the shrimp tea sandwich is somewhere:
+	move the black cat to the south end of the building management office;
+	now the screwdriver is behind the filing cabinet;
+	say "[We] reaches for the screwdriver, but [we] fumbles it and it rolls off the back of the filing cabinet.[paragraph break]";
+	converse "Jones: 'Damn.'
+	
+	Beck: 'What? What's going on?'
+	
+	Jones: 'Just being clumsy is all.'";
+	
+The black cat can be angry.
+
+Instead of looking behind the filing cabinet when the screwdriver is behind the filing cabinet:
+	say "(taking the screwdriver)[command clarification break]";
+	try taking the screwdriver;	
+
+Instead of looking behind the filing cabinet when the screwdriver is not behind the filing cabinet and the black cat is not angry:
+	say "[We] moves to look behind the filing cabinet, and in doing so, brushes the screwdriver off the back of the filing cabinet.[paragraph break]";
+	move the black cat to the south end of the building management office;
+	now the screwdriver is behind the filing cabinet;
+	converse "Jones: 'Damn.'
+	
+	Beck: 'What? What's going on?'
+	
+	Jones: 'Just being clumsy is all.'";
+
+Instead of taking the screwdriver when black cat is in the location and the black cat is not angry:
+	say "[We] reaches behind the cabinet to retrieve the screwdriver. A swipe and a hiss make her recoil.[paragraph break]";
+	converse "Jones: 'Holy --!'
+	
+	Beck: 'What now?'
+	
+	Jones: 'There's a cat here! Behind a filing cabinet. Gotta get behind there to get a screwdriver, so I need a way to drive off the cat.'";
+	now the black cat is angry;
+	
+Instead of taking the screwdriver when black cat is in the location and the black cat is angry:
+	say "Forget it. [We] isn't getting another scratch.";
+	
+After dropping the shrimp tea sandwich when black cat is in the location and the black cat is angry:
+	say "Sensing food, the black cat pokes its head out, grabs the shrimp in its jaws, and races off.[paragraph break]";
+	remove the black cat from play;
+	remove the shrimp tea sandwich from play;
+	converse "Jones: 'Aha! No creature is too fearsome for Galaxy Jones!'
+	
+	Beck: 'Congratulations on your victory.'";
+	
+Instead of giving the shrimp tea sandwich to the black cat:
+	say "(dropping the shrimp tea sandwich)[command clarification break]";
+	try dropping the shrimp tea sandwich;
+
+Instead of taking the screwdriver when the black cat is not in the location and the screwdriver is behind the filing cabinet:
+	now the screwdriver is not behind the filing cabinet;
+	try taking the screwdriver;
 
 Book 5 - Tenth Floor
 
