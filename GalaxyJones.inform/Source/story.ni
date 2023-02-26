@@ -191,7 +191,7 @@ An object can be used or unused. An object is usually unused.
 To converse (T - a text):
 	[say "[unicode 187] [unicode 187] [unicode 187] [unicode 187] [unicode 187] [unicode 187] [line break]";]
 	say "[special-style-1][T][roman type][line break]";
-	[say "[unicode 171] [unicode 171] [unicode 171] [unicode 171] [unicode 171] [unicode 171][paragraph break]";]
+	[say "[unicode 171] [unicode 171] [unicode 171] [unicode 171] [unicode 171] [unicode 171][paragraph break]";]	
 
 report looking:
 	if the conversation of the location is not empty and the location is unused:
@@ -203,12 +203,16 @@ report examining something:
 		converse the conversation of the noun;
 		now the noun is used;
 		
-A clip is a kind of thing.
+A clip is a kind of thing. A clip can be conversational or descriptive. A clip is usually conversational.
 
 To say (C - a clip):
 	if C is unused:
 		say line break;
-		converse the conversation of C;
+		if C is conversational:
+			converse the conversation of C;
+		otherwise:
+			say the conversation of C;
+			say line break;
 		if not expanding text for comparison purposes, now C is used;
 	
 Volume 5 - Plot
@@ -293,25 +297,35 @@ check sneaking up on something when the noun is not the purple guard robot:
 carry out sneaking up on the purple guard robot:
 	decrement the sneak index;
 	
-after doing something other than sneaking up on the guard robot during Cybernetica Battle:
+Check going during Cybernetica Battle:
+	say "Trying to reach an exit would surely get [us] shot." instead;
+	
+After doing something other than sneaking up on the guard robot during Cybernetica Battle:
 	if sneak index < 3 and the purple guard robot is in the Cybernetica office:
 		increment sneak index;
-		say "The guard robot moves a little farther away from you";
+		say "The guard robot moves a little farther away from [us].";
+		stop the action;
+		
+Shoot out the window is a descriptive clip with conversation "[We] must have poked up [our] shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room."
 	
 report sneaking up on the purple guard robot:
 	if sneak index is 2:
-		say "You creep a little ways toward the guard robot.";
+		say "[We] creeps a little ways toward the guard robot.";
 	otherwise if sneak index is 1:
-		say "Slowly, slowly, you get a little closer. Just a little more...";
+		say "Slowly, slowly, [we] gets a little closer. Just a little more...";
+		say shoot out the window;
+		change east exit of Cybernetica office to ledge;
+		change west exit of ledge to Cybernetica office;
+		now the Cybernetica office is window-broken;
 	otherwise:
-		say "You're right up next to the robot, crouched beneath a desk. You'll never get a better shot.";
+		say "[We] is right up next to the robot, crouched beneath a desk. She'll never get a better shot.";
 		
 carry out shooting purple guard robot with the disruptor pistol during Cybernetica Battle:
 	if sneak index > 0:
-		say "[We] raises [our] head and fires wide. The robot fires back. [We] ducks and crawls off among the labyrinth of desks.";
+		say "[We] raises [our] head and fires wide. The robot fires back. Jones ducks and crawls off among the labyrinth of desks.";
 	otherwise:
 		say "[We] aims the pistol upward under the robot's enhanced armor. [We] flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.";
-	remove the purple guard robot from play;
+		remove the purple guard robot from play;
 	
 Cybernetica Battle ends when purple guard robot is not in the Cybernetica office.
 
@@ -320,7 +334,7 @@ When Cybernetica Battle ends:
 	
 	Beck: 'Nice, but don[']t forget to credit your handler.'
 	
-	Jones: 'Yes, yes, thanks for helping me not get killed.'
+	Jones: 'Yes, yes, thanks for helping me not get killed.'   
 	
 	Beck: 'You're welcome.'";
 	increase score by 1;
@@ -408,7 +422,7 @@ the ground floor elevator door is a door. It is west of the ground floor elevato
 the ground floor elevator door-inside is a door. It is east of the ground floor elevator shaft. It is scenery. The printed name is "elevator door". Through the ground floor elevator door-inside is the ground floor elevator hall. The ground floor elevator door-inside is a half-door of the ground floor elevator door. Understand "elevator/door" as the ground floor elevator door-inside.
 
 Instead of opening the ground floor elevator door:
-	say "You can't just open the elevator with your hands.";
+	say "[We] can't just open the elevator with [our] hands.";
 
 To say ground name of (D - a direction):
 	if D is north or D is south or D is east or D is west:
@@ -480,7 +494,7 @@ the north end of the building management office is west of ninth floor north hal
 
 the south end of the building managements office is west of ninth floor south hallway and south of the north end of the Microthings office. the preposition is "at".
 
-a ledge is east of the Cybernetica office. The preposition is "on". It is always-indefinite. a ledge is atmo-thin.
+a ledge is a room. The preposition is "on". It is always-indefinite. a ledge is atmo-thin.
 
 a window washing scaffold is a room. The preposition is "on". It is always-indefinite. a window washing scaffold is atmo-thin.
 
@@ -546,7 +560,7 @@ The printed name is "the city".
 
 The description is "From this perilous location, outside the comforting electrostatic field trapping the atmosphere of the building, one can see with striking clarity the lights of the city. The surrounding plains go on forever."
 
-Understand "city/planet/mars/down" as perilous view of New Reykjavik.
+Understand "city/planet/mars" as perilous view of New Reykjavik.
 
 Tenth floor view of New Reykjavik is a backdrop. It is privately-named. It is in microthings-1, microthings-2, microthings-3, microthings-4, microthings-5, microthings-6, microthings-7, microthings-8.
 
@@ -880,7 +894,7 @@ The description of the elevator room is "This is a utility room related to the o
 The elevator control panel is scenery in the elevator room. "From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a haphazard collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on." Understand "wires/circuit/board/boards/indicator/lights/light/component/components" as the elevator control panel.
 
 Instead of touching the elevator control panel:
-	say "Nothing happens, no matter how much you fiddle with it.";
+	say "Nothing happens, no matter how much [we] fiddles with it.";
 
 The elevator drop key is in the elevator room. 
 
@@ -908,15 +922,6 @@ Instead of examining up when the location is in elevator shaft-region:
 	
 Instead of examining down when the location is in elevator shaft-region and the location is not the ground floor elevator shaft:
 	say "[We] [are] afraid of heights.";
-	
-Instead of examining down when the location is the ledge for the first time:
-	say "[We] [are] afraid of heights.";
-	
-Instead of examining down when the location is the ledge for the second time:
-	say "Really, really afraid of heights.";
-	
-Instead of examining down when the location is the ledge for the third time:
-	say "Ok, fine. [We] look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below [us].";
 	
 Instead of examining down when the location is the ledge:
 	say "There's a window cleaner's scaffold about six feet below [us]. Beyond that is a precipitous drop to the streets of New Reykjavik.";
@@ -970,11 +975,98 @@ Instead of unlocking the useless elevator doors with something:
 
 Book 4 - Ninth Floor
 
-The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled 'Inspiration Chamber.'".
+The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled 'Inspiration Chamber'[if cybernetica office is window-broken]. One of the windows along the east side of the office is broken[end if].".
 
 The description of the Cybernetica door is "This typical wooden office door displays the sign for Cybernetica Inc., a purveyor of game software."
 The description of the Cybernetica door-inside is "This side intentionally left blank.".
 	
+The Cybernetica office can be window-broken.
+
+Before going from Cybernetica office to ledge for the first time:
+	converse "Jones: 'I'm going out the window to see if I can find a way to get up to the tenth floor.'
+	
+	Beck: 'Whoa whoa whoa, Jones. You know you're not good with heights.'
+	
+	Jones: 'Ask Thallium how how much that matters once I've kicked his ass.'";
+
+The description of the ledge is "".
+
+Instead of examining down when the location is the ledge for the first time:
+	say "[We] [are] afraid of heights.";
+	
+Instead of examining down when the location is the ledge for the second time:
+	say "Really, really afraid of heights.";	
+	
+Instead of examining down when the location is the ledge for the third time:
+	say "Okay, fine. [We] look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below [us].[paragraph break]";
+	change down exit of the ledge to window washing scaffold;
+	converse "Jones: 'Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up.'
+	
+	Beck: 'Careful, Jones.'";
+	
+[Instead of going from Cybernetica office to Ledge when the floor of the window washing scaffold is 9:
+	move the player to the window washing scaffold;]
+	
+The description of the window washing scaffold is "lalala".
+
+The window washing scaffold has a number called the floor. The floor is usually 8.
+
+Carry out looking when the location is the window washing scaffold (this is the describe the scaffold rule):
+	if the floor of the window washing scaffold is 8:
+		say "It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.";
+	otherwise if the floor of the window washing scaffold is 9:
+		say "It's lined up with the ninth floor window. [We] could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.";
+	otherwise if the floor of the window washing scaffold is 10:
+		say "It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.";
+
+The room description body text rule does nothing when the location is the window washing scaffold.
+The describe the scaffold rule is listed last in the carry out looking rules.
+
+The scaffold control panel is scenery in the window washing scaffold. "It's got two buttons: up and down.".
+
+The scaffold up button is part of the scaffold control panel. The description is "It's a green button with an arrow pointing up.". Understand "green" as the scaffold up button.
+The scaffold down button is part of the scaffold control panel. The description is "It's a red button with an arrow pointing down.". Understand "red" as the scaffold down button.
+
+To set exits from scaffold:
+	if the floor of the window washing scaffold is 8:
+		change the down exit of the ledge to the window washing scaffold;
+		change the west exit of the window washing scaffold to nothing;
+		change the east exit of the Cybernetica office to the ledge;
+	if the floor of the window washing scaffold is 9:
+		change the down exit of the ledge to nothing;
+		change the west exit of the window washing scaffold to the Cybernetica office;
+		change the east exit of the Cybernetica office to the window washing scaffold;
+	if the floor of the window washing scaffold is 10:
+		change the down exit of the ledge to nothing;
+		change the west exit of the window washing scaffold to nothing;
+		change the east exit of the Cybernetica office to the ledge;
+
+Check pushing the scaffold up button:
+	if the floor of the window washing scaffold is 10:
+		say "Nothing happens." instead;
+		
+Carry out pushing the scaffold up button:
+	increment the floor of the window washing scaffold;
+	reset exits from scaffold;
+
+Report pushing the scaffold up button:
+	say "[We] presses the button, and the scaffold begins to rise.";
+	try looking;
+	stop the action;
+
+Check pushing the scaffold down button:
+	if the floor of the window washing scaffold is 8:
+		say "Nothing happens." instead;
+		
+Carry out pushing the scaffold down button:
+	decrement the floor of the window washing scaffold;
+	reset exits from scaffold;
+
+Report pushing the scaffold down button:
+	say "[We] presses the button, and the scaffold begins to descend.";
+	try looking;
+	stop the action;
+
 
 Book 5 - Tenth Floor
 
@@ -998,6 +1090,7 @@ lobby	ground-floor-1	"[We] crosses the floor carefully, [disruptor pistol] at th
 lobby	ground-floor-7	"[We] crosses the floor carefully, [disruptor pistol] at the ready."
 ground floor elevator hall	ground floor elevator shaft	"[We] climbs into the elevator shaft"
 the Cybernetica office	ledge	"[We] climbs out the window."
+ledge	window washing scaffold	"[We] drops off the ledge onto the scaffold. It rocks unnervingly for a moment."
 
 To decide which text is the transition for (source - a room) to (target - a room):
 	repeat through the Table of Transitions:

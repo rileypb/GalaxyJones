@@ -55,15 +55,10 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2472"></child>
-            <child nodeId="node-2148"></child>
-            <child nodeId="node-2560"></child>
-            <child nodeId="node-2125"></child>
-            <child nodeId="node-2256"></child>
-            <child nodeId="node-2257"></child>
+        <children><child nodeId="node-3258"></child>
         </children>
     </item>
-    <item nodeId="node-2257">
+    <item nodeId="node-3258">
         <command xml:space="preserve">test ninth</command>
         <result xml:space="preserve">(Testing.)
 
@@ -71,12 +66,22 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 (Testing.)
 
 &gt;[2] n
+Jones approaches the Viking Building entryway, the dramatic façade towering over her.
 
 Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
 
-&gt;[3] n
+Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
 
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. Jones may go east and west from here, north to the elevators, or south out of the building.
+Beck: "Oh, no doubt."
+
+&gt;[3] n
+Jones takes a deep breath. "I'm going in."
+
+Beck replies, "Be careful, Galaxy."
+
+Jones passes through the revolving door and into the lobby, alert to any defenses.
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. She may go east and west from here, north to the elevators, or south out of the building.
 
 &gt;[4] z
 Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
@@ -104,8 +109,9 @@ Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
 [Your score has just gone up by one point.]
 
 &gt;[6] e
+Jones crosses the floor carefully, disruptor pistol at the ready.
 
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
 
 &gt;[7] n
 
@@ -145,6 +151,7 @@ Galaxy Jones is in the lobby. The ground floor of the Viking Building is breatht
 Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
 
 &gt;[14] w
+Jones crosses the floor carefully, disruptor pistol at the ready.
 
 Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
 
@@ -187,8 +194,9 @@ Galaxy Jones is in the ground floor elevator hall. This hallway between the nort
 Jones inserts the elevator drop key into the drop key hole and turns it, disengaging the lock mechanism. Then she slides the door open.
 
 &gt;[23] w
+Jones climbs into the elevator shaft
 
-Galaxy Jones is in the ground floor elevator shaft. Jones is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder on the west wall.
+Galaxy Jones is in the ground floor elevator shaft. She is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder on the west wall.
 
 &gt;[24] u
 
@@ -261,815 +269,24 @@ Galaxy Jones is in the ninth floor elevator hall.
 [31] u
 [32] e
 </commentary>
-        <children><child nodeId="node-2396"></child>
-            <child nodeId="node-2322"></child>
+        <children><child nodeId="node-3291"></child>
         </children>
     </item>
-    <item nodeId="node-2322">
+    <item nodeId="node-3291">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Galaxy Jones is in the ninth floor north hallway. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2323"></child>
+        <children><child nodeId="node-3292"></child>
         </children>
     </item>
-    <item nodeId="node-2323">
+    <item nodeId="node-3292">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening the Cybernetica door)
 
-Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber."
-
-As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
-
-Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
-
-Beck: "What's the situation?"
-
-Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I might get a shot in, but it might just absorb it anyway."
-
-Beck "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2324"></child>
-        </children>
-    </item>
-    <item nodeId="node-2324">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor north hallway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2361"></child>
-        </children>
-    </item>
-    <item nodeId="node-2361">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the Cybernetica office. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2362"></child>
-        </children>
-    </item>
-    <item nodeId="node-2362">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor north hallway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2396">
-        <command xml:space="preserve">           n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor north hallway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2397"></child>
-        </children>
-    </item>
-    <item nodeId="node-2397">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">(first opening the Cybernetica door)
-
-Galaxy Jones is in the Cybernetica office. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2398"></child>
-        </children>
-    </item>
-    <item nodeId="node-2398">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor north hallway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2399"></child>
-        </children>
-    </item>
-    <item nodeId="node-2399">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">This typical wooden office door displays the sign for Cybernetica Inc., a purveyor of game software.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2400"></child>
-        </children>
-    </item>
-    <item nodeId="node-2400">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the Cybernetica office. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2401"></child>
-        </children>
-    </item>
-    <item nodeId="node-2401">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2256">
-        <command xml:space="preserve">test elevator door</command>
-        <result xml:space="preserve">I only understood you as far as wanting to test that.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2125">
-        <command xml:space="preserve">test elevator</command>
-        <result xml:space="preserve">(Testing.)
-
-&gt;[1] n
-
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
-
-&gt;[2] n
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. Jones may go east and west from here, north to the elevators, or south out of the building.
-
-&gt;[3] z
-Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring lifesigns."
-
-&gt;[4] shoot art
-(with the disruptor pistol)
-Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
-
-
-Beck: "What was that crash? What's going on?"
-
-Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-&gt;[5] e
-
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
-
-&gt;[6] n
-
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-&gt;[7] type 0
-(on the keypad)
-An indicator light glows green.
-
-Jones: "I've unlocked the east side utility door."
-
-&gt;[8] w
-(first opening the closet door)
-
-Galaxy Jones is in the maintenance closet. 
-
-There is an Atmo-Suit hanging from a hook here.
-
-On the shelf is a red key card.
-
-&gt;[9] take all
-Atmo-Suit: Taken.
-red key card: Taken.
-
-&gt;[10] e
-
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-&gt;[11] s
-
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
-
-&gt;[12] w
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;[13] w
-
-Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;[14] n
-
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;[15] e
-(first opening the utility door)
-(first unlocking the utility door)
-(with the red key card)
-
-Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
-
-Hanging from a hook here is an elevator drop key.
-
-&gt;[16] take drop key
-Taken.
-
-&gt;[17] w
-
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;[18] s
-
-Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;[19] e
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;[20] n
-
-Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;[21] use drop key with elevator
-(the elevator drop key with the elevator door)
-Jones inserts the elevator drop key into the drop key hole and turns it, disengaging the lock mechanism. Then she slides the door open.
-
-&gt;</result>
-        <commentary xml:space="preserve">[1] n
-[2] n
-[3] z
-[4] shoot art
-[5] e
-[6] n
-[7] type 0
-[8] w
-[9] take all
-[10] e
-[11] s
-[12] w
-[13] w
-[14] n
-[15] e
-[16] take drop key
-[17] w
-[18] s
-[19] e
-[20] n
-[21] use drop key with elevator
-</commentary>
-        <children><child nodeId="node-2147"></child>
-        </children>
-    </item>
-    <item nodeId="node-2147">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ground floor elevator shaft. Jones is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder on the west wall.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2231"></child>
-            <child nodeId="node-2199"></child>
-        </children>
-    </item>
-    <item nodeId="node-2199">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the second floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2200"></child>
-        </children>
-    </item>
-    <item nodeId="node-2200">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the third floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2201"></child>
-        </children>
-    </item>
-    <item nodeId="node-2201">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the fourth floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2202"></child>
-        </children>
-    </item>
-    <item nodeId="node-2202">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the fifth floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2203"></child>
-        </children>
-    </item>
-    <item nodeId="node-2203">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the sixth floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2204"></child>
-        </children>
-    </item>
-    <item nodeId="node-2204">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the seventh floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2205"></child>
-        </children>
-    </item>
-    <item nodeId="node-2205">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the eighth floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2206"></child>
-        </children>
-    </item>
-    <item nodeId="node-2206">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor elevator shaft. 
-
-Also here is a ninth floor elevator door.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2207"></child>
-        </children>
-    </item>
-    <item nodeId="node-2207">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">(first opening the ninth floor elevator door)
-
-Galaxy Jones is in the ninth floor elevator hall. 
-
-Also here is a ninth floor elevator door.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2231">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones can't go that way. The obvious exits are east (to the ground floor elevator hall) and up.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2232"></child>
-        </children>
-    </item>
-    <item nodeId="node-2232">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the second floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2233"></child>
-        </children>
-    </item>
-    <item nodeId="node-2233">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the third floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2234"></child>
-        </children>
-    </item>
-    <item nodeId="node-2234">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the fourth floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2235"></child>
-        </children>
-    </item>
-    <item nodeId="node-2235">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the fifth floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2236"></child>
-        </children>
-    </item>
-    <item nodeId="node-2236">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the sixth floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2237"></child>
-        </children>
-    </item>
-    <item nodeId="node-2237">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2238"></child>
-        </children>
-    </item>
-    <item nodeId="node-2238">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the seventh floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2239"></child>
-        </children>
-    </item>
-    <item nodeId="node-2239">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the eighth floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2240"></child>
-        </children>
-    </item>
-    <item nodeId="node-2240">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2241"></child>
-        </children>
-    </item>
-    <item nodeId="node-2241">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2242"></child>
-        </children>
-    </item>
-    <item nodeId="node-2242">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">(first opening the ninth floor elevator door)
-
-Galaxy Jones is in the ninth floor elevator hall. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2243"></child>
-        </children>
-    </item>
-    <item nodeId="node-2243">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor elevator shaft. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2244"></child>
-        </children>
-    </item>
-    <item nodeId="node-2244">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor elevator hall. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2245"></child>
-        </children>
-    </item>
-    <item nodeId="node-2245">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor north hallway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2246"></child>
-        </children>
-    </item>
-    <item nodeId="node-2246">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Galaxy Jones is at the north end of the Microthings office. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2247"></child>
-        </children>
-    </item>
-    <item nodeId="node-2247">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-Galaxy Jones is at the south end of the Microthings office. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2248"></child>
-        </children>
-    </item>
-    <item nodeId="node-2248">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor south hallway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2249"></child>
-        </children>
-    </item>
-    <item nodeId="node-2249">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the Martian Chronicle office. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2250"></child>
-        </children>
-    </item>
-    <item nodeId="node-2250">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones can't go that way. The only obvious exit is west (to the ninth floor south hallway).
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2251"></child>
-        </children>
-    </item>
-    <item nodeId="node-2251">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor south hallway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2252"></child>
-        </children>
-    </item>
-    <item nodeId="node-2252">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor elevator hall. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2253"></child>
-        </children>
-    </item>
-    <item nodeId="node-2253">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Jones can't go that way. The obvious exits are north (to the ninth floor north hallway), south (to the ninth floor south hallway) and west (to the ninth floor elevator shaft).
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2254"></child>
-        </children>
-    </item>
-    <item nodeId="node-2254">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ninth floor north hallway. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2255"></child>
-        </children>
-    </item>
-    <item nodeId="node-2255">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the Cybernetica office. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2560">
-        <command xml:space="preserve">test cybernetica</command>
-        <result xml:space="preserve">(Testing.)
-
-&gt;[1] test ninth
-(Testing.)
-
-&gt;[2] test elevator
-(Testing.)
-
-&gt;[3] n
-Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
-
-Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
-
-Beck: "Oh, no doubt."
-
-&gt;[4] n
-Jones takes a deep breath. "I'm going in."
-
-Beck replies, "Be careful, Galaxy."
-
-Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. She may go east and west from here, north to the elevators, or south out of the building.
-
-&gt;[5] z
-Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring lifesigns."
-
-&gt;[6] shoot art
-(with the disruptor pistol)
-Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
-
-
-Beck: "What was that crash? What's going on?"
-
-Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-&gt;[7] e
-Jones crosses the floor carefully, disruptor pistol at the ready.
-
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
-
-&gt;[8] n
-
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-&gt;[9] type 0
-(on the keypad)
-An indicator light glows green.
-
-Jones: "I've unlocked the east side utility door."
-
-&gt;[10] w
-(first opening the closet door)
-
-Galaxy Jones is in the maintenance closet. 
-
-There is an Atmo-Suit hanging from a hook here.
-
-On the shelf is a red key card.
-
-&gt;[11] take all
-Atmo-Suit: Taken.
-red key card: Taken.
-
-&gt;[12] e
-
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-&gt;[13] s
-
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
-
-&gt;[14] w
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;[15] w
-Jones crosses the floor carefully, disruptor pistol at the ready.
-
-Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;[16] n
-
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;[17] e
-(first opening the utility door)
-(first unlocking the utility door)
-(with the red key card)
-
-Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
-
-Hanging from a hook here is an elevator drop key.
-
-&gt;[18] take drop key
-Taken.
-
-&gt;[19] w
-
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;[20] s
-
-Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;[21] e
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;[22] n
-
-Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;[23] use drop key with elevator
-(the elevator drop key with the elevator door)
-Jones inserts the elevator drop key into the drop key hole and turns it, disengaging the lock mechanism. Then she slides the door open.
-
-&gt;[24] w
-Jones climbs into the elevator shaft
-
-Galaxy Jones is in the ground floor elevator shaft. She is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder on the west wall.
-
-&gt;[25] u
-
-Galaxy Jones is in the second floor elevator shaft. 
-
-&gt;[26] u
-
-Galaxy Jones is in the third floor elevator shaft. 
-
-&gt;[27] u
-
-Galaxy Jones is in the fourth floor elevator shaft. 
-
-&gt;[28] u
-
-Galaxy Jones is in the fifth floor elevator shaft. 
-
-&gt;[29] u
-
-Galaxy Jones is in the sixth floor elevator shaft. 
-
-&gt;[30] u
-
-Galaxy Jones is in the seventh floor elevator shaft. 
-
-&gt;[31] u
-
-Galaxy Jones is in the eighth floor elevator shaft. 
-
-&gt;[32] u
-
-Galaxy Jones is in the ninth floor elevator shaft. 
-
-&gt;[33] e
-(first opening the ninth floor elevator door)
-
-Galaxy Jones is in the ninth floor elevator hall. 
-
-&gt;[34] n
-
-Galaxy Jones is in the ninth floor north hallway. 
-
-&gt;[35] e
-(first opening the Cybernetica door)
-
-Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber."
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber".
 
 As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
 
@@ -1081,60 +298,90 @@ Jones: "I'm on the floor with desks and chairs all around. The target is a few y
 
 Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
 
-&gt;[36] sneak up on robot
-You creep a little ways toward the guard robot.
-
-&gt;[37] sneak up on robot
-Slowly, slowly, you get a little closer. Just a little more...
-
-&gt;[38] sneak up on robot
-You're right up next to the robot, crouched beneath a desk. You'll never get a better shot.
-
 &gt;</result>
-        <commentary xml:space="preserve">[1] test ninth
-[2] test elevator
-[3] n
-[4] n
-[5] z
-[6] shoot art
-[7] e
-[8] n
-[9] type 0
-[10] w
-[11] take all
-[12] e
-[13] s
-[14] w
-[15] w
-[16] n
-[17] e
-[18] take drop key
-[19] w
-[20] s
-[21] e
-[22] n
-[23] use drop key with elevator
-[24] w
-[25] u
-[26] u
-[27] u
-[28] u
-[29] u
-[30] u
-[31] u
-[32] u
-[33] e
-[34] n
-[35] e
-[36] sneak up on robot
-[37] sneak up on robot
-[38] sneak up on robot
-</commentary>
-        <children><child nodeId="node-2772"></child>
-            <child nodeId="node-2732"></child>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3293"></child>
         </children>
     </item>
-    <item nodeId="node-2732">
+    <item nodeId="node-3293">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">(with the disruptor pistol)
+Jones raises her head and fires wide. The robot fires back. Jones ducks and crawls off among the labyrinth of desks.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3330"></child>
+        </children>
+    </item>
+    <item nodeId="node-3330">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Jones creeps a little ways toward the guard robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3331"></child>
+        </children>
+    </item>
+    <item nodeId="node-3331">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">(with the disruptor pistol)
+Jones raises her head and fires wide. The robot fires back. Jones ducks and crawls off among the labyrinth of desks.
+
+The guard robot moves a little farther away from her.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3408"></child>
+        </children>
+    </item>
+    <item nodeId="node-3408">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Jones creeps a little ways toward the guard robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3409"></child>
+        </children>
+    </item>
+    <item nodeId="node-3409">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Slowly, slowly, Jones gets a little closer. Just a little more...
+
+She must have poked up her shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3410"></child>
+        </children>
+    </item>
+    <item nodeId="node-3410">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">The guard robot moves a little farther away from Jones.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3411"></child>
+        </children>
+    </item>
+    <item nodeId="node-3411">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Slowly, slowly, Jones gets a little closer. Just a little more...
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3412"></child>
+        </children>
+    </item>
+    <item nodeId="node-3412">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Jones is right up next to the robot, crouched beneath a desk. She'll never get a better shot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3413"></child>
+        </children>
+    </item>
+    <item nodeId="node-3413">
         <command xml:space="preserve">shoot robot</command>
         <result xml:space="preserve">(with the disruptor pistol)
 Jones aims the pistol upward under the robot's enhanced armor. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.
@@ -1147,31 +394,6 @@ Jones: "Yes, yes, thanks for helping me not get killed."
 
 Beck: "You're welcome."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2772">
-        <command xml:space="preserve">shoot</command>
-        <result xml:space="preserve">What should Jones shoot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2773"></child>
-        </children>
-    </item>
-    <item nodeId="node-2773">
-        <command xml:space="preserve">robot</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-She aims the pistol upward under the robot's enhanced armor. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.
-
-Jones: "Better than a video game. "
-
-Beck: "Nice, but don't forget to credit your handler."
-
-Jones: "Yes, yes, thanks for helping me not get killed."
-
-Beck: "You're welcome."
-
  _________      __                     _____                     
  __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
  _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
@@ -1183,820 +405,164 @@ Beck: "You're welcome."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2148">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
-
-Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
-
-Beck: "Oh, no doubt."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2149"></child>
+        <children><child nodeId="node-3502"></child>
         </children>
     </item>
-    <item nodeId="node-2149">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
-
-Beck replies, "Be careful, Galaxy."
-
-Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. She may go east and west from here, north to the elevators, or south out of the building.
+    <item nodeId="node-3502">
+        <command xml:space="preserve">look east</command>
+        <result xml:space="preserve">Jones sees the ledge in that direction.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2150"></child>
-            <child nodeId="node-2650"></child>
+        <children><child nodeId="node-3503"></child>
         </children>
     </item>
-    <item nodeId="node-2650">
-        <command xml:space="preserve">nrestart</command>
-        <result xml:space="preserve">That's not a verb I recognise.
+    <item nodeId="node-3503">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones: "I'm going out the window to see if I can find a way to get up to the tenth floor."
+
+Beck: "Whoa whoa whoa, Jones. You know you're not good with heights."
+
+Jones: "Ask Thallium how how much that matters once I've kicked his ass."
+
+(first donning the Atmo-Suit)
+Jones climbs out the window.
+
+Galaxy Jones is on a ledge. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2651"></child>
+        <children><child nodeId="node-3504"></child>
         </children>
     </item>
-    <item nodeId="node-2651">
-        <command xml:space="preserve">restart</command>
-        <result xml:space="preserve">Are you sure you want to restart? </result>
+    <item nodeId="node-3504">
+        <command xml:space="preserve">look down</command>
+        <result xml:space="preserve">Jones is afraid of heights.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2652"></child>
+        <children><child nodeId="node-3505"></child>
         </children>
     </item>
-    <item nodeId="node-2652">
-        <command xml:space="preserve">y</command>
-        <result xml:space="preserve">
-
-
-The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.
-
-"Yes?" she says in a voice thick with sleep.
-
-"Hello, is this Galaxy Jones?" comes the voice from the speaker.
-
-"Yes, this is she. To whom am I speaking?"
-
-"Oh, hi, Ms Jones. This is Patty, I work for Admiral P. X. Thallium, CEO of Diversified Entanglements, LLC. He asked me to forward a message to you."
-
-"He did, did he? Now what would the Admiral want to say to me?"
-
-"Oh, it's not from the Admiral himself. It's from one Miss Europa Callisto. I must say, the Admiral was quite surprised when I said I didn't know who she is. Apparently she's famous."
-
-"Yes, quite famous, but why would she send a message to me, and why on Mars would she send it through Thallium? But never mind, what's the message?"
-
-Patty can be heard rustling paper. "Let's see... it's here somewhere. Oh yes, here it is. The message is 'Help.'"
-
-Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems, hostage. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in downtown New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's inevitable demise. The Admiral has invited Ms Jones most cordially to break into his building and attempt a rescue.
-
-"Oh I will," Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.
-
-Plus she'll get to meet Europa Callisto. That'll be totally sweet.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-An Interactive Fiction by Phil Riley
-Release 1 / Serial number 230225 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
-
-A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it: Galaxy Jones.
-
-Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
-
-Jones's speeder, Galaxy One, sits in one of the parking bays.
-
-Jones's handler Beck comes over her headset. "What's going on there? Where are you? Keep me posted."
-
-She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
-
-"Blueprints show the ground floor is one big empty space with elevators in the center. Not a lot of places for resistance to hide, but you can never tell. Be careful."
+    <item nodeId="node-3505">
+        <command xml:space="preserve">look d</command>
+        <result xml:space="preserve">Really, really afraid of heights.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2653"></child>
+        <children><child nodeId="node-3554"></child>
         </children>
     </item>
-    <item nodeId="node-2653">
-        <command xml:space="preserve">test cybernetica</command>
-        <result xml:space="preserve">(Testing.)
+    <item nodeId="node-3554">
+        <command xml:space="preserve">look d</command>
+        <result xml:space="preserve">Okay, fine. Jones look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below her.
 
-&gt;[1] test ninth
-(Testing.)
+Jones: "Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up."
 
-&gt;[2] test elevator
-(Testing.)
-
-&gt;[3] n
-Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
-
-Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
-
-Beck: "Oh, no doubt."
-
-&gt;[4] n
-Jones takes a deep breath. "I'm going in."
-
-Beck replies, "Be careful, Galaxy."
-
-Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. She may go east and west from here, north to the elevators, or south out of the building.
-
-&gt;[5] z
-Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring lifesigns."
-
-&gt;[6] shoot art
-(with the disruptor pistol)
-Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
-
-
-Beck: "What was that crash? What's going on?"
-
-Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-&gt;[7] e
-Jones crosses the floor carefully, disruptor pistol at the ready.
-
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
-
-&gt;[8] n
-
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-&gt;[9] type 0
-(on the keypad)
-An indicator light glows green.
-
-Jones: "I've unlocked the east side utility door."
-
-&gt;[10] w
-(first opening the closet door)
-
-Galaxy Jones is in the maintenance closet. 
-
-There is an Atmo-Suit hanging from a hook here.
-
-On the shelf is a red key card.
-
-&gt;[11] take all
-Atmo-Suit: Taken.
-red key card: Taken.
-
-&gt;[12] e
-
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-&gt;[13] s
-
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
-
-&gt;[14] w
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;[15] w
-Jones crosses the floor carefully, disruptor pistol at the ready.
-
-Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;[16] n
-
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;[17] e
-(first opening the utility door)
-(first unlocking the utility door)
-(with the red key card)
-
-Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
-
-Hanging from a hook here is an elevator drop key.
-
-&gt;[18] take drop key
-Taken.
-
-&gt;[19] w
-
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;[20] s
-
-Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;[21] e
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;[22] n
-
-Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;[23] use drop key with elevator
-(the elevator drop key with the elevator door)
-Jones inserts the elevator drop key into the drop key hole and turns it, disengaging the lock mechanism. Then she slides the door open.
-
-&gt;[24] w
-Jones climbs into the elevator shaft
-
-Galaxy Jones is in the ground floor elevator shaft. She is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder on the west wall.
-
-&gt;[25] u
-
-Galaxy Jones is in the second floor elevator shaft. 
-
-&gt;[26] u
-
-Galaxy Jones is in the third floor elevator shaft. 
-
-&gt;[27] u
-
-Galaxy Jones is in the fourth floor elevator shaft. 
-
-&gt;[28] u
-
-Galaxy Jones is in the fifth floor elevator shaft. 
-
-&gt;[29] u
-
-Galaxy Jones is in the sixth floor elevator shaft. 
-
-&gt;[30] u
-
-Galaxy Jones is in the seventh floor elevator shaft. 
-
-&gt;[31] u
-
-Galaxy Jones is in the eighth floor elevator shaft. 
-
-&gt;[32] u
-
-Galaxy Jones is in the ninth floor elevator shaft. 
-
-&gt;[33] e
-(first opening the ninth floor elevator door)
-
-Galaxy Jones is in the ninth floor elevator hall. 
-
-&gt;[34] n
-
-Galaxy Jones is in the ninth floor north hallway. 
-
-&gt;[35] e
-(first opening the Cybernetica door)
-
-Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber."
-
-As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
-
-Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
-
-Beck: "What's the situation?"
-
-Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I might get a shot in, but it might just absorb it anyway."
-
-Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
-
-&gt;[36] sneak up on robot
-You creep a little ways toward the guard robot.
-
-&gt;[37] sneak up on robot
-Slowly, slowly, you get a little closer. Just a little more...
-
-&gt;[38] sneak up on robot
-You're right up next to the robot, crouched beneath a desk. You'll never get a better shot.
+Beck: "Careful, Jones."
 
 &gt;</result>
-        <commentary xml:space="preserve">[1] test ninth
-[2] test elevator
-[3] n
-[4] n
-[5] z
-[6] shoot art
-[7] e
-[8] n
-[9] type 0
-[10] w
-[11] take all
-[12] e
-[13] s
-[14] w
-[15] w
-[16] n
-[17] e
-[18] take drop key
-[19] w
-[20] s
-[21] e
-[22] n
-[23] use drop key with elevator
-[24] w
-[25] u
-[26] u
-[27] u
-[28] u
-[29] u
-[30] u
-[31] u
-[32] u
-[33] e
-[34] n
-[35] e
-[36] sneak up on robot
-[37] sneak up on robot
-[38] sneak up on robot
-</commentary>
-        <children><child nodeId="node-2692"></child>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3604"></child>
         </children>
     </item>
-    <item nodeId="node-2692">
-        <command xml:space="preserve">shoot robot</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Jones aims the pistol upward under the robot's enhanced armor. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.
+    <item nodeId="node-3604">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Jones drops off the ledge onto the scaffold. It rocks unnervingly for a moment.
 
-The guard robot moves a little farther away from you
-Jones: "Better than a video game. "
-
-Beck: "Nice, but don't forget to credit your handler."
-
-Jones: "Yes, yes, thanks for helping me not get killed."
-
-Beck: "You're welcome."
+Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2150">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring lifesigns."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2151"></child>
+        <children><child nodeId="node-3959"></child>
         </children>
     </item>
-    <item nodeId="node-2151">
-        <command xml:space="preserve">shoot art</command>
-        <result xml:space="preserve">(with the disruptor pistol)
-Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
-
-
-Beck: "What was that crash? What's going on?"
-
-Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2472">
+    <item nodeId="node-3959">
         <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
-
-Jones's speeder, Galaxy One, sits in one of the parking bays.
+        <result xml:space="preserve">Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2473"></child>
+        <children><child nodeId="node-4166"></child>
         </children>
     </item>
-    <item nodeId="node-2473">
-        <command xml:space="preserve">n</command>
+    <item nodeId="node-4166">
+        <command xml:space="preserve">push green button</command>
+        <result xml:space="preserve">Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4272"></child>
+        </children>
+    </item>
+    <item nodeId="node-4272">
+        <command xml:space="preserve">w</command>
         <result xml:space="preserve">
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber". One of the windows along the east side of the office is broken.
+
+Jones doffs the Atmo-Suit.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2474"></child>
+        <children><child nodeId="node-4273"></child>
         </children>
     </item>
-    <item nodeId="node-2474">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. Jones may go east and west from here, north to the elevators, or south out of the building.
+    <item nodeId="node-4273">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first donning the Atmo-Suit)
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. Jones could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2475"></child>
+        <children><child nodeId="node-4274"></child>
         </children>
     </item>
-    <item nodeId="node-2475">
-        <command xml:space="preserve">beck what is the plan</command>
-        <result xml:space="preserve">That's not a verb I recognise.
+    <item nodeId="node-4274">
+        <command xml:space="preserve">push green button</command>
+        <result xml:space="preserve">Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2476"></child>
+        <children><child nodeId="node-4275"></child>
         </children>
     </item>
-    <item nodeId="node-2476">
-        <command xml:space="preserve">ask beck stuff</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+    <item nodeId="node-4275">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Jones can't go that way. There are no obvious exits.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2477"></child>
+        <children><child nodeId="node-4276"></child>
         </children>
     </item>
-    <item nodeId="node-2477">
-        <command xml:space="preserve">talk to bck</command>
-        <result xml:space="preserve">That's not a verb I recognise.
+    <item nodeId="node-4276">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Jones can't go that way. There are no obvious exits.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2478"></child>
+        <children><child nodeId="node-4277"></child>
         </children>
     </item>
-    <item nodeId="node-2478">
-        <command xml:space="preserve">hi</command>
-        <result xml:space="preserve">That's not a verb I recognise.
+    <item nodeId="node-4277">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones can't go that way. There are no obvious exits.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2479"></child>
+        <children><child nodeId="node-4278"></child>
         </children>
     </item>
-    <item nodeId="node-2479">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring lifesigns."
+    <item nodeId="node-4278">
+        <command xml:space="preserve">push green button</command>
+        <result xml:space="preserve">Nothing happens.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2480"></child>
-        </children>
-    </item>
-    <item nodeId="node-2480">
-        <command xml:space="preserve">have jones fire gun</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2481"></child>
-        </children>
-    </item>
-    <item nodeId="node-2481">
-        <command xml:space="preserve">jones fire gun</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2482"></child>
-        </children>
-    </item>
-    <item nodeId="node-2482">
-        <command xml:space="preserve">fire gun</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2483"></child>
-        </children>
-    </item>
-    <item nodeId="node-2483">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Jones is carrying:
-  a disruptor pistol
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2484"></child>
-        </children>
-    </item>
-    <item nodeId="node-2484">
-        <command xml:space="preserve">fire pistol</command>
-        <result xml:space="preserve">What should Jones fire the disruptor pistol at?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2485"></child>
-        </children>
-    </item>
-    <item nodeId="node-2485">
-        <command xml:space="preserve">red</command>
-        <result xml:space="preserve">(the building entryway)
-Shooting that would accomplish nothing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2486"></child>
-        </children>
-    </item>
-    <item nodeId="node-2486">
-        <command xml:space="preserve">fire pistol at gurd</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2487"></child>
-        </children>
-    </item>
-    <item nodeId="node-2487">
-        <command xml:space="preserve">fire pistol at guard</command>
-        <result xml:space="preserve">Which do you mean, the green guard robot or the red guard robot?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2488"></child>
-        </children>
-    </item>
-    <item nodeId="node-2488">
-        <command xml:space="preserve">red</command>
-        <result xml:space="preserve">A perfect shot! Yet, somehow, the robot is unscathed.
-
-Jones: "Target seems to be absorbing disruptor fire. This will make things a little harder."
-
-Zip! Disruptor fire scorches a nearby couch.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2489"></child>
-        </children>
-    </item>
-    <item nodeId="node-2489">
-        <command xml:space="preserve">fire pistol at crystal</command>
-        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
-
-
-Beck: "What was that crash? What's going on?"
-
-Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2490"></child>
-        </children>
-    </item>
-    <item nodeId="node-2490">
-        <command xml:space="preserve">restart</command>
-        <result xml:space="preserve">Are you sure you want to restart? </result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2491"></child>
-        </children>
-    </item>
-    <item nodeId="node-2491">
-        <command xml:space="preserve">y</command>
-        <result xml:space="preserve"> _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-An Interactive Fiction by Phil Riley
-Release 1 / Serial number 230225 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
-
-A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it.
-
-Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
-
-Jones's speeder, Galaxy One, sits in one of the parking bays.
-
-Beck comes over Jones's headset. "What's going on there? Where are you? Keep me posted."
-
-She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
-
-"Blueprints show the ground floor is one big empty space with elevators in the center. Not a lot of places for resistance to hide, but you can never tell. Be careful."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2492"></child>
-        </children>
-    </item>
-    <item nodeId="node-2492">
-        <command xml:space="preserve">test ninth</command>
-        <result xml:space="preserve">(Testing.)
-
-&gt;[1] test elevator
-(Testing.)
-
-&gt;[2] n
-
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
-
-&gt;[3] n
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. Jones may go east and west from here, north to the elevators, or south out of the building.
-
-&gt;[4] z
-Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring lifesigns."
-
-&gt;[5] shoot art
-(with the disruptor pistol)
-Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
-
-
-Beck: "What was that crash? What's going on?"
-
-Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-&gt;[6] e
-
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
-
-&gt;[7] n
-
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-&gt;[8] type 0
-(on the keypad)
-An indicator light blinks red.
-
-Jones: "it's not 0..."
-
-&gt;[9] w
-(first opening the closet door)
-(first unlocking the closet door)
-Jones will have to enter the correct code on the keypad.
-
-Jones: "Door on the east side has a keypad lock."
-
-&gt;[10] take all
-There are none at all available!
-
-&gt;[11] e
-Jones can't go that way. The obvious exits are north, south (to the southeast corner of the ground floor) and west.
-
-&gt;[12] s
-
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
-
-&gt;[13] w
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;[14] w
-
-Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;[15] n
-
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;[16] e
-(first opening the utility door)
-(first unlocking the utility door)
-Jones lacks a key that fits the utility door.
-
-&gt;[17] take drop key
-There's nothing like that nearby.
-
-&gt;[18] w
-Jones can't go that way. The obvious exits are north, south (to the southwest corner of the ground floor) and east.
-
-&gt;[19] s
-
-Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;[20] e
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;[21] n
-
-Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;[22] use drop key with elevator
-(the elevator door)
-You'll have to be more specific.
-
-&gt;[23] w
-(first opening the elevator door)
-You can't just open the elevator with your hands.
-
-&gt;[24] u
-Jones can't go that way. The obvious exits are north, south (to the lobby), east and west.
-
-&gt;[25] u
-Jones can't go that way. The obvious exits are north, south (to the lobby), east and west.
-
-&gt;[26] u
-Jones can't go that way. The obvious exits are north, south (to the lobby), east and west.
-
-&gt;[27] u
-Jones can't go that way. The obvious exits are north, south (to the lobby), east and west.
-
-&gt;[28] u
-Jones can't go that way. The obvious exits are north, south (to the lobby), east and west.
-
-&gt;[29] u
-Jones can't go that way. The obvious exits are north, south (to the lobby), east and west.
-
-&gt;[30] u
-Jones can't go that way. The obvious exits are north, south (to the lobby), east and west.
-
-&gt;[31] u
-Jones can't go that way. The obvious exits are north, south (to the lobby), east and west.
-
-&gt;[32] e
-As soon as Jones enters the stairwell, a disruptor blast from above zings past her shoulder, and she beats a hasty retreat. She won't be going up the stairs until she can clear out the resistance, and she can't do that from here.
-
-Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;</result>
-        <commentary xml:space="preserve">[1] test elevator
-[2] n
-[3] n
-[4] z
-[5] shoot art
-[6] e
-[7] n
-[8] type 0
-[9] w
-[10] take all
-[11] e
-[12] s
-[13] w
-[14] w
-[15] n
-[16] e
-[17] take drop key
-[18] w
-[19] s
-[20] e
-[21] n
-[22] use drop key with elevator
-[23] w
-[24] u
-[25] u
-[26] u
-[27] u
-[28] u
-[29] u
-[30] u
-[31] u
-[32] e
-</commentary>
-        <children></children>
     </item>
 </Skein>
