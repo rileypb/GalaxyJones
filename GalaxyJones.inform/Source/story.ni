@@ -492,7 +492,7 @@ the Martian Chronicle office is east of ninth floor south hallway.
 
 the north end of the building management office is west of ninth floor north hallway. the preposition is "at".
 
-the south end of the building managements office is west of ninth floor south hallway and south of the north end of the Microthings office. the preposition is "at".
+the south end of the building managements office is west of ninth floor south hallway and south of the north end of the building management office. the preposition is "at".
 
 a ledge is a room. The preposition is "on". It is always-indefinite. a ledge is atmo-thin.
 

@@ -602,5 +602,137 @@ Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4342"></child>
+        </children>
+    </item>
+    <item nodeId="node-4342">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber". One of the windows along the east side of the office is broken.
+
+Jones doffs the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4343"></child>
+        </children>
+    </item>
+    <item nodeId="node-4343">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first donning the Atmo-Suit)
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. Jones could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4344"></child>
+        </children>
+    </item>
+    <item nodeId="node-4344">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber". One of the windows along the east side of the office is broken.
+
+Jones doffs the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4345"></child>
+        </children>
+    </item>
+    <item nodeId="node-4345">
+        <command xml:space="preserve">look east</command>
+        <result xml:space="preserve">Jones sees the window washing scaffold in that direction.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4346"></child>
+        </children>
+    </item>
+    <item nodeId="node-4346">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first donning the Atmo-Suit)
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. Jones could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4347"></child>
+        </children>
+    </item>
+    <item nodeId="node-4347">
+        <command xml:space="preserve">look west</command>
+        <result xml:space="preserve">Jones sees the Cybernetica office in that direction.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4348"></child>
+        </children>
+    </item>
+    <item nodeId="node-4348">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber". One of the windows along the east side of the office is broken.
+
+Jones doffs the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4349"></child>
+        </children>
+    </item>
+    <item nodeId="node-4349">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor north hallway. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4350"></child>
+        </children>
+    </item>
+    <item nodeId="node-4350">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the north end of the building management office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4351"></child>
+        </children>
+    </item>
+    <item nodeId="node-4351">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Jones can't go that way. The only obvious exit is east (to the ninth floor north hallway).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4352"></child>
+        </children>
+    </item>
+    <item nodeId="node-4352">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones can't go that way. The only obvious exit is east (to the ninth floor north hallway).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4353"></child>
+        </children>
+    </item>
+    <item nodeId="node-4353">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Jones can't go that way. The only obvious exit is east (to the ninth floor north hallway).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4354"></child>
+        </children>
+    </item>
+    <item nodeId="node-4354">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones can't go that way. The only obvious exit is east (to the ninth floor north hallway).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
 </Skein>
