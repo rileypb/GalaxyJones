@@ -1032,14 +1032,17 @@ To set exits from scaffold:
 		change the down exit of the ledge to the window washing scaffold;
 		change the west exit of the window washing scaffold to nothing;
 		change the east exit of the Cybernetica office to the ledge;
+		move the exhaust vent to the room of stuff;
 	if the floor of the window washing scaffold is 9:
 		change the down exit of the ledge to nothing;
 		change the west exit of the window washing scaffold to the Cybernetica office;
 		change the east exit of the Cybernetica office to the window washing scaffold;
+		move the exhaust vent to the room of stuff;
 	if the floor of the window washing scaffold is 10:
 		change the down exit of the ledge to nothing;
 		change the west exit of the window washing scaffold to nothing;
 		change the east exit of the Cybernetica office to the ledge;
+		move the exhaust vent to the window washing scaffold;
 
 Check pushing the scaffold up button:
 	if the floor of the window washing scaffold is 10:
@@ -1047,7 +1050,7 @@ Check pushing the scaffold up button:
 		
 Carry out pushing the scaffold up button:
 	increment the floor of the window washing scaffold;
-	reset exits from scaffold;
+	set exits from scaffold;
 
 Report pushing the scaffold up button:
 	say "[We] presses the button, and the scaffold begins to rise.";
@@ -1060,13 +1063,15 @@ Check pushing the scaffold down button:
 		
 Carry out pushing the scaffold down button:
 	decrement the floor of the window washing scaffold;
-	reset exits from scaffold;
+	set exits from scaffold;
 
 Report pushing the scaffold down button:
 	say "[We] presses the button, and the scaffold begins to descend.";
 	try looking;
 	stop the action;
 
+The exhaust vent is scenery. "It's a white metal grill held in place by four screws."
+The screws are part of the exhaust vent. "Plain screws painted with white enamel."
 
 Book 5 - Tenth Floor
 

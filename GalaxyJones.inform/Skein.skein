@@ -564,5 +564,43 @@ Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4338"></child>
+        </children>
+    </item>
+    <item nodeId="node-4338">
+        <command xml:space="preserve">x vent</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4339"></child>
+        </children>
+    </item>
+    <item nodeId="node-4339">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Jones can't go that way. There are no obvious exits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4340"></child>
+        </children>
+    </item>
+    <item nodeId="node-4340">
+        <command xml:space="preserve">push down button</command>
+        <result xml:space="preserve">Jones presses the button, and the scaffold begins to descend.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4341"></child>
+        </children>
+    </item>
+    <item nodeId="node-4341">
+        <command xml:space="preserve">x vent</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
 </Skein>
