@@ -125,12 +125,11 @@ special-style-1	"#FF0000"	false	19
 
 Volume 2 - Actions
 
-Shooting it with is an action applying to two things. Understand "shoot at/-- [something] with [something preferably held]", "fire at [something] with [something preferably held]" as shooting it with. Understand "shoot at/-- [something]", "fire at [something]" as shooting it with. Understand "shoot [something preferably held] at [something]", "fire [something preferably held] at [something]" as shooting it with (with nouns reversed).
+Shooting it with is an action applying to one thing and one carried thing. Understand "shoot at/-- [something] with [something preferably held]", "fire at [something] with [something preferably held]" as shooting it with. Understand "shoot at/-- [something]", "fire at [something]" as shooting it with. Understand "shoot [something preferably held] at [something]", "fire [something preferably held] at [something]" as shooting it with (with nouns reversed).
 
 Rule for supplying a missing second noun while shooting:
 	if the disruptor pistol is touchable:
 		now the second noun is the disruptor pistol;
-		say "(with the disruptor pistol)[command clarification break]";
 	
 Check shooting something with something that is not the disruptor pistol:
 	say "[the second noun] isn't a firearm." instead;
@@ -144,6 +143,19 @@ Looking behind is an action applying to one thing. Understand "look behind [some
 
 Check looking behind:
 	say "[We] finds nothing of note." instead;
+	
+Understand the command "unscrew" as something new.
+Unscrewing it with is an action applying to one thing and one carried thing. Understand "unscrew [something]" or "unscrew [something] with [something]" as unscrewing it with.
+
+Rule for supplying a missing second noun:
+	if the screwdriver is touchable:
+		now the second noun is the screwdriver;
+		
+Check unscrewing something with something when the second noun is not the screwdriver:
+	say "That doesn't work." instead;
+	
+Check unscrewing something with something when the second noun is the screwdriver:
+	say "That can't be unscrewed." instead;
 
 Volume 3 - The Player Character
 	
@@ -445,8 +457,8 @@ ground-floor-1 is west of Lobby. It is a ground-floor. The dir is southwest.  Th
 ground-floor-2 is north of ground-floor-1. It is a ground-floor. The dir is west. The preposition is "on".
 
 the elevator-room-door is a door. It is privately-named. It is scenery. The printed name is "utility door". Understand "elevator/room/door/utility" as elevator-room-door. It is east of ground-floor-2. Through the elevator-room-door is the elevator room.
-the elevator-room-door is closed, locked, lockable and openable. It has matching key the red key card.
-The description is "It's a white metal door, completely typical. It has a keyed lock right above the handle.".
+the elevator-room-door is closed, locked, lockable and openable. The red key card unlocks the elevator-room-door.
+The description of the elevator-room-door is "It's a white metal door, completely typical. It has a swipe card lock right above the handle.".
 
 the elevator-room-door-inside is a door. It is privately-named. It is scenery. The printed name is "elevator room door". Understand "elevator/room/door" as elevator-room-door-inside. It is west of the elevator room. The elevator-room-door-inside is a half-door of the elevator-room-door. Through the elevator-room-door-inside is ground-floor-2.
 The description is "It's a white metal door, completely typical. It has a card swipe right above the handle.".
@@ -693,6 +705,9 @@ jumping is acting recklessly.
 Instead of acting recklessly during Lobby Shootout:
 	say "As soon as [we] [start] to act, an energy beam zips past [our] head, forcing [us] back down behind the desk.";
 	
+Instead of dropping the disruptor pistol during Lobby Shootout:
+	say "That would be ill-advised.";
+	
 The tasteful couch is a couch in the lobby. "Quite tasteful for a homicidal madman, really."
 
 The ground floor central pillar is a backdrop. It is privately-named. The printed name is "central pillar". Understand "central/pillar" as ground floor central pillar. It is in lobby,
@@ -908,7 +923,7 @@ Chapter 7 - Elevator Room
 
 The description of the elevator room is "This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west."
 
-The elevator control panel is scenery in the elevator room. "From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a haphazard collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on." Understand "wires/circuit/board/boards/indicator/lights/light/component/components" as the elevator control panel.
+The elevator control panel is scenery in the elevator room. "From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on." Understand "wires/circuit/board/boards/indicator/lights/light/component/components" as the elevator control panel.
 
 Instead of touching the elevator control panel:
 	say "Nothing happens, no matter how much [we] fiddles with it.";
@@ -1058,6 +1073,9 @@ Carry out looking when the location is the window washing scaffold (this is the 
 	otherwise if the floor of the window washing scaffold is 10:
 		say "It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.";
 		say explaining the vent;
+		
+Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 10:
+	try entering the exhaust vent;
 
 The room description body text rule does nothing when the location is the window washing scaffold.
 The describe the scaffold rule is listed last in the carry out looking rules.
@@ -1110,8 +1128,34 @@ Report pushing the scaffold down button:
 	try looking;
 	stop the action;
 
-The exhaust vent is scenery. "It's a white metal grill held in place by four screws."
+The exhaust vent is a scenery container. It is closed and openable. "It's a white metal grill held in place by four screws.". Understand "screws" as the exhaust vent.
 The screws are part of the exhaust vent. "Plain screws painted with white enamel."
+
+Instead of unscrewing the exhaust vent with the screwdriver:
+	now the exhaust vent is open;
+	say "[We] loosens the screws and removes the grill from the vent.";
+	
+Instead of closing the exhaust vent:
+	say "After [we] went to so much trouble to open it?";
+
+Instead of opening the exhaust vent:
+	say "[We] will need to remove the screws.";	
+	
+Instead of entering the exhaust vent:
+	say "[We] climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.";
+	now the player is in the air handling room;
+	
+Instead of going nowhere from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is open:
+	if the noun is west:
+		try entering the exhaust vent;
+	otherwise:
+		say "[text of the can't go that way rule response (A)]";
+		
+Instead of taking off the exhaust vent:
+	if the player carries the screwdriver:
+		try unscrewing the vent with the screwdriver;
+	otherwise:
+		say "[We] doesn't have anything to remove the screws with.";
 
 Chapter 3 - Building Management Office
 
