@@ -164,7 +164,7 @@ Player's surname is "Jones".
 Player's titled name is "Galaxy Jones".
 Understand "Galaxy/Jones" as yourself.
 
-The player-actual is a thing in the room of stuff. It is privately-named. It is proper-named. The printed name is "you, the player". Understand "me/myself" as the player-actual. The description is "You? I don't know who you are and I don't really care. If you need to know what you look like, just look at yourself, for heaven's sake."
+The player-actual is a thing in the room of stuff. It is privately-named. It is proper-named. The printed name is "you, the player". Understand "me/myself" as the player-actual. The description is "You, the player, issue the commands to make Galaxy Jones go."
 
 After deciding the scope of the player:
 	place the player-actual in scope; 
@@ -392,7 +392,7 @@ Before going from a room (called R1) to an atmo-thin room (called R2) when R1 is
 	if the player is not wearing the atmo-suit:
 		say "(first donning [the atmo-suit])[command clarification break]";
 		if the atmo-suit is not touchable:
-			say "The";
+			say "[We] doesn't have the Atmo-Suit.";
 			stop the action;
 		silently try wearing the atmo-suit;
 		if the player is not wearing the atmo-suit:
@@ -605,7 +605,7 @@ Chapter 1 -  Speeder Dock
 
 The description of the speeder dock is "A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.".
 
-The conversation of the speeder dock is "[reset LPR][Our] handler Beck comes over [our] headset. 'You in?'
+The conversation of the speeder dock is "[reset LPR][Our] handler Beck comes over [our] headset. 'Alright, what's going on?'
 
 [We] replies, 'I[']m in the speeder dock. No movement. What can I expect inside?'
 
@@ -787,7 +787,7 @@ The contents description is "[We] yawns looking over the assortment of faux hono
 "There's a remarkable array of faux honors here, all behind glass. One of the display cases is partly open and empty of the medal it once held."
 
 The garish medal is in the military-detritus. It is a pseudocontainer.
-The contents description is "While the front looks authentic, the reverse is engraved with Thallium's personal motto 'Planetas Vincam'. The ribbon conceals a safety pin. It looks like you could remove it if you wanted to.".
+The contents description is "While the front looks authentic, the reverse is engraved with Thallium's personal motto 'Planetas Vincam'. The ribbon conceals a safety pin. It looks like it could be removed.".
 The description is "While the front looks authentic, the reverse is engraved with Thallium's personal motto 'Planetas Vincam'. Earlier [we] removed the safety pin."
 The safety pin is in the garish medal.
 
@@ -1004,6 +1004,13 @@ Instead of unlocking keylessly the useless elevator doors:
 Instead of unlocking the useless elevator doors with something:
 	say "[We] is unable to open the door. Perhaps it's blocked from the other side.";
 	say cannot open elevator.
+	
+After going from ninth floor elevator shaft to ninth floor elevator hall for the first time:
+	say line break;
+	converse "Jones: 'Finally out of the shaft. That was quite a climb.'
+	
+	Beck: 'This floor is just offices. Check the building management office to the west. It might have some useful stuff.'";
+	increase score by 1;
 
 Book 4 - Ninth Floor
 
@@ -1016,7 +1023,10 @@ The description of the Cybernetica door-inside is "This side intentionally left 
 	
 The Cybernetica office can be window-broken.
 
-Before going from Cybernetica office to ledge for the first time:
+Before going from a room (called R1) to an atmo-thin room (called R2) when R1 is not atmo-thin and the Atmo-Suit is not touchable:
+	say "The atmosphere is too thin out there. [We] needs protective gear." instead;
+
+Before going from Cybernetica office to ledge when the Atmo-Suit is touchable for the first time:
 	converse "Jones: 'I'm going out the window to see if I can find a way to get up to the tenth floor.'
 	
 	Beck: 'Whoa whoa whoa, Jones. You know you're not good with heights.'

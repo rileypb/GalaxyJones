@@ -58,8 +58,10 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
         <children><child nodeId="node-1138"></child>
             <child nodeId="node-1130"></child>
             <child nodeId="node-1198"></child>
+            <child nodeId="node-3575"></child>
             <child nodeId="node-1271"></child>
             <child nodeId="node-1114"></child>
+            <child nodeId="node-3624"></child>
             <child nodeId="node-1091"></child>
             <child nodeId="node-1086"></child>
             <child nodeId="node-1076"></child>
@@ -3455,6 +3457,35 @@ Jones lacks a key that fits the large desk.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-3624">
+        <command xml:space="preserve">gonear ninth shaft</command>
+        <result xml:space="preserve">Galaxy Jones is in the ninth floor elevator shaft. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3625"></child>
+        </children>
+    </item>
+    <item nodeId="node-3625">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the ninth floor elevator door)
+
+Jones: "Finally out of the shaft. That was quite a climb."
+
+Beck: "This floor is just offices. Check the building management office to the west. It might have some useful stuff."
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1114">
         <command xml:space="preserve">gonear microthings</command>
         <result xml:space="preserve">There seems to be no such object anywhere in the model world.
@@ -3627,6 +3658,298 @@ Galaxy Jones is on the north side of the Consolidated Microthings office.
 
 Jones: "This is some real B.S. here."
 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3575">
+        <command xml:space="preserve">gonear cybernetica</command>
+        <result xml:space="preserve">(the Cybernetica office)
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber".
+
+As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
+
+Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
+
+Beck: "What's the situation?"
+
+Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I might get a shot in, but it might just absorb it anyway."
+
+Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3576"></child>
+        </children>
+    </item>
+    <item nodeId="node-3576">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Jones creeps a little ways toward the guard robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3577"></child>
+        </children>
+    </item>
+    <item nodeId="node-3577">
+        <command xml:space="preserve">f</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3578"></child>
+        </children>
+    </item>
+    <item nodeId="node-3578">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3579"></child>
+        </children>
+    </item>
+    <item nodeId="node-3579">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3580"></child>
+        </children>
+    </item>
+    <item nodeId="node-3580">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Slowly, slowly, Jones gets a little closer. Just a little more...
+
+She must have poked up her shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3581"></child>
+        </children>
+    </item>
+    <item nodeId="node-3581">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Jones is right up next to the robot, crouched beneath a desk. She'll never get a better shot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3582"></child>
+        </children>
+    </item>
+    <item nodeId="node-3582">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">Jones aims the pistol upward under the robot's enhanced armor. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.
+
+Jones: "Better than a video game. "
+
+Beck: "Nice, but don't forget to credit your handler."
+
+Jones: "Yes, yes, thanks for helping me not get killed."
+
+Beck: "You're welcome."
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3583"></child>
+            <child nodeId="node-3603"></child>
+        </children>
+    </item>
+    <item nodeId="node-3603">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3604"></child>
+        </children>
+    </item>
+    <item nodeId="node-3604">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "standard set going variables rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "Before going from Cybernetica office to ledge for the first time" applies.]
+Jones: "I'm going out the window to see if I can find a way to get up to the tenth floor."
+
+Beck: "Whoa whoa whoa, Jones. You know you're not good with heights."
+
+Jones: "Ask Thallium how how much that matters once I've kicked his ass."
+
+[Rule "Before going from a room ( called R1 ) to an atmo-thin room ( called R2 ) when R1 is not atmo-thin" applies.]
+(first donning the Atmo-Suit)
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+Jones doesn't have the Atmo-Suit.
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "new notify score changes rule" applies.]
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3583">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">The atmosphere is too thin out there. You need protective gear.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3614"></child>
+            <child nodeId="node-3593"></child>
+        </children>
+    </item>
+    <item nodeId="node-3593">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3594"></child>
+        </children>
+    </item>
+    <item nodeId="node-3594">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "standard set going variables rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "Before going from a room ( called R1 ) to an atmo-thin room ( called R2 ) when R1 is not atmo-thin" applies.]
+(first donning the Atmo-Suit)
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+Jones doesn't have the Atmo-Suit.
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "new notify score changes rule" applies.]
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3614">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">The atmosphere is too thin out there. You need protective gear.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3615"></child>
+        </children>
+    </item>
+    <item nodeId="node-3615">
+        <command xml:space="preserve">purloin suit</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3616"></child>
+        </children>
+    </item>
+    <item nodeId="node-3616">
+        <command xml:space="preserve">drop it</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3617"></child>
+        </children>
+    </item>
+    <item nodeId="node-3617">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones: "I'm going out the window to see if I can find a way to get up to the tenth floor."
+
+Beck: "Whoa whoa whoa, Jones. You know you're not good with heights."
+
+Jones: "Ask Thallium how how much that matters once I've kicked his ass."
+
+(first donning the Atmo-Suit)
+(first taking the Atmo-Suit)
+Jones climbs out the window.
+
+Galaxy Jones is on a ledge. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3618"></child>
+        </children>
+    </item>
+    <item nodeId="node-3618">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Jones can't go that way. The only obvious exit is west (to the cybernetica office).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3619"></child>
+        </children>
+    </item>
+    <item nodeId="node-3619">
+        <command xml:space="preserve">loo d</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3620"></child>
+        </children>
+    </item>
+    <item nodeId="node-3620">
+        <command xml:space="preserve">look d</command>
+        <result xml:space="preserve">Jones is afraid of heights.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3621"></child>
+        </children>
+    </item>
+    <item nodeId="node-3621">
+        <command xml:space="preserve">look d</command>
+        <result xml:space="preserve">Really, really afraid of heights.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3622"></child>
+        </children>
+    </item>
+    <item nodeId="node-3622">
+        <command xml:space="preserve">look d</command>
+        <result xml:space="preserve">Okay, fine. Jones look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below her.
+
+Jones: "Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up."
+
+Beck: "Careful, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3623"></child>
+        </children>
+    </item>
+    <item nodeId="node-3623">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Jones drops off the ledge onto the scaffold. It rocks unnervingly for a moment.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
