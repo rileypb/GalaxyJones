@@ -5,25 +5,29 @@ Include Deluxe Doors by Emily Short.
 Include Glulx Text Effects by Emily Short.
 Include Skeleton Keys by Emily Short.
 
-Include Epistemology by Eric Eve.
+Include Epistemology by Eric Eve. 
 Include Exit Lister by Eric Eve.
 
 Include Galaxy Banner by Philip Riley.
 Include Third Person Narration by Philip Riley.
 Include Pseudocontainers by Philip Riley.
 Include Look That Way by Philip Riley.
-Include Use by Philip Riley.
+Include Use by Philip Riley.   
+Include Open Spaces by Philip Riley.
 
-Release along with an interpreter.
-
+A room has a text called the preposition.
+A person can be nomale.
+ 
+Release along with a "Quixe" interpreter.
+ 
 Volume 1 - Technical Stuff
 
 DEBUG is a truth state that varies. DEBUG is initially false.
-
-To continue:
+ 
+To continue: 
 	if DEBUG is false:
-		say "[bracket]continue[close bracket]";
-		say paragraph break;
+		say "[bracket]continue[close bracket]"; 
+		say paragraph break; 
 		wait for any key;
 
 Table of New Exit Status
@@ -31,10 +35,10 @@ left	central (text)	right
 "[location-title-case]"	""	"[score] points"
 ""	"[exit list]"	""
 
-when play begins:
+when play begins: 
 	now status exit table is Table of New Exit Status;
 
-To start header style:
+To start header style: 
 	(- VM_Style(HEADER_VMSTY); -)
 	
 To say header style:
@@ -84,10 +88,6 @@ To say location-title-case:
 	let L be the substituted form of "[location]" for comparison purposes;
 	say "[L in title case]";
 
-[When play begins:
-	now the left hand status line is "[location-title-case]";
-	now the right hand status line is "[score] points";]
-
 Use scoring.
 Use the serial comma.
 
@@ -103,7 +103,7 @@ Include (-
     @push say__comp;
     say__comp = 1;
     TEXT_TY_SubstitutedForm(to, txt);
-    @pull say__comp;
+    @pull say__comp; 
     return to;
 ];
 -).
@@ -112,7 +112,7 @@ To decide what text is the substituted form of (T - text) for comparison purpose
     (- SubstituteForComparison({-new:text}, {-by-reference:T}) -).
 
 Book 2 - Some responses
-
+ 
 the can't take what's fixed in place rule response (A) is "That can't be taken.".
 
 the futile to throw things at inanimate objects rule response (A) is "[We] thinks twice and decides not to throw it after all.".
@@ -125,7 +125,7 @@ special-style-1	"#FF0000"	false	19
 
 Volume 2 - Actions
 
-Shooting it with is an action applying to one thing and one carried thing. Understand "shoot at/-- [something] with [something preferably held]", "fire at [something] with [something preferably held]" as shooting it with. Understand "shoot at/-- [something]", "fire at [something]" as shooting it with. Understand "shoot [something preferably held] at [something]", "fire [something preferably held] at [something]" as shooting it with (with nouns reversed).
+Shooting it with is an action applying to one thing and one carried thing. Understand "shoot at/-- [something] with [something]", "fire at [something] with [something]" as shooting it with. Understand "shoot at/-- [something]", "fire at [something]" as shooting it with. Understand "shoot [something] at [something]", "fire [something] at [something]" as shooting it with (with nouns reversed).
 
 Rule for supplying a missing second noun while shooting:
 	if the disruptor pistol is touchable:
@@ -159,7 +159,6 @@ Check unscrewing something with something when the second noun is the screwdrive
 
 Volume 3 - The Player Character
 	
-[Galaxy Jones is a woman in Prison.]
 Player's surname is "Jones". 
 Player's titled name is "Galaxy Jones".
 Understand "Galaxy/Jones" as yourself.
@@ -207,9 +206,7 @@ An object has a text called the conversation.
 An object can be used or unused. An object is usually unused.
 
 To converse (T - a text):
-	[say "[unicode 187] [unicode 187] [unicode 187] [unicode 187] [unicode 187] [unicode 187] [line break]";]
 	say "[special-style-1][T][roman type][line break]";
-	[say "[unicode 171] [unicode 171] [unicode 171] [unicode 171] [unicode 171] [unicode 171][paragraph break]";]	
 
 report looking:
 	if the conversation of the location is not empty and the location is unused:
@@ -380,8 +377,6 @@ A room can be atmo-thin.
 After going from an atmo-thin room (called R1) to a room (called R2) when R2 is not atmo-thin:
 	if the player is wearing the atmo-suit:
 		silently try taking off the atmo-suit;
-		[if the player is not wearing the atmo-suit:
-			say "[We] doffs [the atmo-suit].";]
 	continue the action;		
 	
 After looking when the location was atmo-thin and the location is not atmo-thin:
@@ -408,7 +403,7 @@ The elevator drop key is a thing. "Hanging from a hook here is [a elevator drop 
 
 A thing can be an enemy.
 
-A guard robot is a kind of enemy thing. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard" as a guard robot.
+A guard robot is a kind of enemy person. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard" as a guard robot.
 There is a guard robot called the red guard robot. It is undescribed.
 There is a guard robot called the green guard robot. It is undescribed.
 There is a guard robot called the purple guard robot. It is undescribed.
@@ -501,6 +496,8 @@ Book 3 - The Ninth Floor
 
 The ninth floor elevator door is a door. It is scenery. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall.
 
+The ninth floor stairwell is east of the ninth floor elevator hall.
+
 The ninth floor north hallway is north of the ninth floor elevator hall.
 
 The ninth floor south hallway is south of the ninth floor elevator hall.
@@ -526,7 +523,9 @@ a window washing scaffold is a room. The preposition is "on". It is always-indef
 
 Book 4 - The Tenth Floor
 
-the tenth floor is a room. The preposition is "on".
+the tenth floor elevator hall is a room. It is open space. The preposition is "in".
+
+The tenth-floor-region is a region. It contains the tenth floor elevator hall, the elevator car-room, and the tenth floor stairwell.
 
 To say microthings office name of (D - a direction):
 	if D is north or D is south or D is east or D is west:
@@ -534,26 +533,48 @@ To say microthings office name of (D - a direction):
 	otherwise:
 		say "the [dir] corner of the Consolidated Microthings office";
 
-A microthings-room is a kind of room. It is privately-named. The printed name is "[microthings office name of dir]". A microthings-room has a direction called dir.
+A microthings-room is a kind of room. It is privately-named. The printed name is "[microthings office name of dir]". A microthings-room has a direction called dir. 
  
-microthings-1 is a microthings-room. It is south of the tenth floor. The dir is south. The preposition is "on".
+microthings-1 is a microthings-room. It is open space. It is south of the tenth floor elevator hall. The preposition is "on". It is in the tenth-floor-region. The dir is south.
  
-microthings-2 is a microthings-room. It is west of microthings-1. The dir is southwest. The preposition is "at".
+microthings-2 is a microthings-room. It is open space. It is west of microthings-1. The preposition is "at". It is in the tenth-floor-region. The dir is southwest. 
  
-microthings-3 is a microthings-room. It is north of microthings-2. The dir is west. The preposition is "on".
+microthings-3 is a microthings-room. It is open space. It is north of microthings-2. The preposition is "on". It is in the tenth-floor-region. The dir is west.
  
-microthings-4 is a microthings-room. It is north of microthings-3. The dir is northwest. The preposition is "at".
+microthings-4 is a microthings-room. It is open space. It is north of microthings-3. The preposition is "at". It is in the tenth-floor-region. The dir is northwest.
  
-microthings-5 is a microthings-room. It is east of microthings-4. The dir is north.The preposition is "on".
+microthings-5 is a microthings-room. It is open space. It is east of microthings-4 and north of the tenth floor elevator hall. The preposition is "on".  It is in the tenth-floor-region. The dir is north.
  
-microthings-7 is a microthings-room. It is southeast of microthings-5. The dir is east.The preposition is "on".
+microthings-7 is a microthings-room. It is open space. It is southeast of microthings-5. The preposition is "on". It is in the tenth-floor-region. The dir is east.
  
-microthings-8 is a microthings-room. It is south of microthings-7 and east of microthings-1. The dir is southeast. The preposition is "at".
+microthings-8 is a microthings-room. It is open space. It is south of microthings-7 and east of microthings-1. The preposition is "at". It is in the tenth-floor-region. The dir is southeast.
 
 the air handling door is a door. It is east of microthings-5 and west of the air handling room. The air handling door is scenery.
 
 The vent access door is a door. It is inside from the air handling room. It is scenery. Through the vent access door is the window washing scaffold.
 
+The elevator car-room is west of the tenth floor elevator hall. It is open space. It is privately-named. The printed name is "elevator car".  It is in the tenth-floor-region.
+
+The top of the elevator car is above the elevator car-room. The preposition is "on".
+
+The tenth floor stairwell is east of the tenth floor elevator hall.
+
+
+Chapter 1 - Lines of Sight
+
+microthings-1 farsees microthings-2 and microthings-8 and microthings-5.
+
+microthings-2 farsees microthings-3, microthings-4, and microthings-8.
+
+microthings-3 farsees microthings-4.
+
+microthings-4 farsees microthings-5.
+
+microthings-5 farsees microthings-7.
+
+microthings-7 farsees microthings-8.
+
+the tenth floor elevator hall farsees the elevator car-room, microthings-1, and microthings-5.
 
 Book 5 - The Elevator
 
@@ -689,6 +710,7 @@ The thingy is in the tangled ruin.
 battle won is a clip with conversation "Beck: 'What was that crash? What[']s going on?'
 
 Jones: 'That, my friend, was what you'd call a work of art. Targets terminated.'".
+
 Carry out shooting the giant sculpture with the disruptor pistol:
 	say "[We] [fire] the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.[paragraph break]";
 	remove the red guard robot from play;
@@ -1014,6 +1036,10 @@ After going from ninth floor elevator shaft to ninth floor elevator hall for the
 
 Book 4 - Ninth Floor
 
+Instead of going to ninth floor stairwell:
+	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
+	try looking;
+
 Chapter 1 - Cybernetica office
 
 The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled 'Inspiration Chamber'[if cybernetica office is window-broken]. One of the windows along the east side of the office is broken[end if].".
@@ -1154,6 +1180,14 @@ Instead of opening the exhaust vent:
 Instead of entering the exhaust vent:
 	say "[We] climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.";
 	now the player is in the air handling room;
+	converse "Jones: 'Ha! I'm in!'
+	
+	Beck: 'Be careful, you[']re likely to run into more resistance here. The floor is all one open office, so any guard robots will have good line of sight.'
+	
+	Jones: 'Got it.'
+	
+	Beck: 'And Jones? Save your game.'";
+	increase score by 1;
 	
 Instead of going nowhere from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is open:
 	if the noun is west:
@@ -1260,6 +1294,7 @@ After dropping the shrimp tea sandwich when black cat is in the location and the
 	converse "Jones: 'Aha! No creature is too fearsome for Galaxy Jones!'
 	
 	Beck: 'Congratulations on your victory.'";
+	increase score by 1;
 	
 Instead of giving the shrimp tea sandwich to the black cat:
 	say "(dropping the shrimp tea sandwich)[command clarification break]";
@@ -1270,6 +1305,59 @@ Instead of taking the screwdriver when the black cat is not in the location and 
 	try taking the screwdriver;
 
 Book 5 - Tenth Floor
+
+Instead of going to tenth floor stairwell:
+	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
+	try looking;
+	
+Chapter 1 - The Robot Chase
+
+The mauve guard robot is a guard robot in microthings-2. 
+				
+The mauve guard robot has a room called the goal. The goal of the mauve guard robot is microthings-2.
+The mauve guard robot has a room called the homebase. The homebase of the mauve guard robot is microthings-2.
+
+oldloc is a room that varies.
+
+Before going somewhere when the player is in tenth-floor-region and the mauve guard robot is somewhere:
+	now oldloc is room of stuff;
+	if the location of the mauve guard robot farsees the location:
+		now oldloc is the location;
+	
+After going somewhere when the player is in tenth-floor-region and the mauve guard robot is somewhere:
+	if oldloc is not the room of stuff:
+		now the goal of the mauve guard robot is the location;
+	continue the action;
+
+Every turn when the mauve guard robot is in the tenth-floor-region: 
+	if the mauve guard robot is in the location:
+		say "The robot slaughters Jones.";
+		end the story;
+	otherwise if the goal of the mauve guard robot is not the location of the mauve guard robot:
+		let D be the best route from the location of the mauve guard robot to the goal of the mauve guard robot;
+		try the mauve guard robot going D;
+		if the location of the mauve guard robot is the location:
+			say "The robot slaughters Jones.";
+			end the story;
+	otherwise:
+		now the goal of the mauve guard robot is the homebase of the mauve guard robot;
+	if the location of the mauve guard robot farsees the location:
+		now the goal of the mauve guard robot is the location;
+
+the describe room gone into rule does nothing when the noun is the mauve guard robot.
+
+Chapter 2 - The Microthings Offices
+
+The present is a thing in microthings-2.
+
+Chapter 3 - The Elevator Car
+
+After deciding the scope of the player when the location is top of the elevator car:
+	If the mauve guard robot is in the elevator car-room:
+		place the mauve guard robot in scope;
+		
+Rule for reaching inside the elevator car-room when the location is top of the elevator and the mauve guard robot is in the elevator car-room:
+	allow access;
 
 Volume 9 - Language
 
@@ -1282,7 +1370,7 @@ Volume 10 - Prettiness
 Book 1 - Moving Between Rooms 
  
 Table of Transitions
-source room (a room)	target room (a room)	transition text (a text)	shown (a number)
+source room (a room)	target room (a room)	transition text (a text)	spoken (a number)
 speeder dock	entry doorway	"[We] [approach] the Viking Building entryway, the dramatic façade towering over [us]."	--
 entry doorway	speeder dock	"[We] slinks back to the speeder dock."
 entry doorway	lobby	"[We] passes through the revolving door and into the lobby, alert to any defenses."
@@ -1295,14 +1383,14 @@ ledge	window washing scaffold	"[We] drops off the ledge onto the scaffold. It ro
 
 To decide which text is the transition for (source - a room) to (target - a room):
 	repeat through the Table of Transitions:
-		if (source room entry is source) and (target room entry is target) and there is no shown entry:
+		if (source room entry is source) and (target room entry is target) and there is no spoken entry:
 			decide on transition text entry;
 	decide on "none";
 	
 To mark transition text for (source - a room) to (target - a room) as used:
 	repeat through the Table of Transitions:
-		if (source room entry is source) and (target room entry is target) and there is no shown entry:
-			now shown entry is 1;
+		if (source room entry is source) and (target room entry is target) and there is no spoken entry:
+			now spoken entry is 1;
 
 After going from a room (called R1) to a room (called R2): 
 	let transition text be the transition for R1 to R2;
@@ -1323,7 +1411,7 @@ The new notify score changes rule is listed instead of the notify score changes 
 
 Volume 11 - Not for release
 
-DEBUG is true.
+DEBUG is true. 
 
 Volume 12 - Tests
 
