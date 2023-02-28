@@ -45,7 +45,7 @@ Movement text is an object-based rulebook producing texts.
 Movement text for a person (called P) (this is the standard movement text rule):
 	let ol be original location of P;
 	let nl be new location of P;
-	[if ol is the location:
+	if ol is the location:
 		if ol is open space and nl is not open space:
 			rule succeeds with result "[The P] [head] [noun part of the notable action of P] into [the building of nl].";
 		otherwise if ol is not open space and nl is open space:
@@ -86,7 +86,7 @@ Movement text for a person (called P) (this is the standard movement text rule):
 		otherwise if building of ol is not building of nl and ol is not open space and nl is not open space:
 			rule succeeds with result "To the [Best route from location to nl], [the P] [enter] [the building of nl] from [the building of ol] to the [best route from nl to ol].";
 		otherwise if nl is not open space and nl is not open space:
-			rule succeeds with result "[The P] [appear] to the [best route from location to nl], heading [best route from ol to nl].";]
+			rule succeeds with result "[The P] [appear] to the [best route from location to nl], heading [best route from ol to nl].";
 
 Remote People is a list of objects that varies.
 

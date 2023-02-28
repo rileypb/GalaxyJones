@@ -418,6 +418,10 @@ A couch is a kind of enterable supporter. It is usually scenery.
 
 A container can be keyed. A door can be keyed. A container is usually not keyed. A door is usually not keyed.
 
+The plastic water bottle is a thing. The plastic water bottle can be full or empty. It is full. 
+The printed name is "[if full]full[otherwise]empty[end if] plastic water bottle".
+The description is "A [if full]full[otherwise]empty[end if] bottle of Olympus Springs water."
+
 Volume 7 - Geography
 
 Book 1 - Ground Floor
@@ -1358,6 +1362,16 @@ After deciding the scope of the player when the location is top of the elevator 
 		
 Rule for reaching inside the elevator car-room when the location is top of the elevator and the mauve guard robot is in the elevator car-room:
 	allow access;
+	
+The description of the top of the elevator car is "The elevator shaft extends many hundreds feet above here. You can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if in confusion[end if].";
+
+After the mauve guard robot going from the elevator car-room to the tenth floor elevator hall when the location is the top of the elevator car:
+	say "The mauve guard robot exits the elevator car, out of sight.";
+
+After the mauve guard robot going from the tenth floor elevator hall to the elevator car-room when the location is the top of the elevator car:
+	say "The mauve guard robot enters the elevator car below.";
+	
+
 
 Volume 9 - Language
 
