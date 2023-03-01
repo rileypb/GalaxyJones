@@ -39,7 +39,7 @@ Plus she'll get to meet Europa Callisto. That'll be totally sweet.
  _____________________________/ 
 
 An Interactive Fiction by Phil Riley
-Release 1 / Serial number 230227 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 1 / Serial number 230228 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it: Galaxy Jones.
 
@@ -55,7 +55,8 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3407"></child>
+        <children><child nodeId="node-6392"></child>
+            <child nodeId="node-3407"></child>
             <child nodeId="node-5150"></child>
         </children>
     </item>
@@ -70,7 +71,7 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
     </item>
     <item nodeId="node-5151">
         <command xml:space="preserve">x it</command>
-        <result xml:space="preserve">There seems to be nothing special about it.
+        <result xml:space="preserve">A full bottle of Olympus Springs water.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -119,7 +120,8 @@ Beck: "Oh, no doubt."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3408"></child>
+        <children><child nodeId="node-5170"></child>
+            <child nodeId="node-3408"></child>
         </children>
     </item>
     <item nodeId="node-3408">
@@ -199,7 +201,7 @@ Beck responds, "Monitoring lifesigns."
         <command xml:space="preserve">x viking</command>
         <result xml:space="preserve">The entryway (exit actually) leads out to the speeder dock.
 
-The red robot fires a blistering shot into the front desk.
+The robots intone "Destroy Jones" in an eerie drone.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -217,9 +219,11 @@ The red robot fires a blistering shot into the front desk.
     </item>
     <item nodeId="node-3417">
         <command xml:space="preserve">green</command>
-        <result xml:space="preserve">Jones sticks her head out from behind the desk and squeezes off a shot at the green guard robot. In Jones's haste it goes wide of the target.
+        <result xml:space="preserve">A perfect shot! Yet, somehow, the robot is unscathed.
 
-One of the robots fires directly above her head.
+Jones: "Target seems to be absorbing disruptor fire. This will make things a little harder."
+
+One of the robots fires directly above Jones's head.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -228,9 +232,7 @@ One of the robots fires directly above her head.
     </item>
     <item nodeId="node-3418">
         <command xml:space="preserve">g</command>
-        <result xml:space="preserve">Jones's shot hits the green guard robot dead on, but nothing happens, almost as if the robot had absorbed the energy.
-
-Jones: "Target seems to be absorbing disruptor fire. This will make things a little harder."
+        <result xml:space="preserve">Oops! Jones misses.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -239,7 +241,9 @@ Jones: "Target seems to be absorbing disruptor fire. This will make things a lit
     </item>
     <item nodeId="node-3419">
         <command xml:space="preserve">g</command>
-        <result xml:space="preserve">Oops! Jones misses.
+        <result xml:space="preserve">A barrage of fire from the robots prevents Jones from firing.
+
+One of the robots fires directly above her head.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -248,9 +252,7 @@ Jones: "Target seems to be absorbing disruptor fire. This will make things a lit
     </item>
     <item nodeId="node-3420">
         <command xml:space="preserve">g</command>
-        <result xml:space="preserve">Jones's shot hits the green guard robot dead on, but nothing happens, almost as if the robot had absorbed the energy.
-
-The green robot tries to flank Jones, but a shot from her disruptor sends it scurrying back.
+        <result xml:space="preserve">A perfect shot! Yet, somehow, the robot is unscathed.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -260,6 +262,8 @@ The green robot tries to flank Jones, but a shot from her disruptor sends it scu
     <item nodeId="node-3421">
         <command xml:space="preserve">g</command>
         <result xml:space="preserve">Jones sticks her head out from behind the desk and squeezes off a shot at the green guard robot. In Jones's haste it goes wide of the target.
+
+One of the robots fires directly above her head.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -277,7 +281,9 @@ The green robot tries to flank Jones, but a shot from her disruptor sends it scu
     </item>
     <item nodeId="node-3423">
         <command xml:space="preserve">g</command>
-        <result xml:space="preserve">Oof. Big miss.
+        <result xml:space="preserve">A barrage of fire from the robots prevents Jones from firing.
+
+The green robot fires a blistering shot into the front desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -286,9 +292,9 @@ The green robot tries to flank Jones, but a shot from her disruptor sends it scu
     </item>
     <item nodeId="node-3424">
         <command xml:space="preserve">g</command>
-        <result xml:space="preserve">Jones sticks her head out from behind the desk and squeezes off a shot at the green guard robot. In Jones's haste it goes wide of the target.
+        <result xml:space="preserve">Oops! Jones misses.
 
-One of the robots fires directly above her head.
+The red robot fires a blistering shot into the front desk.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -299,6 +305,8 @@ One of the robots fires directly above her head.
         <command xml:space="preserve">shoot couch</command>
         <result xml:space="preserve">Shooting that would accomplish nothing.
 
+The robots intone "Destroy Jones" in an eerie drone.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3426"></child>
@@ -307,6 +315,8 @@ One of the robots fires directly above her head.
     <item nodeId="node-3426">
         <command xml:space="preserve">shoot desk</command>
         <result xml:space="preserve">Shooting that would accomplish nothing.
+
+One of the robots fires directly above Jones's head.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1157,9 +1167,9 @@ Galaxy Jones is in the ninth floor south hallway.
     </item>
     <item nodeId="node-3508">
         <command xml:space="preserve">e</command>
-        <result xml:space="preserve">(first opening the Chronicle door)
-(first unlocking the Chronicle door)
-Jones lacks a key that fits the Chronicle door.
+        <result xml:space="preserve">(first opening the Chemical door)
+(first unlocking the Chemical door)
+Jones lacks a key that fits the Chemical door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1332,10 +1342,74 @@ Galaxy Jones is in the ninth floor north hallway.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3524"></child>
+        <children><child nodeId="node-5181"></child>
         </children>
     </item>
-    <item nodeId="node-3524">
+    <item nodeId="node-5181">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor elevator hall. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5182"></child>
+        </children>
+    </item>
+    <item nodeId="node-5182">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor south hallway. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5302"></child>
+        </children>
+    </item>
+    <item nodeId="node-5302">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the Chemical door)
+(first unlocking the Chemical door)
+(with the black card key)
+
+Galaxy Jones is in the Martian Chemical office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7145"></child>
+            <child nodeId="node-5426"></child>
+        </children>
+    </item>
+    <item nodeId="node-5426">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor south hallway. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5427"></child>
+        </children>
+    </item>
+    <item nodeId="node-5427">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor elevator hall. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5428"></child>
+        </children>
+    </item>
+    <item nodeId="node-5428">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor north hallway. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3525"></child>
+        </children>
+    </item>
+    <item nodeId="node-3525">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening the Cybernetica door)
 (first unlocking the Cybernetica door)
@@ -1355,10 +1429,10 @@ Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way pa
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3525"></child>
+        <children><child nodeId="node-5645"></child>
         </children>
     </item>
-    <item nodeId="node-3525">
+    <item nodeId="node-5645">
         <command xml:space="preserve">shoot robot</command>
         <result xml:space="preserve">Jones raises her head and fires wide. The robot fires back. Jones ducks and crawls off among the labyrinth of desks.
 
@@ -1831,27 +1905,1209 @@ The mauve guard robot appears to the east, heading north.
     <item nodeId="node-4987">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">
-Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds feet above here. You can see down into the elevator car from here.
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here.
 
 The mauve guard robot enters the elevator car below.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-5148"></child>
+        <children><child nodeId="node-6681"></child>
+            <child nodeId="node-5148"></child>
+            <child nodeId="node-6389"></child>
         </children>
+    </item>
+    <item nodeId="node-6389">
+        <command xml:space="preserve">x robot</command>
+        <result xml:space="preserve">This one looks, if anything, even meaner than the ones you've already seen. It's looking around as if in confusion.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6390"></child>
+        </children>
+    </item>
+    <item nodeId="node-6390">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator car. 
+
+The robot slaughters Jones.
+
+
+
+    *** The End ***
+
+
+In that game you scored 5 out of a possible 0, in 159 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6391"></child>
+        </children>
+    </item>
+    <item nodeId="node-6391">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">top of the elevator car
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-5148">
         <command xml:space="preserve">shoot robot</command>
         <result xml:space="preserve">&gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-5149"></child>
+        <children><child nodeId="node-6222"></child>
         </children>
     </item>
-    <item nodeId="node-5149">
+    <item nodeId="node-6222">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds feet above here. You can see down into the elevator car from here. The mauve guard robot is in the car, looking around as if in confusion.
+
+The mauve guard robot exits the elevator car, out of sight.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6681">
+        <command xml:space="preserve">jump on robot</command>
+        <result xml:space="preserve">Jones drops down through the ceiling and on to the guard robot. It swings around looking for her, obviously panicked that it can't bring its gun to bear on its attacker. Jones manages to hang on.
+
+The mauve guard robot struggles against her hold on it, to no avail.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6682"></child>
+        </children>
+    </item>
+    <item nodeId="node-6682">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">The mauve guard robot struggles against Jones's hold on it, to no avail.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6851"></child>
+        </children>
+    </item>
+    <item nodeId="node-6851">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">The mauve guard robot throws Jones from its back, and she go sprawling into the corner of the elevator. The robot rotates its disruptor barrel to face her, and opens fire.
+
+
+
+    *** The End ***
+
+
+In that game you scored 5 out of a possible 0, in 160 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6852"></child>
+        </children>
+    </item>
+    <item nodeId="node-6852">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">top of the elevator car
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7023"></child>
+        </children>
+    </item>
+    <item nodeId="node-7023">
+        <command xml:space="preserve">pour</command>
+        <result xml:space="preserve">What should Jones pour?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7024"></child>
+        </children>
+    </item>
+    <item nodeId="node-7024">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">She is carrying:
+  a screwdriver
+  a black card key
+  an elevator drop key
+  a red key card
+  an Atmo-Suit (being worn)
+  a fork
+  a safety pin
+  a garish medal
+  a coin
+  a thingy
+  a disruptor pistol
+
+The mauve guard robot throws her from its back, and she go sprawling into the corner of the elevator. The robot rotates its disruptor barrel to face her, and opens fire.
+
+
+
+    *** The End ***
+
+
+In that game you scored 5 out of a possible 0, in 160 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7145">
+        <command xml:space="preserve">take bottle</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7269"></child>
+            <child nodeId="node-7146"></child>
+        </children>
+    </item>
+    <item nodeId="node-7146">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor south hallway. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7147"></child>
+        </children>
+    </item>
+    <item nodeId="node-7147">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  an Electrofil quick-setting conductive polymer gel
+  a black card key
+  a screwdriver
+  an elevator drop key
+  a red key card
+  an Atmo-Suit
+  a fork
+  a safety pin
+  a garish medal
+  a coin
+  a thingy
+  a disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7269">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  a bottle of Electrofil quick-setting conductive polymer gel
+  a black card key
+  a screwdriver
+  an elevator drop key
+  a red key card
+  an Atmo-Suit
+  a fork
+  a safety pin
+  a garish medal
+  a coin
+  a thingy
+  a disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7270"></child>
+        </children>
+    </item>
+    <item nodeId="node-7270">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor south hallway. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7271"></child>
+        </children>
+    </item>
+    <item nodeId="node-7271">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor elevator hall. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7272"></child>
+        </children>
+    </item>
+    <item nodeId="node-7272">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">As soon as Jones enters the stairwell, a disruptor blast from above zings past her shoulder, and she beats a hasty retreat. She won't be going up the stairs until she can clear out the resistance, and she can't do that from here.
+
+Galaxy Jones is in the ninth floor elevator hall. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7273"></child>
+        </children>
+    </item>
+    <item nodeId="node-7273">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor north hallway. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7274"></child>
+        </children>
+    </item>
+    <item nodeId="node-7274">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the Cybernetica door)
+(first unlocking the Cybernetica door)
+(with the black card key)
+
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber".
+
+As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
+
+Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
+
+Beck: "What's the situation?"
+
+Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I might get a shot in, but it might just absorb it anyway."
+
+Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7275"></child>
+        </children>
+    </item>
+    <item nodeId="node-7275">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Jones creeps a little ways toward the guard robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7276"></child>
+        </children>
+    </item>
+    <item nodeId="node-7276">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Slowly, slowly, Jones gets a little closer. Just a little more...
+
+She must have poked up her shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7277"></child>
+        </children>
+    </item>
+    <item nodeId="node-7277">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Jones is right up next to the robot, crouched beneath a desk. She'll never get a better shot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7278"></child>
+        </children>
+    </item>
+    <item nodeId="node-7278">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">Jones aims the pistol upward under the robot's enhanced armor and fires. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.
+
+Jones: "Better than a video game. "
+
+Beck: "Nice, but don't forget to credit your handler."
+
+Jones: "Yes, yes, thanks for helping me not get killed."
+
+Beck: "You're welcome."
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7279"></child>
+        </children>
+    </item>
+    <item nodeId="node-7279">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the Inspiration Chamber. One of the most unique features of the office is the "inspiration chamber," a specialized room designed to stimulate creativity and innovation. The room is filled with advanced technology, including AI-generated art, interactive displays, and sensory stimulation devices that can help employees think outside the box and come up with new ideas.
+
+Jones: "This is some real B.S. here."
+
+Beck: "What's that?"
+
+Jones: "Never mind."
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7280"></child>
+        </children>
+    </item>
+    <item nodeId="node-7280">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled "Inspiration Chamber". One of the windows along the east side of the office is broken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7281"></child>
+        </children>
+    </item>
+    <item nodeId="node-7281">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones: "I'm going out the window to see if I can find a way to get up to the tenth floor."
+
+Beck: "Whoa whoa whoa, Jones. You know you're not good with heights."
+
+Jones: "Ask Thallium how how much that matters once I've kicked his ass."
+
+(first donning the Atmo-Suit)
+Jones climbs out the window.
+
+Galaxy Jones is on a ledge. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7282"></child>
+        </children>
+    </item>
+    <item nodeId="node-7282">
+        <command xml:space="preserve">look d</command>
+        <result xml:space="preserve">Jones is afraid of heights.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7283"></child>
+        </children>
+    </item>
+    <item nodeId="node-7283">
+        <command xml:space="preserve">look d</command>
+        <result xml:space="preserve">Really, really afraid of heights.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7284"></child>
+        </children>
+    </item>
+    <item nodeId="node-7284">
+        <command xml:space="preserve">look d</command>
+        <result xml:space="preserve">Okay, fine. Jones look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below her.
+
+Jones: "Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up."
+
+Beck: "Careful, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7285"></child>
+        </children>
+    </item>
+    <item nodeId="node-7285">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Jones drops off the ledge onto the scaffold. It rocks unnervingly for a moment.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7286"></child>
+        </children>
+    </item>
+    <item nodeId="node-7286">
+        <command xml:space="preserve">press up</command>
+        <result xml:space="preserve">(the scaffold up button)
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Beck?"
+
+Beck: "Yes?"
+
+Jones: "I hate it out here."
+
+Beck: "Well, there's the open window right next to you."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7287"></child>
+        </children>
+    </item>
+    <item nodeId="node-7287">
+        <command xml:space="preserve">press up</command>
+        <result xml:space="preserve">(the scaffold up button)
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Alright, I'm by the tenth floor now. What's this grill thing here?"
+
+Beck: "That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can get the cover off you should be able to access the whole floor from here."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7288"></child>
+        </children>
+    </item>
+    <item nodeId="node-7288">
+        <command xml:space="preserve">unscrew panel</command>
+        <result xml:space="preserve">That can't be unscrewed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7289"></child>
+        </children>
+    </item>
+    <item nodeId="node-7289">
+        <command xml:space="preserve">unscrew grill</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7290"></child>
+        </children>
+    </item>
+    <item nodeId="node-7290">
+        <command xml:space="preserve">unscrew vent</command>
+        <result xml:space="preserve">Jones loosens the screws and removes the grill from the vent.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7291"></child>
+        </children>
+    </item>
+    <item nodeId="node-7291">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Jones climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.
+
+Galaxy Jones is in the air handling room. 
+
+Jones: "Ha! I'm in!"
+
+Beck: "Be careful, you're likely to run into more resistance here. The floor is all one open office, so any guard robots will have good line of sight."
+
+Jones: "Got it."
+
+Beck: "And Jones? Save your game."
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7292"></child>
+        </children>
+    </item>
+    <item nodeId="node-7292">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the air handling door)
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7293"></child>
+        </children>
+    </item>
+    <item nodeId="node-7293">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the tenth floor elevator hall. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7294"></child>
+        </children>
+    </item>
+    <item nodeId="node-7294">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the south side of the Consolidated Microthings office. 
+
+Jones sees the mauve guard robot to the west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7295"></child>
+        </children>
+    </item>
+    <item nodeId="node-7295">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the tenth floor elevator hall. 
+
+The mauve guard robot appears to the south, heading east.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7296"></child>
+        </children>
+    </item>
+    <item nodeId="node-7296">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator car. 
+
+The mauve guard robot appears to the east, heading north.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7297"></child>
+        </children>
+    </item>
+    <item nodeId="node-7297">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here.
+
+The mauve guard robot enters the elevator car below.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7298"></child>
+        </children>
+    </item>
+    <item nodeId="node-7298">
+        <command xml:space="preserve">jump on robot</command>
+        <result xml:space="preserve">Jones drops down through the ceiling and on to the guard robot. It swings around looking for her, obviously panicked that it can't bring its gun to bear on its attacker. Jones manages to hang on.
+
+The mauve guard robot struggles against her hold on it, to no avail.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7299"></child>
+        </children>
+    </item>
+    <item nodeId="node-7299">
+        <command xml:space="preserve">pour gel on robot</command>
+        <result xml:space="preserve">Jones pours the gel into a vent on the robot's head. The robot flails around wildly and throws her from its back, then lets out a loud crackling sound and stops moving.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7604"></child>
+        </children>
+    </item>
+    <item nodeId="node-7604">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7921"></child>
+            <child nodeId="node-7605"></child>
+            <child nodeId="node-7759"></child>
+        </children>
+    </item>
+    <item nodeId="node-7759">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">top of the elevator car
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7760"></child>
+        </children>
+    </item>
+    <item nodeId="node-7760">
+        <command xml:space="preserve">showme mauve</command>
+        <result xml:space="preserve">dead mauve guard robot - guard robot
+location: in the elevator car
+singular-named, improper-named, unused; unlit, inedible, portable, male, female, nomale, unseen, unfamiliar, non-pourable, enemy; list grouping key: none
+printed name: "dead mauve guard robot"
+printed plural name: "guard robots"
+indefinite article: "the"
+most recent reference: nominal
+third singular pronoun: Singular-they-pronoun
+conversation: none
+description: "This one looks, if anything, even meaner than the ones you've already seen. It's looking around as if in confusion."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+carrying capacity: 100
+first-singular-pronoun: I-pronoun
+first-plural-pronoun: We-pronoun
+second-singular-pronoun: Singular-you-pronoun
+second-plural-pronoun: Plural-you-pronoun
+notable action: doing nothing
+original location: the south side of the Consolidated Microthings office
+new location: tenth floor elevator hall
+goal: the southwest corner of the Consolidated Microthings office
+homebase: the southwest corner of the Consolidated Microthings office
+attack countdown: 2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7761"></child>
+        </children>
+    </item>
+    <item nodeId="node-7761">
+        <command xml:space="preserve">showme mauve guard robot</command>
+        <result xml:space="preserve">dead mauve guard robot - guard robot
+location: in the elevator car
+singular-named, improper-named, unused; unlit, inedible, portable, male, female, nomale, unseen, unfamiliar, non-pourable, enemy; list grouping key: none
+printed name: "dead mauve guard robot"
+printed plural name: "guard robots"
+indefinite article: "the"
+most recent reference: nominal
+third singular pronoun: Singular-they-pronoun
+conversation: none
+description: "This one looks, if anything, even meaner than the ones you've already seen. It's looking around as if in confusion."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+carrying capacity: 100
+first-singular-pronoun: I-pronoun
+first-plural-pronoun: We-pronoun
+second-singular-pronoun: Singular-you-pronoun
+second-plural-pronoun: Plural-you-pronoun
+notable action: doing nothing
+original location: the south side of the Consolidated Microthings office
+new location: tenth floor elevator hall
+goal: the southwest corner of the Consolidated Microthings office
+homebase: the southwest corner of the Consolidated Microthings office
+attack countdown: 2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7762"></child>
+        </children>
+    </item>
+    <item nodeId="node-7762">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">top of the elevator car - room
+    elevator car - backdrop
+    Jones - person
+        bottle of Electrofil quick-setting conductive polymer gel
+        black card key
+        screwdriver
+        elevator drop key
+        red key card
+        Atmo-Suit (worn)
+        fork
+        safety pin
+        garish medal - pseudocontainer
+        coin
+        thingy
+        disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7763"></child>
+        </children>
+    </item>
+    <item nodeId="node-7763">
+        <command xml:space="preserve">showme mauve guard robots</command>
+        <result xml:space="preserve">dead mauve guard robot - guard robot
+location: in the elevator car
+singular-named, improper-named, unused; unlit, inedible, portable, male, female, nomale, unseen, unfamiliar, non-pourable, enemy; list grouping key: none
+printed name: "dead mauve guard robot"
+printed plural name: "guard robots"
+indefinite article: "the"
+most recent reference: nominal
+third singular pronoun: Singular-they-pronoun
+conversation: none
+description: "This one looks, if anything, even meaner than the ones you've already seen. It's looking around as if in confusion."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+carrying capacity: 100
+first-singular-pronoun: I-pronoun
+first-plural-pronoun: We-pronoun
+second-singular-pronoun: Singular-you-pronoun
+second-plural-pronoun: Plural-you-pronoun
+notable action: doing nothing
+original location: the south side of the Consolidated Microthings office
+new location: tenth floor elevator hall
+goal: the southwest corner of the Consolidated Microthings office
+homebase: the southwest corner of the Consolidated Microthings office
+attack countdown: 2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7764"></child>
+        </children>
+    </item>
+    <item nodeId="node-7764">
+        <command xml:space="preserve">showme mauve all guard robots</command>
+        <result xml:space="preserve">I only understood you as far as wanting to showme the dead mauve guard robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7765"></child>
+        </children>
+    </item>
+    <item nodeId="node-7765">
+        <command xml:space="preserve">showme all mauve guard robots</command>
+        <result xml:space="preserve">dead mauve guard robot - guard robot
+location: in the elevator car
+singular-named, improper-named, unused; unlit, inedible, portable, male, female, nomale, unseen, unfamiliar, non-pourable, enemy; list grouping key: none
+printed name: "dead mauve guard robot"
+printed plural name: "guard robots"
+indefinite article: "the"
+most recent reference: nominal
+third singular pronoun: Singular-they-pronoun
+conversation: none
+description: "This one looks, if anything, even meaner than the ones you've already seen. It's looking around as if in confusion."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+carrying capacity: 100
+first-singular-pronoun: I-pronoun
+first-plural-pronoun: We-pronoun
+second-singular-pronoun: Singular-you-pronoun
+second-plural-pronoun: Plural-you-pronoun
+notable action: doing nothing
+original location: the south side of the Consolidated Microthings office
+new location: tenth floor elevator hall
+goal: the southwest corner of the Consolidated Microthings office
+homebase: the southwest corner of the Consolidated Microthings office
+attack countdown: 2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7766"></child>
+        </children>
+    </item>
+    <item nodeId="node-7766">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Jones stands around and waits.
 
 The mauve guard robot exits the elevator car, out of sight.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-7767"></child>
+        </children>
+    </item>
+    <item nodeId="node-7767">
+        <command xml:space="preserve">showme all mauve guard robots</command>
+        <result xml:space="preserve">dead mauve guard robot - guard robot
+location: in the tenth floor elevator hall
+singular-named, improper-named, unused; unlit, inedible, portable, male, female, nomale, unseen, unfamiliar, non-pourable, enemy; list grouping key: none
+printed name: "dead mauve guard robot"
+printed plural name: "guard robots"
+indefinite article: "the"
+most recent reference: nominal
+third singular pronoun: Singular-they-pronoun
+conversation: none
+description: "This one looks, if anything, even meaner than the ones you've already seen. It's looking around as if in confusion."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+carrying capacity: 100
+first-singular-pronoun: I-pronoun
+first-plural-pronoun: We-pronoun
+second-singular-pronoun: Singular-you-pronoun
+second-plural-pronoun: Plural-you-pronoun
+notable action: doing nothing
+original location: the south side of the Consolidated Microthings office
+new location: tenth floor elevator hall
+goal: the southwest corner of the Consolidated Microthings office
+homebase: the southwest corner of the Consolidated Microthings office
+attack countdown: 2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7605">
+        <command xml:space="preserve">showme mauve guard robot</command>
+        <result xml:space="preserve">dead mauve guard robot - guard robot
+location: in the tenth floor elevator hall
+singular-named, improper-named, unused; unlit, inedible, portable, male, female, nomale, unseen, unfamiliar, non-pourable, enemy; list grouping key: none
+printed name: "dead mauve guard robot"
+printed plural name: "guard robots"
+indefinite article: "the"
+most recent reference: nominal
+third singular pronoun: Singular-they-pronoun
+conversation: none
+description: "This one looks, if anything, even meaner than the ones you've already seen. It's looking around as if in confusion."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+carrying capacity: 100
+first-singular-pronoun: I-pronoun
+first-plural-pronoun: We-pronoun
+second-singular-pronoun: Singular-you-pronoun
+second-plural-pronoun: Plural-you-pronoun
+notable action: doing nothing
+original location: the south side of the Consolidated Microthings office
+new location: tenth floor elevator hall
+goal: the southwest corner of the Consolidated Microthings office
+homebase: the southwest corner of the Consolidated Microthings office
+attack countdown: 2
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-7921">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator car. 
+
+Also here is the dead robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-5170">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Jones slinks back to the speeder dock.
+
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Her speeder, Galaxy One, sits in one of the parking bays.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5171"></child>
+        </children>
+    </item>
+    <item nodeId="node-5171">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5172"></child>
+        </children>
+    </item>
+    <item nodeId="node-5172">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
+
+Beck replies, "Be careful, Galaxy."
+
+Jones passes through the revolving door and into the lobby, alert to any defenses.
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Above it floats, suspended on almost invisible cables, a giant crystal sculpture. She may go east and west from here, north to the elevators, or south out of the building.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5173"></child>
+        </children>
+    </item>
+    <item nodeId="node-5173">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Before Jones gets a chance to do anything, two robot guards emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring lifesigns."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5174"></child>
+        </children>
+    </item>
+    <item nodeId="node-5174">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
+
+Jones: "I'm pinned down here!"
+
+The two robots coordinate fire over the desk, narrowly missing her.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5175"></child>
+        </children>
+    </item>
+    <item nodeId="node-5175">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5176"></child>
+        </children>
+    </item>
+    <item nodeId="node-5176">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Jones leaves the building.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5177"></child>
+        </children>
+    </item>
+    <item nodeId="node-5177">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5178"></child>
+        </children>
+    </item>
+    <item nodeId="node-5178">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5179"></child>
+        </children>
+    </item>
+    <item nodeId="node-5179">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5180"></child>
+        </children>
+    </item>
+    <item nodeId="node-5180">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the northwest corner of the ground floor. A large relief map of mars is mounted on the north wall here. One can leave here to the south or east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6392">
+        <command xml:space="preserve">gonear martian chemical</command>
+        <result xml:space="preserve">Galaxy Jones is in the Martian Chemical office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6393"></child>
+        </children>
+    </item>
+    <item nodeId="node-6393">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is in the Martian Chemical office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6394"></child>
+        </children>
+    </item>
+    <item nodeId="node-6394">
+        <command xml:space="preserve">x cabinet</command>
+        <result xml:space="preserve">The cabinet is full of bottles of Electrofil quick-setting conductive polymer gel.
+
+In the chemical cabinet is an Electrofil quick-setting conductive polymer gel.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6395"></child>
+        </children>
+    </item>
+    <item nodeId="node-6395">
+        <command xml:space="preserve">take gel</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6411"></child>
+            <child nodeId="node-6406"></child>
+            <child nodeId="node-6396"></child>
+            <child nodeId="node-6401"></child>
+            <child nodeId="node-6419"></child>
+            <child nodeId="node-6499"></child>
+        </children>
+    </item>
+    <item nodeId="node-6499">
+        <command xml:space="preserve">x cabinet</command>
+        <result xml:space="preserve">The cabinet is full of bottles of Electrofil quick-setting conductive polymer gel.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6500"></child>
+        </children>
+    </item>
+    <item nodeId="node-6500">
+        <command xml:space="preserve">gonear speeder</command>
+        <result xml:space="preserve">Which do you mean, the speeder dock or the speeder?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6501"></child>
+        </children>
+    </item>
+    <item nodeId="node-6501">
+        <command xml:space="preserve">dock</command>
+        <result xml:space="preserve">Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6502"></child>
+        </children>
+    </item>
+    <item nodeId="node-6502">
+        <command xml:space="preserve">drop bottle</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6503"></child>
+        </children>
+    </item>
+    <item nodeId="node-6503">
+        <command xml:space="preserve">gonear martian chemical</command>
+        <result xml:space="preserve">Galaxy Jones is in the Martian Chemical office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6504"></child>
+        </children>
+    </item>
+    <item nodeId="node-6504">
+        <command xml:space="preserve">take bottle</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6419">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the Chemical door)
+(first unlocking the Chemical door)
+Jones lacks a key that fits the Chemical door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6420"></child>
+        </children>
+    </item>
+    <item nodeId="node-6420">
+        <command xml:space="preserve">gonear building management south</command>
+        <result xml:space="preserve">(the south end of the building management office)
+Galaxy Jones is at the south end of the building management office. 
+
+A screwdriver sits atop the filing cabinet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6421"></child>
+        </children>
+    </item>
+    <item nodeId="node-6421">
+        <command xml:space="preserve">drop gel</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6422"></child>
+        </children>
+    </item>
+    <item nodeId="node-6422">
+        <command xml:space="preserve">gonear chemical</command>
+        <result xml:space="preserve">(the Martian Chemical office)
+Galaxy Jones is in the Martian Chemical office. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6423"></child>
+        </children>
+    </item>
+    <item nodeId="node-6423">
+        <command xml:space="preserve">take gel</command>
+        <result xml:space="preserve">You've already taken one bottle of Electrofil from the cabinet. Use it before taking another.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6514"></child>
+        </children>
+    </item>
+    <item nodeId="node-6514">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  a disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6401">
+        <command xml:space="preserve">take gel</command>
+        <result xml:space="preserve">That isn't available.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6396">
+        <command xml:space="preserve">take electrofil</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6406">
+        <command xml:space="preserve">scope</command>
+        <result xml:space="preserve">1: outside (829641)
+2: a Chemical door (828361)
+3: Jones (826121)
+4: a chemical cabinet (828425)
+5: a disruptor pistol (826153)
+6: you, the player (825801)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6411">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  an Electrofil quick-setting conductive polymer gel
+  a disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6412"></child>
+        </children>
+    </item>
+    <item nodeId="node-6412">
+        <command xml:space="preserve">drop it</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6413"></child>
+        </children>
+    </item>
+    <item nodeId="node-6413">
+        <command xml:space="preserve">take gel</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6414"></child>
+        </children>
+    </item>
+    <item nodeId="node-6414">
+        <command xml:space="preserve">x bottle</command>
+        <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

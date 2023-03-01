@@ -15,9 +15,7 @@ Include Look That Way by Philip Riley.
 Include Use by Philip Riley.   
 Include Open Spaces by Philip Riley.
 
-A room has a text called the preposition.
-A person can be nomale.
- 
+Release along with cover art.
 Release along with a "Quixe" interpreter.
  
 Volume 1 - Technical Stuff
@@ -156,6 +154,26 @@ Check unscrewing something with something when the second noun is not the screwd
 	
 Check unscrewing something with something when the second noun is the screwdriver:
 	say "That can't be unscrewed." instead;
+	
+Jumping on is an action applying to one thing. Understand "jump on/-- [something]" as jumping on.
+
+Check jumping on something which is not a guard robot:
+	say "Sounds like fun. Maybe later after [we] has saved Europa.";
+	
+Pouring is an action applying to one carried thing. Understand "pour [something]" as pouring.
+
+Check pouring a non-pourable thing:
+	say "That can't be poured.";
+	
+Check pouring a pourable thing:
+	say "That would just makes a mess.";
+	
+Pouring it on is an action applying to one carried thing and one thing. Understand "pour [something] on [something]" as pouring it on.
+
+A thing can be pourable or non-pourable. A thing is usually non-pourable.
+
+Check pouring a non-pourable thing on something:
+	say "That can't be poured.";
 
 Volume 3 - The Player Character
 	
@@ -339,7 +357,7 @@ carry out shooting purple guard robot with the disruptor pistol during Cyberneti
 	if sneak index > 0:
 		say "[We] raises [our] head and fires wide. The robot fires back. Jones ducks and crawls off among the labyrinth of desks.";
 	otherwise:
-		say "[We] aims the pistol upward under the robot's enhanced armor. [We] flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.";
+		say "[We] aims the pistol upward under the robot's enhanced armor and fires. [We] flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.";
 		remove the purple guard robot from play;
 	
 Cybernetica Battle ends when purple guard robot is not in the Cybernetica office.
@@ -407,6 +425,7 @@ A guard robot is a kind of enemy person. The description is "Definitely not a fr
 There is a guard robot called the red guard robot. It is undescribed.
 There is a guard robot called the green guard robot. It is undescribed.
 There is a guard robot called the purple guard robot. It is undescribed.
+There is a thing called the dead robot.
 
 Check taking a guard robot:
 	say "An interesting idea." instead;
@@ -421,6 +440,8 @@ A container can be keyed. A door can be keyed. A container is usually not keyed.
 The plastic water bottle is a thing. The plastic water bottle can be full or empty. It is full. 
 The printed name is "[if full]full[otherwise]empty[end if] plastic water bottle".
 The description is "A [if full]full[otherwise]empty[end if] bottle of Olympus Springs water."
+
+A bottle of Electrofil quick-setting conductive polymer gel is a pourable thing. Understand "bottles" as Electrofil quick-setting conductive polymer gel.
 
 Volume 7 - Geography
 
@@ -511,7 +532,7 @@ The Cybernetica door-inside is a door. It is west of the Cybernetica office. It 
 
 The Inspiration Chamber is south of Cybernetica office.
 
-The Chronicle door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chronicle office. The Chronicle door is closed, openable, locked, and lockable.
+The Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Chemical door is closed, openable, locked, and lockable.
 
 The north building management door is a door. It is scenery. It is west of the ninth floor north hallway and east of the north end of the building management office.
 
@@ -580,12 +601,29 @@ microthings-7 farsees microthings-8.
 
 the tenth floor elevator hall farsees the elevator car-room, microthings-1, and microthings-5.
 
-Book 5 - The Elevator
 
-Book 6 - The 100th Floor 
+Book 5 - The 100th Floor 
 
-Book 7 - The Roof
-		
+The 100th floor elevator hall is a room. 
+
+penthouse north is north of 100th floor elevator hall.
+
+penthouse east is southeast of penthouse north.
+
+penthouse south is southwest of penthouse east and south of 100th floor elevator hall.
+
+penthouse west is northwest of penthouse south and southwest of penthouse north.
+
+stairs to roof is east of 100th floor elevator hall.
+
+
+Book 6 - The Roof
+	
+roof is above stairs to roof.
+
+flyer pad is west of roof.
+
+cage is north of roof.
 	
 Volume 8 - Room Implementations
 
@@ -600,7 +638,7 @@ The description is "Outside the building are the red-dusted streets of New Reykj
 
 Understand "city/planet/mars/outside/out" as first floor view of New Reykjavik.
 
-Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in south end of the building management office, north end of the building management office, ninth floor south hallway, ninth floor north hallway, Martian Chronicle office, Cybernetica office.
+Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in south end of the building management office, north end of the building management office, ninth floor south hallway, ninth floor north hallway, Martian Chemical office, Cybernetica office.
 
 The printed name is "outside".
 
@@ -1307,6 +1345,20 @@ Instead of giving the shrimp tea sandwich to the black cat:
 Instead of taking the screwdriver when the black cat is not in the location and the screwdriver is behind the filing cabinet:
 	now the screwdriver is not behind the filing cabinet;
 	try taking the screwdriver;
+	
+Chapter 4 - Martian Chemical Office
+
+The chemical cabinet is scenery in the Martian Chemical office. "The cabinet is full of bottles of [Electrofil quick-setting conductive polymer gel]."
+
+The Electrofil quick-setting conductive polymer gel is in the cabinet.
+
+The untakable bottle is in the cabinet. It is undescribed. It is privately-named. Understand "bottle/Electrofil/quick-setting/conductive/polymer/gel" as the untakable bottle.
+
+Instead of taking the untakable bottle:
+	Say "[We] has already taken one bottle of Electrofil from the cabinet. [We] should use it before taking another.";
+	
+Rule for clarifying the parser's choice of the Electrofil quick-setting conductive polymer gel when the untakable bottle is touchable:
+	do nothing;
 
 Book 5 - Tenth Floor
 
@@ -1329,13 +1381,13 @@ Before going somewhere when the player is in tenth-floor-region and the mauve gu
 		now oldloc is the location;
 	
 After going somewhere when the player is in tenth-floor-region and the mauve guard robot is somewhere:
-	if oldloc is not the room of stuff:
+	if oldloc is not the room of stuff and the location of the mauve guard robot farsees oldloc:
 		now the goal of the mauve guard robot is the location;
 	continue the action;
 
-Every turn when the mauve guard robot is in the tenth-floor-region: 
+Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack: 
 	if the mauve guard robot is in the location:
-		say "The robot slaughters Jones.";
+		say "The robot slaughters Jones.";		
 		end the story;
 	otherwise if the goal of the mauve guard robot is not the location of the mauve guard robot:
 		let D be the best route from the location of the mauve guard robot to the goal of the mauve guard robot;
@@ -1363,7 +1415,7 @@ After deciding the scope of the player when the location is top of the elevator 
 Rule for reaching inside the elevator car-room when the location is top of the elevator and the mauve guard robot is in the elevator car-room:
 	allow access;
 	
-The description of the top of the elevator car is "The elevator shaft extends many hundreds feet above here. You can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if in confusion[end if].";
+The description of the top of the elevator car is "The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if in confusion[end if].";
 
 After the mauve guard robot going from the elevator car-room to the tenth floor elevator hall when the location is the top of the elevator car:
 	say "The mauve guard robot exits the elevator car, out of sight.";
@@ -1371,7 +1423,35 @@ After the mauve guard robot going from the elevator car-room to the tenth floor 
 After the mauve guard robot going from the tenth floor elevator hall to the elevator car-room when the location is the top of the elevator car:
 	say "The mauve guard robot enters the elevator car below.";
 	
+The description of the mauve guard robot is "This one looks, if anything, even meaner than the ones you've already seen[if location is top of the elevator car]. It's looking around as if in confusion[end if]."
 
+The mauve guard robot has a number called the attack countdown. 
+The mauve guard robot can be under attack.
+
+Instead of jumping on the mauve guard robot when the location is the top of the elevator car:
+	say "[We] drops down through the ceiling and on to the guard robot. It swings around looking for [us], obviously panicked that it can't bring its gun to bear on its attacker. [reset LPR][We] manages to hang on.";
+	now the mauve guard robot is under attack;
+	now the attack countdown of the mauve guard robot is 3;
+	move the player to the elevator car-room;
+
+Every turn when the mauve guard robot is under attack:
+	decrement the attack countdown of the mauve guard robot;
+	if the attack countdown of the mauve guard robot < 1:
+		now the mauve guard robot is not under attack;
+		say "The mauve guard robot throws [us] from its back, and [we] goes sprawling into the corner of the elevator. The robot rotates its disruptor barrel to face [us], and opens fire.";
+		end the story;
+	otherwise:
+		say "The mauve guard robot struggles against [our] hold on it, to no avail.";
+
+Report waiting when the mauve guard robot is under attack:
+	do nothing;
+	stop the action;
+	
+Instead of pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot:
+	say "[We] pours the gel into a vent on the robot's head. The robot flails around wildly and throws [us] from its back, then lets out a loud crackling sound and stops moving.";
+	now the mauve guard robot is not under attack;
+	remove the mauve guard robot from play;
+	move the dead robot to the elevator car-room;
 
 Volume 9 - Language
 
