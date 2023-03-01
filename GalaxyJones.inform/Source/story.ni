@@ -119,7 +119,8 @@ Book 3 - Glulx Styles
 
 Table of User Styles (continued)
 style name	color	italic	indentation
-special-style-1	"#FF0000"	false	19
+special-style-1	"#0000FF"	false	19
+special-style-2	"#FF0000"	false	19
 
 Volume 2 - Actions
 
@@ -174,6 +175,11 @@ A thing can be pourable or non-pourable. A thing is usually non-pourable.
 
 Check pouring a non-pourable thing on something:
 	say "That can't be poured.";
+	
+Unwrapping is an action applying to one thing. Understand "unwrap [something]" as unwrapping.
+
+Check unwrapping something:
+	say "That can't be unwrapped.";
 
 Volume 3 - The Player Character
 	
@@ -226,6 +232,9 @@ An object can be used or unused. An object is usually unused.
 To converse (T - a text):
 	say "[special-style-1][T][roman type][line break]";
 
+To converse as thallium (T - a text):
+	say "[special-style-2][T][roman type][line break]";
+
 report looking:
 	if the conversation of the location is not empty and the location is unused:
 		converse the conversation of the location;
@@ -236,16 +245,18 @@ report examining something:
 		converse the conversation of the noun;
 		now the noun is used;
 		
-A clip is a kind of thing. A clip can be conversational or descriptive. A clip is usually conversational.
+A clip is a kind of thing. A clip can be conversational or descriptive or thallium. A clip is usually conversational.
 
 To say (C - a clip):
 	if C is unused:
 		say line break;
 		if C is conversational:
 			converse the conversation of C;
-		otherwise:
+		otherwise if C is descriptive:
 			say the conversation of C;
 			say line break;
+		otherwise:
+			converse as thallium the conversation of C;
 		if not expanding text for comparison purposes, now C is used;
 	
 Volume 5 - Plot
@@ -1221,6 +1232,7 @@ Instead of opening the exhaust vent:
 	
 Instead of entering the exhaust vent:
 	say "[We] climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.";
+	silently try taking off the atmo-suit;
 	now the player is in the air handling room;
 	converse "Jones: 'Ha! I'm in!'
 	
@@ -1404,9 +1416,34 @@ the describe room gone into rule does nothing when the noun is the mauve guard r
 
 Chapter 2 - The Microthings Offices
 
-The present is a thing in microthings-2.
+The present is a thing in microthings-2. The description is "The note on the present say 'For Galaxy -- see you soon! -- Your friend, the Admiral.'". "There is a present with a note attached sitting on a desk here.". Understand "note/gift/box" as the present.
+The golden key is a thing.
+
+Instead of unwrapping the present:
+	try opening the present;
+	
+Instead of opening the present:
+	remove the present from play;
+	now the player carries the golden key;
+	say "[We] rips the package open and discovers a golden key.";
+	
 
 Chapter 3 - The Elevator Car
+	
+The golden keyhole is scenery in the elevator car-room.
+
+The elevator car-room has a number called the floor. The floor of the elevator car-room is 10.
+The elevator car-room can be in running mode.
+
+it's real ivory is a thallium clip with conversation "[line break]Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate a African jungle on Mars. On second thought I should have gotten  an Indian elephant.'".
+
+The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if].[if the elevator car-room is in running mode][it's real ivory][end if]".
+
+Instead of inserting the golden key into the golden keyhole:
+	remove the golden key from play;
+	now the elevator car-room is in running mode;
+	say "[We] puts the key in the keyhold and turn. There is a pleasant chime, and some buttons light up.";
+	try looking;
 
 After deciding the scope of the player when the location is top of the elevator car:
 	If the mauve guard robot is in the elevator car-room:
@@ -1415,7 +1452,7 @@ After deciding the scope of the player when the location is top of the elevator 
 Rule for reaching inside the elevator car-room when the location is top of the elevator and the mauve guard robot is in the elevator car-room:
 	allow access;
 	
-The description of the top of the elevator car is "The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if in confusion[end if].";
+The description of the top of the elevator car is "The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if confused[end if].";
 
 After the mauve guard robot going from the elevator car-room to the tenth floor elevator hall when the location is the top of the elevator car:
 	say "The mauve guard robot exits the elevator car, out of sight.";
@@ -1423,7 +1460,7 @@ After the mauve guard robot going from the elevator car-room to the tenth floor 
 After the mauve guard robot going from the tenth floor elevator hall to the elevator car-room when the location is the top of the elevator car:
 	say "The mauve guard robot enters the elevator car below.";
 	
-The description of the mauve guard robot is "This one looks, if anything, even meaner than the ones you've already seen[if location is top of the elevator car]. It's looking around as if in confusion[end if]."
+The description of the mauve guard robot is "This one looks, if anything, even meaner than the ones you've already seen[if location is top of the elevator car]. It's looking around as if confused[end if]."
 
 The mauve guard robot has a number called the attack countdown. 
 The mauve guard robot can be under attack.
@@ -1452,6 +1489,7 @@ Instead of pouring the Electrofil quick-setting conductive polymer gel on the ma
 	now the mauve guard robot is not under attack;
 	remove the mauve guard robot from play;
 	move the dead robot to the elevator car-room;
+	try looking;
 
 Volume 9 - Language
 
