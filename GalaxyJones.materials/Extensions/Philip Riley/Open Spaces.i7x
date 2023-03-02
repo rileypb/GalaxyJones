@@ -37,6 +37,7 @@ After the player doing something when Moved Once is false:
 		
 Report an actor going a direction (called dir) when the actor is not the player:
 	say the text produced by the movement text rules for actor;
+	say line break;
 	stop; 
 	
 
@@ -80,13 +81,13 @@ Movement text for a person (called P) (this is the standard movement text rule):
 		if ol is not open space and nl is open space:
 			rule succeeds with result "To the [best route from location to nl], [the P] [emerge] from [the building of ol].";
 		otherwise if ol is open space and nl is open space:
-			rule succeeds with result "[The P] [appear] to the [best route from location to nl], heading [best route from ol to nl].";
+			rule succeeds with result "[The P] [appear] to the [best route from location to nl], coming from the [opposite of best route from ol to nl].";
 		otherwise if ol is open space and nl is not open space:
 			rule succeeds with result "To the [Best Route From Location To Nl], [the P] [enter] [the building of nl] from the [best route from nl to ol].";
 		otherwise if building of ol is not building of nl and ol is not open space and nl is not open space:
 			rule succeeds with result "To the [Best route from location to nl], [the P] [enter] [the building of nl] from [the building of ol] to the [best route from nl to ol].";
 		otherwise if nl is not open space and nl is not open space:
-			rule succeeds with result "[The P] [appear] to the [best route from location to nl], heading [best route from ol to nl].";
+			rule succeeds with result "[The P] [appear] to the [best route from location to nl], coming from the [opposite of best route from ol to nl].";
 
 Remote People is a list of objects that varies.
 

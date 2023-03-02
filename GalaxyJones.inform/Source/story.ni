@@ -169,7 +169,7 @@ Check pouring a non-pourable thing:
 Check pouring a pourable thing:
 	say "That would just makes a mess.";
 	
-Pouring it on is an action applying to one carried thing and one thing. Understand "pour [something] on [something]" as pouring it on.
+Pouring it on is an action applying to one carried thing and one thing. Understand "pour [something] on/in/into [something]" as pouring it on.
 
 A thing can be pourable or non-pourable. A thing is usually non-pourable.
 
@@ -180,6 +180,9 @@ Unwrapping is an action applying to one thing. Understand "unwrap [something]" a
 
 Check unwrapping something:
 	say "That can't be unwrapped.";
+	
+Understand the command "buy" as something new.
+Buying it with is an action applying to one thing and one carried thing. Understand "buy [any thing] with [something]" as buying it with.
 
 Volume 3 - The Player Character
 	
@@ -245,11 +248,13 @@ report examining something:
 		converse the conversation of the noun;
 		now the noun is used;
 		
-A clip is a kind of thing. A clip can be conversational or descriptive or thallium. A clip is usually conversational.
+A clip is a kind of thing. A clip is privately-named. A clip can be conversational or descriptive or thallium. A clip is usually conversational.
 
-To say (C - a clip):
+To say print (C - a clip):
+	print C;
+
+To print (C - a clip):
 	if C is unused:
-		say line break;
 		if C is conversational:
 			converse the conversation of C;
 		otherwise if C is descriptive:
@@ -257,6 +262,7 @@ To say (C - a clip):
 			say line break;
 		otherwise:
 			converse as thallium the conversation of C;
+			say line break;
 		if not expanding text for comparison purposes, now C is used;
 	
 Volume 5 - Plot
@@ -288,7 +294,7 @@ Book 1 - Lobby Shootout
 Lobby Shootout is a scene. Lobby Shootout begins when the player is in the lobby for three turns.
 Lobby Shootout ends when the location of the red guard robot is not the lobby.
 
-pinned down is a clip with conversation "Jones: 'I[']m pinned down here!'".
+pinned down is a clip with conversation "[line break]Jones: 'I[']m pinned down here!'".
 Check going during lobby shootout:
 	say "Trying to reach an exit would surely get [us] shot.";
 	say pinned down instead;
@@ -357,7 +363,7 @@ report sneaking up on the purple guard robot:
 		say "[We] creeps a little ways toward the guard robot.";
 	otherwise if sneak index is 1:
 		say "Slowly, slowly, [we] gets a little closer. Just a little more...";
-		say shoot out the window;
+		print shoot out the window;
 		change east exit of Cybernetica office to ledge;
 		change west exit of ledge to Cybernetica office;
 		now the Cybernetica office is window-broken;
@@ -385,9 +391,9 @@ When Cybernetica Battle ends:
 
 Volume 6 - Things
 
-The disruptor pistol is a thing. The description is "A compact instrument of death, with only one setting: kill.".
+The disruptor pistol is a thing. The description is "A compact instrument of death, with only one setting: kill.". Understand "gun/weapon" as the disruptor pistol.
 
-Does the player mean shooting something carried by the player with something:
+Does the player mean shooting something carried by the player with something:  
 	it is very unlikely;
 	
 The Atmo-Suit is a wearable thing. "There is an Atmo-Suit hanging from a hook here."
@@ -436,7 +442,7 @@ A guard robot is a kind of enemy person. The description is "Definitely not a fr
 There is a guard robot called the red guard robot. It is undescribed.
 There is a guard robot called the green guard robot. It is undescribed.
 There is a guard robot called the purple guard robot. It is undescribed.
-There is a thing called the dead robot.
+There is a thing called the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground."
 
 Check taking a guard robot:
 	say "An interesting idea." instead;
@@ -448,9 +454,12 @@ A couch is a kind of enterable supporter. It is usually scenery.
 
 A container can be keyed. A door can be keyed. A container is usually not keyed. A door is usually not keyed.
 
-The plastic water bottle is a thing. The plastic water bottle can be full or empty. It is full. 
+The bottled water is a thing. The description is "A [if full]full[otherwise]empty[end if] bottle of Olympus Springs water." Understand "bottle/Olympus/Springs" as the bottled water.
+The bottled water can be full or empty. It is full. The printed name is "[if full]full[otherwise]empty[end if] water bottle".
+
+[The plastic water bottle is a thing. The plastic water bottle can be full or empty. It is full. 
 The printed name is "[if full]full[otherwise]empty[end if] plastic water bottle".
-The description is "A [if full]full[otherwise]empty[end if] bottle of Olympus Springs water."
+The description is "A [if full]full[otherwise]empty[end if] bottle of Olympus Springs water."]
 
 A bottle of Electrofil quick-setting conductive polymer gel is a pourable thing. Understand "bottles" as Electrofil quick-setting conductive polymer gel.
 
@@ -770,7 +779,7 @@ Carry out shooting the giant sculpture with the disruptor pistol:
 	remove the green guard robot from play;
 	remove the giant sculpture from play;
 	move the tangled ruin to the lobby;
-	say battle won;
+	print battle won;
 	increase the score by 1;
 	
 entering is acting recklessly.
@@ -1070,15 +1079,15 @@ Jones: 'Thanks for the advice.'".
 
 Instead of opening the useless elevator doors:
 	say "[We] is unable to open the door. Perhaps it's blocked from the other side.";
-	say cannot open elevator.
+	print cannot open elevator.
 
 Instead of unlocking keylessly the useless elevator doors:
 	say "[We] is unable to open the door. Perhaps it's blocked from the other side.";
-	say cannot open elevator.
+	print cannot open elevator.
 
 Instead of unlocking the useless elevator doors with something:
 	say "[We] is unable to open the door. Perhaps it's blocked from the other side.";
-	say cannot open elevator.
+	print cannot open elevator.
 	
 After going from ninth floor elevator shaft to ninth floor elevator hall for the first time:
 	say line break;
@@ -1092,6 +1101,29 @@ Book 4 - Ninth Floor
 Instead of going to ninth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
 	try looking;
+	
+The vending machine is scenery in the ninth floor elevator hall. The vending machine is a transparent, closed container. The bottled water is in the vending machine.
+
+This is the can't reach inside the vending machine rule:
+	if the container in question is the vending machine:
+		say "You'll have to buy it first.";
+		deny access;
+
+The can't reach inside the vending machine rule is listed before the can't reach inside closed containers rule in the reaching inside rules.
+
+Instead of inserting the coin into the vending machine:
+	try buying the bottled water with the coin;
+	
+Instead of buying the bottled water with the coin:
+	now the player carries the bottled water;
+	remove the coin from play;
+	say "[We] inserts the coin in the machine and takes the bottle that appears a few seconds later.";
+	
+After deciding the scope of the player when the location is the ninth floor elevator hall and the bottled water is in the vending machine:
+	place the bottled water in scope;
+	
+rule for reaching inside the vending machine while buying the bottled water with the coin:
+	allow access;
 
 Chapter 1 - Cybernetica office
 
@@ -1118,7 +1150,7 @@ Beck: 'What's that?'
 
 Jones: 'Never mind.'";
 
-The description of the Inspiration Chamber is "One of the most unique features of the office is the 'inspiration chamber,' a specialized room designed to stimulate creativity and innovation. The room is filled with advanced technology, including AI-generated art, interactive displays, and sensory stimulation devices that can help employees think outside the box and come up with new ideas.[line break][garbage]"
+The description of the Inspiration Chamber is "One of the most unique features of the office is the 'inspiration chamber,' a specialized room designed to stimulate creativity and innovation. The room is filled with advanced technology, including AI-generated art, interactive displays, and sensory stimulation devices that can help employees think outside the box and come up with new ideas.[line break][print garbage]"
 	
 Chapter 2 - Outside
 
@@ -1141,7 +1173,7 @@ The description of the window washing scaffold is "lalala".
 
 The window washing scaffold has a number called the floor. The floor is usually 8.
 
-I hate it out here is a clip with conversation "Jones: 'Beck?'
+I hate it out here is a clip with conversation "[line break]Jones: 'Beck?'
 
 Beck: 'Yes?'
 
@@ -1435,14 +1467,17 @@ The golden keyhole is scenery in the elevator car-room.
 The elevator car-room has a number called the floor. The floor of the elevator car-room is 10.
 The elevator car-room can be in running mode.
 
-it's real ivory is a thallium clip with conversation "[line break]Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate a African jungle on Mars. On second thought I should have gotten  an Indian elephant.'".
+it's real ivory is a thallium clip with conversation "[line break]Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate a African jungle on Mars. In retrospect I should have gotten an Indian elephant.'[run paragraph on]".
 
-The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if].[if the elevator car-room is in running mode][it's real ivory][end if]".
+The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if].".
+
+Report looking when the location is the elevator car-room and the elevator car-room is in running mode:
+	print it's real ivory;
 
 Instead of inserting the golden key into the golden keyhole:
 	remove the golden key from play;
 	now the elevator car-room is in running mode;
-	say "[We] puts the key in the keyhold and turn. There is a pleasant chime, and some buttons light up.";
+	say "[We] puts the key in the keyhold and turns. There is a pleasant chime, and some buttons light up.";
 	try looking;
 
 After deciding the scope of the player when the location is top of the elevator car:
@@ -1460,16 +1495,29 @@ After the mauve guard robot going from the elevator car-room to the tenth floor 
 After the mauve guard robot going from the tenth floor elevator hall to the elevator car-room when the location is the top of the elevator car:
 	say "The mauve guard robot enters the elevator car below.";
 	
-The description of the mauve guard robot is "This one looks, if anything, even meaner than the ones you've already seen[if location is top of the elevator car]. It's looking around as if confused[end if]."
+The description of the mauve guard robot is "This one looks, if anything, even meaner than the ones [we] has already seen[if location is top of the elevator car]. It's looking around as if confused[end if]. There is a small vent on the top of its head, probably to dispose of excess heat."
 
 The mauve guard robot has a number called the attack countdown. 
 The mauve guard robot can be under attack.
+
+Point of weakness is a clip with conversation "Jones: 'I think I see a point of weakness. Now if I can just get in close enough...'
+
+Beck: 'Just stay out of its line of sight.'".
+The robot vent is a part of the mauve guard robot. It is privately-named. The printed name is "vent". The description is "Definitely a point of weakness.[paragraph break][point of weakness]". Understand "vent" as the robot vent.
+
+
+
+Instead of shooting the mauve guard robot with the disruptor pistol when the location is the top of the elevator car:
+	say "From the top, even from this range, your shot is entirely ineffective. The robot swivels its head to find you, and you barely jump back out of sight.";
 
 Instead of jumping on the mauve guard robot when the location is the top of the elevator car:
 	say "[We] drops down through the ceiling and on to the guard robot. It swings around looking for [us], obviously panicked that it can't bring its gun to bear on its attacker. [reset LPR][We] manages to hang on.";
 	now the mauve guard robot is under attack;
 	now the attack countdown of the mauve guard robot is 3;
 	move the player to the elevator car-room;
+	
+Instead of looking when the mauve guard robot is under attack:
+	do nothing;
 
 Every turn when the mauve guard robot is under attack:
 	decrement the attack countdown of the mauve guard robot;
@@ -1485,11 +1533,20 @@ Report waiting when the mauve guard robot is under attack:
 	stop the action;
 	
 Instead of pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot:
-	say "[We] pours the gel into a vent on the robot's head. The robot flails around wildly and throws [us] from its back, then lets out a loud crackling sound and stops moving.";
+	say "[We] pours the gel into the	 vent on the robot's head. The robot flails around wildly and throws [us] from its back, then lets out a loud crackling sound and stops moving.";
 	now the mauve guard robot is not under attack;
 	remove the mauve guard robot from play;
-	move the dead robot to the elevator car-room;
+	move the dead mauve robot to the elevator car-room;
 	try looking;
+	
+Instead of pouring the Electrofil quick-setting conductive polymer gel on the robot vent:
+	try pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot;
+	
+Instead of pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot when the location is the top of the elevator car:
+	say "[We] tries, but [we] can't get close enough to the robot.";
+
+Instead of shooting the mauve guard robot with the disruptor pistol when the mauve guard robot is under attack:
+	say "Firing would be too risky at this close range. You could easily hit yourself with the rebound.";
 
 Volume 9 - Language
 
