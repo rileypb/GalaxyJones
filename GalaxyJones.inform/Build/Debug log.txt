@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 13590 words long.
+I've now read your source text, which is 15530 words long.
 
 
 -----------------------------------------------------
@@ -29,15 +29,15 @@ I've also read Glulx Text Effects by Emily Short, which is 2182 words long.
 I've also read Skeleton Keys by Emily Short, which is 638 words long.
 I've also read Epistemology by Eric Eve, which is 1500 words long.
 I've also read Exit Lister by Eric Eve, which is 3331 words long.
-I've also read Galaxy Banner by Philip Riley, which is 129 words long.
-I've also read Third Person Narration by Philip Riley, which is 715 words long.
-I've also read Pseudocontainers by Philip Riley, which is 128 words long.
-I've also read Look That Way by Philip Riley, which is 219 words long.
-I've also read Use by Philip Riley, which is 62 words long.
-I've also read Open Spaces by Philip Riley, which is 1831 words long.
+I've also read Galaxy Banner by Philip Riley, which is 132 words long.
+I've also read Third Person Narration by Philip Riley, which is 718 words long.
+I've also read Pseudocontainers by Philip Riley, which is 131 words long.
+I've also read Look That Way by Philip Riley, which is 222 words long.
+I've also read Use by Philip Riley, which is 65 words long.
+I've also read Open Spaces by Philip Riley, which is 1834 words long.
 I've also read Locksmith by Emily Short, which is 4122 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7673 words long.
-I've also read Essentials by Philip Riley, which is 107 words long.
+I've also read Essentials by Philip Riley, which is 110 words long.
 
 
 -----------------------------------------------------
@@ -92,15 +92,15 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
-Regional: CONSTANT_VNT'elevator shaft-region'-region(I319_elevator_shaft_region)(I234'elevator shaft-region')
+Regional: CONSTANT_VNT'elevator shaft-region'-region(I323_elevator_shaft_region)(I238'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'elevator shaft-region'-region(I319_elevator_shaft_region)(I234'elevator shaft-region')
+Regional: CONSTANT_VNT'elevator shaft-region'-region(I323_elevator_shaft_region)(I238'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'tenth-floor-region'-region(I250_tenth_floor_region)(I166'tenth-floor-region')
+Regional: CONSTANT_VNT'tenth-floor-region'-region(I253_tenth_floor_region)(I169'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'tenth-floor-region'-region(I250_tenth_floor_region)(I166'tenth-floor-region')
+Regional: CONSTANT_VNT'tenth-floor-region'-region(I253_tenth_floor_region)(I169'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the tenth-floor-region'-region(I250_tenth_floor_region)(I166'tenth-floor-region')
+Regional: CONSTANT_VNT'the tenth-floor-region'-region(I253_tenth_floor_region)(I169'tenth-floor-region')
  == region
 
 
@@ -201,7 +201,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 154 files written as streams.
-CPU time: 1362 centiseconds
+CPU time: 343 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

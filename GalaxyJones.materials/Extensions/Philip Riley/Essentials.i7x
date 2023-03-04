@@ -1,5 +1,7 @@
 Essentials by Philip Riley begins here.
 
+Use authorial modesty.
+
 [Include Conversation Framework by Eric Eve.
 Include Conversation Responses by Eric Eve.]
 

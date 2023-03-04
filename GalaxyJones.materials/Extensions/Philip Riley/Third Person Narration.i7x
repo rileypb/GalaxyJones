@@ -1,5 +1,7 @@
 Third Person Narration by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Gender Options by Nathanael Nerode.
 
 Volume 1 - Player Refs

@@ -1,5 +1,7 @@
 Galaxy Banner by Philip Riley begins here.
 
+Use authorial modesty.
+
 Include Basic Screen Effects by Emily Short.
 
 To print the galaxy banner:

@@ -93,6 +93,10 @@ The room of stuff is a room.
 
 Instead of going nowhere:
 	     say "[We] can't go that way. [list the exits]";
+	
+To score (n - number):
+	print the galaxy banner;
+	increase score by n;
 
 Book 1 - Special text substitution code
 
@@ -188,7 +192,7 @@ Volume 3 - The Player Character
 	
 Player's surname is "Jones". 
 Player's titled name is "Galaxy Jones".
-Understand "Galaxy/Jones" as yourself.
+Understand "Galaxy/Jones/woman" as yourself.
 
 The player-actual is a thing in the room of stuff. It is privately-named. It is proper-named. The printed name is "you, the player". Understand "me/myself" as the player-actual. The description is "You, the player, issue the commands to make Galaxy Jones go."
 
@@ -200,8 +204,11 @@ After doing something to yourself:
 
 The description of the player is "Galaxy Jones stands at the ready.".
 
-The player carries the disruptor pistol.
- 
+The player carries the disruptor pistol. 
+
+Check throwing the disruptor pistol at something:
+	say "That would be counter-productive." instead; 
+
 When play begins:
 	now yourself is not male;
 	now yourself is not nomale;
@@ -227,6 +234,10 @@ Book 1 - Beck
 
 Beck is a man in the room of stuff.
 
+Europa Callisto is a woman.
+
+Admiral-Thallium is a man. He is privately-named. The printed name is "Admiral Thallium". Understand "Admiral/Thallium" as Admiral-Thallium.
+
 Book 2 - Conversation
 
 An object has a text called the conversation.
@@ -248,7 +259,7 @@ report examining something:
 		converse the conversation of the noun;
 		now the noun is used;
 		
-A clip is a kind of thing. A clip is privately-named. A clip can be conversational or descriptive or thallium. A clip is usually conversational.
+A clip is a kind of thing. A clip is privately-named. A clip can be conversational or descriptive or taunting. A clip is usually conversational.
 
 To say print (C - a clip):
 	print C;
@@ -257,7 +268,7 @@ To print (C - a clip):
 	if C is unused:
 		if C is conversational:
 			converse the conversation of C;
-		otherwise if C is descriptive:
+		otherwise if C is descriptive:			
 			say the conversation of C;
 			say line break;
 		otherwise:
@@ -297,7 +308,7 @@ Lobby Shootout ends when the location of the red guard robot is not the lobby.
 pinned down is a clip with conversation "[line break]Jones: 'I[']m pinned down here!'".
 Check going during lobby shootout:
 	say "Trying to reach an exit would surely get [us] shot.";
-	say pinned down instead;
+	print pinned down instead;
 	
 When Lobby Shootout begins:
 	Move the red guard robot to the lobby;
@@ -387,7 +398,7 @@ When Cybernetica Battle ends:
 	Jones: 'Yes, yes, thanks for helping me not get killed.'   
 	
 	Beck: 'You're welcome.'";
-	increase score by 1;
+	score 1;
 
 Volume 6 - Things
 
@@ -457,11 +468,11 @@ A container can be keyed. A door can be keyed. A container is usually not keyed.
 The bottled water is a thing. The description is "A [if full]full[otherwise]empty[end if] bottle of Olympus Springs water." Understand "bottle/Olympus/Springs" as the bottled water.
 The bottled water can be full or empty. It is full. The printed name is "[if full]full[otherwise]empty[end if] water bottle".
 
-[The plastic water bottle is a thing. The plastic water bottle can be full or empty. It is full. 
-The printed name is "[if full]full[otherwise]empty[end if] plastic water bottle".
-The description is "A [if full]full[otherwise]empty[end if] bottle of Olympus Springs water."]
-
 A bottle of Electrofil quick-setting conductive polymer gel is a pourable thing. Understand "bottles" as Electrofil quick-setting conductive polymer gel.
+
+The hook cable is privately-named. The printed name is "cable with hooks at either end". Understand "cable/hooks/hook" or "cable with hooks" or "cable with hooks at either end" or "cable with hooks at the end/ends" or "hooked cable" as the hook cable.
+
+The description is "This is a strong but slender cable, presumably of carbon nanotubes. There are steel hooks at either end.".
 
 Volume 7 - Geography
 
@@ -634,16 +645,19 @@ penthouse south is southwest of penthouse east and south of 100th floor elevator
 
 penthouse west is northwest of penthouse south and southwest of penthouse north.
 
-stairs to roof is east of 100th floor elevator hall.
+the roof stairs is east of 100th floor elevator hall.
 
+The roof access door is a scenery door. It is above the roof stairs and below the penthouse roof.
+
+The preposition of the roof stairs is "on".
+
+The preposition of the penthouse roof is "on".
 
 Book 6 - The Roof
-	
-roof is above stairs to roof.
 
-flyer pad is west of roof.
+the flyer pad is west of the penthouse roof. The preposition is "on".
 
-cage is north of roof.
+a cage is north of the penthouse roof. a cage is always-indefinite. The preposition is "next to".
 	
 Volume 8 - Room Implementations
 
@@ -738,7 +752,7 @@ The ground-floor-ceiling is a backdrop. It is privately-named. The printed name 
 	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7.
 The description of the ground-floor-ceiling is "The whole ground floor is bright and airy, its ceiling covered with reflective pyramids. Supporting struts criss-cross the area, from which sparkling crystal chandeliers are suspended."
 
-The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. Above it floats, suspended on almost invisible cables, a giant crystal sculpture[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
+The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above it, suspended on almost invisible cables.[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
 
 The left niche is scenery in the lobby. "Aside from a robot charging station, there's nothing here."
 The right niche is scenery in the lobby. "Aside from a robot charging station, there's nothing here."
@@ -761,13 +775,13 @@ Report shooting a guard robot with the disruptor pistol during Lobby Shootout:
 	
 Check shooting something with the disruptor pistol:
 	if the noun is not a guard robot and the noun is not the giant sculpture:
-		say "Shooting that would accomplish nothing.";
+		say "[regarding the noun]Shooting [them] would accomplish nothing.";
 	 
 The tangled ruin is a fixed in place pseudocontainer. "Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots." Understand "remains/sculpture/art/glass/guard/robots/robot/red/green/ruins" as the tangled ruin. 
 The description is "[We] searches some more, but nothing further turns up."
-The contents description is "[We] digs through the ruins and finds a thingy, which [we] takes."
+The contents description is "[We] digs through the ruins and finds a cable with hooks at either end, which [we] takes."
 The tangled ruin is auto-take.
-The thingy is in the tangled ruin.
+The hook cable is in the tangled ruin.
 	
 battle won is a clip with conversation "Beck: 'What was that crash? What[']s going on?'
 
@@ -780,7 +794,8 @@ Carry out shooting the giant sculpture with the disruptor pistol:
 	remove the giant sculpture from play;
 	move the tangled ruin to the lobby;
 	print battle won;
-	increase the score by 1;
+	say line break;
+	score 1;
 	
 entering is acting recklessly.
 taking is acting recklessly.
@@ -789,7 +804,7 @@ jumping is acting recklessly.
 Instead of acting recklessly during Lobby Shootout:
 	say "As soon as [we] [start] to act, an energy beam zips past [our] head, forcing [us] back down behind the desk.";
 	
-Instead of dropping the disruptor pistol during Lobby Shootout:
+Instead of dropping the disruptor pistol:
 	say "That would be ill-advised.";
 	
 The tasteful couch is a couch in the lobby. "Quite tasteful for a homicidal madman, really."
@@ -1079,14 +1094,17 @@ Jones: 'Thanks for the advice.'".
 
 Instead of opening the useless elevator doors:
 	say "[We] is unable to open the door. Perhaps it's blocked from the other side.";
+	say line break;
 	print cannot open elevator.
 
 Instead of unlocking keylessly the useless elevator doors:
 	say "[We] is unable to open the door. Perhaps it's blocked from the other side.";
+	say line break;
 	print cannot open elevator.
 
 Instead of unlocking the useless elevator doors with something:
 	say "[We] is unable to open the door. Perhaps it's blocked from the other side.";
+	say line break;
 	print cannot open elevator.
 	
 After going from ninth floor elevator shaft to ninth floor elevator hall for the first time:
@@ -1094,7 +1112,9 @@ After going from ninth floor elevator shaft to ninth floor elevator hall for the
 	converse "Jones: 'Finally out of the shaft. That was quite a climb.'
 	
 	Beck: 'This floor is just offices. Check the building management office to the west. It might have some useful stuff.'";
-	increase score by 1;
+	say line break;
+	score 1;
+	continue the action;
 
 Book 4 - Ninth Floor
 
@@ -1143,14 +1163,14 @@ Before going from Cybernetica office to ledge when the Atmo-Suit is touchable fo
 	Beck: 'Whoa whoa whoa, Jones. You know you're not good with heights.'
 	
 	Jones: 'Ask Thallium how how much that matters once I've kicked his ass.'";
-	
-garbage is a clip with conversation "Jones: 'This is some real B.S. here.'
+
+The description of the Inspiration Chamber is "One of the most unique features of the office is the 'inspiration chamber,' a specialized room designed to stimulate creativity and innovation. The room is filled with advanced technology, including AI-generated art, interactive displays, and sensory stimulation devices that can help employees think outside the box and come up with new ideas."
+
+The conversation of the Inspiration Chamber is "Jones: 'This is some real B.S. here.'
 
 Beck: 'What's that?'
 
 Jones: 'Never mind.'";
-
-The description of the Inspiration Chamber is "One of the most unique features of the office is the 'inspiration chamber,' a specialized room designed to stimulate creativity and innovation. The room is filled with advanced technology, including AI-generated art, interactive displays, and sensory stimulation devices that can help employees think outside the box and come up with new ideas.[line break][print garbage]"
 	
 Chapter 2 - Outside
 
@@ -1273,7 +1293,7 @@ Instead of entering the exhaust vent:
 	Jones: 'Got it.'
 	
 	Beck: 'And Jones? Save your game.'";
-	increase score by 1;
+	score 1;
 	
 Instead of going nowhere from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is open:
 	if the noun is west:
@@ -1380,7 +1400,8 @@ After dropping the shrimp tea sandwich when black cat is in the location and the
 	converse "Jones: 'Aha! No creature is too fearsome for Galaxy Jones!'
 	
 	Beck: 'Congratulations on your victory.'";
-	increase score by 1;
+	score 1;
+	continue the action;
 	
 Instead of giving the shrimp tea sandwich to the black cat:
 	say "(dropping the shrimp tea sandwich)[command clarification break]";
@@ -1467,7 +1488,7 @@ The golden keyhole is scenery in the elevator car-room.
 The elevator car-room has a number called the floor. The floor of the elevator car-room is 10.
 The elevator car-room can be in running mode.
 
-it's real ivory is a thallium clip with conversation "[line break]Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate a African jungle on Mars. In retrospect I should have gotten an Indian elephant.'[run paragraph on]".
+it's real ivory is a taunting clip with conversation "[line break]Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate a African jungle on Mars. In retrospect I should have gotten an Indian elephant.'[run paragraph on]".
 
 The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if].".
 
@@ -1547,14 +1568,232 @@ Instead of pouring the Electrofil quick-setting conductive polymer gel on the ma
 
 Instead of shooting the mauve guard robot with the disruptor pistol when the mauve guard robot is under attack:
 	say "Firing would be too risky at this close range. You could easily hit yourself with the rebound.";
+	
+Book 6 - The Rooftop
 
-Volume 9 - Language
+Chapter 1 - Scenes
+
+Endgame is a scene. Endgame begins when the location is penthouse roof.
+
+On-Rooftop is a scene. On-Rooftop begins when the location is penthouse roof. On-Rooftop ends when Thallium alight begins.
+
+[penthouse roof has a number called the count. The count of the penthouse roof is 0.]
+
+Thallium alight is a scene. Thallium alight begins when the player is in cage or the player is in flyer pad.
+
+When Thallium alight begins:
+	if player is in cage:
+		say "South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards you.";
+		move Admiral-Thallium to the room of stuff;
+
+Before going to flyer pad during On-Rooftop:
+	say "Thallium trails after Jones.";
+	say line break;
+	converse as Thallium "Um, Jones -- that harlot you're so bent on freeing from captivity is over [italic type]there[special-style-2]. Now get out of the way, I'm trying to escape.'
+	
+	Thallium shoulders past [us]. [We] attempts to grab his shoulder, but [we] is thrown back by an unseen force.
+	
+	Thallium smirks. 'Personal security field, remember? Now I must be off.'
+	
+	Jones watches as Thallium boards the flyer. It takes off a moment later.";
+	move Admiral-Thallium to the room of stuff;
+	[increment the count of the penthouse roof;]
+	[say line break;
+	say penthouse roof text;
+	say ".";]
+	
+Check shooting something with the disruptor pistol during endgame:
+	say "[Our] disruptor does nothing. Looks like Thallium was telling the truth." instead;
+	
+Thallium alight ends when time since Thallium alight began is 2 minutes.
+
+Thallium ultimatum is a scene.
+Thallium ultimatum begins when Thallium alight ends.
+
+When Thallium ultimatum begins:
+	converse as thallium "Thallium's flyer hovers over the rooftop. 'Jones!'  he bellows. 'Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.'
+	
+	[special-style-1]Jones rolls her eyes.[special-style-2]";
+	say "[line break]A little ways off, a small flyer aims for the rooftop and accelerates.";
+
+Before going somewhere during Thallium ultimatum:
+	say "Thallium's flyer floats after you.";
+	
+Saving Europa is a scene. Thallium ultimatum ends when Admiral Thallium's Flyer is nowhere. 
+Saving Europa begins when Thallium ultimatum ends.
+ 
+Chapter 2 - Penthouse Roof
+
+Check opening the roof access door:
+	if DEBUG is false:
+		say "[line break]Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?[line break]>";
+		if the player consents:
+			continue the action;
+		stop the action;
+	continue the action;
+	
+After going to the penthouse roof for the first time:
+	now the roof access door is closed;
+	now the roof access door is locked; 
+	say "[We] open the door and step through onto the roof. The door crashes shut, and a lock audibly clicks.";
+	continue the action;
+	
+
+Report going to penthouse roof for the first time:
+	say line break;
+	converse as thallium "Jones walks out onto the luxurious penthouse roof. Admiral Thallium turns from the railing to face [us]. He is dressed in an absurd elaboration of a Martian Admiral's uniform. He looks Jones up and down with a lecherous leer. 'Ah, Galaxy Jones, as lovely as ever. If it weren't so unbearably cliché I[']d ask you to join me in my rise to greatness. But alas, you are too habituated to the smug high of [']goodness['].' He sighs dramatically. 'We've trodden similar ground before; no need to discuss it further. Although I would challenge any of your various [italic type]amants[special-style-2] to conjugate [']tread['] correctly.
+	
+	'Anyway, I guess this is the time where you do something predictably undignified and violent. Before you do I feel I should inform you that your sidearm has been rendered quite ineffective by my personal security field. But do go ahead and try it.'
+	
+	[special-style-1]Jones sneers. 'I wouldn't give you the satisfaction,' she says, looking around. 'I see you don't have any of your robot pets up here. How are you going to stop me from rescuing Europa?'[special-style-2]
+	
+	'Oh please, while we're trying things, try that too. I wish you luck breaking the silnium bars of the cage.'
+	
+	[special-style-1]'What's silnium?'[special-style-2]
+	
+	'A superstrong material invented here in my Martian Chemical laboratory. We had a press conference for it -- weren[']t you watching?'
+	
+	[special-style-1]'Couldn[']t be bothered.'[special-style-2]
+	
+	'Oh for frotz sake, Jones, you're so frustrating!'
+	
+	Thallium turns his back on Jones and stares out over the city.";
+	continue;
+	
+
+[To say penthouse roof text:
+	If the count of the penthouse roof is 0:
+		say "Numerous flyers dot the skies around the city";
+	if the count of the penthouse roof is 1:
+		say "An unidentified flyer is headed towards the building";
+	if the count of the penthouse roof is 2:
+		say "An aircraft is almost upon the building, flying low. It is a small Martian flyer, painted with a galaxy logo";
+	if the count of the penthouse roof is 3:
+		say "Jones's flyer hovers above the roof, looking to land";
+	if the count of the penthouse roof is 4:
+		say "Jones's flyer rests on the landing pad";]
+
+Rule for writing a paragraph about Admiral-Thallium when Admiral-Thallium is in penthouse roof:
+	say "[Admiral-Thallium] is sulking.";
+
+The description of the penthouse roof is "It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad[if Europa Callisto is in the cage]. You can distantly see a woman lying on the floor of the cage[end if][If Admiral-Thallium is in penthouse roof]. A green and black flyer sits on the landing pad[end if]."
+
+
+Admiral-Thallium is in penthouse roof.
+
+Admiral Thallium's Flyer is a backdrop. It is in penthouse rooftop, cage, and flyer pad. 
+Instead of examining Admiral Thallium's flyer during On-Rooftop:
+	say "It's big and green and black. Looks like a Sirius XE."
+
+Instead of examining Admiral Thallium's flyer during Thallium alight:
+	say "Hovering above [us], it's distinctly menacing. It's not visibly armed, but it conveys the impression of a beast about to strike. It's flying low, the rails of its landing gear just a few feet above Jones's head.";
+
+Instead of examining Admiral Thallium's flyer during Thallium ultimatum:
+	say "Hovering above [us], it's distinctly menacing. It's not visibly armed, but it conveys the impression of a beast about to strike. It's flying low, the rails of its landing gear just a few feet above Jones's head.";
+
+The description of cage is "The closely-set silnium bars seem to dash all hope of a rescue.".
+
+Report looking when the location is the cage for the first time:
+	say "Jones tries the strength of the bars just in case. They don't budge.";
+
+Europa Callisto is in a cage.
+
+The cage can be intact or destroyed. The cage is intact.
+
+Rule for writing a paragraph about Europa Callisto when Europa Callisto is in the cage and the cage is intact:
+	say "[Europa Callisto] is lying at the center of the cage, out of [our] reach.";
+	
+The cage-thing is a privately-named enterable supporter in the cage. The printed name is "cage". Understand "cage/bars/silnium" as the cage-thing. 
+
+Instead of climbing the cage-thing:
+	try entering the cage-thing;
+	
+Chapter 3 - Hooking the flyer
+
+Instead of throwing the hook cable at admiral thallium's flyer when the player is on the cage-thing:
+	say line break;
+	converse "[We] throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium screams at his pilot to escape. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
+	
+	The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto. 
+	
+	'Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!'
+	
+	Europa moans but doesn't show any signs of having understood Jones.";
+	remove Admiral Thallium's flyer from play;
+
+Instead of throwing the hook cable at admiral thallium's flyer when the location is the cage:
+	say "Foo";
+
+Instead of throwing the hook cable at admiral thallium's flyer when the location is the flyer pad or the location is the penthouse roof:
+	say "Foo";
+	
+Chapter 4 - The Water Bottle
+
+Instead of giving the bottled water to Europa:
+	converse "[We] opens the water bottle and brings it to Europa's lips. Even with closed eyes she drinks, first slowly and then with renewed vigor, until her eyes open.
+	
+	'Ga- Galaxy Jones?' she says.
+	
+	Jones nods, but says 'We'll have time for introductions later. We have to get out of here before the roof is full of killer robots. Can you crawl? If you can get through that hole I can carry you the rest of the way.'
+	
+	Europa nods. 'I think so.'
+	
+	Galaxy Jones helps her through the hole in the cage, then gently picks her and jogs toward the waiting flyer. Beck's familiar face appears at the door of the aircraft, urging her on.";
+	say line break;
+	converse as thallium "Not so far away, Admiral Thallium has somehow survived the crash and scaled the cable back to the roof. As he pulls himself up, he aims a pistol at Jones's back...";
+	say line break;
+	converse "...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.";
+	say line break;
+	converse as thallium "And then the robots swarm the roof. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...";
+	end the story saying "The End, For Now..."
+	
+Volume 9 - The End, etc
+
+To show credits:
+	say "Extensions by:[line break]";
+	say italic type;
+	say the list of extension credits;
+	say roman type;
+	say line break;
+	say "Story by Phil Riley.";
+	say "Programming by Phil Riley.";
+	say "Playtesting by TBD.";
+	say "Invaluable inspiration from Laura Taalman.";
+	say line break;
+	say "The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.";
+	say line break;
+	say "Promotional consideration provided by Olympus Springs Inc.";
+	say paragraph break;
+	say "...";
+	say paragraph break;
+	
+To screen print (T - a text):
+	say "[italic type]<[T]>[roman type][paragraph break]";
+	
+After printing the player's obituary:
+	say paragraph break;
+	show credits;
+	screen print "Black screen";
+	say "'Jones! Jones! Wake up! I'm trying to talk to you!'";
+	say line break;
+	screen print "Cut to a shot of two closed eyes";
+	say "'C'mon, open those eyes.'";
+	say line break;
+	screen print "The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious";
+	say "'This is getting tiresome, Jones. Stop playing dead.'";
+	say line break;
+	say "Her eyes flutter open, close again, then open. She winces and brings one hand up to shield her eyes. 'Who's that?' she says, hoarsely.";
+	say line break;
+	converse "Join Galaxy Jones next time in [italic type]Existential Time Crisis![special-style-1]";
+	print the galaxy banner;
+
+Volume 10 - Language
 
 Book 1 - Verbs
 
 to approach is a verb. to enter is a verb. to dive is a verb. to miss is a verb. to start is a verb. to fire is a verb. To draw is a verb. to stick is a verb.
 
-Volume 10 - Prettiness
+Volume 11 - Prettiness
 
 Book 1 - Moving Between Rooms 
  
@@ -1588,21 +1827,11 @@ After going from a room (called R1) to a room (called R2):
 		mark transition text for R1 to R2 as used;
 	continue the action;
 	
-Book 2 - Points Banner
-
-This is the new notify score changes rule:
-	if the score is not the last notified score:
-		print the galaxy banner;
-		issue score notification message;
-		now the last notified score is the score;
-	
-The new notify score changes rule is listed instead of the notify score changes rule in the turn sequence rules.
-
-Volume 11 - Not for release
+Volume 12 - Not for release
 
 DEBUG is true. 
 
-Volume 12 - Tests
+Volume 13 - Tests
 
 test elevator with "n/n/z/shoot art/e/n/type 0/w/take all/e/s/w/w/n/e/take drop key/w/s/e/n/use drop key with elevator".
 test ninth with "test elevator/w/u/u/u/u/u/u/u/u/e".
