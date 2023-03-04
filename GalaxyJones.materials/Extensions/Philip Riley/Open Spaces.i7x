@@ -17,6 +17,7 @@ Doing nothing is an action applying to nothing.
 A person has an action called notable action. The notable action of a person is usually doing nothing.
 A person has a room called original location.
 A person has a room called new location.
+A person can be active or not-active. A person is usually not-active.
 
 to appear is a verb. to exit is a verb. to head is a verb. to enter is a verb. to emerge is a verb. to approach is a verb.
 
@@ -102,7 +103,7 @@ This is the show us the people rule:
 	Let segments be a list of texts;
 	let movement segments be a list of texts;
 	Let lazy people be a list of people;
-	Repeat with P running through people who are not the player:
+	Repeat with P running through unmentioned active people who are not the player:
 		If the notable action of P is doing nothing:
 			add P to lazy people;
 		otherwise if the action name part of the notable action of P is going action:

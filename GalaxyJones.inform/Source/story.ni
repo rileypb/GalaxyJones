@@ -20,6 +20,7 @@ Release along with a "Quixe" interpreter.
  
 Volume 1 - Technical Stuff
 
+
 DEBUG is a truth state that varies. DEBUG is initially false.
  
 To continue: 
@@ -658,6 +659,24 @@ Book 6 - The Roof
 the flyer pad is west of the penthouse roof. The preposition is "on".
 
 a cage is north of the penthouse roof. a cage is always-indefinite. The preposition is "next to".
+
+Carry out looking when the location is the cage (this is the cage description heading rule): 
+	if the player is not supported by the cage-thing:
+		if Saving Europa is happening:
+			say "Galaxy Jones is in [bold type]the cage[roman type]. [run paragraph on]";
+		otherwise:
+			say "Galaxy Jones is next to [bold type]the cage[roman type]. [run paragraph on]";
+	otherwise:
+		say "Galaxy Jones is standing on [bold type]the cage[roman type]. [run paragraph on]";
+
+For naming when the location is the cage (This is the cage naming rule):
+	follow the cage description heading rule;
+	say line break;
+	
+The cage description heading rule is listed before the new room description heading rule in the carry out looking rules.
+
+The new room description heading rule does nothing when the location is the cage.
+The standard naming rule does nothing when the location is the cage.
 	
 Volume 8 - Room Implementations
 
@@ -752,7 +771,7 @@ The ground-floor-ceiling is a backdrop. It is privately-named. The printed name 
 	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7.
 The description of the ground-floor-ceiling is "The whole ground floor is bright and airy, its ceiling covered with reflective pyramids. Supporting struts criss-cross the area, from which sparkling crystal chandeliers are suspended."
 
-The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above it, suspended on almost invisible cables.[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
+The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above it, suspended on almost invisible cables[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
 
 The left niche is scenery in the lobby. "Aside from a robot charging station, there's nothing here."
 The right niche is scenery in the lobby. "Aside from a robot charging station, there's nothing here."
@@ -761,7 +780,7 @@ The front desk is scenery in the lobby. It is a pseudocontainer. The contents de
 The note is in the front desk. The description is "The note says '[doorcode]'.".
 
 Instead of doing something when the location is the lobby for the first time:
-	say "Before [we] [get] a chance to do anything, two robot guards emerge from niches in the back wall! [We] [dive] behind the front desk and [draw] [our] disruptor pistol.[paragraph break]";
+	say "Before [we] [get] a chance to do anything, two robot guards, one red, one green, emerge from niches in the back wall! [We] [dive] behind the front desk and [draw] [our] disruptor pistol.[paragraph break]";
 	converse "Jones shouts, 'I'm under fire from two ugly robot things!'
 	
 	Beck responds, 'Monitoring lifesigns.'";
@@ -1433,7 +1452,7 @@ Instead of going to tenth floor stairwell:
 	
 Chapter 1 - The Robot Chase
 
-The mauve guard robot is a guard robot in microthings-2. 
+The mauve guard robot is a guard robot in microthings-2. The mauve guard robot is active.
 				
 The mauve guard robot has a room called the goal. The goal of the mauve guard robot is microthings-2.
 The mauve guard robot has a room called the homebase. The homebase of the mauve guard robot is microthings-2.
@@ -1583,7 +1602,7 @@ Thallium alight is a scene. Thallium alight begins when the player is in cage or
 
 When Thallium alight begins:
 	if player is in cage:
-		say "South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards you.";
+		say "South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards Jones.";
 		move Admiral-Thallium to the room of stuff;
 
 Before going to flyer pad during On-Rooftop:
@@ -1617,10 +1636,13 @@ When Thallium ultimatum begins:
 	say "[line break]A little ways off, a small flyer aims for the rooftop and accelerates.";
 
 Before going somewhere during Thallium ultimatum:
-	say "Thallium's flyer floats after you.";
+	say "Thallium's flyer floats after Jones.";
 	
 Saving Europa is a scene. Thallium ultimatum ends when Admiral Thallium's Flyer is nowhere. 
 Saving Europa begins when Thallium ultimatum ends.
+
+When Saving Europa begins:
+	say "The flyer, now recognizable as Galaxy's own, settles down onto the landing pad.";
  
 Chapter 2 - Penthouse Roof
 
@@ -1638,6 +1660,9 @@ After going to the penthouse roof for the first time:
 	say "[We] open the door and step through onto the roof. The door crashes shut, and a lock audibly clicks.";
 	continue the action;
 	
+After looking when the location is the penthouse roof for the first time:
+	score 1;
+	continue the action;
 
 Report going to penthouse roof for the first time:
 	say line break;
@@ -1658,7 +1683,8 @@ Report going to penthouse roof for the first time:
 	'Oh for frotz sake, Jones, you're so frustrating!'
 	
 	Thallium turns his back on Jones and stares out over the city.";
-	continue;
+	
+
 	
 
 [To say penthouse roof text:
@@ -1676,7 +1702,7 @@ Report going to penthouse roof for the first time:
 Rule for writing a paragraph about Admiral-Thallium when Admiral-Thallium is in penthouse roof:
 	say "[Admiral-Thallium] is sulking.";
 
-The description of the penthouse roof is "It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad[if Europa Callisto is in the cage]. You can distantly see a woman lying on the floor of the cage[end if][If Admiral-Thallium is in penthouse roof]. A green and black flyer sits on the landing pad[end if]."
+The description of the penthouse roof is "It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad[if Europa Callisto is in the cage]. Jones can distantly see a woman lying on the floor of the cage[end if][If Admiral-Thallium is in penthouse roof]. A green and black flyer sits on the landing pad[end if]."
 
 
 Admiral-Thallium is in penthouse roof.
@@ -1693,8 +1719,10 @@ Instead of examining Admiral Thallium's flyer during Thallium ultimatum:
 
 The description of cage is "The closely-set silnium bars seem to dash all hope of a rescue.".
 
-Report looking when the location is the cage for the first time:
-	say "Jones tries the strength of the bars just in case. They don't budge.";
+Bars don't budge is a descriptive clip with conversation "Jones tries the strength of the bars just in case. They don't budge.".
+
+Report looking when the location is the cage:
+	print bars don't budge;
 
 Europa Callisto is in a cage.
 
@@ -1703,7 +1731,7 @@ The cage can be intact or destroyed. The cage is intact.
 Rule for writing a paragraph about Europa Callisto when Europa Callisto is in the cage and the cage is intact:
 	say "[Europa Callisto] is lying at the center of the cage, out of [our] reach.";
 	
-The cage-thing is a privately-named enterable supporter in the cage. The printed name is "cage". Understand "cage/bars/silnium" as the cage-thing. 
+The cage-thing is a privately-named enterable supporter in the cage. It is scenery. The printed name is "cage". Understand "cage/bars/silnium" as the cage-thing. 
 
 Instead of climbing the cage-thing:
 	try entering the cage-thing;
@@ -1738,13 +1766,13 @@ Instead of giving the bottled water to Europa:
 	
 	Europa nods. 'I think so.'
 	
-	Galaxy Jones helps her through the hole in the cage, then gently picks her and jogs toward the waiting flyer. Beck's familiar face appears at the door of the aircraft, urging her on.";
+	Galaxy Jones helps her through the hole in the cage, then gently picks her up and jogs toward the waiting flyer. Beck's familiar face appears at the door of the aircraft, urging her on.";
 	say line break;
 	converse as thallium "Not so far away, Admiral Thallium has somehow survived the crash and scaled the cable back to the roof. As he pulls himself up, he aims a pistol at Jones's back...";
 	say line break;
 	converse "...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.";
 	say line break;
-	converse as thallium "And then the robots swarm the roof. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...";
+	converse as thallium "And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...";
 	end the story saying "The End, For Now..."
 	
 Volume 9 - The End, etc
@@ -1784,10 +1812,10 @@ After printing the player's obituary:
 	say line break;
 	say "Her eyes flutter open, close again, then open. She winces and brings one hand up to shield her eyes. 'Who's that?' she says, hoarsely.";
 	say line break;
-	converse "Join Galaxy Jones next time in [italic type]Existential Time Crisis![special-style-1]";
+	converse "Join Galaxy Jones next time in [italic type]Galaxy Jones II: Existential Time Crisis![special-style-1]";
 	print the galaxy banner;
 
-Volume 10 - Language
+Volume 10 - Language 
 
 Book 1 - Verbs
 
