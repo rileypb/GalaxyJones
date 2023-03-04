@@ -1506,13 +1506,13 @@ Instead of going to tenth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
 	try looking;
 	
-The description of microthings-1 is "It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage.".
-The description of microthings-2 is "This looks like the IT area of the office.".
-The description of microthings-3 is "This looks like the IT area of the office.".
-The description of microthings-4 is "This looks like the IT area of the office.".
-The description of microthings-5 is "This looks like the IT area of the office.".
-The description of microthings-7 is "This looks like the IT area of the office.".
-The description of microthings-8 is "This looks like the IT area of the office.".
+The description of microthings-1 is "This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor east and west, and north to the elevator".
+The description of microthings-2 is "This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. [We] can go north or east from here.".
+The description of microthings-3 is "This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where you are now. One can go north or south.".
+The description of microthings-4 is "Various executive offices line the north and west walls here. [We] can go east or south.".
+The description of microthings-5 is "This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.".
+The description of microthings-7 is "This part of the office is currently unused. [We] can go northwest or south from here.".
+The description of microthings-8 is "This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.".
 	
 Chapter 1 - The Robot Chase
 
@@ -1687,6 +1687,9 @@ Instead of pouring the Electrofil quick-setting conductive polymer gel on the ma
 	remove the mauve guard robot from play;
 	move the dead mauve robot to the elevator car-room;
 	try looking;
+	
+Instead of going when the mauve guard robot is under attack:
+	say "[We] can't leave the elevator when [we're] hanging onto the elevator for dear life.".
 	
 Instead of pouring the Electrofil quick-setting conductive polymer gel on the robot vent:
 	try pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot;
@@ -1913,7 +1916,7 @@ To show credits:
 	say line break;
 	say "Story by Phil Riley.";
 	say "Programming by Phil Riley.";
-	say "Playtesting by TBD.";
+	say "Playtesting by Leo Lin and Oliver Matthias.";
 	say "Invaluable inspiration from Laura Taalman.";
 	say line break;
 	say "The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.";
