@@ -51,7 +51,7 @@ Before printing the banner text:
 		print the galaxy banner;	
 		say line break;
 		
-After printing the banner text:
+Before looking for the first time:
 	say "[line break]A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it: [header style]Galaxy Jones.[roman type][line break]";
 
 Include (-
@@ -98,6 +98,9 @@ Instead of going nowhere:
 To score (n - number):
 	print the galaxy banner;
 	increase score by n;
+	follow the notify score changes rule;
+
+The parser nothing error internal rule response (B) is "I'm not sure what you're referring to.".
 
 Book 1 - Special text substitution code
 
@@ -125,7 +128,7 @@ Book 3 - Glulx Styles
 Table of User Styles (continued)
 style name	color	italic	indentation
 special-style-1	"#0000FF"	false	19
-special-style-2	"#FF0000"	false	19
+special-style-2	"#0000FF"	true	19
 
 Volume 2 - Actions
 
@@ -187,7 +190,7 @@ Check unwrapping something:
 	say "That can't be unwrapped.";
 	
 Understand the command "buy" as something new.
-Buying it with is an action applying to one thing and one carried thing. Understand "buy [any thing] with [something]" as buying it with.
+Buying it with is an action applying to one thing and one carried thing. Understand "buy [something] with [something]" as buying it with.
 
 Volume 3 - The Player Character
 	
@@ -249,7 +252,7 @@ To converse (T - a text):
 	say "[special-style-1][T][roman type][line break]";
 
 To converse as thallium (T - a text):
-	say "[special-style-2][T][roman type][line break]";
+	say "[special-style-1][T][roman type][line break]";
 
 report looking:
 	if the conversation of the location is not empty and the location is unused:
@@ -268,6 +271,7 @@ To say print (C - a clip):
 
 To print (C - a clip):
 	if C is unused:
+		[say line break;]
 		if C is conversational:
 			converse the conversation of C;
 		otherwise if C is descriptive:			
@@ -296,7 +300,7 @@ When play begins:
 	say "'Yes, quite famous, but why would she send a message to me, and why on Mars would she send it through Thallium? But never mind, what's the message?'[paragraph break]";
 	say "Patty can be heard rustling paper. 'Let's see... it's here somewhere. Oh yes, here it is. The message is ['][bold type]Help.[roman type][']'[paragraph break]";
 	continue;
-	say "Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems, hostage. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's inevitable demise. The Admiral has invited Ms Jones most cordially to break into his building and attempt a rescue.[paragraph break]";
+	say "Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems, hostage. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's inevitable demise. The Admiral has most cordially invited Ms Jones to break into his building and attempt a rescue.[paragraph break]";
 	say "'Oh I will,' Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.[paragraph break]";
 	say "Plus she'll get to meet Europa Callisto. That'll be totally sweet.[paragraph break]";
 	now Intro is false;
@@ -316,7 +320,7 @@ When Lobby Shootout begins:
 	Move the guard-robots to the lobby;
 	
 After looking during Lobby Shootout:
-	say "[one of]Two guard robots criss-cross the lobby, stalking [us][or]Two guard robots prowl the lobby, trying to outflank [us][or]The guard robots have their head cannons trained on the front desk[at random].";
+	say "[one of]Two guard robots, red and green, criss-cross the lobby, stalking [us][or]Two guard robots prowl the lobby, trying to outflank [us][or]The guard robots have their head cannons trained on the front desk[at random].";
 	
 Flanking warning is a clip with conversation "Beck: 'Robot on your right!'".
 Fight clip 6 is a clip with conversation "Jones: 'I could use some ideas here!'".
@@ -332,6 +336,7 @@ Every turn during lobby shootout:
 		say "The robots intone 'Destroy Jones' in an eerie drone.";	
 	if roll is 3:
 		print flanking warning;
+		say line break;
 		say "One robot tries to flank [us], but a shot from [our] disruptor sends it scurrying back.";	
 	if roll is 4:
 		say "Zip! Disruptor fire scorches a nearby couch.";
@@ -362,7 +367,7 @@ When Cybernetica Battle begins:
 	
 	Beck: 'Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses.'";	
 
-Sneaking up on is an action applying to one thing. Understand "sneak up on [something]" as sneaking up on.
+Sneaking up on is an action applying to one thing. Understand "sneak up on [something]", "crawl toward [something]", "move toward [something]", "creep up on [something]", "creep toward [something]", "follow [something]" as sneaking up on.
 
 sneak index is a number that varies. The sneak index is initially 3.
 
@@ -388,6 +393,7 @@ report sneaking up on the purple guard robot:
 		say "[We] creeps a little ways toward the guard robot.";
 	otherwise if sneak index is 1:
 		say "Slowly, slowly, [we] gets a little closer. Just a little more...";
+		say line break;
 		print shoot out the window;
 		change east exit of Cybernetica office to ledge;
 		change west exit of ledge to Cybernetica office;
@@ -395,9 +401,16 @@ report sneaking up on the purple guard robot:
 	otherwise:
 		say "[We] is right up next to the robot, crouched beneath a desk. She'll never get a better shot.";
 		
+useless shooting is a clip with conversation "Beck: 'Are you still shooting at those things? Even if you hit 'em it's not going to leave a scratch.'
+
+Jones (whispering): 'So what do you propose?'
+
+Beck: 'Get closer. Keep your head down, but follow it until you can get a good shot in.'";
+
 carry out shooting purple guard robot with the disruptor pistol during Cybernetica Battle:
 	if sneak index > 0:
-		say "[We] raises [our] head and fires wide. The robot fires back. Jones ducks and crawls off among the labyrinth of desks.";
+		say "[We] raises [our] head and fires wide. The robot fires back. Jones ducks and crawls off among the labyrinth of desks.[paragraph break]";
+		print useless shooting;
 	otherwise:
 		say "[We] aims the pistol upward under the robot's enhanced armor and fires. [We] flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.";
 		remove the purple guard robot from play;
@@ -405,6 +418,8 @@ carry out shooting purple guard robot with the disruptor pistol during Cyberneti
 Cybernetica Battle ends when purple guard robot is not in the Cybernetica office.
 
 When Cybernetica Battle ends:
+	score 1;
+	say line break;
 	converse "Jones: 'Better than a video game. '
 	
 	Beck: 'Nice, but don[']t forget to credit your handler.'
@@ -412,7 +427,6 @@ When Cybernetica Battle ends:
 	Jones: 'Yes, yes, thanks for helping me not get killed.'   
 	
 	Beck: 'You're welcome.'";
-	score 1;
 
 Volume 6 - Things
 
@@ -454,17 +468,16 @@ Before going from a room (called R1) to an atmo-thin room (called R2) when R1 is
 			say "[We] can't go outside without an atmo-suit.";
 			stop the action;
 		
-Check wearing the Atmo-Suit when the location is not atmo-thin:
-	if the room gone to is nothing or the room gone to is not atmo-thin:
-		say "[We] needs to be able to move around quickly. Better not wear the [Atmo-Suit]." instead;
-		stop the action;
+Check wearing the Atmo-Suit when the location is not atmo-thin and the room gone to is not atmo-thin:
+	say "[We] needs to be able to move around quickly. Better not wear the [Atmo-Suit]." instead;
+	stop the action;
 	
-The elevator drop key is a thing. "Hanging from a hook here is [a elevator drop key]." The description is "A drop key is a special device used to open an elevator door from the outside." 
+The elevator drop key is a thing. "Hanging from a hook here is [a elevator drop key]." The description is "A drop key is a special device used to open an elevator door from the outside. It consists of a thin shaft which is hinged at th-- oh just Google it." 
 
 A thing can be an enemy.
 
-A guard robot is a kind of enemy person. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard" as a guard robot.
-There is a guard robot called the guard-robots. It is privately-named. It is undescribed. The printed name is "guard robots". Understand "guard/robot/robots" as the guard robots.
+A guard robot is a kind of enemy person. It is neuter. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard" as a guard robot.
+There is a guard robot called the guard-robots. It is privately-named. It is undescribed. The printed name is "guard robots". Understand "guard/robot/robots/green/red" as the guard robots.
 There is a guard robot called the purple guard robot. It is undescribed.
 There is a thing called the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground."
 
@@ -521,7 +534,7 @@ ground-floor-1 is west of Lobby. It is a ground-floor. The dir is southwest.  Th
 ground-floor-2 is north of ground-floor-1. It is a ground-floor. The dir is west. The preposition is "on".
 
 the elevator-room-door is a door. It is privately-named. It is scenery. The printed name is "utility door". Understand "elevator/room/door/utility" as elevator-room-door. It is east of ground-floor-2. Through the elevator-room-door is the elevator room.
-the elevator-room-door is closed, locked, lockable and openable. The red key card unlocks the elevator-room-door.
+the elevator-room-door is closed, locked, lockable and openable. The red cardkey unlocks the elevator-room-door.
 The description of the elevator-room-door is "It's a white metal door, completely typical. It has a swipe card lock right above the handle.".
 
 the elevator-room-door-inside is a door. It is privately-named. It is scenery. The printed name is "elevator room door". Understand "elevator/room/door" as elevator-room-door-inside. It is west of the elevator room. The elevator-room-door-inside is a half-door of the elevator-room-door. Through the elevator-room-door-inside is ground-floor-2.
@@ -545,19 +558,47 @@ the ground floor stairwell is east of the elevator hall.
 
 Book 2 - Lower Elevator Shaft
 
-the second floor elevator shaft is above the ground floor elevator shaft.
+An elevator shaft door is a kind of door. It is privately-named scenery. It is closed and openable.
+The printed name is "elevator door". Understand "elevator/door" as elevator shaft door. 
+
+the second floor elevator shaft is above the ground floor elevator shaft. 
+edoor2 is An elevator shaft door. it is east of second floor elevator shaft and west of fakeroom2.
 
 the third floor elevator shaft is above the second floor elevator shaft.
+edoor3 is An elevator shaft door. it is east of third floor elevator shaft and west of fakeroom3.
 
 the fourth floor elevator shaft is above the third floor elevator shaft.
+edoor4 is An elevator shaft door. it is east of fourth floor elevator shaft and west of fakeroom4.
 
 the fifth floor elevator shaft is above the fourth floor elevator shaft.
+edoor5 is An elevator shaft door. it is east of fifth floor elevator shaft and west of fakeroom5.
 
 the sixth floor elevator shaft is above the fifth floor elevator shaft.
+edoor6 is An elevator shaft door. it is east of sixth floor elevator shaft and west of fakeroom6.
 
 the seventh floor elevator shaft is above the sixth floor elevator shaft.
+edoor7 is An elevator shaft door. it is east of seventh floor elevator shaft and west of fakeroom7.
 
 the eighth floor elevator shaft is above the seventh floor elevator shaft.
+edoor8 is An elevator shaft door. it is east of eighth floor elevator shaft and west of fakeroom8.
+
+Cannot open elevator is a clip with conversation "Jones: 'No luck trying to open the elevator door.'
+
+Beck: 'Try another.'
+
+Jones: 'Thanks for the advice.'".
+
+Instead of opening an elevator shaft door:
+	say "[We] is unable to open the door. Perhaps it's blocked from the other side.[paragraph break]";
+	print cannot open elevator.
+
+Instead of unlocking keylessly an elevator shaft door:
+	say "[We] is unable to open the door. Perhaps it's blocked from the other side.[paragraph break]";
+	print cannot open elevator.
+
+Instead of unlocking an elevator shaft door with something:
+	say "[We] is unable to open the door. Perhaps it's blocked from the other side.[paragraph break]";
+	print cannot open elevator.
 
 the ninth floor elevator shaft is above the eighth floor elevator shaft.
 
@@ -578,13 +619,10 @@ The Inspiration Chamber is south of Cybernetica office.
 
 The Martian Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Martian Chemical door is closed, openable, locked, and lockable.
 
-The north building management door is a door. It is scenery. It is west of the ninth floor north hallway and east of the north end of the building management office.
+The north end of the building management office is west of the ninth floor north hallway.
+The preposition is "at".
 
-The preposition of the north end of the building management office is "at".
-
-the south end of the building management office is south of the north end of the building management office.  The preposition is "at".
-
-The south building management door is a door. It is scenery. It is west of the ninth floor south hallway and east of the south end of the building management office.
+the south end of the building management office is south of the north end of the building management office and west of the ninth floor south hallway. The preposition is "at".
 
 a ledge is a room. The preposition is "on". It is always-indefinite. a ledge is atmo-thin.
 
@@ -685,17 +723,17 @@ Book 5 - The 100th Floor
 
 The 100th floor elevator hall is a room. West of the 100th floor elevator hall is the placeholder room.
 
-penthouse north is north of 100th floor elevator hall.
+the penthouse north is north of 100th floor elevator hall.
 
-penthouse east is southeast of penthouse north.
+the penthouse east is southeast of penthouse north.
 
-penthouse south is southwest of penthouse east and south of 100th floor elevator hall.
+the penthouse south is southwest of penthouse east and south of 100th floor elevator hall.
 
-penthouse west is northwest of penthouse south and southwest of penthouse north.
+the penthouse west is northwest of penthouse south and southwest of penthouse north.
 
 the roof stairs is east of 100th floor elevator hall.
 
-The roof access door is a scenery door. It is above the roof stairs and below the penthouse roof.
+The roof access door is a closed, locked, lockable, openable scenery door. It is above the roof stairs and below the penthouse roof.
 
 The preposition of the roof stairs is "on".
 
@@ -736,7 +774,7 @@ The printed name is "outside".
 
 The description is "Outside the building are the red-dusted streets of New Reykjavik."
 
-Understand "city/planet/mars/outside/out" as first floor view of New Reykjavik.
+Understand "city/planet/mars/outside/out/glass" or "glass wall" as first floor view of New Reykjavik.
 
 Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in south end of the building management office, north end of the building management office, ninth floor south hallway, ninth floor north hallway, Martian Chemical office, Cybernetica office.
 
@@ -806,7 +844,7 @@ The description of the entry door is "A glass revolving door emblazoned with the
 Before going from entry doorway to lobby for the first time:
 	converse "Jones takes a deep breath. 'I[']m going in.'
 	
-	Beck replies, 'Be careful, Galaxy.'".
+	Beck replies, 'You got this, Galaxy.'".
 
 Chapter 3 - Lobby
 
@@ -820,14 +858,13 @@ The description of the ground-floor-ceiling is "The whole ground floor is bright
 
 The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above it, suspended on almost invisible cables[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
 
-The left niche is scenery in the lobby. "Aside from a robot charging station, there's nothing here."
-The right niche is scenery in the lobby. "Aside from a robot charging station, there's nothing here."
+The niches are scenery in the lobby. "Aside from a robot charging station, there's nothing here." Understand "niche" as niches.
 
 The front desk is scenery in the lobby. It is a pseudocontainer. The contents description is "There's not much on the desk other than a note that says '[doorcode]'.". "There is nothing of interest on the front desk." 
 The note is in the front desk. The description is "The note says '[doorcode]'.".
 
 Instead of doing something when the location is the lobby for the first time:
-	say "Before [we] [get] a chance to do anything, two robot guards emerge from niches in the back wall! [We] [dive] behind the front desk and [draw] [our] disruptor pistol.[paragraph break]";
+	say "Before [we] [get] a chance to do anything, two robot guards, green and red, emerge from niches in the back wall! [We] [dive] behind the front desk and [draw] [our] disruptor pistol.[paragraph break]";
 	converse "Jones shouts, 'I'm under fire from two ugly robot things!'
 	
 	Beck responds, 'Monitoring your suit radar.'";
@@ -837,7 +874,7 @@ The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/gl
 comment on energy absorption is a clip with conversation "Jones: 'Target seems to be absorbing disruptor fire. This will make things a little harder.'".
 	
 Report shooting a guard robot with the disruptor pistol during Lobby Shootout:
-	say "[one of]Oops! [we] [miss].[or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In [our] haste it goes wide of the target.[or]A barrage of fire from the robots prevents [us] from firing.[or]Oof. Big miss.[or][Our] shot hits [the noun] dead on, but nothing happens, almost as if the robot had absorbed the energy.[line break][print comment on energy absorption][line break][or]A perfect shot! Yet, somehow, the robot is unscathed.[print comment on energy absorption][at random]";
+	say "[one of]Oops! [we] [miss].[or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In [our] haste it goes wide of the target.[or]A barrage of fire from the robots prevents [us] from firing.[or]Oof. Big miss.[or][Our] shot hits [the noun] dead on, but nothing happens, almost as if the robot had absorbed the energy.[line break][print comment on energy absorption][line break][or]A perfect shot! Yet, somehow, the robot is unscathed.[line break][print comment on energy absorption][at random]";
 	
 Check shooting something with the disruptor pistol:
 	if the noun is not a guard robot and the noun is not the giant sculpture:
@@ -854,13 +891,13 @@ battle won is a clip with conversation "Beck: 'What was that crash? What[']s goi
 Jones: 'That, my friend, was what you'd call a work of art. Targets terminated.'".
 
 Carry out shooting the giant sculpture with the disruptor pistol:
-	say "[We] [fire] the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.[paragraph break]";
+	say "[We] [fire] the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.";
+	score 1;
+	say line break;
 	remove the guard-robots from play;
 	remove the giant sculpture from play;
 	move the tangled ruin to the lobby;
 	print battle won;
-	say line break;
-	score 1;
 	
 entering is acting recklessly.
 taking is acting recklessly.
@@ -946,9 +983,12 @@ Section 5 - ground-floor-5
 
 The description of ground-floor-5 is "The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.".
 
-Some military-detritus are scenery pseudocontainer in ground-floor-5. They are privately-named. The printed name is "medals, ribbons, and all". Understand "uniforms/uniform/medals/medal/ribbons/ribbon/miscellanea/showcases" as military-detritus.
+Some military-detritus are scenery pseudocontainer in ground-floor-5. They are privately-named. The printed name is "medals, ribbons, and all". Understand "uniforms/uniform/medals/medal/ribbons/ribbon/miscellanea/showcases/showcase" as military-detritus.
 The contents description is "[We] yawns looking over the assortment of faux honors. They're all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.".
 "There's a remarkable array of faux honors here, all behind glass. One of the display cases is partly open and empty of the medal it once held."
+
+Instead of opening the military-detritus:
+	try examining the military-detritus;
 
 The garish medal is in the military-detritus. It is a pseudocontainer.
 The contents description is "While the front looks authentic, the reverse is engraved with Thallium's personal motto 'Planetas Vincam'. The ribbon conceals a safety pin. It looks like it could be removed.".
@@ -965,12 +1005,16 @@ The description of ground-floor-6 is "Apparently some kind of function was happe
 
 The catering table is a scenery pseudocontainer in ground-floor-6. "The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.". Understand "canapes", "hors d'oeuvres", "food", "snacks" as the catering table.
 
+Instead of eating the catering table:
+	say "[We] is not hungry.";
+
 The conversation is "Jones: 'Well, at least the Admiral treats his guests right. Except me. And Europa.'".
 
 The catering table contains a fork. The catering table contains a shrimp tea sandwich. The catering table contains poached ostrich eggs in jelly.
 Understand "silverware/forks" as the fork. The description of the fork is "A very stylish silver-plated fork.".
-Understand "canape" as the shrimp tea sandwich. The description of shrimp tea sandwich is "Simply delightful."
+Understand "canape/sandwiches" as the shrimp tea sandwich. The description of shrimp tea sandwich is "Simply delightful." 
 The shrimp tea sandwich is edible. The poached ostrich eggs in jelly is edible. The description is "Definitely not to [our] taste."
+Understand "egg" as the poached ostrich eggs in jelly.
 
 Check eating the shrimp tea sandwich:
 	say "[We] is not hungry." instead;
@@ -1015,7 +1059,8 @@ Check opening the closet door when the closet door is locked:
 Instead of typing doorcode on the keypad:
 	say "An indicator light glows green.";
 	now the closet door is unlocked;
-	say opened maintenance closet;
+	say line break;
+	print opened maintenance closet;
 	
 Instead of typing a number on the keypad:
 	say "An indicator light blinks red.";	
@@ -1038,19 +1083,35 @@ Does the player mean typing a number on the keypad:
 	it is very likely.
 	
 Check unlocking keylessly the closet door:
-	say "[We] will have to enter the correct code on the keypad.[can't open maintenance closet]" instead;
+	say "[We] will have to enter the correct code on the keypad.[paragraph break][print can't open maintenance closet]" instead;
 	
 Check unlocking the closet door with something:
-	say "[We] will have to enter the correct code on the keypad instead.[can't open maintenance closet]" instead;
+	say "[We] will have to enter the correct code on the keypad instead.[paragraph break][print can't open maintenance closet]" instead;
 
-The red key card is on the shelf. The description of the red key card is "An anonymous red card with a magnetic stripe."
+The red cardkey is on the shelf. The description of the red cardkey is "An anonymous red card with a magnetic stripe." Understand "card/key" as red cardkey.
 The shelf is scenery in the maintenance closet. The description of the shelf is "A plain white plastic shelf mounted on the wall."
 
 The Atmo-Suit is in the maintenance closet.
 
 Chapter 6 - Ground Floor Elevator Hall
 
-The description of the ground floor elevator hall is "This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.".
+The description of the ground floor elevator hall is "This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell[if the elevator door is open]. The elevator door is open, revealing the bottom of the elevator shaft. Jones could climb into it, if she wished[end if].".
+
+The elevator-shaft is scenery in the ground floor elevator hall. It is privately-named. The printed name is "elevator shaft". Understand "elevator/shaft" as the elevator-shaft.
+
+Does the player mean using drop key with the ground floor elevator door:
+	it is very likely;
+	
+Does the player mean doing something to the elevator-shaft:
+	it is very unlikely;
+
+Instead of entering the elevator-shaft when the ground floor elevator door is closed:
+	say "[We] will need to open the elevator door first.";
+	
+Instead of entering the elevator-shaft when the ground floor elevator door is open:
+	try going west;
+	
+Understand "climb into [something]" as entering.
 
 The call button is scenery in the ground floor elevator hall. 
 
@@ -1093,6 +1154,8 @@ Instead of touching the elevator control panel:
 	say "Nothing happens, no matter how much [we] fiddles with it.";
 
 The elevator drop key is in the elevator room. 
+
+The hammer is in the elevator room. "Lying discarded on a table here is a hammer." The description is "An ordinary claw hammer".
 
 Chapter 8 - Ground Floor Stairwell
 
@@ -1148,37 +1211,15 @@ Instead of climbing the ladder when the location is the ground floor elevator sh
 Instead of using the ladder when the location is the ground floor elevator shaft:
 	try going up;
 	
-The useless elevator doors are a backdrop. It is privately-named. The printed name is "elevator door". Understand "elevator/door" as the useless elevator doors. 
-It is in second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, and eighth floor elevator shaft.
-
-Cannot open elevator is a clip with conversation "Jones: 'No luck trying to open the elevator door.'
-
-Beck: 'Try another.'
-
-Jones: 'Thanks for the advice.'".
-
-Instead of opening the useless elevator doors:
-	say "[We] is unable to open the door. Perhaps it's blocked from the other side.";
-	say line break;
-	print cannot open elevator.
-
-Instead of unlocking keylessly the useless elevator doors:
-	say "[We] is unable to open the door. Perhaps it's blocked from the other side.";
-	say line break;
-	print cannot open elevator.
-
-Instead of unlocking the useless elevator doors with something:
-	say "[We] is unable to open the door. Perhaps it's blocked from the other side.";
-	say line break;
-	print cannot open elevator.
+[The useless elevator doors are a backdrop. It is privately-named. The printed name is "elevator door". Understand "elevator/door" as the useless elevator doors. 
+It is in second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, and eighth floor elevator shaft.]
 	
 After going from ninth floor elevator shaft to ninth floor elevator hall for the first time:
+	score 1;
 	say line break;
 	converse "Jones: 'Finally out of the shaft. That was quite a climb.'
-	
+
 	Beck: 'This floor is just offices. Check the building management office to the west. It might have some useful stuff.'";
-	say line break;
-	score 1;
 	continue the action;
 
 After going from ninth floor elevator shaft to ninth floor elevator hall:
@@ -1188,6 +1229,9 @@ After going from ninth floor elevator shaft to ninth floor elevator hall:
 After going from ninth floor elevator hall to ninth floor elevator shaft:
 	now the ninth floor elevator door is closed;
 	continue the action;
+	
+Instead of jumping when the location is in the elevator shaft-region and the location is not the ground floor elevator shaft:
+	say "Your sense of humor is very primitive, isn't it?";
 
 Book 4 - Ninth Floor
 
@@ -1247,7 +1291,7 @@ Before going from Cybernetica office to ledge when the Atmo-Suit is touchable fo
 	
 	Beck: 'Whoa whoa whoa, Jones. You know you're not good with heights.'
 	
-	Jones: 'Ask Thallium how how much that matters once I've kicked his ass.'";
+	Jones: 'Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch.'";
 
 The description of the Inspiration Chamber is "One of the most unique features of the office is the 'inspiration chamber,' a specialized room designed to stimulate creativity and innovation. The room is filled with advanced technology, including AI-generated art, interactive displays, and sensory stimulation devices that can help employees think outside the box and come up with new ideas."
 
@@ -1272,7 +1316,16 @@ Instead of examining down when the location is the ledge for the third time:
 	change down exit of the ledge to window washing scaffold;
 	converse "Jones: 'Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up.'
 	
-	Beck: 'Careful, Jones.'";
+	Beck: 'Take it easy, Jones.'";
+	now the window washing scaffold is discovered;
+	
+The window washing scaffold can be discovered.
+	
+Instead of jumping when the location is the ledge and the window washing scaffold is discovered:
+	try going down;
+	
+Instead of jumping when the location is the ledge:
+	say "On a [italic type]ledge?[roman type] Are you crazy?";
 	
 The description of the window washing scaffold is "lalala".
 
@@ -1354,26 +1407,27 @@ Report pushing the scaffold down button:
 	try looking;
 	stop the action;
 
-The exhaust vent is a scenery container. It is closed and openable. "It's a white metal grill held in place by four screws.". Understand "screws" as the exhaust vent.
+The exhaust vent is a scenery container. It is closed and openable. "It's a white metal grill held in place by four screws.". Understand "screws/grill" as the exhaust vent.
 The screws are part of the exhaust vent. "Plain screws painted with white enamel."
 
 Instead of unscrewing the exhaust vent with the screwdriver:
 	now the exhaust vent is open;
-	say "[We] loosens the screws and removes the grill from the vent.";
+	say "[We] loosens the screws with the screwdriver and removes the grill from the vent.";
 	
 Instead of closing the exhaust vent:
 	say "After [we] went to so much trouble to open it?";
 
 Instead of opening the exhaust vent:
-	say "[We] will need to remove the screws.";	
+	try unscrewing the exhaust vent with the screwdriver;
 	
 Instead of unlocking the exhaust vent with the screwdriver:
 	try unscrewing the exhaust vent with the screwdriver;
 	
-Instead of entering the exhaust vent:
+Instead of entering the exhaust vent when the exhaust vent is open for the first time:
 	say "[We] climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.";
-	silently try taking off the atmo-suit;
+	score 1;
 	now the player is in the air handling room;
+	try taking off the atmo-suit;
 	converse "Jones: 'Ha! I'm in!'
 	
 	Beck: 'Be careful, you[']re likely to run into more resistance here. The floor is all one open office, so any guard robots will have good line of sight.'
@@ -1381,7 +1435,11 @@ Instead of entering the exhaust vent:
 	Jones: 'Got it.'
 	
 	Beck: 'And Jones? Save your game.'";
-	score 1;
+	
+Instead of entering the exhaust vent when the exhaust vent is open:
+	say "[We] climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.";
+	now the player is in the air handling room;
+	try taking off the atmo-suit;
 	
 Instead of going nowhere from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is open:
 	if the noun is west:
@@ -1394,12 +1452,15 @@ Instead of taking off the exhaust vent:
 		try unscrewing the vent with the screwdriver;
 	otherwise:
 		say "[We] doesn't have anything to remove the screws with.";
+		
+Instead of taking off the atmo-suit when the location is atmo-thin:
+	say "That would be inadvisable in the thin Martian atmosphere.";
 
 Chapter 3 - Building Management Office
 
 The description of the north end of the building management office is "The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.";
 
-The large desk is in the north end of the building management office. It is scenery. It is a container. It is closed, openable, locked, and lockable. 
+The large desk is in the north end of the building management office. It is scenery. It is a container. It is closed, openable, locked, and lockable. "It's a pretty utilitarian desk of some plastic material. It has a single drawer with a lock.".
 
 Instead of unlocking the large desk with the safety pin:
 	say "[We] pushes the pin into the keyhole and wiggles it around. After a few seconds of this the desk drawer pops open[if desk contains something]. It contains [a list of objects contained in the large desk][end if].";
@@ -1433,9 +1494,9 @@ Carry out picking with safety pin when the large desk is touchable:
 Instead of picking the large desk with the safety pin:
 	try unlocking the large desk with the safety pin;
 
-The black card key is in the large desk. Every door is unlocked by it.
+The black cardkey is in the large desk. Every door is unlocked by it. Understand "card/key" as the black cardkey.
 
-A filing cabinet is a container in the south end of the building management office. It is scenery. It is closed, locked, keyed, openable, and lockable. "An ordinary filing cabinet, with five drawers."
+A filing cabinet is a container in the south end of the building management office. It is scenery. It is closed, locked, keyed, openable, and lockable. "An ordinary filing cabinet, with five drawers." Understand "file cabinet" as the filing cabinet.
 
 The description of the south end of the building management office is "The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north."
 
@@ -1487,14 +1548,13 @@ After dropping the shrimp tea sandwich when black cat is in the location and the
 	say "Sensing food, the black cat pokes its head out, grabs the shrimp in its jaws, and races off.[paragraph break]";
 	remove the black cat from play;
 	remove the shrimp tea sandwich from play;
+	score 1;
+	say line break;
 	converse "Jones: 'Aha! No creature is too fearsome for Galaxy Jones!'
 	
 	Beck: 'Congratulations on your victory.'";
-	score 1;
-	continue the action;
 	
 Instead of giving the shrimp tea sandwich to the black cat:
-	say "(dropping the shrimp tea sandwich)[command clarification break]";
 	try dropping the shrimp tea sandwich;
 
 Instead of taking the screwdriver when the black cat is not in the location and the screwdriver is behind the filing cabinet:
@@ -1519,6 +1579,8 @@ Rule for clarifying the parser's choice of the Electrofil quick-setting conducti
 
 Book 5 - Tenth Floor
 
+The description of the air handling room is "There is a good amount of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.".
+
 Instead of going to tenth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
 	try looking;
@@ -1531,7 +1593,7 @@ To say elevator description:
 	otherwise:
 		say "The elevators doors to the west are closed.";
 
-The description of the tenth floor elevator hall is "[elevator description]. There is a stairwell to the east. The hall runs north and south inta sumptuous corporate office.";
+The description of the tenth floor elevator hall is "[elevator description]. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.";
 
 The description of microthings-1 is "This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor east and west, and north to the elevator".
 The description of microthings-2 is "This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. [We] can go north or east from here.".
@@ -1603,7 +1665,7 @@ The elevator car-room can be in running mode.
 
 The ceiling panel is in the elevator car-room. "One of the ceiling panels looks loose.";
 
-it's real ivory is a taunting clip with conversation "[line break]Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant.'[run paragraph on]".
+it's real ivory is a taunting clip with conversation "Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant.'".
 
 The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if].".
 
@@ -1710,13 +1772,14 @@ Report waiting when the mauve guard robot is under attack:
 	
 Instead of pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot:
 	say "[We] pours the gel into the	vent on the robot's head. The robot flails around wildly and throws [us] from its back, then lets out a loud crackling sound and stops moving.";
+	score 1;
 	now the mauve guard robot is not under attack;
 	remove the mauve guard robot from play;
 	move the dead mauve robot to the elevator car-room;
 	try looking;
 	
 Instead of going when the mauve guard robot is under attack:
-	say "[We] can't leave the elevator when [we're] hanging onto the elevator for dear life.".
+	say "[We] can't leave the elevator when [we're] hanging on nto the robot for dear life.".
 	
 Instead of pouring the Electrofil quick-setting conductive polymer gel on the robot vent:
 	try pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot;
@@ -1729,12 +1792,101 @@ Instead of shooting the mauve guard robot with the disruptor pistol when the mau
 	
 Book 6 - 100th Floor
 
-The description of the 100th floor elevator hall is "This is just a placeholder for now. The elevator is to the west and the roof stairs are to the east.".
+The description of the 100th floor elevator hall is "The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. The roof stairs, themselves of gleaming white marble, are to the east. Sumptuous living quarters are visible to the north and south.".
 
-penthouse north has description "blank for now.".
-penthouse east has description "blank for now.".
-penthouse south has description "blank for now.".
-penthouse west has description "blank for now.".
+the penthouse north has description "This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.". The printed name is "northern corner of the penthouse".
+
+The bed is scenery in the penthouse north. "It's round and huge, and it looks supremely comfortable."
+Instead of entering the bed:
+	say "No time for lying down.";
+
+Understand "lie on [something]" as entering.
+
+the penthouse east has description "This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.". The printed name is "eastern corner of the penthouse".
+
+the penthouse south has description "This must be Thallium's 'treasure room', to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.". The printed name is "southern corner of the penthouse".
+
+After going to the penthouse south for the first time:
+	converse as thallium "Thallium seems to speak from all around you. 'You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all.'
+	
+	Jones snorts, 'Sure, Thallium.'".
+	
+A gem is a kind of thing. Understand "diamonds/gem/gems" as the gem.
+The glass diamond is a gem. The glass diamond can be discovered. The printed name is "[if discovered]glass diamond[otherwise]diamond". The description is "Worthless.".
+
+The real diamond is a gem in the room of stuff.
+
+Rule for clarifying the parser's choice of something when doing something to the glass diamond:
+	do nothing;
+
+After deciding the scope of the player when the location is penthouse south and the real diamond is in the room of stuff:
+	place the real diamond in scope;
+
+Instead of taking the real diamond when the glass diamond is nowhere:
+	now the player carries the glass diamond;
+	say text of the standard report taking rule response (A);
+	say paragraph break;
+	converse as thallium "Thallium giggles. 'Oh, I hope you're not disappointed, Jones.'";
+	
+Instead of examining the glass diamond when the glass diamond is not discovered: 
+	say line break;
+	converse "Jones: 'Hmm. This is made of glass.'
+	
+	Thallium: 'Poor, sad Jones. But here's the thing. There [special-style-2]is[special-style-1] a real diamond in there; it's just you'll never find it before the building's defenses flood the whole floor with poisonous gas. Or maybe I'm bluffing. Maybe I'm not. Can you afford to gamble?'";
+	say line break;
+	say "Jones tosses the fake away.";
+	remove the glass diamond from play;
+	now the glass diamond is discovered.
+
+attacking it with is an action applying to one thing and one carried thing. Understand "attack [something] with [something]" as attacking it with.
+
+Instead of attacking the real diamond with the hammer:
+	say "[We] commences to smash all of the diamonds. After destroying several dozen fraudulent gems, [we] finds one that won't break. [We] takes the real diamond.[paragraph break]";
+	now the player carries the real diamond;
+	converse "Thallium: 'Wow, clever solution. Be careful you don't cut yourself.'
+	
+	Jones: 'I appreciate your concern.'"
+
+Instead of taking the real diamond when the glass diamond is discovered and the real diamond is in the room of stuff:
+	say "[We] will never find the real diamond this way.".
+
+the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the nine planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
+
+The pillar is scenery in the penthouse west. 
+The claw is part of the pillar. It is a container with carrying capacity 1.
+
+Instead of inserting something that is not a gem into the claw:
+	say "That won't fit in the claw.";
+
+Instead of inserting a gem into the claw:
+	if the noun is the glass diamond:
+		say "As soon as [We] inserts [the noun] into the claw, laser beams spring from five emitters on the walls. They hit the diamond and refract and disperse without any effect.'";
+	otherwise:
+		say "As soon as insert [the noun] into the claw, laser beams spring from five emitters on the walls. They hit the diamond and join into a single more powerful beam that strikes the electronic eye on the wall. A sound like a sliding door comes from behind [us], and [we] spins around to see the red wall slide down into the floor. It exposes a control panel of sorts, featuring a large red button labeled 'Press Me'.";
+		now the control panel is in the penthouse west;
+		
+The penthouse control panel is a scenery thing. The penthouse control panel can be discovered. "The panel features two buttons, one a large red button labeled 'Press Me', and the other a small black button without a label.'".
+
+The large red button is a part of the penthouse control panel.
+The small black button is a thing.
+
+Instead of examining the penthouse control panel when the penthouse control panel is not discovered:
+	say "[We] discovers a secret panel, which when opened exposes a small black button.";
+	now the penthouse control panel is discovered;
+	now the black button is a part of the penthouse control panel;
+	
+Instead of pushing the large red button for the first time:
+	converse "Thallium's voice startles [us], and [we] forgets the button for a moment. 
+	
+	'Yes, yes, press it!', Thallium squeaks.";
+	
+Instead of pushing the large red button:
+	say "[We] presses the red button, but nothing seems to happen. After a few seconds, however, [we] starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die.";
+	end the story saying "Galaxy Jones was killed by poison gas.";
+	
+Instead of pushing the small black button:
+	say "An audible click sounds from somewhere beyond this room.";
+	now the roof access door is unlocked;
 
 Book 7 - The Rooftop
 
@@ -1756,7 +1908,7 @@ When Thallium alight begins:
 Before going to flyer pad during On-Rooftop:
 	say "Thallium trails after Jones.";
 	say line break;
-	converse as Thallium "Um, Jones -- that harlot you're so bent on freeing from captivity is over [italic type]there[special-style-2]. Now get out of the way, I'm trying to escape.'
+	converse as Thallium "Um, Jones -- that harlot you're so bent on freeing from captivity is over [special-style-2]there[special-style-1]. Now get out of the way, I'm trying to escape.'
 	
 	Thallium shoulders past [us]. [We] attempts to grab his shoulder, but [we] is thrown back by an unseen force.
 	
@@ -1780,7 +1932,7 @@ Thallium ultimatum begins when Thallium alight ends.
 When Thallium ultimatum begins:
 	converse as thallium "Thallium's flyer hovers over the rooftop. 'Jones!'  he bellows. 'Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.'
 	
-	[special-style-1]Jones rolls her eyes.[special-style-2]";
+	Jones rolls her eyes.";
 	say "[line break]A little ways off, a small flyer aims for the rooftop and accelerates.";
 
 Before going somewhere during Thallium ultimatum:
@@ -1794,7 +1946,7 @@ When Saving Europa begins:
  
 Chapter 2 - Penthouse Roof
 
-Check opening the roof access door:
+Check opening the roof access door when the roof access door is unlocked and the location is the roof stairs:
 	if DEBUG is false:
 		say "[line break]Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?[line break]>";
 		if the player consents:
@@ -1814,19 +1966,19 @@ After looking when the location is the penthouse roof for the first time:
 
 Report going to penthouse roof for the first time:
 	say line break;
-	converse as thallium "Jones walks out onto the luxurious penthouse roof. Admiral Thallium turns from the railing to face [us]. He is dressed in an absurd elaboration of a Martian Admiral's uniform. He looks Jones up and down with a lecherous leer. 'Ah, Galaxy Jones, as lovely as ever. If it weren't so unbearably cliché I[']d ask you to join me in my rise to greatness. But alas, you are too habituated to the smug high of [']goodness['].' He sighs dramatically. 'We've trodden similar ground before; no need to discuss it further. Although I would challenge any of your various [italic type]amants[special-style-2] to conjugate [']tread['] correctly.
+	converse as thallium "Jones walks out onto the luxurious penthouse roof. Admiral Thallium turns from the railing to face [us]. He is dressed in an absurd elaboration of a Martian Admiral's uniform. He looks Jones up and down with a lecherous leer. 'Ah, Galaxy Jones, as lovely as ever. If it weren't so unbearably cliché I[']d ask you to join me in my rise to greatness. But alas, you are too habituated to the smug high of [']goodness['].' He sighs dramatically. 'We've trodden similar ground before; no need to discuss it further. Although I would challenge any of your various [special-style-2]amoureux[special-style-1] to conjugate [']tread['] correctly.
 	
 	'Anyway, I guess this is the time where you do something predictably undignified and violent. Before you do I feel I should inform you that your sidearm has been rendered quite ineffective by my personal security field. But do go ahead and try it.'
 	
-	[special-style-1]Jones sneers. 'I wouldn't give you the satisfaction,' she says, looking around. 'I see you don't have any of your robot pets up here. How are you going to stop me from rescuing Europa?'[special-style-2]
+	Jones sneers. 'I wouldn't give you the satisfaction,' she says, looking around. 'I see you don't have any of your robot pets up here. How are you going to stop me from rescuing Europa?'
 	
 	'Oh please, while we're trying things, try that too. I wish you luck breaking the silnium bars of the cage.'
 	
-	[special-style-1]'What's silnium?'[special-style-2]
+	'What's silnium?'
 	
 	'A superstrong material invented here in my Martian Chemical laboratory. We had a press conference for it -- weren[']t you watching?'
 	
-	[special-style-1]'Couldn[']t be bothered.'[special-style-2]
+	'Couldn[']t be bothered.'
 	
 	'Oh for frotz sake, Jones, you're so frustrating!'
 	
@@ -1979,7 +2131,7 @@ After printing the player's obituary when the story has ended finally:
 	say line break;
 	say "Her eyes flutter open, close again, then open. She winces and brings one hand up to shield her eyes. 'Who's that?' she says, hoarsely.";
 	say line break;
-	converse "Join Galaxy Jones next time in [italic type]Galaxy Jones II: Existential Time Crisis![special-style-1]";
+	converse "Join Galaxy Jones next time in [special-style-2]Galaxy Jones II: Existential Time Crisis![special-style-1]";
 	print the galaxy banner;
 
 Volume 10 - Language 
@@ -2025,6 +2177,8 @@ After going from a room (called R1) to a room (called R2):
 Volume 12 - Not for release
 
 DEBUG is true. 
+
+Understand "* [text]" as a mistake ("Noted.").
 
 Volume 13 - Tests
 
