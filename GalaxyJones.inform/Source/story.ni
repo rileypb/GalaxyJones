@@ -305,7 +305,7 @@ When play begins:
 Book 1 - Lobby Shootout
 
 Lobby Shootout is a scene. Lobby Shootout begins when the player is in the lobby for three turns.
-Lobby Shootout ends when the location of the red guard robot is not the lobby.
+Lobby Shootout ends when the location of the guard-robots is not the lobby.
 
 pinned down is a clip with conversation "[line break]Jones: 'I[']m pinned down here!'".
 Check going during lobby shootout:
@@ -313,11 +313,10 @@ Check going during lobby shootout:
 	print pinned down instead;
 	
 When Lobby Shootout begins:
-	Move the red guard robot to the lobby;
-	Move the green guard robot to the lobby;
+	Move the guard-robots to the lobby;
 	
 After looking during Lobby Shootout:
-	say "[one of]Red and green guard robots criss-cross the lobby, stalking [us][or]Two guard robots, one red, one green, prowl the lobby, trying to outflank [us][or]The guard robots, red and green, have their head cannons trained on the front desk[at random].";
+	say "[one of]Two guard robots criss-cross the lobby, stalking [us][or]Two guard robots prowl the lobby, trying to outflank [us][or]The guard robots have their head cannons trained on the front desk[at random].";
 	
 Flanking warning is a clip with conversation "Beck: 'Robot on your right!'".
 Fight clip 6 is a clip with conversation "Jones: 'I could use some ideas here!'".
@@ -333,11 +332,11 @@ Every turn during lobby shootout:
 		say "The robots intone 'Destroy Jones' in an eerie drone.";	
 	if roll is 3:
 		print flanking warning;
-		say "The [one of]green[or]red[purely at random] robot tries to flank [us], but a shot from [our] disruptor sends it scurrying back.";	
+		say "One robot tries to flank [us], but a shot from [our] disruptor sends it scurrying back.";	
 	if roll is 4:
 		say "Zip! Disruptor fire scorches a nearby couch.";
 	if roll is 5:
-		say "The [one of]green[or]red[purely at random] robot fires a blistering shot into the front desk.";
+		say "A robot fires a blistering shot into the front desk.";
 	if roll is 6:
 		say "The two robots coordinate fire over the desk, narrowly missing [us]."; 
 	let roll2 be a random number between 1 and 7;
@@ -465,8 +464,7 @@ The elevator drop key is a thing. "Hanging from a hook here is [a elevator drop 
 A thing can be an enemy.
 
 A guard robot is a kind of enemy person. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard" as a guard robot.
-There is a guard robot called the red guard robot. It is undescribed.
-There is a guard robot called the green guard robot. It is undescribed.
+There is a guard robot called the guard-robots. It is privately-named. It is undescribed. The printed name is "guard robots". Understand "guard/robot/robots" as the guard robots.
 There is a guard robot called the purple guard robot. It is undescribed.
 There is a thing called the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground."
 
@@ -578,7 +576,7 @@ The Cybernetica door-inside is a door. It is west of the Cybernetica office. It 
 
 The Inspiration Chamber is south of Cybernetica office.
 
-The Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Chemical door is closed, openable, locked, and lockable.
+The Martian Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Martian Chemical door is closed, openable, locked, and lockable.
 
 The north building management door is a door. It is scenery. It is west of the ninth floor north hallway and east of the north end of the building management office.
 
@@ -685,7 +683,7 @@ the tenth floor elevator hall farsees the elevator car-room, microthings-1, and 
 
 Book 5 - The 100th Floor 
 
-The 100th floor elevator hall is a room. 
+The 100th floor elevator hall is a room. West of the 100th floor elevator hall is the placeholder room.
 
 penthouse north is north of 100th floor elevator hall.
 
@@ -829,7 +827,7 @@ The front desk is scenery in the lobby. It is a pseudocontainer. The contents de
 The note is in the front desk. The description is "The note says '[doorcode]'.".
 
 Instead of doing something when the location is the lobby for the first time:
-	say "Before [we] [get] a chance to do anything, two robot guards, one red, one green, emerge from niches in the back wall! [We] [dive] behind the front desk and [draw] [our] disruptor pistol.[paragraph break]";
+	say "Before [we] [get] a chance to do anything, two robot guards emerge from niches in the back wall! [We] [dive] behind the front desk and [draw] [our] disruptor pistol.[paragraph break]";
 	converse "Jones shouts, 'I'm under fire from two ugly robot things!'
 	
 	Beck responds, 'Monitoring your suit radar.'";
@@ -839,7 +837,7 @@ The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/gl
 comment on energy absorption is a clip with conversation "Jones: 'Target seems to be absorbing disruptor fire. This will make things a little harder.'".
 	
 Report shooting a guard robot with the disruptor pistol during Lobby Shootout:
-	say "[one of]Oops! [we] [miss].[or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In [our] haste it goes wide of the target.[or]A barrage of fire from the robots prevents [us] from firing.[or]Oof. Big miss.[or][Our] shot hits [the noun] dead on, but nothing happens, almost as if the robot had absorbed the energy.[line break][print comment on energy absorption][line break][or]A perfect shot! Yet, somehow, the robot is unscathed.[comment on energy absorption][at random]";
+	say "[one of]Oops! [we] [miss].[or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In [our] haste it goes wide of the target.[or]A barrage of fire from the robots prevents [us] from firing.[or]Oof. Big miss.[or][Our] shot hits [the noun] dead on, but nothing happens, almost as if the robot had absorbed the energy.[line break][print comment on energy absorption][line break][or]A perfect shot! Yet, somehow, the robot is unscathed.[print comment on energy absorption][at random]";
 	
 Check shooting something with the disruptor pistol:
 	if the noun is not a guard robot and the noun is not the giant sculpture:
@@ -857,8 +855,7 @@ Jones: 'That, my friend, was what you'd call a work of art. Targets terminated.'
 
 Carry out shooting the giant sculpture with the disruptor pistol:
 	say "[We] [fire] the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.[paragraph break]";
-	remove the red guard robot from play;
-	remove the green guard robot from play;
+	remove the guard-robots from play;
 	remove the giant sculpture from play;
 	move the tangled ruin to the lobby;
 	print battle won;
@@ -995,9 +992,9 @@ opened maintenance closet is a clip with conversation "Jones: 'I've unlocked the
 
 report unlocking the closet door with something:
 	if the closet door is locked:
-		say can't open maintenance closet;
+		print can't open maintenance closet;
 	otherwise:
-		say opened maintenance closet;
+		print opened maintenance closet;
 
 	
 
@@ -1106,15 +1103,15 @@ Instead of going to ground floor stairwell:
 Book 3 - Elevator Shaft
 
 elevator shaft-region is a region. 
-ground floor elevator shaft is in elevator shaft-region.
-second floor elevator shaft is in elevator shaft-region.
-third floor elevator shaft is in elevator shaft-region.
-fourth floor elevator shaft is in elevator shaft-region.
-fifth floor elevator shaft is in elevator shaft-region.
-sixth floor elevator shaft is in elevator shaft-region.
-seventh floor elevator shaft is in elevator shaft-region.
-eighth floor elevator shaft is in elevator shaft-region.
-ninth floor elevator shaft is in elevator shaft-region.
+ground floor elevator shaft is in elevator shaft-region. 
+second floor elevator shaft is in elevator shaft-region. "The door here is closed.".
+third floor elevator shaft is in elevator shaft-region. "The door here is closed.".
+fourth floor elevator shaft is in elevator shaft-region. "The door here is closed.".
+fifth floor elevator shaft is in elevator shaft-region. "The door here is closed.".
+sixth floor elevator shaft is in elevator shaft-region. "The door here is closed.".
+seventh floor elevator shaft is in elevator shaft-region. "The door here is closed.".
+eighth floor elevator shaft is in elevator shaft-region. "The door here is closed.".
+ninth floor elevator shaft is in elevator shaft-region. "The door here is [if ninth floor elevator door is open]open[otherwise]closed[end if].".
 
 Instead of examining up when the location is in elevator shaft-region:
 	try examining the elevator car-backdrop;
@@ -1125,7 +1122,7 @@ Instead of examining down when the location is in elevator shaft-region and the 
 Instead of examining down when the location is the ledge:
 	say "There's a window cleaner's scaffold about six feet below [us]. Beyond that is a precipitous drop to the streets of New Reykjavik.";
 
-The description of the ground floor elevator shaft is "[We] is at the bottom of a dark well. Shining [our] suit light up, [we] can see that the elevator car is several floors up, unmoving. There is a ladder on the west wall."
+The description of the ground floor elevator shaft is "[We] is at the bottom of a dark well. Shining [our] suit light up, [we] can see that the elevator car is several floors up, unmoving. There is a ladder running up the wall next to the door."
 
 A ladder is a backdrop. It is in ground floor elevator shaft, second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, eighth floor elevator shaft, ninth floor elevator shaft. The description is "A simple steel ladder."
 
@@ -1184,13 +1181,29 @@ After going from ninth floor elevator shaft to ninth floor elevator hall for the
 	score 1;
 	continue the action;
 
+After going from ninth floor elevator shaft to ninth floor elevator hall:
+	now the ninth floor elevator door is closed;
+	continue the action;
+
+After going from ninth floor elevator hall to ninth floor elevator shaft:
+	now the ninth floor elevator door is closed;
+	continue the action;
+
 Book 4 - Ninth Floor
+
+The description of the ninth floor elevator hall is "The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here."
 
 Instead of going to ninth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
 	try looking;
 	
 The vending machine is scenery in the ninth floor elevator hall. The vending machine is a transparent, closed container. The bottled water is in the vending machine.
+
+Instead of examining the vending machine:
+	if the vending machine contains the bottled water:
+		say "There is one bottle left.";
+	otherwise:
+		say "The machine is empty.";
 
 This is the can't reach inside the vending machine rule:
 	if the container in question is the vending machine:
@@ -1212,6 +1225,10 @@ After deciding the scope of the player when the location is the ninth floor elev
 	
 rule for reaching inside the vending machine while buying the bottled water with the coin:
 	allow access;
+	
+The description of the Ninth Floor North Hallway is "This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door labeled 'Cybernetica Inc.'";
+	
+The description of the Ninth Floor South Hallway is "This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door labeled 'Martian Chemical'";
 
 Chapter 1 - Cybernetica office
 
@@ -1506,6 +1523,16 @@ Instead of going to tenth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
 	try looking;
 	
+To say elevator description:
+	If the elevator car-room is not in running mode:
+		say "The elevator car to the west stands open";
+	otherwise if the floor of the elevator car-room is 10:
+		say "The elevator car to the west stands open";
+	otherwise:
+		say "The elevators doors to the west are closed.";
+
+The description of the tenth floor elevator hall is "[elevator description]. There is a stairwell to the east. The hall runs north and south inta sumptuous corporate office.";
+
 The description of microthings-1 is "This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor east and west, and north to the elevator".
 The description of microthings-2 is "This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. [We] can go north or east from here.".
 The description of microthings-3 is "This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where you are now. One can go north or south.".
@@ -1652,7 +1679,7 @@ The mauve guard robot can be under attack.
 Point of weakness is a clip with conversation "Jones: 'I think I see a point of weakness. Now if I can just get in close enough...'
 
 Beck: 'Just stay out of its line of sight.'".
-The robot vent is a part of the mauve guard robot. It is privately-named. The printed name is "vent". The description is "Definitely a point of weakness.[paragraph break][point of weakness]". Understand "vent" as the robot vent.
+The robot vent is a part of the mauve guard robot. It is privately-named. The printed name is "vent". The description is "Definitely a point of weakness.[paragraph break][print point of weakness]". Understand "vent" as the robot vent.
 
 
 
@@ -1700,7 +1727,16 @@ Instead of pouring the Electrofil quick-setting conductive polymer gel on the ma
 Instead of shooting the mauve guard robot with the disruptor pistol when the mauve guard robot is under attack:
 	say "Firing would be too risky at this close range. You could easily hit yourself with the rebound.";
 	
-Book 6 - The Rooftop
+Book 6 - 100th Floor
+
+The description of the 100th floor elevator hall is "This is just a placeholder for now. The elevator is to the west and the roof stairs are to the east.".
+
+penthouse north has description "blank for now.".
+penthouse east has description "blank for now.".
+penthouse south has description "blank for now.".
+penthouse west has description "blank for now.".
+
+Book 7 - The Rooftop
 
 Chapter 1 - Scenes
 
