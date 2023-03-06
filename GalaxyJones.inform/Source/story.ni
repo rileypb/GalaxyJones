@@ -1748,11 +1748,11 @@ the elevator car-room has a number called the floor. The floor of the elevator c
 
 To describe elevator ride from (F - a number) to (T - a number):
 	if T is 100:
-		say "Describe a fast elevator ride all the way to the top.";
+		say "The elevator accelerates upwards at a frightening rate. The numbers cllimb towards 100. Soon you are slowing, and the door opens on the 100th floor.";
 	otherwise if F is 100:
-		say "Describe a long fast elevator ride down a long way.";
+		say "The ride downward is a terrifying plunge, but at least it's over quickly.";
 	otherwise:
-		say "Describe a typical elevator ride.";
+		say "The elevator quickly arrives at your destination.";
 	say "The doors open. You're on floor [T]."; 
 	
 Carry out button pushing a number:
