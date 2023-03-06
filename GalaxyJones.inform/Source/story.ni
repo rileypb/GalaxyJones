@@ -1476,8 +1476,11 @@ The exhaust vent is a scenery container. It is closed and openable. "It's a whit
 The screws are part of the exhaust vent. "Plain screws painted with white enamel."
 
 Instead of unscrewing the exhaust vent with the screwdriver:
-	now the exhaust vent is open;
-	say "[We] loosens the screws with the screwdriver and removes the grill from the vent.";
+	if the exhaust vent is closed:
+		now the exhaust vent is open;
+		say "[We] loosens the screws with the screwdriver and removes the grill from the vent.";
+	otherwise:
+		say "The vent is already open.";
 	
 Instead of closing the exhaust vent:
 	say "After [we] went to so much trouble to open it?";
@@ -1753,11 +1756,11 @@ To describe elevator ride from (F - a number) to (T - a number):
 		say "The ride downward is a terrifying plunge, but at least it's over quickly.";
 	otherwise:
 		say "The elevator quickly arrives at your destination.";
-	say "The doors open. You're on floor [T]."; 
 	
 Carry out button pushing a number:
 	describe elevator ride from the floor of the elevator car-room to the number understood;
 	now the floor of the elevator car-room is the number understood;
+	try looking;
 
 Report looking when the location is the elevator car-room and the elevator car-room is in running mode:
 	print it's real ivory;
@@ -1859,7 +1862,20 @@ Instead of shooting the mauve guard robot with the disruptor pistol when the mau
 	
 Book 6 - 100th Floor
 
-The description of the 100th floor elevator hall is "The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. The roof stairs, themselves of gleaming white marble, are to the east. Sumptuous living quarters are visible to the north and south.".
+The roof stairs can be hidden. The roof stairs are hidden.
+
+The description of the 100th floor elevator hall is "The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south[if roof stairs are not hidden]. A portion of the eastern wall has slid away to reveal a stunning white marble staircase[end if].".
+
+stairs appeared is a clip with conversation "Jones: 'Must be the way up to the roof. Beck, you there?'
+
+Beck: 'Yep, I'm here, just a bit busy is all. I[']ll meet you on that roof.'".
+
+After looking when the location is the 100th floor elevator hall and the roof stairs are not hidden:
+	print stairs appeared;
+	
+Instead of going east when the location is 100th floor elevator hall:
+	if the roof stairs are hidden:
+		say text of the can't go that way rule response (A);
 
 the penthouse north has description "This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.". The printed name is "northern corner of the penthouse".
 
@@ -1873,8 +1889,7 @@ the penthouse east has description "This is apparently an office. A huge desk co
 
 the penthouse south has description "This must be Thallium's 'treasure room', to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.". The printed name is "southern corner of the penthouse".
 
-After going to the penthouse south for the first time:
-	converse as thallium "Thallium seems to speak from all around you. 'You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all.'
+The conversation of the penthouse south is "Thallium seems to speak from all around you. 'You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all.'
 	
 	Jones snorts, 'Sure, Thallium.'".
 	
@@ -1913,6 +1928,16 @@ Instead of attacking the real diamond with the hammer:
 	converse "Thallium: 'Wow, clever solution. Be careful you don't cut yourself.'
 	
 	Jones: 'I appreciate your concern.'"
+	
+Instead of attacking the real diamond:
+	if the player carries the hammer: 
+		say "(with the hammer)[command clarification break]";
+		try attacking the real diamond with the hammer;
+	otherwise:
+		say "What do you want to attack it with?";
+	
+Instead of taking the real diamond when the glass diamond is somewhere:
+	say "You've already taken a diamond. Isn't one enough?";
 
 Instead of taking the real diamond when the glass diamond is discovered and the real diamond is in the room of stuff:
 	say "[We] will never find the real diamond this way.".
@@ -1926,8 +1951,9 @@ Instead of inserting something that is not a gem into the claw:
 	say "That won't fit in the claw.";
 
 Instead of inserting a gem into the claw:
+	now the noun is in the claw;
 	if the noun is the glass diamond:
-		say "As soon as [We] inserts [the noun] into the claw, laser beams spring from five emitters on the walls. They hit the diamond and refract and disperse without any effect.'";
+		say "As soon as [We] inserts [the noun] into the claw, laser beams spring from five emitters on the walls. They hit the diamond and refract and disperse without any effect.";
 	otherwise:
 		say "As soon as insert [the noun] into the claw, laser beams spring from five emitters on the walls. They hit the diamond and join into a single more powerful beam that strikes the electronic eye on the wall. A sound like a sliding door comes from behind [us], and [we] spins around to see the red wall slide down into the floor. It exposes a control panel of sorts, featuring a large red button labeled 'Press Me'.";
 		now the control panel is in the penthouse west;
@@ -1952,12 +1978,15 @@ Instead of pushing the large red button:
 	end the story saying "Galaxy Jones was killed by poison gas.";
 	
 Instead of pushing the small black button:
-	say "An audible click sounds from somewhere beyond this room.";
+	say "Somewhere beyond this room comes the sound of something heavy being moved.";
 	now the roof access door is unlocked;
+	now the roof stairs are not hidden;
 	
 After opening the roof access door for the first time:
 	score 1;
 	continue the action;
+	
+The description of the roof stairs is "Thick slabs of marble lead from the hall to the west to the rooftop door above.";
 
 Book 7 - The Rooftop
 
