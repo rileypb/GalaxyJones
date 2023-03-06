@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 19027 words long.
+I've now read your source text, which is 19506 words long.
 
 
 -----------------------------------------------------
@@ -92,19 +92,19 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
-Regional: CONSTANT_VNT'elevator shaft-region'-region(I342_elevator_shaft_region)(I256'elevator shaft-region')
+Regional: CONSTANT_VNT'elevator shaft-region'-region(I343_elevator_shaft_region)(I257'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'elevator shaft-region'-region(I342_elevator_shaft_region)(I256'elevator shaft-region')
+Regional: CONSTANT_VNT'elevator shaft-region'-region(I343_elevator_shaft_region)(I257'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'the elevator shaft-region'-region(I342_elevator_shaft_region)(I256'elevator shaft-region')
+Regional: CONSTANT_VNT'the elevator shaft-region'-region(I343_elevator_shaft_region)(I257'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'tenth-floor-region'-region(I270_tenth_floor_region)(I185'tenth-floor-region')
+Regional: CONSTANT_VNT'tenth-floor-region'-region(I271_tenth_floor_region)(I186'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'tenth-floor-region'-region(I270_tenth_floor_region)(I185'tenth-floor-region')
+Regional: CONSTANT_VNT'tenth-floor-region'-region(I271_tenth_floor_region)(I186'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the tenth-floor-region'-region(I270_tenth_floor_region)(I185'tenth-floor-region')
+Regional: CONSTANT_VNT'the tenth-floor-region'-region(I271_tenth_floor_region)(I186'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the tenth-floor-region'-region(I270_tenth_floor_region)(I185'tenth-floor-region')
+Regional: CONSTANT_VNT'the tenth-floor-region'-region(I271_tenth_floor_region)(I186'tenth-floor-region')
  == region
 
 
@@ -205,7 +205,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 156 files written as streams.
-CPU time: 277 centiseconds
+CPU time: 294 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -397,6 +397,8 @@ report sneaking up on the purple guard robot:
 		print shoot out the window;
 		change east exit of Cybernetica office to ledge;
 		change west exit of ledge to Cybernetica office;
+		change outside exit of Cybernetica office to ledge;
+		change inside exit of ledge to Cybernetica office;
 		now the Cybernetica office is window-broken;
 	otherwise:
 		say "[We] is right up next to the robot, crouched beneath a desk. She'll never get a better shot.";
@@ -414,11 +416,12 @@ carry out shooting purple guard robot with the disruptor pistol during Cyberneti
 	otherwise:
 		say "[We] aims the pistol upward under the robot's enhanced armor and fires. [We] flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.";
 		remove the purple guard robot from play;
+		move the destroyed purple robot to the Cybernetica office;
 	
 Cybernetica Battle ends when purple guard robot is not in the Cybernetica office.
 
 When Cybernetica Battle ends:
-	score 1;
+	score 1;	
 	say line break;
 	converse "Jones: 'Better than a video game. '
 	
@@ -427,6 +430,9 @@ When Cybernetica Battle ends:
 	Jones: 'Yes, yes, thanks for helping me not get killed.'   
 	
 	Beck: 'You're welcome.'";
+
+Check dropping something when the location is the ledge:
+	say "Bad idea." instead;
 
 Volume 6 - Things
 
@@ -480,6 +486,7 @@ A guard robot is a kind of enemy person. It is neuter. The description is "Defin
 There is a guard robot called the guard-robots. It is privately-named. It is undescribed. The printed name is "guard robots". Understand "guard/robot/robots/green/red" as the guard robots.
 There is a guard robot called the purple guard robot. It is undescribed.
 There is a thing called the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground."
+There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground."
 
 Check taking a guard robot:
 	say "An interesting idea." instead;
@@ -659,6 +666,8 @@ microthings-8 is a microthings-room. It is open space. It is south of microthing
 the air handling door is a door. It is east of microthings-5 and west of the air handling room. The air handling door is scenery.
 
 The vent access door is a door. It is inside from the air handling room. It is scenery. Through the vent access door is the window washing scaffold.
+Instead of entering the vent access door:
+	try going east;
 
 The elevator car-room is west of the tenth floor elevator hall. It is open space. It is privately-named. The printed name is "elevator car".  It is in the tenth-floor-region.
 
@@ -1303,7 +1312,7 @@ Jones: 'Never mind.'";
 	
 Chapter 2 - Outside
 
-The description of the ledge is "She's plastered up against the wall, trying not to look down.".
+The description of the ledge is "She's plastered up against the wall, trying not to look down[if the floor of the window washing scaffold is 10]. The scaffold is right above [our] head[end if].".
 
 Instead of examining down when the location is the ledge for the first time:
 	say "[We] [are] afraid of heights.";
@@ -1318,6 +1327,9 @@ Instead of examining down when the location is the ledge for the third time:
 	
 	Beck: 'Take it easy, Jones.'";
 	now the window washing scaffold is discovered;
+	
+Instead of going down from ledge when the floor of the window washing scaffold is not 8:
+	say "That would be a long fall.";
 	
 The window washing scaffold can be discovered.
 	
@@ -1351,11 +1363,61 @@ Carry out looking when the location is the window washing scaffold (this is the 
 		print I hate it out here;
 	otherwise if the floor of the window washing scaffold is 10:
 		say "It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.";
+		say line break;
 		print explaining the vent;
+		
+fakeroom10 is west of window washing scaffold and inside from window washing scaffold.
+fakeroom10 is east of air handling room and outside of air handling room.
 		
 Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 10:
 	try entering the exhaust vent;
+		
+Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 9:
+	move player to the cybernetica office;
+		
+Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 8:
+	say "None of the windows here are open.";
+		
+Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 10:
+	try entering the exhaust vent;
+		
+Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 9:
+	move player to the cybernetica office;
+		
+Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 8:
+	say "None of the windows here are open.";
+	
+Instead of going east from the Cybernetica office when the floor of the window washing scaffold is 9:
+	move the player to the window washing scaffold;
+	
+Instead of going east from the Cybernetica office when the floor of the window washing scaffold is not 9:
+	move the player to the ledge;
+	
+Instead of going outside from the Cybernetica office when the floor of the window washing scaffold is 9:
+	move the player to the window washing scaffold;
+	
+Instead of going outside from the Cybernetica office when the floor of the window washing scaffold is not 9:
+	move the player to the ledge;
 
+Instead of going east from the air handling room when the floor of the window washing scaffold is 10:
+	move the player to the window washing scaffold;
+
+Instead of going inside from the air handling room when the floor of the window washing scaffold is 10:
+	move the player to the window washing scaffold;
+
+Instead of going outside from the air handling room when the floor of the window washing scaffold is 10:
+	move the player to the window washing scaffold;
+
+Instead of going east from the air handling room when the floor of the window washing scaffold is not 10:
+	say "The scaffold is not at this floor.";
+
+Instead of going inside from the air handling room when the floor of the window washing scaffold is not 10:
+	say "The scaffold is not at this floor.";
+
+Instead of going outside from the air handling room when the floor of the window washing scaffold is not 10:
+	say "The scaffold is not at this floor.";
+
+	
 The room description body text rule does nothing when the location is the window washing scaffold.
 The describe the scaffold rule is listed last in the carry out looking rules.
 
@@ -1364,21 +1426,24 @@ The scaffold control panel is scenery in the window washing scaffold. "It's got 
 The scaffold up button is part of the scaffold control panel. The description is "It's a green button with an arrow pointing up.". Understand "green" as the scaffold up button.
 The scaffold down button is part of the scaffold control panel. The description is "It's a red button with an arrow pointing down.". Understand "red" as the scaffold down button.
 
+
+
+
 To set exits from scaffold:
 	if the floor of the window washing scaffold is 8:
-		change the down exit of the ledge to the window washing scaffold;
+	[	change the down exit of the ledge to the window washing scaffold;
 		change the west exit of the window washing scaffold to nothing;
-		change the east exit of the Cybernetica office to the ledge;
+		change the east exit of the Cybernetica office to the ledge;]
 		move the exhaust vent to the room of stuff;
 	if the floor of the window washing scaffold is 9:
-		change the down exit of the ledge to nothing;
+		[change the down exit of the ledge to nothing;
 		change the west exit of the window washing scaffold to the Cybernetica office;
-		change the east exit of the Cybernetica office to the window washing scaffold;
+		change the east exit of the Cybernetica office to the window washing scaffold;]
 		move the exhaust vent to the room of stuff;
 	if the floor of the window washing scaffold is 10:
-		change the down exit of the ledge to nothing;
+		[change the down exit of the ledge to nothing;
 		change the west exit of the window washing scaffold to nothing;
-		change the east exit of the Cybernetica office to the ledge;
+		change the east exit of the Cybernetica office to the ledge;]
 		move the exhaust vent to the window washing scaffold;
 
 Check pushing the scaffold up button:
@@ -1407,7 +1472,7 @@ Report pushing the scaffold down button:
 	try looking;
 	stop the action;
 
-The exhaust vent is a scenery container. It is closed and openable. "It's a white metal grill held in place by four screws.". Understand "screws/grill" as the exhaust vent.
+The exhaust vent is a scenery container. It is closed and openable. "It's a white metal grill held in place by four screws.". Understand "screws/grill/cover" as the exhaust vent.
 The screws are part of the exhaust vent. "Plain screws painted with white enamel."
 
 Instead of unscrewing the exhaust vent with the screwdriver:
@@ -1422,6 +1487,8 @@ Instead of opening the exhaust vent:
 	
 Instead of unlocking the exhaust vent with the screwdriver:
 	try unscrewing the exhaust vent with the screwdriver;
+	
+understand "remove [exhaust vent] with [screwdriver]" as unscrewing it with;
 	
 Instead of entering the exhaust vent when the exhaust vent is open for the first time:
 	say "[We] climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.";
@@ -1494,7 +1561,7 @@ Carry out picking with safety pin when the large desk is touchable:
 Instead of picking the large desk with the safety pin:
 	try unlocking the large desk with the safety pin;
 
-The black cardkey is in the large desk. Every door is unlocked by it. Understand "card/key" as the black cardkey.
+The black cardkey is in the large desk. The black cardkey unlocks the Cybernetica door. The black cardkey unlocks the Martian Chemical door. Understand "card/key" as the black cardkey.
 
 A filing cabinet is a container in the south end of the building management office. It is scenery. It is closed, locked, keyed, openable, and lockable. "An ordinary filing cabinet, with five drawers." Understand "file cabinet" as the filing cabinet.
 
@@ -1887,6 +1954,10 @@ Instead of pushing the large red button:
 Instead of pushing the small black button:
 	say "An audible click sounds from somewhere beyond this room.";
 	now the roof access door is unlocked;
+	
+After opening the roof access door for the first time:
+	score 1;
+	continue the action;
 
 Book 7 - The Rooftop
 
@@ -1933,7 +2004,7 @@ When Thallium ultimatum begins:
 	converse as thallium "Thallium's flyer hovers over the rooftop. 'Jones!'  he bellows. 'Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.'
 	
 	Jones rolls her eyes.";
-	say "[line break]A little ways off, a small flyer aims for the rooftop and accelerates.";
+	say "[line break]A little ways off, a small red flyer aims for the rooftop and accelerates.";
 
 Before going somewhere during Thallium ultimatum:
 	say "Thallium's flyer floats after Jones.";
@@ -1942,7 +2013,7 @@ Saving Europa is a scene. Thallium ultimatum ends when Admiral Thallium's Flyer 
 Saving Europa begins when Thallium ultimatum ends.
 
 When Saving Europa begins:
-	say "The flyer, now recognizable as Galaxy's own, settles down onto the landing pad.";
+	say "The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.";
  
 Chapter 2 - Penthouse Roof
 
@@ -1957,7 +2028,7 @@ Check opening the roof access door when the roof access door is unlocked and the
 After going to the penthouse roof for the first time:
 	now the roof access door is closed;
 	now the roof access door is locked; 
-	say "[We] open the door and step through onto the roof. The door crashes shut, and a lock audibly clicks.";
+	say "[We] opens the door and steps through onto the roof. The door crashes shut, and a lock audibly clicks.";
 	continue the action;
 	
 After looking when the location is the penthouse roof for the first time:
@@ -2188,5 +2259,5 @@ test mgmt with "test ninth/buy water with coin/n/w/pick desk lock with pin/take 
 test ledge with "test mgmt/e/take gel from cabinet/w/n/n/e/sneak up on robot/sneak up on robot/sneak up on robot/shoot robot/s/n/e".
 test air with "test ledge/look down/look down/look down/d/press up/press up/open vent with screwdriver/w".
 test robot with "test air/w/s/w/take panel/e/s/n/w/u/jump on robot/pour gel on robot/e/s/w/open present/e/n/w/put golden key in keyhole".
-test 100 with "test robot/press 100/e".
+test 100 with "test robot/press 100/e/s/smash diamonds with hammer/w/nw/put gem in claw/x panel/press black button/ne/s".
 test endgame with "test 100/e/u/n/climb cage/throw cable at flyer/give water to europa".
