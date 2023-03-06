@@ -1846,6 +1846,7 @@ Instead of pouring the Electrofil quick-setting conductive polymer gel on the ma
 	now the mauve guard robot is not under attack;
 	remove the mauve guard robot from play;
 	move the dead mauve robot to the elevator car-room;
+	remove the Electrofil quick-setting conductive polymer gel from play;
 	try looking;
 	
 Instead of going when the mauve guard robot is under attack:
@@ -1982,9 +1983,6 @@ Instead of pushing the small black button:
 	now the roof access door is unlocked;
 	now the roof stairs are not hidden;
 	
-After opening the roof access door for the first time:
-	score 1;
-	continue the action;
 	
 The description of the roof stairs is "Thick slabs of marble lead from the hall to the west to the rooftop door above.";
 
@@ -2046,7 +2044,8 @@ When Saving Europa begins:
  
 Chapter 2 - Penthouse Roof
 
-Check opening the roof access door when the roof access door is unlocked and the location is the roof stairs:
+[Check opening the roof access door when the roof access door is unlocked and the location is the roof stairs:]
+Check going east when the location is the 100th floor elevator hall:
 	if DEBUG is false:
 		say "[line break]Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?[line break]>";
 		if the player consents:
@@ -2058,11 +2057,9 @@ After going to the penthouse roof for the first time:
 	now the roof access door is closed;
 	now the roof access door is locked; 
 	say "[We] opens the door and steps through onto the roof. The door crashes shut, and a lock audibly clicks.";
-	continue the action;
-	
-After looking when the location is the penthouse roof for the first time:
 	score 1;
 	continue the action;
+	
 
 Report going to penthouse roof for the first time:
 	say line break;
@@ -2276,7 +2273,7 @@ After going from a room (called R1) to a room (called R2):
 	
 Volume 12 - Not for release
 
-DEBUG is true. 
+DEBUG is false. 
 
 Understand "* [text]" as a mistake ("Noted.").
 

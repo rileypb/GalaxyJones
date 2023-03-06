@@ -4,34 +4,7 @@
     <generator>Inform Mac Client (Inform version )</generator>
     <item nodeId="node-1002">
         <command xml:space="preserve">GalaxyJones</command>
-        <result xml:space="preserve">
-
-
-The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.
-
-"Yes?" she says in a voice thick with sleep.
-
-"Hello, is this Galaxy Jones?" comes the voice from the speaker.
-
-"Yes, this is she. To whom am I speaking?"
-
-"Oh, hi, Ms Jones. This is Patty, I work for Admiral P. X. Thallium, CEO of Diversified Entanglements, LLC. He asked me to forward a message to you."
-
-"He did, did he? Now what would the Admiral want to say to me?"
-
-"Oh, it's not from the Admiral himself. It's from one Miss Europa Callisto. I must say, the Admiral was quite surprised when I said I didn't know who she is. Apparently she's famous."
-
-"Yes, quite famous, but why would she send a message to me, and why on Mars would she send it through Thallium? But never mind, what's the message?"
-
-Patty can be heard rustling paper. "Let's see... it's here somewhere. Oh yes, here it is. The message is 'Help.'"
-
-Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems, hostage. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's inevitable demise. The Admiral has most cordially invited Ms Jones to break into his building and attempt a rescue.
-
-"Oh I will," Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.
-
-Plus she'll get to meet Europa Callisto. That'll be totally sweet.
-
- _________      __                     _____                     
+        <result xml:space="preserve"> _________      __                     _____                     
  __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
  _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
  / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
@@ -8351,32 +8324,39 @@ Beck: "Yep, I'm here, just a bit busy is all. I'll meet you on that roof."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-10155"></child>
-            <child nodeId="node-10166"></child>
+        <children><child nodeId="node-10167"></child>
+            <child nodeId="node-10155"></child>
         </children>
     </item>
-    <item nodeId="node-10166">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">Jones can't go that way. The obvious exits are north (to the northern corner of the penthouse), south (to the southern corner of the penthouse), east and west.
+    <item nodeId="node-10155">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-10167"></child>
-        </children>
     </item>
     <item nodeId="node-10167">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
-Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
-
+Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-10168"></child>
+        <children><child nodeId="node-10332"></child>
+            <child nodeId="node-10168"></child>
         </children>
     </item>
     <item nodeId="node-10168">
         <command xml:space="preserve">u</command>
-        <result xml:space="preserve">(first opening the roof access door)
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10169"></child>
+            <child nodeId="node-10183"></child>
+            <child nodeId="node-10274"></child>
+        </children>
+    </item>
+    <item nodeId="node-10274">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
  _________      __                     _____                     
  __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
  _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
@@ -8414,9 +8394,228 @@ Admiral Thallium is sulking.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-10155">
+    <item nodeId="node-10183">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10184"></child>
+        </children>
+    </item>
+    <item nodeId="node-10184">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">Jones can't go that way. The obvious exits are north (to the northern corner of the penthouse), south (to the southern corner of the penthouse), east and west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10185"></child>
+        </children>
+    </item>
+    <item nodeId="node-10185">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">That was a rhetorical question.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10218"></child>
+        </children>
+    </item>
+    <item nodeId="node-10218">
         <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+        <result xml:space="preserve">Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
+
+Admiral Thallium is sulking.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10236"></child>
+        </children>
+    </item>
+    <item nodeId="node-10236">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+Jones tries the strength of the bars just in case. They don't budge.
+
+South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards Jones.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10237"></child>
+        </children>
+    </item>
+    <item nodeId="node-10237">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage.
+
+Thallium's flyer hovers over the rooftop. "Jones!"  he bellows. "Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die."
+
+Jones rolls her eyes.
+
+A little ways off, a small red flyer aims for the rooftop and accelerates.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10257"></child>
+        </children>
+    </item>
+    <item nodeId="node-10257">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Thallium's flyer floats after Jones.
+
+Galaxy Jones is on the flyer pad. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10258"></child>
+        </children>
+    </item>
+    <item nodeId="node-10258">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Thallium's flyer floats after Jones.
+
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10259"></child>
+        </children>
+    </item>
+    <item nodeId="node-10259">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Thallium's flyer floats after Jones.
+
+(first opening the roof access door)
+
+Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10260"></child>
+        </children>
+    </item>
+    <item nodeId="node-10260">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">Thallium's flyer floats after Jones.
+
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-10169">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">(first opening the roof access door)
+(first unlocking the roof access door)
+Jones lacks a key that fits the roof access door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-10332">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10333"></child>
+        </children>
+    </item>
+    <item nodeId="node-10333">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10334"></child>
+        </children>
+    </item>
+    <item nodeId="node-10334">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10335"></child>
+        </children>
+    </item>
+    <item nodeId="node-10335">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south. A portion of the eastern wall has slid away to reveal a stunning white marble staircase.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10336"></child>
+        </children>
+    </item>
+    <item nodeId="node-10336">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10337"></child>
+        </children>
+    </item>
+    <item nodeId="node-10337">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-10338"></child>
+        </children>
+    </item>
+    <item nodeId="node-10338">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">(first opening the roof access door)
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones opens the door and steps through onto the roof. The door crashes shut, and a lock audibly clicks.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+
+Jones walks out onto the luxurious penthouse roof. Admiral Thallium turns from the railing to face her. He is dressed in an absurd elaboration of a Martian Admiral's uniform. He looks Jones up and down with a lecherous leer. "Ah, Galaxy Jones, as lovely as ever. If it weren't so unbearably cliché I'd ask you to join me in my rise to greatness. But alas, you are too habituated to the smug high of 'goodness'." He sighs dramatically. "We've trodden similar ground before; no need to discuss it further. Although I would challenge any of your various amoureux to conjugate 'tread' correctly.
+
+"Anyway, I guess this is the time where you do something predictably undignified and violent. Before you do I feel I should inform you that your sidearm has been rendered quite ineffective by my personal security field. But do go ahead and try it."
+
+Jones sneers. "I wouldn't give you the satisfaction," she says, looking around. "I see you don't have any of your robot pets up here. How are you going to stop me from rescuing Europa?"
+
+"Oh please, while we're trying things, try that too. I wish you luck breaking the silnium bars of the cage."
+
+"What's silnium?"
+
+"A superstrong material invented here in my Martian Chemical laboratory. We had a press conference for it -- weren't you watching?"
+
+"Couldn't be bothered."
+
+"Oh for frotz sake, Jones, you're so frustrating!"
+
+Thallium turns his back on Jones and stares out over the city.
+
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
+
+Admiral Thallium is sulking.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
