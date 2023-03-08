@@ -2165,6 +2165,12 @@ Report looking when the location is the cage:
 	print bars don't budge;
 
 Europa Callisto is in a cage.
+	
+Instead of doing something to Europa Callisto when action requires a touchable noun and the cage is intact:
+	say "You can't reach Europa inside the cage." instead;
+	
+Instead of doing something when action requires a touchable second noun and the second noun is Europa Callisto and the cage is intact:
+	say "You can't reach Europa inside the cage." instead;
 
 The cage can be intact or broken. The cage is intact.
 
@@ -2203,7 +2209,7 @@ Instead of throwing the hook cable at admiral thallium's flyer when the location
 	
 Chapter 4 - The Water Bottle
 
-Instead of giving the bottled water to Europa:
+Instead of giving the bottled water to Europa when the cage is broken:
 	converse "[We] opens the water bottle and brings it to Europa's lips. Even with closed eyes she drinks, first slowly and then with renewed vigor, until her eyes open.
 	
 	'Ga- Galaxy Jones?' she says.
@@ -2244,7 +2250,7 @@ To show credits:
 	say line break;
 	say "Story by Phil Riley.";
 	say "Programming by Phil Riley.";
-	say "Playtesting by Leon Lin, Oliver Matthias, and Jade";
+	say "Playtesting by Leon Lin, Oliver Matthias, and Jade.";
 	say "Invaluable inspiration from Laura Taalman.";
 	say line break;
 	say "The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.";
