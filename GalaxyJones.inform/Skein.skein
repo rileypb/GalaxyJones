@@ -74,7 +74,15 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-1045"></child>
             <child nodeId="node-1012"></child>
             <child nodeId="node-1003"></child>
+            <child nodeId="node-1251"></child>
         </children>
+    </item>
+    <item nodeId="node-1251">
+        <command xml:space="preserve">xyzzy</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1003">
         <command xml:space="preserve">purloin water</command>
@@ -2040,6 +2048,9 @@ A screwdriver sits atop the filing cabinet.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1244"></child>
+            <child nodeId="node-1253"></child>
+            <child nodeId="node-1283"></child>
+            <child nodeId="node-1246"></child>
             <child nodeId="node-1241"></child>
         </children>
     </item>
@@ -2061,6 +2072,156 @@ She opens the filing cabinet.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1246">
+        <command xml:space="preserve">x board</command>
+        <result xml:space="preserve">Someone has scrawled on the board in green marker, "Jones is coming, surprise day off!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1247"></child>
+        </children>
+    </item>
+    <item nodeId="node-1247">
+        <command xml:space="preserve">x files</command>
+        <result xml:space="preserve">An ordinary filing cabinet, with five drawers. The label on the front says "Personnel Records".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1248"></child>
+        </children>
+    </item>
+    <item nodeId="node-1248">
+        <command xml:space="preserve">open it</command>
+        <result xml:space="preserve">Jones has better things to do than look through reams of personnel records.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1249"></child>
+        </children>
+    </item>
+    <item nodeId="node-1249">
+        <command xml:space="preserve">erase board</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1250"></child>
+        </children>
+    </item>
+    <item nodeId="node-1250">
+        <command xml:space="preserve">write</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1283">
+        <command xml:space="preserve">write asdfasdf</command>
+        <result xml:space="preserve">Now the board says "Jones is coming, surprise day off! asdfasdf"
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1253">
+        <command xml:space="preserve">read board</command>
+        <result xml:space="preserve">The board says "Jones is coming, surprise day off!".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1276"></child>
+            <child nodeId="node-1254"></child>
+        </children>
+    </item>
+    <item nodeId="node-1254">
+        <command xml:space="preserve">write hello</command>
+        <result xml:space="preserve">There's nothing to write on here.
+
+Now the board says " hello"
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1259"></child>
+            <child nodeId="node-1255"></child>
+        </children>
+    </item>
+    <item nodeId="node-1255">
+        <command xml:space="preserve">read board</command>
+        <result xml:space="preserve">Someone has scrawled on the board in green marker, "Jones is coming, surprise day off!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1259">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1260"></child>
+        </children>
+    </item>
+    <item nodeId="node-1260">
+        <command xml:space="preserve">write hello</command>
+        <result xml:space="preserve">[writing "hello"]
+[writing "hello" - succeeded]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1276">
+        <command xml:space="preserve">write goo</command>
+        <result xml:space="preserve">There's nothing to write on here.
+
+That can't be erased
+Now the board says "Jones is coming, surprise day off! goo"
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1277"></child>
+        </children>
+    </item>
+    <item nodeId="node-1277">
+        <command xml:space="preserve">x board</command>
+        <result xml:space="preserve">The board says "Jones is coming, surprise day off! goo".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1278"></child>
+        </children>
+    </item>
+    <item nodeId="node-1278">
+        <command xml:space="preserve">erase board</command>
+        <result xml:space="preserve">Now the board is blank.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1279"></child>
+        </children>
+    </item>
+    <item nodeId="node-1279">
+        <command xml:space="preserve">x board</command>
+        <result xml:space="preserve">The board is blank.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1280"></child>
+        </children>
+    </item>
+    <item nodeId="node-1280">
+        <command xml:space="preserve">write aldhfasldf</command>
+        <result xml:space="preserve">There's nothing to write on here.
+
+That can't be erased
+Now the board says " aldhfasldf"
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1281"></child>
+        </children>
+    </item>
+    <item nodeId="node-1281">
+        <command xml:space="preserve">read board</command>
+        <result xml:space="preserve">The board says " aldhfasldf".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1244">
         <command xml:space="preserve">open files</command>
         <result xml:space="preserve">Jones has better things to do but look through reams of personnel records.
@@ -2074,7 +2235,8 @@ She opens the filing cabinet.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1175"></child>
+        <children><child nodeId="node-1271"></child>
+            <child nodeId="node-1175"></child>
         </children>
     </item>
     <item nodeId="node-1175">
@@ -2095,6 +2257,42 @@ She opens the filing cabinet.
  4. Fix Arvax response to rebooting the ship computer.
 
 and etc.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1271">
+        <command xml:space="preserve">read board</command>
+        <result xml:space="preserve">The board says " 1. Describe scenery objects on Engineering Deck
+ 2. Fix check rule when installing new engine component
+ 3. Add more facts to computer database
+ 4. Fix Arvax response to rebooting the ship computer
+
+and etc."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1272"></child>
+        </children>
+    </item>
+    <item nodeId="node-1272">
+        <command xml:space="preserve">write hello</command>
+        <result xml:space="preserve">There's nothing to write on here.
+
+Now the board says " 1. Describe scenery objects on Engineering Deck
+ 2. Fix check rule when installing new engine component
+ 3. Add more facts to computer database
+ 4. Fix Arvax response to rebooting the ship computer
+
+and etc. hello"
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1273"></child>
+        </children>
+    </item>
+    <item nodeId="node-1273">
+        <command xml:space="preserve">erase board</command>
+        <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

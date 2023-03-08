@@ -566,6 +566,34 @@ Check swiping when the noun is not a cardkey:
 	
 Carry out swiping:
 	try unlocking the second noun with the noun;
+	
+Definition: a white board is blank if the writing of it is empty.
+
+A white board is a kind of thing. A white board has a text called the writing. The description is "[if not blank]The board says '[writing]'[otherwise]The board is blank[end if].".
+
+Writing is an action applying to one topic. Understand "write [text]" as writing.
+
+Check writing when no white board is in the location:
+	say "There's nothing to write on here." instead;
+
+Carry out writing:
+	let board be a random white board in the location;
+	now the writing of board is "[writing of board] [topic understood]";
+	
+Report writing:
+	let board be a random white board in the location;
+	say "Now the board says '[writing of board]'.";
+	
+Erasing is an action applying to one thing. Understand "erase [thing]" as erasing.
+
+Check erasing when the noun is not a white board:
+	say "That can't be erased." instead;
+	
+Carry out erasing:
+	now the writing of the noun is "";
+	
+Report erasing:
+	say "Now the board is blank.";
 
 Volume 7 - Geography
 
@@ -1580,8 +1608,7 @@ Instead of unlocking the large desk with the safety pin:
 	
 The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desk/desks" as north-desks. "There are lots of them, none of which are particularly interesting."
 
-The north-task-boards are scenery in the north end of the building management office. They are privately-named. The printed name is "task boards". Understand "task/tasks/board/boards" as north-task-boards. "The writing on the most interesting board is a list of inscrutable tasks:[line break][italic type]
-1. Describe scenery objects on Engineering Deck[line break]
+The north-task-boards are scenery in the north end of the building management office. They are a white board. They are privately-named. The printed name is "task boards". Understand "task/tasks/board/boards" as north-task-boards. The writing is "[italic type]1. Describe scenery objects on Engineering Deck[line break]
 2. Fix check rule when installing new engine component[line break]
 3. Add more facts to computer database[line break]
 4. Fix Arvax response to rebooting the ship computer[roman type]
@@ -1626,7 +1653,7 @@ The description of the south end of the building management office is "The build
 	
 The south-desks are scenery in the south end of the building management office. They are privately-named. The printed name is "desks". Understand "desk/desks" as south-desks. "There are lots of them, none of which are particularly interesting."
 
-The south-task-boards are scenery in the south end of the building management office. They are privately-named. The printed name is "task boards". Understand "task/tasks/board/boards" as south-task-boards. "Someone has scrawled on the board in green marker, 'Jones is coming, surprise day off!'".	
+The south-task-boards are scenery in the south end of the building management office. They are privately-named. They are a white board. The printed name is "task boards". Understand "task/tasks/board/boards" as south-task-boards. The writing is "Jones is coming, surprise day off!".	
 A screwdriver is in the south end of the building management office. "A screwdriver sits atop the filing cabinet."
 
 The black cat is an animal. The description is "It's really a beautiful cat, sleek and black.". It is undescribed.
