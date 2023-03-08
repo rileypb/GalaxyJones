@@ -1027,11 +1027,11 @@ After examining the catering table:
 	
 	Beck: 'Oh, the shrimp. Definitely get the shrimp.'";
 
-Instead of eating the catering table:
-	say "[We] is not hungry.";
+Check eating the catering table:
+	say "There are so many things on the table. You might want to look at them and decide what you want";
 	
-Instead of taking the catering table:
-	try taking the shrimp tea sandwich;
+Check taking the catering table:
+	say "There are so many things on the table. You might want to look at them and decide what you want";
 
 The conversation is "Jones: 'Well, at least the Admiral treats his guests right. Except me. And Europa.'".
 
@@ -1950,6 +1950,10 @@ Instead of examining the glass diamond when the glass diamond is not discovered:
 
 attacking it with is an action applying to one thing and one carried thing. Understand "attack [something] with [something]" as attacking it with.
 
+Check attacking something with something:
+	say text of the block attacking rule response (A);
+	say line break instead;
+
 Instead of attacking the real diamond with the hammer:
 	say "[We] commences to smash all of the diamonds. After destroying several dozen fraudulent gems, [we] finds one that won't break. [We] takes the real diamond.[paragraph break]";
 	now the player carries the real diamond;
@@ -2274,6 +2278,15 @@ Report pleading:
 
 After deciding the scope of the player:
 	place beck in scope;
+	
+Instead of doing something to Beck when action requires a touchable noun:
+	say "Beck is just a voice in your ear." instead;
+	
+Instead of doing something when action requires a touchable second noun and the second noun is Beck:
+	say "Beck is just a voice in your ear." instead;
+	
+Instead of doing something to Beck when action requires light:
+	say "You can't see Beck.";
 
 After asking Beck about something:
 	say line break;

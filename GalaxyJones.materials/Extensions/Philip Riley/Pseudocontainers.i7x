@@ -22,8 +22,8 @@ Carry out examining a pseudocontainer when something is in the noun:
 			now the X is familiar;
 	stop the action;
 	
-Instead of taking something inside a closed pseudocontainer (called PC):
-	try examining PC;
+[Instead of taking something inside a closed pseudocontainer (called PC):
+	try examining PC;]
 	
 Instead of searching a pseudocontainer:
 	try examining the noun;
@@ -36,5 +36,8 @@ Check inserting something into a pseudocontainer:
 	
 Rule for deciding whether all includes an unseen thing:
 	It does not.]
+	
+Rule for reaching inside a pseudocontainer:
+	allow access;
 
 Pseudocontainers ends here.
