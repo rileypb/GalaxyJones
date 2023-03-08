@@ -17,7 +17,13 @@ Carry out examining a pseudocontainer when something is in the noun:
 	if the noun is auto-take:
 		repeat with X running through the things contained in the noun:
 			silently try taking X;
+			now the X is seen;
+			now the X is handled;
+			now the X is familiar;
 	stop the action;
+	
+Instead of taking something inside a closed pseudocontainer (called PC):
+	try examining PC;
 	
 Instead of searching a pseudocontainer:
 	try examining the noun;

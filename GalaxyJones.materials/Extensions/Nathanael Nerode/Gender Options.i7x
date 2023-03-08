@@ -465,8 +465,8 @@ Include (-
 ];
 
 [ PronounNotice obj x bm;
-    !if (obj == player) return;
-	if (obj == (+ player-actual +)) return;
+    if (obj == player) return;
+
 
 	bm = GetGNABitfield(obj);  ! This is the change made by Gender Options by Nathanael Nerode.
 

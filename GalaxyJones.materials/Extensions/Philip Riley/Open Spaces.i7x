@@ -171,7 +171,7 @@ After actor doing something when the actor is not in location:
 		stop;
 	continue the action;
 	
-Before doing something:	
+Before doing something (this is the check object is interactible rule):	
 	if the action requires a touchable noun and the noun is listed in remote people:
 		say "You can't reach [the noun].";
 		stop the action;

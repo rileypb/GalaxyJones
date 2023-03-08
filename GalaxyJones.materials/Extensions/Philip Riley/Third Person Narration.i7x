@@ -115,7 +115,8 @@ Include (-
 		if (i == 0) undo_flag = 1;
 		if (i == 2) {
 			VM_RestoreWindowColours();
-			CarryOutActivity((+ naming activity +));			IMMEDIATELY_UNDO_RM('E'); new_line;
+			CarryOutActivity((+ naming activity +));			
+			IMMEDIATELY_UNDO_RM('E'); new_line;
 			continue;
 		}
 		return nw;
