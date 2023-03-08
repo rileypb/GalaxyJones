@@ -883,7 +883,9 @@ The ground-floor-ceiling is a backdrop. It is privately-named. The printed name 
 	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7.
 The description of the ground-floor-ceiling is "The whole ground floor is bright and airy, its ceiling covered with reflective pyramids. Supporting struts criss-cross the area, from which sparkling crystal chandeliers are suspended."
 
-The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water installations, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
+The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
+
+The lobby-background is scenery in the lobby. It is privately-named. Understand "plants/water/features/feature/stylish/seating" as the lobby-background. "The ground is floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants."
 
 The niches are scenery in the lobby. "Aside from a robot charging station, there's nothing here." Understand "niche" as niches.
 
@@ -968,6 +970,8 @@ The waterfall is a scenery pseudocontainer in ground-floor-1. "The waterfall des
 
 Understand "water/basin" as waterfall.
 
+The wide-leaved Earth plants are part of the waterfall. The description of the wide-leaved Earth plants is "Imported plants are a must on Mars, to relieve the stress of living on a lifeless world.". Understand "ferns" as the wide-leaved Earth plants.
+
 The coin is in the waterfall. The description is "A One Areo coin, with Ares on the front and the Viking 2 lander on the back.".
 
 Section 2 - ground-floor-2
@@ -992,6 +996,8 @@ Section 3 - ground-floor-3
 The description of ground-floor-3 is "A large relief map of mars is mounted on the north wall here. One can leave here to the south or east.".
 
 The large relief map of mars is scenery in ground-floor-3. "The map is crafted of bronze and sports a star at the site of New Reykjavik.";
+
+The star is a part of the large relief map. The description is "Ah, New Reykjavik! Even colder than Old Reykjavik!".
 
 Section 4 - ground-floor-4
 
@@ -1572,6 +1578,16 @@ Instead of unlocking the large desk with the safety pin:
 	now the large desk is unlocked;     
 	now the large desk is open;
 	
+The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desk/desks" as north-desks. "There are lots of them, none of which are particularly interesting."
+
+The north-task-boards are scenery in the north end of the building management office. They are privately-named. The printed name is "task boards". Understand "task/tasks/board/boards" as north-task-boards. "The writing on the most interesting board is a list of inscrutable tasks:[line break][italic type]
+1. Describe scenery objects on Engineering Deck[line break]
+2. Fix check rule when installing new engine component[line break]
+3. Add more facts to computer database[line break]
+4. Fix Arvax response to rebooting the ship computer[roman type]
+
+and etc."	
+	
 picking it with is an action applying to two things. Understand "pick [something] with [something]", "pick [something] lock with [something]", "pick lock of/on [something] with [something]" as picking it with. 
 picking with is an action applying to one thing. Understand "pick the/-- lock with [something]" as picking with.
 
@@ -1601,10 +1617,16 @@ Instead of picking the large desk with the safety pin:
 
 The black cardkey is in the large desk. The black cardkey unlocks the Cybernetica door. The black cardkey unlocks the Martian Chemical door. Understand "card/key" as the black cardkey. The black cardkey is a cardkey.
 
-A filing cabinet is a container in the south end of the building management office. It is scenery. It is closed, locked, keyed, openable, and lockable. "An ordinary filing cabinet, with five drawers." Understand "file cabinet" as the filing cabinet.
+A filing cabinet is a container in the south end of the building management office. It is scenery. It is closed and openable. "An ordinary filing cabinet, with five drawers. The label on the front says 'Personnel Records'." Understand "file/files" as the filing cabinet.
 
-The description of the south end of the building management office is "The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north."
+Check opening the filing cabinet:
+	say "[We] has better things to do than look through reams of personnel records." instead.
 
+The description of the south end of the building management office is "The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north." 
+	
+The south-desks are scenery in the south end of the building management office. They are privately-named. The printed name is "desks". Understand "desk/desks" as south-desks. "There are lots of them, none of which are particularly interesting."
+
+The south-task-boards are scenery in the south end of the building management office. They are privately-named. The printed name is "task boards". Understand "task/tasks/board/boards" as south-task-boards. "Someone has scrawled on the board in green marker, 'Jones is coming, surprise day off!'".	
 A screwdriver is in the south end of the building management office. "A screwdriver sits atop the filing cabinet."
 
 The black cat is an animal. The description is "It's really a beautiful cat, sleek and black.". It is undescribed.
@@ -2288,12 +2310,6 @@ Understand "ask [someone] about [any visited room]" as quizzing it about.
 Understand "ask about [any visited room]" or "a [any visited room]" as implicit-quizzing.
 Understand the command "tell" as something new.
 
-Pleading is an action applying to nothing. Understand "ask beck for help", "ask beck what to do" as pleading.
-
-Report pleading: 
-	say line break;
-	converse "Beck: 'Looks like you're managing okay.'";
-
 After deciding the scope of the player:
 	place beck in scope;
 	
@@ -2341,7 +2357,7 @@ After quizzing Beck about the 100th floor elevator hall:
 	
 After quizzing Beck about Admiral Thallium's Flyer:
 	say line break;
-	converse "Beck: 'It's a nice vehicle, I'll give him that. Have you ever noticed villains always have ugly houses and beautiful speeders?'";
+	converse "Beck: 'It's a nice vehicle, I'll give him that. Have you ever noticed villains always have ugly houses and beautiful flyers?'";
 	
 After quizzing Beck about Admiral-Thallium:
 	say line break;
@@ -2363,11 +2379,20 @@ After quizzing Beck about the Atmo-Suit when the ledge is not visited:
 	say line break;
 	converse "Beck: 'Hope we don't have to use it.'";
 	
-After quizzing Beck about the Beck:
+After quizzing Beck about Beck:
 	say line break;
 	converse "Beck: 'I'm just happy to serve.'";
 	
 
+
+
+Chapter 2 - Pleading / Help
+
+Pleading is an action applying to nothing. Understand "ask beck for help", "ask beck what to do" as pleading.
+
+Report pleading: 
+	say line break;
+	converse "Beck: 'Looks like you're managing okay.'";
 
 To decide what number is plead (ID - a value):
 	if there is an id of ID in the Table of Pleading Counts:
