@@ -58,6 +58,7 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1386"></child>
             <child nodeId="node-1318"></child>
+            <child nodeId="node-1392"></child>
             <child nodeId="node-1314"></child>
             <child nodeId="node-1381"></child>
             <child nodeId="node-1307"></child>
@@ -65,7 +66,100 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-1245"></child>
             <child nodeId="node-1359"></child>
             <child nodeId="node-1212"></child>
+            <child nodeId="node-1407"></child>
         </children>
+    </item>
+    <item nodeId="node-1407">
+        <command xml:space="preserve">purloin water</command>
+        <result xml:space="preserve">(the full water bottle)
+[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1408"></child>
+            <child nodeId="node-1412"></child>
+        </children>
+    </item>
+    <item nodeId="node-1412">
+        <command xml:space="preserve">pour it</command>
+        <result xml:space="preserve">Why waste it?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1413"></child>
+        </children>
+    </item>
+    <item nodeId="node-1413">
+        <command xml:space="preserve">pour it on speeder</command>
+        <result xml:space="preserve">(the speeder)
+Why waste it?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1414"></child>
+        </children>
+    </item>
+    <item nodeId="node-1414">
+        <command xml:space="preserve">gonear europa</command>
+        <result xml:space="preserve">Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+Jones tries the strength of the bars just in case. They don't budge.
+
+South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards Jones.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1415"></child>
+        </children>
+    </item>
+    <item nodeId="node-1415">
+        <command xml:space="preserve">pout water on europa</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1416"></child>
+        </children>
+    </item>
+    <item nodeId="node-1416">
+        <command xml:space="preserve">pour water on europa</command>
+        <result xml:space="preserve">Why waste it?
+
+Thallium's flyer hovers over the rooftop. "Jones!"  he bellows. "Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die."
+
+Jones rolls her eyes.
+
+A little ways off, a small red flyer aims for the rooftop and accelerates.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1408">
+        <command xml:space="preserve">drink it</command>
+        <result xml:space="preserve">Jones isn't thirsty.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1409"></child>
+        </children>
+    </item>
+    <item nodeId="node-1409">
+        <command xml:space="preserve">eat it</command>
+        <result xml:space="preserve">That's plainly inedible.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1410"></child>
+        </children>
+    </item>
+    <item nodeId="node-1410">
+        <command xml:space="preserve">pour water</command>
+        <result xml:space="preserve">That can't be poured.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1212">
         <command xml:space="preserve">purloin shrimp sandwich</command>
@@ -1327,7 +1421,38 @@ Galaxy Jones is at the entry doorway. A glass revolving door leads into a large 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1382"></child>
+            <child nodeId="node-1389"></child>
         </children>
+    </item>
+    <item nodeId="node-1389">
+        <command xml:space="preserve">touch beck</command>
+        <result xml:space="preserve">Beck is just a voice in your ear.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1390"></child>
+        </children>
+    </item>
+    <item nodeId="node-1390">
+        <command xml:space="preserve">take beck</command>
+        <result xml:space="preserve">Beck is just a voice in your ear.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1391"></child>
+        </children>
+    </item>
+    <item nodeId="node-1391">
+        <command xml:space="preserve">gonear elevator room</command>
+        <result xml:space="preserve">(the elevator room)
+Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
+
+Hanging from a hook here is an elevator drop key.
+
+Lying discarded on a table here is a hammer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1382">
         <command xml:space="preserve">hit beck with hammer</command>
@@ -1653,6 +1778,134 @@ Beck: "Oh, the shrimp. Definitely get the shrimp."
 Jones: "What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?"
 
 Beck: "Oh, the shrimp. Definitely get the shrimp."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1392">
+        <command xml:space="preserve">gonear elevator room</command>
+        <result xml:space="preserve">(the elevator room)
+Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
+
+Hanging from a hook here is an elevator drop key.
+
+Lying discarded on a table here is a hammer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1400"></child>
+            <child nodeId="node-1393"></child>
+        </children>
+    </item>
+    <item nodeId="node-1393">
+        <command xml:space="preserve">x panel</command>
+        <result xml:space="preserve">From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1394"></child>
+        </children>
+    </item>
+    <item nodeId="node-1394">
+        <command xml:space="preserve">touch panel</command>
+        <result xml:space="preserve">Playing with the controls for a dangerous piece of equipment she doesn't understand is not something Jones would do.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1395"></child>
+        </children>
+    </item>
+    <item nodeId="node-1395">
+        <command xml:space="preserve">use panel</command>
+        <result xml:space="preserve">You'll have to be more specific.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1396"></child>
+        </children>
+    </item>
+    <item nodeId="node-1396">
+        <command xml:space="preserve">move panel</command>
+        <result xml:space="preserve">It is fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1397"></child>
+        </children>
+    </item>
+    <item nodeId="node-1397">
+        <command xml:space="preserve">press panel</command>
+        <result xml:space="preserve">It is fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1398"></child>
+        </children>
+    </item>
+    <item nodeId="node-1398">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1400">
+        <command xml:space="preserve">x controls</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1401"></child>
+        </children>
+    </item>
+    <item nodeId="node-1401">
+        <command xml:space="preserve">x control</command>
+        <result xml:space="preserve">From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1402"></child>
+        </children>
+    </item>
+    <item nodeId="node-1402">
+        <command xml:space="preserve">touch control</command>
+        <result xml:space="preserve">Playing with the controls for a dangerous piece of equipment she doesn't understand is not something Jones would do.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1403"></child>
+        </children>
+    </item>
+    <item nodeId="node-1403">
+        <command xml:space="preserve">press control</command>
+        <result xml:space="preserve">Playing with the controls for a dangerous piece of equipment she doesn't understand is not something Jones would do.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1404"></child>
+        </children>
+    </item>
+    <item nodeId="node-1404">
+        <command xml:space="preserve">take control</command>
+        <result xml:space="preserve">Playing with the controls for a dangerous piece of equipment she doesn't understand is not something Jones would do.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1405"></child>
+        </children>
+    </item>
+    <item nodeId="node-1405">
+        <command xml:space="preserve">drop control</command>
+        <result xml:space="preserve">Playing with the controls for a dangerous piece of equipment she doesn't understand is not something Jones would do.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1406"></child>
+        </children>
+    </item>
+    <item nodeId="node-1406">
+        <command xml:space="preserve">hit control</command>
+        <result xml:space="preserve">Playing with the controls for a dangerous piece of equipment she doesn't understand is not something Jones would do.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

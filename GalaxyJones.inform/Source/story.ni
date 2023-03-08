@@ -538,6 +538,18 @@ A container can be keyed. A door can be keyed. A container is usually not keyed.
 The bottled water is a thing. The description is "A [if full]full[otherwise]empty[end if] bottle of Olympus Springs water." Understand "bottle/Olympus/Springs" as the bottled water.
 The bottled water can be full or empty. It is full. The printed name is "[if full]full[otherwise]empty[end if] water bottle".
 
+Check drinking the bottled water:
+	say "Jones isn't thirsty." instead;
+	
+Check eating the bottled water:
+	say "Jones isn't thirsty." instead;
+	
+Check pouring the water:
+	say "Why waste it?" instead;
+	
+Check pouring the water on something: 
+	say "Why waste it?" instead;
+
 A bottle of Electrofil quick-setting conductive polymer gel is a pourable thing. Understand "bottles" as Electrofil quick-setting conductive polymer gel.
 
 The hook cable is privately-named. The printed name is "cable with hooks at either end". Understand "cable/hooks/hook" or "cable with hooks" or "cable with hooks at either end" or "cable with hooks at the end/ends" or "hooked cable" as the hook cable.
@@ -1173,10 +1185,10 @@ Chapter 7 - Elevator Room
 
 The description of the elevator room is "This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west."
 
-The elevator control panel is scenery in the elevator room. "From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on." Understand "wires/circuit/board/boards/indicator/lights/light/component/components" as the elevator control panel.
+The elevator control panel is scenery in the elevator room. "From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on." Understand "wires/circuit/board/boards/indicator/lights/light/component/components/controls" as the elevator control panel.
 
-Instead of touching the elevator control panel:
-	say "Nothing happens, no matter how much [we] fiddles with it.";
+Instead of doing something other than examining to the elevator control panel:
+	say "Playing with the controls for a dangerous piece of equipment she doesn't understand is not something Jones would do.";
 
 The elevator drop key is in the elevator room. 
 
