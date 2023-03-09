@@ -2066,9 +2066,9 @@ Beck: 'Yep, I'm here, just a bit busy is all. I[']ll meet you on that roof.'".
 After looking when the location is the 100th floor elevator hall and the roof stairs are not hidden:
 	print stairs appeared;
 	
-Instead of going east when the location is 100th floor elevator hall:
-	if the roof stairs are hidden:
-		say text of the can't go that way rule response (A);
+Check going from the 100th floor elevator hall to the roof stairs when the roof stairs are hidden:
+	say text of the can't go that way rule response (A);
+	lb instead;
 
 the penthouse north has description "This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.". The printed name is "northern corner of the penthouse".
 
@@ -2112,6 +2112,7 @@ Instead of taking the real diamond when the glass diamond is nowhere and the gla
 	now the player carries the glass diamond;
 	say text of the standard report taking rule response (A);
 	say paragraph break;
+	set pronouns from glass diamond;
 	converse as thallium "Thallium giggles. 'Oh, I hope you're not disappointed, Jones.'";
 	
 Instead of examining the glass diamond when the glass diamond is not discovered: 
@@ -2122,6 +2123,7 @@ Instead of examining the glass diamond when the glass diamond is not discovered:
 	say line break;
 	say "Jones tosses the fake away.";
 	remove the glass diamond from play;
+	set pronouns from real diamond;
 	now the glass diamond is discovered.
 
 attacking it with is an action applying to one thing and one carried thing. Understand "attack [something] with [something]" as attacking it with.
@@ -2262,7 +2264,7 @@ When Saving Europa begins:
 Chapter 2 - Penthouse Roof
 
 [Check opening the roof access door when the roof access door is unlocked and the location is the roof stairs:]
-Check going east when the location is the 100th floor elevator hall:
+Check going east when the location is the 100th floor elevator hall and the roof stairs are not hidden:
 	if DEBUG is false:
 		say "[line break]Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?[line break]>";
 		if the player consents:
@@ -2576,6 +2578,39 @@ After quizzing Beck about Beck:
 	say line break;
 	converse "Beck: 'I'm just happy to serve.'";
 	
+After quizzing Beck about bed:
+	lb;
+	converse "Beck: 'No time to rest, Jones.'";
+	
+After quizzing Beck about black cat:
+	lb;
+	converse "Beck: 'I'll adopt it.'
+	
+	'Jones: 'After it damn near took off my hand?'";
+	
+After quizzing Beck about bottle of Electrofil quick-setting conductive polymer gel:
+	lb;
+	say "Beck: 'I imagine it does what it says it does.'";
+	
+After quizzing Beck about bottled water: 
+	lb;
+	say "Beck: 'Say Jones, you could use an endorsement contract. How about Olympus Springs water?'
+	
+	Jones: 'Yeah, sure.'";
+	
+After quizzing Beck about cage: 
+	lb;
+	converse "Beck: 'You're going to need a lot of force to get through that.'";
+	
+After quizzing Beck about cage-thing: 
+	lb;
+	converse "Beck: 'You're going to need a lot of force to get through that.'";
+
+After quizzing Beck about claw: 
+	lb;
+	converse "Beck: 'This whole place is like some weird wizard's chamber.'";
+	
+
 
 
 
