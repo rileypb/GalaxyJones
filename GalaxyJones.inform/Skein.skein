@@ -1658,7 +1658,7 @@ Looking down at New Reykjavik, one can trace the history of the city, as it expa
     </item>
     <item nodeId="node-3109">
         <command xml:space="preserve">x new reykjavik</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">A large geodesic dome made of lightweight and durable materials, designed to withstand the harsh conditions on Mars such as extreme temperatures, radiation, and dust storms. A green glow emanates from the translucent walls.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1667,7 +1667,7 @@ Looking down at New Reykjavik, one can trace the history of the city, as it expa
     </item>
     <item nodeId="node-3110">
         <command xml:space="preserve">x reykjavik</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">A large geodesic dome made of lightweight and durable materials, designed to withstand the harsh conditions on Mars such as extreme temperatures, radiation, and dust storms. A green glow emanates from the translucent walls.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1686,7 +1686,7 @@ Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west s
     </item>
     <item nodeId="node-3112">
         <command xml:space="preserve">x car</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">The door is open.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1704,7 +1704,7 @@ Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west s
     </item>
     <item nodeId="node-3114">
         <command xml:space="preserve">x elevator car</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">The door is open.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2106,7 +2106,8 @@ One of the ceiling panels looks loose.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3354"></child>
+        <children><child nodeId="node-4166"></child>
+            <child nodeId="node-3354"></child>
         </children>
     </item>
     <item nodeId="node-3354">
@@ -2176,7 +2177,7 @@ Asbestos? In this day and age?
     <item nodeId="node-3553">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">
-Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here.
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. Jones can see down into the elevator car from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2194,7 +2195,7 @@ Galaxy Jones is on the top of the elevator car. The elevator shaft extends many 
     </item>
     <item nodeId="node-3555">
         <command xml:space="preserve">x elevator</command>
-        <result xml:space="preserve">Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here.
+        <result xml:space="preserve">Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. Jones can see down into the elevator car from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2203,7 +2204,7 @@ Galaxy Jones is on the top of the elevator car. The elevator shaft extends many 
     </item>
     <item nodeId="node-3556">
         <command xml:space="preserve">x car</command>
-        <result xml:space="preserve">Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here.
+        <result xml:space="preserve">Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. Jones can see down into the elevator car from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2323,14 +2324,44 @@ The mauve guard robot appears to the east, coming from the south.
     <item nodeId="node-3967">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">
-Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here.
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. Jones can see down into the elevator car from here.
 
 The mauve guard robot enters the elevator car below.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3968"></child>
+            <child nodeId="node-4599"></child>
         </children>
+    </item>
+    <item nodeId="node-4599">
+        <command xml:space="preserve">pour water on robot</command>
+        <result xml:space="preserve">Why waste it?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4600"></child>
+        </children>
+    </item>
+    <item nodeId="node-4600">
+        <command xml:space="preserve">jump on robot</command>
+        <result xml:space="preserve">Jones drops down through the ceiling and on to the guard robot. It swings around looking for her, obviously panicked that it can't bring its gun to bear on its attacker. Jones manages to hang on.
+
+The mauve guard robot struggles against her hold on it, to no avail.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4601"></child>
+        </children>
+    </item>
+    <item nodeId="node-4601">
+        <command xml:space="preserve">pour water on robot</command>
+        <result xml:space="preserve">Why waste it?
+
+The mauve guard robot struggles against Jones's hold on it, to no avail.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-3968">
         <command xml:space="preserve">jump on robot</command>
@@ -2366,7 +2397,7 @@ The remains of the mauve guard robot are sprawled on the ground.
     </item>
     <item nodeId="node-3970">
         <command xml:space="preserve">x guard</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">From the outside there's no sign of what killed the mauve guard robot.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2375,7 +2406,7 @@ The remains of the mauve guard robot are sprawled on the ground.
     </item>
     <item nodeId="node-3971">
         <command xml:space="preserve">x remains</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">From the outside there's no sign of what killed the mauve guard robot.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2402,7 +2433,243 @@ The remains of the mauve guard robot are sprawled on the ground.
     </item>
     <item nodeId="node-3974">
         <command xml:space="preserve">take it</command>
-        <result xml:space="preserve">Taken.
+        <result xml:space="preserve">That can't be taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3975"></child>
+        </children>
+    </item>
+    <item nodeId="node-3975">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3976"></child>
+        </children>
+    </item>
+    <item nodeId="node-3976">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor east and west, and north to the elevator
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3977"></child>
+        </children>
+    </item>
+    <item nodeId="node-3977">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southwest corner of the Consolidated Microthings office. This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. Jones can go north or east from here.
+
+There is a present with a note attached sitting on a desk here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3978"></child>
+        </children>
+    </item>
+    <item nodeId="node-3978">
+        <command xml:space="preserve">x present</command>
+        <result xml:space="preserve">The note on the present says "For Galaxy -- see you soon! -- Your friend, the Admiral."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4388"></child>
+        </children>
+    </item>
+    <item nodeId="node-4388">
+        <command xml:space="preserve">open it</command>
+        <result xml:space="preserve">Jones rips the package open and discovers a golden key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4824"></child>
+        </children>
+    </item>
+    <item nodeId="node-4824">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the west side of the Consolidated Microthings office. This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where Jones is now. One can go north or south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4825"></child>
+        </children>
+    </item>
+    <item nodeId="node-4825">
+        <command xml:space="preserve">look outside</command>
+        <result xml:space="preserve">(outside)
+Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking building stands near the periphery, overlooking the vast red plain of Utopia Planitia.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4826"></child>
+        </children>
+    </item>
+    <item nodeId="node-4826">
+        <command xml:space="preserve">touch outside</command>
+        <result xml:space="preserve">(outside)
+Jones feels nothing unexpected.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4827"></child>
+        </children>
+    </item>
+    <item nodeId="node-4827">
+        <command xml:space="preserve">take outside</command>
+        <result xml:space="preserve">(outside)
+That's hardly portable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4828"></child>
+        </children>
+    </item>
+    <item nodeId="node-4828">
+        <command xml:space="preserve">take desks</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4829"></child>
+        </children>
+    </item>
+    <item nodeId="node-4829">
+        <command xml:space="preserve">taste outside</command>
+        <result xml:space="preserve">(outside)
+Jones tastes nothing unexpected.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4830"></child>
+        </children>
+    </item>
+    <item nodeId="node-4830">
+        <command xml:space="preserve">like outside</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4831"></child>
+        </children>
+    </item>
+    <item nodeId="node-4831">
+        <command xml:space="preserve">lick outside</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4832"></child>
+        </children>
+    </item>
+    <item nodeId="node-4832">
+        <command xml:space="preserve">x utopis</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4833"></child>
+        </children>
+    </item>
+    <item nodeId="node-4833">
+        <command xml:space="preserve">x utopia</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4834"></child>
+        </children>
+    </item>
+    <item nodeId="node-4834">
+        <command xml:space="preserve">x planitia</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4835"></child>
+        </children>
+    </item>
+    <item nodeId="node-4835">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is on the west side of the Consolidated Microthings office. This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where Jones is now. One can go north or south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4836"></child>
+        </children>
+    </item>
+    <item nodeId="node-4836">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4837"></child>
+        </children>
+    </item>
+    <item nodeId="node-4837">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4838"></child>
+        </children>
+    </item>
+    <item nodeId="node-4838">
+        <command xml:space="preserve">x office</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4839"></child>
+        </children>
+    </item>
+    <item nodeId="node-4839">
+        <command xml:space="preserve">x microthings</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4840"></child>
+        </children>
+    </item>
+    <item nodeId="node-4840">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4841"></child>
+        </children>
+    </item>
+    <item nodeId="node-4841">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4842"></child>
+        </children>
+    </item>
+    <item nodeId="node-4842">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the Consolidated Microthings office. This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4166">
+        <command xml:space="preserve">close door</command>
+        <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

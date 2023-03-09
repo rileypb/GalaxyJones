@@ -449,7 +449,7 @@ useless shooting is a clip with conversation "Beck: 'Are you still shooting at t
 
 Jones (whispering): 'So what do you propose?'
 
-Beck: 'Get closer. Keep your head down, but follow it until you can get a good shot in.'";
+Beck: 'Get closer. Keep your head down, but move in closer to it until you can get a good shot in.'";
 
 carry out shooting purple guard robot with the disruptor pistol during Cybernetica Battle:
 	if sneak index > 0:
@@ -522,8 +522,8 @@ A thing can be an enemy.
 A guard robot is a kind of enemy person. It is neuter. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard/barrel/killer/head" as a guard robot.
 There is a guard robot called the guard-robots. It is privately-named. It is scenery. The printed name is "guard robots". Understand "guard/guards/robot/robots/green/red" as the guard-robots. 
 There is a guard robot called the purple guard robot. It is scenery.
-There is a thing called the dead mauve guard robot. Understand "remains" as the dead mauve guard robot. "The remains of the mauve guard robot are sprawled on the ground." The description is "From the outside there's no sign of what killed the mauve guard robot." It is fixed in palce.
-There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground." The description is "The tattered guts of the purple guard robot spill out from it's armored carapace." It is fixed in palce.
+There is a thing called the dead mauve robot. Understand "remains/guard" as the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground." The description is "From the outside there's no sign of what killed the mauve guard robot." It is fixed in place.
+There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground." The description is "The tattered guts of the purple guard robot spill out from it's armored carapace." It is fixed in place.
 
 Check taking a guard robot:
 	say "An interesting idea." instead;
@@ -858,7 +858,7 @@ The printed name is "outside".
 
 The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
 
-Understand "city/planet/mars/outside/out" as tenth floor view of New Reykjavik.
+Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain"  as tenth floor view of New Reykjavik.
 
 Book 2 - Ground Floor
 
@@ -1087,10 +1087,10 @@ After examining the catering table:
 	Beck: 'Oh, the shrimp. Definitely get the shrimp.'";
 
 Check eating the catering table:
-	say "There are so many things on the table. You might want to look at them and decide what you want";
+	say "There are so many things on the table. [We] might want to look at them and decide what [we] want";
 	
 Check taking the catering table:
-	say "There are so many things on the table. You might want to look at them and decide what you want";
+	say "There are so many things on the table. [We] might want to look at them and decide what [we] want";
 
 The conversation is "Jones: 'Well, at least the Admiral treats his guests right. Except me. And Europa.'".
 
@@ -1354,7 +1354,7 @@ Instead of examining the vending machine:
 
 This is the can't reach inside the vending machine rule:
 	if the container in question is the vending machine:
-		say "You'll have to buy it first.";
+		say "[We] willl have to buy it first.";
 		deny access;
 
 The can't reach inside the vending machine rule is listed before the can't reach inside closed containers rule in the reaching inside rules.
@@ -1792,16 +1792,36 @@ The tenth-floor-stairwell is scenery in the tenth floor elevator hall. The print
 
 The description of microthings-1 is "This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor east and west, and north to the elevator".
 
+Reception is scenery in microthings-1. "No one is covering the desk at present."
+
 The couches-microthings-1 are scenery enterable supporters in microthings-1. They are privately-named. The printed name is "couches". Understand "couch/couches/seat/seats/seating" as the couches-microthings-1. The description is "Tan leather couches, very expensive."
 
 The New Reykjavik Botanic Dome is scenery in microthings-1. "A large geodesic dome made of lightweight and durable materials, designed to withstand the harsh conditions on Mars such as extreme temperatures, radiation, and dust storms. A green glow emanates from the translucent walls."
 
 The description of microthings-2 is "This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. [We] can go north or east from here.".
-The description of microthings-3 is "This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where you are now. One can go north or south.".
+
+The desks-microthings-2 is scenery in microthings-2. It is privately-named. The printed name is "desks". Understand "desk/desks" as desks-microthings-2. "How dull."
+
+The computer parts are scenery in microthings-2. "Of no use to [us]."
+
+The description of microthings-3 is "This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where [we] is now. One can go north or south.".
+
+The desks-microthings-3 is scenery in microthings-3. It is privately-named. The printed name is "desks". Understand "desk/desks" as desks-microthings-3. "More desks. Ho hum."
+
+The Utopia Tower is scenery in microthings-3. "Incredible. A tower that height would never stand on Earth."
+
 The description of microthings-4 is "Various executive offices line the north and west walls here. [We] can go east or south.".
-The description of microthings-5 is "This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.". Understand "cafeteria" as microthings-5.
+
+The executive offices are scenery in microthings-4. "It's hard to imagine how anything useful could be in there."
+
+The description of microthings-5 is "This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.". 
+
+The cafeteria is scenery in microthings-5. "The food looks like it would be delicious, if it weren't hours-old and cold."
+
 The description of microthings-7 is "This part of the office is currently unused. [We] can go northwest or south from here.".
 The description of microthings-8 is "This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.".
+
+The gym is scenery in microthings-8. "Looks well-equipped, but alas [we] doesn't have time to work out."
 	
 Chapter 1 - The Robot Chase
 
@@ -1844,7 +1864,7 @@ the describe room gone into rule does nothing when the noun is the mauve guard r
 
 Chapter 2 - The Microthings Offices
 
-The present is a thing in microthings-2. The description is "The note on the present say 'For Galaxy -- see you soon! -- Your friend, the Admiral.'". "There is a present with a note attached sitting on a desk here.". Understand "note/gift/box" as the present.
+The present is a thing in microthings-2. The description is "The note on the present says 'For Galaxy -- see you soon! -- Your friend, the Admiral.'". "There is a present with a note attached sitting on a desk here.". Understand "note/gift/box" as the present.
 The golden key is a thing. The description is "It's a beautiful solid gold antique-style 'skeleton' key.".
 
 Instead of unwrapping the present:
@@ -1869,6 +1889,17 @@ it's real ivory is a taunting clip with conversation "Admiral Thallium's voice o
 
 The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if].".
 
+The elevator-car-door is scenery in the elevator car-room. It is privately-named. The printed name is "elevator car door". Understand "elevator/car/door" as the elevator-car-door. "The door is open."
+
+Instead of opening the elevator-car-door:
+	say text of the can't open what's already open rule response (A);
+
+Instead of closing the elevator-car-door when the elevator is not in running mode:
+	say "[We] can't close them by hand, and the elevator seems to be off."
+
+Instead of closing the elevator-car-door when the elevator is in running mode:
+	say "You don't need to explicitly open and close the elevator door."
+
 The elevator-walls are scenery in the elevator car-room. They are privately-named. The printed name is "walls". Understand "walls/wall/gold/plated", "gold-plated" as elevator-walls. "Yes, that's real gold-plating."
 
 The crystal lighting is scenery in the elevator car-room. "Nice. Excessive, but nice."
@@ -1885,17 +1916,17 @@ Check button pushing a number when the number understood is not listed in { 1, 9
 	say "Nothing happens." instead;
 	
 Check button pushing a number when the number understood is the floor of the elevator car-room:
-	say "You're already on that floor." instead;
+	say "[We're] already on that floor." instead;
 	
 the elevator car-room has a number called the floor. The floor of the elevator car-room is 10.
 
 To describe elevator ride from (F - a number) to (T - a number):
 	if T is 100:
-		say "The elevator accelerates upwards at a frightening rate. The numbers cllimb towards 100. Soon you are slowing, and the door opens on the 100th floor.";
+		say "The elevator accelerates upwards at a frightening rate. The numbers cllimb towards 100. Soon the elevator slows, and the door opens on the 100th floor.";
 	otherwise if F is 100:
 		say "The ride downward is a terrifying plunge, but at least it's over quickly.";
 	otherwise:
-		say "The elevator quickly arrives at your destination.";
+		say "The elevator quickly arrives at its destination.";
 	
 Carry out button pushing a number:
 	describe elevator ride from the floor of the elevator car-room to the number understood;
@@ -1935,7 +1966,7 @@ After deciding the scope of the player when the location is top of the elevator 
 Rule for reaching inside the elevator car-room when the location is top of the elevator and the mauve guard robot is in the elevator car-room:
 	allow access;
 	
-The description of the top of the elevator car is "The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if confused[end if].";
+The description of the top of the elevator car is "The elevator shaft extends many hundreds of feet above here. [We] can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if confused[end if].";
 
 The upper-shaft is scenery in the top of the elevator car. It is privately-named. The printed name is "elevator shaft". Understand "elevator/shaft" as the upper-shaft. "The shaft extends far up into the darkness. The ladder here is missing, making it impossible to climb up to the eleventh floor and beyond."
 
@@ -1961,7 +1992,7 @@ The robot vent is a part of the mauve guard robot. It is privately-named. The pr
 
 
 Instead of shooting the mauve guard robot with the disruptor pistol when the location is the top of the elevator car:
-	say "From the top, even from this range, your shot is entirely ineffective. The robot swivels its head to find you, and you barely jump back out of sight.";
+	say "From the top, even from this range, [our] shot is entirely ineffective. The robot swivels its head to find [us], and [we] barely jumps back out of sight.";
 
 Instead of jumping on the mauve guard robot when the location is the top of the elevator car:
 	say "[We] drops down through the ceiling and on to the guard robot. It swings around looking for [us], obviously panicked that it can't bring its gun to bear on its attacker. [reset LPR][We] manages to hang on.";
@@ -2004,7 +2035,7 @@ Instead of pouring the Electrofil quick-setting conductive polymer gel on the ma
 	say "[We] tries, but [we] can't get close enough to the robot.";
 
 Instead of shooting the mauve guard robot with the disruptor pistol when the mauve guard robot is under attack:
-	say "Firing would be too risky at this close range. You could easily hit yourself with the rebound.";
+	say "Firing would be too risky at this close range. [We] could easily hit [ourselves] with the rebound.";
 	
 Book 6 - 100th Floor
 
@@ -2035,7 +2066,7 @@ the penthouse east has description "This is apparently an office. A huge desk co
 
 the penthouse south has description "This must be Thallium's 'treasure room', to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.". The printed name is "southern corner of the penthouse".
 
-The conversation of the penthouse south is "Thallium seems to speak from all around you. 'You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all.'
+The conversation of the penthouse south is "Thallium seems to speak from all around [us]. 'You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all.'
 	
 	Jones snorts, 'Sure, Thallium.'".
 	
@@ -2087,7 +2118,7 @@ Instead of attacking the real diamond:
 		say "What do you want to attack it with?";
 	
 Instead of taking the real diamond when the glass diamond is somewhere:
-	say "You've already taken a diamond. Isn't one enough?";
+	say "[We] has already taken a diamond. Isn't one enough?";
 
 Instead of taking the real diamond when the glass diamond is discovered and the real diamond is in the room of stuff:
 	say "[We] will never find the real diamond this way.".
@@ -2278,10 +2309,10 @@ Report looking when the location is the cage:
 Europa Callisto is in a cage.
 	
 Instead of doing something to Europa Callisto when action requires a touchable noun and the cage is intact:
-	say "You can't reach Europa inside the cage." instead;
+	say "[We] can't reach Europa inside the cage." instead;
 	
 Instead of doing something when action requires a touchable second noun and the second noun is Europa Callisto and the cage is intact:
-	say "You can't reach Europa inside the cage." instead;
+	say "[We] can't reach Europa inside the cage." instead;
 
 The cage can be intact or broken. The cage is intact.
 
@@ -2348,7 +2379,7 @@ Instead of tying the hook cable to the cage-thing when the player is not on the 
 	
 Chapter 4 - The Flyer Pad
 
-The description of the flyer pad is "This is what you'd expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background."
+The description of the flyer pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background."
 	
 Chapter 5 - The Water Bottle
 
@@ -2435,13 +2466,13 @@ After deciding the scope of the player:
 	place beck in scope;
 	
 Instead of doing something to Beck when action requires a touchable noun:
-	say "Beck is just a voice in your ear." instead;
+	say "Beck is just a voice in [our] ear." instead;
 	
 Instead of doing something when action requires a touchable second noun and the second noun is Beck:
-	say "Beck is just a voice in your ear." instead;
+	say "Beck is just a voice in [our] ear." instead;
 	
 Instead of doing something to Beck when action requires light:
-	say "You can't see Beck.";
+	say "[We] can't see Beck.";
 
 After asking Beck about something:
 	say line break;
