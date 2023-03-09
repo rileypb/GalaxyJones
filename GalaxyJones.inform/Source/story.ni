@@ -261,7 +261,7 @@ Book 1 - Beck
 
 Beck is a man in the room of stuff. The description is "Beck isn't exactly handsome, but he exudes a confidence that makes him memorable."
 
-Europa Callisto is a woman. The description is "Europa Callist is a stunningly beautiful woman with long ice-blue hair and piercing blue eyes. Right now she's looking pretty ragged, though."
+Europa Callisto is a woman. The description is "Europa Callisto is a stunningly beautiful woman with long ice-blue hair and piercing blue eyes. Right now she's looking pretty ragged, though."
 
 Admiral-Thallium is a man. He is privately-named. The printed name is "Admiral Thallium". Understand "Admiral/Thallium" as Admiral-Thallium. He is familiar. He is seen. The description is "The 'Admiral' is a disctinctly ridiculous figure. He dresses in a mockery of a Martian admiral's uniform, plastered with medals. His hair is slicked back and his mustache is painstakingly waxed."
 
@@ -858,7 +858,15 @@ The printed name is "outside".
 
 The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
 
-Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain"  as tenth floor view of New Reykjavik.
+Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain" as tenth floor view of New Reykjavik.
+
+100th floor view of New Reykjavik is a backdrop. It is privately-named. It is in penthouse south, penthouse east, penthouse west, penthouse south, penthouse roof, cage, and landing pad.
+
+The printed name is "outside".
+
+The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking Building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
+
+Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain" as (100th floor view of New Reykjavik).
 
 Book 2 - Ground Floor
 
@@ -1933,7 +1941,7 @@ Carry out button pushing a number:
 	now the floor of the elevator car-room is the number understood;
 	try looking;
 
-Report looking when the location is the elevator car-room and the elevator car-room is in running mode:
+Report looking when the location is the elevator car-room:
 	print it's real ivory;
 
 Instead of going up from the elevator car-room when the ceiling panel is in the elevator car-room:
@@ -2043,6 +2051,14 @@ The roof stairs can be hidden. The roof stairs are hidden.
 
 The description of the 100th floor elevator hall is "The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south[if roof stairs are not hidden]. A portion of the eastern wall has slid away to reveal a stunning white marble staircase[end if].".
 
+The walls-100 is scenery in the 100th floor elevator hall. They are privately-named. The printed name is "walls". Understand "wall/walls" as the walls-100. "Black marble. Wow. It's beautiful."
+
+The carpet-100 is scenery in the 100th floor elevator hall. It is privately-named. The printed name is "carpet". Understand "carpet/carpeting/rug/floor" as the carpet-100. "Dark black, almost threatening, rounding out the storm cloud atmosphere of the room."
+
+The chandelier is scenery in the 100th floor elevator hall. "An enormously extravagant display of crystal."
+
+The elevator-doors-100 are scenery in the 100th floor elevator hall. They are privately-named. The printed name is "elevator doors". Understand "elevator/door/doors" as elevator-doors-100. "It's not clear why everything has to be so extravagant."
+
 stairs appeared is a clip with conversation "Jones: 'Must be the way up to the roof. Beck, you there?'
 
 Beck: 'Yep, I'm here, just a bit busy is all. I[']ll meet you on that roof.'".
@@ -2058,11 +2074,19 @@ the penthouse north has description "This is Thallium's bedroom. Apart from the 
 
 The bed is scenery in the penthouse north. "It's round and huge, and it looks supremely comfortable."
 Instead of entering the bed:
-	say "No time for lying down.";
+	say "No time for lying down.";	
 
 Understand "lie on [something]" as entering.
 
+The dummies are scenery in penthouse north. "The best outfit is his Napoleon outfit." Understand "clothes/clothing/outfits/suits" as dummies.
+
+The vanity table is scenery in penthouse north. "So aptly named for a man like the Admiral."
+
 the penthouse east has description "This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.". The printed name is "eastern corner of the penthouse".
+
+The huge desk is scenery in penthouse east. "Bubinga wood, if you must know, is, according to Wikipedia, 'a flowering plant genus in the family [italic type]Fabaceae'[roman type]."
+
+The video screens are scenery in penthouse east. "They are showing Thallium's logo, the ten planets in order overlaid with the motto 'Planetas Vincam'."
 
 the penthouse south has description "This must be Thallium's 'treasure room', to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.". The printed name is "southern corner of the penthouse".
 
@@ -2075,13 +2099,16 @@ The glass diamond is a gem. The glass diamond can be discovered. The printed nam
 
 The real diamond is a gem in the room of stuff. The description is "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds."
 
+Instead of examining the real diamond when the real diamond is in the room of stuff:
+	say "So many of them, from the tiny to the obscenely large. It looks like it wouldn't be hard to pry one out.";
+
 Rule for clarifying the parser's choice of something when doing something to the glass diamond:
 	do nothing;
 
 After deciding the scope of the player when the location is penthouse south and the real diamond is in the room of stuff:
 	place the real diamond in scope;
-
-Instead of taking the real diamond when the glass diamond is nowhere:
+	
+Instead of taking the real diamond when the glass diamond is nowhere and the glass diamond is not discovered:
 	now the player carries the glass diamond;
 	say text of the standard report taking rule response (A);
 	say paragraph break;
@@ -2123,10 +2150,10 @@ Instead of taking the real diamond when the glass diamond is somewhere:
 Instead of taking the real diamond when the glass diamond is discovered and the real diamond is in the room of stuff:
 	say "[We] will never find the real diamond this way.".
 
-the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the nine planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
+the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
 
-The pillar is scenery in the penthouse west. 
-The claw is part of the pillar. It is a container with carrying capacity 1. The description is "It looks like it could grip a small object.".
+The metal pillar is scenery in the penthouse west. 
+The claw is part of the metal pillar. It is a container with carrying capacity 1. The description is "It looks like it could grip a small object.".
 
 Instead of inserting something that is not a gem into the claw:
 	say "That won't fit in the claw.";
@@ -2163,6 +2190,11 @@ Instead of pushing the small black button:
 	now the roof access door is unlocked;
 	now the roof stairs are not hidden;
 	
+The granite floor is scenery in penthouse west. "On Mars, sometimes one gets tired of red." 
+
+The insignia is scenery in penthouse west. "'Planetas Vincam', incidentally, means 'I will conquer the planets.'" 
+
+The electronic eye is scenery in penthouse west. "Looks like it might be a sensor of some sort."
 	
 The description of the roof stairs is "Thick slabs of marble lead from the hall to the west to the rooftop door above.";
 
@@ -2286,6 +2318,9 @@ Rule for writing a paragraph about Admiral-Thallium when Admiral-Thallium is in 
 
 The description of the penthouse roof is "It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad[if Europa Callisto is in the cage]. Jones can distantly see a woman lying on the floor of the cage[end if][If Admiral-Thallium is in penthouse roof]. A green and black flyer sits on the landing pad[end if]."
 
+The lounge area is scenery in the penthouse roof. "Looks like a good time, if [we] weren't already busy." Understand "fire/pit/bar" as the lounge area.
+
+The rooftop seating is scenery in the penthouse roof. "[We] has other things to focus on."
 
 Admiral-Thallium is in penthouse roof.
 
@@ -2326,6 +2361,12 @@ The cage-thing is a privately-named enterable supporter in the cage. It is scene
 
 Instead of climbing the cage-thing:
 	try entering the cage-thing;
+	
+Does the player mean doing something to the cage:
+	it is very unlikely;
+	
+Does the player mean doing something to the cage-thing:
+	it is very likely;
 	
 Chapter 3 - Hooking the flyer
 
