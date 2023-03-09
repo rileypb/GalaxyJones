@@ -6,13 +6,13 @@ Include Glulx Text Effects by Emily Short.
 Include Skeleton Keys by Emily Short.
 
 Include Epistemology by Eric Eve. 
-Include Exit Lister by Eric Eve.
+[Include Exit Lister by Eric Eve.]
 Include Conversation Framework by Eric Eve.
 
 Include Galaxy Banner by Philip Riley.
 Include Third Person Narration by Philip Riley.
 Include Pseudocontainers by Philip Riley.
-Include Look That Way by Philip Riley.
+[Include Look That Way by Philip Riley.]
 Include Use by Philip Riley.   
 Include Open Spaces by Philip Riley.
 Include Visible Rooms by Philip Riley.
@@ -31,13 +31,13 @@ To continue:
 		say paragraph break; 
 		wait for any key;
 
-Table of New Exit Status
+[Table of New Exit Status
 left	central (text)	right
 "[location-title-case]"	""	"[score] points"
-""	"[exit list]"	""
+""	"[exit list]"	""]
 
-when play begins: 
-	now status exit table is Table of New Exit Status;
+[when play begins: 
+	now status exit table is Table of New Exit Status;]
 
 To start header style: 
 	(- VM_Style(HEADER_VMSTY); -)
@@ -94,8 +94,8 @@ Use the serial comma.
 
 The room of stuff is a room. "this is a secret message.".
 
-Instead of going nowhere:
-	     say "[We] can't go that way. [list the exits]";
+[Instead of going nowhere:
+	     say "[We] can't go that way. [list the exits]";]
 	
 To score (n - number):
 	print the galaxy banner;
@@ -981,7 +981,7 @@ The description is "The central area where the elevators and utility rooms are."
 	
 Chapter 4 - Ground Floor
 
-The room-floor of the lobby is the ground-floor-floor.
+[The room-floor of the lobby is the ground-floor-floor.
 The room-floor of the ground-floor-1 is the ground-floor-floor.
 The room-floor of the ground-floor-2 is the ground-floor-floor.
 The room-floor of the ground-floor-3 is the ground-floor-floor.
@@ -998,7 +998,7 @@ The room-ceiling of the ground-floor-3 is the ground-floor-ceiling.
 The room-ceiling of the ground-floor-4 is the ground-floor-ceiling.
 The room-ceiling of the ground-floor-5 is the ground-floor-ceiling.
 The room-ceiling of the ground-floor-6 is the ground-floor-ceiling.
-The room-ceiling of the ground-floor-7 is the ground-floor-ceiling.
+The room-ceiling of the ground-floor-7 is the ground-floor-ceiling.]
 
 Section 1 - ground-floor-1
 
@@ -1402,13 +1402,9 @@ Chapter 2 - Outside
 
 The description of the ledge is "She's plastered up against the wall, trying not to look down[if the floor of the window washing scaffold is 10]. The scaffold is right above [our] head[end if].".
 
+The ledge-wall is scenery in the ledge. It is privately-named. The printed name is "wall". Understand "wall" as the ledge-wall. "Right now, it's [our] only friend."
+	
 Instead of examining down when the location is the ledge for the first time:
-	say "[We] [are] afraid of heights.";
-	
-Instead of examining down when the location is the ledge for the second time:
-	say "Really, really afraid of heights.";	
-	
-Instead of examining down when the location is the ledge for the third time:
 	say "Okay, fine. [We] look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below [us].[paragraph break]";
 	change down exit of the ledge to window washing scaffold;
 	converse "Jones: 'Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up.'
@@ -1454,10 +1450,22 @@ Carry out looking when the location is the window washing scaffold (this is the 
 		say line break;
 		print explaining the vent;
 		
+window-thing is scenery in the window washing scaffold. It is privately-named. The printed name is "window". Understand "window" as the window-thing.
+
+Does the player mean opening the window washing scaffold: it is very unlikely;
+		
 fakeroom10 is west of window washing scaffold and inside from window washing scaffold.
 fakeroom10 is east of air handling room and outside of air handling room.
-The description of fakeroom10 is "this room is fake."
-		
+The description of fakeroom10 is "this room is fake.".
+
+[Every turn:
+	if the location is window washing scaffold and the floor of the window washing scaffold is 9:
+		now fakeroom10 is apparent;
+	otherwise if the location is window washing scaffold and the floor of the window washing scaffold is 10 and the exhaust vent is open:
+		now fakeroom10 is apparent;
+	otherwise:
+		now fakeroom10 is not apparent;]
+
 Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 10:
 	try entering the exhaust vent;
 		
@@ -1510,7 +1518,7 @@ Instead of going outside from the air handling room when the floor of the window
 The room description body text rule does nothing when the location is the window washing scaffold.
 The describe the scaffold rule is listed last in the carry out looking rules.
 
-The scaffold control panel is scenery in the window washing scaffold. "It's got two buttons: up and down.".
+The scaffold control panel is scenery in the window washing scaffold. "It's got two buttons: up and down.". Understand "buttons" as the scaffold control panel.
 
 The scaffold up button is part of the scaffold control panel. The description is "It's a green button with an arrow pointing up.". Understand "green" as the scaffold up button.
 The scaffold down button is part of the scaffold control panel. The description is "It's a red button with an arrow pointing down.". Understand "red" as the scaffold down button.
