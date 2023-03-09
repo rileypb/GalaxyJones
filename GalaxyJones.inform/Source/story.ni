@@ -92,7 +92,7 @@ To say location-title-case:
 Use scoring.
 Use the serial comma.
 
-The room of stuff is a room.
+The room of stuff is a room. "this is a secret message.".
 
 Instead of going nowhere:
 	     say "[We] can't go that way. [list the exits]";
@@ -259,11 +259,11 @@ Volume 4 - NPCs
 
 Book 1 - Beck
 
-Beck is a man in the room of stuff.
+Beck is a man in the room of stuff. The description is "Beck isn't exactly handsome, but he exudes a confidence that makes him memorable."
 
-Europa Callisto is a woman.
+Europa Callisto is a woman. The description is "Europa Callist is a stunningly beautiful woman with long ice-blue hair and piercing blue eyes. Right now she's looking pretty ragged, though."
 
-Admiral-Thallium is a man. He is privately-named. The printed name is "Admiral Thallium". Understand "Admiral/Thallium" as Admiral-Thallium. He is familiar. He is seen.
+Admiral-Thallium is a man. He is privately-named. The printed name is "Admiral Thallium". Understand "Admiral/Thallium" as Admiral-Thallium. He is familiar. He is seen. The description is "The 'Admiral' is a disctinctly ridiculous figure. He dresses in a mockery of a Martian admiral's uniform, plastered with medals. His hair is slicked back and his mustache is painstakingly waxed."
 
 Book 2 - Conversation
 
@@ -286,7 +286,7 @@ report examining something:
 		converse the conversation of the noun;
 		now the noun is used;
 		
-A clip is a kind of thing. A clip is privately-named. A clip can be conversational or descriptive or taunting. A clip is usually conversational.
+A clip is a kind of thing. A clip is privately-named. A clip can be conversational or descriptive or taunting. A clip is usually conversational. The description is "no need for a description".
 
 To say print (C - a clip):
 	print C;
@@ -522,8 +522,8 @@ A thing can be an enemy.
 A guard robot is a kind of enemy person. It is neuter. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard/barrel/killer/head" as a guard robot.
 There is a guard robot called the guard-robots. It is privately-named. It is scenery. The printed name is "guard robots". Understand "guard/guards/robot/robots/green/red" as the guard-robots.
 There is a guard robot called the purple guard robot. It is scenery.
-There is a thing called the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground."
-There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground."
+There is a thing called the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground." The description is "From the outside there's no sign of what killed the mauve guard robot."
+There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground." The description is "The tattered guts of the purple guard robot spill out from it's armored carapace."
 
 Check taking a guard robot:
 	say "An interesting idea." instead;
@@ -611,7 +611,7 @@ the ground floor elevator hall is north of the lobby.
 
 the ground floor elevator door is a door. It is west of the ground floor elevator hall. The printed name is "elevator door". Through the ground floor elevator door is the ground floor elevator shaft. The ground floor elevator door is closed and unopenable. Understand "elevator/door" as the ground floor elevator door.
 
-the ground floor elevator door-inside is a door. It is east of the ground floor elevator shaft. It is scenery. The printed name is "elevator door". Through the ground floor elevator door-inside is the ground floor elevator hall. The ground floor elevator door-inside is a half-door of the ground floor elevator door. Understand "elevator/door" as the ground floor elevator door-inside.
+the ground floor elevator door-inside is a door. It is east of the ground floor elevator shaft. It is scenery. The printed name is "elevator door". Through the ground floor elevator door-inside is the ground floor elevator hall. The ground floor elevator door-inside is a half-door of the ground floor elevator door. Understand "elevator/door" as the ground floor elevator door-inside. "The backside of the elevator door."
 
 Instead of opening the ground floor elevator door:
 	say "[We] can't just open the elevator with [our] hands.";
@@ -645,7 +645,7 @@ ground-floor-6 is south of ground-floor-5. It is a ground-floor. The dir is east
 
 the closet door is a door. it is west of ground-floor-6. Through the closet door is the maintenance closet. 
 
-the closet-door-inside is a door. It is privately-named. It is scenery. The printed name is "closet door". Understand "closet/door" as the closet-door-inside. It is east of the maintenance closet. Through the closet-door-inside is ground-floor-6. The closet-door-inside is a half-door of the closet door.
+the closet-door-inside is a door. It is privately-named. It is scenery. The printed name is "closet door". Understand "closet/door" as the closet-door-inside. It is east of the maintenance closet. Through the closet-door-inside is ground-floor-6. The closet-door-inside is a half-door of the closet door. The description is "A typical white utility door."
 
 ground-floor-7 is south of ground-floor-6 and east of the lobby. It is a ground-floor. The dir is southeast. The preposition is "at".
 
@@ -657,7 +657,7 @@ the ninth floor elevator shaft is above the ground floor elevator shaft.
 
 Book 3 - The Ninth Floor
 
-The ninth floor elevator door is a door. It is scenery. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall.
+The ninth floor elevator door is a door. It is scenery. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall. The description is "A golden sliding door, opening in the middle."
 
 The ninth floor stairwell is east of the ninth floor elevator hall.
 
@@ -665,12 +665,16 @@ The ninth floor north hallway is north of the ninth floor elevator hall.
 
 The ninth floor south hallway is south of the ninth floor elevator hall.
 
-The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable.
-The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door.
+The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable. The description is "A slick corporate office door lettered 'Cybernetica'. It has a swipe lock above the handle." Understand "swipe/lock" as the cybernetica door.
+The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door.  
 
-The Inspiration Chamber is south of Cybernetica office.
+The Martian Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Martian Chemical door is closed, openable, locked, and lockable. "A slick corporate office door with the fancy company logo of Martian Chemical. It has a swipe lock above the handle." Understand "swipe/lock" as Martian Chemical door.
 
-The Martian Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Martian Chemical door is closed, openable, locked, and lockable.
+The martian chemical logo is part of the Martian Chemical door. The description is "The figure of a beaker holding a red liquid against the backdrop of the planet Mars."
+
+The north-mgmt-doorway is scenery in ninth floor north hallway. It is privately-named. The printed name is "doorway". "An office can be seen past the doorway."
+
+The south-mgmt-doorway is scenery in ninth floor south hallway. It is privately-named. The printed name is "doorway". "An office can be seen past the doorway."
 
 The north end of the building management office is west of the ninth floor north hallway.
 The preposition is "at".
@@ -709,9 +713,9 @@ microthings-7 is a microthings-room. It is open space. It is southeast of microt
  
 microthings-8 is a microthings-room. It is open space. It is south of microthings-7 and east of microthings-1. The preposition is "at". It is in the tenth-floor-region. The dir is southeast.
 
-the air handling door is a door. It is east of microthings-5 and west of the air handling room. The air handling door is scenery.
+the air handling door is a door. It is east of microthings-5 and west of the air handling room. The air handling door is scenery. "An ordinary utility door."
 
-The vent access door is a door. It is inside from the air handling room. It is scenery. Through the vent access door is the window washing scaffold.
+The vent access door is a door. It is inside from the air handling room. It is scenery. Through the vent access door is the window washing scaffold. The description of the vent access door is "A small door leading into the air duct."
 Instead of entering the vent access door:
 	try going east;
 
@@ -776,7 +780,7 @@ the tenth floor elevator hall farsees the elevator car-room, microthings-1, and 
 
 Book 5 - The 100th Floor 
 
-The 100th floor elevator hall is a room. West of the 100th floor elevator hall is the placeholder room.
+The 100th floor elevator hall is a room. West of the 100th floor elevator hall is the placeholder room. The description of the placeholder room is "this is another secret message."
 
 the penthouse north is north of 100th floor elevator hall.
 
@@ -788,7 +792,7 @@ the penthouse west is northwest of penthouse south and southwest of penthouse no
 
 the roof stairs is east of 100th floor elevator hall.
 
-The roof access door is a closed, locked, lockable, openable scenery door. It is above the roof stairs and below the penthouse roof.
+The roof access door is a closed, locked, lockable, openable scenery door. It is above the roof stairs and below the penthouse roof. The description of the roof access door is "Looking strangely out of place, it is a common grey metal door with a push bar."
 
 The preposition of the roof stairs is "on".
 
@@ -798,7 +802,7 @@ Book 6 - The Roof
 
 the flyer pad is west of the penthouse roof. The preposition is "on".
 
-a cage is north of the penthouse roof. The preposition is "next to".
+a cage is north of the penthouse roof. The preposition is "next to". 
 
 Carry out looking when the location is the cage (this is the cage description heading rule): 
 	if the player is not supported by the cage-thing:
@@ -829,7 +833,7 @@ The printed name is "outside".
 
 The description is "Outside the building are the red-dusted streets of New Reykjavik."
 
-Understand "city/new reykjavik/reykjavik/planet/mars/outside/out/glass" or "glass wall" as first floor view of New Reykjavik.
+Understand "city/reykjavik/planet/mars/outside/out/glass/streets" or "glass wall" or "new reykjavik" as first floor view of New Reykjavik.
 
 Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in south end of the building management office, north end of the building management office, ninth floor south hallway, ninth floor north hallway, Martian Chemical office, Cybernetica office.
 
@@ -894,6 +898,8 @@ The conversation of the entry doorway is "Jones peers upwards at the 100 stories
 
 Beck: 'Oh, no doubt.'";
 
+The open-space is scenery in the entry doorway. It is privately-named. The printed name is "open space". Understand "open space" as open-space. "On the far side of the glass walls is a large open space serving as the extended lobby of the building."
+
 The description of the entry door is "A glass revolving door emblazoned with the symbol of a Viking king astride the planet Mars."
 
 Before going from entry doorway to lobby for the first time:
@@ -914,6 +920,10 @@ The description of the ground-floor-ceiling is "The whole ground floor is bright
 The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
 
 The lobby-background is scenery in the lobby. It is privately-named. Understand "plants/water/features/feature/stylish/seating" as the lobby-background. "The ground is floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants."
+
+The supports are scenery in the lobby. "Thin but incredibly strong."
+
+The elevators-scenery is scenery in the lobby. It is privately-named. The printed name is "elevators". Understand "elevator/elevators" as the elevators-scenery. "They're in the center of the building, north of here."
 
 The niches are scenery in the lobby. "Aside from a robot charging station, there's nothing here." Understand "niche" as niches.
 
@@ -1009,8 +1019,8 @@ The description of ground-floor-2 is "Semicircular couches open on either side o
 The east semicircular couch is a couch in ground-floor-2. The description is "An inoffensive beige couch, shaped in a half-circle, opening towards the west.".
 The west semicircular couch is a couch in ground-floor-2. The description is "An inoffensive beige couch, shaped in a half-circle, opening towards the east.".
 
-The central carpeted path is scenery in ground-floor-2. The description is "A strip of grey carpet running north to south, in the midst of the marble floor. (Incidentally, the massive expense of moving real marble from Earth to the Mars is just further proof of Thallium's madness, seriously.)";
-
+The central carpeted path is scenery in ground-floor-2. The description is "A strip of grey carpet running north to south, in the midst of the marble floor. (Incidentally, the massive expense of moving real marble from Earth to the Mars is just further proof of Thallium's madness, seriously.)". Understand "carpet/rug" as the central carpeted path.
+ 
 The swipe lock is scenery in ground-floor-2. "An ordinary swipe lock."
 
 Instead of inserting something into swipe lock:
@@ -1037,6 +1047,8 @@ The conversation of the statue of admiral thallium is "Jones groans. 'Be glad yo
 
 Beck chuckles. 'I won't ask.'".
 
+The elevators-scenery-2 is scenery in the lobby. It is privately-named. The printed name is "elevators". Understand "elevator/elevators" as the elevators-scenery. "They're in the center of the building, south of here."
+
 Section 5 - ground-floor-5
 
 The description of ground-floor-5 is "The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.".
@@ -1051,7 +1063,7 @@ Instead of opening the military-detritus:
 The garish medal is in the military-detritus. It is a pseudocontainer.
 The contents description is "While the front looks authentic, the reverse is engraved with Thallium's personal motto 'Planetas Vincam'. The ribbon conceals a safety pin. It looks like it could be removed.".
 The description is "While the front looks authentic, the reverse is engraved with Thallium's personal motto 'Planetas Vincam'. Earlier [we] removed the safety pin."
-The safety pin is in the garish medal.
+The safety pin is in the garish medal. The description of the safety pin is "A standard silver metal safety pin."
 
 Instead of taking off the safety pin when the safety pin is in the garish medal:
 	try taking the safety pin;
@@ -1066,7 +1078,7 @@ The description of ground-floor-6 is "Apparently some kind of function was happe
 
 The conversation of ground-floor-6 is "Beck: 'Blueprints indicate a closet to the west of you. Might be useful.'";
 
-The catering table is a scenery pseudocontainer in ground-floor-6. "The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.". Understand "canapes", "canape", "hors d'oeuvres", "food", "snacks" as the catering table.
+The catering table is a scenery pseudocontainer in ground-floor-6. "The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.". Understand "canapes", "canape", "hors d'oeuvres", "food", "snacks", "treats", "array" as the catering table.
 
 After examining the catering table:
 	converse "Jones: 'What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?'
@@ -1121,6 +1133,10 @@ The Viking 2 lander is scenery in ground-floor-7.  "The lander is such a big, un
 
 Chapter 5 - Maintenance Closet
 
+The description of the maintenance closet is "A bare, white-walled room containing various maintenance items."
+
+The maintenance items are scenery in the maintenance closet. "Various uninteresting items, like mops and brooms and the like."
+
 The closet door is closed, lockable, openable, and locked. It is scenery. "A typical white metal utility door. Next to it is a keypad with the digits 0-9."
 A keypad is a part of the closet door. The description is "An ordinary numerical keypad."
 
@@ -1166,9 +1182,11 @@ The Atmo-Suit is in the maintenance closet.
 
 Chapter 6 - Ground Floor Elevator Hall
 
-The description of the ground floor elevator hall is "This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell[if the elevator door is open]. The elevator door is open, revealing the bottom of the elevator shaft. Jones could climb into it, if she wished[end if].".
+The description of the ground floor elevator hall is "This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell[if the elevator door is open]. The elevator door is open, revealing the bottom of the elevator shaft. Jones could climb into it, if she wished[end if].". Understand "hallway" as the ground floor elevator hall.
 
-The elevator-shaft is scenery in the ground floor elevator hall. It is privately-named. The printed name is "elevator shaft". Understand "elevator/shaft" as the elevator-shaft.
+The ground-floor-stairwell is scenery in the ground floor elevator hall. The printed name is "stairwell". Understand "stairwell/stairs" as the ground-floor-stairwell. "They lead up from here."
+
+The elevator-shaft is scenery in the ground floor elevator hall. It is privately-named. The printed name is "elevator shaft". Understand "elevator/shaft" as the elevator-shaft. The description is "A dark hole beyond the elevator doors."
 
 Does the player mean using drop key with the ground floor elevator door:
 	it is very likely;
@@ -1184,7 +1202,7 @@ Instead of entering the elevator-shaft when the ground floor elevator door is op
 	
 Understand "climb into [something]" as entering.
 
-The call button is scenery in the ground floor elevator hall. 
+The call button is scenery in the ground floor elevator hall. "A black button mounted on the wall."
 
 Instead of pushing the call button:
 	say "[We] presses [the call button], but nothing happens.";
@@ -1230,6 +1248,8 @@ The hammer is in the elevator room. "Lying discarded on a table here is a hammer
 
 Chapter 8 - Ground Floor Stairwell
 
+The description of the ground floor stairwell is "this is a secret message."
+
 don't take the stairs is a clip with conversation "Jones: 'In case of fire, don't use the stairs.'"
 
 Instead of going to ground floor stairwell:
@@ -1265,7 +1285,7 @@ The description of the ground floor elevator shaft is "[We] is at the bottom of 
 
 A ladder is a backdrop. It is in ground floor elevator shaft, second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, eighth floor elevator shaft, ninth floor elevator shaft. The description is "A simple steel ladder."
 
-The elevator car-backdrop is a backdrop. It is privately-named. The printed name is "elevator car". Understand "elevator/car" as the elevator car-backdrop. It is in ground floor elevator shaft, second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, eighth floor elevator shaft, ninth floor elevator shaft, elevator car-room, and elevator top.
+The elevator car-backdrop is a backdrop. It is privately-named. The printed name is "elevator car". Understand "elevator/car" as the elevator car-backdrop. It is in ground floor elevator shaft, second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, eighth floor elevator shaft, ninth floor elevator shaft, elevator car-room, and elevator top. The description is "this is a secret message".
 
 Instead of examining the elevator car-backdrop:
 	if location is ground floor elevator shaft or location is second floor elevator shaft or location is third floor elevator shaft or location is fourth floor elevator shaft:
@@ -1311,7 +1331,11 @@ Instead of jumping when the location is in the elevator shaft-region and the loc
 
 Book 4 - Ninth Floor
 
-The description of the ninth floor elevator hall is "The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here."
+The description of the ninth floor stairwell is "this is a secret message."
+
+The description of the ninth floor elevator hall is "The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here." Understand "corridor" as ninth floor elevator hall.
+
+The ninth-floor-stairwell is scenery in the ground floor elevator hall. The printed name is "stairwell". Understand "stairwell/stairs" as the ninth-floor-stairwell. The description is "They lead up and down from here."
 
 Instead of going to ninth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
@@ -1319,7 +1343,7 @@ Instead of going to ninth floor stairwell:
 	print don't take the stairs;
 	try looking;
 	
-The vending machine is scenery in the ninth floor elevator hall. The vending machine is a transparent, closed container. The bottled water is in the vending machine.
+The vending machine is scenery in the ninth floor elevator hall. The vending machine is a transparent, closed container. The bottled water is in the vending machine. The description of the vending machine is "This is a secret message."
 
 Instead of examining the vending machine:
 	if the vending machine contains the bottled water:
@@ -1354,9 +1378,8 @@ The description of the Ninth Floor South Hallway is "This anonymous corporate ha
 
 Chapter 1 - Cybernetica office
 
-The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. At the south end of the room is a door labeled 'Inspiration Chamber'[if cybernetica office is window-broken]. One of the windows along the east side of the office is broken[end if].".
+The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities[if cybernetica office is window-broken]. One of the windows along the east side of the office is broken[end if].".
 
-The description of the Cybernetica door is "This typical wooden office door displays the sign for Cybernetica Inc., a purveyor of game software."
 The description of the Cybernetica door-inside is "This side intentionally left blank.".
 	
 The Cybernetica office can be window-broken.
@@ -1371,13 +1394,9 @@ Before going from Cybernetica office to ledge when the Atmo-Suit is touchable fo
 	
 	Jones: 'Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch.'";
 
-The description of the Inspiration Chamber is "One of the most unique features of the office is the 'inspiration chamber,' a specialized room designed to stimulate creativity and innovation. The room is filled with advanced technology, including AI-generated art, interactive displays, and sensory stimulation devices that can help employees think outside the box and come up with new ideas."
+The cybernetica-desks are scenery in the Cybernetica office. They are privately-named. The printed name is "desks". Understand "desk/desks/chair/chairs" as the cybernetica-desks. "Very nice and good for hiding under and among."
 
-The conversation of the Inspiration Chamber is "Jones: 'We gotta get us some of this stuff.'
-
-Beck: 'What's that?'
-
-Jones: 'Never mind.'";
+Broken-window is scenery in the Cybernetica office. It is privately-named. The printed name is "broken window". Understand "broken/window/east/eastern" as broken-window. "Looks like [we] could get through if [we're] careful."
 	
 Chapter 2 - Outside
 
@@ -1437,6 +1456,7 @@ Carry out looking when the location is the window washing scaffold (this is the 
 		
 fakeroom10 is west of window washing scaffold and inside from window washing scaffold.
 fakeroom10 is east of air handling room and outside of air handling room.
+The description of fakeroom10 is "this room is fake."
 		
 Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 10:
 	try entering the exhaust vent;
@@ -1542,7 +1562,7 @@ Report pushing the scaffold down button:
 	stop the action;
 
 The exhaust vent is a scenery container. It is closed and openable. "It's a white metal grill held in place by four screws.". Understand "screws/grill/cover" as the exhaust vent.
-The screws are part of the exhaust vent. "Plain screws painted with white enamel."
+The screws are part of the exhaust vent. The description is "Plain screws painted with white enamel."
 
 Instead of unscrewing the exhaust vent with the screwdriver:
 	if the exhaust vent is closed:
@@ -1606,7 +1626,7 @@ Instead of unlocking the large desk with the safety pin:
 	now the large desk is unlocked;     
 	now the large desk is open;
 	
-The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desk/desks" as north-desks. "There are lots of them, none of which are particularly interesting."
+The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desks" as north-desks. "There are lots of them, none of which are particularly interesting."
 
 The north-task-boards are scenery in the north end of the building management office. They are a white board. They are privately-named. The printed name is "task boards". Understand "task/tasks/board/boards" as north-task-boards. The writing is "[italic type]1. Describe scenery objects on Engineering Deck[line break]
 2. Fix check rule when installing new engine component[line break]
@@ -1642,7 +1662,7 @@ Carry out picking with safety pin when the large desk is touchable:
 Instead of picking the large desk with the safety pin:
 	try unlocking the large desk with the safety pin;
 
-The black cardkey is in the large desk. The black cardkey unlocks the Cybernetica door. The black cardkey unlocks the Martian Chemical door. Understand "card/key" as the black cardkey. The black cardkey is a cardkey.
+The black cardkey is in the large desk. The black cardkey unlocks the Cybernetica door. The black cardkey unlocks the Martian Chemical door. Understand "card/key" as the black cardkey. The black cardkey is a cardkey. The description is "Black like evil, or like secrets?"
 
 A filing cabinet is a container in the south end of the building management office. It is scenery. It is closed and openable. "An ordinary filing cabinet, with five drawers. The label on the front says 'Personnel Records'." Understand "file/files" as the filing cabinet.
 
@@ -1654,7 +1674,7 @@ The description of the south end of the building management office is "The build
 The south-desks are scenery in the south end of the building management office. They are privately-named. The printed name is "desks". Understand "desk/desks" as south-desks. "There are lots of them, none of which are particularly interesting."
 
 The south-task-boards are scenery in the south end of the building management office. They are privately-named. They are a white board. The printed name is "task boards". Understand "task/tasks/board/boards" as south-task-boards. The writing is "Jones is coming, surprise day off!".	
-A screwdriver is in the south end of the building management office. "A screwdriver sits atop the filing cabinet."
+A screwdriver is in the south end of the building management office. "A screwdriver sits atop the filing cabinet." The description is "A standard Phillips screwdriver with a red plastic handle."
 
 The black cat is an animal. The description is "It's really a beautiful cat, sleek and black.". It is undescribed.
 
@@ -1723,9 +1743,9 @@ The description of the martian chemical office is "This seems like the business 
 
 The chemical cabinet is scenery in the Martian Chemical office. "The cabinet is full of bottles of [Electrofil quick-setting conductive polymer gel]."
 
-The Electrofil quick-setting conductive polymer gel is in the cabinet.
+The Electrofil quick-setting conductive polymer gel is in the cabinet. The description of the Electrofil is "An opaque pink bottle labeled 'Electrofil' in large friendly letters." Understand "bottle" as the Electrofil quick-setting conductive polymer gel.
 
-The untakable bottle is in the cabinet. It is undescribed. It is privately-named. Understand "bottle/Electrofil/quick-setting/conductive/polymer/gel" as the untakable bottle.
+The untakable bottle is in the cabinet. It is undescribed. It is privately-named. Understand "bottle/Electrofil/quick-setting/conductive/polymer/gel" as the untakable bottle. The description is "this is a secret message."
 
 Instead of taking the untakable bottle:
 	Say "[We] has already taken one bottle of Electrofil from the cabinet. [We] should use it before taking another.";
@@ -1735,10 +1755,12 @@ Rule for clarifying the parser's choice of the Electrofil quick-setting conducti
 
 Book 5 - Tenth Floor
 
+The description of the tenth floor stairwell is "this is a secret message."
+
 The description of the air handling room is "There is a good amount of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.".
 
 Instead of going to tenth floor stairwell:
-	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
+	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
 	say line break;
 	print don't take the stairs;
 	try looking;
@@ -1803,7 +1825,7 @@ the describe room gone into rule does nothing when the noun is the mauve guard r
 Chapter 2 - The Microthings Offices
 
 The present is a thing in microthings-2. The description is "The note on the present say 'For Galaxy -- see you soon! -- Your friend, the Admiral.'". "There is a present with a note attached sitting on a desk here.". Understand "note/gift/box" as the present.
-The golden key is a thing.
+The golden key is a thing. The description is "It's a beautiful solid gold antique-style 'skeleton' key.".
 
 Instead of unwrapping the present:
 	try opening the present;
@@ -1816,12 +1838,12 @@ Instead of opening the present:
 
 Chapter 3 - The Elevator Car
 	
-The golden keyhole is scenery in the elevator car-room.
+The golden keyhole is scenery in the elevator car-room. "Inset in the mahogany panel, it looks like real gold and has the shape of an antique 'skeleton' key."
 
 The elevator car-room has a number called the floor. The floor of the elevator car-room is 10.
 The elevator car-room can be in running mode.
 
-The ceiling panel is in the elevator car-room. "One of the ceiling panels looks loose.";
+The ceiling panel is in the elevator car-room. "One of the ceiling panels looks loose." The description is "Asbestos? In this day and age?"
 
 it's real ivory is a taunting clip with conversation "Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant.'".
 
@@ -1985,7 +2007,7 @@ The conversation of the penthouse south is "Thallium seems to speak from all aro
 A gem is a kind of thing. Understand "diamonds/gem/gems" as the gem.
 The glass diamond is a gem. The glass diamond can be discovered. The printed name is "[if discovered]glass diamond[otherwise]diamond". The description is "Worthless.".
 
-The real diamond is a gem in the room of stuff.
+The real diamond is a gem in the room of stuff. The description is "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds."
 
 Rule for clarifying the parser's choice of something when doing something to the glass diamond:
 	do nothing;
@@ -2038,7 +2060,7 @@ Instead of taking the real diamond when the glass diamond is discovered and the 
 the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the nine planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
 
 The pillar is scenery in the penthouse west. 
-The claw is part of the pillar. It is a container with carrying capacity 1.
+The claw is part of the pillar. It is a container with carrying capacity 1. The description is "It looks like it could grip a small object.".
 
 Instead of inserting something that is not a gem into the claw:
 	say "That won't fit in the claw.";
@@ -2053,8 +2075,8 @@ Instead of inserting a gem into the claw:
 		
 The penthouse control panel is a scenery thing. The penthouse control panel can be discovered. "The panel features two buttons, one a large red button labeled 'Press Me', and the other a small black button without a label.'".
 
-The large red button is a part of the penthouse control panel.
-The small black button is a thing.
+The large red button is a part of the penthouse control panel. The description is "It's labeled 'Press Me'."
+The small black button is a thing. The description is "Very nondescript."
 
 Instead of examining the penthouse control panel when the penthouse control panel is not discovered:
 	say "[We] discovers a secret panel, which when opened exposes a small black button.";
@@ -2079,6 +2101,8 @@ Instead of pushing the small black button:
 The description of the roof stairs is "Thick slabs of marble lead from the hall to the west to the rooftop door above.";
 
 Book 7 - The Rooftop
+
+The rooftop is a region. The cage, the penthouse roof, and the landing pad are in the rooftop.
 
 Chapter 1 - Scenes
 
@@ -2123,7 +2147,7 @@ When Thallium ultimatum begins:
 	converse as thallium "Thallium's flyer hovers over the rooftop. 'Jones!'  he bellows. 'Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.'
 	
 	Jones rolls her eyes.";
-	say "[line break]A little ways off, a small red flyer aims for the rooftop and accelerates.";
+	converse "[line break]A little ways off, a small red flyer aims for the rooftop and accelerates.";
 
 Before going somewhere during Thallium ultimatum:
 	say "Thallium's flyer floats after Jones.";
@@ -2131,8 +2155,11 @@ Before going somewhere during Thallium ultimatum:
 Saving Europa is a scene. Thallium ultimatum ends when Admiral Thallium's Flyer is nowhere. 
 Saving Europa begins when Thallium ultimatum ends.
 
+The red flyer is a backdrop. The description is "Jones's little red flyer, Galaxy Two."
+
 When Saving Europa begins:
-	say "The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.";
+	converse "The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.";
+	move the red flyer to the rooftop;
  
 Chapter 2 - Penthouse Roof
 
@@ -2196,7 +2223,7 @@ The description of the penthouse roof is "It is an extravagant and opulent space
 
 Admiral-Thallium is in penthouse roof.
 
-Admiral Thallium's Flyer is a backdrop. It is in penthouse rooftop, cage, and flyer pad. 
+Admiral Thallium's Flyer is a backdrop. It is in penthouse roof, cage, and flyer pad. The description is "this is a secret message".
 Instead of examining Admiral Thallium's flyer during On-Rooftop:
 	say "It's big and green and black. Looks like a Sirius XE."
 
@@ -2229,14 +2256,14 @@ Rule for writing a paragraph about Europa Callisto when Europa Callisto is in th
 Rule for writing a paragraph about Europa Callisto when Europa Callisto is in the cage and the cage is broken:
 	say "Jones is kneeling at Europa Callisto's side, trying to rouse her.";
 	
-The cage-thing is a privately-named enterable supporter in the cage. It is scenery. The printed name is "cage". Understand "cage/bars/silnium" as the cage-thing. 
+The cage-thing is a privately-named enterable supporter in the cage. It is scenery. The printed name is "cage". Understand "cage/bars/silnium" as the cage-thing. "The cage is huge for holding just one prisoner. The silnium bars are grey and iridescent. They run both horizontally and vertically, creating a lattice."
 
 Instead of climbing the cage-thing:
 	try entering the cage-thing;
 	
 Chapter 3 - Hooking the flyer
 
-Instead of throwing the hook cable at admiral thallium's flyer when the player is on the cage-thing:
+To break the cage:
 	say line break;
 	converse "[We] throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps through the door and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
 	
@@ -2250,16 +2277,48 @@ Instead of throwing the hook cable at admiral thallium's flyer when the player i
 	now the cage is broken;
 	move the player to the cage;
 
-Instead of throwing the hook cable at admiral thallium's flyer when the location is the cage:
-	say "Foo";
-
-Instead of throwing the hook cable at admiral thallium's flyer when the location is the flyer pad or the location is the penthouse roof:
-	say "Foo";
+Instead of throwing the hook cable at admiral thallium's flyer when the player is on the cage-thing:
+	say line break;
+	converse "[We] throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the flyer and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
 	
-Chapter 4 - The Water Bottle
+	The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto. 
+	
+	'Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!'
+	
+	Europa moans but doesn't show any signs of having understood Jones.";
+	remove Admiral Thallium's flyer from play;
+	remove the hook cable from play;
+	now the cage is broken;
+	move the player to the cage;
+		
+Instead of tying the hook cable to the cage-thing when the player is on the cage-thing:
+	say line break;
+	converse "[We] attaches one end of the cable to the cage, and throws the other end up to the flyer where it hooks around the rail, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the flyer and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
+	
+	The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto. 
+	
+	'Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!'
+	
+	Europa moans but doesn't show any signs of having understood Jones.";
+	remove Admiral Thallium's flyer from play;
+	remove the hook cable from play;
+	now the cage is broken;
+	move the player to the cage;
+
+Instead of throwing the hook cable at admiral thallium's flyer:
+	say "[We] throws the cable, but it comes up short. [We] gathers it up again.";
+	
+Instead of tying the hook cable to the cage-thing when the player is not on the cage-thing:
+	say "It doesn't seem useful to attach the cable to this part of the cage.";
+	
+Chapter 4 - The Flyer Pad
+
+The description of the flyer pad is "This is what you'd expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background."
+	
+Chapter 5 - The Water Bottle
 
 Instead of giving the bottled water to Europa when the cage is broken:
-	converse "[We] opens the water bottle and brings it to Europa's lips. Even with closed eyes she drinks, first slowly and then with renewed vigor, until her eyes open.
+	converse "[We] opens the water bottle and brings it to Europa's lips. Even with closed eyes she drinks, first slowly and then with increasing vigor, until her eyes open.
 	
 	'Ga- Galaxy Jones?' she says.
 	
@@ -2481,13 +2540,19 @@ After going from a room (called R1) to a room (called R2):
 		mark transition text for R1 to R2 as used;
 	continue the action;
 	
-Volume 13 - Not for release
+Volume 13 - A few extra descriptions
+
+the description of light-meter is "no need for a description".
+	
+Volume 14 - Not for release
 
 DEBUG is true. 
 
 Understand "* [text]" as a mistake ("Noted.").
 
-Volume 14 - Tests
+Include Property Checking by Emily Short.
+
+Volume 15 - Tests
 
 test elevator with "n/n/z/shoot art/x art/e/n/type 0/w/take all/e/x table/take all/n/x medals/take medal/x medal/take pin/w/w/s/e/take all/w/s/x waterfall/take coin/e/n/use drop key with elevator".
 test ninth with "test elevator/w/u/u/u/u/u/u/u/u/e".
