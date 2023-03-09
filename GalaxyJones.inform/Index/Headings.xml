@@ -144,343 +144,343 @@
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>764</integer>
+        <key>Line</key><integer>765</integer>
         <key>Title</key><string>Chapter 1 - Lines of Sight</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>781</integer>
+        <key>Line</key><integer>782</integer>
         <key>Title</key><string>Book 5 - The 100th Floor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>801</integer>
+        <key>Line</key><integer>802</integer>
         <key>Title</key><string>Book 6 - The Roof</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>825</integer>
+        <key>Line</key><integer>826</integer>
         <key>Title</key><string>Volume 8 - Room Implementations</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>827</integer>
+        <key>Line</key><integer>828</integer>
         <key>Title</key><string>Book 1 - City Backdrops</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>862</integer>
+        <key>Line</key><integer>863</integer>
         <key>Title</key><string>Book 2 - Ground Floor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>864</integer>
+        <key>Line</key><integer>865</integer>
         <key>Title</key><string>Chapter 1 - Speeder Dock</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>893</integer>
+        <key>Line</key><integer>894</integer>
         <key>Title</key><string>Chapter 2 - Building Entryway</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>910</integer>
+        <key>Line</key><integer>911</integer>
         <key>Title</key><string>Chapter 3 - Lobby</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>982</integer>
+        <key>Line</key><integer>983</integer>
         <key>Title</key><string>Chapter 4 - Ground Floor</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1003</integer>
+        <key>Line</key><integer>1004</integer>
         <key>Title</key><string>Section 1 - ground-floor-1</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>31</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1015</integer>
+        <key>Line</key><integer>1016</integer>
         <key>Title</key><string>Section 2 - ground-floor-2</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>32</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1032</integer>
+        <key>Line</key><integer>1033</integer>
         <key>Title</key><string>Section 3 - ground-floor-3</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>33</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1040</integer>
+        <key>Line</key><integer>1041</integer>
         <key>Title</key><string>Section 4 - ground-floor-4</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>34</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1052</integer>
+        <key>Line</key><integer>1053</integer>
         <key>Title</key><string>Section 5 - ground-floor-5</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>35</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1075</integer>
+        <key>Line</key><integer>1076</integer>
         <key>Title</key><string>Section 6- ground-floor-6</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>36</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1128</integer>
+        <key>Line</key><integer>1129</integer>
         <key>Title</key><string>Section 1 - ground-floor-7</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>37</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1134</integer>
+        <key>Line</key><integer>1135</integer>
         <key>Title</key><string>Chapter 5 - Maintenance Closet</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>38</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1183</integer>
+        <key>Line</key><integer>1184</integer>
         <key>Title</key><string>Chapter 6 - Ground Floor Elevator Hall</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>39</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1236</integer>
+        <key>Line</key><integer>1237</integer>
         <key>Title</key><string>Chapter 7 - Elevator Room</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>40</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1249</integer>
+        <key>Line</key><integer>1250</integer>
         <key>Title</key><string>Chapter 8 - Ground Floor Stairwell</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>41</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1262</integer>
+        <key>Line</key><integer>1263</integer>
         <key>Title</key><string>Book 3 - Elevator Shaft</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>42</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1332</integer>
+        <key>Line</key><integer>1333</integer>
         <key>Title</key><string>Book 4 - Ninth Floor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>43</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1379</integer>
+        <key>Line</key><integer>1380</integer>
         <key>Title</key><string>Chapter 1 - Cybernetica office</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>44</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1401</integer>
+        <key>Line</key><integer>1402</integer>
         <key>Title</key><string>Chapter 2 - Outside</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>45</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1626</integer>
+        <key>Line</key><integer>1627</integer>
         <key>Title</key><string>Chapter 3 - Building Management Office</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>46</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1748</integer>
+        <key>Line</key><integer>1749</integer>
         <key>Title</key><string>Chapter 4 - Martian Chemical Office</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>47</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1764</integer>
+        <key>Line</key><integer>1765</integer>
         <key>Title</key><string>Book 5 - Tenth Floor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>48</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1794</integer>
+        <key>Line</key><integer>1801</integer>
         <key>Title</key><string>Chapter 1 - The Robot Chase</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>49</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1833</integer>
+        <key>Line</key><integer>1840</integer>
         <key>Title</key><string>Chapter 2 - The Microthings Offices</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>50</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1847</integer>
+        <key>Line</key><integer>1854</integer>
         <key>Title</key><string>Chapter 3 - The Elevator Car</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>51</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>1982</integer>
+        <key>Line</key><integer>2004</integer>
         <key>Title</key><string>Book 6 - 100th Floor</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>52</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2111</integer>
+        <key>Line</key><integer>2133</integer>
         <key>Title</key><string>Book 7 - The Rooftop</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>53</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2115</integer>
+        <key>Line</key><integer>2137</integer>
         <key>Title</key><string>Chapter 1 - Scenes</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>54</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2172</integer>
+        <key>Line</key><integer>2194</integer>
         <key>Title</key><string>Chapter 2 - Penthouse Roof</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>55</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2272</integer>
+        <key>Line</key><integer>2294</integer>
         <key>Title</key><string>Chapter 3 - Hooking the flyer</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>56</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2322</integer>
+        <key>Line</key><integer>2344</integer>
         <key>Title</key><string>Chapter 4 - The Flyer Pad</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>57</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2326</integer>
+        <key>Line</key><integer>2348</integer>
         <key>Title</key><string>Chapter 5 - The Water Bottle</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>58</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2359</integer>
+        <key>Line</key><integer>2381</integer>
         <key>Title</key><string>Volume 9 - The End, etc</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>59</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2399</integer>
+        <key>Line</key><integer>2421</integer>
         <key>Title</key><string>Volume 10 - Speech</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>60</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2401</integer>
+        <key>Line</key><integer>2423</integer>
         <key>Title</key><string>Book 1 - Talking to Beck</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>61</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2483</integer>
+        <key>Line</key><integer>2505</integer>
         <key>Title</key><string>Chapter 2 - Pleading / Help</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>62</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2510</integer>
+        <key>Line</key><integer>2532</integer>
         <key>Title</key><string>Volume 11 - Language</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>63</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2512</integer>
+        <key>Line</key><integer>2534</integer>
         <key>Title</key><string>Book 1 - Verbs</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>64</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2516</integer>
+        <key>Line</key><integer>2538</integer>
         <key>Title</key><string>Volume 12 - Prettiness</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>65</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2518</integer>
+        <key>Line</key><integer>2540</integer>
         <key>Title</key><string>Book 1 - Moving Between Rooms</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>66</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2551</integer>
+        <key>Line</key><integer>2573</integer>
         <key>Title</key><string>Volume 13 - A few extra descriptions</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>67</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2555</integer>
+        <key>Line</key><integer>2577</integer>
         <key>Title</key><string>Volume 14 - Not for release</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>68</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2563</integer>
+        <key>Line</key><integer>2585</integer>
         <key>Title</key><string>Volume 15 - Tests</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>

@@ -520,10 +520,10 @@ The elevator drop key is a thing. "Hanging from a hook here is [a elevator drop 
 A thing can be an enemy.
 
 A guard robot is a kind of enemy person. It is neuter. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard/barrel/killer/head" as a guard robot.
-There is a guard robot called the guard-robots. It is privately-named. It is scenery. The printed name is "guard robots". Understand "guard/guards/robot/robots/green/red" as the guard-robots.
+There is a guard robot called the guard-robots. It is privately-named. It is scenery. The printed name is "guard robots". Understand "guard/guards/robot/robots/green/red" as the guard-robots. 
 There is a guard robot called the purple guard robot. It is scenery.
-There is a thing called the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground." The description is "From the outside there's no sign of what killed the mauve guard robot."
-There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground." The description is "The tattered guts of the purple guard robot spill out from it's armored carapace."
+There is a thing called the dead mauve guard robot. Understand "remains" as the dead mauve guard robot. "The remains of the mauve guard robot are sprawled on the ground." The description is "From the outside there's no sign of what killed the mauve guard robot." It is fixed in palce.
+There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground." The description is "The tattered guts of the purple guard robot spill out from it's armored carapace." It is fixed in palce.
 
 Check taking a guard robot:
 	say "An interesting idea." instead;
@@ -715,7 +715,8 @@ microthings-8 is a microthings-room. It is open space. It is south of microthing
 
 the air handling door is a door. It is east of microthings-5 and west of the air handling room. The air handling door is scenery. "An ordinary utility door."
 
-The vent access door is a door. It is inside from the air handling room. It is scenery. Through the vent access door is the window washing scaffold. The description of the vent access door is "A small door leading into the air duct."
+The vent access door is a door. It is inside from the air handling room. It is scenery. Through the vent access door is the window washing scaffold. The description of the vent access door is "A small door leading into the air duct." Understand "opening" as vent access door.
+
 Instead of entering the vent access door:
 	try going east;
 
@@ -841,7 +842,7 @@ The printed name is "outside".
 
 The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking Building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
 	
-Understand "city/planet/mars/outside/out" as ninth floor view of New Reykjavik.
+Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain" as ninth floor view of New Reykjavik.
 
 Perilous view of New Reykjavik is a backdrop. It is privately-named. It is in ledge, window washing scaffold.
 
@@ -849,7 +850,7 @@ The printed name is "the city".
 
 The description is "From this perilous location, outside the comforting electrostatic field trapping the atmosphere of the building, one can see with striking clarity the lights of the city. The surrounding plains go on forever."
 
-Understand "city/planet/mars" as perilous view of New Reykjavik.
+Understand "city/planet/mars/out/outside" as perilous view of New Reykjavik.
 
 Tenth floor view of New Reykjavik is a backdrop. It is privately-named. It is in microthings-1, microthings-2, microthings-3, microthings-4, microthings-5, microthings-7, microthings-8.
 
@@ -1765,7 +1766,11 @@ Book 5 - Tenth Floor
 
 The description of the tenth floor stairwell is "this is a secret message."
 
-The description of the air handling room is "There is a good amount of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.".
+The description of the air handling room is "There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.".
+
+The fans are scenery in the air handling room. "They're loud." Understand "machinery" as fans.
+
+The ductwork is scenery in the air handling room. "A short length leading from the fans here to the outside." Understand "duct" as ductwork.
 
 Instead of going to tenth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
@@ -1783,11 +1788,18 @@ To say elevator description:
 
 The description of the tenth floor elevator hall is "[elevator description]. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.";
 
+The tenth-floor-stairwell is scenery in the tenth floor elevator hall. The printed name is "stairwell". Understand "stairwell/stairs" as the tenth-floor-stairwell. "They lead up and down from here."
+
 The description of microthings-1 is "This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor east and west, and north to the elevator".
+
+The couches-microthings-1 are scenery enterable supporters in microthings-1. They are privately-named. The printed name is "couches". Understand "couch/couches/seat/seats/seating" as the couches-microthings-1. The description is "Tan leather couches, very expensive."
+
+The New Reykjavik Botanic Dome is scenery in microthings-1. "A large geodesic dome made of lightweight and durable materials, designed to withstand the harsh conditions on Mars such as extreme temperatures, radiation, and dust storms. A green glow emanates from the translucent walls."
+
 The description of microthings-2 is "This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. [We] can go north or east from here.".
 The description of microthings-3 is "This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where you are now. One can go north or south.".
 The description of microthings-4 is "Various executive offices line the north and west walls here. [We] can go east or south.".
-The description of microthings-5 is "This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.".
+The description of microthings-5 is "This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.". Understand "cafeteria" as microthings-5.
 The description of microthings-7 is "This part of the office is currently unused. [We] can go northwest or south from here.".
 The description of microthings-8 is "This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.".
 	
@@ -1857,6 +1869,16 @@ it's real ivory is a taunting clip with conversation "Admiral Thallium's voice o
 
 The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if].".
 
+The elevator-walls are scenery in the elevator car-room. They are privately-named. The printed name is "walls". Understand "walls/wall/gold/plated", "gold-plated" as elevator-walls. "Yes, that's real gold-plating."
+
+The crystal lighting is scenery in the elevator car-room. "Nice. Excessive, but nice."
+
+The elevator-control-panel is scenery in the elevator car-room. It is privately-named. The printed name is "elevator button panel". Understand "elevator/button/control/panel" as the elevator-control-panel. "The button panel is lacquered dark mahogany with what looks like real ivory buttons."
+
+The ivory buttons are scenery in the elevator car-room. "[We] recoils in disgust."
+
+The carpeting is scenery in the elevator car-room. "Soft and velvety in a deep red."
+
 button pushing is an action applying to one number. Understand "push [number]" as button pushing. Understand "press [number]" as button pushing.
 
 Check button pushing a number when the number understood is not listed in { 1, 9, 10, 100 } or the elevator car-room is not in running mode:
@@ -1914,6 +1936,11 @@ Rule for reaching inside the elevator car-room when the location is top of the e
 	allow access;
 	
 The description of the top of the elevator car is "The elevator shaft extends many hundreds of feet above here. You can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if confused[end if].";
+
+The upper-shaft is scenery in the top of the elevator car. It is privately-named. The printed name is "elevator shaft". Understand "elevator/shaft" as the upper-shaft. "The shaft extends far up into the darkness. The ladder here is missing, making it impossible to climb up to the eleventh floor and beyond."
+
+Instead of examining down when the location is the top of the elevator car:
+	say "[if the location of the mauve guard robot is the elevator car-room]The mauve guard robot is in the elevator car[otherwise]The elevator car is empty[end if].";
 
 After the mauve guard robot going from the elevator car-room to the tenth floor elevator hall when the location is the top of the elevator car:
 	say "The mauve guard robot exits the elevator car, out of sight.";
