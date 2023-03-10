@@ -361,7 +361,7 @@ Every turn during lobby shootout:
 	if roll is 1:
 		say "One of the robots fires directly above [our] head.";
 	if roll is 2:
-		say "The robots intone 'Destroy Jones' in an eerie drone.";	
+		say "The robots intone 'Destroy Jones' in an eerie drone.[line break]";	
 	if roll is 3:
 		print flanking warning;
 		say line break;
@@ -860,7 +860,7 @@ The description is "Looking down at New Reykjavik, one can trace the history of 
 
 Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain" as tenth floor view of New Reykjavik.
 
-100th floor view of New Reykjavik is a backdrop. It is privately-named. It is in penthouse south, penthouse east, penthouse west, penthouse south, penthouse roof, cage, and landing pad.
+100th floor view of New Reykjavik is a backdrop. It is privately-named. It is in penthouse south, penthouse east, penthouse west, penthouse south, penthouse roof, cage, and flyer pad.
 
 The printed name is "outside".
 
@@ -878,7 +878,9 @@ The conversation of the speeder dock is "[reset LPR][Our] handler Beck comes ove
 
 [We] replies, 'I[']m in the speeder dock. No movement. What can I expect inside?'
 
-'Blueprints show the ground floor is one big empty space with elevators in the center. Not a lot of places for resistance to hide, but you can never tell. Be careful.'".
+'Blueprints show the ground floor is one big empty space with elevators in the center. Not a lot of places for resistance to hide, but you can never tell. Be careful.
+
+'And one other thing, Jones: if you need help you can [bold type]ASK BECK FOR HELP[special-style-1]. You can also [bold type]ASK BECK ABOUT[special-style-1] things or [bold type]ASK BECK ABOUT GAME[special-style-1] for more information about the game. Finally, you can cause help to repeat from the beginning by saying [bold type]ASK BECK TO RESET HELP[special-style-1]'".
 
 The speeder-vehicle is a fixed in place thing in the speeder dock. It is privately-named. The printed name is "speeder". Understand "speeder/vehicle/car/landspeeder/galaxy/one" as speeder-vehicle. "[Our] speeder, Galaxy One, sits in one of the parking bays.".
 The description is "Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.".
@@ -2206,7 +2208,7 @@ The description of the roof stairs is "Thick slabs of marble lead from the hall 
 
 Book 7 - The Rooftop
 
-The rooftop is a region. The cage, the penthouse roof, and the landing pad are in the rooftop.
+The rooftop is a region. The cage, the penthouse roof, and the flyer pad are in the rooftop.
 
 Chapter 1 - Scenes
 
@@ -2426,7 +2428,7 @@ Instead of tying the hook cable to the cage-thing when the player is not on the 
 	
 Chapter 4 - The Flyer Pad
 
-The description of the landing pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background."
+The description of the flyer pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background."
 	
 Chapter 5 - The Water Bottle
 
@@ -2463,7 +2465,7 @@ At the time when Beck shouts:
 	
 Volume 9 - The End, etc
 
-To show credits:
+To show basic credits:
 	say "Extensions by:[line break]";
 	say italic type;
 	say the list of extension credits;
@@ -2473,6 +2475,9 @@ To show credits:
 	say "Programming by Phil Riley.";
 	say "Playtesting by Leon Lin, Oliver Matthias, and Jade.";
 	say "Invaluable inspiration from Laura Taalman.";
+	
+To show extended credits:
+	show basic credits;
 	say line break;
 	say "The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.";
 	say line break;
@@ -2486,7 +2491,7 @@ To screen print (T - a text):
 	
 After printing the player's obituary when the story has ended finally:
 	say paragraph break;
-	show credits;
+	show extended credits;
 	screen print "Black screen";
 	say "'Jones! Jones! Wake up! I'm trying to talk to you!'";
 	say line break;
@@ -2508,6 +2513,14 @@ Book 1 - Talking to Beck
 Understand "ask [someone] about [any visited room]" as quizzing it about.
 Understand "ask about [any visited room]" or "a [any visited room]" as implicit-quizzing.
 Understand the command "tell" as something new.
+
+Understand the command "show", "display", "present" as something new.
+
+Check imploring:
+	say "[We] is more than capable of acquiring things by herself.";
+
+Check requesting for:
+	say "[We] is more than capable of acquiring things by herself.";
 
 After deciding the scope of the player:
 	place beck in scope;
@@ -2878,17 +2891,21 @@ After quizzing Beck about the yourself:
 
 Chapter 2 - Pleading / Help
 
-Pleading is an action applying to nothing. Understand "ask beck for help", "ask beck what to do" as pleading.
+resetting help is an action out of world. Understand "ask beck to reset help", "reset help" as resetting help.
+
+Carry out resetting help:
+	blank out the whole of Table of Pleading Counts;
+	say "Resetting all help messages.";
+
+Pleading is an action applying to nothing. Understand "ask beck for help", "ask beck what to do", "ask for help" as pleading.
 
 Report pleading: 
 	say line break;
 	converse "Beck: 'Looks like you're managing okay.'";
-
+	
 To decide what number is plead (ID - a value):
 	if there is an id of ID in the Table of Pleading Counts:
 		let c be the count corresponding to an id of ID in the Table of Pleading Counts;
-		if c is 3:
-			decide on 3;
 		increment c;
 		now the count corresponding to an id of ID in the Table of Pleading Counts is c;
 		decide on c;
@@ -2901,6 +2918,82 @@ To decide what number is plead (ID - a value):
 Table of Pleading Counts
 id (value)	count (number)
 with 100 blank rows;	
+
+Section 1 - Examples
+
+After pleading when lobby shootout has ended and the maintenance closet is not visited and the catering table is seen:
+	lb;
+	if plead maintenance closet is:
+		-- 1: converse "Beck: 'You saw that utility door near the catering table, right?'";
+		-- 2: converse "Beck: 'It's got a numerical lock on it.'";
+		-- 3: converse "Beck: 'The code should be around here somewhere.'";
+		-- otherwise: 
+			if the note is handled:
+				converse "Beck: 'Look at the note you got from the front desk.'";
+			otherwise:
+				converse "Beck: 'Check the front desk.'";
+
+After pleading when the elevator drop key is seen and the ground floor elevator door is closed:
+	lb;
+	if plead elevator drop key is:
+		-- 1: converse "Beck: 'You should probably be heading up the building by now.'";
+		-- 2: converse "Beck: 'Time to open the elevator door.'";
+		-- otherwise: converse "Beck: 'Use the drop key you found in the elevator room.'";
+
+After pleading when the elevator drop key is not seen and the ground floor elevator door is closed and the red cardkey is handled:
+	lb;
+	converse "Beck: 'You should look for a door where you can use that cardkey.'";
+	
+After pleading when the location is south end of building management office and the screwdriver is not handled:
+	lb;
+	if plead screwdriver is:
+		-- 1: converse "Beck: 'If you haven't yet, get the screwdriver.'";
+		-- 2: converse "Beck: 'Oops. That didn't turn out well. Look behind the cabinet to get the screwdriver.'";
+		-- 3: converse "Beck: 'Looks like you'll need to get rid of the cat. What do cats like?'";
+		-- 4: converse "Beck: 'Give the shrimp tea sandwich to the cat.'";
+		-- otherwise: converse "Beck: 'What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there.'"
+
+Chapter 3 - Ask Beck About Game
+
+Instead of asking Beck about "game":
+	lb;
+	converse "Beck: 'Well, you can ask about: [bold type]INTERACTIVE FICTION[special-style-1], [bold type]COMMANDS[special-style-1], or [bold type]CREDITS[special-style-1].'";
+	
+Instead of asking Beck about "interactive fiction":
+	lb;
+	converse "Beck: 'According to Wikipedia, [']Interactive fiction, often abbreviated IF, is software simulating environments in which players use text commands to control characters and influence the environment.['] In more plain language, in this game you'll explore places, acquire objects, and defeat enemies all by typing commands. For instance, if you found an axe, you would type [bold type]TAKE AXE[special-style-1] to take it, and [bold type]DROP AXE[special-style-1] to drop it again.'
+	
+	You can move around in the world by typing commands like [bold type]GO NORTH[special-style-1], which can be abbreviated as [bold type]N[special-style-1]. If you need to refresh your memory about your surroundings you can say [bold type]LOOK[special-style-1], or just [bold type]L[special-style-1]. To see what you're holding, use [bold type]INVENTORY[special-style-1], or [bold type]I[special-style-1]. You can find out more about that axe from before by typing [bold type]EXAMINE AXE[special-style-1], or just [bold type]X AXE[special-style-1].'
+	
+	Of course, any game has limitations, so you can't just enter any old sentence and expect to have it understood. [bold type]ASK BECK ABOUT COMMANDS[special-style-1] for a partial list of commands that will work.'";
+
+To say cmd:
+	say bold type;
+
+to say xcmd:
+	say special-style-1; 
+
+Instead of asking Beck about "commands":
+	lb;
+	converse "'Here's a partial list of commands with explanations and/or examples:'[line break]
+[line break]
+* [cmd]TAKE[xcmd]: [cmd]TAKE GOLD COIN[xcmd][line break]
+* [cmd]DROP[xcmd]: [cmd]DROP GOLD COIN[xcmd][line break]
+* [cmd]I[xcmd]: list the player's possessions[line break]
+* [cmd]X[xcmd]: examine something; [cmd]X GOLD COIN[xcmd][line break]
+* [cmd]L[xcmd]: look around[line break]
+* [cmd]CLIMB[xcmd]: [cmd]CLIMB BEANSTALK[xcmd][line break]
+* [cmd]GET OFF[xcmd]: [cmd]GET OFF BEANSTALK[xcmd][line break]
+* [cmd]PUT INTO[xcmd]: [cmd]PUT GOLD COIN INTO TREASURE CHEST[xcmd][line break]
+* [cmd]PUSH[xcmd]: [cmd]PUSH BIG RED BUTTON[xcmd][line break]
+[line break]
+not to mention [cmd]POUR[xcmd], [cmd]TYPE[xcmd], [cmd]OPEN[xcmd], [cmd]CLOSE[xcmd], [cmd]SHOOT[xcmd], and a few others you'll have to figure out for yourself.";
+
+Instead of asking Beck about "credits":
+	lb;
+	converse "'Here are the credits:'";
+	lb;
+	show basic credits;
 
 
 Volume 11 - Language 

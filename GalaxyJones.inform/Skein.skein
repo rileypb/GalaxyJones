@@ -31,9 +31,6 @@ Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the des
 
 Plus she'll get to meet Europa Callisto. That'll be totally sweet.
 
-landing pad has no description.
-window has no description.
-
  _________      __                     _____                     
  __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
  _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
@@ -55,14 +52,610 @@ Jones's handler Beck comes over her headset. "Alright, what's going on?"
 
 She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 
-"Blueprints show the ground floor is one big empty space with elevators in the center. Not a lot of places for resistance to hide, but you can never tell. Be careful."
+"Blueprints show the ground floor is one big empty space with elevators in the center. Not a lot of places for resistance to hide, but you can never tell. Be careful.
+
+"And one other thing, Jones: if you need help you can ASK BECK FOR HELP. You can also ASK BECK ABOUT things or ASK BECK ABOUT GAME for more information about the game. Finally, you can cause help to repeat from the beginning by saying ASK BECK TO RESET HELP"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1989"></child>
+        <children><child nodeId="node-2005"></child>
+            <child nodeId="node-2009"></child>
+            <child nodeId="node-2026"></child>
+            <child nodeId="node-2023"></child>
+            <child nodeId="node-2035"></child>
+            <child nodeId="node-2001"></child>
+            <child nodeId="node-1989"></child>
+            <child nodeId="node-2037"></child>
+            <child nodeId="node-2039"></child>
+            <child nodeId="node-1997"></child>
+            <child nodeId="node-2043"></child>
+            <child nodeId="node-2104"></child>
             <child nodeId="node-1963"></child>
+            <child nodeId="node-2088"></child>
             <child nodeId="node-1995"></child>
+            <child nodeId="node-2048"></child>
+            <child nodeId="node-2086"></child>
         </children>
+    </item>
+    <item nodeId="node-2086">
+        <command xml:space="preserve">showme elevator door</command>
+        <result xml:space="preserve">Which do you mean, the elevator door, the elevator door, the utility door, the elevator room door, the ninth floor elevator door, the elevator car door, or the elevator doors?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2087"></child>
+        </children>
+    </item>
+    <item nodeId="node-2087">
+        <command xml:space="preserve">all</command>
+        <result xml:space="preserve">elevator door - closed door
+    drop key hole (part of elevator door)
+location: in the ground floor elevator hall
+singular-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, unseen, unfamiliar, non-pourable; closed, unopenable, unlocked
+list grouping key: none
+printed name: "elevator door"
+printed plural name: "doors"
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+conversation: none
+description: "A gleaming gold elevator door. There is a hole near the top for inserting a drop key."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+other side: ground floor elevator shaft
+matching key: elevator drop key
+reverse side: elevator door
+elevator door - closed door
+location: in the ground floor elevator shaft
+singular-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, unseen, unfamiliar, non-pourable; closed, openable, unlocked
+list grouping key: none
+printed name: "elevator door"
+printed plural name: "doors"
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+conversation: none
+description: "The backside of the elevator door."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+other side: ground floor elevator hall
+reverse side: elevator door
+utility door - locked door
+location: in the west side of the ground floor
+singular-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, unseen, unfamiliar, non-pourable; closed, openable, lockable, locked
+list grouping key: none
+printed name: "utility door"
+printed plural name: "doors"
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+conversation: none
+description: "It's a white metal door, completely typical. It has a swipe card lock right above the handle."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+other side: elevator room
+reverse side: elevator room door
+elevator room door - closed door
+location: in the elevator room
+singular-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, unseen, unfamiliar, non-pourable; closed, openable, unlocked
+list grouping key: none
+printed name: "elevator room door"
+printed plural name: "doors"
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+conversation: none
+description: "It's a white metal door, completely typical. It has a card swipe right above the handle."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+other side: the west side of the ground floor
+reverse side: utility door
+ninth floor elevator door - closed door
+location: in the ninth floor elevator shaft
+singular-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, unseen, unfamiliar, non-pourable; closed, openable, unlocked
+list grouping key: none
+printed name: "ninth floor elevator door"
+printed plural name: "doors"
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+conversation: none
+description: "A golden sliding door, opening in the middle."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+other side: ninth floor elevator shaft
+elevator car door - thing
+location: in the elevator car
+singular-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, unseen, unfamiliar, non-pourable
+list grouping key: none
+printed name: "elevator car door"
+printed plural name: none
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+conversation: none
+description: "The door is open."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+elevator doors - thing
+location: in the 100th floor elevator hall
+singular-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, unseen, unfamiliar, non-pourable
+list grouping key: none
+printed name: "elevator doors"
+printed plural name: none
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+conversation: none
+description: "It's not clear why everything has to be so extravagant."
+initial appearance: none
+third-plural-pronoun: They-pronoun
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2048">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2049"></child>
+        </children>
+    </item>
+    <item nodeId="node-2049">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
+
+Beck replies, "You got this, Galaxy."
+
+Jones passes through the revolving door and into the lobby, alert to any defenses.
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
+
+Suddenly two robot guards, green and red, emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring your suit radar."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2050"></child>
+            <child nodeId="node-2075"></child>
+            <child nodeId="node-2098"></child>
+        </children>
+    </item>
+    <item nodeId="node-2098">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">Oops! Jones misses.
+
+The two robots coordinate fire over the desk, narrowly missing her.
+Jones: "I could use some ideas here!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2099"></child>
+        </children>
+    </item>
+    <item nodeId="node-2099">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">Jones's shot hits the guard robots dead on, but nothing happens, almost as if the robot had absorbed the energy.
+
+Jones: "Target seems to be absorbing disruptor fire. This will make things a little harder."
+
+
+A robot fires a blistering shot into the front desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2100"></child>
+        </children>
+    </item>
+    <item nodeId="node-2100">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Well, if your energy weapon won't hurt them, maybe direct physical force will?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2101"></child>
+        </children>
+    </item>
+    <item nodeId="node-2101">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "It would have to be something large. Throwing your shoe at them isn't going to cut it."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2102"></child>
+        </children>
+    </item>
+    <item nodeId="node-2102">
+        <command xml:space="preserve">reset help</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2103"></child>
+        </children>
+    </item>
+    <item nodeId="node-2103">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Well, if your energy weapon won't hurt them, maybe direct physical force will?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2075">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2076"></child>
+        </children>
+    </item>
+    <item nodeId="node-2076">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Looks like you're managing okay."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2077"></child>
+        </children>
+    </item>
+    <item nodeId="node-2077">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones crosses the floor carefully, disruptor pistol at the ready.
+
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2078"></child>
+        </children>
+    </item>
+    <item nodeId="node-2078">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+Beck: "Blueprints indicate a closet to the west of you. Might be useful."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2079"></child>
+        </children>
+    </item>
+    <item nodeId="node-2079">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "You saw that utility door near the catering table, right?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2080"></child>
+        </children>
+    </item>
+    <item nodeId="node-2080">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "It's got a numerical lock on it."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2081"></child>
+        </children>
+    </item>
+    <item nodeId="node-2081">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "The code should be around here somewhere."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2082"></child>
+        </children>
+    </item>
+    <item nodeId="node-2082">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Check the front desk."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2083"></child>
+        </children>
+    </item>
+    <item nodeId="node-2083">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Check the front desk."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2084"></child>
+        </children>
+    </item>
+    <item nodeId="node-2084">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Check the front desk."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2085"></child>
+        </children>
+    </item>
+    <item nodeId="node-2085">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2050">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "I dunno, maybe shoot the robots?"
+
+Jones: "I could use some ideas here!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2051"></child>
+        </children>
+    </item>
+    <item nodeId="node-2051">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "I dunno, maybe shoot the robots?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2052"></child>
+        </children>
+    </item>
+    <item nodeId="node-2052">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2053"></child>
+        </children>
+    </item>
+    <item nodeId="node-2053">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2054"></child>
+        </children>
+    </item>
+    <item nodeId="node-2054">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+A robot fires a blistering shot into the front desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2055"></child>
+        </children>
+    </item>
+    <item nodeId="node-2055">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2056"></child>
+        </children>
+    </item>
+    <item nodeId="node-2056">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+Zip! Disruptor fire scorches a nearby couch.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2057"></child>
+        </children>
+    </item>
+    <item nodeId="node-2057">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+The robots intone "Destroy Jones" in an eerie drone.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2058"></child>
+        </children>
+    </item>
+    <item nodeId="node-2058">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+One of the robots fires directly above her head.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2059"></child>
+        </children>
+    </item>
+    <item nodeId="node-2059">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2060"></child>
+        </children>
+    </item>
+    <item nodeId="node-2060">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2061"></child>
+        </children>
+    </item>
+    <item nodeId="node-2061">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2062"></child>
+        </children>
+    </item>
+    <item nodeId="node-2062">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2063"></child>
+        </children>
+    </item>
+    <item nodeId="node-2063">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2064"></child>
+        </children>
+    </item>
+    <item nodeId="node-2064">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+Beck: "Robot on your right!"
+
+One robot tries to flank her, but a shot from her disruptor sends it scurrying back.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2065"></child>
+        </children>
+    </item>
+    <item nodeId="node-2065">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2066"></child>
+        </children>
+    </item>
+    <item nodeId="node-2066">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+One of the robots fires directly above her head.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2067"></child>
+        </children>
+    </item>
+    <item nodeId="node-2067">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">Oops! Jones misses.
+
+Beck: "How's it going in there?"
+
+"Jones: "You know -- like all art, it's hit or miss."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2068"></child>
+        </children>
+    </item>
+    <item nodeId="node-2068">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">Oof. Big miss.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2069"></child>
+        </children>
+    </item>
+    <item nodeId="node-2069">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">Jones's shot goes wide, reflecting off one of the building struts and into the suspended sculpture. The artwork begins to spin wildly, straining its cables.
+
+The two robots coordinate fire over the desk, narrowly missing her.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2070"></child>
+        </children>
+    </item>
+    <item nodeId="node-2070">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2071"></child>
+        </children>
+    </item>
+    <item nodeId="node-2071">
+        <command xml:space="preserve">ask beck about game</command>
+        <result xml:space="preserve">
+Beck: "Well, you can ask about: INTERACTIVE FICTION, COMMANDS, or CREDITS."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2072"></child>
+        </children>
+    </item>
+    <item nodeId="node-2072">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Looks like you're managing okay."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1995">
         <command xml:space="preserve">gonear window washing scaffold</command>
@@ -76,6 +669,84 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
     <item nodeId="node-1996">
         <command xml:space="preserve">x window</command>
         <result xml:space="preserve">Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2088">
+        <command xml:space="preserve">gonear cabinet</command>
+        <result xml:space="preserve">Which do you mean, the chemical cabinet or the filing cabinet?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2089"></child>
+        </children>
+    </item>
+    <item nodeId="node-2089">
+        <command xml:space="preserve">filing</command>
+        <result xml:space="preserve">Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
+
+A screwdriver sits atop the filing cabinet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2090"></child>
+        </children>
+    </item>
+    <item nodeId="node-2090">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "If you haven't yet, get the screwdriver."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2091"></child>
+        </children>
+    </item>
+    <item nodeId="node-2091">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Oops. That didn't turn out well. Look behind the cabinet to get the screwdriver."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2092"></child>
+        </children>
+    </item>
+    <item nodeId="node-2092">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Looks like you'll need to get rid of the cat. What do cats like?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2093"></child>
+        </children>
+    </item>
+    <item nodeId="node-2093">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Give the shrimp tea sandwich to the cat."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2094"></child>
+        </children>
+    </item>
+    <item nodeId="node-2094">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2095"></child>
+        </children>
+    </item>
+    <item nodeId="node-2095">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -243,6 +914,164 @@ third-plural-pronoun: They-pronoun
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-2104">
+        <command xml:space="preserve">ask beck to reset help</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2043">
+        <command xml:space="preserve">ask beck for pistol</command>
+        <result xml:space="preserve">Jones is more than capable of acquiring things by herself.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2044"></child>
+        </children>
+    </item>
+    <item nodeId="node-2044">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "Looks like you're managing okay."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2045"></child>
+        </children>
+    </item>
+    <item nodeId="node-2045">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2046"></child>
+        </children>
+    </item>
+    <item nodeId="node-2046">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
+
+Beck replies, "You got this, Galaxy."
+
+Jones passes through the revolving door and into the lobby, alert to any defenses.
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
+
+Suddenly two robot guards, green and red, emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring your suit radar."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2047"></child>
+        </children>
+    </item>
+    <item nodeId="node-2047">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "I dunno, maybe shoot the robots?"
+
+The robots intone "Destroy Jones" in an eerie drone.
+Jones: "I could use some ideas here!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1997">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "Looks like you're managing okay."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1998"></child>
+        </children>
+    </item>
+    <item nodeId="node-1998">
+        <command xml:space="preserve">ask beck about speeder</command>
+        <result xml:space="preserve">
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1999"></child>
+        </children>
+    </item>
+    <item nodeId="node-1999">
+        <command xml:space="preserve">ask beck about dock</command>
+        <result xml:space="preserve">
+Beck: "Guess everyone went home when Thallium went ape."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2000"></child>
+        </children>
+    </item>
+    <item nodeId="node-2000">
+        <command xml:space="preserve">ask beck about game</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2039">
+        <command xml:space="preserve">ask beck for asdfa</command>
+        <result xml:space="preserve">Jones is more than capable of acquiring things by herself.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2040"></child>
+        </children>
+    </item>
+    <item nodeId="node-2040">
+        <command xml:space="preserve">ask beck for pistol</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2041"></child>
+        </children>
+    </item>
+    <item nodeId="node-2041">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2042"></child>
+        </children>
+    </item>
+    <item nodeId="node-2042">
+        <command xml:space="preserve">ask beck for pistol</command>
+        <result xml:space="preserve">[requesting Beck for the disruptor pistol]
+[requesting Beck for the disruptor pistol - succeeded]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2037">
+        <command xml:space="preserve">ask beck for asdf</command>
+        <result xml:space="preserve">Jones is more than capable of acquiring things by herself.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2038"></child>
+        </children>
+    </item>
+    <item nodeId="node-2038">
+        <command xml:space="preserve">ask beck for pistol</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1989">
         <command xml:space="preserve">ask beck about me</command>
         <result xml:space="preserve">
@@ -295,6 +1124,240 @@ Galaxy Jones is in the western corner of the penthouse. The purpose of this room
     <item nodeId="node-1994">
         <command xml:space="preserve">x pillar</command>
         <result xml:space="preserve">There seems to be nothing special about it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2001">
+        <command xml:space="preserve">ask beck about game</command>
+        <result xml:space="preserve">Beck: "Well, you can ask about: INTERACTIVE FICTION, COMMANDS, or SCORING."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2003"></child>
+        </children>
+    </item>
+    <item nodeId="node-2003">
+        <command xml:space="preserve">ask about interactive fiction</command>
+        <result xml:space="preserve">Beck: "According to Wikipedia, 'Interactive fiction, often abbreviated IF, is software simulating environments in which players use text commands to control characters and influence the environment.' In more plain language, in this game you'll explore places, acquire objects, and defeat enemies all by typing commands. For instance, if you found an axe, you would type TAKE AXE to take it, and DROP AXE to drop it again."
+
+You can move around in the world by typing commands like GO NORTH, which can be abbreviated as N. If you need to refresh your memory about your surroundings you can say LOOK, or just L. To see what you're holding, use INVENTORY, or I. You can find out more about that axe from before by typing EXAMINE AXE, or just X AXE."
+
+Of course, any game has limitations, so you can't just enter any old sentence and expect to have it understood. ASK BECK ABOUT COMMANDS for a partial list of commands that will work."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2035">
+        <command xml:space="preserve">ask beck about akljsdf</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2036"></child>
+        </children>
+    </item>
+    <item nodeId="node-2036">
+        <command xml:space="preserve">ask beck for pistol</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2023">
+        <command xml:space="preserve">ask about game</command>
+        <result xml:space="preserve">(addressing Beck)
+
+Beck: "Well, you can ask about: INTERACTIVE FICTION, COMMANDS, or SCORING."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2024"></child>
+        </children>
+    </item>
+    <item nodeId="node-2024">
+        <command xml:space="preserve">ask about interactive fiction</command>
+        <result xml:space="preserve">
+Beck: "According to Wikipedia, 'Interactive fiction, often abbreviated IF, is software simulating environments in which players use text commands to control characters and influence the environment.' In more plain language, in this game you'll explore places, acquire objects, and defeat enemies all by typing commands. For instance, if you found an axe, you would type TAKE AXE to take it, and DROP AXE to drop it again."
+
+You can move around in the world by typing commands like GO NORTH, which can be abbreviated as N. If you need to refresh your memory about your surroundings you can say LOOK, or just L. To see what you're holding, use INVENTORY, or I. You can find out more about that axe from before by typing EXAMINE AXE, or just X AXE."
+
+Of course, any game has limitations, so you can't just enter any old sentence and expect to have it understood. ASK BECK ABOUT COMMANDS for a partial list of commands that will work."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2025"></child>
+        </children>
+    </item>
+    <item nodeId="node-2025">
+        <command xml:space="preserve">ask about scoring</command>
+        <result xml:space="preserve">
+Every once in a while you'll get some points for doing something especially great. There are 0 points.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2026">
+        <command xml:space="preserve">ask about credits</command>
+        <result xml:space="preserve">(addressing Beck)
+
+"Here are the credits:"
+
+Extensions by:
+Standard Rules version 3/120430 by Graham Nelson
+Deluxe Doors version 4 by Emily Short
+Skeleton Keys by Emily Short
+Epistemology version 9 by Eric Eve
+Conversation Framework version 11 by Eric Eve
+Property Checking version 4 by Emily Short
+Gender Options version 3/210331 by Nathanael Nerode
+
+Story by Phil Riley.
+Programming by Phil Riley.
+Playtesting by Leon Lin, Oliver Matthias, and Jade.
+Invaluable inspiration from Laura Taalman.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2028"></child>
+        </children>
+    </item>
+    <item nodeId="node-2028">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "Looks like you're managing okay."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2029"></child>
+        </children>
+    </item>
+    <item nodeId="node-2029">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2030"></child>
+        </children>
+    </item>
+    <item nodeId="node-2030">
+        <command xml:space="preserve">ask for tomato</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2031"></child>
+        </children>
+    </item>
+    <item nodeId="node-2031">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2032"></child>
+        </children>
+    </item>
+    <item nodeId="node-2032">
+        <command xml:space="preserve">ask for tomato</command>
+        <result xml:space="preserve">[implicit-imploring "tomato"]
+[(1) imploring Beck for "tomato"]
+[(1) imploring Beck for "tomato" - succeeded]
+
+[implicit-imploring "tomato" - failed]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2033"></child>
+        </children>
+    </item>
+    <item nodeId="node-2033">
+        <command xml:space="preserve">tell beck about foo</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2034"></child>
+        </children>
+    </item>
+    <item nodeId="node-2034">
+        <command xml:space="preserve">show beck the pistol</command>
+        <result xml:space="preserve">[showing the disruptor pistol to Beck]
+Beck is unimpressed.
+[showing the disruptor pistol to Beck - failed the block showing rule]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2009">
+        <command xml:space="preserve">ask about commands</command>
+        <result xml:space="preserve">(addressing Beck)
+
+"Here's a partial list of commands with explanations and/or examples:"
+ 
+ * TAKE: TAKE GOLD COIN
+ * DROP: DROP GOLD COIN
+ * I: list the player's possessions
+ * X: examine something; X GOLD COIN
+ * L: look around
+ * CLIMB: CLIMB BEANSTALK
+ * GET OFF: GET OFF BEANSTALK
+ * PUT INTO: PUT GOLD COIN INTO TREASURE CHEST
+ * PUSH: PUSH BIG RED BUTTON
+ * PUT INTO: PUT GOLD COIN INTO TREASURE CHEST
+ 
+ not to mention POUR, TYPE, OPEN, CLOSE, SHOOT, and a few others you'll have to figure out for yourself.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2019"></child>
+        </children>
+    </item>
+    <item nodeId="node-2019">
+        <command xml:space="preserve">glklist</command>
+        <result xml:space="preserve">Window 50 (0): pair, no parent (root), stream 27
+Window 48 (201): textbuffer, parent is window 50, stream 25
+Window 49 (202): textgrid, parent is window 50, stream 26
+Stream 27 (0)
+Stream 26 (0)
+Stream 25 (0)
+Stream 21 (0)
+Stream 22 (0)
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2005">
+        <command xml:space="preserve">ask abogut game</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2006"></child>
+        </children>
+    </item>
+    <item nodeId="node-2006">
+        <command xml:space="preserve">ask about game</command>
+        <result xml:space="preserve">(addressing Beck)
+Beck: "Well, you can ask about: INTERACTIVE FICTION, COMMANDS, or SCORING."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2007"></child>
+        </children>
+    </item>
+    <item nodeId="node-2007">
+        <command xml:space="preserve">ask about interactive fiction</command>
+        <result xml:space="preserve">Beck: "According to Wikipedia, 'Interactive fiction, often abbreviated IF, is software simulating environments in which players use text commands to control characters and influence the environment.' In more plain language, in this game you'll explore places, acquire objects, and defeat enemies all by typing commands. For instance, if you found an axe, you would type TAKE AXE to take it, and DROP AXE to drop it again."
+
+You can move around in the world by typing commands like GO NORTH, which can be abbreviated as N. If you need to refresh your memory about your surroundings you can say LOOK, or just L. To see what you're holding, use INVENTORY, or I. You can find out more about that axe from before by typing EXAMINE AXE, or just X AXE."
+
+Of course, any game has limitations, so you can't just enter any old sentence and expect to have it understood. ASK BECK ABOUT COMMANDS for a partial list of commands that will work."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2008"></child>
+        </children>
+    </item>
+    <item nodeId="node-2008">
+        <command xml:space="preserve">ask beck about commands</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
