@@ -1474,7 +1474,7 @@ window-thing is scenery in the window washing scaffold. It is privately-named. T
 Does the player mean opening the window washing scaffold: it is very unlikely;
 		
 fakeroom10 is west of window washing scaffold and inside from window washing scaffold.
-fakeroom10 is east of air handling room and outside of air handling room.
+fakeroom11 is east of air handling room and outside of air handling room. It is atmo-thin.
 The description of fakeroom10 is "this room is fake.".
 
 [Every turn:
@@ -1485,43 +1485,121 @@ The description of fakeroom10 is "this room is fake.".
 	otherwise:
 		now fakeroom10 is not apparent;]
 
-Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 10:
+Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is open:
 	try entering the exhaust vent;
+	if the location is the air handling room:
+		now the atmo-suit is unneeded;
+		if the player wears the atmo-suit:
+			try taking off the atmo-suit;
+
+Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is closed:
+	say "[We] will need to remove the vent cover first.";
 		
 Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 9:
 	move player to the cybernetica office;
+	if the location is the cybernetica office:
+		now the atmo-suit is unneeded;
+		if the player wears the atmo-suit:
+			try taking off the atmo-suit;
+		
+Instead of going west from the ledge:
+	move player to the cybernetica office;
+	if the location is the cybernetica office:
+		now the atmo-suit is unneeded;
+		if the player wears the atmo-suit:
+			try taking off the atmo-suit;
+		
+Instead of going inside from the ledge:
+	move player to the cybernetica office;
+	if the location is the cybernetica office:
+		now the atmo-suit is unneeded;
+		if the player wears the atmo-suit:
+			try taking off the atmo-suit;
 		
 Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 8:
 	say "None of the windows here are open.";
 		
-Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 10:
+Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is open:
 	try entering the exhaust vent;
+	if the location is the air handling room:
+		now the atmo-suit is unneeded;
+		if the player wears the atmo-suit:
+			try taking off the atmo-suit;
+		
+Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is open:
+	say "[We] will need to remove the vent cover first.";
 		
 Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 9:
 	move player to the cybernetica office;
+	if the location is the cybernetica office:
+		now the atmo-suit is unneeded;
+		if the player wears the atmo-suit:
+			try taking off the atmo-suit;
 		
 Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 8:
 	say "None of the windows here are open.";
 	
 Instead of going east from the Cybernetica office when the floor of the window washing scaffold is 9:
+	now the atmo-suit is needed;
+	if the atmo-suit is touchable:
+		try wearing the atmo-suit;
+	if the player is not wearing the atmo-suit:
+		now the atmo-suit is unneeded;
+		say "[We] needs an Atmo-Suit to go outside." instead;
 	move the player to the window washing scaffold;
 	
 Instead of going east from the Cybernetica office when the floor of the window washing scaffold is not 9:
+	now the atmo-suit is needed;
+	if the atmo-suit is touchable:
+		try wearing the atmo-suit;
+	if the player is not wearing the atmo-suit:
+		now the atmo-suit is unneeded;
+		say "[We] needs an Atmo-Suit to go outside." instead;
 	move the player to the ledge;
 	
 Instead of going outside from the Cybernetica office when the floor of the window washing scaffold is 9:
+	now the atmo-suit is needed;
+	if the atmo-suit is touchable:
+		try wearing the atmo-suit;
+	if the player is not wearing the atmo-suit:
+		now the atmo-suit is unneeded;
+		say "[We] needs an Atmo-Suit to go outside." instead;
 	move the player to the window washing scaffold;
 	
 Instead of going outside from the Cybernetica office when the floor of the window washing scaffold is not 9:
+	now the atmo-suit is needed;
+	if the atmo-suit is touchable:
+		try wearing the atmo-suit;
+	if the player is not wearing the atmo-suit:
+		now the atmo-suit is unneeded;
+		say "[We] needs an Atmo-Suit to go outside." instead;
 	move the player to the ledge;
 
 Instead of going east from the air handling room when the floor of the window washing scaffold is 10:
+	now the atmo-suit is needed;
+	if the atmo-suit is touchable:
+		try wearing the atmo-suit;
+	if the player is not wearing the atmo-suit:
+		now the atmo-suit is unneeded;
+		say "[We] needs an Atmo-Suit to go outside." instead;
 	move the player to the window washing scaffold;
 
 Instead of going inside from the air handling room when the floor of the window washing scaffold is 10:
+	now the atmo-suit is needed;
+	if the atmo-suit is touchable:
+		try wearing the atmo-suit;
+	if the player is not wearing the atmo-suit:
+		now the atmo-suit is unneeded;
+		say "[We] needs an Atmo-Suit to go outside." instead;
 	move the player to the window washing scaffold;
 
 Instead of going outside from the air handling room when the floor of the window washing scaffold is 10:
+	now the atmo-suit is needed;
+	if the atmo-suit is touchable:
+		try wearing the atmo-suit;
+	if the player is not wearing the atmo-suit:
+		now the atmo-suit is unneeded;
+		say "[We] needs an Atmo-Suit to go outside." instead;
 	move the player to the window washing scaffold;
 
 Instead of going east from the air handling room when the floor of the window washing scaffold is not 10:
@@ -1612,7 +1690,7 @@ understand "remove [exhaust vent] with [screwdriver]" as unscrewing it with;
 Instead of entering the exhaust vent when the exhaust vent is open for the first time:
 	say "[We] climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.";
 	score 1;
-	now the player is in the air handling room;
+	now the player is in the air handling room;	
 	try taking off the atmo-suit;
 	converse "Jones: 'Ha! I'm in!'
 	
@@ -1630,6 +1708,7 @@ Instead of entering the exhaust vent when the exhaust vent is open:
 Instead of going nowhere from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is open:
 	if the noun is west:
 		try entering the exhaust vent;
+		try taking off the atmo-suit;
 	otherwise:
 		say "[text of the can't go that way rule response (A)]";
 		
@@ -3151,7 +3230,7 @@ the description of light-meter is "no need for a description".
 	
 Volume 14 - Not for release
 
-DEBUG is false. 
+DEBUG is true. 
 
 Understand "* [text]" as a mistake ("Noted.").
 

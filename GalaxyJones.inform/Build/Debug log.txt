@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 26471 words long.
+I've now read your source text, which is 26906 words long.
 
 
 -----------------------------------------------------
@@ -109,7 +109,7 @@ Regional: CONSTANT_VNT'the ninth-floor'-region(I229_ninth_floor)(I144'ninth-floo
  == region
 Regional: CONSTANT_VNT'the tenth-floor-region'-region(I248_tenth_floor_region)(I163'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I416_rooftop)(I329'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I417_rooftop)(I330'rooftop')
  == region
 Regional: CONSTANT_VNT'the tenth-floor-region'-region(I248_tenth_floor_region)(I163'tenth-floor-region')
  == region
@@ -212,7 +212,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 174 files written as streams.
-CPU time: 322 centiseconds
+CPU time: 334 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

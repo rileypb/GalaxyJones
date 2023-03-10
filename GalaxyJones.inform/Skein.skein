@@ -4,7 +4,36 @@
     <generator>Inform Mac Client (Inform version )</generator>
     <item nodeId="node-1002">
         <command xml:space="preserve">GalaxyJones</command>
-        <result xml:space="preserve"> _________      __                     _____                     
+        <result xml:space="preserve">
+
+
+The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.
+
+"Yes?" she says in a voice thick with sleep.
+
+"Hello, is this Galaxy Jones?" comes the voice from the speaker.
+
+"Yes, this is she. To whom am I speaking?"
+
+"Oh, hi, Ms Jones. This is Patty, I work for Admiral P. X. Thallium, CEO of Diversified Entanglements, LLC. He asked me to forward a message to you."
+
+"He did, did he? Now what would the Admiral want to say to me?"
+
+"Oh, it's not from the Admiral himself. It's from one Miss Europa Callisto. I must say, the Admiral was quite surprised when I said I didn't know who she is. Apparently she's famous."
+
+"Yes, quite famous, but why would she send a message to me, and why on Mars would she send it through Thallium? But never mind, what's the message?"
+
+Patty can be heard rustling paper. "Let's see... it's here somewhere. Oh yes, here it is. The message is 'Help.'"
+
+Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken hostage the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's inevitable demise. The Admiral has most cordially invited Ms Jones to break into his building and attempt a rescue.
+
+"Oh I will," Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.
+
+Plus she'll get to meet Europa Callisto. That'll be totally sweet.
+
+fakeroom11 has no description.
+
+ _________      __                     _____                     
  __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
  _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
  / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
@@ -51,6 +80,7 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-2107"></child>
             <child nodeId="node-1995"></child>
             <child nodeId="node-2048"></child>
+            <child nodeId="node-2295"></child>
             <child nodeId="node-2086"></child>
         </children>
     </item>
@@ -168,6 +198,517 @@ description: "It's not clear why everything has to be so extravagant."
 initial appearance: none
 third-plural-pronoun: They-pronoun
 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2295">
+        <command xml:space="preserve">purloin atmo-suit</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2296"></child>
+        </children>
+    </item>
+    <item nodeId="node-2296">
+        <command xml:space="preserve">purloin screwdriver</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2297"></child>
+        </children>
+    </item>
+    <item nodeId="node-2297">
+        <command xml:space="preserve">gonear cybernetica office</command>
+        <result xml:space="preserve">Galaxy Jones is in the cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities.
+
+As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
+
+Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
+
+Beck: "What's the situation?"
+
+Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I might get a shot in, but it might just absorb it anyway."
+
+Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2298"></child>
+        </children>
+    </item>
+    <item nodeId="node-2298">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Jones creeps a little ways toward the guard robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2299"></child>
+        </children>
+    </item>
+    <item nodeId="node-2299">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Slowly, slowly, Jones gets a little closer. Just a little more...
+
+She must have poked up her shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2300"></child>
+        </children>
+    </item>
+    <item nodeId="node-2300">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Jones is right up next to the robot, crouched beneath a desk. She'll never get a better shot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2301"></child>
+        </children>
+    </item>
+    <item nodeId="node-2301">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">Jones aims the pistol upward under the robot's enhanced armor and fires. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones: "Better than a video game. "
+
+Beck: "Nice, but don't forget to credit your handler."
+
+Jones: "Yes, yes, thanks for helping me not get killed."
+
+Beck: "You're welcome."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2302"></child>
+        </children>
+    </item>
+    <item nodeId="node-2302">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones: "I'm going out the window to see if I can find a way to get up to the tenth floor."
+
+Beck: "Whoa whoa whoa, Jones. You know you're not good with heights."
+
+Jones: "Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch."
+
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. She's plastered up against the wall, trying not to look down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2311"></child>
+        </children>
+    </item>
+    <item nodeId="node-2311">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2312"></child>
+        </children>
+    </item>
+    <item nodeId="node-2312">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Galaxy Jones is in the cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+Jones takes off the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2324"></child>
+            <child nodeId="node-2313"></child>
+        </children>
+    </item>
+    <item nodeId="node-2313">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  a screwdriver
+  an Atmo-Suit (being worn)
+  a disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2324">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. She's plastered up against the wall, trying not to look down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2325"></child>
+        </children>
+    </item>
+    <item nodeId="node-2325">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">Galaxy Jones is in the cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+Jones takes off the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2326"></child>
+        </children>
+    </item>
+    <item nodeId="node-2326">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. She's plastered up against the wall, trying not to look down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2327"></child>
+        </children>
+    </item>
+    <item nodeId="node-2327">
+        <command xml:space="preserve">look down</command>
+        <result xml:space="preserve">Okay, fine. Jones look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below her.
+
+Jones: "Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up."
+
+Beck: "Take it easy, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2328"></child>
+        </children>
+    </item>
+    <item nodeId="node-2328">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Jones drops off the ledge onto the scaffold. It rocks unnervingly for a moment.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2329"></child>
+        </children>
+    </item>
+    <item nodeId="node-2329">
+        <command xml:space="preserve">push up</command>
+        <result xml:space="preserve">(the scaffold up button)
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Beck?"
+
+Beck: "Yes?"
+
+Jones: "I hate it out here."
+
+Beck: "Well, there's the open window right next to you."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2330"></child>
+        </children>
+    </item>
+    <item nodeId="node-2330">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Galaxy Jones is in the cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+Jones takes off the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2331"></child>
+        </children>
+    </item>
+    <item nodeId="node-2331">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2332"></child>
+        </children>
+    </item>
+    <item nodeId="node-2332">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">Galaxy Jones is in the cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+Jones takes off the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2333"></child>
+        </children>
+    </item>
+    <item nodeId="node-2333">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2334"></child>
+        </children>
+    </item>
+    <item nodeId="node-2334">
+        <command xml:space="preserve">push up</command>
+        <result xml:space="preserve">(the scaffold up button)
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Alright, I'm by the tenth floor now. What's this grill thing here?"
+
+Beck: "That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can get the cover off you should be able to access the whole floor from here."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2335"></child>
+        </children>
+    </item>
+    <item nodeId="node-2335">
+        <command xml:space="preserve">open vent</command>
+        <result xml:space="preserve">Jones loosens the screws with the screwdriver and removes the grill from the vent.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2336"></child>
+        </children>
+    </item>
+    <item nodeId="node-2336">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">Jones climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+She takes off the Atmo-Suit.
+
+Jones: "Ha! I'm in!"
+
+Beck: "Be careful, you're likely to run into more resistance here. The floor is all one open office, so any guard robots will have good line of sight."
+
+Jones: "Got it."
+
+Beck: "And Jones? Save your game."
+
+She isn't wearing the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2337"></child>
+        </children>
+    </item>
+    <item nodeId="node-2337">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Galaxy Jones is on a window washing scaffold.
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2338"></child>
+        </children>
+    </item>
+    <item nodeId="node-2338">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2339"></child>
+        </children>
+    </item>
+    <item nodeId="node-2339">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "standard set going variables rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "check object is interactible rule" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is open" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "check object is interactible rule" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "Instead of entering the exhaust vent when the exhaust vent is open for the first time" applies.]
+Jones climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Rule "notify score changes rule" applies.]
+[Your score has just gone up by one point.]
+
+[Rule "determine visibility ceiling rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "check object is interactible rule" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "declare everything unmentioned rule" applies.]
+[Rule "new room description heading rule" applies.]
+Galaxy Jones is in the air handling room. [Rule "room description body text rule" applies.]
+There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+[Rule "room description paragraphs about objects rule" applies.]
+[Rule "initialise locale description rule" applies.]
+[Rule "find notable locale objects rule" applies.]
+[Rule "standard notable locale objects rule" applies.]
+[Rule "Before printing the locale description" applies.]
+[Rule "interesting locale paragraphs rule" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "new you-can-also-see rule" applies.]
+[Rule "check new arrival rule" applies.]
+[Rule "mark items as seen when looking rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "After looking" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "other people looking rule" applies.]
+[Rule "report looking" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "check object is interactible rule" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't take off what's not worn rule" applies.]
+[Rule "can't exceed carrying capacity when taking off rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "standard taking off rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "standard report taking off rule" applies.]
+She takes off the Atmo-Suit.
+[Rule "last specific action-processing rule" applies.]
+
+Jones: "Ha! I'm in!"
+
+Beck: "Be careful, you're likely to run into more resistance here. The floor is all one open office, so any guard robots will have good line of sight."
+
+Jones: "Got it."
+
+Beck: "And Jones? Save your game."
+
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "check object is interactible rule" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't take off what's not worn rule" applies.]
+She isn't wearing the Atmo-Suit.
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack" applies.]
+[Rule "reset protocol rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+[Rule "show us the people rule" applies.]
+[Rule "clear LPR rule" applies.]
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
@@ -291,7 +832,47 @@ Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2076"></child>
+            <child nodeId="node-2267"></child>
         </children>
+    </item>
+    <item nodeId="node-2267">
+        <command xml:space="preserve">gonear ninth floor</command>
+        <result xml:space="preserve">Which do you mean, the ninth floor elevator shaft, the ninth floor stairwell, the ninth floor north hallway, the ninth floor south hallway, the ninth floor elevator door, or the ninth floor elevator hall?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2268"></child>
+        </children>
+    </item>
+    <item nodeId="node-2268">
+        <command xml:space="preserve">shaft</command>
+        <result xml:space="preserve">Galaxy Jones is in the ninth floor elevator shaft. The door here is closed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2269"></child>
+        </children>
+    </item>
+    <item nodeId="node-2269">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the ninth floor elevator door)
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones: "Finally out of the shaft. That was quite a climb."
+
+Beck: "This floor is just offices. Check the building management office to the west. It might have some useful stuff."
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2076">
         <command xml:space="preserve">ask for help</command>
@@ -1342,7 +1923,8 @@ Galaxy Jones is in the air handling room. There is a good number of loud fans an
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2174"></child>
+        <children><child nodeId="node-2271"></child>
+            <child nodeId="node-2174"></child>
         </children>
     </item>
     <item nodeId="node-2174">
@@ -1656,6 +2238,148 @@ The mauve guard robot struggles against her hold on it, to no avail.
 Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons.
 
 The remains of the mauve guard robot are sprawled on the ground.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2271">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">The atmosphere is too thin out there. Jones needs protective gear.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2272"></child>
+        </children>
+    </item>
+    <item nodeId="node-2272">
+        <command xml:space="preserve">purloin atmo</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2273"></child>
+        </children>
+    </item>
+    <item nodeId="node-2273">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones puts on the Atmo-Suit.
+
+The scaffold is not at this floor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2274"></child>
+        </children>
+    </item>
+    <item nodeId="node-2274">
+        <command xml:space="preserve">gonear scaffold</command>
+        <result xml:space="preserve">Which do you mean, the window washing scaffold, the scaffold control panel, the scaffold up button, or the scaffold down button?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2275"></child>
+        </children>
+    </item>
+    <item nodeId="node-2275">
+        <command xml:space="preserve">window</command>
+        <result xml:space="preserve">Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2276"></child>
+        </children>
+    </item>
+    <item nodeId="node-2276">
+        <command xml:space="preserve">push up</command>
+        <result xml:space="preserve">(the scaffold up button)
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Beck?"
+
+Beck: "Yes?"
+
+Jones: "I hate it out here."
+
+Beck: "Well, there's the open window right next to you."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2277"></child>
+        </children>
+    </item>
+    <item nodeId="node-2277">
+        <command xml:space="preserve">push up</command>
+        <result xml:space="preserve">(the scaffold up button)
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Alright, I'm by the tenth floor now. What's this grill thing here?"
+
+Beck: "That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can get the cover off you should be able to access the whole floor from here."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2278"></child>
+        </children>
+    </item>
+    <item nodeId="node-2278">
+        <command xml:space="preserve">gonear rir</command>
+        <result xml:space="preserve">There seems to be no such object anywhere in the model world.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2279"></child>
+        </children>
+    </item>
+    <item nodeId="node-2279">
+        <command xml:space="preserve">gonear air</command>
+        <result xml:space="preserve">(the air handling room)
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2280"></child>
+        </children>
+    </item>
+    <item nodeId="node-2280">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones's already wearing that!
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2281"></child>
+        </children>
+    </item>
+    <item nodeId="node-2281">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">That's not something Jones can enter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2282"></child>
+        </children>
+    </item>
+    <item nodeId="node-2282">
+        <command xml:space="preserve">gonear air</command>
+        <result xml:space="preserve">(the air handling room)
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2283"></child>
+        </children>
+    </item>
+    <item nodeId="node-2283">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  an Atmo-Suit
+  a disruptor pistol
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
