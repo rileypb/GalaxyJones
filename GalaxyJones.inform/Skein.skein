@@ -233,6 +233,10 @@ South of the cage, Thallium crosses the roof to the flyer pad, where he boards t
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">Jones gets onto the cage.
 
+Galaxy Jones is standing on the cage. The closely-set silnium bars seem to dash all hope of a rescue.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
 Thallium's flyer hovers over the rooftop. "Jones!"  he bellows. "Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die."
 
 Jones rolls her eyes.
@@ -251,6 +255,189 @@ A little ways off, a small red flyer aims for the rooftop and accelerates.
 Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue.
 
 Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2418"></child>
+            <child nodeId="node-2400"></child>
+        </children>
+    </item>
+    <item nodeId="node-2400">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">Jones gets onto the cage.
+
+Galaxy Jones is standing on the cage. The closely-set silnium bars seem to dash all hope of a rescue.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2401"></child>
+        </children>
+    </item>
+    <item nodeId="node-2401">
+        <command xml:space="preserve">tie hooks to cage</command>
+        <result xml:space="preserve">(the cage)
+
+Jones attaches one end of the cable to the cage, and throws the other end up to the flyer where it hooks around the rail, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the flyer and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
+
+The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto.
+
+"Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!"
+
+Europa moans but doesn't show any signs of having understood Jones.
+
+Galaxy Jones is in the cage. The whole structure is tilted, leaving a hole at the eastern end.
+
+Jones is kneeling at Europa Callisto's side, trying to rouse her.
+
+The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2402"></child>
+        </children>
+    </item>
+    <item nodeId="node-2402">
+        <command xml:space="preserve">ask beck about europa</command>
+        <result xml:space="preserve">
+Beck: "You'll need to revive her if you want to get her out of there."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2403"></child>
+        </children>
+    </item>
+    <item nodeId="node-2403">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "Congratulations! You made it this far."
+
+Beck sticks his head out of the door of the flyer and yells "C'mon Jones, get Europa and get in the flyer!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2404"></child>
+        </children>
+    </item>
+    <item nodeId="node-2404">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "You need to break Europa out of the cage and get her to a rescue flyer."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2405"></child>
+        </children>
+    </item>
+    <item nodeId="node-2405">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "Don't worry, the rescue flyer will show up on time."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2406"></child>
+        </children>
+    </item>
+    <item nodeId="node-2406">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "To break open the cage, you'll need to find some way to apply a great force to it."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2407"></child>
+        </children>
+    </item>
+    <item nodeId="node-2407">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "Hook the cable to the flyer and the cage by saying THROW CABLE AT FLYER."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2408"></child>
+        </children>
+    </item>
+    <item nodeId="node-2408">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "Come up short? Get higher."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2409"></child>
+        </children>
+    </item>
+    <item nodeId="node-2409">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "Climb the cage."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2410"></child>
+        </children>
+    </item>
+    <item nodeId="node-2410">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "Now throw the cable."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2411"></child>
+        </children>
+    </item>
+    <item nodeId="node-2411">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "Now you're in the cage but Europa is unresponsive. How do you revive her?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2412"></child>
+        </children>
+    </item>
+    <item nodeId="node-2412">
+        <command xml:space="preserve">ask beck for help</command>
+        <result xml:space="preserve">
+Beck: "The water of course!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2413"></child>
+        </children>
+    </item>
+    <item nodeId="node-2413">
+        <command xml:space="preserve">give water to europa</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2418">
+        <command xml:space="preserve">throw cable at rails</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2419"></child>
+        </children>
+    </item>
+    <item nodeId="node-2419">
+        <command xml:space="preserve">x rails</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2420"></child>
+        </children>
+    </item>
+    <item nodeId="node-2420">
+        <command xml:space="preserve">x flyer</command>
+        <result xml:space="preserve">Hovering above Jones, it's distinctly menacing. It's not visibly armed, but it conveys the impression of a beast about to strike. It's flying low, the rails of its landing gear just a few feet above Jones's head.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

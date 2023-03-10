@@ -2414,7 +2414,8 @@ The rooftop seating is scenery in the penthouse roof. "[We] has other things to 
 
 Admiral-Thallium is in penthouse roof.
 
-Admiral Thallium's Flyer is a backdrop. It is in penthouse roof, cage, and flyer pad. The description is "this is a secret message".
+Admiral Thallium's Flyer is a backdrop. It is in penthouse roof, cage, and flyer pad. The description is "this is a secret message". Understand "rails/gear/landing" as Admiral Thallium's Flyer.
+
 Instead of examining Admiral Thallium's flyer during On-Rooftop:
 	say "It's big and green and black. Looks like a Sirius XE."
 

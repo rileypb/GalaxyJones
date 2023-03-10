@@ -16054,7 +16054,7 @@ Object -> I428_cage_thing ""
     with IK6_Count 5
     with IK6_Link nothing
     with KD_Count 6
-    with parse_name Parse_Name_GV214
+    with parse_name Parse_Name_GV215
     with action_bitmap 0 0 0 0 0 0 0 0 
     with initial BC_1639
     with list_together BC_1640
@@ -17234,6 +17234,7 @@ Object I426_admiral_thallium_s_flye ""
     with IK7_Link nothing
     with KD_Count 7
     with name 'admiral' 'thallium^s' 'flyer' 'backdrops//p' 
+    with parse_name Parse_Name_GV214
     with action_bitmap 0 0 0 0 0 0 0 0 
     with initial BC_2045
     with list_together BC_2046
@@ -17425,7 +17426,7 @@ Constant V2V_Route_Cache_75 = 0;
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
 Array tab_0_0 table $0664 0 (BC_2074) (BC_2075) (BC_2076) (BC_2077) (BC_2078) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
-Array tab_0_2 table $2066 2 (Consult_Grammar_217) (Consult_Grammar_218) (Consult_Grammar_219) (Consult_Grammar_220) (Consult_Grammar_221) ;
+Array tab_0_2 table $2066 2 (Consult_Grammar_218) (Consult_Grammar_219) (Consult_Grammar_220) (Consult_Grammar_221) (Consult_Grammar_222) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
@@ -18307,7 +18308,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 
 [ MistakeActionSub ;
     switch(understand_as_mistake_number) {
-        466: ParserError(BC_2094);
+        467: ParserError(BC_2094);
         default: "I didn't understand that sentence.";
     }
     say__p = 1;
@@ -20076,7 +20077,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 ! No specific request
 ! Before answering someone that ~yes~ ( this is the change answering yes to saying yes rule ):
 [ R_952 ;
-    if ((((action ==##Answer) &&  (actor==player) && ((noun ofclass K8_person)) && (Consult_Grammar_222(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Answer) &&  (actor==player) && ((noun ofclass K8_person)) && (Consult_Grammar_223(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_952, 952);
     ! [2: try saying yes]
@@ -20089,7 +20090,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 ! No specific request
 ! Before answering someone that ~no~ ( this is the change answering no to saying no rule ):
 [ R_953 ;
-    if ((((action ==##Answer) &&  (actor==player) && ((noun ofclass K8_person)) && (Consult_Grammar_223(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Answer) &&  (actor==player) && ((noun ofclass K8_person)) && (Consult_Grammar_224(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_953, 953);
     ! [2: try saying no]
@@ -20102,7 +20103,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 ! No specific request
 ! Before answering someone that ~sorry~ ( this is the change answering sorry to saying sorry rule ):
 [ R_954 ;
-    if ((((action ==##Answer) &&  (actor==player) && ((noun ofclass K8_person)) && (Consult_Grammar_224(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Answer) &&  (actor==player) && ((noun ofclass K8_person)) && (Consult_Grammar_225(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_954, 954);
     ! [2: try asking the noun to try saying sorry]
@@ -22793,7 +22794,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     return I7RBLK; ! nothing
 ];
 [ KERNEL_28 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_225(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_226(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1405, 1405);
     ! [2: lb]
@@ -22818,7 +22819,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     return I7RBLK; ! nothing
 ];
 [ KERNEL_29 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_226(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_227(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1406, 1406);
     ! [2: lb]
@@ -22843,7 +22844,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     return I7RBLK; ! nothing
 ];
 [ KERNEL_30 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_227(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_228(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1409, 1409);
     ! [2: lb]
@@ -22866,7 +22867,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     return I7RBLK; ! nothing
 ];
 [ KERNEL_31 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_228(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_229(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1410, 1410);
     ! [2: lb]
@@ -22885,7 +22886,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 ! No specific request
 ! Instead of asking a female person about ~herself~ ( this is the asking a woman about herself rule ):
 [ R_914 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun ofclass K8_person) && ((Adj_92_t1_v10(noun)))) && (Consult_Grammar_229(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun ofclass K8_person) && ((Adj_92_t1_v10(noun)))) && (Consult_Grammar_230(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_914, 914);
     ! [2: try quizzing the noun about the noun]
@@ -22898,7 +22899,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 ! No specific request
 ! Instead of asking a male person about ~himself~ ( this is the asking a man about himself rule ):
 [ R_915 ;
-    if ((((action ==##Ask) &&  (actor==player) && ((noun ofclass K8_person) && ((Adj_91_t1_v10(noun)))) && (Consult_Grammar_230(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
+    if ((((action ==##Ask) &&  (actor==player) && ((noun ofclass K8_person) && ((Adj_91_t1_v10(noun)))) && (Consult_Grammar_231(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_915, 915);
     ! [2: try quizzing the noun about the noun]
@@ -31203,17 +31204,17 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     {! [3: if the player is the actor]
         if (((player == actor)))
         {! [4: if the player's command includes ~stand~]
-            if (((matched_text=SnippetIncludes(Consult_Grammar_231,players_command))))
+            if (((matched_text=SnippetIncludes(Consult_Grammar_232,players_command))))
             {! [5: say ~[regarding the noun][They're] not something [we] [can] stand on.~ ( a )]
                 say__p=1;! [6: ~[regarding the noun][They're] not something [we] [can] stand on.~ ( a )]
                 ParaContent(); print (TEXT_TY_Say) (TX_R_234); new_line; .L_Say348; .L_SayX347;} else {
                 ! [7: if the player's command includes ~sit~]
-                if (((matched_text=SnippetIncludes(Consult_Grammar_232,players_command))))
+                if (((matched_text=SnippetIncludes(Consult_Grammar_233,players_command))))
                 {! [8: say ~[regarding the noun][They're] not something [we] [can] sit down on.~ ( b )]
                     say__p=1;! [9: ~[regarding the noun][They're] not something [we] [can] sit down on.~ ( b )]
                     ParaContent(); print (TEXT_TY_Say) (TX_R_235); new_line; .L_Say349; .L_SayX348;} else {
                     ! [10: if the player's command includes ~lie~]
-                    if (((matched_text=SnippetIncludes(Consult_Grammar_233,players_command))))
+                    if (((matched_text=SnippetIncludes(Consult_Grammar_234,players_command))))
                     {! [11: say ~[regarding the noun][They're] not something [we] [can] lie down on.~ ( c )]
                         say__p=1;! [12: ~[regarding the noun][They're] not something [we] [can] lie down on.~ ( c )]
                         ParaContent(); print (TEXT_TY_Say) (TX_R_236); new_line; .L_Say350; .L_SayX349;} else {
@@ -57485,9 +57486,9 @@ Array CheckTableEntryIsNonBlank_LU
     if ((((real_location == I207_lobby)))) return GPR_PREPOSITION;
     return GPR_FAIL;
 ];
-[ Mistake_Token_366 ;
+[ Mistake_Token_367 ;
     if (actor ~= player) return GPR_FAIL;
-    understand_as_mistake_number = 466;
+    understand_as_mistake_number = 467;
     return GPR_PREPOSITION;
 ];
 
@@ -63540,25 +63541,25 @@ Verb meta 'tree'
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 
-Array LIST_CONST_101303 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2106) (BC_2107) (BC_2108) (BC_2109) (BC_2110) ;
-Array LIST_CONST_101337 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2111) (BC_2112) (BC_2113) (BC_2114) (BC_2115) ;
-Array LIST_CONST_101371 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2116) (BC_2117) (BC_2118) (BC_2119) (BC_2120) ;
-Array LIST_CONST_101401 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2121) (BC_2122) (BC_2123) (BC_2124) (BC_2125) ;
-Array LIST_CONST_101431 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2126) (BC_2127) (BC_2128) (BC_2129) (BC_2130) ;
-Array LIST_CONST_101461 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2131) (BC_2132) (BC_2133) (BC_2134) (BC_2135) ;
-Array LIST_CONST_101495 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2136) (BC_2137) (BC_2138) (BC_2139) (BC_2140) ;
-Array LIST_CONST_101529 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2141) (BC_2142) (BC_2143) (BC_2144) (BC_2145) ;
-Array LIST_CONST_101563 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2146) (BC_2147) (BC_2148) (BC_2149) (BC_2150) ;
+Array LIST_CONST_101311 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2106) (BC_2107) (BC_2108) (BC_2109) (BC_2110) ;
+Array LIST_CONST_101345 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2111) (BC_2112) (BC_2113) (BC_2114) (BC_2115) ;
+Array LIST_CONST_101379 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2116) (BC_2117) (BC_2118) (BC_2119) (BC_2120) ;
+Array LIST_CONST_101409 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2121) (BC_2122) (BC_2123) (BC_2124) (BC_2125) ;
+Array LIST_CONST_101439 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2126) (BC_2127) (BC_2128) (BC_2129) (BC_2130) ;
+Array LIST_CONST_101469 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2131) (BC_2132) (BC_2133) (BC_2134) (BC_2135) ;
+Array LIST_CONST_101503 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2136) (BC_2137) (BC_2138) (BC_2139) (BC_2140) ;
+Array LIST_CONST_101537 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2141) (BC_2142) (BC_2143) (BC_2144) (BC_2145) ;
+Array LIST_CONST_101571 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2146) (BC_2147) (BC_2148) (BC_2149) (BC_2150) ;
 Array LIST_CONST_28009 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER NUMBER_TY 4 (1) (9) (10) (100) ;
-Array LIST_CONST_95035 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95270 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95288 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95306 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95324 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95342 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95360 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95378 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95396 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95043 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95278 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95296 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95314 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95332 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95350 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95368 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95386 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95404 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
 
 
 
@@ -87844,13 +87845,13 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
             }
                 group_wn = wn;
                 .group_322_1_1; wn = group_wn;
-                if (NextWordStopped() ~= 'cage') jump group_322_1_2;
+                if (NextWordStopped() ~= 'rails') jump group_322_1_2;
                 jump group_322_1_end;
                 .group_322_1_2; wn = group_wn;
-                if (NextWordStopped() ~= 'bars') jump group_322_1_3;
+                if (NextWordStopped() ~= 'gear') jump group_322_1_3;
                 jump group_322_1_end;
                 .group_322_1_3; wn = group_wn;
-                if (NextWordStopped() ~= 'silnium') jump Fail_1;
+                if (NextWordStopped() ~= 'landing') jump Fail_1;
                 .group_322_1_end;
                 try_from_wn = wn; f = true; continue;
                 .Fail_1; wn = try_from_wn;
@@ -87872,7 +87873,73 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Consult_Grammar_217 
+[ Parse_Name_GV215 
+    original_wn ! first word of text parsed
+    group_wn ! first word matched against A/B/C/... disjunction
+    try_from_wn ! position to try matching from
+    n ! number of words matched
+    f ! flag: sufficiently good match found to justify success
+    w ! for use by individual grammar lines
+    rv ! for use by individual grammar lines
+    g ! temporary: success flag for parsing visibles
+    ss ! temporary: saves 'self' in distinguishing visibles
+    spn ! temporary: saves 'parsed_number' in parsing visibles
+    pass ! pass counter (1 to 3)
+    pass1_n ! value of n recorded during pass 1
+    pass2_n ! value of n recorded during pass 2
+    ;
+    #ifdef DEBUG;
+    if (parser_trace >= 3) print "Parse_name called^";
+    #endif;
+    if (parser_action == ##TheSame) return 0;
+    original_wn = wn;
+    for (pass = 1: pass <= 3: pass++) {
+        wn = original_wn;
+        try_from_wn = wn; f = false; n = 0;
+        while (true) {
+            ! On pass 1 only, advance wn past name property words
+            ! (but do not do this for ##TheSame, when wn is undefined)
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+            if (pass == 1 or 2) {
+            }
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+                group_wn = wn;
+                .group_323_1_1; wn = group_wn;
+                if (NextWordStopped() ~= 'cage') jump group_323_1_2;
+                jump group_323_1_end;
+                .group_323_1_2; wn = group_wn;
+                if (NextWordStopped() ~= 'bars') jump group_323_1_3;
+                jump group_323_1_end;
+                .group_323_1_3; wn = group_wn;
+                if (NextWordStopped() ~= 'silnium') jump Fail_1;
+                .group_323_1_end;
+                try_from_wn = wn; f = true; continue;
+                .Fail_1; wn = try_from_wn;
+            break;
+        } ! End of endless loop
+        while (WordInProperty(NextWordStopped(), self, name)) n++;
+        if ((f) || (n>0)) n = n + try_from_wn - original_wn;
+        if (pass == 1) pass1_n = n;
+        if (pass == 2) pass2_n = n;
+    } ! End of pass loop
+    #ifdef DEBUG;
+    if (parser_trace >= 3)
+        print "Pass 1: ", pass1_n, " Pass 2: ", pass2_n, " Pass 3: ", n, "^";
+    #endif;
+    if (pass1_n > n) n = pass1_n;
+    if (pass2_n > n) n = pass2_n;
+    wn = original_wn + n;
+    if (n == 0) return -1;
+    DetectPluralWord(original_wn, n);
+    return n;
+];
+[ Consult_Grammar_218 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -87892,7 +87959,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_218 
+[ Consult_Grammar_219 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -87912,7 +87979,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_219 
+[ Consult_Grammar_220 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -87932,7 +87999,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_220 
+[ Consult_Grammar_221 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -87952,7 +88019,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_221 
+[ Consult_Grammar_222 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -87972,7 +88039,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_222 
+[ Consult_Grammar_223 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -87992,7 +88059,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_223 
+[ Consult_Grammar_224 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88012,7 +88079,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_224 
+[ Consult_Grammar_225 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88032,7 +88099,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_225 
+[ Consult_Grammar_226 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88052,7 +88119,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_226 
+[ Consult_Grammar_227 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88073,7 +88140,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_227 
+[ Consult_Grammar_228 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88093,7 +88160,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_228 
+[ Consult_Grammar_229 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88113,7 +88180,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_229 
+[ Consult_Grammar_230 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88133,7 +88200,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_230 
+[ Consult_Grammar_231 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88153,7 +88220,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_231 
+[ Consult_Grammar_232 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88173,7 +88240,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_232 
+[ Consult_Grammar_233 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88193,7 +88260,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_233 
+[ Consult_Grammar_234 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -88217,60 +88284,60 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     group_wn ! first word matched against A/B/C/.../-- disjunction
     ;
     group_wn = wn;
-    .group_339_1_1; wn = group_wn;
-    if (NextWordStopped() ~= 'the') jump group_339_1_2;
-    jump group_339_1_end;
-    .group_339_1_2;
+    .group_340_1_1; wn = group_wn;
+    if (NextWordStopped() ~= 'the') jump group_340_1_2;
+    jump group_340_1_end;
+    .group_340_1_2;
     wn = group_wn;
-    .group_339_1_end;
+    .group_340_1_end;
     return GPR_PREPOSITION;
 ];
 [ SlashGPR_1 
     group_wn ! first word matched against A/B/C/.../-- disjunction
     ;
     group_wn = wn;
-    .group_339_1_1; wn = group_wn;
-    if (NextWordStopped() ~= 'on') jump group_339_1_2;
-    jump group_339_1_end;
-    .group_339_1_2;
+    .group_340_1_1; wn = group_wn;
+    if (NextWordStopped() ~= 'on') jump group_340_1_2;
+    jump group_340_1_end;
+    .group_340_1_2;
     wn = group_wn;
-    .group_339_1_end;
+    .group_340_1_end;
     return GPR_PREPOSITION;
 ];
 [ SlashGPR_2 
     group_wn ! first word matched against A/B/C/.../-- disjunction
     ;
     group_wn = wn;
-    .group_339_1_1; wn = group_wn;
-    if (NextWordStopped() ~= 'at') jump group_339_1_2;
-    jump group_339_1_end;
-    .group_339_1_2;
+    .group_340_1_1; wn = group_wn;
+    if (NextWordStopped() ~= 'at') jump group_340_1_2;
+    jump group_340_1_end;
+    .group_340_1_2;
     wn = group_wn;
-    .group_339_1_end;
+    .group_340_1_end;
     return GPR_PREPOSITION;
 ];
 [ SlashGPR_3 
     group_wn ! first word matched against A/B/C/.../-- disjunction
     ;
     group_wn = wn;
-    .group_339_1_1; wn = group_wn;
-    if (NextWordStopped() ~= 'at') jump group_339_1_2;
-    jump group_339_1_end;
-    .group_339_1_2;
+    .group_340_1_1; wn = group_wn;
+    if (NextWordStopped() ~= 'at') jump group_340_1_2;
+    jump group_340_1_end;
+    .group_340_1_2;
     wn = group_wn;
-    .group_339_1_end;
+    .group_340_1_end;
     return GPR_PREPOSITION;
 ];
 [ SlashGPR_4 
     group_wn ! first word matched against A/B/C/.../-- disjunction
     ;
     group_wn = wn;
-    .group_339_1_1; wn = group_wn;
-    if (NextWordStopped() ~= 'out') jump group_339_1_2;
-    jump group_339_1_end;
-    .group_339_1_2;
+    .group_340_1_1; wn = group_wn;
+    if (NextWordStopped() ~= 'out') jump group_340_1_2;
+    jump group_340_1_end;
+    .group_340_1_2;
     wn = group_wn;
-    .group_339_1_end;
+    .group_340_1_end;
     return GPR_PREPOSITION;
 ];
 Verb 'take' 'carry' 'hold'
@@ -88730,7 +88797,7 @@ Verb 'reset'
     * 'help'  -> A117_resetting_help
 ;
 Verb '*//'
-    * Mistake_Token_366 topic  -> MistakeAction
+    * Mistake_Token_367 topic  -> MistakeAction
 ;
 
 
@@ -97203,55 +97270,55 @@ Array BC_306 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_307 --> PACKED_TEXT_STORAGE TX_PS_35;
 Array BC_308 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_309 --> PACKED_TEXT_STORAGE TX_PS_51;
-Array BC_310 --> LIST_CONST_101303 0;
+Array BC_310 --> LIST_CONST_101311 0;
 Array BC_311 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_312 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_313 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_314 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_315 --> PACKED_TEXT_STORAGE TX_PS_52;
-Array BC_316 --> LIST_CONST_101337 0;
+Array BC_316 --> LIST_CONST_101345 0;
 Array BC_317 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_318 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_319 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_320 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_321 --> PACKED_TEXT_STORAGE TX_PS_53;
-Array BC_322 --> LIST_CONST_101371 0;
+Array BC_322 --> LIST_CONST_101379 0;
 Array BC_323 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_324 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_325 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_326 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_327 --> PACKED_TEXT_STORAGE TX_PS_54;
-Array BC_328 --> LIST_CONST_101401 0;
+Array BC_328 --> LIST_CONST_101409 0;
 Array BC_329 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_330 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_331 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_332 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_333 --> PACKED_TEXT_STORAGE TX_PS_55;
-Array BC_334 --> LIST_CONST_101431 0;
+Array BC_334 --> LIST_CONST_101439 0;
 Array BC_335 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_336 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_337 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_338 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_339 --> PACKED_TEXT_STORAGE TX_PS_56;
-Array BC_340 --> LIST_CONST_101461 0;
+Array BC_340 --> LIST_CONST_101469 0;
 Array BC_341 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_342 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_343 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_344 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_345 --> PACKED_TEXT_STORAGE TX_PS_57;
-Array BC_346 --> LIST_CONST_101495 0;
+Array BC_346 --> LIST_CONST_101503 0;
 Array BC_347 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_348 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_349 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_350 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_351 --> PACKED_TEXT_STORAGE TX_PS_58;
-Array BC_352 --> LIST_CONST_101529 0;
+Array BC_352 --> LIST_CONST_101537 0;
 Array BC_353 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_354 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_355 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_356 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_357 --> PACKED_TEXT_STORAGE TX_PS_59;
-Array BC_358 --> LIST_CONST_101563 0;
+Array BC_358 --> LIST_CONST_101571 0;
 Array BC_359 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_360 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_361 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
@@ -98988,15 +99055,15 @@ Array BC_2091 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_214;
 Array BC_2092 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_215;
 Array BC_2093 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_216;
 Array BC_2094 --> PACKED_TEXT_STORAGE TX_PS_484;
-Array BC_2095 --> LIST_CONST_95035 0;
-Array BC_2096 --> LIST_CONST_95270 0;
-Array BC_2097 --> LIST_CONST_95288 0;
-Array BC_2098 --> LIST_CONST_95306 0;
-Array BC_2099 --> LIST_CONST_95324 0;
-Array BC_2100 --> LIST_CONST_95342 0;
-Array BC_2101 --> LIST_CONST_95360 0;
-Array BC_2102 --> LIST_CONST_95378 0;
-Array BC_2103 --> LIST_CONST_95396 0;
+Array BC_2095 --> LIST_CONST_95043 0;
+Array BC_2096 --> LIST_CONST_95278 0;
+Array BC_2097 --> LIST_CONST_95296 0;
+Array BC_2098 --> LIST_CONST_95314 0;
+Array BC_2099 --> LIST_CONST_95332 0;
+Array BC_2100 --> LIST_CONST_95350 0;
+Array BC_2101 --> LIST_CONST_95368 0;
+Array BC_2102 --> LIST_CONST_95386 0;
+Array BC_2103 --> LIST_CONST_95404 0;
 Array BC_2104 --> Default_Value_0 0;
 Array BC_2105 --> LIST_CONST_28009 0;
 Array BC_2106 --> PACKED_TEXT_STORAGE TX_PS_659;
