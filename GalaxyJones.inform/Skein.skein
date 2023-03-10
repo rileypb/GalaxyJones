@@ -72,6 +72,7 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-2104"></child>
             <child nodeId="node-1963"></child>
             <child nodeId="node-2088"></child>
+            <child nodeId="node-2107"></child>
             <child nodeId="node-1995"></child>
             <child nodeId="node-2048"></child>
             <child nodeId="node-2086"></child>
@@ -673,6 +674,415 @@ Beck: "Looks like you're managing okay."
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-2107">
+        <command xml:space="preserve">gonear ninth hall</command>
+        <result xml:space="preserve">Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2108"></child>
+        </children>
+    </item>
+    <item nodeId="node-2108">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Looks like you're managing okay."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2109"></child>
+        </children>
+    </item>
+    <item nodeId="node-2109">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door labeled "Cybernetica Inc."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2110"></child>
+        </children>
+    </item>
+    <item nodeId="node-2110">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2111"></child>
+        </children>
+    </item>
+    <item nodeId="node-2111">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door labeled "Martian Chemical"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2112"></child>
+        </children>
+    </item>
+    <item nodeId="node-2112">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "You probably have noticed the two locked doors on this floor. You need to get them open."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2113"></child>
+        </children>
+    </item>
+    <item nodeId="node-2113">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2114"></child>
+        </children>
+    </item>
+    <item nodeId="node-2114">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door labeled "Cybernetica Inc."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2115"></child>
+        </children>
+    </item>
+    <item nodeId="node-2115">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2116"></child>
+        </children>
+    </item>
+    <item nodeId="node-2116">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
+
+A screwdriver sits atop the filing cabinet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2117"></child>
+        </children>
+    </item>
+    <item nodeId="node-2117">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "The cardkey for both of them is in the large desk in the building management office."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2118"></child>
+        </children>
+    </item>
+    <item nodeId="node-2118">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2119"></child>
+        </children>
+    </item>
+    <item nodeId="node-2119">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "You don't have a key for the desk. Maybe you can pick the lock?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2120"></child>
+        </children>
+    </item>
+    <item nodeId="node-2120">
+        <command xml:space="preserve">pick lock with pistol</command>
+        <result xml:space="preserve">Not likely.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2121"></child>
+        </children>
+    </item>
+    <item nodeId="node-2121">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Pick the desk lock with the safety pin."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2122"></child>
+        </children>
+    </item>
+    <item nodeId="node-2122">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Pick the desk lock with the safety pin."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2123"></child>
+        </children>
+    </item>
+    <item nodeId="node-2123">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
+
+A screwdriver sits atop the filing cabinet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2124"></child>
+        </children>
+    </item>
+    <item nodeId="node-2124">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2125"></child>
+        </children>
+    </item>
+    <item nodeId="node-2125">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Pick the desk lock with the safety pin."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2126"></child>
+        </children>
+    </item>
+    <item nodeId="node-2126">
+        <command xml:space="preserve">purloin black cardkey</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2127"></child>
+        </children>
+    </item>
+    <item nodeId="node-2127">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Pick the desk lock with the safety pin."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2128"></child>
+        </children>
+    </item>
+    <item nodeId="node-2128">
+        <command xml:space="preserve">x cardkey</command>
+        <result xml:space="preserve">Black like evil, or like secrets?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2129"></child>
+        </children>
+    </item>
+    <item nodeId="node-2129">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "If you haven't yet, get the screwdriver."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2130"></child>
+        </children>
+    </item>
+    <item nodeId="node-2130">
+        <command xml:space="preserve">get screwdriver</command>
+        <result xml:space="preserve">Jones reaches for the screwdriver, but she fumbles it and it rolls off the back of the filing cabinet.
+
+Jones: "Damn."
+
+Beck: "What? What's going on?"
+
+Jones: "Just being clumsy is all."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2131"></child>
+        </children>
+    </item>
+    <item nodeId="node-2131">
+        <command xml:space="preserve">get screwdriver</command>
+        <result xml:space="preserve">Jones reaches behind the cabinet to retrieve the screwdriver. A swipe and a hiss make her recoil.
+
+Jones: "Holy --!"
+
+Beck: "What now?"
+
+Jones: "There's a cat here! Behind a filing cabinet. Gotta get behind there to get a screwdriver, so I need a way to drive off the cat."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2132"></child>
+        </children>
+    </item>
+    <item nodeId="node-2132">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Oops. Getting the screwdriver didn't turn out well. Look behind the cabinet to get the screwdriver."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2159"></child>
+        </children>
+    </item>
+    <item nodeId="node-2159">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Looks like you'll need to get rid of the cat. What do cats like?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2160"></child>
+        </children>
+    </item>
+    <item nodeId="node-2160">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Give the shrimp tea sandwich to the cat."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2161"></child>
+        </children>
+    </item>
+    <item nodeId="node-2161">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2162"></child>
+        </children>
+    </item>
+    <item nodeId="node-2162">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2163"></child>
+        </children>
+    </item>
+    <item nodeId="node-2163">
+        <command xml:space="preserve">reset help</command>
+        <result xml:space="preserve">Resetting all help messages.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2164"></child>
+        </children>
+    </item>
+    <item nodeId="node-2164">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "If you haven't yet, get the screwdriver."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2165"></child>
+        </children>
+    </item>
+    <item nodeId="node-2165">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Oops. Getting the screwdriver didn't turn out well. Look behind the cabinet to get the screwdriver."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2166"></child>
+        </children>
+    </item>
+    <item nodeId="node-2166">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Looks like you'll need to get rid of the cat. What do cats like?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2167"></child>
+        </children>
+    </item>
+    <item nodeId="node-2167">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door labeled "Martian Chemical"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2168"></child>
+        </children>
+    </item>
+    <item nodeId="node-2168">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the Martian Chemical door)
+(first unlocking the Martian Chemical door)
+(with the black cardkey)
+
+Galaxy Jones is in the martian chemical office. This seems like the business office of the chemical company rather than the lab. Most of the room is taken up by desks and other office stuff. There is a cabinet that looks intriguing, however.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2169"></child>
+        </children>
+    </item>
+    <item nodeId="node-2169">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Looks like you're managing okay."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2170"></child>
+        </children>
+    </item>
+    <item nodeId="node-2170">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door labeled "Martian Chemical"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2171"></child>
+        </children>
+    </item>
+    <item nodeId="node-2171">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2172"></child>
+        </children>
+    </item>
+    <item nodeId="node-2172">
+        <command xml:space="preserve">ask for help</command>
+        <result xml:space="preserve">
+Beck: "Give the shrimp tea sandwich to the cat."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-2088">
         <command xml:space="preserve">gonear cabinet</command>
         <result xml:space="preserve">Which do you mean, the chemical cabinet or the filing cabinet?
@@ -916,7 +1326,16 @@ third-plural-pronoun: They-pronoun
     </item>
     <item nodeId="node-2104">
         <command xml:space="preserve">ask beck to reset help</command>
-        <result xml:space="preserve">I didn't understand that sentence.
+        <result xml:space="preserve">Resetting all help messages.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2106"></child>
+        </children>
+    </item>
+    <item nodeId="node-2106">
+        <command xml:space="preserve">reset help</command>
+        <result xml:space="preserve">Resetting all help messages.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

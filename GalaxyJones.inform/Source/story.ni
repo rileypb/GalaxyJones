@@ -657,6 +657,8 @@ the ninth floor elevator shaft is above the ground floor elevator shaft.
 
 Book 3 - The Ninth Floor
 
+The ninth-floor is a region. It contains the ninth floor stairwell, the ninth floor north hallway, the ninth floor south hallway, the north end of the building management office, the south end of the building management office, the cybernetica office, and the martian chemical office.
+
 The ninth floor elevator door is a door. It is scenery. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall. The description is "A golden sliding door, opening in the middle."
 
 The ninth floor stairwell is east of the ninth floor elevator hall.
@@ -689,7 +691,7 @@ Book 4 - The Tenth Floor
 
 the tenth floor elevator hall is a room. It is open space. The preposition is "in".
 
-The tenth-floor-region is a region. It contains the tenth floor elevator hall, the elevator car-room, and the tenth floor stairwell.
+The tenth-floor-region is a region. It contains the tenth floor elevator hall, the elevator car-room, the air handling room, and the tenth floor stairwell.
 
 To say microthings office name of (D - a direction):
 	if D is north or D is south or D is east or D is west:
@@ -2944,14 +2946,64 @@ After pleading when the elevator drop key is not seen and the ground floor eleva
 	lb;
 	converse "Beck: 'You should look for a door where you can use that cardkey.'";
 	
-After pleading when the location is south end of building management office and the screwdriver is not handled:
+After pleading when the location is south end of building management office and (the screwdriver is not handled or the black cat is somewhere):
 	lb;
 	if plead screwdriver is:
 		-- 1: converse "Beck: 'If you haven't yet, get the screwdriver.'";
-		-- 2: converse "Beck: 'Oops. That didn't turn out well. Look behind the cabinet to get the screwdriver.'";
+		-- 2: converse "Beck: 'Oops. Getting the screwdriver didn't turn out well. Look behind the cabinet to get the screwdriver.'";
 		-- 3: converse "Beck: 'Looks like you'll need to get rid of the cat. What do cats like?'";
 		-- 4: converse "Beck: 'Give the shrimp tea sandwich to the cat.'";
 		-- otherwise: converse "Beck: 'What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there.'"
+		
+After pleading when the location is in the ninth-floor and the black cardkey is not seen and the ninth floor north hallway is visited and the ninth floor south hallway is visited:
+	lb;
+	if plead ninth-floor is:
+		-- 1: converse "Beck: 'You've probably noticed the two locked doors on this floor. You need to get them open.'";
+		-- 2: converse "Beck: 'The cardkey for both of them is in the large desk in the building management office.'";
+		-- 3: converse "Beck: 'You don't have a key for the desk. Maybe you can pick the lock?'";
+		-- otherwise: converse "Beck: 'Pick the desk lock with the safety pin.'";
+
+After pleading when the location is the cybernetica office and the purple guard robot is in the cybernetica office:
+	lb;
+	if plead cybernetica office is:
+		-- 1: converse "Beck: 'The robot's got you pinned down good, yeah? And you can't get a good shot in? And even if you did, it would probably just be absorbed?'";
+		-- 2: converse "Beck: 'When will you start listening to your handler? When? I've been giving you good advice, just spelling out what to do, and you don't pay attention.'";
+		-- 3: converse "Beck: 'Sneak up on the stupid robot already!'";
+		
+After pleading when the location is the ledge and the window washing scaffold is not discovered:
+	lb;
+	if plead ledge is:
+		-- 1: converse "Beck: 'Is there anything out there useful?'";
+		-- 2: converse "Beck: 'Have you looked everywhere?'";
+		-- 3: converse "Beck: '[special-style-2]everywhere?[special-style-1]'";
+		-- 4: converse "Beck: 'Look down.'";
+		
+After pleading when the location is the window washing scaffold and the floor of the window washing scaffold is 10 and the exhaust vent is closed:
+	lb;
+	if plead exhaust vent is:
+		-- 1: converse "Beck: 'You need to get into the building through the exhaust vent.'";
+		-- 2: converse "Beck: 'You need to remove the cover of the exhaust vent.'";
+		-- 3: converse "Beck: 'To do that you need a screwdriver.'";
+		-- 4: converse "Beck: 'Haven't got one? Go back to the building management office.'";
+		
+After pleading when the location is in the tenth-floor-region and the mauve guard robot is somewhere:
+	lb;
+	if plead tenth-floor-region is:
+		-- 1: converse "Beck: 'Before we begin, save your game. This could get ugly.'";
+		-- 2: converse "Beck: 'There are multiple ways to get past this floor. Here's one.'";
+		-- 3: converse "Beck: 'Go west from the air handling room, south once, and west into the elevator car.'";
+		-- 4: converse "Beck: 'You'll notice a loose ceiling panel. Open it.'";
+		-- 5: converse "Beck: 'Now lure the robot in the southwest corner to the elevator car.'";
+		-- 6: converse "Beck: 'Leave the elevator to the east, go south to catch the robot's eye, then go north and west back into the elevator car. Then go up onto the top of the car.'";
+		-- 7: converse "Beck: 'The robot will enter the car but not see you. Now's your chance!'";
+		-- 8: converse "Beck: 'No, shooting won't work.'";
+		-- 9: converse "Beck: 'When the robot leaves you'll have to lure it back again.'";
+		-- 10: converse "Beck: 'Maybe pour something on the robot?'";
+		-- 11: converse "Beck: 'No, don't waste your water. What else is pourable?'";
+		-- 12: converse "Beck: 'Yes, the polymer gel! But you can't get close enough to pour it on the robot.'";
+		-- 13: converse "Beck: 'Jump on the robot!'";
+		-- 14: converse "Beck: 'Then pour the gel on the robot.'";
+		
 
 Chapter 3 - Ask Beck About Game
 
