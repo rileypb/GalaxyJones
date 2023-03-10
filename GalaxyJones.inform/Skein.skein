@@ -78,6 +78,7 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-2088"></child>
             <child nodeId="node-2234"></child>
             <child nodeId="node-2107"></child>
+            <child nodeId="node-2374"></child>
             <child nodeId="node-1995"></child>
             <child nodeId="node-2048"></child>
             <child nodeId="node-2295"></child>
@@ -519,196 +520,137 @@ Jones: "Got it."
 
 Beck: "And Jones? Save your game."
 
-She isn't wearing the Atmo-Suit.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2363"></child>
+        </children>
+    </item>
+    <item nodeId="node-2363">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2337"></child>
+        <children><child nodeId="node-2364"></child>
         </children>
     </item>
-    <item nodeId="node-2337">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Galaxy Jones is on a window washing scaffold.
-[Previous turn undone.]
+    <item nodeId="node-2364">
+        <command xml:space="preserve">enter vent</command>
+        <result xml:space="preserve">Jones climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2338"></child>
-        </children>
-    </item>
-    <item nodeId="node-2338">
-        <command xml:space="preserve">rules</command>
-        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
 
-[Rule "clear LPR rule" applies.]
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2339"></child>
-        </children>
-    </item>
-    <item nodeId="node-2339">
-        <command xml:space="preserve">in</command>
-        <result xml:space="preserve">[Rule "After deciding the scope of the player" applies.]
-[Rule "After deciding the scope of the player" applies.]
-[Rule "After deciding the scope of the player" applies.]
-[Rule "After deciding the scope of the player" applies.]
-[Rule "declare everything initially unmentioned rule" applies.]
-[Rule "standard set going variables rule" applies.]
-[Rule "assign alternative door targets rule" applies.]
-[Rule "announce items from multiple object lists rule" applies.]
-[Rule "set pronouns from items from multiple object lists rule" applies.]
-[Rule "before stage rule" applies.]
-[Rule "check object is interactible rule" applies.]
-[Rule "keychain-aware carrying requirements rule" applies.]
-[Rule "instead stage rule" applies.]
-[Rule "Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is open" applies.]
-[Rule "assign alternative door targets rule" applies.]
-[Rule "announce items from multiple object lists rule" applies.]
-[Rule "set pronouns from items from multiple object lists rule" applies.]
-[Rule "before stage rule" applies.]
-[Rule "check object is interactible rule" applies.]
-[Rule "keychain-aware carrying requirements rule" applies.]
-[Rule "instead stage rule" applies.]
-[Rule "Instead of entering the exhaust vent when the exhaust vent is open for the first time" applies.]
-Jones climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Rule "notify score changes rule" applies.]
-[Your score has just gone up by one point.]
-
-[Rule "determine visibility ceiling rule" applies.]
-[Rule "assign alternative door targets rule" applies.]
-[Rule "announce items from multiple object lists rule" applies.]
-[Rule "set pronouns from items from multiple object lists rule" applies.]
-[Rule "before stage rule" applies.]
-[Rule "check object is interactible rule" applies.]
-[Rule "keychain-aware carrying requirements rule" applies.]
-[Rule "instead stage rule" applies.]
-[Rule "investigate player's awareness before action rule" applies.]
-[Rule "player aware of his own actions rule" applies.]
-[Rule "check stage rule" applies.]
-[Rule "carry out stage rule" applies.]
-[Rule "declare everything unmentioned rule" applies.]
-[Rule "new room description heading rule" applies.]
-Galaxy Jones is in the air handling room. [Rule "room description body text rule" applies.]
-There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
-
-[Rule "room description paragraphs about objects rule" applies.]
-[Rule "initialise locale description rule" applies.]
-[Rule "find notable locale objects rule" applies.]
-[Rule "standard notable locale objects rule" applies.]
-[Rule "Before printing the locale description" applies.]
-[Rule "interesting locale paragraphs rule" applies.]
-[Rule "don't mention player's supporter in room descriptions rule" applies.]
-[Rule "don't mention scenery in room descriptions rule" applies.]
-[Rule "don't mention undescribed items in room descriptions rule" applies.]
-[Rule "set pronouns from items in room descriptions rule" applies.]
-[Rule "offer items to writing a paragraph about rule" applies.]
-[Rule "use initial appearance in room descriptions rule" applies.]
-[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
-[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
-[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
-[Rule "don't mention player's supporter in room descriptions rule" applies.]
-[Rule "don't mention scenery in room descriptions rule" applies.]
-[Rule "don't mention undescribed items in room descriptions rule" applies.]
-[Rule "set pronouns from items in room descriptions rule" applies.]
-[Rule "offer items to writing a paragraph about rule" applies.]
-[Rule "use initial appearance in room descriptions rule" applies.]
-[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
-[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
-[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
-[Rule "don't mention player's supporter in room descriptions rule" applies.]
-[Rule "don't mention scenery in room descriptions rule" applies.]
-[Rule "don't mention undescribed items in room descriptions rule" applies.]
-[Rule "set pronouns from items in room descriptions rule" applies.]
-[Rule "offer items to writing a paragraph about rule" applies.]
-[Rule "use initial appearance in room descriptions rule" applies.]
-[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
-[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
-[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
-[Rule "don't mention player's supporter in room descriptions rule" applies.]
-[Rule "don't mention scenery in room descriptions rule" applies.]
-[Rule "don't mention undescribed items in room descriptions rule" applies.]
-[Rule "set pronouns from items in room descriptions rule" applies.]
-[Rule "offer items to writing a paragraph about rule" applies.]
-[Rule "use initial appearance in room descriptions rule" applies.]
-[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
-[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
-[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
-[Rule "don't mention player's supporter in room descriptions rule" applies.]
-[Rule "don't mention scenery in room descriptions rule" applies.]
-[Rule "don't mention undescribed items in room descriptions rule" applies.]
-[Rule "set pronouns from items in room descriptions rule" applies.]
-[Rule "offer items to writing a paragraph about rule" applies.]
-[Rule "use initial appearance in room descriptions rule" applies.]
-[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
-[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
-[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
-[Rule "new you-can-also-see rule" applies.]
-[Rule "check new arrival rule" applies.]
-[Rule "mark items as seen when looking rule" applies.]
-[Rule "after stage rule" applies.]
-[Rule "After looking" applies.]
-[Rule "investigate player's awareness after action rule" applies.]
-[Rule "report stage rule" applies.]
-[Rule "other people looking rule" applies.]
-[Rule "report looking" applies.]
-[Rule "last specific action-processing rule" applies.]
-[Rule "assign alternative door targets rule" applies.]
-[Rule "announce items from multiple object lists rule" applies.]
-[Rule "set pronouns from items from multiple object lists rule" applies.]
-[Rule "before stage rule" applies.]
-[Rule "check object is interactible rule" applies.]
-[Rule "keychain-aware carrying requirements rule" applies.]
-[Rule "instead stage rule" applies.]
-[Rule "investigate player's awareness before action rule" applies.]
-[Rule "player aware of his own actions rule" applies.]
-[Rule "check stage rule" applies.]
-[Rule "can't take off what's not worn rule" applies.]
-[Rule "can't exceed carrying capacity when taking off rule" applies.]
-[Rule "carry out stage rule" applies.]
-[Rule "standard taking off rule" applies.]
-[Rule "after stage rule" applies.]
-[Rule "investigate player's awareness after action rule" applies.]
-[Rule "report stage rule" applies.]
-[Rule "standard report taking off rule" applies.]
 She takes off the Atmo-Suit.
-[Rule "last specific action-processing rule" applies.]
 
-Jones: "Ha! I'm in!"
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2365"></child>
+        </children>
+    </item>
+    <item nodeId="node-2365">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">Jones puts on the Atmo-Suit.
 
-Beck: "Be careful, you're likely to run into more resistance here. The floor is all one open office, so any guard robots will have good line of sight."
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
 
-Jones: "Got it."
 
-Beck: "And Jones? Save your game."
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2366"></child>
+        </children>
+    </item>
+    <item nodeId="node-2366">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Jones climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.
 
-[Rule "assign alternative door targets rule" applies.]
-[Rule "announce items from multiple object lists rule" applies.]
-[Rule "set pronouns from items from multiple object lists rule" applies.]
-[Rule "before stage rule" applies.]
-[Rule "check object is interactible rule" applies.]
-[Rule "keychain-aware carrying requirements rule" applies.]
-[Rule "instead stage rule" applies.]
-[Rule "investigate player's awareness before action rule" applies.]
-[Rule "player aware of his own actions rule" applies.]
-[Rule "check stage rule" applies.]
-[Rule "can't take off what's not worn rule" applies.]
-She isn't wearing the Atmo-Suit.
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
 
-[Rule "A first turn sequence rule" applies.]
-[Rule "every turn stage rule" applies.]
-[Rule "Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack" applies.]
-[Rule "reset protocol rule" applies.]
-[Rule "A last turn sequence rule" applies.]
-[Rule "notify score changes rule" applies.]
-[Rule "show us the people rule" applies.]
-[Rule "clear LPR rule" applies.]
+She takes off the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2367"></child>
+        </children>
+    </item>
+    <item nodeId="node-2367">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">(first opening the vent access door)
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2368"></child>
+        </children>
+    </item>
+    <item nodeId="node-2368">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Jones climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+She takes off the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2369"></child>
+        </children>
+    </item>
+    <item nodeId="node-2369">
+        <command xml:space="preserve">put on suit</command>
+        <result xml:space="preserve">Jones needs to be able to move around quickly. Better not wear the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2370"></child>
+        </children>
+    </item>
+    <item nodeId="node-2370">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2371"></child>
+        </children>
+    </item>
+    <item nodeId="node-2371">
+        <command xml:space="preserve">push down</command>
+        <result xml:space="preserve">(the scaffold down button)
+Jones presses the button, and the scaffold begins to descend.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2372"></child>
+        </children>
+    </item>
+    <item nodeId="node-2372">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Galaxy Jones is in the cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+Jones takes off the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2373"></child>
+        </children>
+    </item>
+    <item nodeId="node-2373">
+        <command xml:space="preserve">put on suit</command>
+        <result xml:space="preserve">Jones needs to be able to move around quickly. Better not wear the Atmo-Suit.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
@@ -1350,6 +1292,50 @@ Jones: "One coin? Not very generous people around here."
     <item nodeId="node-1996">
         <command xml:space="preserve">x window</command>
         <result xml:space="preserve">Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2374">
+        <command xml:space="preserve">gonear table</command>
+        <result xml:space="preserve">Which do you mean, the catering table or the vanity table?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2375"></child>
+        </children>
+    </item>
+    <item nodeId="node-2375">
+        <command xml:space="preserve">catering</command>
+        <result xml:space="preserve">Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+Beck: "Blueprints indicate a closet to the west of you. Might be useful."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2376"></child>
+        </children>
+    </item>
+    <item nodeId="node-2376">
+        <command xml:space="preserve">x table</command>
+        <result xml:space="preserve">The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.
+
+Jones: "What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?"
+
+Beck: "Oh, the shrimp. Definitely get the shrimp."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2377"></child>
+        </children>
+    </item>
+    <item nodeId="node-2377">
+        <command xml:space="preserve">x table</command>
+        <result xml:space="preserve">The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.
+
+Jones: "What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?"
+
+Beck: "Oh, the shrimp. Definitely get the shrimp."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

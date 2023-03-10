@@ -500,21 +500,6 @@ When play begins:
 		
 A room can be atmo-thin or safe.
 The atmo-suit can be needed or unneeded.
-
-Before going from a safe room to an atmo-thin room:
-	now the atmo-suit is needed;
-	if the atmo-suit is touchable:
-		try wearing the atmo-suit;
-	if the player does not wear the atmo-suit:
-		say "[We] can't go outside without an atmo-suit.";
-		stop the action;
-
-Report going to a safe room:	
-	now the atmo-suit is unneeded;
-	if the atmo-suit is worn:
-		silently try taking off the atmo-suit;
-		queue "[We] doffs the Atmo-Suit.";
-	continue the action.
 	
 Check wearing the atmo-suit when the atmo-suit is unneeded:
 	say "[We] needs to be able to move around quickly. Better not wear the [Atmo-Suit]." instead;
@@ -1099,7 +1084,7 @@ The conversation of ground-floor-6 is "Beck: 'Blueprints indicate a closet to th
 
 The catering table is a scenery pseudocontainer in ground-floor-6. "The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.". Understand "canapes", "canape", "hors d'oeuvres", "food", "snacks", "treats", "array" as the catering table.
 
-After examining the catering table:
+After examining the catering table for the first time:
 	converse "Jones: 'What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?'
 	
 	Beck: 'Oh, the shrimp. Definitely get the shrimp.'";
