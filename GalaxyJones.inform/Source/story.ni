@@ -1459,7 +1459,7 @@ Carry out looking when the location is the window washing scaffold (this is the 
 		say line break;
 		print explaining the vent;
 		
-window-thing is scenery in the window washing scaffold. It is privately-named. The printed name is "window". Understand "window" as the window-thing.
+window-thing is scenery in the window washing scaffold. It is privately-named. The printed name is "window". Understand "window" as the window-thing. "It's a window."
 
 Does the player mean opening the window washing scaffold: it is very unlikely;
 		
@@ -2158,7 +2158,7 @@ Instead of taking the real diamond when the glass diamond is discovered and the 
 
 the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
 
-The metal pillar is scenery in the penthouse west. 
+The metal pillar is scenery in the penthouse west. "It's actually wrought iron, and it holds up the claw."
 The claw is part of the metal pillar. It is a container with carrying capacity 1. The description is "It looks like it could grip a small object.".
 
 Instead of inserting something that is not a gem into the claw:
@@ -2426,7 +2426,7 @@ Instead of tying the hook cable to the cage-thing when the player is not on the 
 	
 Chapter 4 - The Flyer Pad
 
-The description of the flyer pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background."
+The description of the landing pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background."
 	
 Chapter 5 - The Water Bottle
 

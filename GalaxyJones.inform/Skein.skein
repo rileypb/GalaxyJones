@@ -33,7 +33,6 @@ Plus she'll get to meet Europa Callisto. That'll be totally sweet.
 
 landing pad has no description.
 window has no description.
-metal pillar has no description.
 
  _________      __                     _____                     
  __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
@@ -60,8 +59,26 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1963"></child>
+        <children><child nodeId="node-1989"></child>
+            <child nodeId="node-1963"></child>
+            <child nodeId="node-1995"></child>
         </children>
+    </item>
+    <item nodeId="node-1995">
+        <command xml:space="preserve">gonear window washing scaffold</command>
+        <result xml:space="preserve">Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1996"></child>
+        </children>
+    </item>
+    <item nodeId="node-1996">
+        <command xml:space="preserve">x window</command>
+        <result xml:space="preserve">Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1963">
         <command xml:space="preserve">gonear 100th</command>
@@ -222,6 +239,62 @@ conversation: none
 description: "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds."
 initial appearance: none
 third-plural-pronoun: They-pronoun
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1989">
+        <command xml:space="preserve">ask beck about me</command>
+        <result xml:space="preserve">
+Beck: "Well, I think you're very nice, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1990"></child>
+        </children>
+    </item>
+    <item nodeId="node-1990">
+        <command xml:space="preserve">ask beck about speeder</command>
+        <result xml:space="preserve">
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1991"></child>
+        </children>
+    </item>
+    <item nodeId="node-1991">
+        <command xml:space="preserve">gonear 100th</command>
+        <result xml:space="preserve">Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1992"></child>
+        </children>
+    </item>
+    <item nodeId="node-1992">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1993"></child>
+        </children>
+    </item>
+    <item nodeId="node-1993">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1994"></child>
+        </children>
+    </item>
+    <item nodeId="node-1994">
+        <command xml:space="preserve">x pillar</command>
+        <result xml:space="preserve">There seems to be nothing special about it.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
