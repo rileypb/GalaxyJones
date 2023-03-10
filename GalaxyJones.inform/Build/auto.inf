@@ -18963,33 +18963,73 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     if (debug_rules) DB_Rule(R_1207, 1207);
     ! [2: if the mauve guard robot is in the location]
     if (((real_location == ContainerOf(I380_mauve_guard_robot))))
-    {! [3: say ~The robot slaughters Jones.~]
-        say__p=1;! [4: ~The robot slaughters Jones.~]
-        ParaContent(); print "The robot slaughters Jones."; new_line; .L_Say17; .L_SayX17;! [5: end the story]
-        deadflag=3; story_complete=false;
+    {! [3: say ~[one of]The robot slaughters Jones[or]The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons[or]Jones doesn't stand a chance against the mauve guard robot's terrible knives[or]The robot electrocutes Jones with its electro-darts[purely at random].~]
+        say__p=1;! [4: one of]
+        ParaContent(); 
+        	
+        	if (I7_ST_say_one_flag-->0 == false) {
+        		I7_ST_say_one_of-->0 = i7_soo_par(I7_ST_say_one_of-->0,
+        4);
+        	 	I7_ST_say_one_flag-->0 = true;
+        	}
+        	if (say__comp == false) I7_ST_say_one_flag-->0 =
+        false;
+        	switch ((I7_ST_say_one_of-->0)%(4+1)-1)
+        {
+        		0:! [5: ~The robot slaughters Jones~]
+        ParaContent(); print "The robot slaughters Jones";! [6: or]
+        ParaContent(); @nop; 1:! [7: ~The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons~]
+        ParaContent(); print "The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons";! [8: or]
+        ParaContent(); @nop; 2:! [9: ~Jones doesn't stand a chance against the mauve guard robot's terrible knives~]
+        ParaContent(); print "Jones doesn't stand a chance against the mauve guard robot's terrible knives";! [10: or]
+        ParaContent(); @nop; 3:! [11: ~The robot electrocutes Jones with its electro-darts~]
+        ParaContent(); print "The robot electrocutes Jones with its electro-darts";! [12: purely at random]
+        ParaContent(); }! [13: ~.~]
+        ParaContent(); print "."; new_line; .L_Say17; .L_SayX17;! [14: end the story saying ~Jones was killed by the mauve guard robot~]
+        deadflag=TX_L_486; story_complete=false;
         } else {
-        ! [6: if the goal of the mauve guard robot is not the location of the mauve guard robot]
+        ! [15: if the goal of the mauve guard robot is not the location of the mauve guard robot]
         if (((~~((GProperty(10, I380_mauve_guard_robot,p33_goal) == LocationOf(I380_mauve_guard_robot))))))
-        {! [7: let d be the best route from the location of the mauve guard robot to the goal of the mauve guard robot]
+        {! [16: let d be the best route from the location of the mauve guard robot to the goal of the mauve guard robot]
 
             		tmp_0 = MapRouteTo(LocationOf(I380_mauve_guard_robot),GProperty(10, I380_mauve_guard_robot,p33_goal),0,0);
-            ! [8: try the mauve guard robot going d]
+            ! [17: try the mauve guard robot going d]
             TryAction(0, I380_mauve_guard_robot, ##Go, tmp_0, 0);
-            ! [9: if the location of the mauve guard robot is the location]
+            ! [18: if the location of the mauve guard robot is the location]
             if (((LocationOf(I380_mauve_guard_robot) == real_location)))
-            {! [10: say ~The robot slaughters Jones.~]
-                say__p=1;! [11: ~The robot slaughters Jones.~]
-                ParaContent(); print "The robot slaughters Jones."; new_line; .L_Say18; .L_SayX18;! [12: end the story]
-                deadflag=3; story_complete=false;
-                }
-                } else {
-            ! [13: now the goal of the mauve guard robot is the homebase of the mauve guard robot]
+            {! [19: say ~[one of]The robot slaughters Jones[or]The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons[or]Jones doesn't stand a chance against the mauve guard robot's terrible knives[or]The robot electrocutes Jones with its electro-darts[purely at random].~]
+                say__p=1;! [20: one of]
+                ParaContent(); 
+                	
+                	if (I7_ST_say_one_flag-->1 == false) {
+                		I7_ST_say_one_of-->1 = i7_soo_par(I7_ST_say_one_of-->1,
+                4);
+                	 	I7_ST_say_one_flag-->1 = true;
+                	}
+                	if (say__comp == false) I7_ST_say_one_flag-->1 =
+                false;
+                	switch ((I7_ST_say_one_of-->1)%(4+1)-1)
+                {
+                		0:! [21: ~The robot slaughters Jones~]
+                ParaContent(); print "The robot slaughters Jones";! [22: or]
+                ParaContent(); @nop; 1:! [23: ~The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons~]
+                ParaContent(); print "The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons";! [24: or]
+                ParaContent(); @nop; 2:! [25: ~Jones doesn't stand a chance against the mauve guard robot's terrible knives~]
+                ParaContent(); print "Jones doesn't stand a chance against the mauve guard robot's terrible knives";! [26: or]
+                ParaContent(); @nop; 3:! [27: ~The robot electrocutes Jones with its electro-darts~]
+                ParaContent(); print "The robot electrocutes Jones with its electro-darts";! [28: purely at random]
+                ParaContent(); }! [29: ~.~]
+                ParaContent(); print "."; new_line; .L_Say18; .L_SayX18;}
+            ! [30: end the story saying ~Jones was killed by the mauve guard robot~]
+            deadflag=TX_L_486; story_complete=false;
+            } else {
+            ! [31: now the goal of the mauve guard robot is the homebase of the mauve guard robot]
             WriteGProperty(10, I380_mauve_guard_robot,p33_goal,GProperty(10, I380_mauve_guard_robot,p34_homebase));
             }
             }
-    ! [14: if the location of the mauve guard robot farsees the location]
+    ! [32: if the location of the mauve guard robot farsees the location]
     if ((((RGuard_T_4(LocationOf(I380_mauve_guard_robot),real_location)))))
-    {! [15: now the goal of the mauve guard robot is the location]
+    {! [33: now the goal of the mauve guard robot is the location]
         WriteGProperty(10, I380_mauve_guard_robot,p33_goal,real_location); if (~~(GProperty(10, I380_mauve_guard_robot,p33_goal) ofclass K1_room)) RunTimeProblem(RTP_WRONGASSIGNEDKIND, GProperty(10, I380_mauve_guard_robot,p33_goal), "now the goal of the mauve guard robot is the location", "room");;
         }
         } else if (debug_rules > 1) DB_Rule(R_1207, 1207, 'context');
@@ -19804,7 +19844,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_1141, 1141);
     ! [2: converse ~Jones: 'I'm going out the window to see if I can find a way to get up to the tenth floor.'^^Beck: 'Whoa whoa whoa, Jones. You know you're not good with heights.'^^Jones: 'Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_486)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_487)));
     } else if (debug_rules > 1) DB_Rule(R_1141, 1141, 'action');
     rfalse;
 ];
@@ -20473,10 +20513,10 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     if ((PAPR_2() && (((TimesActionHasHappened-->2) == 1) && (ActionCurrentlyHappeningFlag->2)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1001, 1001);
-    ! [2: say ~[line break]A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it: [header style]Galaxy Jones.[roman type][line break]~]
+    ! [2: say ~[line break]A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit climbs out of it: [header style]Galaxy Jones.[roman type][line break]~]
     say__p=1;! [3: line break]
-    ParaContent(); new_line;! [4: ~A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it: ~]
-    ParaContent(); print "A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it: ";! [5: header style]
+    ParaContent(); new_line;! [4: ~A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit climbs out of it: ~]
+    ParaContent(); print "A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit climbs out of it: ";! [5: header style]
     ParaContent(); (PHR_999_r12 ());! [6: ~Galaxy Jones.~]
     ParaContent(); print "Galaxy Jones.";! [7: roman type]
     ParaContent(); style roman;! [8: line break]
@@ -21435,7 +21475,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [12: now the real diamond is familiar]
     (Adj_100_t2_v10(I408_real_diamond));
     ! [13: converse ~Thallium: 'Wow, clever solution. Be careful you don't cut yourself.'^^Jones: 'I appreciate your concern.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_487)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_488)));
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1252, 1252, 'action');
     rfalse;
@@ -21630,17 +21670,17 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [3: say line break]
     say__p=1;! [4: line break]
     ParaContent(); new_line; .L_Say80; .L_SayX80;! [5: converse as thallium ~Not so far away, Admiral Thallium crawls back over the edge of  the roof. As he pulls himself up, he aims a pistol at Jones's back...~]
-    (PHR_1028_r10 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_488)));
+    (PHR_1028_r10 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_489)));
     ! [6: say line break]
     say__p=1;! [7: line break]
     ParaContent(); new_line; .L_Say81; .L_SayX81;! [8: converse ~...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.~]
-    (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_489)));
+    (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_490)));
     ! [9: say line break]
     say__p=1;! [10: line break]
     ParaContent(); new_line; .L_Say82; .L_SayX82;! [11: converse as thallium ~And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...~]
-    (PHR_1028_r10 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_490)));
+    (PHR_1028_r10 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_491)));
     ! [12: end the story finally saying ~The End, For Now...~]
-    deadflag=TX_L_491; story_complete=true;
+    deadflag=TX_L_492; story_complete=true;
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1291, 1291, 'action');
     rfalse;
@@ -21751,7 +21791,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ParaContent(); DivideParagraphPoint(); new_line; .L_Say86; .L_SayX86;! [9: change down exit of the ledge to window washing scaffold]
     AssertMapConnection(I245_ledge,I60_down,I246_window_washing_scaffold);
     ! [10: converse ~Jones: 'Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up.'^^Beck: 'Take it easy, Jones.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_492)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_493)));
     ! [11: now the window washing scaffold is discovered]
     (Adj_121_t2_v10(I246_window_washing_scaffold));
     RulebookFails(); rtrue;
@@ -21843,7 +21883,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ParaContent(); (PHR_766_r5 ());! [10: ~ fumbles it and it rolls off the back of the filing cabinet.~]
     ParaContent(); print " fumbles it and it rolls off the back of the filing cabinet.";! [11: paragraph break]
     ParaContent(); DivideParagraphPoint(); new_line; .L_Say88; .L_SayX88;! [12: converse ~Jones: 'Damn.'^^Beck: 'What? What's going on?'^^Jones: 'Just being clumsy is all.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_493)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_494)));
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1194, 1194, 'action');
     rfalse;
@@ -21872,7 +21912,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [7: now the screwdriver is behind the filing cabinet]
     (Adj_122_t2_v10(I363_screwdriver));
     ! [8: converse ~Jones: 'Damn.'^^Beck: 'What? What's going on?'^^Jones: 'Just being clumsy is all.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_493)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_494)));
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1196, 1196, 'action');
     rfalse;
@@ -21912,7 +21952,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ParaContent(); (PHR_773_r8 ());! [4: ~ reaches behind the cabinet to retrieve the screwdriver. A swipe and a hiss make her recoil.~]
     ParaContent(); print " reaches behind the cabinet to retrieve the screwdriver. A swipe and a hiss make her recoil.";! [5: paragraph break]
     ParaContent(); DivideParagraphPoint(); new_line; .L_Say91; .L_SayX91;! [6: converse ~Jones: 'Holy --!'^^Beck: 'What now?'^^Jones: 'There's a cat here! Behind a filing cabinet. Gotta get behind there to get a screwdriver, so I need a way to drive off the cat.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_494)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_495)));
     ! [7: now the black cat is angry]
     (Adj_123_t2_v10(I364_black_cat));
     RulebookFails(); rtrue;
@@ -21947,7 +21987,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ParaContent(); DivideParagraphPoint(); new_line; .L_Say93; .L_SayX93;! [9: set pronouns from glass diamond]
     PronounNotice(I407_glass_diamond);
     ! [10: converse as thallium ~Thallium giggles. 'Oh, I hope you're not disappointed, Jones.'~]
-    (PHR_1028_r10 (BlkValueCopy(I7SFRAME, TX_L_495)));
+    (PHR_1028_r10 (BlkValueCopy(I7SFRAME, TX_L_496)));
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1248, 1248, 'action');
     rfalse;
@@ -22889,7 +22929,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~'Here are the credits:'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_496)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_497)));
     ! [4: lb]
     (PHR_1004_r19 ());
     ! [5: show basic credits]
@@ -23346,7 +23386,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ParaContent(); print " presses the red button, but nothing seems to happen. After a few seconds, however, ";! [5: we]
     ParaContent(); (PHR_766_r5 ());! [6: ~ starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die.~]
     ParaContent(); print " starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die."; new_line; .L_Say165; .L_SayX164;! [7: end the story saying ~Galaxy Jones was killed by poison gas.~]
-    deadflag=TX_L_497; story_complete=false;
+    deadflag=TX_L_498; story_complete=false;
     RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1261, 1261, 'action');
     rfalse;
@@ -23962,7 +24002,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say181; .L_SayX180;! [4: converse ~Beck: 'Keep your head down and keep firing.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_498)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_499)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1308, 1308, 'action');
     } else if (debug_rules > 1) DB_Rule(R_1308, 1308, 'scene');
@@ -23987,7 +24027,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say182; .L_SayX181;! [4: converse ~Beck: 'It doesn't look like shooting the robots is doing any good. Is there another way you can hurt them?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_499)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_500)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1309, 1309, 'action');
     } else if (debug_rules > 1) DB_Rule(R_1309, 1309, 'scene');
@@ -24013,7 +24053,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [3: say line break]
     say__p=1;! [4: line break]
     ParaContent(); new_line; .L_Say183; .L_SayX182;! [5: converse ~Jones: 'Finally out of the shaft. That was quite a climb.'^^Beck: 'This floor is just offices. Check the building management office to the west. It might have some useful stuff.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_500)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_501)));
     ! [6: continue the action]
     rfalse;
     RulebookSucceeds(); rtrue;
@@ -24038,7 +24078,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Where does he keep his ostrich farm?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_501)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_502)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1376, 1376, 'action');
     rfalse;
@@ -24082,7 +24122,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say185; .L_SayX184;! [4: converse ~Beck: 'Hope we don't have to use it.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_502)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_503)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1318, 1318, 'action');
     rfalse;
@@ -24105,7 +24145,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say186; .L_SayX185;! [4: converse ~Beck: 'Hope we don't have to use it.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_502)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_503)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1320, 1320, 'action');
     rfalse;
@@ -24128,7 +24168,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'How much do you think it's worth?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_503)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_504)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1348, 1348, 'action');
     rfalse;
@@ -24151,7 +24191,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Might be something useful in there.~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_504)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_505)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1386, 1386, 'action');
     rfalse;
@@ -24174,7 +24214,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say187; .L_SayX186;! [4: converse ~Beck: 'Good thing this was around.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_505)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_506)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1319, 1319, 'action');
     rfalse;
@@ -24197,7 +24237,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Don't get attached to pretty things, Jones.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_506)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_507)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1349, 1349, 'action');
     rfalse;
@@ -24221,7 +24261,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say188; .L_SayX187;! [4: converse ~Beck: 'It's huge. Imagine if it fell on you.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_507)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_508)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1039, 1039, 'action');
     } else if (debug_rules > 1) DB_Rule(R_1039, 1039, 'scene');
@@ -24243,7 +24283,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_1094, 1094);
     ! [2: converse ~Jones: 'What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?'^^Beck: 'Oh, the shrimp. Definitely get the shrimp.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_508)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_509)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1094, 1094, 'action');
     rfalse;
@@ -24283,7 +24323,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [13: say line break]
     say__p=1;! [14: line break]
     ParaContent(); new_line; .L_Say190; .L_SayX189;! [15: converse ~Jones: 'Aha! No creature is too fearsome for Galaxy Jones!'^^Beck: 'Congratulations on your victory.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_509)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_510)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1199, 1199, 'action');
     rfalse;
@@ -24356,7 +24396,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say192; .L_SayX191;! [4: converse ~Beck: 'I dunno, maybe shoot the robots?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_510)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_511)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1040, 1040, 'action');
     } else if (debug_rules > 1) DB_Rule(R_1040, 1040, 'scene');
@@ -24388,15 +24428,15 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r22 (I183_lobby_shootout))) 
     {1:
         ! [5: converse ~Beck: 'Well, if your energy weapon won't hurt them, maybe direct physical force will?'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_511)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_512)));
         ;
         2:
         ! [6: converse ~Beck: 'It would have to be something large. Throwing your shoe at them isn't going to cut it.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_512)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_513)));
         ;
         3:
         ! [7: converse ~Beck: 'That sculpture up there seems pretty big.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_513)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_514)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1041, 1041, 'action');
@@ -24493,7 +24533,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     tmp_2 = I7SFRAME; 
     		BlkValueCopy(tmp_2, (PHR_1413_r23 ((I7SFRAME+WORDSIZE*2),tmp_0,tmp_1)));
     ! [3: if transition text is not ~none~]
-    if (((~~(( BlkValueCompare(tmp_2, TX_L_514) == 0)))))
+    if (((~~(( BlkValueCompare(tmp_2, TX_L_515) == 0)))))
     {! [4: say ~[transition text][paragraph break]~]
         say__p=1;! [5: transition text]
         ParaContent(); print (TEXT_TY_Say) tmp_2;! [6: paragraph break]
@@ -24524,7 +24564,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say195; .L_SayX194;! [4: converse ~Beck: 'Could come in handy.~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_515)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_516)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1310, 1310, 'action');
     rfalse;
@@ -24547,7 +24587,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say196; .L_SayX195;! [4: converse ~Beck: 'Impressive place.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_516)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_517)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1311, 1311, 'action');
     rfalse;
@@ -24570,7 +24610,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say197; .L_SayX196;! [4: converse ~Beck: 'Guess everyone went home when Thallium went ape.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_517)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_518)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1312, 1312, 'action');
     rfalse;
@@ -24593,7 +24633,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say198; .L_SayX197;! [4: converse ~Beck: 'This guy's got some kind of inferiority complex.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_518)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_519)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1313, 1313, 'action');
     rfalse;
@@ -24616,7 +24656,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say199; .L_SayX198;! [4: converse ~Beck: 'Wow. Impressive.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_519)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_520)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1314, 1314, 'action');
     rfalse;
@@ -24639,7 +24679,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say200; .L_SayX199;! [4: converse ~Beck: 'It's a nice vehicle, I'll give him that. Have you ever noticed villains always have ugly houses and beautiful flyers?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_520)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_521)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1315, 1315, 'action');
     rfalse;
@@ -24662,7 +24702,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say201; .L_SayX200;! [4: converse ~Beck: 'Wonderful man, can't get enough of him.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_521)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_522)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1316, 1316, 'action');
     rfalse;
@@ -24685,7 +24725,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say202; .L_SayX201;! [4: converse ~Beck: 'Good thing this was here. Don't see why we'd hang around, though.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_522)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_523)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1317, 1317, 'action');
     rfalse;
@@ -24708,7 +24748,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say203; .L_SayX202;! [4: converse ~Beck: 'I'm just happy to serve.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_523)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_524)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1321, 1321, 'action');
     rfalse;
@@ -24731,7 +24771,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'No time to rest, Jones.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_524)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_525)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1322, 1322, 'action');
     rfalse;
@@ -24754,7 +24794,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'I'll adopt it.'^^'Jones: 'After it damn near took off my hand?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_525)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_526)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1323, 1323, 'action');
     rfalse;
@@ -24805,7 +24845,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'You're going to need a lot of force to get through that.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_526)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_527)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1326, 1326, 'action');
     rfalse;
@@ -24828,7 +24868,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'You're going to need a lot of force to get through that.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_526)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_527)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1327, 1327, 'action');
     rfalse;
@@ -24851,7 +24891,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'This whole place is like some weird wizard's chamber.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_527)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_528)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1328, 1328, 'action');
     rfalse;
@@ -24874,7 +24914,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Might as well hold on to it. You're not getting paid for this job.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_528)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_529)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1329, 1329, 'action');
     rfalse;
@@ -24897,7 +24937,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'And this is just the elevator!'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_529)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_530)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1330, 1330, 'action');
     rfalse;
@@ -24920,7 +24960,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Oh, they make the best games!'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_530)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_531)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1331, 1331, 'action');
     rfalse;
@@ -24943,7 +24983,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Oh, they make the best games!'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_530)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_531)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1332, 1332, 'action');
     rfalse;
@@ -24966,7 +25006,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Nice job, Jones.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_531)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_532)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1333, 1333, 'action');
     rfalse;
@@ -24989,7 +25029,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'So many desks. So. many. desks.~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_532)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_533)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1334, 1334, 'action');
     rfalse;
@@ -25012,7 +25052,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'What do all these people even do? I mean, Consolidated Microthings, what do they do?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_533)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_534)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1335, 1335, 'action');
     rfalse;
@@ -25035,7 +25075,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Just can't get a reliable guard robot these days.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_534)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_535)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1336, 1336, 'action');
     rfalse;
@@ -25058,7 +25098,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Uh, you know what that's for, right?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_535)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_536)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1337, 1337, 'action');
     rfalse;
@@ -25081,7 +25121,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'You insert a drop key in there and then turn it.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_536)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_537)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1338, 1338, 'action');
     rfalse;
@@ -25104,7 +25144,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'You can get back out through there.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_537)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_538)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1339, 1339, 'action');
     rfalse;
@@ -25127,7 +25167,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Looks like light needs to hit it or something.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_538)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_539)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1340, 1340, 'action');
     rfalse;
@@ -25150,7 +25190,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'You gotta admit, this is insane.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_539)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_540)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1341, 1341, 'action');
     rfalse;
@@ -25198,7 +25238,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'I can't imagine there's anything in there of relevance to rescuing Europa Callisto.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_540)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_541)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1343, 1343, 'action');
     rfalse;
@@ -25221,7 +25261,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'I'll be there soon.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_541)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_542)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1344, 1344, 'action');
     rfalse;
@@ -25244,7 +25284,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Maybe you can poke Thallium with a fork until he submits?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_542)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_543)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1345, 1345, 'action');
     rfalse;
@@ -25292,7 +25332,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'While I normally dislike Rambutan's work, this one has a certain power to it.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_543)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_544)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1347, 1347, 'action');
     rfalse;
@@ -25315,7 +25355,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Ooh pretty.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_544)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_545)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1350, 1350, 'action');
     rfalse;
@@ -25338,7 +25378,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Gold is a terrible material for keys.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_545)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_546)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1351, 1351, 'action');
     rfalse;
@@ -25361,7 +25401,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'This is just silly.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_546)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_547)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1352, 1352, 'action');
     rfalse;
@@ -25384,7 +25424,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'This place has great perks. Maybe I'll go work for them.'^^Jones: 'Beck, I'll tell you again: we don't have any place in HQ for a gym.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_547)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_548)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1353, 1353, 'action');
     rfalse;
@@ -25407,7 +25447,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'A hammer can't hurt. I mean, it can, but you know what I mean.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_548)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_549)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1354, 1354, 'action');
     rfalse;
@@ -25430,7 +25470,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'It seems very strong. It can undergo a lot of force without breaking'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_549)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_550)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1355, 1355, 'action');
     rfalse;
@@ -25453,7 +25493,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Why does Thallium need such a desk? It's not like he can read or write.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_550)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_551)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1356, 1356, 'action');
     rfalse;
@@ -25501,7 +25541,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'I keep thinking he can't get any worse, and then he tops himself.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_551)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_552)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1358, 1358, 'action');
     rfalse;
@@ -25524,7 +25564,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Where might you find the code?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_552)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_553)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1359, 1359, 'action');
     rfalse;
@@ -25547,7 +25587,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'There must be a way to break into it.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_553)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_554)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1360, 1360, 'action');
     rfalse;
@@ -25595,7 +25635,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Well, now we know where we are at least. Other than that, this doesn't seem to help.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_554)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_555)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1362, 1362, 'action');
     rfalse;
@@ -25618,7 +25658,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'I wish you weren't out there, Jones. Steady now.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_555)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_556)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1363, 1363, 'action');
     rfalse;
@@ -25641,7 +25681,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'It's an impressive building, I'll give Thallium that.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_556)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_557)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1364, 1364, 'action');
     rfalse;
@@ -25664,7 +25704,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'No time for banter right now, bye!'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_557)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_558)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1365, 1365, 'action');
     rfalse;
@@ -25687,7 +25727,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'You're not planning to clean the place, are you?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_558)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_559)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1366, 1366, 'action');
     rfalse;
@@ -25710,7 +25750,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'These guys are one of the worst polluters on Mars. People think we can just go on dumping chemicals everywhere because the place is so empty, but haven't they ever heard of exponential growth? I mean --'^^Jones: 'Yes! I totally agree. But let's deal with this after we've rescued Europa.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_559)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_560)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1367, 1367, 'action');
     rfalse;
@@ -25733,7 +25773,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Maybe you can out-maneuver him.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_560)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_561)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1368, 1368, 'action');
     rfalse;
@@ -25768,7 +25808,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Who does this guy think he's fooling? On the other hand, maybe you can find a disguise in there and fake your way past the guards.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_561)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_562)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1370, 1370, 'action');
     rfalse;
@@ -25791,7 +25831,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'These guys are one of the worst polluters on Mars. People think we can just go on dumping chemicals everywhere because the place is so empty, but haven't they ever heard of exponential growth? I mean --'^^Jones: 'Yes! I totally agree. But let's deal with this after we've rescued Europa.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_559)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_560)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1371, 1371, 'action');
     rfalse;
@@ -25814,7 +25854,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Write something on them! Something nasty about Thallium!'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_562)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_563)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1372, 1372, 'action');
     rfalse;
@@ -25837,7 +25877,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Write something on them! Something nasty about Thallium!'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_562)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_563)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1373, 1373, 'action');
     rfalse;
@@ -25860,7 +25900,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Looks useful'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_563)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_564)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1374, 1374, 'action');
     rfalse;
@@ -25883,7 +25923,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Be careful, don't press the wrong button.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_564)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_565)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1375, 1375, 'action');
     rfalse;
@@ -25906,7 +25946,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'These things are pretty invulnerable from a distance. Try getting closer in.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_565)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_566)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1377, 1377, 'action');
     rfalse;
@@ -25929,7 +25969,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'I'm flying it! No time to talk!'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_566)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_567)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1378, 1378, 'action');
     rfalse;
@@ -25952,7 +25992,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Looks like a point of weakness, as you said.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_567)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_568)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1379, 1379, 'action');
     rfalse;
@@ -25975,7 +26015,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'You never know when you might need something that can get in a very small space.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_568)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_569)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1380, 1380, 'action');
     rfalse;
@@ -25998,7 +26038,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Always useful.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_569)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_570)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1381, 1381, 'action');
     rfalse;
@@ -26021,7 +26061,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'I love shrimp, but unfortunately it makes me break out.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_570)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_571)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1382, 1382, 'action');
     rfalse;
@@ -26044,7 +26084,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Inscrutable, but do we have any choice?'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_571)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_572)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1383, 1383, 'action');
     rfalse;
@@ -26067,7 +26107,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'I keep reminding you, but you still haven't taken it in for yearly maintenance.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_572)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_573)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1384, 1384, 'action');
     rfalse;
@@ -26090,7 +26130,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'We'll come back and knock it over later.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_573)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_574)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1385, 1385, 'action');
     rfalse;
@@ -26113,7 +26153,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Sure is big.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_574)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_575)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1387, 1387, 'action');
     rfalse;
@@ -26136,7 +26176,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Here's where the magic happens.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_575)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_576)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1388, 1388, 'action');
     rfalse;
@@ -26159,7 +26199,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'I'd heard it was stolen. I can't believe he just flaunts it like this.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_576)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_577)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1389, 1389, 'action');
     rfalse;
@@ -26182,7 +26222,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'How nice of them to put this here for us.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_577)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_578)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1390, 1390, 'action');
     rfalse;
@@ -26205,7 +26245,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'Well, I think you're very nice, Jones.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_578)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_579)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1391, 1391, 'action');
     rfalse;
@@ -26228,7 +26268,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say206; .L_SayX205;! [4: converse ~Beck: 'I'm not sure what you're asking about, Jones.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_579)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_580)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1306, 1306, 'action');
     rfalse;
@@ -26299,18 +26339,18 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r25 (I229_ninth_floor))) 
     {1:
         ! [4: converse ~Beck: 'You've probably noticed the two locked doors on this floor. You need to get them open.'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_580)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_581)));
         ;
         2:
         ! [5: converse ~Beck: 'The cardkey for both of them is in the large desk in the building management office.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_581)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_582)));
         ;
         3:
         ! [6: converse ~Beck: 'You don't have a key for the desk. Maybe you can pick the lock?'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_582)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_583)));
         ;
         default:! [7: converse ~Beck: 'Pick the desk lock with the safety pin.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_583)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_584)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1399, 1399, 'action');
@@ -26345,23 +26385,23 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r26 (I224_maintenance_closet))) 
     {1:
         ! [4: converse ~Beck: 'You saw that utility door near the catering table, right?'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_584)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_585)));
         ;
         2:
         ! [5: converse ~Beck: 'It's got a numerical lock on it.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_585)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_586)));
         ;
         3:
         ! [6: converse ~Beck: 'The code should be around here somewhere.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_586)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_587)));
         ;
         default:! [7: if the note is handled]
         if ((((Adj_73_t1_v10(I293_note)))))
         {! [8: converse ~Beck: 'Look at the note you got from the front desk.'~]
-            (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_587)));
+            (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_588)));
             } else {
             ! [9: converse ~Beck: 'Check the front desk.'~]
-            (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_588)));
+            (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_589)));
             }
             }
             RulebookSucceeds(); rtrue;
@@ -26386,7 +26426,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: lb]
     (PHR_1004_r19 ());
     ! [3: converse ~Beck: 'You should look for a door where you can use that cardkey.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_589)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_590)));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1397, 1397, 'action');
     rfalse;
@@ -26432,18 +26472,18 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r26 (I245_ledge))) 
     {1:
         ! [4: converse ~Beck: 'Is there anything out there useful?'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_590)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_591)));
         ;
         2:
         ! [5: converse ~Beck: 'Have you looked everywhere?'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_591)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_592)));
         ;
         3:
         ! [6: converse ~Beck: '[special-style-2]everywhere?[special-style-1]'~]
         (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), (TEXT_TY_ExpandIfPerishable((I7SFRAME+WORDSIZE*6),TX_S_258)))));
         ;
         default:! [7: converse ~Beck: 'Look down.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_592)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_593)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1401, 1401, 'action');
@@ -26476,18 +26516,18 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r27 (I354_exhaust_vent))) 
     {1:
         ! [4: converse ~Beck: 'You need to get into the building through the exhaust vent.'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_593)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_594)));
         ;
         2:
         ! [5: converse ~Beck: 'You need to remove the cover of the exhaust vent.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_594)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_595)));
         ;
         3:
         ! [6: converse ~Beck: 'To do that you need a screwdriver.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_595)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_596)));
         ;
         default:! [7: converse ~Beck: 'Haven't got one? Go back to the building management office.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_596)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_597)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1402, 1402, 'action');
@@ -26518,14 +26558,14 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r28 (I192_elevator_drop_key))) 
     {1:
         ! [4: converse ~Beck: 'You should probably be heading up the building by now.'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_597)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_598)));
         ;
         2:
         ! [5: converse ~Beck: 'Time to open the elevator door.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_598)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_599)));
         ;
         default:! [6: converse ~Beck: 'Use the drop key you found in the elevator room.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_599)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_600)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1396, 1396, 'action');
@@ -26556,14 +26596,14 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r26 (I235_cybernetica_office))) 
     {1:
         ! [4: converse ~Beck: 'The robot's got you pinned down good, yeah? And you can't get a good shot in? And even if you did, it would probably just be absorbed?'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_600)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_601)));
         ;
         2:
         ! [5: converse ~Beck: 'When will you start listening to your handler? When? I've been giving you good advice, just spelling out what to do, and you don't pay attention.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_601)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_602)));
         ;
         default:! [6: converse ~Beck: 'Sneak up on the stupid robot already!'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_602)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_603)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1400, 1400, 'action');
@@ -26616,58 +26656,58 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r25 (I248_tenth_floor_region))) 
     {1:
         ! [4: converse ~Beck: 'Before we begin, save your game. This could get ugly.'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_603)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_604)));
         ;
         2:
         ! [5: converse ~Beck: 'There are multiple ways to get past this floor. Here's one.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_604)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_605)));
         ;
         3:
         ! [6: converse ~Beck: 'Go west from the air handling room, south once, and west into the elevator car.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_605)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_606)));
         ;
         4:
         ! [7: converse ~Beck: 'You'll notice a loose ceiling panel. Open it.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_606)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_607)));
         ;
         5:
         ! [8: converse ~Beck: 'Now lure the robot in the southwest corner to the elevator car.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_607)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_608)));
         ;
         6:
         ! [9: converse ~Beck: 'Leave the elevator to the east, go south to catch the robot's eye, then go north and west back into the elevator car. Then go up onto the top of the car.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*10), TX_L_608)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*10), TX_L_609)));
         ;
         7:
         ! [10: converse ~Beck: 'The robot will enter the car but not see you. Now's your chance!'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*12), TX_L_609)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*12), TX_L_610)));
         ;
         8:
         ! [11: converse ~Beck: 'No, shooting won't work.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*14), TX_L_610)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*14), TX_L_611)));
         ;
         9:
         ! [12: converse ~Beck: 'When the robot leaves you'll have to lure it back again.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*16), TX_L_611)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*16), TX_L_612)));
         ;
         10:
         ! [13: converse ~Beck: 'Maybe pour something on the robot?'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*18), TX_L_612)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*18), TX_L_613)));
         ;
         11:
         ! [14: converse ~Beck: 'No, don't waste your water. What else is pourable?'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*20), TX_L_613)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*20), TX_L_614)));
         ;
         12:
         ! [15: converse ~Beck: 'Yes, the polymer gel! But you can't get close enough to pour it on the robot.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*22), TX_L_614)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*22), TX_L_615)));
         ;
         13:
         ! [16: converse ~Beck: 'Jump on the robot!'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*24), TX_L_615)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*24), TX_L_616)));
         ;
         default:! [17: converse ~Beck: 'Then pour the gel on the robot.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*26), TX_L_616)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*26), TX_L_617)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1403, 1403, 'action');
@@ -26716,50 +26756,50 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r25 (I395_100th_floor_region))) 
     {1:
         ! [4: converse ~Beck: 'You need to get to the roof, but there is no apparent way to get there.'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_617)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_618)));
         ;
         2:
         ! [5: converse ~Beck: 'What are these diamonds?'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_618)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_619)));
         ;
         3:
         ! [6: converse ~Beck: 'Have you examined one?'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_619)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_620)));
         ;
         4:
         ! [7: converse ~Beck: 'It's fake!'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_620)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_621)));
         ;
         5:
         ! [8: converse ~Beck: 'You can't just keep looking at the diamonds one-by-one.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_621)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_622)));
         ;
         6:
         ! [9: converse ~Beck: 'You need a faster way to distinguish real and fake.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*10), TX_L_622)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*10), TX_L_623)));
         ;
         7:
         ! [10: converse ~Beck: 'Smash the diamonds with the hammer.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*12), TX_L_623)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*12), TX_L_624)));
         ;
         8:
         ! [11: converse ~Beck: 'If you don't have the hammer, it's on the ground floor in the elevator room.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*14), TX_L_624)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*14), TX_L_625)));
         ;
         9:
         ! [12: converse ~Beck: 'Put the diamond in the claw in penthouse west.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*16), TX_L_625)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*16), TX_L_626)));
         ;
         10:
         ! [13: converse ~Beck: 'DON'T PRESS THE BIG RED BUTTON!'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*18), TX_L_626)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*18), TX_L_627)));
         ;
         11:
         ! [14: converse ~Beck: 'Examine the panel and then press the small black button.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*20), TX_L_627)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*20), TX_L_628)));
         ;
         default:! [15: converse ~Beck: 'A secret door has now opened in the elevator hall.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*22), TX_L_628)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*22), TX_L_629)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1404, 1404, 'action');
@@ -26798,30 +26838,30 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r26 (I269_roof_stairs))) 
     {1:
         ! [4: converse ~Beck: 'Be careful before going to the roof, there's no turning back.'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_629)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_630)));
         ;
         2:
         ! [5: converse ~Beck: 'You need two things.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_630)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_631)));
         ;
         3:
         ! [6: converse ~Beck: 'Not the fork.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_631)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_632)));
         ;
         4:
         ! [7: converse ~Beck: 'The water bottle and the cable.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_632)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_633)));
         ;
         5:
         ! [8: converse ~Beck: 'You can buy the water bottle from the vending machine on the ninth floor.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_633)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_634)));
         ;
         6:
         ! [9: converse ~Beck: 'You can get a coin to buy the water with from the waterfall on the ground floor.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*10), TX_L_634)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*10), TX_L_635)));
         ;
         default:! [10: converse ~Beck: 'You can get the cable by examining the tangled ruin left by the sculpture in the lobby.~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*12), TX_L_635)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*12), TX_L_636)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1405, 1405, 'action');
@@ -26866,43 +26906,43 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r25 (I417_rooftop))) 
     {1:
         ! [4: converse ~Beck: 'Congratulations! You made it this far.'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_636)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_637)));
         ;
         2:
         ! [5: converse ~Beck: 'You need to break Europa out of the cage and get her to a rescue flyer.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_637)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_638)));
         ;
         3:
         ! [6: converse ~Beck: 'Don't worry, the rescue flyer will show up on time.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_638)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_639)));
         ;
         4:
         ! [7: converse ~Beck: 'To break open the cage, you'll need to find some way to apply a great force to it.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_639)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_640)));
         ;
         5:
         ! [8: converse ~Beck: 'Hook the cable to the flyer and the cage by saying THROW CABLE AT FLYER.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_640)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_641)));
         ;
         6:
         ! [9: converse ~Beck: 'Come up short? Get higher.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*10), TX_L_641)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*10), TX_L_642)));
         ;
         7:
         ! [10: converse ~Beck: 'Climb the cage.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*12), TX_L_642)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*12), TX_L_643)));
         ;
         8:
         ! [11: converse ~Beck: 'Now throw the cable.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*14), TX_L_643)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*14), TX_L_644)));
         ;
         9:
         ! [12: converse ~Beck: 'Now you're in the cage but Europa is unresponsive. How do you revive her?'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*16), TX_L_644)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*16), TX_L_645)));
         ;
         10:
         ! [13: converse ~Beck: 'The water of course!'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*18), TX_L_645)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*18), TX_L_646)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1406, 1406, 'action');
@@ -26919,14 +26959,14 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     say__p=1;! [3: one of]
     ParaContent(); 
     	
-    	if (I7_ST_say_one_flag-->0 == false) {
-    		I7_ST_say_one_of-->0 = i7_soo_ran(I7_ST_say_one_of-->0,
+    	if (I7_ST_say_one_flag-->2 == false) {
+    		I7_ST_say_one_of-->2 = i7_soo_ran(I7_ST_say_one_of-->2,
     3);
-    	 	I7_ST_say_one_flag-->0 = true;
+    	 	I7_ST_say_one_flag-->2 = true;
     	}
-    	if (say__comp == false) I7_ST_say_one_flag-->0 =
+    	if (say__comp == false) I7_ST_say_one_flag-->2 =
     false;
-    	switch ((I7_ST_say_one_of-->0)%(3+1)-1)
+    	switch ((I7_ST_say_one_of-->2)%(3+1)-1)
     {
     		0:! [4: ~Two guard robots, red and green, criss-cross the lobby, stalking ~]
     ParaContent(); print "Two guard robots, red and green, criss-cross the lobby, stalking ";! [5: us]
@@ -26971,22 +27011,22 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1394_r28 (I363_screwdriver))) 
     {1:
         ! [4: converse ~Beck: 'If you haven't yet, get the screwdriver.'~]
-        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_646)));
+        (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_647)));
         ;
         2:
         ! [5: converse ~Beck: 'Oops. Getting the screwdriver didn't turn out well. Look behind the cabinet to get the screwdriver.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_647)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_648)));
         ;
         3:
         ! [6: converse ~Beck: 'Looks like you'll need to get rid of the cat. What do cats like?'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_648)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_649)));
         ;
         4:
         ! [7: converse ~Beck: 'Give the shrimp tea sandwich to the cat.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_649)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_650)));
         ;
         default:! [8: converse ~Beck: 'What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there.'~]
-        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_650)));
+        (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_651)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1398, 1398, 'action');
@@ -28123,19 +28163,19 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ParaContent(); DivideParagraphPoint(); new_line; .L_Say222; .L_SayX221;! [4: show extended credits]
     (PHR_1297_r30 ());
     ! [5: screen print ~Black screen~]
-    (PHR_1298_r31 (BlkValueCopy(I7SFRAME, TX_L_651)));
+    (PHR_1298_r31 (BlkValueCopy(I7SFRAME, TX_L_652)));
     ! [6: say ~'Jones! Jones! Wake up! I'm trying to talk to you!'~]
     say__p=1;! [7: ~'Jones! Jones! Wake up! I'm trying to talk to you!'~]
     ParaContent(); print "~Jones! Jones! Wake up! I'm trying to talk to you!~"; new_line; .L_Say223; .L_SayX222;! [8: say line break]
     say__p=1;! [9: line break]
     ParaContent(); new_line; .L_Say224; .L_SayX223;! [10: screen print ~Cut to a shot of two closed eyes~]
-    (PHR_1298_r31 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_652)));
+    (PHR_1298_r31 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_653)));
     ! [11: say ~'C'mon, open those eyes.'~]
     say__p=1;! [12: ~'C'mon, open those eyes.'~]
     ParaContent(); print "~C'mon, open those eyes.~"; new_line; .L_Say225; .L_SayX224;! [13: say line break]
     say__p=1;! [14: line break]
     ParaContent(); new_line; .L_Say226; .L_SayX225;! [15: screen print ~The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious~]
-    (PHR_1298_r31 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_653)));
+    (PHR_1298_r31 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_654)));
     ! [16: say ~'This is getting tiresome, Jones. Stop playing dead.'~]
     say__p=1;! [17: ~'This is getting tiresome, Jones. Stop playing dead.'~]
     ParaContent(); print "~This is getting tiresome, Jones. Stop playing dead.~"; new_line; .L_Say227; .L_SayX226;! [18: say line break]
@@ -36266,7 +36306,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say569; .L_SayX567;! [4: converse ~Beck: 'Hmm. Don't have much to say about that right now.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_654)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_655)));
     ! [5: stop the action]
     rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1307, 1307, 'action');
@@ -37090,14 +37130,14 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     say__p=1;! [3: one of]
     ParaContent(); 
     	
-    	if (I7_ST_say_one_flag-->1 == false) {
-    		I7_ST_say_one_of-->1 = i7_soo_ran(I7_ST_say_one_of-->1,
+    	if (I7_ST_say_one_flag-->3 == false) {
+    		I7_ST_say_one_of-->3 = i7_soo_ran(I7_ST_say_one_of-->3,
     7);
-    	 	I7_ST_say_one_flag-->1 = true;
+    	 	I7_ST_say_one_flag-->3 = true;
     	}
-    	if (say__comp == false) I7_ST_say_one_flag-->1 =
+    	if (say__comp == false) I7_ST_say_one_flag-->3 =
     false;
-    	switch ((I7_ST_say_one_of-->1)%(7+1)-1)
+    	switch ((I7_ST_say_one_of-->3)%(7+1)-1)
     {
     		0:! [4: ~Oops! ~]
     ParaContent(); print "Oops! ";! [5: we]
@@ -37376,7 +37416,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ParaContent(); (PHR_772_r6 ());! [14: ~ disruptor pistol.~]
     ParaContent(); print " disruptor pistol.";! [15: paragraph break]
     ParaContent(); DivideParagraphPoint(); new_line; .L_Say610; .L_SayX607;! [16: converse ~Jones shouts, 'I'm under fire from two ugly robot things!'^^Beck responds, 'Monitoring your suit radar.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_655)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_656)));
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -37924,7 +37964,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 [ KERNEL_149 ;
     if (debug_rules) DB_Rule(R_1266, 1266);
     ! [2: converse as thallium ~Thallium's flyer hovers over the rooftop. 'Jones!'  he bellows. 'Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.'^^Jones rolls her eyes.~]
-    (PHR_1028_r10 (BlkValueCopy(I7SFRAME, TX_L_656)));
+    (PHR_1028_r10 (BlkValueCopy(I7SFRAME, TX_L_657)));
     ! [3: converse ~[line break]A little ways off, a small red flyer aims for the rooftop and accelerates.~]
     (PHR_1027_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), (TEXT_TY_ExpandIfPerishable((I7SFRAME+WORDSIZE*4),TX_S_560)))));
     rfalse;
@@ -37952,7 +37992,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 [ KERNEL_150 ;
     if (debug_rules) DB_Rule(R_1268, 1268);
     ! [2: converse ~The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_657)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_658)));
     ! [3: move the red flyer to the rooftop]
     MoveObject(I423_red_flyer, I417_rooftop, 0, false);
     rfalse;
@@ -38008,7 +38048,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say632; .L_SayX629;! [4: converse ~Beck: 'Looks like you're managing okay.'~]
-    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_658)));
+    (PHR_1027_r9 (BlkValueCopy(I7SFRAME, TX_L_659)));
     } else if (debug_rules > 1) DB_Rule(R_1393, 1393, 'actor');
     rfalse;
 ];
@@ -63595,25 +63635,25 @@ Verb meta 'tree'
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 
-Array LIST_CONST_101343 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2106) (BC_2107) (BC_2108) (BC_2109) (BC_2110) ;
-Array LIST_CONST_101377 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2111) (BC_2112) (BC_2113) (BC_2114) (BC_2115) ;
-Array LIST_CONST_101411 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2116) (BC_2117) (BC_2118) (BC_2119) (BC_2120) ;
-Array LIST_CONST_101441 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2121) (BC_2122) (BC_2123) (BC_2124) (BC_2125) ;
-Array LIST_CONST_101471 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2126) (BC_2127) (BC_2128) (BC_2129) (BC_2130) ;
-Array LIST_CONST_101501 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2131) (BC_2132) (BC_2133) (BC_2134) (BC_2135) ;
-Array LIST_CONST_101535 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2136) (BC_2137) (BC_2138) (BC_2139) (BC_2140) ;
-Array LIST_CONST_101569 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2141) (BC_2142) (BC_2143) (BC_2144) (BC_2145) ;
-Array LIST_CONST_101603 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2146) (BC_2147) (BC_2148) (BC_2149) (BC_2150) ;
-Array LIST_CONST_28009 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER NUMBER_TY 4 (1) (9) (10) (100) ;
-Array LIST_CONST_95075 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95310 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95328 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95346 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95364 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95382 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95400 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95418 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95436 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_101347 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2106) (BC_2107) (BC_2108) (BC_2109) (BC_2110) ;
+Array LIST_CONST_101381 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2111) (BC_2112) (BC_2113) (BC_2114) (BC_2115) ;
+Array LIST_CONST_101415 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2116) (BC_2117) (BC_2118) (BC_2119) (BC_2120) ;
+Array LIST_CONST_101445 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2121) (BC_2122) (BC_2123) (BC_2124) (BC_2125) ;
+Array LIST_CONST_101475 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2126) (BC_2127) (BC_2128) (BC_2129) (BC_2130) ;
+Array LIST_CONST_101505 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2131) (BC_2132) (BC_2133) (BC_2134) (BC_2135) ;
+Array LIST_CONST_101539 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2136) (BC_2137) (BC_2138) (BC_2139) (BC_2140) ;
+Array LIST_CONST_101573 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2141) (BC_2142) (BC_2143) (BC_2144) (BC_2145) ;
+Array LIST_CONST_101607 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2146) (BC_2147) (BC_2148) (BC_2149) (BC_2150) ;
+Array LIST_CONST_28013 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER NUMBER_TY 4 (1) (9) (10) (100) ;
+Array LIST_CONST_95079 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95314 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95332 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95350 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95368 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95386 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95404 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95422 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95440 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
 
 
 
@@ -64384,7 +64424,7 @@ I7RBLK;
             }
             }
             @pull ct_1; @pull ct_0;! [5: decide on ~none~]
-    return BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_514);
+    return BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_515);
     return BC_2153;
 ];
 ! Request 24: phrase (room, room) -> nothing
@@ -88890,11 +88930,11 @@ Verb '*//'
 
 
 Constant TX_PS_483 = "#0000FF";
-Constant TX_PS_496 = "~Here are the credits:~";
-Array TX_L_496 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_496;
+Constant TX_PS_497 = "~Here are the credits:~";
+Array TX_L_497 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_497;
 Constant TX_PS_347 = "~Planetas Vincam~, incidentally, means ~I will conquer the planets.~";
-Constant TX_PS_489 = "...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.";
-Array TX_L_489 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_489;
+Constant TX_PS_490 = "...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.";
+Array TX_L_490 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_490;
 Constant TX_PS_315 = "100th floor elevator hall";
 Constant TX_PS_455 = "100th-floor-region";
 Constant TX_PS_475 = ">";
@@ -88941,8 +88981,8 @@ Constant TX_PS_228 = "An ordinary filing cabinet, with five drawers. The label o
 Constant TX_PS_402 = "An ordinary numerical keypad.";
 Constant TX_PS_151 = "An ordinary swipe lock.";
 Constant TX_PS_312 = "An ordinary utility door.";
-Constant TX_PS_490 = "And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...";
-Array TX_L_490 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_490;
+Constant TX_PS_491 = "And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...";
+Array TX_L_491 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_491;
 Constant TX_PS_176 = "Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.";
 Constant TX_PS_485 = "As good-looking as ever.";
 Array TX_L_485 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_485;
@@ -88953,320 +88993,320 @@ Constant TX_PS_471 = "Bars don't budge";
 Constant TX_PS_388 = "Battle won";
 Constant TX_PS_63 = "Beck isn't exactly handsome, but he exudes a confidence that makes him memorable.";
 Constant TX_PS_62 = "Beck";
-Constant TX_PS_548 = "Beck: ~A hammer can't hurt. I mean, it can, but you know what I mean.~";
-Array TX_L_548 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_548;
-Constant TX_PS_628 = "Beck: ~A secret door has now opened in the elevator hall.~";
-Array TX_L_628 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_628;
-Constant TX_PS_569 = "Beck: ~Always useful.~";
-Array TX_L_569 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_569;
-Constant TX_PS_529 = "Beck: ~And this is just the elevator!~";
-Array TX_L_529 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_529;
-Constant TX_PS_76 = "Beck: ~Are you still shooting at those things? Even if you hit ~em it's not going to leave a scratch.~^^Jones (whispering): ~So what do you propose?~^^Beck: ~Get closer. Keep your head down, but move in closer to it until you can get a good shot in.~";
-Constant TX_PS_629 = "Beck: ~Be careful before going to the roof, there's no turning back.~";
-Array TX_L_629 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_629;
-Constant TX_PS_564 = "Beck: ~Be careful, don't press the wrong button.~";
-Array TX_L_564 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_564;
-Constant TX_PS_603 = "Beck: ~Before we begin, save your game. This could get ugly.~";
-Array TX_L_603 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_603;
-Constant TX_PS_177 = "Beck: ~Blueprints indicate a closet to the west of you. Might be useful.~";
-Constant TX_PS_588 = "Beck: ~Check the front desk.~";
-Array TX_L_588 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_588;
-Constant TX_PS_642 = "Beck: ~Climb the cage.~";
-Array TX_L_642 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_642;
-Constant TX_PS_641 = "Beck: ~Come up short? Get higher.~";
-Array TX_L_641 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_641;
-Constant TX_PS_636 = "Beck: ~Congratulations! You made it this far.~";
-Array TX_L_636 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_636;
-Constant TX_PS_515 = "Beck: ~Could come in handy.";
-Array TX_L_515 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_515;
-Constant TX_PS_626 = "Beck: ~DON'T PRESS THE BIG RED BUTTON!~";
-Array TX_L_626 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_626;
-Constant TX_PS_506 = "Beck: ~Don't get attached to pretty things, Jones.~";
-Array TX_L_506 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_506;
-Constant TX_PS_638 = "Beck: ~Don't worry, the rescue flyer will show up on time.~";
-Array TX_L_638 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_638;
-Constant TX_PS_627 = "Beck: ~Examine the panel and then press the small black button.~";
-Array TX_L_627 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_627;
-Constant TX_PS_649 = "Beck: ~Give the shrimp tea sandwich to the cat.~";
-Array TX_L_649 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_649;
-Constant TX_PS_605 = "Beck: ~Go west from the air handling room, south once, and west into the elevator car.~";
-Array TX_L_605 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_605;
-Constant TX_PS_545 = "Beck: ~Gold is a terrible material for keys.~";
-Array TX_L_545 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_545;
-Constant TX_PS_505 = "Beck: ~Good thing this was around.~";
-Array TX_L_505 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_505;
-Constant TX_PS_522 = "Beck: ~Good thing this was here. Don't see why we'd hang around, though.~";
-Array TX_L_522 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_522;
-Constant TX_PS_517 = "Beck: ~Guess everyone went home when Thallium went ape.~";
-Array TX_L_517 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_517;
-Constant TX_PS_619 = "Beck: ~Have you examined one?~";
-Array TX_L_619 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_619;
-Constant TX_PS_591 = "Beck: ~Have you looked everywhere?~";
-Array TX_L_591 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_591;
-Constant TX_PS_596 = "Beck: ~Haven't got one? Go back to the building management office.~";
-Array TX_L_596 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_596;
-Constant TX_PS_575 = "Beck: ~Here's where the magic happens.~";
-Array TX_L_575 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_575;
-Constant TX_PS_654 = "Beck: ~Hmm. Don't have much to say about that right now.~";
-Array TX_L_654 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_654;
-Constant TX_PS_640 = "Beck: ~Hook the cable to the flyer and the cage by saying THROW CABLE AT FLYER.~";
-Array TX_L_640 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_640;
-Constant TX_PS_502 = "Beck: ~Hope we don't have to use it.~";
-Array TX_L_502 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_502;
-Constant TX_PS_503 = "Beck: ~How much do you think it's worth?~";
-Array TX_L_503 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_503;
-Constant TX_PS_577 = "Beck: ~How nice of them to put this here for us.~";
-Array TX_L_577 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_577;
-Constant TX_PS_73 = "Beck: ~How's it going in there?~^^~Jones: ~You know -- like all art, it's hit or miss.~";
-Constant TX_PS_540 = "Beck: ~I can't imagine there's anything in there of relevance to rescuing Europa Callisto.~";
-Array TX_L_540 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_540;
-Constant TX_PS_510 = "Beck: ~I dunno, maybe shoot the robots?~";
-Array TX_L_510 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_510;
-Constant TX_PS_572 = "Beck: ~I keep reminding you, but you still haven't taken it in for yearly maintenance.~";
-Array TX_L_572 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_572;
-Constant TX_PS_551 = "Beck: ~I keep thinking he can't get any worse, and then he tops himself.~";
-Array TX_L_551 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_551;
-Constant TX_PS_570 = "Beck: ~I love shrimp, but unfortunately it makes me break out.~";
-Array TX_L_570 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_570;
-Constant TX_PS_555 = "Beck: ~I wish you weren't out there, Jones. Steady now.~";
-Array TX_L_555 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_555;
-Constant TX_PS_576 = "Beck: ~I'd heard it was stolen. I can't believe he just flaunts it like this.~";
-Array TX_L_576 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_576;
-Constant TX_PS_525 = "Beck: ~I'll adopt it.~^^~Jones: ~After it damn near took off my hand?~";
-Array TX_L_525 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_525;
-Constant TX_PS_541 = "Beck: ~I'll be there soon.~";
-Array TX_L_541 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_541;
-Constant TX_PS_566 = "Beck: ~I'm flying it! No time to talk!~";
-Array TX_L_566 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_566;
-Constant TX_PS_523 = "Beck: ~I'm just happy to serve.~";
-Array TX_L_523 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_523;
-Constant TX_PS_579 = "Beck: ~I'm not sure what you're asking about, Jones.~";
-Array TX_L_579 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_579;
-Constant TX_PS_624 = "Beck: ~If you don't have the hammer, it's on the ground floor in the elevator room.~";
-Array TX_L_624 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_624;
-Constant TX_PS_646 = "Beck: ~If you haven't yet, get the screwdriver.~";
-Array TX_L_646 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_646;
-Constant TX_PS_516 = "Beck: ~Impressive place.~";
-Array TX_L_516 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_516;
-Constant TX_PS_571 = "Beck: ~Inscrutable, but do we have any choice?~";
-Array TX_L_571 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_571;
-Constant TX_PS_590 = "Beck: ~Is there anything out there useful?~";
-Array TX_L_590 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_590;
-Constant TX_PS_499 = "Beck: ~It doesn't look like shooting the robots is doing any good. Is there another way you can hurt them?~";
-Array TX_L_499 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_499;
-Constant TX_PS_549 = "Beck: ~It seems very strong. It can undergo a lot of force without breaking~";
+Constant TX_PS_549 = "Beck: ~A hammer can't hurt. I mean, it can, but you know what I mean.~";
 Array TX_L_549 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_549;
-Constant TX_PS_512 = "Beck: ~It would have to be something large. Throwing your shoe at them isn't going to cut it.~";
-Array TX_L_512 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_512;
-Constant TX_PS_520 = "Beck: ~It's a nice vehicle, I'll give him that. Have you ever noticed villains always have ugly houses and beautiful flyers?~";
-Array TX_L_520 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_520;
-Constant TX_PS_556 = "Beck: ~It's an impressive building, I'll give Thallium that.~";
-Array TX_L_556 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_556;
-Constant TX_PS_620 = "Beck: ~It's fake!~";
-Array TX_L_620 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_620;
-Constant TX_PS_585 = "Beck: ~It's got a numerical lock on it.~";
-Array TX_L_585 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_585;
-Constant TX_PS_507 = "Beck: ~It's huge. Imagine if it fell on you.~";
-Array TX_L_507 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_507;
-Constant TX_PS_615 = "Beck: ~Jump on the robot!~";
-Array TX_L_615 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_615;
-Constant TX_PS_534 = "Beck: ~Just can't get a reliable guard robot these days.~";
-Array TX_L_534 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_534;
-Constant TX_PS_498 = "Beck: ~Keep your head down and keep firing.~";
-Array TX_L_498 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_498;
-Constant TX_PS_608 = "Beck: ~Leave the elevator to the east, go south to catch the robot's eye, then go north and west back into the elevator car. Then go up onto the top of the car.~";
-Array TX_L_608 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_608;
-Constant TX_PS_587 = "Beck: ~Look at the note you got from the front desk.~";
-Array TX_L_587 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_587;
-Constant TX_PS_592 = "Beck: ~Look down.~";
-Array TX_L_592 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_592;
-Constant TX_PS_567 = "Beck: ~Looks like a point of weakness, as you said.~";
-Array TX_L_567 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_567;
-Constant TX_PS_538 = "Beck: ~Looks like light needs to hit it or something.~";
-Array TX_L_538 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_538;
-Constant TX_PS_648 = "Beck: ~Looks like you'll need to get rid of the cat. What do cats like?~";
-Array TX_L_648 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_648;
-Constant TX_PS_658 = "Beck: ~Looks like you're managing okay.~";
-Array TX_L_658 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_658;
-Constant TX_PS_563 = "Beck: ~Looks useful~";
-Array TX_L_563 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_563;
-Constant TX_PS_612 = "Beck: ~Maybe pour something on the robot?~";
-Array TX_L_612 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_612;
-Constant TX_PS_560 = "Beck: ~Maybe you can out-maneuver him.~";
-Array TX_L_560 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_560;
-Constant TX_PS_542 = "Beck: ~Maybe you can poke Thallium with a fork until he submits?~";
-Array TX_L_542 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_542;
-Constant TX_PS_528 = "Beck: ~Might as well hold on to it. You're not getting paid for this job.~";
-Array TX_L_528 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_528;
-Constant TX_PS_504 = "Beck: ~Might be something useful in there.";
-Array TX_L_504 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_504;
-Constant TX_PS_531 = "Beck: ~Nice job, Jones.~";
-Array TX_L_531 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_531;
-Constant TX_PS_557 = "Beck: ~No time for banter right now, bye!~";
-Array TX_L_557 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_557;
-Constant TX_PS_524 = "Beck: ~No time to rest, Jones.~";
-Array TX_L_524 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_524;
-Constant TX_PS_613 = "Beck: ~No, don't waste your water. What else is pourable?~";
-Array TX_L_613 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_613;
-Constant TX_PS_610 = "Beck: ~No, shooting won't work.~";
-Array TX_L_610 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_610;
-Constant TX_PS_631 = "Beck: ~Not the fork.~";
-Array TX_L_631 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_631;
-Constant TX_PS_607 = "Beck: ~Now lure the robot in the southwest corner to the elevator car.~";
-Array TX_L_607 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_607;
-Constant TX_PS_643 = "Beck: ~Now throw the cable.~";
-Array TX_L_643 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_643;
-Constant TX_PS_644 = "Beck: ~Now you're in the cage but Europa is unresponsive. How do you revive her?~";
-Array TX_L_644 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_644;
-Constant TX_PS_530 = "Beck: ~Oh, they make the best games!~";
+Constant TX_PS_629 = "Beck: ~A secret door has now opened in the elevator hall.~";
+Array TX_L_629 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_629;
+Constant TX_PS_570 = "Beck: ~Always useful.~";
+Array TX_L_570 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_570;
+Constant TX_PS_530 = "Beck: ~And this is just the elevator!~";
 Array TX_L_530 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_530;
-Constant TX_PS_544 = "Beck: ~Ooh pretty.~";
-Array TX_L_544 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_544;
-Constant TX_PS_647 = "Beck: ~Oops. Getting the screwdriver didn't turn out well. Look behind the cabinet to get the screwdriver.~";
-Array TX_L_647 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_647;
-Constant TX_PS_583 = "Beck: ~Pick the desk lock with the safety pin.~";
-Array TX_L_583 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_583;
-Constant TX_PS_625 = "Beck: ~Put the diamond in the claw in penthouse west.~";
-Array TX_L_625 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_625;
-Constant TX_PS_69 = "Beck: ~Robot on your right!~";
-Constant TX_PS_623 = "Beck: ~Smash the diamonds with the hammer.~";
-Array TX_L_623 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_623;
-Constant TX_PS_602 = "Beck: ~Sneak up on the stupid robot already!~";
-Array TX_L_602 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_602;
-Constant TX_PS_532 = "Beck: ~So many desks. So. many. desks.";
-Array TX_L_532 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_532;
-Constant TX_PS_574 = "Beck: ~Sure is big.~";
-Array TX_L_574 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_574;
-Constant TX_PS_513 = "Beck: ~That sculpture up there seems pretty big.~";
-Array TX_L_513 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_513;
-Constant TX_PS_581 = "Beck: ~The cardkey for both of them is in the large desk in the building management office.~";
-Array TX_L_581 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_581;
-Constant TX_PS_586 = "Beck: ~The code should be around here somewhere.~";
-Array TX_L_586 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_586;
-Constant TX_PS_609 = "Beck: ~The robot will enter the car but not see you. Now's your chance!~";
-Array TX_L_609 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_609;
-Constant TX_PS_600 = "Beck: ~The robot's got you pinned down good, yeah? And you can't get a good shot in? And even if you did, it would probably just be absorbed?~";
-Array TX_L_600 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_600;
-Constant TX_PS_632 = "Beck: ~The water bottle and the cable.~";
-Array TX_L_632 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_632;
-Constant TX_PS_645 = "Beck: ~The water of course!~";
-Array TX_L_645 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_645;
-Constant TX_PS_616 = "Beck: ~Then pour the gel on the robot.~";
-Array TX_L_616 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_616;
-Constant TX_PS_604 = "Beck: ~There are multiple ways to get past this floor. Here's one.~";
-Array TX_L_604 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_604;
-Constant TX_PS_553 = "Beck: ~There must be a way to break into it.~";
-Array TX_L_553 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_553;
-Constant TX_PS_559 = "Beck: ~These guys are one of the worst polluters on Mars. People think we can just go on dumping chemicals everywhere because the place is so empty, but haven't they ever heard of exponential growth? I mean --~^^Jones: ~Yes! I totally agree. But let's deal with this after we've rescued Europa.~";
-Array TX_L_559 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_559;
-Constant TX_PS_565 = "Beck: ~These things are pretty invulnerable from a distance. Try getting closer in.~";
-Array TX_L_565 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_565;
-Constant TX_PS_518 = "Beck: ~This guy's got some kind of inferiority complex.~";
-Array TX_L_518 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_518;
-Constant TX_PS_546 = "Beck: ~This is just silly.~";
-Array TX_L_546 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_546;
-Constant TX_PS_547 = "Beck: ~This place has great perks. Maybe I'll go work for them.~^^Jones: ~Beck, I'll tell you again: we don't have any place in HQ for a gym.~";
-Array TX_L_547 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_547;
-Constant TX_PS_527 = "Beck: ~This whole place is like some weird wizard's chamber.~";
-Array TX_L_527 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_527;
-Constant TX_PS_598 = "Beck: ~Time to open the elevator door.~";
-Array TX_L_598 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_598;
-Constant TX_PS_639 = "Beck: ~To break open the cage, you'll need to find some way to apply a great force to it.~";
-Array TX_L_639 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_639;
-Constant TX_PS_595 = "Beck: ~To do that you need a screwdriver.~";
-Array TX_L_595 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_595;
-Constant TX_PS_535 = "Beck: ~Uh, you know what that's for, right?~";
-Array TX_L_535 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_535;
-Constant TX_PS_599 = "Beck: ~Use the drop key you found in the elevator room.~";
-Array TX_L_599 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_599;
-Constant TX_PS_573 = "Beck: ~We'll come back and knock it over later.~";
-Array TX_L_573 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_573;
-Constant TX_PS_578 = "Beck: ~Well, I think you're very nice, Jones.~";
-Array TX_L_578 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_578;
-Constant TX_PS_511 = "Beck: ~Well, if your energy weapon won't hurt them, maybe direct physical force will?~";
-Array TX_L_511 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_511;
-Constant TX_PS_554 = "Beck: ~Well, now we know where we are at least. Other than that, this doesn't seem to help.~";
-Array TX_L_554 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_554;
-Constant TX_PS_618 = "Beck: ~What are these diamonds?~";
-Array TX_L_618 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_618;
-Constant TX_PS_533 = "Beck: ~What do all these people even do? I mean, Consolidated Microthings, what do they do?~";
-Array TX_L_533 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_533;
-Constant TX_PS_650 = "Beck: ~What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there.~";
-Array TX_L_650 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_650;
-Constant TX_PS_611 = "Beck: ~When the robot leaves you'll have to lure it back again.~";
-Array TX_L_611 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_611;
-Constant TX_PS_601 = "Beck: ~When will you start listening to your handler? When? I've been giving you good advice, just spelling out what to do, and you don't pay attention.~";
-Array TX_L_601 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_601;
-Constant TX_PS_501 = "Beck: ~Where does he keep his ostrich farm?~";
-Array TX_L_501 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_501;
-Constant TX_PS_552 = "Beck: ~Where might you find the code?~";
-Array TX_L_552 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_552;
-Constant TX_PS_543 = "Beck: ~While I normally dislike Rambutan's work, this one has a certain power to it.~";
-Array TX_L_543 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_543;
-Constant TX_PS_561 = "Beck: ~Who does this guy think he's fooling? On the other hand, maybe you can find a disguise in there and fake your way past the guards.~";
-Array TX_L_561 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_561;
-Constant TX_PS_550 = "Beck: ~Why does Thallium need such a desk? It's not like he can read or write.~";
-Array TX_L_550 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_550;
-Constant TX_PS_521 = "Beck: ~Wonderful man, can't get enough of him.~";
-Array TX_L_521 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_521;
-Constant TX_PS_519 = "Beck: ~Wow. Impressive.~";
-Array TX_L_519 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_519;
-Constant TX_PS_562 = "Beck: ~Write something on them! Something nasty about Thallium!~";
-Array TX_L_562 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_562;
-Constant TX_PS_614 = "Beck: ~Yes, the polymer gel! But you can't get close enough to pour it on the robot.~";
-Array TX_L_614 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_614;
-Constant TX_PS_633 = "Beck: ~You can buy the water bottle from the vending machine on the ninth floor.~";
-Array TX_L_633 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_633;
-Constant TX_PS_634 = "Beck: ~You can get a coin to buy the water with from the waterfall on the ground floor.~";
-Array TX_L_634 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_634;
-Constant TX_PS_537 = "Beck: ~You can get back out through there.~";
-Array TX_L_537 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_537;
-Constant TX_PS_635 = "Beck: ~You can get the cable by examining the tangled ruin left by the sculpture in the lobby.";
-Array TX_L_635 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_635;
-Constant TX_PS_621 = "Beck: ~You can't just keep looking at the diamonds one-by-one.~";
-Array TX_L_621 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_621;
-Constant TX_PS_582 = "Beck: ~You don't have a key for the desk. Maybe you can pick the lock?~";
-Array TX_L_582 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_582;
-Constant TX_PS_539 = "Beck: ~You gotta admit, this is insane.~";
-Array TX_L_539 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_539;
-Constant TX_PS_536 = "Beck: ~You insert a drop key in there and then turn it.~";
-Array TX_L_536 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_536;
-Constant TX_PS_622 = "Beck: ~You need a faster way to distinguish real and fake.~";
-Array TX_L_622 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_622;
-Constant TX_PS_637 = "Beck: ~You need to break Europa out of the cage and get her to a rescue flyer.~";
-Array TX_L_637 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_637;
-Constant TX_PS_593 = "Beck: ~You need to get into the building through the exhaust vent.~";
-Array TX_L_593 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_593;
-Constant TX_PS_617 = "Beck: ~You need to get to the roof, but there is no apparent way to get there.~";
-Array TX_L_617 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_617;
-Constant TX_PS_594 = "Beck: ~You need to remove the cover of the exhaust vent.~";
-Array TX_L_594 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_594;
-Constant TX_PS_630 = "Beck: ~You need two things.~";
+Constant TX_PS_76 = "Beck: ~Are you still shooting at those things? Even if you hit ~em it's not going to leave a scratch.~^^Jones (whispering): ~So what do you propose?~^^Beck: ~Get closer. Keep your head down, but move in closer to it until you can get a good shot in.~";
+Constant TX_PS_630 = "Beck: ~Be careful before going to the roof, there's no turning back.~";
 Array TX_L_630 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_630;
-Constant TX_PS_568 = "Beck: ~You never know when you might need something that can get in a very small space.~";
-Array TX_L_568 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_568;
-Constant TX_PS_584 = "Beck: ~You saw that utility door near the catering table, right?~";
-Array TX_L_584 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_584;
-Constant TX_PS_589 = "Beck: ~You should look for a door where you can use that cardkey.~";
+Constant TX_PS_565 = "Beck: ~Be careful, don't press the wrong button.~";
+Array TX_L_565 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_565;
+Constant TX_PS_604 = "Beck: ~Before we begin, save your game. This could get ugly.~";
+Array TX_L_604 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_604;
+Constant TX_PS_177 = "Beck: ~Blueprints indicate a closet to the west of you. Might be useful.~";
+Constant TX_PS_589 = "Beck: ~Check the front desk.~";
 Array TX_L_589 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_589;
-Constant TX_PS_597 = "Beck: ~You should probably be heading up the building by now.~";
-Array TX_L_597 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_597;
-Constant TX_PS_606 = "Beck: ~You'll notice a loose ceiling panel. Open it.~";
+Constant TX_PS_643 = "Beck: ~Climb the cage.~";
+Array TX_L_643 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_643;
+Constant TX_PS_642 = "Beck: ~Come up short? Get higher.~";
+Array TX_L_642 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_642;
+Constant TX_PS_637 = "Beck: ~Congratulations! You made it this far.~";
+Array TX_L_637 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_637;
+Constant TX_PS_516 = "Beck: ~Could come in handy.";
+Array TX_L_516 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_516;
+Constant TX_PS_627 = "Beck: ~DON'T PRESS THE BIG RED BUTTON!~";
+Array TX_L_627 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_627;
+Constant TX_PS_507 = "Beck: ~Don't get attached to pretty things, Jones.~";
+Array TX_L_507 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_507;
+Constant TX_PS_639 = "Beck: ~Don't worry, the rescue flyer will show up on time.~";
+Array TX_L_639 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_639;
+Constant TX_PS_628 = "Beck: ~Examine the panel and then press the small black button.~";
+Array TX_L_628 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_628;
+Constant TX_PS_650 = "Beck: ~Give the shrimp tea sandwich to the cat.~";
+Array TX_L_650 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_650;
+Constant TX_PS_606 = "Beck: ~Go west from the air handling room, south once, and west into the elevator car.~";
 Array TX_L_606 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_606;
-Constant TX_PS_526 = "Beck: ~You're going to need a lot of force to get through that.~";
+Constant TX_PS_546 = "Beck: ~Gold is a terrible material for keys.~";
+Array TX_L_546 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_546;
+Constant TX_PS_506 = "Beck: ~Good thing this was around.~";
+Array TX_L_506 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_506;
+Constant TX_PS_523 = "Beck: ~Good thing this was here. Don't see why we'd hang around, though.~";
+Array TX_L_523 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_523;
+Constant TX_PS_518 = "Beck: ~Guess everyone went home when Thallium went ape.~";
+Array TX_L_518 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_518;
+Constant TX_PS_620 = "Beck: ~Have you examined one?~";
+Array TX_L_620 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_620;
+Constant TX_PS_592 = "Beck: ~Have you looked everywhere?~";
+Array TX_L_592 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_592;
+Constant TX_PS_597 = "Beck: ~Haven't got one? Go back to the building management office.~";
+Array TX_L_597 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_597;
+Constant TX_PS_576 = "Beck: ~Here's where the magic happens.~";
+Array TX_L_576 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_576;
+Constant TX_PS_655 = "Beck: ~Hmm. Don't have much to say about that right now.~";
+Array TX_L_655 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_655;
+Constant TX_PS_641 = "Beck: ~Hook the cable to the flyer and the cage by saying THROW CABLE AT FLYER.~";
+Array TX_L_641 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_641;
+Constant TX_PS_503 = "Beck: ~Hope we don't have to use it.~";
+Array TX_L_503 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_503;
+Constant TX_PS_504 = "Beck: ~How much do you think it's worth?~";
+Array TX_L_504 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_504;
+Constant TX_PS_578 = "Beck: ~How nice of them to put this here for us.~";
+Array TX_L_578 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_578;
+Constant TX_PS_73 = "Beck: ~How's it going in there?~^^~Jones: ~You know -- like all art, it's hit or miss.~";
+Constant TX_PS_541 = "Beck: ~I can't imagine there's anything in there of relevance to rescuing Europa Callisto.~";
+Array TX_L_541 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_541;
+Constant TX_PS_511 = "Beck: ~I dunno, maybe shoot the robots?~";
+Array TX_L_511 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_511;
+Constant TX_PS_573 = "Beck: ~I keep reminding you, but you still haven't taken it in for yearly maintenance.~";
+Array TX_L_573 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_573;
+Constant TX_PS_552 = "Beck: ~I keep thinking he can't get any worse, and then he tops himself.~";
+Array TX_L_552 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_552;
+Constant TX_PS_571 = "Beck: ~I love shrimp, but unfortunately it makes me break out.~";
+Array TX_L_571 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_571;
+Constant TX_PS_556 = "Beck: ~I wish you weren't out there, Jones. Steady now.~";
+Array TX_L_556 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_556;
+Constant TX_PS_577 = "Beck: ~I'd heard it was stolen. I can't believe he just flaunts it like this.~";
+Array TX_L_577 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_577;
+Constant TX_PS_526 = "Beck: ~I'll adopt it.~^^~Jones: ~After it damn near took off my hand?~";
 Array TX_L_526 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_526;
-Constant TX_PS_558 = "Beck: ~You're not planning to clean the place, are you?~";
-Array TX_L_558 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_558;
-Constant TX_PS_580 = "Beck: ~You've probably noticed the two locked doors on this floor. You need to get them open.~";
+Constant TX_PS_542 = "Beck: ~I'll be there soon.~";
+Array TX_L_542 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_542;
+Constant TX_PS_567 = "Beck: ~I'm flying it! No time to talk!~";
+Array TX_L_567 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_567;
+Constant TX_PS_524 = "Beck: ~I'm just happy to serve.~";
+Array TX_L_524 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_524;
+Constant TX_PS_580 = "Beck: ~I'm not sure what you're asking about, Jones.~";
 Array TX_L_580 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_580;
+Constant TX_PS_625 = "Beck: ~If you don't have the hammer, it's on the ground floor in the elevator room.~";
+Array TX_L_625 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_625;
+Constant TX_PS_647 = "Beck: ~If you haven't yet, get the screwdriver.~";
+Array TX_L_647 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_647;
+Constant TX_PS_517 = "Beck: ~Impressive place.~";
+Array TX_L_517 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_517;
+Constant TX_PS_572 = "Beck: ~Inscrutable, but do we have any choice?~";
+Array TX_L_572 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_572;
+Constant TX_PS_591 = "Beck: ~Is there anything out there useful?~";
+Array TX_L_591 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_591;
+Constant TX_PS_500 = "Beck: ~It doesn't look like shooting the robots is doing any good. Is there another way you can hurt them?~";
+Array TX_L_500 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_500;
+Constant TX_PS_550 = "Beck: ~It seems very strong. It can undergo a lot of force without breaking~";
+Array TX_L_550 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_550;
+Constant TX_PS_513 = "Beck: ~It would have to be something large. Throwing your shoe at them isn't going to cut it.~";
+Array TX_L_513 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_513;
+Constant TX_PS_521 = "Beck: ~It's a nice vehicle, I'll give him that. Have you ever noticed villains always have ugly houses and beautiful flyers?~";
+Array TX_L_521 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_521;
+Constant TX_PS_557 = "Beck: ~It's an impressive building, I'll give Thallium that.~";
+Array TX_L_557 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_557;
+Constant TX_PS_621 = "Beck: ~It's fake!~";
+Array TX_L_621 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_621;
+Constant TX_PS_586 = "Beck: ~It's got a numerical lock on it.~";
+Array TX_L_586 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_586;
+Constant TX_PS_508 = "Beck: ~It's huge. Imagine if it fell on you.~";
+Array TX_L_508 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_508;
+Constant TX_PS_616 = "Beck: ~Jump on the robot!~";
+Array TX_L_616 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_616;
+Constant TX_PS_535 = "Beck: ~Just can't get a reliable guard robot these days.~";
+Array TX_L_535 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_535;
+Constant TX_PS_499 = "Beck: ~Keep your head down and keep firing.~";
+Array TX_L_499 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_499;
+Constant TX_PS_609 = "Beck: ~Leave the elevator to the east, go south to catch the robot's eye, then go north and west back into the elevator car. Then go up onto the top of the car.~";
+Array TX_L_609 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_609;
+Constant TX_PS_588 = "Beck: ~Look at the note you got from the front desk.~";
+Array TX_L_588 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_588;
+Constant TX_PS_593 = "Beck: ~Look down.~";
+Array TX_L_593 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_593;
+Constant TX_PS_568 = "Beck: ~Looks like a point of weakness, as you said.~";
+Array TX_L_568 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_568;
+Constant TX_PS_539 = "Beck: ~Looks like light needs to hit it or something.~";
+Array TX_L_539 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_539;
+Constant TX_PS_649 = "Beck: ~Looks like you'll need to get rid of the cat. What do cats like?~";
+Array TX_L_649 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_649;
+Constant TX_PS_659 = "Beck: ~Looks like you're managing okay.~";
+Array TX_L_659 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_659;
+Constant TX_PS_564 = "Beck: ~Looks useful~";
+Array TX_L_564 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_564;
+Constant TX_PS_613 = "Beck: ~Maybe pour something on the robot?~";
+Array TX_L_613 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_613;
+Constant TX_PS_561 = "Beck: ~Maybe you can out-maneuver him.~";
+Array TX_L_561 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_561;
+Constant TX_PS_543 = "Beck: ~Maybe you can poke Thallium with a fork until he submits?~";
+Array TX_L_543 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_543;
+Constant TX_PS_529 = "Beck: ~Might as well hold on to it. You're not getting paid for this job.~";
+Array TX_L_529 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_529;
+Constant TX_PS_505 = "Beck: ~Might be something useful in there.";
+Array TX_L_505 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_505;
+Constant TX_PS_532 = "Beck: ~Nice job, Jones.~";
+Array TX_L_532 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_532;
+Constant TX_PS_558 = "Beck: ~No time for banter right now, bye!~";
+Array TX_L_558 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_558;
+Constant TX_PS_525 = "Beck: ~No time to rest, Jones.~";
+Array TX_L_525 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_525;
+Constant TX_PS_614 = "Beck: ~No, don't waste your water. What else is pourable?~";
+Array TX_L_614 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_614;
+Constant TX_PS_611 = "Beck: ~No, shooting won't work.~";
+Array TX_L_611 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_611;
+Constant TX_PS_632 = "Beck: ~Not the fork.~";
+Array TX_L_632 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_632;
+Constant TX_PS_608 = "Beck: ~Now lure the robot in the southwest corner to the elevator car.~";
+Array TX_L_608 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_608;
+Constant TX_PS_644 = "Beck: ~Now throw the cable.~";
+Array TX_L_644 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_644;
+Constant TX_PS_645 = "Beck: ~Now you're in the cage but Europa is unresponsive. How do you revive her?~";
+Array TX_L_645 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_645;
+Constant TX_PS_531 = "Beck: ~Oh, they make the best games!~";
+Array TX_L_531 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_531;
+Constant TX_PS_545 = "Beck: ~Ooh pretty.~";
+Array TX_L_545 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_545;
+Constant TX_PS_648 = "Beck: ~Oops. Getting the screwdriver didn't turn out well. Look behind the cabinet to get the screwdriver.~";
+Array TX_L_648 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_648;
+Constant TX_PS_584 = "Beck: ~Pick the desk lock with the safety pin.~";
+Array TX_L_584 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_584;
+Constant TX_PS_626 = "Beck: ~Put the diamond in the claw in penthouse west.~";
+Array TX_L_626 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_626;
+Constant TX_PS_69 = "Beck: ~Robot on your right!~";
+Constant TX_PS_624 = "Beck: ~Smash the diamonds with the hammer.~";
+Array TX_L_624 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_624;
+Constant TX_PS_603 = "Beck: ~Sneak up on the stupid robot already!~";
+Array TX_L_603 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_603;
+Constant TX_PS_533 = "Beck: ~So many desks. So. many. desks.";
+Array TX_L_533 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_533;
+Constant TX_PS_575 = "Beck: ~Sure is big.~";
+Array TX_L_575 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_575;
+Constant TX_PS_514 = "Beck: ~That sculpture up there seems pretty big.~";
+Array TX_L_514 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_514;
+Constant TX_PS_582 = "Beck: ~The cardkey for both of them is in the large desk in the building management office.~";
+Array TX_L_582 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_582;
+Constant TX_PS_587 = "Beck: ~The code should be around here somewhere.~";
+Array TX_L_587 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_587;
+Constant TX_PS_610 = "Beck: ~The robot will enter the car but not see you. Now's your chance!~";
+Array TX_L_610 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_610;
+Constant TX_PS_601 = "Beck: ~The robot's got you pinned down good, yeah? And you can't get a good shot in? And even if you did, it would probably just be absorbed?~";
+Array TX_L_601 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_601;
+Constant TX_PS_633 = "Beck: ~The water bottle and the cable.~";
+Array TX_L_633 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_633;
+Constant TX_PS_646 = "Beck: ~The water of course!~";
+Array TX_L_646 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_646;
+Constant TX_PS_617 = "Beck: ~Then pour the gel on the robot.~";
+Array TX_L_617 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_617;
+Constant TX_PS_605 = "Beck: ~There are multiple ways to get past this floor. Here's one.~";
+Array TX_L_605 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_605;
+Constant TX_PS_554 = "Beck: ~There must be a way to break into it.~";
+Array TX_L_554 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_554;
+Constant TX_PS_560 = "Beck: ~These guys are one of the worst polluters on Mars. People think we can just go on dumping chemicals everywhere because the place is so empty, but haven't they ever heard of exponential growth? I mean --~^^Jones: ~Yes! I totally agree. But let's deal with this after we've rescued Europa.~";
+Array TX_L_560 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_560;
+Constant TX_PS_566 = "Beck: ~These things are pretty invulnerable from a distance. Try getting closer in.~";
+Array TX_L_566 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_566;
+Constant TX_PS_519 = "Beck: ~This guy's got some kind of inferiority complex.~";
+Array TX_L_519 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_519;
+Constant TX_PS_547 = "Beck: ~This is just silly.~";
+Array TX_L_547 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_547;
+Constant TX_PS_548 = "Beck: ~This place has great perks. Maybe I'll go work for them.~^^Jones: ~Beck, I'll tell you again: we don't have any place in HQ for a gym.~";
+Array TX_L_548 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_548;
+Constant TX_PS_528 = "Beck: ~This whole place is like some weird wizard's chamber.~";
+Array TX_L_528 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_528;
+Constant TX_PS_599 = "Beck: ~Time to open the elevator door.~";
+Array TX_L_599 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_599;
+Constant TX_PS_640 = "Beck: ~To break open the cage, you'll need to find some way to apply a great force to it.~";
+Array TX_L_640 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_640;
+Constant TX_PS_596 = "Beck: ~To do that you need a screwdriver.~";
+Array TX_L_596 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_596;
+Constant TX_PS_536 = "Beck: ~Uh, you know what that's for, right?~";
+Array TX_L_536 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_536;
+Constant TX_PS_600 = "Beck: ~Use the drop key you found in the elevator room.~";
+Array TX_L_600 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_600;
+Constant TX_PS_574 = "Beck: ~We'll come back and knock it over later.~";
+Array TX_L_574 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_574;
+Constant TX_PS_579 = "Beck: ~Well, I think you're very nice, Jones.~";
+Array TX_L_579 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_579;
+Constant TX_PS_512 = "Beck: ~Well, if your energy weapon won't hurt them, maybe direct physical force will?~";
+Array TX_L_512 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_512;
+Constant TX_PS_555 = "Beck: ~Well, now we know where we are at least. Other than that, this doesn't seem to help.~";
+Array TX_L_555 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_555;
+Constant TX_PS_619 = "Beck: ~What are these diamonds?~";
+Array TX_L_619 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_619;
+Constant TX_PS_534 = "Beck: ~What do all these people even do? I mean, Consolidated Microthings, what do they do?~";
+Array TX_L_534 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_534;
+Constant TX_PS_651 = "Beck: ~What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there.~";
+Array TX_L_651 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_651;
+Constant TX_PS_612 = "Beck: ~When the robot leaves you'll have to lure it back again.~";
+Array TX_L_612 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_612;
+Constant TX_PS_602 = "Beck: ~When will you start listening to your handler? When? I've been giving you good advice, just spelling out what to do, and you don't pay attention.~";
+Array TX_L_602 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_602;
+Constant TX_PS_502 = "Beck: ~Where does he keep his ostrich farm?~";
+Array TX_L_502 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_502;
+Constant TX_PS_553 = "Beck: ~Where might you find the code?~";
+Array TX_L_553 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_553;
+Constant TX_PS_544 = "Beck: ~While I normally dislike Rambutan's work, this one has a certain power to it.~";
+Array TX_L_544 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_544;
+Constant TX_PS_562 = "Beck: ~Who does this guy think he's fooling? On the other hand, maybe you can find a disguise in there and fake your way past the guards.~";
+Array TX_L_562 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_562;
+Constant TX_PS_551 = "Beck: ~Why does Thallium need such a desk? It's not like he can read or write.~";
+Array TX_L_551 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_551;
+Constant TX_PS_522 = "Beck: ~Wonderful man, can't get enough of him.~";
+Array TX_L_522 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_522;
+Constant TX_PS_520 = "Beck: ~Wow. Impressive.~";
+Array TX_L_520 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_520;
+Constant TX_PS_563 = "Beck: ~Write something on them! Something nasty about Thallium!~";
+Array TX_L_563 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_563;
+Constant TX_PS_615 = "Beck: ~Yes, the polymer gel! But you can't get close enough to pour it on the robot.~";
+Array TX_L_615 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_615;
+Constant TX_PS_634 = "Beck: ~You can buy the water bottle from the vending machine on the ninth floor.~";
+Array TX_L_634 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_634;
+Constant TX_PS_635 = "Beck: ~You can get a coin to buy the water with from the waterfall on the ground floor.~";
+Array TX_L_635 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_635;
+Constant TX_PS_538 = "Beck: ~You can get back out through there.~";
+Array TX_L_538 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_538;
+Constant TX_PS_636 = "Beck: ~You can get the cable by examining the tangled ruin left by the sculpture in the lobby.";
+Array TX_L_636 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_636;
+Constant TX_PS_622 = "Beck: ~You can't just keep looking at the diamonds one-by-one.~";
+Array TX_L_622 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_622;
+Constant TX_PS_583 = "Beck: ~You don't have a key for the desk. Maybe you can pick the lock?~";
+Array TX_L_583 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_583;
+Constant TX_PS_540 = "Beck: ~You gotta admit, this is insane.~";
+Array TX_L_540 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_540;
+Constant TX_PS_537 = "Beck: ~You insert a drop key in there and then turn it.~";
+Array TX_L_537 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_537;
+Constant TX_PS_623 = "Beck: ~You need a faster way to distinguish real and fake.~";
+Array TX_L_623 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_623;
+Constant TX_PS_638 = "Beck: ~You need to break Europa out of the cage and get her to a rescue flyer.~";
+Array TX_L_638 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_638;
+Constant TX_PS_594 = "Beck: ~You need to get into the building through the exhaust vent.~";
+Array TX_L_594 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_594;
+Constant TX_PS_618 = "Beck: ~You need to get to the roof, but there is no apparent way to get there.~";
+Array TX_L_618 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_618;
+Constant TX_PS_595 = "Beck: ~You need to remove the cover of the exhaust vent.~";
+Array TX_L_595 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_595;
+Constant TX_PS_631 = "Beck: ~You need two things.~";
+Array TX_L_631 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_631;
+Constant TX_PS_569 = "Beck: ~You never know when you might need something that can get in a very small space.~";
+Array TX_L_569 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_569;
+Constant TX_PS_585 = "Beck: ~You saw that utility door near the catering table, right?~";
+Array TX_L_585 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_585;
+Constant TX_PS_590 = "Beck: ~You should look for a door where you can use that cardkey.~";
+Array TX_L_590 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_590;
+Constant TX_PS_598 = "Beck: ~You should probably be heading up the building by now.~";
+Array TX_L_598 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_598;
+Constant TX_PS_607 = "Beck: ~You'll notice a loose ceiling panel. Open it.~";
+Array TX_L_607 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_607;
+Constant TX_PS_527 = "Beck: ~You're going to need a lot of force to get through that.~";
+Array TX_L_527 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_527;
+Constant TX_PS_559 = "Beck: ~You're not planning to clean the place, are you?~";
+Array TX_L_559 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_559;
+Constant TX_PS_581 = "Beck: ~You've probably noticed the two locked doors on this floor. You need to get them open.~";
+Array TX_L_581 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_581;
 Constant TX_PS_221 = "Black like evil, or like secrets?";
 Constant TX_PS_316 = "Black marble. Wow. It's beautiful.";
-Constant TX_PS_651 = "Black screen";
-Array TX_L_651 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_651;
+Constant TX_PS_652 = "Black screen";
+Array TX_L_652 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_652;
 Constant TX_PS_397 = "Can't open maintenance closet";
 Constant TX_PS_382 = "Comment on energy absorption";
-Constant TX_PS_652 = "Cut to a shot of two closed eyes";
-Array TX_L_652 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_652;
+Constant TX_PS_653 = "Cut to a shot of two closed eyes";
+Array TX_L_653 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_653;
 Constant TX_PS_210 = "Cybernetica door";
 Constant TX_PS_318 = "Dark black, almost threatening, rounding out the storm cloud atmosphere of the room.";
 Constant TX_PS_15 = "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.";
@@ -89288,14 +89328,14 @@ Constant TX_PS_159 = "From the looks of it, elevator technology hasn't evolved m
 Constant TX_PS_80 = "From the outside there's no sign of what killed the mauve guard robot.";
 Constant TX_PS_369 = "From this perilous location, outside the comforting electrostatic field trapping the atmosphere of the building, one can see with striking clarity the lights of the city. The surrounding plains go on forever.";
 Constant TX_PS_88 = "Galaxy Jones stands at the ready.";
-Constant TX_PS_497 = "Galaxy Jones was killed by poison gas.";
-Array TX_L_497 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_497;
+Constant TX_PS_498 = "Galaxy Jones was killed by poison gas.";
+Array TX_L_498 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_498;
 Constant TX_PS_2 = "Galaxy Jones";
 Constant TX_PS_93 = "Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.";
 Constant TX_PS_54 = "He-pronoun";
 Constant TX_PS_295 = "How dull.";
 Constant TX_PS_428 = "I hate it out here";
-Constant TX_PS_659 = "I";
+Constant TX_PS_660 = "I";
 Constant TX_PS_51 = "I-pronoun";
 Constant TX_PS_392 = "Imported plants are a must on Mars, to relieve the stress of living on a lifeless world.";
 Constant TX_PS_303 = "Incredible. A tower that height would never stand on Earth.";
@@ -89323,33 +89363,35 @@ Constant TX_PS_53 = "It-pronoun";
 Constant TX_PS_168 = "Jones groans. ~Be glad you're not here, Beck. This is revolting.~^^Beck chuckles. ~I won't ask.~";
 Constant TX_PS_229 = "Jones is coming, surprise day off!";
 Constant TX_PS_99 = "Jones peers upwards at the 100 stories of glass and steel. ~What do you want to bet Thallium's got Europa all the way at the top?~^^Beck: ~Oh, no doubt.~";
-Constant TX_PS_655 = "Jones shouts, ~I'm under fire from two ugly robot things!~^^Beck responds, ~Monitoring your suit radar.~";
-Array TX_L_655 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_655;
+Constant TX_PS_656 = "Jones shouts, ~I'm under fire from two ugly robot things!~^^Beck responds, ~Monitoring your suit radar.~";
+Array TX_L_656 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_656;
 Constant TX_PS_472 = "Jones tries the strength of the bars just in case. They don't budge.";
+Constant TX_PS_486 = "Jones was killed by the mauve guard robot";
+Array TX_L_486 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_486;
 Constant TX_PS_477 = "Jones";
 Constant TX_PS_469 = "Jones's little red flyer, Galaxy Two.";
-Constant TX_PS_509 = "Jones: ~Aha! No creature is too fearsome for Galaxy Jones!~^^Beck: ~Congratulations on your victory.~";
-Array TX_L_509 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_509;
+Constant TX_PS_510 = "Jones: ~Aha! No creature is too fearsome for Galaxy Jones!~^^Beck: ~Congratulations on your victory.~";
+Array TX_L_510 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_510;
 Constant TX_PS_430 = "Jones: ~Alright, I'm by the tenth floor now. What's this grill thing here?~^^Beck: ~That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can get the cover off you should be able to access the whole floor from here.~";
-Constant TX_PS_493 = "Jones: ~Damn.~^^Beck: ~What? What's going on?~^^Jones: ~Just being clumsy is all.~";
-Array TX_L_493 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_493;
-Constant TX_PS_396 = "Jones: ~Door on the east side has a keypad lock.~";
-Constant TX_PS_500 = "Jones: ~Finally out of the shaft. That was quite a climb.~^^Beck: ~This floor is just offices. Check the building management office to the west. It might have some useful stuff.~";
-Array TX_L_500 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_500;
-Constant TX_PS_494 = "Jones: ~Holy --!~^^Beck: ~What now?~^^Jones: ~There's a cat here! Behind a filing cabinet. Gotta get behind there to get a screwdriver, so I need a way to drive off the cat.~";
+Constant TX_PS_494 = "Jones: ~Damn.~^^Beck: ~What? What's going on?~^^Jones: ~Just being clumsy is all.~";
 Array TX_L_494 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_494;
+Constant TX_PS_396 = "Jones: ~Door on the east side has a keypad lock.~";
+Constant TX_PS_501 = "Jones: ~Finally out of the shaft. That was quite a climb.~^^Beck: ~This floor is just offices. Check the building management office to the west. It might have some useful stuff.~";
+Array TX_L_501 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_501;
+Constant TX_PS_495 = "Jones: ~Holy --!~^^Beck: ~What now?~^^Jones: ~There's a cat here! Behind a filing cabinet. Gotta get behind there to get a screwdriver, so I need a way to drive off the cat.~";
+Array TX_L_495 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_495;
 Constant TX_PS_71 = "Jones: ~I could use some ideas here!~";
 Constant TX_PS_453 = "Jones: ~I think I see a point of weakness. Now if I can just get in close enough...~^^Beck: ~Just stay out of its line of sight.~";
-Constant TX_PS_486 = "Jones: ~I'm going out the window to see if I can find a way to get up to the tenth floor.~^^Beck: ~Whoa whoa whoa, Jones. You know you're not good with heights.~^^Jones: ~Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch.~";
-Array TX_L_486 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_486;
+Constant TX_PS_487 = "Jones: ~I'm going out the window to see if I can find a way to get up to the tenth floor.~^^Beck: ~Whoa whoa whoa, Jones. You know you're not good with heights.~^^Jones: ~Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch.~";
+Array TX_L_487 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_487;
 Constant TX_PS_399 = "Jones: ~I've unlocked the east side utility door.~";
 Constant TX_PS_406 = "Jones: ~In case of fire, don't use the stairs.~";
-Constant TX_PS_492 = "Jones: ~Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up.~^^Beck: ~Take it easy, Jones.~";
-Array TX_L_492 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_492;
+Constant TX_PS_493 = "Jones: ~Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up.~^^Beck: ~Take it easy, Jones.~";
+Array TX_L_493 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_493;
 Constant TX_PS_137 = "Jones: ~One coin? Not very generous people around here.~";
 Constant TX_PS_182 = "Jones: ~Well, at least the Admiral treats his guests right. Except me. And Europa.~";
-Constant TX_PS_508 = "Jones: ~What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?~^^Beck: ~Oh, the shrimp. Definitely get the shrimp.~";
-Array TX_L_508 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_508;
+Constant TX_PS_509 = "Jones: ~What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?~^^Beck: ~Oh, the shrimp. Definitely get the shrimp.~";
+Array TX_L_509 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_509;
 Constant TX_PS_188 = "Jones: ~You ever have poached ostrich eggs, Beck?~^^Beck: ~No, but I'll take you for some when you're done there.~^^Jones: ~Oh, thanks.~";
 Constant TX_PS_474 = "Light-meter";
 Constant TX_PS_367 = "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking Building stands near the periphery, overlooking the vast red plain of Utopia Planitia.";
@@ -89364,8 +89406,8 @@ Constant TX_PS_95 = "Most of the parking bays are unfilled.";
 Constant TX_PS_293 = "New Reykjavik Botanic Dome";
 Constant TX_PS_274 = "Nice. Excessive, but nice.";
 Constant TX_PS_291 = "No one is covering the desk at present.";
-Constant TX_PS_488 = "Not so far away, Admiral Thallium crawls back over the edge of  the roof. As he pulls himself up, he aims a pistol at Jones's back...";
-Array TX_L_488 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_488;
+Constant TX_PS_489 = "Not so far away, Admiral Thallium crawls back over the edge of  the roof. As he pulls himself up, he aims a pistol at Jones's back...";
+Array TX_L_489 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_489;
 Constant TX_PS_375 = "Not technically necessary as the speeder works via anti-gravity, the blade-like wings nonetheless give the vehicle a certain flair unobtainable by other means.";
 Constant TX_PS_484 = "Noted.";
 Constant TX_PS_345 = "On Mars, sometimes one gets tired of red.";
@@ -89398,16 +89440,16 @@ Constant TX_PS_279 = "Soft and velvety in a deep red.";
 Constant TX_PS_384 = "Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.";
 Constant TX_PS_457 = "Stairs appeared";
 Constant TX_PS_292 = "Tan leather couches, very expensive.";
-Constant TX_PS_495 = "Thallium giggles. ~Oh, I hope you're not disappointed, Jones.~";
-Array TX_L_495 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_495;
-Constant TX_PS_656 = "Thallium's flyer hovers over the rooftop. ~Jones!~  he bellows. ~Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.~^^Jones rolls her eyes.";
-Array TX_L_656 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_656;
-Constant TX_PS_487 = "Thallium: ~Wow, clever solution. Be careful you don't cut yourself.~^^Jones: ~I appreciate your concern.~";
-Array TX_L_487 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_487;
+Constant TX_PS_496 = "Thallium giggles. ~Oh, I hope you're not disappointed, Jones.~";
+Array TX_L_496 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_496;
+Constant TX_PS_657 = "Thallium's flyer hovers over the rooftop. ~Jones!~  he bellows. ~Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.~^^Jones rolls her eyes.";
+Array TX_L_657 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_657;
+Constant TX_PS_488 = "Thallium: ~Wow, clever solution. Be careful you don't cut yourself.~^^Jones: ~I appreciate your concern.~";
+Array TX_L_488 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_488;
 Constant TX_PS_356 = "The ~Admiral~ is a disctinctly ridiculous figure. He dresses in a mockery of a Martian admiral's uniform, plastered with medals. His hair is slicked back and his mustache is painstakingly waxed.";
 Constant TX_PS_193 = "The Atmo-Suit is a pressure suit ideal for outside work in thin atmospheres like that of Mars.";
-Constant TX_PS_491 = "The End, For Now...";
-Array TX_L_491 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_491;
+Constant TX_PS_492 = "The End, For Now...";
+Array TX_L_492 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_492;
 Constant TX_PS_169 = "The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.";
 Constant TX_PS_166 = "The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.";
 Constant TX_PS_132 = "The backside of the elevator door.";
@@ -89428,13 +89470,13 @@ Constant TX_PS_165 = "The map is crafted of bronze and sports a star at the site
 Constant TX_PS_299 = "The note on the present says ~For Galaxy -- see you soon! -- Your friend, the Admiral.~";
 Constant TX_PS_462 = "The panel features two buttons, one a large red button labeled ~Press Me~, and the other a small black button without a label.~";
 Constant TX_PS_341 = "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto ~Planetas Vincam~, is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.";
-Constant TX_PS_657 = "The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.";
-Array TX_L_657 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_657;
+Constant TX_PS_658 = "The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.";
+Array TX_L_658 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_658;
 Constant TX_PS_81 = "The remains of the mauve guard robot are sprawled on the ground.";
 Constant TX_PS_84 = "The remains of the purple guard robot are sprawled on the ground.";
 Constant TX_PS_314 = "The shaft extends far up into the darkness. The ladder here is missing, making it impossible to climb up to the eleventh floor and beyond.";
-Constant TX_PS_653 = "The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious";
-Array TX_L_653 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_653;
+Constant TX_PS_654 = "The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious";
+Array TX_L_654 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_654;
 Constant TX_PS_181 = "The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.";
 Constant TX_PS_83 = "The tattered guts of the purple guard robot spill out from it's armored carapace.";
 Constant TX_PS_372 = "The tint is too dark to see through.";
@@ -89579,21 +89621,21 @@ Constant TX_PS_204 = "ground floor stairwell";
 Constant TX_PS_14 = "guard robots";
 Constant TX_PS_310 = "gym";
 Constant TX_PS_160 = "hammer";
-Constant TX_PS_672 = "he";
-Constant TX_PS_677 = "her";
-Constant TX_PS_678 = "hers";
-Constant TX_PS_679 = "herself";
-Constant TX_PS_673 = "him";
-Constant TX_PS_675 = "himself";
-Constant TX_PS_674 = "his";
+Constant TX_PS_673 = "he";
+Constant TX_PS_678 = "her";
+Constant TX_PS_679 = "hers";
+Constant TX_PS_680 = "herself";
+Constant TX_PS_674 = "him";
+Constant TX_PS_676 = "himself";
+Constant TX_PS_675 = "his";
 Constant TX_PS_335 = "huge desk";
 Constant TX_PS_5 = "in";
 Constant TX_PS_49 = "inside";
 Constant TX_PS_346 = "insignia";
-Constant TX_PS_669 = "it";
+Constant TX_PS_670 = "it";
 Constant TX_PS_449 = "it's real ivory";
-Constant TX_PS_670 = "its";
-Constant TX_PS_671 = "itself";
+Constant TX_PS_671 = "its";
+Constant TX_PS_672 = "itself";
 Constant TX_PS_277 = "ivory buttons";
 Constant TX_PS_7 = "keychains";
 Constant TX_PS_401 = "keypad";
@@ -89614,13 +89656,13 @@ Constant TX_PS_196 = "maintenance items";
 Constant TX_PS_251 = "martian chemical logo";
 Constant TX_PS_237 = "martian chemical office";
 Constant TX_PS_297 = "mauve guard robot";
-Constant TX_PS_660 = "me";
+Constant TX_PS_661 = "me";
 Constant TX_PS_170 = "medals, ribbons, and all";
 Constant TX_PS_10 = "men";
 Constant TX_PS_342 = "metal pillar";
-Constant TX_PS_661 = "mine";
-Constant TX_PS_663 = "my";
-Constant TX_PS_662 = "myself";
+Constant TX_PS_662 = "mine";
+Constant TX_PS_664 = "my";
+Constant TX_PS_663 = "myself";
 Constant TX_PS_362 = "next to";
 Constant TX_PS_111 = "niches";
 Constant TX_PS_243 = "ninth floor elevator door";
@@ -89632,8 +89674,8 @@ Constant TX_PS_207 = "ninth floor stairwell";
 Constant TX_PS_206 = "ninth-floor";
 Constant TX_PS_30 = "no need for a description";
 Constant TX_PS_12 = "nonbinaries";
-Constant TX_PS_514 = "none";
-Array TX_L_514 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_514;
+Constant TX_PS_515 = "none";
+Array TX_L_515 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_515;
 Constant TX_PS_216 = "north end of the building management office";
 Constant TX_PS_38 = "north";
 Constant TX_PS_40 = "northeast";
@@ -89643,9 +89685,9 @@ Constant TX_PS_115 = "note";
 Constant TX_PS_141 = "on";
 Constant TX_PS_102 = "open space";
 Constant TX_PS_398 = "opened maintenance closet";
-Constant TX_PS_668 = "our";
-Constant TX_PS_666 = "ours";
-Constant TX_PS_667 = "ourselves";
+Constant TX_PS_669 = "our";
+Constant TX_PS_667 = "ours";
+Constant TX_PS_668 = "ourselves";
 Constant TX_PS_50 = "outside";
 Constant TX_PS_94 = "parking bays";
 Constant TX_PS_24 = "passkeys";
@@ -89678,7 +89720,7 @@ Constant TX_PS_443 = "screws";
 Constant TX_PS_410 = "second floor elevator shaft";
 Constant TX_PS_480 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_421 = "seventh floor elevator shaft";
-Constant TX_PS_676 = "she";
+Constant TX_PS_677 = "she";
 Constant TX_PS_198 = "shelf";
 Constant TX_PS_185 = "shrimp tea sandwich";
 Constant TX_PS_419 = "sixth floor elevator shaft";
@@ -89707,12 +89749,12 @@ Constant TX_PS_288 = "tenth floor stairwell";
 Constant TX_PS_262 = "tenth-floor-region";
 Constant TX_PS_368 = "the city";
 Constant TX_PS_39 = "the";
-Constant TX_PS_688 = "their";
-Constant TX_PS_686 = "theirs";
-Constant TX_PS_685 = "them";
-Constant TX_PS_689 = "themself";
-Constant TX_PS_687 = "themselves";
-Constant TX_PS_684 = "they";
+Constant TX_PS_689 = "their";
+Constant TX_PS_687 = "theirs";
+Constant TX_PS_686 = "them";
+Constant TX_PS_690 = "themself";
+Constant TX_PS_688 = "themselves";
+Constant TX_PS_685 = "they";
 Constant TX_PS_413 = "third floor elevator shaft";
 Constant TX_PS_37 = "third-person-personal-pronouns";
 Constant TX_PS_427 = "this is a secret message";
@@ -89723,7 +89765,7 @@ Constant TX_PS_313 = "top of the elevator car";
 Constant TX_PS_373 = "turbines";
 Constant TX_PS_242 = "untakable bottle";
 Constant TX_PS_47 = "up";
-Constant TX_PS_665 = "us";
+Constant TX_PS_666 = "us";
 Constant TX_PS_75 = "useless shooting";
 Constant TX_PS_142 = "utility door";
 Constant TX_PS_331 = "vanity table";
@@ -89735,7 +89777,7 @@ Constant TX_PS_336 = "video screens";
 Constant TX_PS_254 = "wall";
 Constant TX_PS_271 = "walls";
 Constant TX_PS_134 = "waterfall";
-Constant TX_PS_664 = "we";
+Constant TX_PS_665 = "we";
 Constant TX_PS_146 = "west semicircular couch";
 Constant TX_PS_46 = "west";
 Constant TX_PS_340 = "western corner of the penthouse";
@@ -89746,11 +89788,11 @@ Constant TX_PS_257 = "window";
 Constant TX_PS_371 = "windows";
 Constant TX_PS_374 = "wings";
 Constant TX_PS_11 = "women";
-Constant TX_PS_680 = "you";
-Constant TX_PS_682 = "your";
-Constant TX_PS_681 = "yours";
+Constant TX_PS_681 = "you";
+Constant TX_PS_683 = "your";
+Constant TX_PS_682 = "yours";
 Constant TX_PS_87 = "yourself";
-Constant TX_PS_683 = "yourselves";
+Constant TX_PS_684 = "yourselves";
 
 #ifndef p0_specification; Constant p0_specification = 0; #endif;
 #ifndef p1_indefinite_appearance_tex; Constant p1_indefinite_appearance_tex = 0; #endif;
@@ -89931,8 +89973,8 @@ Constant TX_PS_683 = "yourselves";
 #IFNDEF cap_short_name;
 Constant cap_short_name = short_name;
 #ENDIF;
-Array I7_ST_say_one_of --> 4;
-Array I7_ST_say_one_flag --> 4;
+Array I7_ST_say_one_of --> 6;
+Array I7_ST_say_one_flag --> 6;
 
 Array Runtime_Quotations_Displayed --> 1;
 
@@ -97328,55 +97370,55 @@ Array BC_306 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_307 --> PACKED_TEXT_STORAGE TX_PS_35;
 Array BC_308 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_309 --> PACKED_TEXT_STORAGE TX_PS_51;
-Array BC_310 --> LIST_CONST_101343 0;
+Array BC_310 --> LIST_CONST_101347 0;
 Array BC_311 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_312 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_313 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_314 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_315 --> PACKED_TEXT_STORAGE TX_PS_52;
-Array BC_316 --> LIST_CONST_101377 0;
+Array BC_316 --> LIST_CONST_101381 0;
 Array BC_317 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_318 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_319 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_320 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_321 --> PACKED_TEXT_STORAGE TX_PS_53;
-Array BC_322 --> LIST_CONST_101411 0;
+Array BC_322 --> LIST_CONST_101415 0;
 Array BC_323 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_324 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_325 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_326 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_327 --> PACKED_TEXT_STORAGE TX_PS_54;
-Array BC_328 --> LIST_CONST_101441 0;
+Array BC_328 --> LIST_CONST_101445 0;
 Array BC_329 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_330 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_331 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_332 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_333 --> PACKED_TEXT_STORAGE TX_PS_55;
-Array BC_334 --> LIST_CONST_101471 0;
+Array BC_334 --> LIST_CONST_101475 0;
 Array BC_335 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_336 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_337 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_338 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_339 --> PACKED_TEXT_STORAGE TX_PS_56;
-Array BC_340 --> LIST_CONST_101501 0;
+Array BC_340 --> LIST_CONST_101505 0;
 Array BC_341 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_342 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_343 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_344 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_345 --> PACKED_TEXT_STORAGE TX_PS_57;
-Array BC_346 --> LIST_CONST_101535 0;
+Array BC_346 --> LIST_CONST_101539 0;
 Array BC_347 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_348 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_349 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_350 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_351 --> PACKED_TEXT_STORAGE TX_PS_58;
-Array BC_352 --> LIST_CONST_101569 0;
+Array BC_352 --> LIST_CONST_101573 0;
 Array BC_353 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_354 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_355 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_356 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_357 --> PACKED_TEXT_STORAGE TX_PS_59;
-Array BC_358 --> LIST_CONST_101603 0;
+Array BC_358 --> LIST_CONST_101607 0;
 Array BC_359 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_360 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_361 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
@@ -99113,62 +99155,62 @@ Array BC_2091 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_214;
 Array BC_2092 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_215;
 Array BC_2093 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_216;
 Array BC_2094 --> PACKED_TEXT_STORAGE TX_PS_484;
-Array BC_2095 --> LIST_CONST_95075 0;
-Array BC_2096 --> LIST_CONST_95310 0;
-Array BC_2097 --> LIST_CONST_95328 0;
-Array BC_2098 --> LIST_CONST_95346 0;
-Array BC_2099 --> LIST_CONST_95364 0;
-Array BC_2100 --> LIST_CONST_95382 0;
-Array BC_2101 --> LIST_CONST_95400 0;
-Array BC_2102 --> LIST_CONST_95418 0;
-Array BC_2103 --> LIST_CONST_95436 0;
+Array BC_2095 --> LIST_CONST_95079 0;
+Array BC_2096 --> LIST_CONST_95314 0;
+Array BC_2097 --> LIST_CONST_95332 0;
+Array BC_2098 --> LIST_CONST_95350 0;
+Array BC_2099 --> LIST_CONST_95368 0;
+Array BC_2100 --> LIST_CONST_95386 0;
+Array BC_2101 --> LIST_CONST_95404 0;
+Array BC_2102 --> LIST_CONST_95422 0;
+Array BC_2103 --> LIST_CONST_95440 0;
 Array BC_2104 --> Default_Value_0 0;
-Array BC_2105 --> LIST_CONST_28009 0;
-Array BC_2106 --> PACKED_TEXT_STORAGE TX_PS_659;
-Array BC_2107 --> PACKED_TEXT_STORAGE TX_PS_660;
-Array BC_2108 --> PACKED_TEXT_STORAGE TX_PS_661;
-Array BC_2109 --> PACKED_TEXT_STORAGE TX_PS_662;
-Array BC_2110 --> PACKED_TEXT_STORAGE TX_PS_663;
-Array BC_2111 --> PACKED_TEXT_STORAGE TX_PS_664;
-Array BC_2112 --> PACKED_TEXT_STORAGE TX_PS_665;
-Array BC_2113 --> PACKED_TEXT_STORAGE TX_PS_666;
-Array BC_2114 --> PACKED_TEXT_STORAGE TX_PS_667;
-Array BC_2115 --> PACKED_TEXT_STORAGE TX_PS_668;
-Array BC_2116 --> PACKED_TEXT_STORAGE TX_PS_669;
-Array BC_2117 --> PACKED_TEXT_STORAGE TX_PS_669;
-Array BC_2118 --> PACKED_TEXT_STORAGE TX_PS_670;
-Array BC_2119 --> PACKED_TEXT_STORAGE TX_PS_671;
-Array BC_2120 --> PACKED_TEXT_STORAGE TX_PS_670;
-Array BC_2121 --> PACKED_TEXT_STORAGE TX_PS_672;
-Array BC_2122 --> PACKED_TEXT_STORAGE TX_PS_673;
-Array BC_2123 --> PACKED_TEXT_STORAGE TX_PS_674;
-Array BC_2124 --> PACKED_TEXT_STORAGE TX_PS_675;
-Array BC_2125 --> PACKED_TEXT_STORAGE TX_PS_674;
-Array BC_2126 --> PACKED_TEXT_STORAGE TX_PS_676;
-Array BC_2127 --> PACKED_TEXT_STORAGE TX_PS_677;
-Array BC_2128 --> PACKED_TEXT_STORAGE TX_PS_678;
-Array BC_2129 --> PACKED_TEXT_STORAGE TX_PS_679;
-Array BC_2130 --> PACKED_TEXT_STORAGE TX_PS_677;
-Array BC_2131 --> PACKED_TEXT_STORAGE TX_PS_680;
-Array BC_2132 --> PACKED_TEXT_STORAGE TX_PS_680;
-Array BC_2133 --> PACKED_TEXT_STORAGE TX_PS_681;
+Array BC_2105 --> LIST_CONST_28013 0;
+Array BC_2106 --> PACKED_TEXT_STORAGE TX_PS_660;
+Array BC_2107 --> PACKED_TEXT_STORAGE TX_PS_661;
+Array BC_2108 --> PACKED_TEXT_STORAGE TX_PS_662;
+Array BC_2109 --> PACKED_TEXT_STORAGE TX_PS_663;
+Array BC_2110 --> PACKED_TEXT_STORAGE TX_PS_664;
+Array BC_2111 --> PACKED_TEXT_STORAGE TX_PS_665;
+Array BC_2112 --> PACKED_TEXT_STORAGE TX_PS_666;
+Array BC_2113 --> PACKED_TEXT_STORAGE TX_PS_667;
+Array BC_2114 --> PACKED_TEXT_STORAGE TX_PS_668;
+Array BC_2115 --> PACKED_TEXT_STORAGE TX_PS_669;
+Array BC_2116 --> PACKED_TEXT_STORAGE TX_PS_670;
+Array BC_2117 --> PACKED_TEXT_STORAGE TX_PS_670;
+Array BC_2118 --> PACKED_TEXT_STORAGE TX_PS_671;
+Array BC_2119 --> PACKED_TEXT_STORAGE TX_PS_672;
+Array BC_2120 --> PACKED_TEXT_STORAGE TX_PS_671;
+Array BC_2121 --> PACKED_TEXT_STORAGE TX_PS_673;
+Array BC_2122 --> PACKED_TEXT_STORAGE TX_PS_674;
+Array BC_2123 --> PACKED_TEXT_STORAGE TX_PS_675;
+Array BC_2124 --> PACKED_TEXT_STORAGE TX_PS_676;
+Array BC_2125 --> PACKED_TEXT_STORAGE TX_PS_675;
+Array BC_2126 --> PACKED_TEXT_STORAGE TX_PS_677;
+Array BC_2127 --> PACKED_TEXT_STORAGE TX_PS_678;
+Array BC_2128 --> PACKED_TEXT_STORAGE TX_PS_679;
+Array BC_2129 --> PACKED_TEXT_STORAGE TX_PS_680;
+Array BC_2130 --> PACKED_TEXT_STORAGE TX_PS_678;
+Array BC_2131 --> PACKED_TEXT_STORAGE TX_PS_681;
+Array BC_2132 --> PACKED_TEXT_STORAGE TX_PS_681;
+Array BC_2133 --> PACKED_TEXT_STORAGE TX_PS_682;
 Array BC_2134 --> PACKED_TEXT_STORAGE TX_PS_87;
-Array BC_2135 --> PACKED_TEXT_STORAGE TX_PS_682;
-Array BC_2136 --> PACKED_TEXT_STORAGE TX_PS_680;
-Array BC_2137 --> PACKED_TEXT_STORAGE TX_PS_680;
-Array BC_2138 --> PACKED_TEXT_STORAGE TX_PS_681;
-Array BC_2139 --> PACKED_TEXT_STORAGE TX_PS_683;
-Array BC_2140 --> PACKED_TEXT_STORAGE TX_PS_668;
-Array BC_2141 --> PACKED_TEXT_STORAGE TX_PS_684;
-Array BC_2142 --> PACKED_TEXT_STORAGE TX_PS_685;
-Array BC_2143 --> PACKED_TEXT_STORAGE TX_PS_686;
-Array BC_2144 --> PACKED_TEXT_STORAGE TX_PS_687;
-Array BC_2145 --> PACKED_TEXT_STORAGE TX_PS_688;
-Array BC_2146 --> PACKED_TEXT_STORAGE TX_PS_684;
-Array BC_2147 --> PACKED_TEXT_STORAGE TX_PS_685;
-Array BC_2148 --> PACKED_TEXT_STORAGE TX_PS_686;
-Array BC_2149 --> PACKED_TEXT_STORAGE TX_PS_689;
-Array BC_2150 --> PACKED_TEXT_STORAGE TX_PS_688;
+Array BC_2135 --> PACKED_TEXT_STORAGE TX_PS_683;
+Array BC_2136 --> PACKED_TEXT_STORAGE TX_PS_681;
+Array BC_2137 --> PACKED_TEXT_STORAGE TX_PS_681;
+Array BC_2138 --> PACKED_TEXT_STORAGE TX_PS_682;
+Array BC_2139 --> PACKED_TEXT_STORAGE TX_PS_684;
+Array BC_2140 --> PACKED_TEXT_STORAGE TX_PS_669;
+Array BC_2141 --> PACKED_TEXT_STORAGE TX_PS_685;
+Array BC_2142 --> PACKED_TEXT_STORAGE TX_PS_686;
+Array BC_2143 --> PACKED_TEXT_STORAGE TX_PS_687;
+Array BC_2144 --> PACKED_TEXT_STORAGE TX_PS_688;
+Array BC_2145 --> PACKED_TEXT_STORAGE TX_PS_689;
+Array BC_2146 --> PACKED_TEXT_STORAGE TX_PS_685;
+Array BC_2147 --> PACKED_TEXT_STORAGE TX_PS_686;
+Array BC_2148 --> PACKED_TEXT_STORAGE TX_PS_687;
+Array BC_2149 --> PACKED_TEXT_STORAGE TX_PS_690;
+Array BC_2150 --> PACKED_TEXT_STORAGE TX_PS_689;
 Array BC_2151 --> Default_Value_4 0;
 Array BC_2152 --> Default_Value_4 0;
 Array BC_2153 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;

@@ -58,7 +58,7 @@ Before printing the banner text:
 		say line break;
 		
 Before looking for the first time:
-	say "[line break]A sleek dark red speeder roars into the dock of the Viking Building. A tall, strong woman in a battle-ready jumpsuit climbs out of it: [header style]Galaxy Jones.[roman type][line break]";
+	say "[line break]A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit climbs out of it: [header style]Galaxy Jones.[roman type][line break]";
 
 Include (-
 [ Banner;
@@ -1926,14 +1926,14 @@ After going somewhere when the player is in tenth-floor-region and the mauve gua
 
 Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack: 
 	if the mauve guard robot is in the location:
-		say "The robot slaughters Jones.";		
-		end the story;
+		say "[one of]The robot slaughters Jones[or]The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons[or]Jones doesn't stand a chance against the mauve guard robot's terrible knives[or]The robot electrocutes Jones with its electro-darts[purely at random].";		
+		end the story saying "Jones was killed by the mauve guard robot";
 	otherwise if the goal of the mauve guard robot is not the location of the mauve guard robot:
 		let D be the best route from the location of the mauve guard robot to the goal of the mauve guard robot;
 		try the mauve guard robot going D;
 		if the location of the mauve guard robot is the location:
-			say "The robot slaughters Jones.";
-			end the story;
+			say "[one of]The robot slaughters Jones[or]The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons[or]Jones doesn't stand a chance against the mauve guard robot's terrible knives[or]The robot electrocutes Jones with its electro-darts[purely at random].";	
+		end the story saying "Jones was killed by the mauve guard robot";
 	otherwise:
 		now the goal of the mauve guard robot is the homebase of the mauve guard robot;
 	if the location of the mauve guard robot farsees the location:
