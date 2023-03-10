@@ -2218,14 +2218,17 @@ Check attacking something with something:
 	say text of the block attacking rule response (A);
 	say line break instead;
 
-Instead of attacking the real diamond with the hammer:
+Instead of attacking the real diamond with the hammer for the first time:
 	say "[We] commences to smash all of the diamonds. After destroying several dozen fraudulent gems, [we] finds one that won't break. [We] takes the real diamond.[paragraph break]";
 	now the player carries the real diamond;
 	now the real diamond is seen;
 	now the real diamond is familiar;
 	converse "Thallium: 'Wow, clever solution. Be careful you don't cut yourself.'
 	
-	Jones: 'I appreciate your concern.'"
+	Jones: 'I appreciate your concern.'";
+
+Instead of attacking the real diamond with the hammer:
+	say "Whoa, that's enough.";
 	
 Instead of attacking the real diamond:
 	if the player carries the hammer: 

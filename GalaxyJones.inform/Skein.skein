@@ -419,7 +419,7 @@ Beck: "The water of course!"
     </item>
     <item nodeId="node-2418">
         <command xml:space="preserve">throw cable at rails</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">Jones throws the cable, but it comes up short. She gathers it up again.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2842,7 +2842,8 @@ Thallium giggles. "Oh, I hope you're not disappointed, Jones."
     </item>
     <item nodeId="node-2204">
         <command xml:space="preserve">pry diamond</command>
-        <result xml:space="preserve">That's not a verb I recognise.
+        <result xml:space="preserve">(the diamond)
+That can't be pried out.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2919,7 +2920,15 @@ Jones: "I appreciate your concern."
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2211"></child>
+            <child nodeId="node-2441"></child>
         </children>
+    </item>
+    <item nodeId="node-2441">
+        <command xml:space="preserve">smash diamonds</command>
+        <result xml:space="preserve">(with the hammer)
+Whoa, that's enough.?
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2211">
         <command xml:space="preserve">se</command>
