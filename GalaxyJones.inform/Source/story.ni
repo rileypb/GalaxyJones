@@ -2478,7 +2478,7 @@ The cage-thing is a privately-named enterable supporter in the cage. It is scene
 Instead of climbing the cage-thing:
 	try entering the cage-thing;
 	
-Check going nowhere when the player is not on the cage-thing:
+Check going nowhere when the player is in cage:
 	if noun is up:
 		try entering the cage-thing;
 		if the player is on the cage-thing:
@@ -3268,10 +3268,11 @@ Include Property Checking by Emily Short.
 Volume 15 - Tests
 
 test elevator with "n/n/z/shoot art/x art/e/n/type 0/w/take all/e/x table/take all/n/x medals/take medal/x medal/take pin/w/w/s/e/take all/w/s/x waterfall/take coin/e/n/use drop key with elevator".
-test ninth with "test elevator/w/u/u/u/u/u/u/u/u/e".
+test ninth with "test elevator/w/u/e".
 test mgmt with "test ninth/buy water with coin/n/w/pick desk lock with pin/take black card/s/take screwdriver/look behind cabinet/drop shrimp/look behind cabinet/e".
 test ledge with "test mgmt/e/take gel from cabinet/w/n/n/e/sneak up on robot/sneak up on robot/sneak up on robot/shoot robot/s/n/e".
 test air with "test ledge/look down/look down/look down/d/press up/press up/open vent with screwdriver/w".
-test robot with "test air/w/s/w/take panel/e/s/n/w/u/jump on robot/pour gel on robot/e/s/w/open present/e/n/w/put golden key in keyhole".
+test robot with "test air/w/s/w/take panel/e/s/n/w/u/jump on robot/pour gel on robot".
+test golden with "/e/s/w/open present/e/n/w/put golden key in keyhole".
 test 100 with "test robot/press 100/e/s/smash diamonds with hammer/w/nw/put gem in claw/x panel/press black button/ne/s".
 test endgame with "test 100/e/u/n/climb cage/throw cable at flyer/give water to europa".

@@ -5802,7 +5802,7 @@ Global match_from;                  ! At what word of the input do they begin?
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 [ KeyboardPrimitive a_buffer a_table;
-#Ifdef DEBUG; #Iftrue (8 > 0);
+#Ifdef DEBUG; #Iftrue (9 > 0);
 	return TestKeyboardPrimitive(a_buffer, a_table);
 #Endif; #Endif;
 	return VM_ReadKeyboard(a_buffer, a_table);
@@ -30571,8 +30571,8 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 !   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
 ! Rule 2/12 ! Check going east when the location is the 100th floor elevator hall and the roof stairs are not hidden:
 !   >>> III.3.2 - Action/What/Thing Acted On >>>
-! Rule 3/12 ! Check going nowhere when the player is not on the cage-thing:
-!   >>> III.5.2 - Action/When/Circumstances >>>
+! Rule 3/12 ! Check going nowhere when the player is in cage:
+!   === equally specific with ===
 ! Rule 4/12 ! Check going nowhere when the player is on the cage-thing:
 !   >>> I - Number of aspects constrained >>>
 ! Rule 5/12 ! Check an actor going when the actor is on a supporter ( called the chaise ) ( this is the stand up before going rule ):
@@ -30632,9 +30632,9 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     rfalse;
 ];
 ! No specific request
-! Check going nowhere when the player is not on the cage-thing:
+! Check going nowhere when the player is in cage:
 [ R_1285 ;
-    if ((( (actor==player) && ((MStack-->MstVON(20007,1)) == nothing) && (self=actor,true) && (((~~((I431_cage_thing == SupporterOf(player))))))))) { ! Runs only when pattern matches
+    if ((( (actor==player) && ((MStack-->MstVON(20007,1)) == nothing) && (self=actor,true) && (((I274_cage == ContainerOf(player))))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1285, 1285);
     ! [2: if noun is up]
@@ -55906,7 +55906,7 @@ Array RulebookNames -->
         if (R == R_1282) { print "Rule for writing a paragraph about Europa Callisto when Europa Callisto is in the cage and the cage is intact"; rtrue; } ! rule 751
         if (R == R_1283) { print "Rule for writing a paragraph about Europa Callisto when Europa Callisto is in the cage and the cage is broken"; rtrue; } ! rule 752
         if (R == R_1284) { print "Instead of climbing the cage-thing"; rtrue; } ! rule 753
-        if (R == R_1285) { print "Check going nowhere when the player is not on the cage-thing"; rtrue; } ! rule 754
+        if (R == R_1285) { print "Check going nowhere when the player is in cage"; rtrue; } ! rule 754
         if (R == R_1286) { print "Check going nowhere when the player is on the cage-thing"; rtrue; } ! rule 755
         if (R == R_1287) { print "Does the player mean doing something to the cage"; rtrue; } ! rule 756
         if (R == R_1288) { print "Does the player mean doing something to the cage-thing"; rtrue; } ! rule 757
@@ -62809,7 +62809,7 @@ Array TestText_0 ->
 Array TestReq_0 -->
     0 0;
 Array TestText_1 ->
-    "test elevator/w/u/u/u/u/u/u/u/u/e||||";
+    "test elevator/w/u/e||||";
 Array TestReq_1 -->
     0 0;
 Array TestText_2 ->
@@ -62825,16 +62825,20 @@ Array TestText_4 ->
 Array TestReq_4 -->
     0 0;
 Array TestText_5 ->
-    "test air/w/s/w/take panel/e/s/n/w/u/jump on robot/pour gel on robot/e/s/w/open present/e/n/w/put golden key in keyhole||||";
+    "test air/w/s/w/take panel/e/s/n/w/u/jump on robot/pour gel on robot||||";
 Array TestReq_5 -->
     0 0;
 Array TestText_6 ->
-    "test robot/press 100/e/s/smash diamonds with hammer/w/nw/put gem in claw/x panel/press black button/ne/s||||";
+    "/e/s/w/open present/e/n/w/put golden key in keyhole||||";
 Array TestReq_6 -->
     0 0;
 Array TestText_7 ->
-    "test 100/e/u/n/climb cage/throw cable at flyer/give water to europa||||";
+    "test robot/press 100/e/s/smash diamonds with hammer/w/nw/put gem in claw/x panel/press black button/ne/s||||";
 Array TestReq_7 -->
+    0 0;
+Array TestText_8 ->
+    "test 100/e/u/n/climb cage/throw cable at flyer/give water to europa||||";
+Array TestReq_8 -->
     0 0;
 
 
@@ -63412,18 +63416,19 @@ if (t_0 == I383_mauve_guard_robot) {if (na > 0) { na = 0; print "^"; }
 ! Tests.i6t: Test Command
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-#Iftrue (8 > 0);
+#Iftrue (9 > 0);
 
 [ TestScriptSub;
 	switch(special_word) {
 'elevator//': TestStart(TestText_0, TestReq_0, 175);
-'ninth//': TestStart(TestText_1, TestReq_1, 33);
+'ninth//': TestStart(TestText_1, TestReq_1, 19);
 'mgmt//': TestStart(TestText_2, TestReq_2, 147);
 'ledge//': TestStart(TestText_3, TestReq_3, 113);
 'air//': TestStart(TestText_4, TestReq_4, 89);
-'robot//': TestStart(TestText_5, TestReq_5, 118);
-'100//': TestStart(TestText_6, TestReq_6, 104);
-'endgame//': TestStart(TestText_7, TestReq_7, 67);
+'robot//': TestStart(TestText_5, TestReq_5, 67);
+'golden//': TestStart(TestText_6, TestReq_6, 51);
+'100//': TestStart(TestText_7, TestReq_7, 104);
+'endgame//': TestStart(TestText_8, TestReq_8, 67);
 
 	default:
 		print ">--> The following tests are available:^";
@@ -63433,6 +63438,7 @@ print "'test mgmt'^";
 print "'test ledge'^";
 print "'test air'^";
 print "'test robot'^";
+print "'test golden'^";
 print "'test 100'^";
 print "'test endgame'^";
 
@@ -63821,25 +63827,25 @@ Verb meta 'tree'
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 
-Array LIST_CONST_101493 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2120) (BC_2121) (BC_2122) (BC_2123) (BC_2124) ;
-Array LIST_CONST_101527 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2125) (BC_2126) (BC_2127) (BC_2128) (BC_2129) ;
-Array LIST_CONST_101561 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2130) (BC_2131) (BC_2132) (BC_2133) (BC_2134) ;
-Array LIST_CONST_101591 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2135) (BC_2136) (BC_2137) (BC_2138) (BC_2139) ;
-Array LIST_CONST_101621 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2140) (BC_2141) (BC_2142) (BC_2143) (BC_2144) ;
-Array LIST_CONST_101651 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2145) (BC_2146) (BC_2147) (BC_2148) (BC_2149) ;
-Array LIST_CONST_101685 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2150) (BC_2151) (BC_2152) (BC_2153) (BC_2154) ;
-Array LIST_CONST_101719 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2155) (BC_2156) (BC_2157) (BC_2158) (BC_2159) ;
-Array LIST_CONST_101753 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2160) (BC_2161) (BC_2162) (BC_2163) (BC_2164) ;
+Array LIST_CONST_101496 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2120) (BC_2121) (BC_2122) (BC_2123) (BC_2124) ;
+Array LIST_CONST_101530 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2125) (BC_2126) (BC_2127) (BC_2128) (BC_2129) ;
+Array LIST_CONST_101564 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2130) (BC_2131) (BC_2132) (BC_2133) (BC_2134) ;
+Array LIST_CONST_101594 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2135) (BC_2136) (BC_2137) (BC_2138) (BC_2139) ;
+Array LIST_CONST_101624 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2140) (BC_2141) (BC_2142) (BC_2143) (BC_2144) ;
+Array LIST_CONST_101654 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2145) (BC_2146) (BC_2147) (BC_2148) (BC_2149) ;
+Array LIST_CONST_101688 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2150) (BC_2151) (BC_2152) (BC_2153) (BC_2154) ;
+Array LIST_CONST_101722 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2155) (BC_2156) (BC_2157) (BC_2158) (BC_2159) ;
+Array LIST_CONST_101756 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2160) (BC_2161) (BC_2162) (BC_2163) (BC_2164) ;
 Array LIST_CONST_28126 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER NUMBER_TY 4 (1) (9) (10) (100) ;
-Array LIST_CONST_95225 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95460 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95478 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95496 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95514 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95532 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95550 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95568 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_95586 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95228 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95463 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95481 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95499 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95517 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95535 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95553 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95571 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_95589 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
 
 
 
@@ -97699,55 +97705,55 @@ Array BC_306 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_307 --> PACKED_TEXT_STORAGE TX_PS_35;
 Array BC_308 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_309 --> PACKED_TEXT_STORAGE TX_PS_51;
-Array BC_310 --> LIST_CONST_101493 0;
+Array BC_310 --> LIST_CONST_101496 0;
 Array BC_311 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_312 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_313 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_314 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_315 --> PACKED_TEXT_STORAGE TX_PS_52;
-Array BC_316 --> LIST_CONST_101527 0;
+Array BC_316 --> LIST_CONST_101530 0;
 Array BC_317 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_318 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_319 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_320 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_321 --> PACKED_TEXT_STORAGE TX_PS_53;
-Array BC_322 --> LIST_CONST_101561 0;
+Array BC_322 --> LIST_CONST_101564 0;
 Array BC_323 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_324 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_325 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_326 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_327 --> PACKED_TEXT_STORAGE TX_PS_54;
-Array BC_328 --> LIST_CONST_101591 0;
+Array BC_328 --> LIST_CONST_101594 0;
 Array BC_329 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_330 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_331 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_332 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_333 --> PACKED_TEXT_STORAGE TX_PS_55;
-Array BC_334 --> LIST_CONST_101621 0;
+Array BC_334 --> LIST_CONST_101624 0;
 Array BC_335 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_336 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_337 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_338 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_339 --> PACKED_TEXT_STORAGE TX_PS_56;
-Array BC_340 --> LIST_CONST_101651 0;
+Array BC_340 --> LIST_CONST_101654 0;
 Array BC_341 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_342 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_343 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_344 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_345 --> PACKED_TEXT_STORAGE TX_PS_57;
-Array BC_346 --> LIST_CONST_101685 0;
+Array BC_346 --> LIST_CONST_101688 0;
 Array BC_347 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_348 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_349 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_350 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_351 --> PACKED_TEXT_STORAGE TX_PS_58;
-Array BC_352 --> LIST_CONST_101719 0;
+Array BC_352 --> LIST_CONST_101722 0;
 Array BC_353 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_354 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_355 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_356 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_357 --> PACKED_TEXT_STORAGE TX_PS_59;
-Array BC_358 --> LIST_CONST_101753 0;
+Array BC_358 --> LIST_CONST_101756 0;
 Array BC_359 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_360 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_361 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
@@ -99498,15 +99504,15 @@ Array BC_2105 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_215;
 Array BC_2106 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_216;
 Array BC_2107 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_217;
 Array BC_2108 --> PACKED_TEXT_STORAGE TX_PS_486;
-Array BC_2109 --> LIST_CONST_95225 0;
-Array BC_2110 --> LIST_CONST_95460 0;
-Array BC_2111 --> LIST_CONST_95478 0;
-Array BC_2112 --> LIST_CONST_95496 0;
-Array BC_2113 --> LIST_CONST_95514 0;
-Array BC_2114 --> LIST_CONST_95532 0;
-Array BC_2115 --> LIST_CONST_95550 0;
-Array BC_2116 --> LIST_CONST_95568 0;
-Array BC_2117 --> LIST_CONST_95586 0;
+Array BC_2109 --> LIST_CONST_95228 0;
+Array BC_2110 --> LIST_CONST_95463 0;
+Array BC_2111 --> LIST_CONST_95481 0;
+Array BC_2112 --> LIST_CONST_95499 0;
+Array BC_2113 --> LIST_CONST_95517 0;
+Array BC_2114 --> LIST_CONST_95535 0;
+Array BC_2115 --> LIST_CONST_95553 0;
+Array BC_2116 --> LIST_CONST_95571 0;
+Array BC_2117 --> LIST_CONST_95589 0;
 Array BC_2118 --> Default_Value_0 0;
 Array BC_2119 --> LIST_CONST_28126 0;
 Array BC_2120 --> PACKED_TEXT_STORAGE TX_PS_662;
