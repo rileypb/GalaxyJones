@@ -1386,7 +1386,7 @@ rule for reaching inside the vending machine while buying the bottled water with
 	
 The description of the Ninth Floor North Hallway is "This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled 'Cybernetica Inc.'";
 	
-The description of the Ninth Floor South Hallway is "This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled 'Martian Chemical'";
+The description of the Ninth Floor South Hallway is "This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled 'Martian Chemical.'";
 
 Chapter 1 - Cybernetica office
 
@@ -1854,7 +1854,13 @@ The description of the martian chemical office is "This seems like the business 
 
 The chemical cabinet is scenery in the Martian Chemical office. "The cabinet is full of bottles of [Electrofil quick-setting conductive polymer gel]."
 
-The Electrofil quick-setting conductive polymer gel is in the cabinet. The description of the Electrofil is "An opaque pink bottle labeled 'Electrofil' in large friendly letters." Understand "bottle" as the Electrofil quick-setting conductive polymer gel.
+The Electrofil quick-setting conductive polymer gel is in the cabinet. It is undescribed. The description of the Electrofil is "An opaque pink bottle labeled 'Electrofil' in large friendly letters." Understand "bottle" as the Electrofil quick-setting conductive polymer gel.
+
+After taking the Electrofil quick-setting conductive polymer gel: 
+	now the Electrofil quick-setting conductive polymer gel is not undescribed;
+	continue the action;
+	
+Does the player mean taking the untakable bottle: it is very unlikely;
 
 The untakable bottle is in the cabinet. It is undescribed. It is privately-named. Understand "bottle/Electrofil/quick-setting/conductive/polymer/gel" as the untakable bottle. The description is "this is a secret message."
 
@@ -1865,6 +1871,9 @@ Rule for clarifying the parser's choice of the Electrofil quick-setting conducti
 	do nothing;
 	
 The chemical-desks are scenery in the Martian Chemical office. They are privately-named. The printed name is "desks". Understand "desk/desks" as the chemical-desks. "Seen one, seen [']em all. Except for the large desk across the hall, of course."
+
+Instead of opening the chemical cabinet:
+	try examining the chemical cabinet;
 
 Book 5 - Tenth Floor
 
