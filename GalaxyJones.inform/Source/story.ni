@@ -1952,7 +1952,7 @@ Every turn when the mauve guard robot is in the tenth-floor-region and the mauve
 		try the mauve guard robot going D;
 		if the location of the mauve guard robot is the location:
 			say "[one of]The robot slaughters Jones[or]The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons[or]Jones doesn't stand a chance against the mauve guard robot's terrible knives[or]The robot electrocutes Jones with its electro-darts[purely at random].";	
-		end the story saying "Jones was killed by the mauve guard robot";
+			end the story saying "Jones was killed by the mauve guard robot";
 	otherwise:
 		now the goal of the mauve guard robot is the homebase of the mauve guard robot;
 	if the location of the mauve guard robot farsees the location:
@@ -2130,6 +2130,18 @@ Instead of going when the mauve guard robot is under attack:
 	say "[We] can't leave the elevator when [we're] hanging on nto the robot for dear life.".
 	
 Instead of pouring the Electrofil quick-setting conductive polymer gel on the robot vent:
+	try pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot;
+	
+Instead of putting the Electrofil quick-setting conductive polymer gel on the mauve guard robot:
+	try pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot;
+	
+Instead of putting the Electrofil quick-setting conductive polymer gel on the robot vent:
+	try pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot;
+	
+Instead of inserting the Electrofil quick-setting conductive polymer gel into the mauve guard robot:
+	try pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot;
+	
+Instead of inserting the Electrofil quick-setting conductive polymer gel into the robot vent:
 	try pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot;
 	
 Instead of pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot when the location is the top of the elevator car:
