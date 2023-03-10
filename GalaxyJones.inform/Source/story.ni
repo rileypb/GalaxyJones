@@ -261,7 +261,7 @@ Book 1 - Beck
 
 Beck is a man in the room of stuff. The description is "Beck isn't exactly handsome, but he exudes a confidence that makes him memorable."
 
-Europa Callisto is a woman. The description is "Europa Callisto is a stunningly beautiful woman with long ice-blue hair and piercing blue eyes. Right now she's looking pretty ragged, though."
+Europa Callisto is a woman. The description is "Europa Callisto is a stunningly beautiful woman with long ice-blue hair and piercing blue eyes. Right now she's looking pretty ragged, though." She is familiar and seen.
 
 Admiral-Thallium is a man. He is privately-named. The printed name is "Admiral Thallium". Understand "Admiral/Thallium" as Admiral-Thallium. He is familiar. He is seen. The description is "The 'Admiral' is a disctinctly ridiculous figure. He dresses in a mockery of a Martian admiral's uniform, plastered with medals. His hair is slicked back and his mustache is painstakingly waxed."
 
@@ -2110,6 +2110,8 @@ After deciding the scope of the player when the location is penthouse south and 
 	
 Instead of taking the real diamond when the glass diamond is nowhere and the glass diamond is not discovered:
 	now the player carries the glass diamond;
+	now the glass diamond is seen;
+	now the glass diamond is familiar;
 	say text of the standard report taking rule response (A);
 	say paragraph break;
 	set pronouns from glass diamond;
@@ -2135,6 +2137,8 @@ Check attacking something with something:
 Instead of attacking the real diamond with the hammer:
 	say "[We] commences to smash all of the diamonds. After destroying several dozen fraudulent gems, [we] finds one that won't break. [We] takes the real diamond.[paragraph break]";
 	now the player carries the real diamond;
+	now the real diamond is seen;
+	now the real diamond is familiar;
 	converse "Thallium: 'Wow, clever solution. Be careful you don't cut yourself.'
 	
 	Jones: 'I appreciate your concern.'"
@@ -2508,7 +2512,7 @@ Understand the command "tell" as something new.
 After deciding the scope of the player:
 	place beck in scope;
 	
-Instead of doing something to Beck when action requires a touchable noun:
+Instead of doing something other than quizzing to Beck when action requires a touchable noun:
 	say "Beck is just a voice in [our] ear." instead;
 	
 Instead of doing something when action requires a touchable second noun and the second noun is Beck:
@@ -2549,6 +2553,10 @@ After quizzing Beck about the Speeder Dock:
 After quizzing Beck about the 100th floor elevator hall:
 	say line break;
 	converse "Beck: 'This guy's got some kind of inferiority complex.'";
+	
+After quizzing Beck about the 100th floor view of New Reykjavik:
+	say line break;
+	converse "Beck: 'Wow. Impressive.'";
 	
 After quizzing Beck about Admiral Thallium's Flyer:
 	say line break;
@@ -2610,8 +2618,262 @@ After quizzing Beck about claw:
 	lb;
 	converse "Beck: 'This whole place is like some weird wizard's chamber.'";
 	
+After quizzing Beck about coin:
+	lb; 
+	converse "Beck: 'Might as well hold on to it. You're not getting paid for this job.'";
+	
+After quizzing Beck about crystal lighting:
+	lb;
+	converse "Beck: 'And this is just the elevator!'";
+	
+After quizzing Beck about Cybernetica door:
+	lb;
+	converse "Beck: 'Oh, they make the best games!'";
+	
+After quizzing Beck about Cybernetica office:
+	lb;
+	converse "Beck: 'Oh, they make the best games!'";
+	
+After quizzing Beck about dead mauve robot:
+	lb;
+	converse "Beck: 'Nice job, Jones.'";
+	
+After quizzing Beck about desks-microthings-2:
+	lb;
+	converse "Beck: 'So many desks. So. many. desks.";
+	
+After quizzing Beck about desks-microthings-3:
+	lb;
+	converse "Beck: 'What do all these people even do? I mean, Consolidated Microthings, what do they do?'";
+	
+After quizzing Beck about destroyed purple robot:
+	lb;
+	converse "Beck: 'Just can't get a reliable guard robot these days.'";
+	
+After quizzing Beck about disruptor pistol:
+	lb;
+	converse "Beck: 'Uh, you know what that's for, right?'";
+	
+After quizzing Beck about drop-key-hole:
+	lb;
+	converse "Beck: 'You insert a drop key in there and then turn it.'";
+	
+After quizzing Beck about ductwork:
+	lb;
+	converse "Beck: 'You can get back out through there.'";
+	
+After quizzing Beck about electronic eye:
+	lb;
+	converse "Beck: 'Looks like light needs to hit it or something.'";
+	
+After quizzing Beck about elevator car-room:
+	lb;
+	converse "Beck: 'You gotta admit, this is insane.'";
+	
+After quizzing Beck about Europa Callisto:
+	lb;
+	converse "Beck: '[if the cage is intact and the cage is visited]We need to break open that cage somehow[otherwise if the cage is broken]You'll need to revive her if you want to get her out of there[otherwise]I hope she's okay[end if].'";
+	
+After quizzing Beck about filing cabinet:
+	lb;
+	converse "Beck: 'I can't imagine there's anything in there of relevance to rescuing Europa Callisto.'";
+	
+After quizzing Beck about flyer pad:
+	lb;
+	converse "Beck: 'I'll be there soon.'";
+	
+After quizzing Beck about fork:
+	lb;
+	converse "Beck: 'Maybe you can poke Thallium with a fork until he submits?'";
+	
+After quizzing Beck about the garish medal:
+	lb;
+	converse "Beck: '[if safety pin is not seen]Might as well take a look at it[otherwise]It's really pretty disgraceful[end if].'";
 
+After quizzing Beck about the giant sculpture:
+	lb;
+	converse "Beck: 'While I normally dislike Rambutan's work, this one has a certain power to it.'";
 
+After quizzing Beck about the glass diamond when the glass diamond is not discovered:
+	lb;
+	converse "Beck: 'How much do you think it's worth?'";
+
+After quizzing Beck about the glass diamond when the glass diamond is discovered:
+	lb;
+	converse "Beck: 'Don't get attached to pretty things, Jones.'";
+
+After quizzing Beck about the real diamond:
+	lb;
+	converse "Beck: 'Ooh pretty.'";
+
+After quizzing Beck about the golden key:
+	lb;
+	converse "Beck: 'Gold is a terrible material for keys.'";
+
+After quizzing Beck about the golden keyhole:
+	lb;
+	converse "Beck: 'This is just silly.'";
+
+After quizzing Beck about the gym:
+	lb;
+	converse "Beck: 'This place has great perks. Maybe I'll go work for them.'
+	
+	Jones: 'Beck, I'll tell you again: we don't have any place in HQ for a gym.'";
+
+After quizzing Beck about the hammer:
+	lb;
+	converse "Beck: 'A hammer can't hurt. I mean, it can, but you know what I mean.'";
+
+After quizzing Beck about the hook cable:
+	lb;
+	converse "Beck: 'It seems very strong. It can undergo a lot of force without breaking'";
+
+After quizzing Beck about the huge desk:
+	lb;
+	converse "Beck: 'Why does Thallium need such a desk? It's not like he can read or write.'";
+
+After quizzing Beck about the insignia:
+	lb;
+	converse "Beck: '[']I will conquer the planets, eh?[']'";
+
+After quizzing Beck about the ivory buttons:
+	lb;
+	converse "Beck: 'I keep thinking he can't get any worse, and then he tops himself.'";
+
+After quizzing Beck about the keypad:
+	lb;
+	converse "Beck: 'Where might you find the code?'";
+
+After quizzing Beck about the large desk:
+	lb;
+	converse "Beck: 'There must be a way to break into it.'";
+
+After quizzing Beck about the large red button:
+	lb;
+	converse "Beck: '[']Press Me[']? Who makes a button that says [']Press Me[']?'";
+
+After quizzing Beck about the large relief map of Mars:
+	lb;
+	converse "Beck: 'Well, now we know where we are at least. Other than that, this doesn't seem to help.'";
+
+After quizzing Beck about the ledge:
+	lb;
+	converse "Beck: 'I wish you weren't out there, Jones. Steady now.'";
+
+After quizzing Beck about the lobby:
+	lb;
+	converse "Beck: 'It's an impressive building, I'll give Thallium that.'";
+
+After quizzing Beck about the lounge area:
+	lb;
+	converse "Beck: 'No time for banter right now, bye!'";
+
+After quizzing Beck about the maintenance items:
+	lb;
+	converse "Beck: 'You're not planning to clean the place, are you?'";
+
+After quizzing Beck about the Martian Chemical office:
+	lb;
+	converse "Beck: 'These guys are one of the worst polluters on Mars. People think we can just go on dumping chemicals everywhere because the place is so empty, but haven't they ever heard of exponential growth? I mean --'
+	
+	Jones: 'Yes! I totally agree. But let's deal with this after we've rescued Europa.'";
+
+After quizzing Beck about the mauve guard robot:
+	lb;
+	converse "Beck: 'Maybe you can out-maneuver him.'";
+
+After quizzing Beck about the metal pillar:
+	try quizzing Beck about the claw;
+
+After quizzing Beck about the military-detritus:
+	lb;
+	converse "Beck: 'Who does this guy think he's fooling? On the other hand, maybe you can find a disguise in there and fake your way past the guards.'";
+
+After quizzing Beck about the Martian Chemical office:
+	lb;
+	converse "Beck: 'These guys are one of the worst polluters on Mars. People think we can just go on dumping chemicals everywhere because the place is so empty, but haven't they ever heard of exponential growth? I mean --'
+	
+	Jones: 'Yes! I totally agree. But let's deal with this after we've rescued Europa.'";
+
+After quizzing Beck about the north-task-boards:
+	lb;
+	converse "Beck: 'Write something on them! Something nasty about Thallium!'";
+
+After quizzing Beck about the south-task-boards:
+	lb;
+	converse "Beck: 'Write something on them! Something nasty about Thallium!'";
+
+After quizzing Beck about the note:
+	lb;
+	converse "Beck: 'Looks useful'";
+
+After quizzing Beck about the penthouse control panel:
+	lb;
+	converse "Beck: 'Be careful, don't press the wrong button.'";
+
+After quizzing Beck about the poached ostrich eggs in jelly:
+	lb;
+	converse "Beck: 'Where does he keep his ostrich farm?'";
+
+After quizzing Beck about the purple guard robot:
+	lb;
+	converse "Beck: 'These things are pretty invulnerable from a distance. Try getting closer in.'";
+
+After quizzing Beck about the red flyer:
+	lb;
+	converse "Beck: 'I'm flying it! No time to talk!'";
+
+After quizzing Beck about the robot vent:
+	lb;
+	converse "Beck: 'Looks like a point of weakness, as you said.'";
+
+After quizzing Beck about the safety pin:
+	lb;
+	converse "Beck: 'You never know when you might need something that can get in a very small space.'";
+
+After quizzing Beck about the screwdriver:
+	lb;
+	converse "Beck: 'Always useful.'";
+
+After quizzing Beck about the shrimp tea sandwich:
+	lb;
+	converse "Beck: 'I love shrimp, but unfortunately it makes me break out.'";
+
+After quizzing Beck about the small black button:
+	lb;
+	converse "Beck: 'Inscrutable, but do we have any choice?'";
+
+After quizzing Beck about the speeder-vehicle:
+	lb;
+	converse "Beck: 'I keep reminding you, but you still haven't taken it in for yearly maintenance.'";
+
+After quizzing Beck about the statue of admiral thallium:
+	lb;
+	converse "Beck: 'We'll come back and knock it over later.'";
+
+After quizzing Beck about the tangled ruin when the hook cable is not familiar:
+	lb;
+	converse "Beck: 'Might be something useful in there.";
+
+After quizzing Beck about the Utopia Tower:
+	lb;
+	converse "Beck: 'Sure is big.'";
+
+After quizzing Beck about the vanity table:
+	lb;
+	converse "Beck: 'Here's where the magic happens.'";
+
+After quizzing Beck about the Viking 2 lander:
+	lb;
+	converse "Beck: 'I'd heard it was stolen. I can't believe he just flaunts it like this.'";
+
+After quizzing Beck about the window washing scaffold:
+	lb;
+	converse "Beck: 'How nice of them to put this here for us.'";
+
+After quizzing Beck about the yourself:
+	lb;
+	converse "Beck: 'Well, I think you're very nice, Jones.'";
 
 
 Chapter 2 - Pleading / Help

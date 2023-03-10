@@ -14,6 +14,9 @@ Carry out examining a pseudocontainer when something is in the noun:
 		say "[contents description][paragraph break]";
 	otherwise:
 		say "[description][paragraph break]";
+	repeat with X running through the things contained in the noun:
+		now the X is seen;
+		now the X is familiar;
 	if the noun is auto-take:
 		repeat with X running through the things contained in the noun:
 			silently try taking X;
@@ -30,6 +33,11 @@ Instead of searching a pseudocontainer:
 
 Check inserting something into a pseudocontainer:
 	say "That can't contain things." instead;	
+	
+Before taking something when the noun is contained in a pseudocontainer:
+	now the noun is seen;
+	now the noun is handled;
+	now the noun is familiar;
 	
 [[Rule for deciding whether all includes a thing contained in a pseudocontainer:
 	it does not.]
