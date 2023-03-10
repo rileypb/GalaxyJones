@@ -2067,7 +2067,7 @@ After deciding the scope of the player when the location is top of the elevator 
 Rule for reaching inside the elevator car-room when the location is top of the elevator and the mauve guard robot is in the elevator car-room:
 	allow access;
 	
-The description of the top of the elevator car is "The elevator shaft extends many hundreds of feet above here. [We] can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if confused[end if].";
+The description of the top of the elevator car is "[if floor of the elevator car-room < 100]The elevator shaft extends many hundreds of feet above here[otherwise]She is right at the top of the shaft[end if]. She can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if confused[end if].";
 
 The upper-shaft is scenery in the top of the elevator car. It is privately-named. The printed name is "elevator shaft". Understand "elevator/shaft" as the upper-shaft. "The shaft extends far up into the darkness. The ladder here is missing, making it impossible to climb up to the eleventh floor and beyond."
 

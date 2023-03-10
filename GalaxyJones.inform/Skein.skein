@@ -83,6 +83,7 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-3868"></child>
             <child nodeId="node-3857"></child>
             <child nodeId="node-3850"></child>
+            <child nodeId="node-4383"></child>
             <child nodeId="node-3837"></child>
             <child nodeId="node-3797"></child>
             <child nodeId="node-3793"></child>
@@ -4107,6 +4108,100 @@ Beck: "Take it easy, Jones."
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4383">
+        <command xml:space="preserve">gonear elevator car</command>
+        <result xml:space="preserve">(the top of the elevator car)
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. Jones can see down into the elevator car from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4384"></child>
+        </children>
+    </item>
+    <item nodeId="node-4384">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons.
+
+One of the ceiling panels looks loose.
+
+Admiral Thallium's voice oozes from concealed speakers: "Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant."
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4385"></child>
+        </children>
+    </item>
+    <item nodeId="node-4385">
+        <command xml:space="preserve">take panel</command>
+        <result xml:space="preserve">(the ceiling panel)
+Jones removes the ceiling panel, exposing a hole wide enough for her to climb through.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4386"></child>
+        </children>
+    </item>
+    <item nodeId="node-4386">
+        <command xml:space="preserve">purloin golden key</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4387"></child>
+        </children>
+    </item>
+    <item nodeId="node-4387">
+        <command xml:space="preserve">put it in keyhole</command>
+        <result xml:space="preserve">Jones puts the key in the keyhole and turns. There is a pleasant chime, and some buttons light up.
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4388"></child>
+        </children>
+    </item>
+    <item nodeId="node-4388">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. Jones can see down into the elevator car from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4389"></child>
+        </children>
+    </item>
+    <item nodeId="node-4389">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4390"></child>
+        </children>
+    </item>
+    <item nodeId="node-4390">
+        <command xml:space="preserve">press 100</command>
+        <result xml:space="preserve">The elevator accelerates upwards at a frightening rate. The numbers cllimb towards 100. Soon the elevator slows, and the door opens on the 100th floor.
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4391"></child>
+        </children>
+    </item>
+    <item nodeId="node-4391">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the top of the elevator car. Jones is right at the top of the shaft. She can see down into the elevator car from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-3850">
         <command xml:space="preserve">gonear diamonds</command>
         <result xml:space="preserve">Which do you mean, the real diamond or the diamond?
@@ -4928,7 +5023,7 @@ The mauve guard robot struggles against Jones's hold on it, to no avail.
         <result xml:space="preserve">
 Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons.
 
-The robot electrocutes Jones with its electro-darts.
+The robot slaughters Jones.
 
 
 
@@ -4983,15 +5078,6 @@ The remains of the mauve guard robot are sprawled on the ground.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4320"></child>
-        </children>
-    </item>
-    <item nodeId="node-4320">
-        <command xml:space="preserve">put gel into robot</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-4321"></child>
         </children>
     </item>
@@ -5007,7 +5093,19 @@ The remains of the mauve guard robot are sprawled on the ground.
     </item>
     <item nodeId="node-4322">
         <command xml:space="preserve">put gel into vent</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">Jones pours the gel into the vent on the robot's head. The robot flails around wildly and throws her from its back, then lets out a loud crackling sound and stops moving.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons.
+
+The remains of the mauve guard robot are sprawled on the ground.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -5026,7 +5124,19 @@ The remains of the mauve guard robot are sprawled on the ground.
     </item>
     <item nodeId="node-4324">
         <command xml:space="preserve">put gel on vent</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">Jones pours the gel into the vent on the robot's head. The robot flails around wildly and throws her from its back, then lets out a loud crackling sound and stops moving.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons.
+
+The remains of the mauve guard robot are sprawled on the ground.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -5045,11 +5155,24 @@ The remains of the mauve guard robot are sprawled on the ground.
     </item>
     <item nodeId="node-4326">
         <command xml:space="preserve">put gel on robot</command>
-        <result xml:space="preserve">There's nothing like that nearby.
+        <result xml:space="preserve">Jones pours the gel into the vent on the robot's head. The robot flails around wildly and throws her from its back, then lets out a loud crackling sound and stops moving.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons.
+
+The remains of the mauve guard robot are sprawled on the ground.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4327"></child>
+        <children><child nodeId="node-4373"></child>
+            <child nodeId="node-4327"></child>
         </children>
     </item>
     <item nodeId="node-4327">
@@ -5089,6 +5212,119 @@ In that game you scored 0 out of a possible 0, in 13 turns.
 
 Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 &gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4373">
+        <command xml:space="preserve">purloin golden key</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4374"></child>
+        </children>
+    </item>
+    <item nodeId="node-4374">
+        <command xml:space="preserve">put it in keyhole</command>
+        <result xml:space="preserve">Jones puts the key in the keyhole and turns. There is a pleasant chime, and some buttons light up.
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4375"></child>
+        </children>
+    </item>
+    <item nodeId="node-4375">
+        <command xml:space="preserve">press 1</command>
+        <result xml:space="preserve">The elevator quickly arrives at its destination.
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4376"></child>
+        </children>
+    </item>
+    <item nodeId="node-4376">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. Jones can see down into the elevator car from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4377"></child>
+        </children>
+    </item>
+    <item nodeId="node-4377">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4378"></child>
+        </children>
+    </item>
+    <item nodeId="node-4378">
+        <command xml:space="preserve">press 9</command>
+        <result xml:space="preserve">The elevator quickly arrives at its destination.
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4379"></child>
+        </children>
+    </item>
+    <item nodeId="node-4379">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. Jones can see down into the elevator car from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4380"></child>
+        </children>
+    </item>
+    <item nodeId="node-4380">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4381"></child>
+        </children>
+    </item>
+    <item nodeId="node-4381">
+        <command xml:space="preserve">press 100</command>
+        <result xml:space="preserve">The elevator accelerates upwards at a frightening rate. The numbers cllimb towards 100. Soon the elevator slows, and the door opens on the 100th floor.
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4382"></child>
+        </children>
+    </item>
+    <item nodeId="node-4382">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. Jones can see down into the elevator car from here.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-3906">
