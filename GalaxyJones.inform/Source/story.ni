@@ -30,6 +30,10 @@ To continue:
 		say "[bracket]continue[close bracket]"; 
 		say paragraph break; 
 		wait for any key;
+		
+When play begins:
+	now the left hand status line is "[location-title-case]";
+	now the right hand status line is "[score] point[if score is not 1]s[end if]";
 
 [Table of New Exit Status
 left	central (text)	right
@@ -1018,6 +1022,8 @@ Section 1 - ground-floor-1
 The description of ground-floor-1 is "A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east."
 
 The waterfall is a scenery pseudocontainer in ground-floor-1. "The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again." The contents description is "The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin." 
+
+The conversation of the waterfall is "Jones: 'One coin? Not very generous people around here.'";
 
 Understand "water/basin" as waterfall.
 
@@ -2105,6 +2111,14 @@ The glass diamond is a gem. The glass diamond can be discovered. The printed nam
 
 The real diamond is a gem in the room of stuff. The description is "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds."
 
+prying is an action applying to one thing. Understand "pry [something] out/--", "pry out [something]", "loosen [something]" as prying.
+
+Check prying (this is the block prying rule):
+	say "That can't be pried out." instead;
+	
+Instead of prying the real diamond:
+	try taking the real diamond;
+
 Instead of examining the real diamond when the real diamond is in the room of stuff:
 	say "So many of them, from the tiny to the obscenely large. It looks like it wouldn't be hard to pry one out.";
 
@@ -2234,7 +2248,7 @@ Before going to flyer pad during On-Rooftop:
 	say line break;
 	converse as Thallium "Um, Jones -- that harlot you're so bent on freeing from captivity is over [special-style-2]there[special-style-1]. Now get out of the way, I'm trying to escape.'
 	
-	Thallium shoulders past [us]. [We] attempts to grab his shoulder, but [we] is thrown back by an unseen force.
+	Thallium pushes past [us]. [We] attempts to grab his shoulder, but [we] is thrown back by an unseen force.
 	
 	Thallium smirks. 'Personal security field, remember? Now I must be off.'
 	
@@ -3137,7 +3151,7 @@ the description of light-meter is "no need for a description".
 	
 Volume 14 - Not for release
 
-DEBUG is true. 
+DEBUG is false. 
 
 Understand "* [text]" as a mistake ("Noted.").
 
