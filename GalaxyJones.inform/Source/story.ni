@@ -2051,6 +2051,8 @@ Instead of shooting the mauve guard robot with the disruptor pistol when the mau
 	
 Book 6 - 100th Floor
 
+The 100th-floor-region is a region. It contains the 100th floor elevator hall, penthouse north, penthouse east, penthouse south, and penthouse west.
+
 The roof stairs can be hidden. The roof stairs are hidden.
 
 The description of the 100th floor elevator hall is "The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south[if roof stairs are not hidden]. A portion of the eastern wall has slid away to reveal a stunning white marble staircase[end if].".
@@ -3003,6 +3005,22 @@ After pleading when the location is in the tenth-floor-region and the mauve guar
 		-- 12: converse "Beck: 'Yes, the polymer gel! But you can't get close enough to pour it on the robot.'";
 		-- 13: converse "Beck: 'Jump on the robot!'";
 		-- 14: converse "Beck: 'Then pour the gel on the robot.'";
+		
+After pleading when the location is the 100th-floor-region and the roof stairs is hidden:
+	lb;
+	if plead 100th-floor-region is:
+		-- 1: converse "Beck: 'You need to get to the roof, but there is no apparent way to get there.'";
+		-- 2: converse "Beck: 'What are these diamonds?'";
+		-- 3: converse "Beck: 'Have you examined one?'";
+		-- 4: converse "Beck: 'It's fake!'";
+		-- 5: converse "Beck: 'You can't just keep looking at the diamonds one-by-one.'";
+		-- 6: converse "Beck: 'You need a faster way to distinguish real and fake.'";
+		-- 7: converse "Beck: 'Smash the diamonds with the hammer.'";
+		-- 8: converse "Beck: 'If you don't have the hammer, it's on the ground floor in the elevator room.'";
+		-- 9: converse "Beck: 'Put the diamond in the claw in penthouse west.'";
+		-- 10: converse "Beck: 'DON'T PRESS THE BIG RED BUTTON!'";
+		-- 11: converse "Beck: 'Examine the panel and then press the small black button.'";
+		-- 12: converse "Beck: 'A secret door has now opened in the elevator hall.'";
 		
 
 Chapter 3 - Ask Beck About Game

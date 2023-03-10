@@ -368,133 +368,133 @@
     </dict>
     <key>52</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2211</integer>
+        <key>Line</key><integer>2213</integer>
         <key>Title</key><string>Book 7 - The Rooftop</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>53</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2215</integer>
+        <key>Line</key><integer>2217</integer>
         <key>Title</key><string>Chapter 1 - Scenes</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>54</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2272</integer>
+        <key>Line</key><integer>2274</integer>
         <key>Title</key><string>Chapter 2 - Penthouse Roof</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>55</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2381</integer>
+        <key>Line</key><integer>2383</integer>
         <key>Title</key><string>Chapter 3 - Hooking the flyer</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>56</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2431</integer>
+        <key>Line</key><integer>2433</integer>
         <key>Title</key><string>Chapter 4 - The Flyer Pad</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>57</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2435</integer>
+        <key>Line</key><integer>2437</integer>
         <key>Title</key><string>Chapter 5 - The Water Bottle</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>58</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2468</integer>
+        <key>Line</key><integer>2470</integer>
         <key>Title</key><string>Volume 9 - The End, etc</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>59</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2511</integer>
+        <key>Line</key><integer>2513</integer>
         <key>Title</key><string>Volume 10 - Speech</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>60</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2513</integer>
+        <key>Line</key><integer>2515</integer>
         <key>Title</key><string>Book 1 - Talking to Beck</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>61</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2894</integer>
+        <key>Line</key><integer>2896</integer>
         <key>Title</key><string>Chapter 2 - Pleading / Help</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>62</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>2924</integer>
+        <key>Line</key><integer>2926</integer>
         <key>Title</key><string>Section 1 - Examples</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>63</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3008</integer>
+        <key>Line</key><integer>3026</integer>
         <key>Title</key><string>Chapter 3 - Ask Beck About Game</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>64</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3051</integer>
+        <key>Line</key><integer>3069</integer>
         <key>Title</key><string>Volume 11 - Language</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>65</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3053</integer>
+        <key>Line</key><integer>3071</integer>
         <key>Title</key><string>Book 1 - Verbs</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>66</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3057</integer>
+        <key>Line</key><integer>3075</integer>
         <key>Title</key><string>Volume 12 - Prettiness</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>67</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3059</integer>
+        <key>Line</key><integer>3077</integer>
         <key>Title</key><string>Book 1 - Moving Between Rooms</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>68</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3092</integer>
+        <key>Line</key><integer>3110</integer>
         <key>Title</key><string>Volume 13 - A few extra descriptions</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>69</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3096</integer>
+        <key>Line</key><integer>3114</integer>
         <key>Title</key><string>Volume 14 - Not for release</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>70</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3104</integer>
+        <key>Line</key><integer>3122</integer>
         <key>Title</key><string>Volume 15 - Tests</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
@@ -1773,7 +1773,7 @@
         <key>Indentation</key><integer>0</integer>
     </dict>
     <key>253</key><dict>
-        <key>Filename</key><string>/Users/rileypb/Library/Inform/Extensions/philip riley/visible rooms.i7x</string>
+        <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.materials/Extensions/philip riley/visible rooms.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Visible Rooms by Philip Riley begins here</string>
         <key>Level</key><integer>0</integer>
