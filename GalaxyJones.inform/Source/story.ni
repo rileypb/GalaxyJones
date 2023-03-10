@@ -2217,6 +2217,9 @@ attacking it with is an action applying to one thing and one carried thing. Unde
 Check attacking something with something:
 	say text of the block attacking rule response (A);
 	say line break instead;
+	
+Instead of attacking the real diamond with something:
+	say "That doesn't accomplish much.";
 
 Instead of attacking the real diamond with the hammer for the first time:
 	say "[We] commences to smash all of the diamonds. After destroying several dozen fraudulent gems, [we] finds one that won't break. [We] takes the real diamond.[paragraph break]";
@@ -2235,7 +2238,7 @@ Instead of attacking the real diamond:
 		say "(with the hammer)[command clarification break]";
 		try attacking the real diamond with the hammer;
 	otherwise:
-		say "What do you want to attack it with?";
+		say "What do you want to attack the diamonds with?";
 	
 Instead of taking the real diamond when the glass diamond is somewhere:
 	say "[We] has already taken a diamond. Isn't one enough?";

@@ -2926,7 +2926,90 @@ Jones: "I appreciate your concern."
     <item nodeId="node-2441">
         <command xml:space="preserve">smash diamonds</command>
         <result xml:space="preserve">(with the hammer)
-Whoa, that's enough.?
+Whoa, that's enough.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2474"></child>
+        </children>
+    </item>
+    <item nodeId="node-2474">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Galaxy Jones is in the southern corner of the penthouse.
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2475"></child>
+        </children>
+    </item>
+    <item nodeId="node-2475">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Galaxy Jones is in the southern corner of the penthouse.
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2476"></child>
+        </children>
+    </item>
+    <item nodeId="node-2476">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2477"></child>
+        </children>
+    </item>
+    <item nodeId="node-2477">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  a hammer
+  a disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2478"></child>
+        </children>
+    </item>
+    <item nodeId="node-2478">
+        <command xml:space="preserve">hit diamonds with pistol</command>
+        <result xml:space="preserve">That doesn't accomplish much.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2500"></child>
+            <child nodeId="node-2523"></child>
+        </children>
+    </item>
+    <item nodeId="node-2523">
+        <command xml:space="preserve">hit diamonds</command>
+        <result xml:space="preserve">(with the hammer)
+Jones commences to smash all of the diamonds. After destroying several dozen fraudulent gems, she finds one that won't break. She takes the real diamond.
+
+Thallium: "Wow, clever solution. Be careful you don't cut yourself."
+
+Jones: "I appreciate your concern."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2500">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2501"></child>
+        </children>
+    </item>
+    <item nodeId="node-2501">
+        <command xml:space="preserve">hit diamonds with pistol</command>
+        <result xml:space="preserve">[attacking the real diamond with the disruptor pistol]
+Violence isn't the answer to this one.
+[attacking the real diamond with the disruptor pistol - failed the Check attacking something with something]
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
