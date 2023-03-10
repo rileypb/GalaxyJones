@@ -32,7 +32,7 @@ To continue:
 		
 When play begins:
 	now the left hand status line is "[location-title-case]";
-	now the right hand status line is "[score] point[if score is not 1]s[end if]";
+	now the right hand status line is "[score] of [maximum score] points";
 
 [Table of New Exit Status
 left	central (text)	right
@@ -104,6 +104,8 @@ To score (n - number):
 	print the galaxy banner;
 	increase score by n;
 	follow the notify score changes rule;
+	
+maximum score is 10.
 
 The parser nothing error internal rule response (B) is "I'm not sure what you're referring to.".
 
@@ -1733,6 +1735,7 @@ Instead of unlocking the large desk with the safety pin:
 	say "[We] pushes the pin into the keyhole and wiggles it around. After a few seconds of this the desk drawer pops open[if desk contains something]. It contains [a list of objects contained in the large desk][end if].";
 	now the large desk is unlocked;     
 	now the large desk is open;
+	score 1;
 	
 The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desks" as north-desks. "There are lots of them, none of which are particularly interesting."
 
@@ -2089,8 +2092,6 @@ Point of weakness is a clip with conversation "Jones: 'I think I see a point of 
 
 Beck: 'Just stay out of its line of sight.'".
 The robot vent is a part of the mauve guard robot. It is privately-named. The printed name is "vent". The description is "Definitely a point of weakness.[paragraph break][print point of weakness]". Understand "vent" as the robot vent.
-
-
 
 Instead of shooting the mauve guard robot with the disruptor pistol when the location is the top of the elevator car:
 	say "From the top, even from this range, [our] shot is entirely ineffective. The robot swivels its head to find [us], and [we] barely jumps back out of sight.";
@@ -2510,6 +2511,7 @@ Does the player mean doing something to the cage-thing:
 Chapter 3 - Hooking the flyer
 
 To break the cage:
+	score 1;
 	say line break;
 	converse "[We] throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps through the door and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
 	
@@ -2524,32 +2526,10 @@ To break the cage:
 	move the player to the cage;
 
 Instead of throwing the hook cable at admiral thallium's flyer when the player is on the cage-thing:
-	say line break;
-	converse "[We] throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the flyer and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
-	
-	The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto. 
-	
-	'Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!'
-	
-	Europa moans but doesn't show any signs of having understood Jones.";
-	remove Admiral Thallium's flyer from play;
-	remove the hook cable from play;
-	now the cage is broken;
-	move the player to the cage;
+	break the cage;
 		
 Instead of tying the hook cable to the cage-thing when the player is on the cage-thing:
-	say line break;
-	converse "[We] attaches one end of the cable to the cage, and throws the other end up to the flyer where it hooks around the rail, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the flyer and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
-	
-	The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto. 
-	
-	'Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!'
-	
-	Europa moans but doesn't show any signs of having understood Jones.";
-	remove Admiral Thallium's flyer from play;
-	remove the hook cable from play;
-	now the cage is broken;
-	move the player to the cage;
+	break the cage;
 
 Instead of throwing the hook cable at admiral thallium's flyer:
 	say "[We] throws the cable, but it comes up short. [We] gathers it up again.";
@@ -3285,6 +3265,6 @@ test mgmt with "test ninth/buy water with coin/n/w/pick desk lock with pin/take 
 test ledge with "test mgmt/e/take gel from cabinet/w/n/n/e/sneak up on robot/sneak up on robot/sneak up on robot/shoot robot/s/n/e".
 test air with "test ledge/look down/look down/look down/d/press up/press up/open vent with screwdriver/w".
 test robot with "test air/w/s/w/take panel/e/s/n/w/u/jump on robot/pour gel on robot".
-test golden with "/e/s/w/open present/e/n/w/put golden key in keyhole".
-test 100 with "test robot/press 100/e/s/smash diamonds with hammer/w/nw/put gem in claw/x panel/press black button/ne/s".
+test golden with "test robot/e/s/w/open present/e/n/w/put golden key in keyhole".
+test 100 with "test golden/press 100/e/s/smash diamonds with hammer/w/nw/put gem in claw/x panel/press black button/ne/s".
 test endgame with "test 100/e/u/n/climb cage/throw cable at flyer/give water to europa".
