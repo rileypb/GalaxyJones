@@ -18844,11 +18844,11 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 ! From "Property Checking" by Emily Short
 ! No specific request
 ! When play begins ( this is the run property checks at the start of play rule ):
-[ R_1405 
+[ R_1407 
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     tmp_1 ! Let/loop value (deallocated by end of phrase)
     ;
-    if (debug_rules) DB_Rule(R_1405, 1405);
+    if (debug_rules) DB_Rule(R_1407, 1407);
     ! [2: if the description of the player is ~As good-looking as ever.~]
     if ((( BlkValueCompare(GProperty(10, player,description), TX_L_482) == 0)))
     {! [3: say ~The player has the default description.~]
@@ -22523,7 +22523,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 ];
 ! No specific request
 ! Instead of asking Beck about ~game~:
-[ R_1396 I7RBLK;
+[ R_1398 I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
@@ -22537,18 +22537,18 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 [ KERNEL_27 ;
     if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_223(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_1396, 1396);
+    if (debug_rules) DB_Rule(R_1398, 1398);
     ! [2: lb]
     (PHR_1003_r19 ());
     ! [3: converse ~Beck: 'Well, you can ask about: [bold type]INTERACTIVE FICTION[special-style-1], [bold type]COMMANDS[special-style-1], or [bold type]CREDITS[special-style-1].'~]
     (PHR_1026_r9 (BlkValueCopy(I7SFRAME, (TEXT_TY_ExpandIfPerishable((I7SFRAME+WORDSIZE*2),TX_S_245)))));
     RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_1396, 1396, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_1398, 1398, 'action');
     rfalse;
 ];
 ! No specific request
 ! Instead of asking Beck about ~interactive fiction~:
-[ R_1397 I7RBLK;
+[ R_1399 I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
@@ -22562,18 +22562,18 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 [ KERNEL_28 ;
     if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_224(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_1397, 1397);
+    if (debug_rules) DB_Rule(R_1399, 1399);
     ! [2: lb]
     (PHR_1003_r19 ());
     ! [3: converse ~Beck: 'According to Wikipedia, [']Interactive fiction, often abbreviated IF, is software simulating environments in which players use text commands to control characters and influence the environment.['] In more plain language, in this game you'll explore places, acquire objects, and defeat enemies all by typing commands. For instance, if you found an axe, you would type [bold type]TAKE AXE[special-style-1] to take it, and [bold type]DROP AXE[special-style-1] to drop it again.'^^You can move around in the world by typing commands like [bold type]GO NORTH[special-style-1], which can be abbreviated as [bold type]N[special-style-1]. If you need to refresh your memory about your surroundings you can say [bold type]LOOK[special-style-1], or just [bold type]L[special-style-1]. To see what you're holding, use [bold type]INVENTORY[special-style-1], or [bold type]I[special-style-1]. You can find out more about that axe from before by typing [bold type]EXAMINE AXE[special-style-1], or just [bold type]X AXE[special-style-1].'^^Of course, any game has limitations, so you can't just enter any old sentence and expect to have it understood. [bold type]ASK BECK ABOUT COMMANDS[special-style-1] for a partial list of commands that will work.'~]
     (PHR_1026_r9 (BlkValueCopy(I7SFRAME, (TEXT_TY_ExpandIfPerishable((I7SFRAME+WORDSIZE*2),TX_S_246)))));
     RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_1397, 1397, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_1399, 1399, 'action');
     rfalse;
 ];
 ! No specific request
 ! Instead of asking Beck about ~commands~:
-[ R_1400 I7RBLK;
+[ R_1402 I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
@@ -22587,18 +22587,18 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 [ KERNEL_29 ;
     if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_225(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_1400, 1400);
+    if (debug_rules) DB_Rule(R_1402, 1402);
     ! [2: lb]
     (PHR_1003_r19 ());
     ! [3: converse ~'Here's a partial list of commands with explanations and/or examples:'[line break] [line break] * [cmd]TAKE[xcmd]: [cmd]TAKE GOLD COIN[xcmd][line break] * [cmd]DROP[xcmd]: [cmd]DROP GOLD COIN[xcmd][line break] * [cmd]I[xcmd]: list the player's possessions[line break] * [cmd]X[xcmd]: examine something; [cmd]X GOLD COIN[xcmd][line break] * [cmd]L[xcmd]: look around[line break] * [cmd]CLIMB[xcmd]: [cmd]CLIMB BEANSTALK[xcmd][line break] * [cmd]GET OFF[xcmd]: [cmd]GET OFF BEANSTALK[xcmd][line break] * [cmd]PUT INTO[xcmd]: [cmd]PUT GOLD COIN INTO TREASURE CHEST[xcmd][line break] * [cmd]PUSH[xcmd]: [cmd]PUSH BIG RED BUTTON[xcmd][line break] [line break] not to mention [cmd]POUR[xcmd], [cmd]TYPE[xcmd], [cmd]OPEN[xcmd], [cmd]CLOSE[xcmd], [cmd]SHOOT[xcmd], and a few others you'll have to figure out for yourself.~]
     (PHR_1026_r9 (BlkValueCopy(I7SFRAME, (TEXT_TY_ExpandIfPerishable((I7SFRAME+WORDSIZE*2),TX_S_247)))));
     RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_1400, 1400, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_1402, 1402, 'action');
     rfalse;
 ];
 ! No specific request
 ! Instead of asking Beck about ~credits~:
-[ R_1401 I7RBLK;
+[ R_1403 I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
@@ -22610,7 +22610,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 [ KERNEL_30 ;
     if ((((action ==##Ask) &&  (actor==player) && ((noun == I175_beck) && (true)) && (Consult_Grammar_226(consult_from, consult_words)~=GPR_FAIL)))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_1401, 1401);
+    if (debug_rules) DB_Rule(R_1403, 1403);
     ! [2: lb]
     (PHR_1003_r19 ());
     ! [3: converse ~'Here are the credits:'~]
@@ -22620,7 +22620,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ! [5: show basic credits]
     (PHR_1287_r20 ());
     RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_1401, 1401, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_1403, 1403, 'action');
     rfalse;
 ];
 ! From "Conversation Framework" by Eric Eve
@@ -23380,241 +23380,245 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: After (B23_after)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/118 ! After the mauve guard robot going from the elevator car-room to the tenth floor elevator hall when the location is the top of the elevator car:
+! Rule 1/120 ! After the mauve guard robot going from the elevator car-room to the tenth floor elevator hall when the location is the top of the elevator car:
 !   === equally specific with ===
-! Rule 2/118 ! After the mauve guard robot going from the tenth floor elevator hall to the elevator car-room when the location is the top of the elevator car:
+! Rule 2/120 ! After the mauve guard robot going from the tenth floor elevator hall to the elevator car-room when the location is the top of the elevator car:
 !   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
-! Rule 3/118 ! After quizzing Beck about guard-robots when comment on energy absorption is unused during Lobby Shootout:
+! Rule 3/120 ! After quizzing Beck about guard-robots when comment on energy absorption is unused during Lobby Shootout:
 !   === equally specific with ===
-! Rule 4/118 ! After quizzing Beck about guard-robots when comment on energy absorption is used during Lobby Shootout:
+! Rule 4/120 ! After quizzing Beck about guard-robots when comment on energy absorption is used during Lobby Shootout:
 !   >>> I - Number of aspects constrained >>>
-! Rule 5/118 ! After going from ninth floor elevator shaft to ninth floor elevator hall for the first time:
+! Rule 5/120 ! After going from ninth floor elevator shaft to ninth floor elevator hall for the first time:
 !   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
-! Rule 6/118 ! After quizzing Beck about the poached ostrich eggs in jelly:
+! Rule 6/120 ! After quizzing Beck about the poached ostrich eggs in jelly:
 !   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
-! Rule 7/118 ! After going to the penthouse roof for the first time:
+! Rule 7/120 ! After going to the penthouse roof for the first time:
 !   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
-! Rule 8/118 ! After quizzing Beck about the Atmo-Suit when the ledge is not visited:
+! Rule 8/120 ! After quizzing Beck about the Atmo-Suit when the ledge is not visited:
 !   === equally specific with ===
-! Rule 9/118 ! After quizzing Beck about the Atmo-Suit when the ledge is not visited:
+! Rule 9/120 ! After quizzing Beck about the Atmo-Suit when the ledge is not visited:
 !   === equally specific with ===
-! Rule 10/118 ! After quizzing Beck about the glass diamond when the glass diamond is not discovered:
+! Rule 10/120 ! After quizzing Beck about the glass diamond when the glass diamond is not discovered:
 !   === equally specific with ===
-! Rule 11/118 ! After quizzing Beck about the tangled ruin when the hook cable is not familiar:
+! Rule 11/120 ! After quizzing Beck about the tangled ruin when the hook cable is not familiar:
 !   >>> III.5.2 - Action/When/Circumstances >>>
-! Rule 12/118 ! After quizzing Beck about the Atmo-Suit when the ledge is visited:
+! Rule 12/120 ! After quizzing Beck about the Atmo-Suit when the ledge is visited:
 !   === equally specific with ===
-! Rule 13/118 ! After quizzing Beck about the glass diamond when the glass diamond is discovered:
+! Rule 13/120 ! After quizzing Beck about the glass diamond when the glass diamond is discovered:
 !   >>> III.5.2 - Action/When/Circumstances >>>
-! Rule 14/118 ! After quizzing Beck about sculpture during Lobby Shootout:
+! Rule 14/120 ! After quizzing Beck about sculpture during Lobby Shootout:
 !   >>> III.3.1 - Action/What/Second Thing Acted On >>>
-! Rule 15/118 ! After dropping the shrimp tea sandwich when black cat is in the location and the black cat is angry:
+! Rule 15/120 ! After dropping the shrimp tea sandwich when black cat is in the location and the black cat is angry:
 !   >>> III.3.2 - Action/What/Thing Acted On >>>
-! Rule 16/118 ! After doing something other than sneaking up on the guard robot during Cybernetica Battle:
+! Rule 16/120 ! After doing something other than sneaking up on the guard robot during Cybernetica Battle:
 !   >>> III.3.2 - Action/What/Thing Acted On >>>
-! Rule 17/118 ! After actor doing something when the actor is not in location:
+! Rule 17/120 ! After actor doing something when the actor is not in location:
 !   >>> III.3.3 - Action/What/Actor Performing Action >>>
-! Rule 18/118 ! After pleading when comment on energy absorption is unused during Lobby Shootout:
+! Rule 18/120 ! After pleading when comment on energy absorption is unused during Lobby Shootout:
 !   === equally specific with ===
-! Rule 19/118 ! After pleading when comment on energy absorption is used during Lobby Shootout:
+! Rule 19/120 ! After pleading when comment on energy absorption is used during Lobby Shootout:
 !   >>> III.3.2 - Action/What/Thing Acted On >>>
-! Rule 20/118 ! After going somewhere when the player is in tenth-floor-region and the mauve guard robot is somewhere:
+! Rule 20/120 ! After going somewhere when the player is in tenth-floor-region and the mauve guard robot is somewhere:
 !   >>> I - Number of aspects constrained >>>
-! Rule 21/118 ! After going from ninth floor elevator shaft to ninth floor elevator hall:
+! Rule 21/120 ! After going from ninth floor elevator shaft to ninth floor elevator hall:
 !   === equally specific with ===
-! Rule 22/118 ! After going from ninth floor elevator hall to ninth floor elevator shaft:
+! Rule 22/120 ! After going from ninth floor elevator hall to ninth floor elevator shaft:
 !   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
-! Rule 23/118 ! After an actor going from a room ( called R ) to a room ( called AR ):
+! Rule 23/120 ! After an actor going from a room ( called R ) to a room ( called AR ):
 !   === equally specific with ===
-! Rule 24/118 ! After going from a room ( called R1 ) to a room ( called R2 ):
+! Rule 24/120 ! After going from a room ( called R1 ) to a room ( called R2 ):
 !   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
-! Rule 25/118 ! After quizzing Beck about the hook cable:
+! Rule 25/120 ! After quizzing Beck about the hook cable:
 !   === equally specific with ===
-! Rule 26/118 ! After quizzing Beck about the Lobby:
+! Rule 26/120 ! After quizzing Beck about the Lobby:
 !   === equally specific with ===
-! Rule 27/118 ! After quizzing Beck about the Speeder Dock:
+! Rule 27/120 ! After quizzing Beck about the Speeder Dock:
 !   === equally specific with ===
-! Rule 28/118 ! After quizzing Beck about the 100th floor elevator hall:
+! Rule 28/120 ! After quizzing Beck about the 100th floor elevator hall:
 !   === equally specific with ===
-! Rule 29/118 ! After quizzing Beck about the 100th floor view of New Reykjavik:
+! Rule 29/120 ! After quizzing Beck about the 100th floor view of New Reykjavik:
 !   === equally specific with ===
-! Rule 30/118 ! After quizzing Beck about Admiral Thallium's Flyer:
+! Rule 30/120 ! After quizzing Beck about Admiral Thallium's Flyer:
 !   === equally specific with ===
-! Rule 31/118 ! After quizzing Beck about Admiral-Thallium:
+! Rule 31/120 ! After quizzing Beck about Admiral-Thallium:
 !   === equally specific with ===
-! Rule 32/118 ! After quizzing Beck about the air handling room:
+! Rule 32/120 ! After quizzing Beck about the air handling room:
 !   === equally specific with ===
-! Rule 33/118 ! After quizzing Beck about Beck:
+! Rule 33/120 ! After quizzing Beck about Beck:
 !   === equally specific with ===
-! Rule 34/118 ! After quizzing Beck about bed:
+! Rule 34/120 ! After quizzing Beck about bed:
 !   === equally specific with ===
-! Rule 35/118 ! After quizzing Beck about black cat:
+! Rule 35/120 ! After quizzing Beck about black cat:
 !   === equally specific with ===
-! Rule 36/118 ! After quizzing Beck about bottle of Electrofil quick-setting conductive polymer gel:
+! Rule 36/120 ! After quizzing Beck about bottle of Electrofil quick-setting conductive polymer gel:
 !   === equally specific with ===
-! Rule 37/118 ! After quizzing Beck about bottled water:
+! Rule 37/120 ! After quizzing Beck about bottled water:
 !   === equally specific with ===
-! Rule 38/118 ! After quizzing Beck about cage:
+! Rule 38/120 ! After quizzing Beck about cage:
 !   === equally specific with ===
-! Rule 39/118 ! After quizzing Beck about cage-thing:
+! Rule 39/120 ! After quizzing Beck about cage-thing:
 !   === equally specific with ===
-! Rule 40/118 ! After quizzing Beck about claw:
+! Rule 40/120 ! After quizzing Beck about claw:
 !   === equally specific with ===
-! Rule 41/118 ! After quizzing Beck about coin:
+! Rule 41/120 ! After quizzing Beck about coin:
 !   === equally specific with ===
-! Rule 42/118 ! After quizzing Beck about crystal lighting:
+! Rule 42/120 ! After quizzing Beck about crystal lighting:
 !   === equally specific with ===
-! Rule 43/118 ! After quizzing Beck about Cybernetica door:
+! Rule 43/120 ! After quizzing Beck about Cybernetica door:
 !   === equally specific with ===
-! Rule 44/118 ! After quizzing Beck about Cybernetica office:
+! Rule 44/120 ! After quizzing Beck about Cybernetica office:
 !   === equally specific with ===
-! Rule 45/118 ! After quizzing Beck about dead mauve robot:
+! Rule 45/120 ! After quizzing Beck about dead mauve robot:
 !   === equally specific with ===
-! Rule 46/118 ! After quizzing Beck about desks-microthings-2:
+! Rule 46/120 ! After quizzing Beck about desks-microthings-2:
 !   === equally specific with ===
-! Rule 47/118 ! After quizzing Beck about desks-microthings-3:
+! Rule 47/120 ! After quizzing Beck about desks-microthings-3:
 !   === equally specific with ===
-! Rule 48/118 ! After quizzing Beck about destroyed purple robot:
+! Rule 48/120 ! After quizzing Beck about destroyed purple robot:
 !   === equally specific with ===
-! Rule 49/118 ! After quizzing Beck about disruptor pistol:
+! Rule 49/120 ! After quizzing Beck about disruptor pistol:
 !   === equally specific with ===
-! Rule 50/118 ! After quizzing Beck about drop-key-hole:
+! Rule 50/120 ! After quizzing Beck about drop-key-hole:
 !   === equally specific with ===
-! Rule 51/118 ! After quizzing Beck about ductwork:
+! Rule 51/120 ! After quizzing Beck about ductwork:
 !   === equally specific with ===
-! Rule 52/118 ! After quizzing Beck about electronic eye:
+! Rule 52/120 ! After quizzing Beck about electronic eye:
 !   === equally specific with ===
-! Rule 53/118 ! After quizzing Beck about elevator car-room:
+! Rule 53/120 ! After quizzing Beck about elevator car-room:
 !   === equally specific with ===
-! Rule 54/118 ! After quizzing Beck about Europa Callisto:
+! Rule 54/120 ! After quizzing Beck about Europa Callisto:
 !   === equally specific with ===
-! Rule 55/118 ! After quizzing Beck about filing cabinet:
+! Rule 55/120 ! After quizzing Beck about filing cabinet:
 !   === equally specific with ===
-! Rule 56/118 ! After quizzing Beck about flyer pad:
+! Rule 56/120 ! After quizzing Beck about flyer pad:
 !   === equally specific with ===
-! Rule 57/118 ! After quizzing Beck about fork:
+! Rule 57/120 ! After quizzing Beck about fork:
 !   === equally specific with ===
-! Rule 58/118 ! After quizzing Beck about the garish medal:
+! Rule 58/120 ! After quizzing Beck about the garish medal:
 !   === equally specific with ===
-! Rule 59/118 ! After quizzing Beck about the giant sculpture:
+! Rule 59/120 ! After quizzing Beck about the giant sculpture:
 !   === equally specific with ===
-! Rule 60/118 ! After quizzing Beck about the real diamond:
+! Rule 60/120 ! After quizzing Beck about the real diamond:
 !   === equally specific with ===
-! Rule 61/118 ! After quizzing Beck about the golden key:
+! Rule 61/120 ! After quizzing Beck about the golden key:
 !   === equally specific with ===
-! Rule 62/118 ! After quizzing Beck about the golden keyhole:
+! Rule 62/120 ! After quizzing Beck about the golden keyhole:
 !   === equally specific with ===
-! Rule 63/118 ! After quizzing Beck about the gym:
+! Rule 63/120 ! After quizzing Beck about the gym:
 !   === equally specific with ===
-! Rule 64/118 ! After quizzing Beck about the hammer:
+! Rule 64/120 ! After quizzing Beck about the hammer:
 !   === equally specific with ===
-! Rule 65/118 ! After quizzing Beck about the hook cable:
+! Rule 65/120 ! After quizzing Beck about the hook cable:
 !   === equally specific with ===
-! Rule 66/118 ! After quizzing Beck about the huge desk:
+! Rule 66/120 ! After quizzing Beck about the huge desk:
 !   === equally specific with ===
-! Rule 67/118 ! After quizzing Beck about the insignia:
+! Rule 67/120 ! After quizzing Beck about the insignia:
 !   === equally specific with ===
-! Rule 68/118 ! After quizzing Beck about the ivory buttons:
+! Rule 68/120 ! After quizzing Beck about the ivory buttons:
 !   === equally specific with ===
-! Rule 69/118 ! After quizzing Beck about the keypad:
+! Rule 69/120 ! After quizzing Beck about the keypad:
 !   === equally specific with ===
-! Rule 70/118 ! After quizzing Beck about the large desk:
+! Rule 70/120 ! After quizzing Beck about the large desk:
 !   === equally specific with ===
-! Rule 71/118 ! After quizzing Beck about the large red button:
+! Rule 71/120 ! After quizzing Beck about the large red button:
 !   === equally specific with ===
-! Rule 72/118 ! After quizzing Beck about the large relief map of Mars:
+! Rule 72/120 ! After quizzing Beck about the large relief map of Mars:
 !   === equally specific with ===
-! Rule 73/118 ! After quizzing Beck about the ledge:
+! Rule 73/120 ! After quizzing Beck about the ledge:
 !   === equally specific with ===
-! Rule 74/118 ! After quizzing Beck about the lobby:
+! Rule 74/120 ! After quizzing Beck about the lobby:
 !   === equally specific with ===
-! Rule 75/118 ! After quizzing Beck about the lounge area:
+! Rule 75/120 ! After quizzing Beck about the lounge area:
 !   === equally specific with ===
-! Rule 76/118 ! After quizzing Beck about the maintenance items:
+! Rule 76/120 ! After quizzing Beck about the maintenance items:
 !   === equally specific with ===
-! Rule 77/118 ! After quizzing Beck about the Martian Chemical office:
+! Rule 77/120 ! After quizzing Beck about the Martian Chemical office:
 !   === equally specific with ===
-! Rule 78/118 ! After quizzing Beck about the mauve guard robot:
+! Rule 78/120 ! After quizzing Beck about the mauve guard robot:
 !   === equally specific with ===
-! Rule 79/118 ! After quizzing Beck about the metal pillar:
+! Rule 79/120 ! After quizzing Beck about the metal pillar:
 !   === equally specific with ===
-! Rule 80/118 ! After quizzing Beck about the military-detritus:
+! Rule 80/120 ! After quizzing Beck about the military-detritus:
 !   === equally specific with ===
-! Rule 81/118 ! After quizzing Beck about the Martian Chemical office:
+! Rule 81/120 ! After quizzing Beck about the Martian Chemical office:
 !   === equally specific with ===
-! Rule 82/118 ! After quizzing Beck about the north-task-boards:
+! Rule 82/120 ! After quizzing Beck about the north-task-boards:
 !   === equally specific with ===
-! Rule 83/118 ! After quizzing Beck about the south-task-boards:
+! Rule 83/120 ! After quizzing Beck about the south-task-boards:
 !   === equally specific with ===
-! Rule 84/118 ! After quizzing Beck about the note:
+! Rule 84/120 ! After quizzing Beck about the note:
 !   === equally specific with ===
-! Rule 85/118 ! After quizzing Beck about the penthouse control panel:
+! Rule 85/120 ! After quizzing Beck about the penthouse control panel:
 !   === equally specific with ===
-! Rule 86/118 ! After quizzing Beck about the purple guard robot:
+! Rule 86/120 ! After quizzing Beck about the purple guard robot:
 !   === equally specific with ===
-! Rule 87/118 ! After quizzing Beck about the red flyer:
+! Rule 87/120 ! After quizzing Beck about the red flyer:
 !   === equally specific with ===
-! Rule 88/118 ! After quizzing Beck about the robot vent:
+! Rule 88/120 ! After quizzing Beck about the robot vent:
 !   === equally specific with ===
-! Rule 89/118 ! After quizzing Beck about the safety pin:
+! Rule 89/120 ! After quizzing Beck about the safety pin:
 !   === equally specific with ===
-! Rule 90/118 ! After quizzing Beck about the screwdriver:
+! Rule 90/120 ! After quizzing Beck about the screwdriver:
 !   === equally specific with ===
-! Rule 91/118 ! After quizzing Beck about the shrimp tea sandwich:
+! Rule 91/120 ! After quizzing Beck about the shrimp tea sandwich:
 !   === equally specific with ===
-! Rule 92/118 ! After quizzing Beck about the small black button:
+! Rule 92/120 ! After quizzing Beck about the small black button:
 !   === equally specific with ===
-! Rule 93/118 ! After quizzing Beck about the speeder-vehicle:
+! Rule 93/120 ! After quizzing Beck about the speeder-vehicle:
 !   === equally specific with ===
-! Rule 94/118 ! After quizzing Beck about the statue of admiral thallium:
+! Rule 94/120 ! After quizzing Beck about the statue of admiral thallium:
 !   === equally specific with ===
-! Rule 95/118 ! After quizzing Beck about the Utopia Tower:
+! Rule 95/120 ! After quizzing Beck about the Utopia Tower:
 !   === equally specific with ===
-! Rule 96/118 ! After quizzing Beck about the vanity table:
+! Rule 96/120 ! After quizzing Beck about the vanity table:
 !   === equally specific with ===
-! Rule 97/118 ! After quizzing Beck about the Viking 2 lander:
+! Rule 97/120 ! After quizzing Beck about the Viking 2 lander:
 !   === equally specific with ===
-! Rule 98/118 ! After quizzing Beck about the window washing scaffold:
+! Rule 98/120 ! After quizzing Beck about the window washing scaffold:
 !   === equally specific with ===
-! Rule 99/118 ! After quizzing Beck about the yourself:
+! Rule 99/120 ! After quizzing Beck about the yourself:
 !   >>> III.3.1 - Action/What/Second Thing Acted On >>>
-! Rule 100/118 ! After asking Beck about something:
+! Rule 100/120 ! After asking Beck about something:
 !   >>> III.3.1 - Action/What/Second Thing Acted On >>>
-! Rule 101/118 ! After examining the catering table:
+! Rule 101/120 ! After examining the catering table:
 !   >>> III.4.1 - Action/How/What Happens >>>
-! Rule 102/118 ! After doing something to yourself:
+! Rule 102/120 ! After doing something to yourself:
 !   >>> III.3.2 - Action/What/Thing Acted On >>>
-! Rule 103/118 ! After examining an identified passkey ( this is the passkey description rule ):
+! Rule 103/120 ! After examining an identified passkey ( this is the passkey description rule ):
 !   >>> III.3.2 - Action/What/Thing Acted On >>>
-! Rule 104/118 ! After examining a latched door:
+! Rule 104/120 ! After examining a latched door:
 !   >>> III.3.2 - Action/What/Thing Acted On >>>
-! Rule 105/118 ! After pleading when the location is in the ninth-floor and the black cardkey is not seen and the ninth floor north hallway is visited and the ninth floor south hallway is visited:
+! Rule 105/120 ! After pleading when the location is in the ninth-floor and the black cardkey is not seen and the ninth floor north hallway is visited and the ninth floor south hallway is visited:
 !   >>> III.5.2 - Action/When/Circumstances >>>
-! Rule 106/118 ! After pleading when lobby shootout has ended and the maintenance closet is not visited and the catering table is seen:
+! Rule 106/120 ! After pleading when lobby shootout has ended and the maintenance closet is not visited and the catering table is seen:
 !   === equally specific with ===
-! Rule 107/118 ! After pleading when the elevator drop key is not seen and the ground floor elevator door is closed and the red cardkey is handled:
+! Rule 107/120 ! After pleading when the elevator drop key is not seen and the ground floor elevator door is closed and the red cardkey is handled:
 !   >>> III.5.2 - Action/When/Circumstances >>>
-! Rule 108/118 ! After looking when the location is the 100th floor elevator hall and the roof stairs are not hidden:
+! Rule 108/120 ! After looking when the location is the 100th floor elevator hall and the roof stairs are not hidden:
 !   === equally specific with ===
-! Rule 109/118 ! After pleading when the location is the ledge and the window washing scaffold is not discovered:
+! Rule 109/120 ! After pleading when the location is the ledge and the window washing scaffold is not discovered:
 !   >>> III.5.2 - Action/When/Circumstances >>>
-! Rule 110/118 ! After pleading when the location is the window washing scaffold and the floor of the window washing scaffold is 10 and the exhaust vent is closed:
+! Rule 110/120 ! After pleading when the location is the window washing scaffold and the floor of the window washing scaffold is 10 and the exhaust vent is closed:
 !   >>> III.5.2 - Action/When/Circumstances >>>
-! Rule 111/118 ! After pleading when the elevator drop key is seen and the ground floor elevator door is closed:
+! Rule 111/120 ! After pleading when the elevator drop key is seen and the ground floor elevator door is closed:
 !   === equally specific with ===
-! Rule 112/118 ! After pleading when the location is the cybernetica office and the purple guard robot is in the cybernetica office:
+! Rule 112/120 ! After pleading when the location is the cybernetica office and the purple guard robot is in the cybernetica office:
 !   === equally specific with ===
-! Rule 113/118 ! After pleading when the location is in the tenth-floor-region and the mauve guard robot is somewhere:
+! Rule 113/120 ! After pleading when the location is in the tenth-floor-region and the mauve guard robot is somewhere:
 !   === equally specific with ===
-! Rule 114/118 ! After pleading when the location is the 100th-floor-region and the roof stairs is hidden:
+! Rule 114/120 ! After pleading when the location is the 100th-floor-region and the roof stairs is hidden:
 !   >>> III.5.2 - Action/When/Circumstances >>>
-! Rule 115/118 ! After looking during Lobby Shootout:
+! Rule 115/120 ! After pleading when the location is the roof stairs:
+!   === equally specific with ===
+! Rule 116/120 ! After pleading when the location is in the rooftop:
+!   >>> III.5.2 - Action/When/Circumstances >>>
+! Rule 117/120 ! After looking during Lobby Shootout:
 !   >>> V - Scene requirement >>>
-! Rule 116/118 ! After pleading when the location is south end of building management office and ( the screwdriver is not handled or the black cat is somewhere ):
+! Rule 118/120 ! After pleading when the location is south end of building management office and ( the screwdriver is not handled or the black cat is somewhere ):
 !   >>> III.4.1 - Action/How/What Happens >>>
-! Rule 117/118 ! After an actor doing something when the actor is not the player:
+! Rule 119/120 ! After an actor doing something when the actor is not the player:
 !   >>> I - Number of aspects constrained >>>
-! Rule 118/118 ! After looking:
+! Rule 120/120 ! After looking:
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! After the mauve guard robot going from the elevator car-room to the tenth floor elevator hall when the location is the top of the elevator car:
@@ -24146,7 +24150,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 ];
 ! No specific request
 ! After going from a room ( called R1 ) to a room ( called R2 ):
-[ R_1404 I7RBLK;
+[ R_1406 I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
@@ -24164,22 +24168,22 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ;
     if ((((action ==##Go) &&  (actor==player) && (tmp_0 = (MStack-->MstVON(20007,0)), ((((MStack-->MstVON(20007,0)) ofclass K1_room) && (tmp_0=((MStack-->MstVON(20007,0))), true)))) && (tmp_1 = (MStack-->MstVON(20007,1)), ((((MStack-->MstVON(20007,1)) ofclass K1_room) && (tmp_1=((MStack-->MstVON(20007,1))), true))))) || (tmp_1 = 0,tmp_0 = 0,false))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_1404, 1404);
+    if (debug_rules) DB_Rule(R_1406, 1406);
     ! [2: let transition text be the transition for r1 to r2]
     tmp_2 = I7SFRAME; 
-    		BlkValueCopy(tmp_2, (PHR_1402_r23 ((I7SFRAME+WORDSIZE*2),tmp_0,tmp_1)));
+    		BlkValueCopy(tmp_2, (PHR_1404_r23 ((I7SFRAME+WORDSIZE*2),tmp_0,tmp_1)));
     ! [3: if transition text is not ~none~]
     if (((~~(( BlkValueCompare(tmp_2, TX_L_510) == 0)))))
     {! [4: say ~[transition text][paragraph break]~]
         say__p=1;! [5: transition text]
         ParaContent(); print (TEXT_TY_Say) tmp_2;! [6: paragraph break]
         ParaContent(); DivideParagraphPoint(); new_line; .L_Say184; .L_SayX183;! [7: mark transition text for r1 to r2 as used]
-        (PHR_1403_r24 (tmp_0,tmp_1));
+        (PHR_1405_r24 (tmp_0,tmp_1));
         }
     ! [8: continue the action]
     rfalse;
     RulebookSucceeds(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_1404, 1404, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_1406, 1406, 'action');
     rfalse;
 ];
 ! No specific request
@@ -26139,8 +26143,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
         ! [6: converse ~Beck: '[special-style-2]everywhere?[special-style-1]'~]
         (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), (TEXT_TY_ExpandIfPerishable((I7SFRAME+WORDSIZE*6),TX_S_256)))));
         ;
-        4:
-        ! [7: converse ~Beck: 'Look down.'~]
+        default:! [7: converse ~Beck: 'Look down.'~]
         (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_589)));
         }
         RulebookSucceeds(); rtrue;
@@ -26184,8 +26187,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
         ! [6: converse ~Beck: 'To do that you need a screwdriver.'~]
         (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_592)));
         ;
-        4:
-        ! [7: converse ~Beck: 'Haven't got one? Go back to the building management office.'~]
+        default:! [7: converse ~Beck: 'Haven't got one? Go back to the building management office.'~]
         (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_593)));
         }
         RulebookSucceeds(); rtrue;
@@ -26261,8 +26263,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
         ! [5: converse ~Beck: 'When will you start listening to your handler? When? I've been giving you good advice, just spelling out what to do, and you don't pay attention.'~]
         (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_598)));
         ;
-        3:
-        ! [6: converse ~Beck: 'Sneak up on the stupid robot already!'~]
+        default:! [6: converse ~Beck: 'Sneak up on the stupid robot already!'~]
         (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_599)));
         }
         RulebookSucceeds(); rtrue;
@@ -26366,8 +26367,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
         ! [16: converse ~Beck: 'Jump on the robot!'~]
         (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*24), TX_L_612)));
         ;
-        14:
-        ! [17: converse ~Beck: 'Then pour the gel on the robot.'~]
+        default:! [17: converse ~Beck: 'Then pour the gel on the robot.'~]
         (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*26), TX_L_613)));
         }
         RulebookSucceeds(); rtrue;
@@ -26459,12 +26459,154 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
         ! [14: converse ~Beck: 'Examine the panel and then press the small black button.'~]
         (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*20), TX_L_624)));
         ;
-        12:
-        ! [15: converse ~Beck: 'A secret door has now opened in the elevator hall.'~]
+        default:! [15: converse ~Beck: 'A secret door has now opened in the elevator hall.'~]
         (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*22), TX_L_625)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1395, 1395, 'action');
+        rfalse;
+];
+! No specific request
+! After pleading when the location is the roof stairs:
+[ R_1396 I7RBLK;
+    @push I7SFRAME;
+    StackFrameCreate(14);
+    BlkValueCreateOnStack(12, TEXT_TY);
+    BlkValueCreateOnStack(10, TEXT_TY);
+    BlkValueCreateOnStack(8, TEXT_TY);
+    BlkValueCreateOnStack(6, TEXT_TY);
+    BlkValueCreateOnStack(4, TEXT_TY);
+    BlkValueCreateOnStack(2, TEXT_TY);
+    BlkValueCreateOnStack(0, TEXT_TY);
+    I7RBLK = KERNEL_130();
+    BlkValueFreeOnStack(12);
+    BlkValueFreeOnStack(10);
+    BlkValueFreeOnStack(8);
+    BlkValueFreeOnStack(6);
+    BlkValueFreeOnStack(4);
+    BlkValueFreeOnStack(2);
+    BlkValueFreeOnStack(0);
+    @pull I7SFRAME;
+    return I7RBLK; ! nothing
+];
+[ KERNEL_130 ;
+    if ((((action ==##A117_pleading) &&  (actor==player) && (self=actor,true) && (((real_location == I269_roof_stairs)))))) { ! Runs only when pattern matches
+    self = noun;
+    if (debug_rules) DB_Rule(R_1396, 1396);
+    ! [2: lb]
+    (PHR_1003_r19 ());
+    ! [3: if plead roof stairs is]
+    switch ((PHR_1385_r26 (I269_roof_stairs))) 
+    {1:
+        ! [4: converse ~Beck: 'Be careful before going to the roof, there's no turning back.'~]
+        (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_626)));
+        ;
+        2:
+        ! [5: converse ~Beck: 'You need two things.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_627)));
+        ;
+        3:
+        ! [6: converse ~Beck: 'Not the fork.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_628)));
+        ;
+        4:
+        ! [7: converse ~Beck: 'The water bottle and the cable.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_629)));
+        ;
+        5:
+        ! [8: converse ~Beck: 'You can buy the water bottle from the vending machine on the ninth floor.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_630)));
+        ;
+        6:
+        ! [9: converse ~Beck: 'You can get a coin to buy the water with from the waterfall on the ground floor.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*10), TX_L_631)));
+        ;
+        default:! [10: converse ~Beck: 'You can get the cable by examining the tangled ruin left by the sculpture in the lobby.~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*12), TX_L_632)));
+        }
+        RulebookSucceeds(); rtrue;
+        } else if (debug_rules > 1) DB_Rule(R_1396, 1396, 'action');
+        rfalse;
+];
+! No specific request
+! After pleading when the location is in the rooftop:
+[ R_1397 I7RBLK;
+    @push I7SFRAME;
+    StackFrameCreate(20);
+    BlkValueCreateOnStack(18, TEXT_TY);
+    BlkValueCreateOnStack(16, TEXT_TY);
+    BlkValueCreateOnStack(14, TEXT_TY);
+    BlkValueCreateOnStack(12, TEXT_TY);
+    BlkValueCreateOnStack(10, TEXT_TY);
+    BlkValueCreateOnStack(8, TEXT_TY);
+    BlkValueCreateOnStack(6, TEXT_TY);
+    BlkValueCreateOnStack(4, TEXT_TY);
+    BlkValueCreateOnStack(2, TEXT_TY);
+    BlkValueCreateOnStack(0, TEXT_TY);
+    I7RBLK = KERNEL_131();
+    BlkValueFreeOnStack(18);
+    BlkValueFreeOnStack(16);
+    BlkValueFreeOnStack(14);
+    BlkValueFreeOnStack(12);
+    BlkValueFreeOnStack(10);
+    BlkValueFreeOnStack(8);
+    BlkValueFreeOnStack(6);
+    BlkValueFreeOnStack(4);
+    BlkValueFreeOnStack(2);
+    BlkValueFreeOnStack(0);
+    @pull I7SFRAME;
+    return I7RBLK; ! nothing
+];
+[ KERNEL_131 ;
+    if ((((action ==##A117_pleading) &&  (actor==player) && (self=actor,true) && (((TestRegionalContainment(real_location,I416_rooftop))))))) { ! Runs only when pattern matches
+    self = noun;
+    if (debug_rules) DB_Rule(R_1397, 1397);
+    ! [2: lb]
+    (PHR_1003_r19 ());
+    ! [3: if plead rooftop is]
+    switch ((PHR_1385_r25 (I416_rooftop))) 
+    {1:
+        ! [4: converse ~Beck: 'Congratulations! You made it this far.'~]
+        (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_633)));
+        ;
+        2:
+        ! [5: converse ~Beck: 'You need to break Europa out of the cage and get her to a rescue flyer.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_634)));
+        ;
+        3:
+        ! [6: converse ~Beck: 'Don't worry, the rescue flyer will show up on time.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_635)));
+        ;
+        4:
+        ! [7: converse ~Beck: 'To break open the cage, you'll need to find some way to apply a great force to it.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_636)));
+        ;
+        5:
+        ! [8: converse ~Beck: 'Hook the cable to the flyer and the cage by saying THROW CABLE AT FLYER.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_637)));
+        ;
+        6:
+        ! [9: converse ~Beck: 'Come up short? Get higher.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*10), TX_L_638)));
+        ;
+        7:
+        ! [10: converse ~Beck: 'Climb the cage.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*12), TX_L_639)));
+        ;
+        8:
+        ! [11: converse ~Beck: 'Now throw the cable.'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*14), TX_L_640)));
+        ;
+        9:
+        ! [12: converse ~Beck: 'Now you're in the cage but Europa is unresponsive. How do you revive her?'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*16), TX_L_641)));
+        ;
+        10:
+        ! [13: converse ~Beck: 'The water of course!'~]
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*18), TX_L_642)));
+        }
+        RulebookSucceeds(); rtrue;
+        } else if (debug_rules > 1) DB_Rule(R_1397, 1397, 'action');
         rfalse;
 ];
 ! No specific request
@@ -26511,7 +26653,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     BlkValueCreateOnStack(4, TEXT_TY);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_130();
+    I7RBLK = KERNEL_132();
     BlkValueFreeOnStack(8);
     BlkValueFreeOnStack(6);
     BlkValueFreeOnStack(4);
@@ -26520,7 +26662,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_130 ;
+[ KERNEL_132 ;
     if ((((action ==##A117_pleading) &&  (actor==player) && (self=actor,true) && ((((real_location == I234_south_end_of_the_buildi))) && ((((~~(((Adj_73_t1_v10(I362_screwdriver))))))) || (((LocationOf(I363_black_cat) ofclass K1_room)))))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1389, 1389);
@@ -26530,22 +26672,22 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     switch ((PHR_1385_r28 (I362_screwdriver))) 
     {1:
         ! [4: converse ~Beck: 'If you haven't yet, get the screwdriver.'~]
-        (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_626)));
+        (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_643)));
         ;
         2:
         ! [5: converse ~Beck: 'Oops. Getting the screwdriver didn't turn out well. Look behind the cabinet to get the screwdriver.'~]
-        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_627)));
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_644)));
         ;
         3:
         ! [6: converse ~Beck: 'Looks like you'll need to get rid of the cat. What do cats like?'~]
-        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_628)));
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_645)));
         ;
         4:
         ! [7: converse ~Beck: 'Give the shrimp tea sandwich to the cat.'~]
-        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_629)));
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*6), TX_L_646)));
         ;
         default:! [8: converse ~Beck: 'What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there.'~]
-        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_630)));
+        (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*8), TX_L_647)));
         }
         RulebookSucceeds(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_1389, 1389, 'action');
@@ -26558,12 +26700,12 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @push I7SFRAME;
     StackFrameCreate(1);
     BlkValueCreateOnStack(0, STORED_ACTION_TY);
-    I7RBLK = KERNEL_131();
+    I7RBLK = KERNEL_133();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_131 ;
+[ KERNEL_133 ;
     if ((((act_requester==nothing) && (self=actor,true) && (((~~((actor == player)))))))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_977, 977);
     ! [2: now the notable action of the actor is the current action]
@@ -27576,13 +27718,13 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_132();
+    I7RBLK = KERNEL_134();
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_132 
+[ KERNEL_134 
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     tmp_1 ! Let/loop value (deallocated by end of phrase)
     ct_0 ! currently selected table
@@ -27665,7 +27807,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     BlkValueCreateOnStack(4, TEXT_TY);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_133();
+    I7RBLK = KERNEL_135();
     BlkValueFreeOnStack(8);
     BlkValueFreeOnStack(6);
     BlkValueFreeOnStack(4);
@@ -27674,7 +27816,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_133 ;
+[ KERNEL_135 ;
     if ((((((story_complete)))))) { ! Runs only while condition holds
     if (debug_rules) DB_Rule(R_1290, 1290);
     ! [2: say paragraph break]
@@ -27682,19 +27824,19 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ParaContent(); DivideParagraphPoint(); new_line; .L_Say212; .L_SayX211;! [4: show extended credits]
     (PHR_1288_r30 ());
     ! [5: screen print ~Black screen~]
-    (PHR_1289_r31 (BlkValueCopy(I7SFRAME, TX_L_631)));
+    (PHR_1289_r31 (BlkValueCopy(I7SFRAME, TX_L_648)));
     ! [6: say ~'Jones! Jones! Wake up! I'm trying to talk to you!'~]
     say__p=1;! [7: ~'Jones! Jones! Wake up! I'm trying to talk to you!'~]
     ParaContent(); print "~Jones! Jones! Wake up! I'm trying to talk to you!~"; new_line; .L_Say213; .L_SayX212;! [8: say line break]
     say__p=1;! [9: line break]
     ParaContent(); new_line; .L_Say214; .L_SayX213;! [10: screen print ~Cut to a shot of two closed eyes~]
-    (PHR_1289_r31 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_632)));
+    (PHR_1289_r31 (BlkValueCopy((I7SFRAME+WORDSIZE*2), TX_L_649)));
     ! [11: say ~'C'mon, open those eyes.'~]
     say__p=1;! [12: ~'C'mon, open those eyes.'~]
     ParaContent(); print "~C'mon, open those eyes.~"; new_line; .L_Say215; .L_SayX214;! [13: say line break]
     say__p=1;! [14: line break]
     ParaContent(); new_line; .L_Say216; .L_SayX215;! [15: screen print ~The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious~]
-    (PHR_1289_r31 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_633)));
+    (PHR_1289_r31 (BlkValueCopy((I7SFRAME+WORDSIZE*4), TX_L_650)));
     ! [16: say ~'This is getting tiresome, Jones. Stop playing dead.'~]
     say__p=1;! [17: ~'This is getting tiresome, Jones. Stop playing dead.'~]
     ParaContent(); print "~This is getting tiresome, Jones. Stop playing dead.~"; new_line; .L_Say217; .L_SayX216;! [18: say line break]
@@ -30192,13 +30334,13 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     StackFrameCreate(0);
     @push formal_par0;
     @push formal_par1;
-    I7RBLK = KERNEL_134();
+    I7RBLK = KERNEL_136();
     @pull formal_par1;
     @pull formal_par0;
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_134 
+[ KERNEL_136 
     tmp_0 ! Let/loop value, e.g., 'target': object
     tmp_1 ! Let/loop value (deallocated by end of phrase)
     ;
@@ -30408,13 +30550,13 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_135();
+    I7RBLK = KERNEL_137();
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_135 ;
+[ KERNEL_137 ;
     if ((PAPR_10() && (((TimesActionHasHappened-->10) == 1) && (ActionCurrentlyHappeningFlag->10)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1264, 1264);
@@ -30450,13 +30592,13 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_136();
+    I7RBLK = KERNEL_138();
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_136 ;
+[ KERNEL_138 ;
     if ((( (actor==player) && (((MStack-->MstVON(20007,1)) ofclass K1_room) && ((Adj_115_t1_v10((MStack-->MstVON(20007,1))))))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1053, 1053);
@@ -30487,13 +30629,13 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     StackFrameCreate(0);
     @push formal_par0;
     @push formal_par1;
-    I7RBLK = KERNEL_137();
+    I7RBLK = KERNEL_139();
     @pull formal_par1;
     @pull formal_par0;
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_137 
+[ KERNEL_139 
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     tmp_1 ! Let/loop value (deallocated by end of phrase)
     tmp_2 ! Let/loop value (deallocated by end of phrase)
@@ -31770,12 +31912,12 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_138();
+    I7RBLK = KERNEL_140();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_138 ;
+[ KERNEL_140 ;
     if (actor == player) {
     if (debug_rules) DB_Rule(R_1028, 1028);
     ! [2: if the conversation of the location is not empty and the location is unused]
@@ -32019,12 +32161,12 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_139();
+    I7RBLK = KERNEL_141();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_139 ;
+[ KERNEL_141 ;
     if ((( (actor==player) && ((noun ofclass K2_thing))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1029, 1029);
@@ -34639,12 +34781,12 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @push I7SFRAME;
     StackFrameCreate(0);
     @push formal_par0;
-    I7RBLK = KERNEL_140();
+    I7RBLK = KERNEL_142();
     @pull formal_par0;
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_140 
+[ KERNEL_142 
     tmp_0 ! Let/loop value, e.g., 'parent door': thing
     ;
     if ((((act_requester==nothing) && (tmp_0 = noun, (((noun ofclass K20_door_latch) && ((noun.component_parent) ofclass K2_thing) && (tmp_0=((noun.component_parent)), true))))) || (tmp_0 = 0,false))) { ! Runs only when pattern matches
@@ -35811,19 +35953,19 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_141();
+    I7RBLK = KERNEL_143();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_141 ;
+[ KERNEL_143 ;
     if ((( (actor==player) && ((noun == I175_beck) && (true)) && ((second ofclass K2_thing))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_1298, 1298);
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say559; .L_SayX557;! [4: converse ~Beck: 'Hmm. Don't have much to say about that right now.'~]
-    (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_634)));
+    (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_651)));
     ! [5: stop the action]
     rtrue;
     } else if (debug_rules > 1) DB_Rule(R_1298, 1298, 'action');
@@ -36284,7 +36426,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     BlkValueCreateOnStack(4, TEXT_TY);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_142();
+    I7RBLK = KERNEL_144();
     BlkValueFreeOnStack(78);
     BlkValueFreeOnStack(76);
     BlkValueFreeOnStack(74);
@@ -36328,7 +36470,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_142 
+[ KERNEL_144 
     tmp_0 ! Let/loop value, e.g., 'P': person
     tmp_1 ! Let/loop value, e.g., 'ol': room
     tmp_2 ! Let/loop value, e.g., 'nl': room
@@ -36908,12 +37050,12 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_143();
+    I7RBLK = KERNEL_145();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_143 ;
+[ KERNEL_145 ;
     if (debug_rules) DB_Rule(R_1035, 1035);
     ! [2: move the guard-robots to the lobby]
     MoveObject(I194_guard_robots, I207_lobby, 0, false);
@@ -36933,7 +37075,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     ParaContent(); (PHR_772_r6 ());! [14: ~ disruptor pistol.~]
     ParaContent(); print " disruptor pistol.";! [15: paragraph break]
     ParaContent(); DivideParagraphPoint(); new_line; .L_Say600; .L_SayX597;! [16: converse ~Jones shouts, 'I'm under fire from two ugly robot things!'^^Beck responds, 'Monitoring your suit radar.'~]
-    (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_635)));
+    (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_652)));
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -36950,13 +37092,13 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_144();
+    I7RBLK = KERNEL_146();
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_144 ;
+[ KERNEL_146 ;
     if (debug_rules) DB_Rule(R_1041, 1041);
     ! [2: move the purple guard robot to the cybernetica office]
     MoveObject(I195_purple_guard_robot, I235_cybernetica_office, 0, false);
@@ -36988,13 +37130,13 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_145();
+    I7RBLK = KERNEL_147();
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_145 ;
+[ KERNEL_147 ;
     if (debug_rules) DB_Rule(R_1048, 1048);
     ! [2: score 1]
     (PHR_1002_r17 (1));
@@ -37159,12 +37301,12 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_146();
+    I7RBLK = KERNEL_148();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_146 
+[ KERNEL_148 
     tmp_0 ! Let/loop value, e.g., 'board': thing
     ;
     if (actor == player) {
@@ -37453,17 +37595,17 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     BlkValueCreateOnStack(4, TEXT_TY);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_147();
+    I7RBLK = KERNEL_149();
     BlkValueFreeOnStack(4);
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_147 ;
+[ KERNEL_149 ;
     if (debug_rules) DB_Rule(R_1259, 1259);
     ! [2: converse as thallium ~Thallium's flyer hovers over the rooftop. 'Jones!'  he bellows. 'Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.'^^Jones rolls her eyes.~]
-    (PHR_1027_r10 (BlkValueCopy(I7SFRAME, TX_L_636)));
+    (PHR_1027_r10 (BlkValueCopy(I7SFRAME, TX_L_653)));
     ! [3: converse ~[line break]A little ways off, a small red flyer aims for the rooftop and accelerates.~]
     (PHR_1026_r9 (BlkValueCopy((I7SFRAME+WORDSIZE*2), (TEXT_TY_ExpandIfPerishable((I7SFRAME+WORDSIZE*4),TX_S_559)))));
     rfalse;
@@ -37483,15 +37625,15 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_148();
+    I7RBLK = KERNEL_150();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_148 ;
+[ KERNEL_150 ;
     if (debug_rules) DB_Rule(R_1261, 1261);
     ! [2: converse ~The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.~]
-    (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_637)));
+    (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_654)));
     ! [3: move the red flyer to the rooftop]
     MoveObject(I422_red_flyer, I416_rooftop, 0, false);
     rfalse;
@@ -37536,18 +37678,18 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_149();
+    I7RBLK = KERNEL_151();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_149 ;
+[ KERNEL_151 ;
     if (actor == player) {
     if (debug_rules) DB_Rule(R_1384, 1384);
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say621; .L_SayX618;! [4: converse ~Beck: 'Looks like you're managing okay.'~]
-    (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_638)));
+    (PHR_1026_r9 (BlkValueCopy(I7SFRAME, TX_L_655)));
     } else if (debug_rules > 1) DB_Rule(R_1384, 1384, 'actor');
     rfalse;
 ];
@@ -37563,11 +37705,11 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 ! From "Property Checking" by Emily Short
 ! No specific request
 ! A property-check rule for a thing ( called the target ) ( this is the things must have description rule ):
-[ R_1406 
+[ R_1408 
     tmp_0 ! Let/loop value, e.g., 'target': thing
     ;
     if ((((tmp_0 = parameter_value, (((parameter_value ofclass K2_thing) && (tmp_0=(parameter_value), true))))) || (tmp_0 = 0,false))) { ! Runs only when pattern matches
-    if (debug_rules) DB_Rule(R_1406, 1406);
+    if (debug_rules) DB_Rule(R_1408, 1408);
     ! [2: unless target provides the property description]
     if (~~(((WhetherProvides(tmp_0, false, description)))))
     {! [3: do nothing]
@@ -37582,24 +37724,24 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
         say__p=1;! [7: target]
         ParaContent(); PrintShortName(tmp_0);! [8: ~ has no description.~]
         ParaContent(); print " has no description."; new_line; .L_Say622; .L_SayX619;}
-        } else if (debug_rules > 1) DB_Rule(R_1406, 1406, 'action');
+        } else if (debug_rules > 1) DB_Rule(R_1408, 1408, 'action');
         rfalse;
 ];
 ! From "Property Checking" by Emily Short
 ! No specific request
 ! A property-check rule for a room ( called the target ) ( this is the rooms must have descriptions rule ):
-[ R_1407 
+[ R_1409 
     tmp_0 ! Let/loop value, e.g., 'target': room
     ;
     if ((((tmp_0 = parameter_value, (((parameter_value ofclass K1_room) && (tmp_0=(parameter_value), true))))) || (tmp_0 = 0,false))) { ! Runs only when pattern matches
-    if (debug_rules) DB_Rule(R_1407, 1407);
+    if (debug_rules) DB_Rule(R_1409, 1409);
     ! [2: if description of target is empty]
     if ((((Adj_17_t1_v14(GProperty(10, tmp_0,description))))))
     {! [3: say ~[target] has no description.~]
         say__p=1;! [4: target]
         ParaContent(); PrintShortName(tmp_0);! [5: ~ has no description.~]
         ParaContent(); print " has no description."; new_line; .L_Say623; .L_SayX620;}
-        } else if (debug_rules > 1) DB_Rule(R_1407, 1407, 'action');
+        } else if (debug_rules > 1) DB_Rule(R_1409, 1409, 'action');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -38934,12 +39076,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(1);
     BlkValueCreateOnStack(0, STORED_ACTION_TY);
-    I7RBLK = KERNEL_150(t_0);
+    I7RBLK = KERNEL_152(t_0);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_150 
+[ KERNEL_152 
     t_0 ! Call parameter: person
     ;
     ! meaning of "lazy"
@@ -41097,10 +41239,10 @@ Array rulebooks_array --> B0_startup B1_turn_sequence B2_shutdown B3_scene_chang
     latest_rule_result-->0 = 0;
     if (original_deadflag ~= deadflag) return 0;
     if (say__p) RulebookParBreak(forbid_breaks);
-    rv = R_1405();
+    rv = R_1407();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_1405;
+        return R_1407;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 5 rule(s)
@@ -42859,34 +43001,34 @@ Constant B18_unsuccessful_attempt_by = EMPTY_RULEBOOK;
     if (action == ##Ask) {
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_1396();
+        rv = R_1398();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_1396;
+            return R_1398;
         }
         latest_rule_result-->0 = 0;
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_1397();
+        rv = R_1399();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_1397;
+            return R_1399;
         }
         latest_rule_result-->0 = 0;
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_1400();
+        rv = R_1402();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_1400;
+            return R_1402;
         }
         latest_rule_result-->0 = 0;
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_1401();
+        rv = R_1403();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_1401;
+            return R_1403;
         }
         latest_rule_result-->0 = 0;
         if (original_deadflag ~= deadflag) return 0;
@@ -43671,10 +43813,10 @@ Constant B22_carry_out = EMPTY_RULEBOOK;
         latest_rule_result-->0 = 0;
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_1404();
+        rv = R_1406();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_1404;
+            return R_1406;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -44425,6 +44567,22 @@ Constant B22_carry_out = EMPTY_RULEBOOK;
             return R_1395;
         }
         latest_rule_result-->0 = 0;
+        if (original_deadflag ~= deadflag) return 0;
+        if (say__p) RulebookParBreak(forbid_breaks);
+        rv = R_1396();
+        if (rv) {
+            if (rv == 2) return reason_the_action_failed;
+            return R_1396;
+        }
+        latest_rule_result-->0 = 0;
+        if (original_deadflag ~= deadflag) return 0;
+        if (say__p) RulebookParBreak(forbid_breaks);
+        rv = R_1397();
+        if (rv) {
+            if (rv == 2) return reason_the_action_failed;
+            return R_1397;
+        }
+        latest_rule_result-->0 = 0;
     } else {
         if (say__p) RulebookParBreak(forbid_breaks);
     }
@@ -44472,7 +44630,7 @@ Constant B22_carry_out = EMPTY_RULEBOOK;
     } else {
         if (say__p) RulebookParBreak(forbid_breaks);
     }
-    return 0; ! 118 rule(s)
+    return 0; ! 120 rule(s)
 ];
 Constant B24_report = EMPTY_RULEBOOK;
 [ B25_does_the_player_mean 
@@ -49668,19 +49826,19 @@ Constant B507_carry_out_pleading = EMPTY_RULEBOOK;
     original_deadflag = deadflag;
     p = parameter_value;
     parameter_value = p;
-    rv = R_1406();
+    rv = R_1408();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_1406;
+        return R_1408;
     }
     latest_rule_result-->0 = 0;
     if (original_deadflag ~= deadflag) return 0;
     if (say__p) RulebookParBreak(forbid_breaks);
     parameter_value = p;
-    rv = R_1407();
+    rv = R_1409();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_1407;
+        return R_1409;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 2 rule(s)
@@ -54739,9 +54897,9 @@ Array RulebookNames -->
         if (R == R_1080) { print "cage naming rule"; rtrue; } ! rule 376
         if (R == R_1136) { print "can't reach inside the vending machine rule"; rtrue; } ! rule 377
         if (R == R_1147) { print "describe the scaffold rule"; rtrue; } ! rule 378
-        if (R == R_1405) { print "run property checks at the start of play rule"; rtrue; } ! rule 379
-        if (R == R_1406) { print "things must have description rule"; rtrue; } ! rule 380
-        if (R == R_1407) { print "rooms must have descriptions rule"; rtrue; } ! rule 381
+        if (R == R_1407) { print "run property checks at the start of play rule"; rtrue; } ! rule 379
+        if (R == R_1408) { print "things must have description rule"; rtrue; } ! rule 380
+        if (R == R_1409) { print "rooms must have descriptions rule"; rtrue; } ! rule 381
         if (R == LITTLE_USED_DO_NOTHING_R) { print "little-used do nothing rule"; rtrue; } ! rule 382
         if (R == VIRTUAL_MACHINE_STARTUP_R) { print "virtual machine startup rule"; rtrue; } ! rule 383
         if (R == INITIALISE_MEMORY_R) { print "initialise memory rule"; rtrue; } ! rule 384
@@ -55220,11 +55378,13 @@ Array RulebookNames -->
         if (R == R_1393) { print "After pleading when the location is the window washing scaffold and the floor of the window washing scaffold is 10 and the exhaust vent is closed"; rtrue; } ! rule 857
         if (R == R_1394) { print "After pleading when the location is in the tenth-floor-region and the mauve guard robot is somewhere"; rtrue; } ! rule 858
         if (R == R_1395) { print "After pleading when the location is the 100th-floor-region and the roof stairs is hidden"; rtrue; } ! rule 859
-        if (R == R_1396) { print "Instead of asking Beck about ~game~"; rtrue; } ! rule 860
-        if (R == R_1397) { print "Instead of asking Beck about ~interactive fiction~"; rtrue; } ! rule 861
-        if (R == R_1400) { print "Instead of asking Beck about ~commands~"; rtrue; } ! rule 862
-        if (R == R_1401) { print "Instead of asking Beck about ~credits~"; rtrue; } ! rule 863
-        if (R == R_1404) { print "After going from a room ( called R1 ) to a room ( called R2 )"; rtrue; } ! rule 864
+        if (R == R_1396) { print "After pleading when the location is the roof stairs"; rtrue; } ! rule 860
+        if (R == R_1397) { print "After pleading when the location is in the rooftop"; rtrue; } ! rule 861
+        if (R == R_1398) { print "Instead of asking Beck about ~game~"; rtrue; } ! rule 862
+        if (R == R_1399) { print "Instead of asking Beck about ~interactive fiction~"; rtrue; } ! rule 863
+        if (R == R_1402) { print "Instead of asking Beck about ~commands~"; rtrue; } ! rule 864
+        if (R == R_1403) { print "Instead of asking Beck about ~credits~"; rtrue; } ! rule 865
+        if (R == R_1406) { print "After going from a room ( called R1 ) to a room ( called R2 )"; rtrue; } ! rule 866
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -63014,25 +63174,25 @@ Verb meta 'tree'
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 
-Array LIST_CONST_100567 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2098) (BC_2099) (BC_2100) (BC_2101) (BC_2102) ;
-Array LIST_CONST_100601 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2103) (BC_2104) (BC_2105) (BC_2106) (BC_2107) ;
-Array LIST_CONST_100635 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2108) (BC_2109) (BC_2110) (BC_2111) (BC_2112) ;
-Array LIST_CONST_100665 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2113) (BC_2114) (BC_2115) (BC_2116) (BC_2117) ;
-Array LIST_CONST_100695 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2118) (BC_2119) (BC_2120) (BC_2121) (BC_2122) ;
-Array LIST_CONST_100725 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2123) (BC_2124) (BC_2125) (BC_2126) (BC_2127) ;
-Array LIST_CONST_100759 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2128) (BC_2129) (BC_2130) (BC_2131) (BC_2132) ;
-Array LIST_CONST_100793 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2133) (BC_2134) (BC_2135) (BC_2136) (BC_2137) ;
-Array LIST_CONST_100827 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2138) (BC_2139) (BC_2140) (BC_2141) (BC_2142) ;
+Array LIST_CONST_100705 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2098) (BC_2099) (BC_2100) (BC_2101) (BC_2102) ;
+Array LIST_CONST_100739 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2103) (BC_2104) (BC_2105) (BC_2106) (BC_2107) ;
+Array LIST_CONST_100773 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2108) (BC_2109) (BC_2110) (BC_2111) (BC_2112) ;
+Array LIST_CONST_100803 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2113) (BC_2114) (BC_2115) (BC_2116) (BC_2117) ;
+Array LIST_CONST_100833 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2118) (BC_2119) (BC_2120) (BC_2121) (BC_2122) ;
+Array LIST_CONST_100863 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2123) (BC_2124) (BC_2125) (BC_2126) (BC_2127) ;
+Array LIST_CONST_100897 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2128) (BC_2129) (BC_2130) (BC_2131) (BC_2132) ;
+Array LIST_CONST_100931 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2133) (BC_2134) (BC_2135) (BC_2136) (BC_2137) ;
+Array LIST_CONST_100965 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER TEXT_TY 5 (BC_2138) (BC_2139) (BC_2140) (BC_2141) (BC_2142) ;
 Array LIST_CONST_27522 --> (102498304) LIST_OF_TY MAX_POSITIVE_NUMBER NUMBER_TY 4 (1) (9) (10) (100) ;
-Array LIST_CONST_94299 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_94534 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_94552 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_94570 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_94588 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_94606 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_94624 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_94642 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
-Array LIST_CONST_94660 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_94437 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_94672 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_94690 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_94708 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_94726 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_94744 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_94762 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_94780 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
+Array LIST_CONST_94798 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 ;
 
 
 
@@ -63052,13 +63212,13 @@ Array LIST_CONST_94660 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 
     StackFrameCreate(2);
     BlkValueCreateOnStack(1, KD4_list_of_people);
     BlkValueCreateOnStack(0, KD4_list_of_people);
-    I7RBLK = BlkValueCopy(I7RBLK, KERNEL_151(t_0, t_1));
+    I7RBLK = BlkValueCopy(I7RBLK, KERNEL_153(t_0, t_1));
     BlkValueFreeOnStack(1);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! list of people
 ];
-[ KERNEL_151 
+[ KERNEL_153 
     t_0 ! Call parameter 'criterion': description of things
     t_1 ! Call parameter 'full list': list of people
     tmp_0 ! Let/loop value, e.g., 'filtered list': list of people
@@ -63094,7 +63254,7 @@ Array LIST_CONST_94660 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 
     BlkValueCreateOnStack(2, KD4_list_of_people);
     BlkValueCreateOnStack(1, KD4_list_of_people);
     BlkValueCreateOnStack(0, KD4_list_of_people);
-    I7RBLK = BlkValueCopy(I7RBLK, KERNEL_152(t_0, t_1));
+    I7RBLK = BlkValueCopy(I7RBLK, KERNEL_154(t_0, t_1));
     BlkValueFreeOnStack(3);
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(1);
@@ -63102,7 +63262,7 @@ Array LIST_CONST_94660 --> (85721088) LIST_OF_TY MAX_POSITIVE_NUMBER VALUE_TY 0 
     @pull I7SFRAME;
     return I7RBLK; ! list of people
 ];
-[ KERNEL_152 
+[ KERNEL_154 
     t_0 ! Call parameter 'criterion': description of objects
     t_1 ! Call parameter 'full list': list of people
     tmp_0 ! Let/loop value, e.g., 'filtered list': list of people
@@ -63329,13 +63489,13 @@ I7RBLK;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_153(t_0);
+    I7RBLK = KERNEL_155(t_0);
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_153 
+[ KERNEL_155 
     t_0 ! Call parameter 'C': clip
     ;
     ! [2: if c is unused]
@@ -63373,12 +63533,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_154();
+    I7RBLK = KERNEL_156();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_154 ;
+[ KERNEL_156 ;
     ! [2: now the prior named object is the player]
     prior_named_noun = player;
     ! [3: if last person referenced is not the player]
@@ -63560,12 +63720,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_155();
+    I7RBLK = KERNEL_157();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_155 ;
+[ KERNEL_157 ;
     ! [2: if the last person referenced is not the player]
     if (((~~(((Global_Vars-->10) == player)))))
     {! [3: say ~[player]'s~]
@@ -63768,7 +63928,7 @@ I7RBLK;
 ];
 ! Request 23: phrase (room, room) -> text
 ! To decide which text is the transition for ( source - a room ) to ( target - a room ):
-[ PHR_1402_r23  I7RBLK 
+[ PHR_1404_r23  I7RBLK 
     t_0 ! Call parameter 'source': room
     t_1 ! Call parameter 'target': room
 ;
@@ -63776,13 +63936,13 @@ I7RBLK;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = BlkValueCopy(I7RBLK, KERNEL_156(t_0, t_1));
+    I7RBLK = BlkValueCopy(I7RBLK, KERNEL_158(t_0, t_1));
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! text
 ];
-[ KERNEL_156 
+[ KERNEL_158 
     t_0 ! Call parameter 'source': room
     t_1 ! Call parameter 'target': room
     tmp_0 ! Let/loop value (deallocated by end of phrase)
@@ -63808,7 +63968,7 @@ I7RBLK;
 ];
 ! Request 24: phrase (room, room) -> nothing
 ! To mark transition text for ( source - a room ) to ( target - a room ) as used:
-[ PHR_1403_r24  
+[ PHR_1405_r24  
     t_0 ! Call parameter 'source': room
     t_1 ! Call parameter 'target': room
     tmp_0 ! Let/loop value (deallocated by end of phrase)
@@ -64065,12 +64225,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_157(t_0);
+    I7RBLK = KERNEL_159(t_0);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_157 
+[ KERNEL_159 
     t_0 ! Call parameter 'T': text
     ;
     ! [2: add t to post-look]
@@ -64217,12 +64377,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_158();
+    I7RBLK = KERNEL_160();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_158 ;
+[ KERNEL_160 ;
     ! [2: if last person referenced is not the player]
     if (((~~(((Global_Vars-->10) == player)))))
     {! [3: say ~[player]'s~]
@@ -64520,12 +64680,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_159();
+    I7RBLK = KERNEL_161();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_159 ;
+[ KERNEL_161 ;
     ! [2: if last person referenced is not the player]
     if (((~~(((Global_Vars-->10) == player)))))
     {! [3: say ~[player]'s~]
@@ -64589,12 +64749,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_160();
+    I7RBLK = KERNEL_162();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_160 ;
+[ KERNEL_162 ;
     ! [2: if the last person referenced is not the player]
     if (((~~(((Global_Vars-->10) == player)))))
     {! [3: say ~[player]~]
@@ -64654,12 +64814,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_161();
+    I7RBLK = KERNEL_163();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_161 ;
+[ KERNEL_163 ;
     ! [2: if the last person referenced is not the player]
     if (((~~(((Global_Vars-->10) == player)))))
     {! [3: say ~[player]'s~]
@@ -64720,12 +64880,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_162();
+    I7RBLK = KERNEL_164();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_162 ;
+[ KERNEL_164 ;
     ! [2: now the prior named object is the player]
     prior_named_noun = player;
     ! [3: if the story viewpoint is]
@@ -64877,13 +65037,13 @@ I7RBLK;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_163(t_0);
+    I7RBLK = KERNEL_165(t_0);
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_163 
+[ KERNEL_165 
     t_0 ! Call parameter 'case': grammatical case
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     ;
@@ -65008,12 +65168,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_164();
+    I7RBLK = KERNEL_166();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_164 
+[ KERNEL_166 
     tmp_0 ! Let/loop value, e.g., 'item': object
     ;
     ! [2: let the item be the prior named object]
@@ -65099,12 +65259,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_165();
+    I7RBLK = KERNEL_167();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_165 
+[ KERNEL_167 
     tmp_0 ! Let/loop value, e.g., 'item': object
     ;
     ! [2: let the item be the prior named object]
@@ -65149,12 +65309,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_166();
+    I7RBLK = KERNEL_168();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_166 
+[ KERNEL_168 
     tmp_0 ! Let/loop value, e.g., 'item': object
     ;
     ! [2: let the item be the prior named object]
@@ -65240,12 +65400,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_167();
+    I7RBLK = KERNEL_169();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_167 
+[ KERNEL_169 
     tmp_0 ! Let/loop value, e.g., 'item': object
     ;
     ! [2: let the item be the prior named object]
@@ -65331,12 +65491,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_168();
+    I7RBLK = KERNEL_170();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_168 
+[ KERNEL_170 
     tmp_0 ! Let/loop value, e.g., 'item': object
     ;
     ! [2: let the item be the prior named object]
@@ -65424,12 +65584,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_169();
+    I7RBLK = KERNEL_171();
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_169 
+[ KERNEL_171 
     tmp_0 ! Let/loop value, e.g., 'item': object
     ;
     ! [2: let the item be the prior named object]
@@ -65608,12 +65768,12 @@ I7RBLK;
     @push I7SFRAME;
     StackFrameCreate(2);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_170(t_0);
+    I7RBLK = KERNEL_172(t_0);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_170 
+[ KERNEL_172 
     t_0 ! Call parameter 'selected table': table name
     tmp_0 ! Let/loop value, e.g., '__n': number
     tmp_1 ! Let/loop value, e.g., '__index': number
@@ -65756,7 +65916,7 @@ I7RBLK;
     BlkValueCreateOnStack(4, TEXT_TY);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_171();
+    I7RBLK = KERNEL_173();
     BlkValueFreeOnStack(6);
     BlkValueFreeOnStack(4);
     BlkValueFreeOnStack(2);
@@ -65764,7 +65924,7 @@ I7RBLK;
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_171 
+[ KERNEL_173 
     tmp_0 ! Let/loop value, e.g., 'L': text
     ;
     ! [2: let l be the substituted form of ~[location]~ for comparison purposes]
@@ -65838,13 +65998,13 @@ I7RBLK;
     StackFrameCreate(4);
     BlkValueCreateOnStack(2, TEXT_TY);
     BlkValueCreateOnStack(0, TEXT_TY);
-    I7RBLK = KERNEL_172();
+    I7RBLK = KERNEL_174();
     BlkValueFreeOnStack(2);
     BlkValueFreeOnStack(0);
     @pull I7SFRAME;
     return I7RBLK; ! nothing
 ];
-[ KERNEL_172 ;
+[ KERNEL_174 ;
     ! [2: say line break]
     say__p=1;! [3: line break]
     ParaContent(); new_line; .L_Say948; .L_SayX943;! [4: converse ~[We] throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps through the door and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.^^The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto.^^'Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!'^^Europa moans but doesn't show any signs of having understood Jones.~]
@@ -65861,14 +66021,14 @@ I7RBLK;
 ];
 ! Request 92: phrase nothing -> nothing
 ! To say cmd:
-[ PHR_1398_r92  ;
+[ PHR_1400_r92  ;
     ! [2: say bold type]
     say__p=1;! [3: bold type]
     ParaContent(); style bold; .L_Say949; .L_SayX944;rfalse;
 ];
 ! Request 93: phrase nothing -> nothing
 ! to say xcmd:
-[ PHR_1399_r93  ;
+[ PHR_1401_r93  ;
     ! [2: say special-style-1]
     say__p=1;! [3: special-style-1]
     ParaContent(); glk_set_style( style_User1 ); .L_Say950; .L_SayX945;rfalse;
@@ -69754,102 +69914,102 @@ Array TX_S_246 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_246;
     ParaContent(); print " ";! [5: line break]
     ParaContent(); new_line;! [6: ~ * ~]
     ParaContent(); print " * ";! [7: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [8: ~TAKE~]
+    ParaContent(); (PHR_1400_r92 ());! [8: ~TAKE~]
     ParaContent(); print "TAKE";! [9: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [10: ~: ~]
+    ParaContent(); (PHR_1401_r93 ());! [10: ~: ~]
     ParaContent(); print ": ";! [11: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [12: ~TAKE GOLD COIN~]
+    ParaContent(); (PHR_1400_r92 ());! [12: ~TAKE GOLD COIN~]
     ParaContent(); print "TAKE GOLD COIN";! [13: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [14: line break]
+    ParaContent(); (PHR_1401_r93 ());! [14: line break]
     ParaContent(); new_line;! [15: ~ * ~]
     ParaContent(); print " * ";! [16: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [17: ~DROP~]
+    ParaContent(); (PHR_1400_r92 ());! [17: ~DROP~]
     ParaContent(); print "DROP";! [18: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [19: ~: ~]
+    ParaContent(); (PHR_1401_r93 ());! [19: ~: ~]
     ParaContent(); print ": ";! [20: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [21: ~DROP GOLD COIN~]
+    ParaContent(); (PHR_1400_r92 ());! [21: ~DROP GOLD COIN~]
     ParaContent(); print "DROP GOLD COIN";! [22: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [23: line break]
+    ParaContent(); (PHR_1401_r93 ());! [23: line break]
     ParaContent(); new_line;! [24: ~ * ~]
     ParaContent(); print " * ";! [25: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [26: ~I~]
+    ParaContent(); (PHR_1400_r92 ());! [26: ~I~]
     ParaContent(); print "I";! [27: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [28: ~: list the player's possessions~]
+    ParaContent(); (PHR_1401_r93 ());! [28: ~: list the player's possessions~]
     ParaContent(); print ": list the player's possessions";! [29: line break]
     ParaContent(); new_line;! [30: ~ * ~]
     ParaContent(); print " * ";! [31: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [32: ~X~]
+    ParaContent(); (PHR_1400_r92 ());! [32: ~X~]
     ParaContent(); print "X";! [33: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [34: ~: examine something; ~]
+    ParaContent(); (PHR_1401_r93 ());! [34: ~: examine something; ~]
     ParaContent(); print ": examine something; ";! [35: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [36: ~X GOLD COIN~]
+    ParaContent(); (PHR_1400_r92 ());! [36: ~X GOLD COIN~]
     ParaContent(); print "X GOLD COIN";! [37: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [38: line break]
+    ParaContent(); (PHR_1401_r93 ());! [38: line break]
     ParaContent(); new_line;! [39: ~ * ~]
     ParaContent(); print " * ";! [40: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [41: ~L~]
+    ParaContent(); (PHR_1400_r92 ());! [41: ~L~]
     ParaContent(); print "L";! [42: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [43: ~: look around~]
+    ParaContent(); (PHR_1401_r93 ());! [43: ~: look around~]
     ParaContent(); print ": look around";! [44: line break]
     ParaContent(); new_line;! [45: ~ * ~]
     ParaContent(); print " * ";! [46: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [47: ~CLIMB~]
+    ParaContent(); (PHR_1400_r92 ());! [47: ~CLIMB~]
     ParaContent(); print "CLIMB";! [48: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [49: ~: ~]
+    ParaContent(); (PHR_1401_r93 ());! [49: ~: ~]
     ParaContent(); print ": ";! [50: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [51: ~CLIMB BEANSTALK~]
+    ParaContent(); (PHR_1400_r92 ());! [51: ~CLIMB BEANSTALK~]
     ParaContent(); print "CLIMB BEANSTALK";! [52: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [53: line break]
+    ParaContent(); (PHR_1401_r93 ());! [53: line break]
     ParaContent(); new_line;! [54: ~ * ~]
     ParaContent(); print " * ";! [55: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [56: ~GET OFF~]
+    ParaContent(); (PHR_1400_r92 ());! [56: ~GET OFF~]
     ParaContent(); print "GET OFF";! [57: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [58: ~: ~]
+    ParaContent(); (PHR_1401_r93 ());! [58: ~: ~]
     ParaContent(); print ": ";! [59: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [60: ~GET OFF BEANSTALK~]
+    ParaContent(); (PHR_1400_r92 ());! [60: ~GET OFF BEANSTALK~]
     ParaContent(); print "GET OFF BEANSTALK";! [61: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [62: line break]
+    ParaContent(); (PHR_1401_r93 ());! [62: line break]
     ParaContent(); new_line;! [63: ~ * ~]
     ParaContent(); print " * ";! [64: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [65: ~PUT INTO~]
+    ParaContent(); (PHR_1400_r92 ());! [65: ~PUT INTO~]
     ParaContent(); print "PUT INTO";! [66: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [67: ~: ~]
+    ParaContent(); (PHR_1401_r93 ());! [67: ~: ~]
     ParaContent(); print ": ";! [68: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [69: ~PUT GOLD COIN INTO TREASURE CHEST~]
+    ParaContent(); (PHR_1400_r92 ());! [69: ~PUT GOLD COIN INTO TREASURE CHEST~]
     ParaContent(); print "PUT GOLD COIN INTO TREASURE CHEST";! [70: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [71: line break]
+    ParaContent(); (PHR_1401_r93 ());! [71: line break]
     ParaContent(); new_line;! [72: ~ * ~]
     ParaContent(); print " * ";! [73: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [74: ~PUSH~]
+    ParaContent(); (PHR_1400_r92 ());! [74: ~PUSH~]
     ParaContent(); print "PUSH";! [75: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [76: ~: ~]
+    ParaContent(); (PHR_1401_r93 ());! [76: ~: ~]
     ParaContent(); print ": ";! [77: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [78: ~PUSH BIG RED BUTTON~]
+    ParaContent(); (PHR_1400_r92 ());! [78: ~PUSH BIG RED BUTTON~]
     ParaContent(); print "PUSH BIG RED BUTTON";! [79: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [80: line break]
+    ParaContent(); (PHR_1401_r93 ());! [80: line break]
     ParaContent(); new_line;! [81: ~ ~]
     ParaContent(); print " ";! [82: line break]
     ParaContent(); new_line;! [83: ~ not to mention ~]
     ParaContent(); print " not to mention ";! [84: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [85: ~POUR~]
+    ParaContent(); (PHR_1400_r92 ());! [85: ~POUR~]
     ParaContent(); print "POUR";! [86: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [87: ~, ~]
+    ParaContent(); (PHR_1401_r93 ());! [87: ~, ~]
     ParaContent(); print ", ";! [88: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [89: ~TYPE~]
+    ParaContent(); (PHR_1400_r92 ());! [89: ~TYPE~]
     ParaContent(); print "TYPE";! [90: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [91: ~, ~]
+    ParaContent(); (PHR_1401_r93 ());! [91: ~, ~]
     ParaContent(); print ", ";! [92: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [93: ~OPEN~]
+    ParaContent(); (PHR_1400_r92 ());! [93: ~OPEN~]
     ParaContent(); print "OPEN";! [94: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [95: ~, ~]
+    ParaContent(); (PHR_1401_r93 ());! [95: ~, ~]
     ParaContent(); print ", ";! [96: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [97: ~CLOSE~]
+    ParaContent(); (PHR_1400_r92 ());! [97: ~CLOSE~]
     ParaContent(); print "CLOSE";! [98: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [99: ~, ~]
+    ParaContent(); (PHR_1401_r93 ());! [99: ~, ~]
     ParaContent(); print ", ";! [100: cmd]
-    ParaContent(); (PHR_1398_r92 ());! [101: ~SHOOT~]
+    ParaContent(); (PHR_1400_r92 ());! [101: ~SHOOT~]
     ParaContent(); print "SHOOT";! [102: xcmd]
-    ParaContent(); (PHR_1399_r93 ());! [103: ~, and a few others you'll have to figure out for yourself.~]
+    ParaContent(); (PHR_1401_r93 ());! [103: ~, and a few others you'll have to figure out for yourself.~]
     ParaContent(); print ", and a few others you'll have to figure out for yourself."; .L_Say1082; .L_SayX1067;rtrue;
 ];
 Array TX_S_247 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_247;
@@ -88275,6 +88435,8 @@ Array TX_L_565 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_565;
 Constant TX_PS_525 = "Beck: ~And this is just the elevator!~";
 Array TX_L_525 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_525;
 Constant TX_PS_76 = "Beck: ~Are you still shooting at those things? Even if you hit ~em it's not going to leave a scratch.~^^Jones (whispering): ~So what do you propose?~^^Beck: ~Get closer. Keep your head down, but move in closer to it until you can get a good shot in.~";
+Constant TX_PS_626 = "Beck: ~Be careful before going to the roof, there's no turning back.~";
+Array TX_L_626 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_626;
 Constant TX_PS_560 = "Beck: ~Be careful, don't press the wrong button.~";
 Array TX_L_560 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_560;
 Constant TX_PS_600 = "Beck: ~Before we begin, save your game. This could get ugly.~";
@@ -88282,16 +88444,24 @@ Array TX_L_600 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_600;
 Constant TX_PS_176 = "Beck: ~Blueprints indicate a closet to the west of you. Might be useful.~";
 Constant TX_PS_585 = "Beck: ~Check the front desk.~";
 Array TX_L_585 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_585;
+Constant TX_PS_639 = "Beck: ~Climb the cage.~";
+Array TX_L_639 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_639;
+Constant TX_PS_638 = "Beck: ~Come up short? Get higher.~";
+Array TX_L_638 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_638;
+Constant TX_PS_633 = "Beck: ~Congratulations! You made it this far.~";
+Array TX_L_633 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_633;
 Constant TX_PS_511 = "Beck: ~Could come in handy.";
 Array TX_L_511 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_511;
 Constant TX_PS_623 = "Beck: ~DON'T PRESS THE BIG RED BUTTON!~";
 Array TX_L_623 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_623;
 Constant TX_PS_503 = "Beck: ~Don't get attached to pretty things, Jones.~";
 Array TX_L_503 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_503;
+Constant TX_PS_635 = "Beck: ~Don't worry, the rescue flyer will show up on time.~";
+Array TX_L_635 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_635;
 Constant TX_PS_624 = "Beck: ~Examine the panel and then press the small black button.~";
 Array TX_L_624 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_624;
-Constant TX_PS_629 = "Beck: ~Give the shrimp tea sandwich to the cat.~";
-Array TX_L_629 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_629;
+Constant TX_PS_646 = "Beck: ~Give the shrimp tea sandwich to the cat.~";
+Array TX_L_646 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_646;
 Constant TX_PS_602 = "Beck: ~Go west from the air handling room, south once, and west into the elevator car.~";
 Array TX_L_602 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_602;
 Constant TX_PS_541 = "Beck: ~Gold is a terrible material for keys.~";
@@ -88310,8 +88480,10 @@ Constant TX_PS_593 = "Beck: ~Haven't got one? Go back to the building management
 Array TX_L_593 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_593;
 Constant TX_PS_571 = "Beck: ~Here's where the magic happens.~";
 Array TX_L_571 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_571;
-Constant TX_PS_634 = "Beck: ~Hmm. Don't have much to say about that right now.~";
-Array TX_L_634 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_634;
+Constant TX_PS_651 = "Beck: ~Hmm. Don't have much to say about that right now.~";
+Array TX_L_651 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_651;
+Constant TX_PS_637 = "Beck: ~Hook the cable to the flyer and the cage by saying THROW CABLE AT FLYER.~";
+Array TX_L_637 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_637;
 Constant TX_PS_499 = "Beck: ~Hope we don't have to use it.~";
 Array TX_L_499 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_499;
 Constant TX_PS_500 = "Beck: ~How much do you think it's worth?~";
@@ -88345,8 +88517,8 @@ Constant TX_PS_575 = "Beck: ~I'm not sure what you're asking about, Jones.~";
 Array TX_L_575 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_575;
 Constant TX_PS_621 = "Beck: ~If you don't have the hammer, it's on the ground floor in the elevator room.~";
 Array TX_L_621 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_621;
-Constant TX_PS_626 = "Beck: ~If you haven't yet, get the screwdriver.~";
-Array TX_L_626 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_626;
+Constant TX_PS_643 = "Beck: ~If you haven't yet, get the screwdriver.~";
+Array TX_L_643 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_643;
 Constant TX_PS_512 = "Beck: ~Impressive place.~";
 Array TX_L_512 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_512;
 Constant TX_PS_567 = "Beck: ~Inscrutable, but do we have any choice?~";
@@ -88385,10 +88557,10 @@ Constant TX_PS_563 = "Beck: ~Looks like a point of weakness, as you said.~";
 Array TX_L_563 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_563;
 Constant TX_PS_534 = "Beck: ~Looks like light needs to hit it or something.~";
 Array TX_L_534 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_534;
-Constant TX_PS_628 = "Beck: ~Looks like you'll need to get rid of the cat. What do cats like?~";
-Array TX_L_628 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_628;
-Constant TX_PS_638 = "Beck: ~Looks like you're managing okay.~";
-Array TX_L_638 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_638;
+Constant TX_PS_645 = "Beck: ~Looks like you'll need to get rid of the cat. What do cats like?~";
+Array TX_L_645 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_645;
+Constant TX_PS_655 = "Beck: ~Looks like you're managing okay.~";
+Array TX_L_655 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_655;
 Constant TX_PS_559 = "Beck: ~Looks useful~";
 Array TX_L_559 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_559;
 Constant TX_PS_609 = "Beck: ~Maybe pour something on the robot?~";
@@ -88411,14 +88583,20 @@ Constant TX_PS_610 = "Beck: ~No, don't waste your water. What else is pourable?~
 Array TX_L_610 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_610;
 Constant TX_PS_607 = "Beck: ~No, shooting won't work.~";
 Array TX_L_607 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_607;
+Constant TX_PS_628 = "Beck: ~Not the fork.~";
+Array TX_L_628 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_628;
 Constant TX_PS_604 = "Beck: ~Now lure the robot in the southwest corner to the elevator car.~";
 Array TX_L_604 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_604;
+Constant TX_PS_640 = "Beck: ~Now throw the cable.~";
+Array TX_L_640 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_640;
+Constant TX_PS_641 = "Beck: ~Now you're in the cage but Europa is unresponsive. How do you revive her?~";
+Array TX_L_641 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_641;
 Constant TX_PS_526 = "Beck: ~Oh, they make the best games!~";
 Array TX_L_526 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_526;
 Constant TX_PS_540 = "Beck: ~Ooh pretty.~";
 Array TX_L_540 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_540;
-Constant TX_PS_627 = "Beck: ~Oops. Getting the screwdriver didn't turn out well. Look behind the cabinet to get the screwdriver.~";
-Array TX_L_627 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_627;
+Constant TX_PS_644 = "Beck: ~Oops. Getting the screwdriver didn't turn out well. Look behind the cabinet to get the screwdriver.~";
+Array TX_L_644 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_644;
 Constant TX_PS_580 = "Beck: ~Pick the desk lock with the safety pin.~";
 Array TX_L_580 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_580;
 Constant TX_PS_622 = "Beck: ~Put the diamond in the claw in penthouse west.~";
@@ -88442,6 +88620,10 @@ Constant TX_PS_606 = "Beck: ~The robot will enter the car but not see you. Now's
 Array TX_L_606 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_606;
 Constant TX_PS_597 = "Beck: ~The robot's got you pinned down good, yeah? And you can't get a good shot in? And even if you did, it would probably just be absorbed?~";
 Array TX_L_597 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_597;
+Constant TX_PS_629 = "Beck: ~The water bottle and the cable.~";
+Array TX_L_629 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_629;
+Constant TX_PS_642 = "Beck: ~The water of course!~";
+Array TX_L_642 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_642;
 Constant TX_PS_613 = "Beck: ~Then pour the gel on the robot.~";
 Array TX_L_613 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_613;
 Constant TX_PS_601 = "Beck: ~There are multiple ways to get past this floor. Here's one.~";
@@ -88462,6 +88644,8 @@ Constant TX_PS_523 = "Beck: ~This whole place is like some weird wizard's chambe
 Array TX_L_523 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_523;
 Constant TX_PS_595 = "Beck: ~Time to open the elevator door.~";
 Array TX_L_595 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_595;
+Constant TX_PS_636 = "Beck: ~To break open the cage, you'll need to find some way to apply a great force to it.~";
+Array TX_L_636 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_636;
 Constant TX_PS_592 = "Beck: ~To do that you need a screwdriver.~";
 Array TX_L_592 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_592;
 Constant TX_PS_531 = "Beck: ~Uh, you know what that's for, right?~";
@@ -88480,8 +88664,8 @@ Constant TX_PS_615 = "Beck: ~What are these diamonds?~";
 Array TX_L_615 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_615;
 Constant TX_PS_529 = "Beck: ~What do all these people even do? I mean, Consolidated Microthings, what do they do?~";
 Array TX_L_529 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_529;
-Constant TX_PS_630 = "Beck: ~What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there.~";
-Array TX_L_630 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_630;
+Constant TX_PS_647 = "Beck: ~What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there.~";
+Array TX_L_647 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_647;
 Constant TX_PS_608 = "Beck: ~When the robot leaves you'll have to lure it back again.~";
 Array TX_L_608 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_608;
 Constant TX_PS_598 = "Beck: ~When will you start listening to your handler? When? I've been giving you good advice, just spelling out what to do, and you don't pay attention.~";
@@ -88504,8 +88688,14 @@ Constant TX_PS_558 = "Beck: ~Write something on them! Something nasty about Thal
 Array TX_L_558 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_558;
 Constant TX_PS_611 = "Beck: ~Yes, the polymer gel! But you can't get close enough to pour it on the robot.~";
 Array TX_L_611 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_611;
+Constant TX_PS_630 = "Beck: ~You can buy the water bottle from the vending machine on the ninth floor.~";
+Array TX_L_630 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_630;
+Constant TX_PS_631 = "Beck: ~You can get a coin to buy the water with from the waterfall on the ground floor.~";
+Array TX_L_631 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_631;
 Constant TX_PS_533 = "Beck: ~You can get back out through there.~";
 Array TX_L_533 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_533;
+Constant TX_PS_632 = "Beck: ~You can get the cable by examining the tangled ruin left by the sculpture in the lobby.";
+Array TX_L_632 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_632;
 Constant TX_PS_618 = "Beck: ~You can't just keep looking at the diamonds one-by-one.~";
 Array TX_L_618 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_618;
 Constant TX_PS_579 = "Beck: ~You don't have a key for the desk. Maybe you can pick the lock?~";
@@ -88516,12 +88706,16 @@ Constant TX_PS_532 = "Beck: ~You insert a drop key in there and then turn it.~";
 Array TX_L_532 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_532;
 Constant TX_PS_619 = "Beck: ~You need a faster way to distinguish real and fake.~";
 Array TX_L_619 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_619;
+Constant TX_PS_634 = "Beck: ~You need to break Europa out of the cage and get her to a rescue flyer.~";
+Array TX_L_634 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_634;
 Constant TX_PS_590 = "Beck: ~You need to get into the building through the exhaust vent.~";
 Array TX_L_590 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_590;
 Constant TX_PS_614 = "Beck: ~You need to get to the roof, but there is no apparent way to get there.~";
 Array TX_L_614 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_614;
 Constant TX_PS_591 = "Beck: ~You need to remove the cover of the exhaust vent.~";
 Array TX_L_591 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_591;
+Constant TX_PS_627 = "Beck: ~You need two things.~";
+Array TX_L_627 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_627;
 Constant TX_PS_564 = "Beck: ~You never know when you might need something that can get in a very small space.~";
 Array TX_L_564 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_564;
 Constant TX_PS_581 = "Beck: ~You saw that utility door near the catering table, right?~";
@@ -88540,12 +88734,12 @@ Constant TX_PS_577 = "Beck: ~You've probably noticed the two locked doors on thi
 Array TX_L_577 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_577;
 Constant TX_PS_220 = "Black like evil, or like secrets?";
 Constant TX_PS_315 = "Black marble. Wow. It's beautiful.";
-Constant TX_PS_631 = "Black screen";
-Array TX_L_631 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_631;
+Constant TX_PS_648 = "Black screen";
+Array TX_L_648 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_648;
 Constant TX_PS_396 = "Can't open maintenance closet";
 Constant TX_PS_381 = "Comment on energy absorption";
-Constant TX_PS_632 = "Cut to a shot of two closed eyes";
-Array TX_L_632 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_632;
+Constant TX_PS_649 = "Cut to a shot of two closed eyes";
+Array TX_L_649 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_649;
 Constant TX_PS_209 = "Cybernetica door";
 Constant TX_PS_317 = "Dark black, almost threatening, rounding out the storm cloud atmosphere of the room.";
 Constant TX_PS_15 = "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.";
@@ -88573,7 +88767,7 @@ Constant TX_PS_93 = "Galaxy One is a Dust Runner, a top-of-the-line model from O
 Constant TX_PS_54 = "He-pronoun";
 Constant TX_PS_294 = "How dull.";
 Constant TX_PS_427 = "I hate it out here";
-Constant TX_PS_639 = "I";
+Constant TX_PS_656 = "I";
 Constant TX_PS_51 = "I-pronoun";
 Constant TX_PS_391 = "Imported plants are a must on Mars, to relieve the stress of living on a lifeless world.";
 Constant TX_PS_302 = "Incredible. A tower that height would never stand on Earth.";
@@ -88601,8 +88795,8 @@ Constant TX_PS_53 = "It-pronoun";
 Constant TX_PS_167 = "Jones groans. ~Be glad you're not here, Beck. This is revolting.~^^Beck chuckles. ~I won't ask.~";
 Constant TX_PS_228 = "Jones is coming, surprise day off!";
 Constant TX_PS_99 = "Jones peers upwards at the 100 stories of glass and steel. ~What do you want to bet Thallium's got Europa all the way at the top?~^^Beck: ~Oh, no doubt.~";
-Constant TX_PS_635 = "Jones shouts, ~I'm under fire from two ugly robot things!~^^Beck responds, ~Monitoring your suit radar.~";
-Array TX_L_635 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_635;
+Constant TX_PS_652 = "Jones shouts, ~I'm under fire from two ugly robot things!~^^Beck responds, ~Monitoring your suit radar.~";
+Array TX_L_652 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_652;
 Constant TX_PS_469 = "Jones tries the strength of the bars just in case. They don't budge.";
 Constant TX_PS_474 = "Jones";
 Constant TX_PS_466 = "Jones's little red flyer, Galaxy Two.";
@@ -88677,8 +88871,8 @@ Constant TX_PS_454 = "Stairs appeared";
 Constant TX_PS_291 = "Tan leather couches, very expensive.";
 Constant TX_PS_491 = "Thallium giggles. ~Oh, I hope you're not disappointed, Jones.~";
 Array TX_L_491 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_491;
-Constant TX_PS_636 = "Thallium's flyer hovers over the rooftop. ~Jones!~  he bellows. ~Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.~^^Jones rolls her eyes.";
-Array TX_L_636 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_636;
+Constant TX_PS_653 = "Thallium's flyer hovers over the rooftop. ~Jones!~  he bellows. ~Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.~^^Jones rolls her eyes.";
+Array TX_L_653 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_653;
 Constant TX_PS_492 = "Thallium: ~Wow, clever solution. Be careful you don't cut yourself.~^^Jones: ~I appreciate your concern.~";
 Array TX_L_492 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_492;
 Constant TX_PS_355 = "The ~Admiral~ is a disctinctly ridiculous figure. He dresses in a mockery of a Martian admiral's uniform, plastered with medals. His hair is slicked back and his mustache is painstakingly waxed.";
@@ -88705,13 +88899,13 @@ Constant TX_PS_164 = "The map is crafted of bronze and sports a star at the site
 Constant TX_PS_298 = "The note on the present says ~For Galaxy -- see you soon! -- Your friend, the Admiral.~";
 Constant TX_PS_459 = "The panel features two buttons, one a large red button labeled ~Press Me~, and the other a small black button without a label.~";
 Constant TX_PS_340 = "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto ~Planetas Vincam~, is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.";
-Constant TX_PS_637 = "The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.";
-Array TX_L_637 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_637;
+Constant TX_PS_654 = "The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.";
+Array TX_L_654 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_654;
 Constant TX_PS_81 = "The remains of the mauve guard robot are sprawled on the ground.";
 Constant TX_PS_84 = "The remains of the purple guard robot are sprawled on the ground.";
 Constant TX_PS_313 = "The shaft extends far up into the darkness. The ladder here is missing, making it impossible to climb up to the eleventh floor and beyond.";
-Constant TX_PS_633 = "The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious";
-Array TX_L_633 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_633;
+Constant TX_PS_650 = "The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious";
+Array TX_L_650 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_650;
 Constant TX_PS_180 = "The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.";
 Constant TX_PS_83 = "The tattered guts of the purple guard robot spill out from it's armored carapace.";
 Constant TX_PS_371 = "The tint is too dark to see through.";
@@ -88855,21 +89049,21 @@ Constant TX_PS_203 = "ground floor stairwell";
 Constant TX_PS_14 = "guard robots";
 Constant TX_PS_309 = "gym";
 Constant TX_PS_159 = "hammer";
-Constant TX_PS_652 = "he";
-Constant TX_PS_657 = "her";
-Constant TX_PS_658 = "hers";
-Constant TX_PS_659 = "herself";
-Constant TX_PS_653 = "him";
-Constant TX_PS_655 = "himself";
-Constant TX_PS_654 = "his";
+Constant TX_PS_669 = "he";
+Constant TX_PS_674 = "her";
+Constant TX_PS_675 = "hers";
+Constant TX_PS_676 = "herself";
+Constant TX_PS_670 = "him";
+Constant TX_PS_672 = "himself";
+Constant TX_PS_671 = "his";
 Constant TX_PS_334 = "huge desk";
 Constant TX_PS_5 = "in";
 Constant TX_PS_49 = "inside";
 Constant TX_PS_345 = "insignia";
-Constant TX_PS_649 = "it";
+Constant TX_PS_666 = "it";
 Constant TX_PS_446 = "it's real ivory";
-Constant TX_PS_650 = "its";
-Constant TX_PS_651 = "itself";
+Constant TX_PS_667 = "its";
+Constant TX_PS_668 = "itself";
 Constant TX_PS_276 = "ivory buttons";
 Constant TX_PS_7 = "keychains";
 Constant TX_PS_400 = "keypad";
@@ -88890,13 +89084,13 @@ Constant TX_PS_195 = "maintenance items";
 Constant TX_PS_250 = "martian chemical logo";
 Constant TX_PS_236 = "martian chemical office";
 Constant TX_PS_296 = "mauve guard robot";
-Constant TX_PS_640 = "me";
+Constant TX_PS_657 = "me";
 Constant TX_PS_169 = "medals, ribbons, and all";
 Constant TX_PS_10 = "men";
 Constant TX_PS_341 = "metal pillar";
-Constant TX_PS_641 = "mine";
-Constant TX_PS_643 = "my";
-Constant TX_PS_642 = "myself";
+Constant TX_PS_658 = "mine";
+Constant TX_PS_660 = "my";
+Constant TX_PS_659 = "myself";
 Constant TX_PS_361 = "next to";
 Constant TX_PS_111 = "niches";
 Constant TX_PS_242 = "ninth floor elevator door";
@@ -88919,9 +89113,9 @@ Constant TX_PS_115 = "note";
 Constant TX_PS_140 = "on";
 Constant TX_PS_102 = "open space";
 Constant TX_PS_397 = "opened maintenance closet";
-Constant TX_PS_648 = "our";
-Constant TX_PS_646 = "ours";
-Constant TX_PS_647 = "ourselves";
+Constant TX_PS_665 = "our";
+Constant TX_PS_663 = "ours";
+Constant TX_PS_664 = "ourselves";
 Constant TX_PS_50 = "outside";
 Constant TX_PS_94 = "parking bays";
 Constant TX_PS_24 = "passkeys";
@@ -88954,7 +89148,7 @@ Constant TX_PS_440 = "screws";
 Constant TX_PS_409 = "second floor elevator shaft";
 Constant TX_PS_477 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_420 = "seventh floor elevator shaft";
-Constant TX_PS_656 = "she";
+Constant TX_PS_673 = "she";
 Constant TX_PS_197 = "shelf";
 Constant TX_PS_184 = "shrimp tea sandwich";
 Constant TX_PS_418 = "sixth floor elevator shaft";
@@ -88983,12 +89177,12 @@ Constant TX_PS_287 = "tenth floor stairwell";
 Constant TX_PS_261 = "tenth-floor-region";
 Constant TX_PS_367 = "the city";
 Constant TX_PS_39 = "the";
-Constant TX_PS_668 = "their";
-Constant TX_PS_666 = "theirs";
-Constant TX_PS_665 = "them";
-Constant TX_PS_669 = "themself";
-Constant TX_PS_667 = "themselves";
-Constant TX_PS_664 = "they";
+Constant TX_PS_685 = "their";
+Constant TX_PS_683 = "theirs";
+Constant TX_PS_682 = "them";
+Constant TX_PS_686 = "themself";
+Constant TX_PS_684 = "themselves";
+Constant TX_PS_681 = "they";
 Constant TX_PS_412 = "third floor elevator shaft";
 Constant TX_PS_37 = "third-person-personal-pronouns";
 Constant TX_PS_426 = "this is a secret message";
@@ -88999,7 +89193,7 @@ Constant TX_PS_312 = "top of the elevator car";
 Constant TX_PS_372 = "turbines";
 Constant TX_PS_241 = "untakable bottle";
 Constant TX_PS_47 = "up";
-Constant TX_PS_645 = "us";
+Constant TX_PS_662 = "us";
 Constant TX_PS_75 = "useless shooting";
 Constant TX_PS_141 = "utility door";
 Constant TX_PS_330 = "vanity table";
@@ -89011,7 +89205,7 @@ Constant TX_PS_335 = "video screens";
 Constant TX_PS_253 = "wall";
 Constant TX_PS_270 = "walls";
 Constant TX_PS_134 = "waterfall";
-Constant TX_PS_644 = "we";
+Constant TX_PS_661 = "we";
 Constant TX_PS_145 = "west semicircular couch";
 Constant TX_PS_46 = "west";
 Constant TX_PS_339 = "western corner of the penthouse";
@@ -89022,11 +89216,11 @@ Constant TX_PS_256 = "window";
 Constant TX_PS_370 = "windows";
 Constant TX_PS_373 = "wings";
 Constant TX_PS_11 = "women";
-Constant TX_PS_660 = "you";
-Constant TX_PS_662 = "your";
-Constant TX_PS_661 = "yours";
+Constant TX_PS_677 = "you";
+Constant TX_PS_679 = "your";
+Constant TX_PS_678 = "yours";
 Constant TX_PS_87 = "yourself";
-Constant TX_PS_663 = "yourselves";
+Constant TX_PS_680 = "yourselves";
 
 #ifndef p0_specification; Constant p0_specification = 0; #endif;
 #ifndef p1_indefinite_appearance_tex; Constant p1_indefinite_appearance_tex = 0; #endif;
@@ -96604,55 +96798,55 @@ Array BC_306 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_307 --> PACKED_TEXT_STORAGE TX_PS_35;
 Array BC_308 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_309 --> PACKED_TEXT_STORAGE TX_PS_51;
-Array BC_310 --> LIST_CONST_100567 0;
+Array BC_310 --> LIST_CONST_100705 0;
 Array BC_311 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_312 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_313 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_314 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_315 --> PACKED_TEXT_STORAGE TX_PS_52;
-Array BC_316 --> LIST_CONST_100601 0;
+Array BC_316 --> LIST_CONST_100739 0;
 Array BC_317 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_318 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_319 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_320 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_321 --> PACKED_TEXT_STORAGE TX_PS_53;
-Array BC_322 --> LIST_CONST_100635 0;
+Array BC_322 --> LIST_CONST_100773 0;
 Array BC_323 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_324 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_325 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_326 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_327 --> PACKED_TEXT_STORAGE TX_PS_54;
-Array BC_328 --> LIST_CONST_100665 0;
+Array BC_328 --> LIST_CONST_100803 0;
 Array BC_329 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_330 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_331 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_332 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_333 --> PACKED_TEXT_STORAGE TX_PS_55;
-Array BC_334 --> LIST_CONST_100695 0;
+Array BC_334 --> LIST_CONST_100833 0;
 Array BC_335 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_336 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_337 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_338 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_339 --> PACKED_TEXT_STORAGE TX_PS_56;
-Array BC_340 --> LIST_CONST_100725 0;
+Array BC_340 --> LIST_CONST_100863 0;
 Array BC_341 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_342 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_343 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_344 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_345 --> PACKED_TEXT_STORAGE TX_PS_57;
-Array BC_346 --> LIST_CONST_100759 0;
+Array BC_346 --> LIST_CONST_100897 0;
 Array BC_347 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_348 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_349 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_350 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_351 --> PACKED_TEXT_STORAGE TX_PS_58;
-Array BC_352 --> LIST_CONST_100793 0;
+Array BC_352 --> LIST_CONST_100931 0;
 Array BC_353 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_354 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_355 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_356 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_357 --> PACKED_TEXT_STORAGE TX_PS_59;
-Array BC_358 --> LIST_CONST_100827 0;
+Array BC_358 --> LIST_CONST_100965 0;
 Array BC_359 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_360 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_361 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
@@ -98381,62 +98575,62 @@ Array BC_2083 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_214;
 Array BC_2084 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_215;
 Array BC_2085 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_216;
 Array BC_2086 --> PACKED_TEXT_STORAGE TX_PS_481;
-Array BC_2087 --> LIST_CONST_94299 0;
-Array BC_2088 --> LIST_CONST_94534 0;
-Array BC_2089 --> LIST_CONST_94552 0;
-Array BC_2090 --> LIST_CONST_94570 0;
-Array BC_2091 --> LIST_CONST_94588 0;
-Array BC_2092 --> LIST_CONST_94606 0;
-Array BC_2093 --> LIST_CONST_94624 0;
-Array BC_2094 --> LIST_CONST_94642 0;
-Array BC_2095 --> LIST_CONST_94660 0;
+Array BC_2087 --> LIST_CONST_94437 0;
+Array BC_2088 --> LIST_CONST_94672 0;
+Array BC_2089 --> LIST_CONST_94690 0;
+Array BC_2090 --> LIST_CONST_94708 0;
+Array BC_2091 --> LIST_CONST_94726 0;
+Array BC_2092 --> LIST_CONST_94744 0;
+Array BC_2093 --> LIST_CONST_94762 0;
+Array BC_2094 --> LIST_CONST_94780 0;
+Array BC_2095 --> LIST_CONST_94798 0;
 Array BC_2096 --> Default_Value_0 0;
 Array BC_2097 --> LIST_CONST_27522 0;
-Array BC_2098 --> PACKED_TEXT_STORAGE TX_PS_639;
-Array BC_2099 --> PACKED_TEXT_STORAGE TX_PS_640;
-Array BC_2100 --> PACKED_TEXT_STORAGE TX_PS_641;
-Array BC_2101 --> PACKED_TEXT_STORAGE TX_PS_642;
-Array BC_2102 --> PACKED_TEXT_STORAGE TX_PS_643;
-Array BC_2103 --> PACKED_TEXT_STORAGE TX_PS_644;
-Array BC_2104 --> PACKED_TEXT_STORAGE TX_PS_645;
-Array BC_2105 --> PACKED_TEXT_STORAGE TX_PS_646;
-Array BC_2106 --> PACKED_TEXT_STORAGE TX_PS_647;
-Array BC_2107 --> PACKED_TEXT_STORAGE TX_PS_648;
-Array BC_2108 --> PACKED_TEXT_STORAGE TX_PS_649;
-Array BC_2109 --> PACKED_TEXT_STORAGE TX_PS_649;
-Array BC_2110 --> PACKED_TEXT_STORAGE TX_PS_650;
-Array BC_2111 --> PACKED_TEXT_STORAGE TX_PS_651;
-Array BC_2112 --> PACKED_TEXT_STORAGE TX_PS_650;
-Array BC_2113 --> PACKED_TEXT_STORAGE TX_PS_652;
-Array BC_2114 --> PACKED_TEXT_STORAGE TX_PS_653;
-Array BC_2115 --> PACKED_TEXT_STORAGE TX_PS_654;
-Array BC_2116 --> PACKED_TEXT_STORAGE TX_PS_655;
-Array BC_2117 --> PACKED_TEXT_STORAGE TX_PS_654;
-Array BC_2118 --> PACKED_TEXT_STORAGE TX_PS_656;
-Array BC_2119 --> PACKED_TEXT_STORAGE TX_PS_657;
-Array BC_2120 --> PACKED_TEXT_STORAGE TX_PS_658;
-Array BC_2121 --> PACKED_TEXT_STORAGE TX_PS_659;
-Array BC_2122 --> PACKED_TEXT_STORAGE TX_PS_657;
-Array BC_2123 --> PACKED_TEXT_STORAGE TX_PS_660;
-Array BC_2124 --> PACKED_TEXT_STORAGE TX_PS_660;
-Array BC_2125 --> PACKED_TEXT_STORAGE TX_PS_661;
+Array BC_2098 --> PACKED_TEXT_STORAGE TX_PS_656;
+Array BC_2099 --> PACKED_TEXT_STORAGE TX_PS_657;
+Array BC_2100 --> PACKED_TEXT_STORAGE TX_PS_658;
+Array BC_2101 --> PACKED_TEXT_STORAGE TX_PS_659;
+Array BC_2102 --> PACKED_TEXT_STORAGE TX_PS_660;
+Array BC_2103 --> PACKED_TEXT_STORAGE TX_PS_661;
+Array BC_2104 --> PACKED_TEXT_STORAGE TX_PS_662;
+Array BC_2105 --> PACKED_TEXT_STORAGE TX_PS_663;
+Array BC_2106 --> PACKED_TEXT_STORAGE TX_PS_664;
+Array BC_2107 --> PACKED_TEXT_STORAGE TX_PS_665;
+Array BC_2108 --> PACKED_TEXT_STORAGE TX_PS_666;
+Array BC_2109 --> PACKED_TEXT_STORAGE TX_PS_666;
+Array BC_2110 --> PACKED_TEXT_STORAGE TX_PS_667;
+Array BC_2111 --> PACKED_TEXT_STORAGE TX_PS_668;
+Array BC_2112 --> PACKED_TEXT_STORAGE TX_PS_667;
+Array BC_2113 --> PACKED_TEXT_STORAGE TX_PS_669;
+Array BC_2114 --> PACKED_TEXT_STORAGE TX_PS_670;
+Array BC_2115 --> PACKED_TEXT_STORAGE TX_PS_671;
+Array BC_2116 --> PACKED_TEXT_STORAGE TX_PS_672;
+Array BC_2117 --> PACKED_TEXT_STORAGE TX_PS_671;
+Array BC_2118 --> PACKED_TEXT_STORAGE TX_PS_673;
+Array BC_2119 --> PACKED_TEXT_STORAGE TX_PS_674;
+Array BC_2120 --> PACKED_TEXT_STORAGE TX_PS_675;
+Array BC_2121 --> PACKED_TEXT_STORAGE TX_PS_676;
+Array BC_2122 --> PACKED_TEXT_STORAGE TX_PS_674;
+Array BC_2123 --> PACKED_TEXT_STORAGE TX_PS_677;
+Array BC_2124 --> PACKED_TEXT_STORAGE TX_PS_677;
+Array BC_2125 --> PACKED_TEXT_STORAGE TX_PS_678;
 Array BC_2126 --> PACKED_TEXT_STORAGE TX_PS_87;
-Array BC_2127 --> PACKED_TEXT_STORAGE TX_PS_662;
-Array BC_2128 --> PACKED_TEXT_STORAGE TX_PS_660;
-Array BC_2129 --> PACKED_TEXT_STORAGE TX_PS_660;
-Array BC_2130 --> PACKED_TEXT_STORAGE TX_PS_661;
-Array BC_2131 --> PACKED_TEXT_STORAGE TX_PS_663;
-Array BC_2132 --> PACKED_TEXT_STORAGE TX_PS_648;
-Array BC_2133 --> PACKED_TEXT_STORAGE TX_PS_664;
-Array BC_2134 --> PACKED_TEXT_STORAGE TX_PS_665;
-Array BC_2135 --> PACKED_TEXT_STORAGE TX_PS_666;
-Array BC_2136 --> PACKED_TEXT_STORAGE TX_PS_667;
-Array BC_2137 --> PACKED_TEXT_STORAGE TX_PS_668;
-Array BC_2138 --> PACKED_TEXT_STORAGE TX_PS_664;
-Array BC_2139 --> PACKED_TEXT_STORAGE TX_PS_665;
-Array BC_2140 --> PACKED_TEXT_STORAGE TX_PS_666;
-Array BC_2141 --> PACKED_TEXT_STORAGE TX_PS_669;
-Array BC_2142 --> PACKED_TEXT_STORAGE TX_PS_668;
+Array BC_2127 --> PACKED_TEXT_STORAGE TX_PS_679;
+Array BC_2128 --> PACKED_TEXT_STORAGE TX_PS_677;
+Array BC_2129 --> PACKED_TEXT_STORAGE TX_PS_677;
+Array BC_2130 --> PACKED_TEXT_STORAGE TX_PS_678;
+Array BC_2131 --> PACKED_TEXT_STORAGE TX_PS_680;
+Array BC_2132 --> PACKED_TEXT_STORAGE TX_PS_665;
+Array BC_2133 --> PACKED_TEXT_STORAGE TX_PS_681;
+Array BC_2134 --> PACKED_TEXT_STORAGE TX_PS_682;
+Array BC_2135 --> PACKED_TEXT_STORAGE TX_PS_683;
+Array BC_2136 --> PACKED_TEXT_STORAGE TX_PS_684;
+Array BC_2137 --> PACKED_TEXT_STORAGE TX_PS_685;
+Array BC_2138 --> PACKED_TEXT_STORAGE TX_PS_681;
+Array BC_2139 --> PACKED_TEXT_STORAGE TX_PS_682;
+Array BC_2140 --> PACKED_TEXT_STORAGE TX_PS_683;
+Array BC_2141 --> PACKED_TEXT_STORAGE TX_PS_686;
+Array BC_2142 --> PACKED_TEXT_STORAGE TX_PS_685;
 Array BC_2143 --> Default_Value_4 0;
 Array BC_2144 --> Default_Value_4 0;
 Array BC_2145 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;

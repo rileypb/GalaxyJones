@@ -2970,7 +2970,7 @@ After pleading when the location is the cybernetica office and the purple guard 
 	if plead cybernetica office is:
 		-- 1: converse "Beck: 'The robot's got you pinned down good, yeah? And you can't get a good shot in? And even if you did, it would probably just be absorbed?'";
 		-- 2: converse "Beck: 'When will you start listening to your handler? When? I've been giving you good advice, just spelling out what to do, and you don't pay attention.'";
-		-- 3: converse "Beck: 'Sneak up on the stupid robot already!'";
+		-- otherwise: converse "Beck: 'Sneak up on the stupid robot already!'";
 		
 After pleading when the location is the ledge and the window washing scaffold is not discovered:
 	lb;
@@ -2978,7 +2978,7 @@ After pleading when the location is the ledge and the window washing scaffold is
 		-- 1: converse "Beck: 'Is there anything out there useful?'";
 		-- 2: converse "Beck: 'Have you looked everywhere?'";
 		-- 3: converse "Beck: '[special-style-2]everywhere?[special-style-1]'";
-		-- 4: converse "Beck: 'Look down.'";
+		-- otherwise: converse "Beck: 'Look down.'";
 		
 After pleading when the location is the window washing scaffold and the floor of the window washing scaffold is 10 and the exhaust vent is closed:
 	lb;
@@ -2986,7 +2986,7 @@ After pleading when the location is the window washing scaffold and the floor of
 		-- 1: converse "Beck: 'You need to get into the building through the exhaust vent.'";
 		-- 2: converse "Beck: 'You need to remove the cover of the exhaust vent.'";
 		-- 3: converse "Beck: 'To do that you need a screwdriver.'";
-		-- 4: converse "Beck: 'Haven't got one? Go back to the building management office.'";
+		-- otherwise: converse "Beck: 'Haven't got one? Go back to the building management office.'";
 		
 After pleading when the location is in the tenth-floor-region and the mauve guard robot is somewhere:
 	lb;
@@ -3004,7 +3004,7 @@ After pleading when the location is in the tenth-floor-region and the mauve guar
 		-- 11: converse "Beck: 'No, don't waste your water. What else is pourable?'";
 		-- 12: converse "Beck: 'Yes, the polymer gel! But you can't get close enough to pour it on the robot.'";
 		-- 13: converse "Beck: 'Jump on the robot!'";
-		-- 14: converse "Beck: 'Then pour the gel on the robot.'";
+		-- otherwise: converse "Beck: 'Then pour the gel on the robot.'";
 		
 After pleading when the location is the 100th-floor-region and the roof stairs is hidden:
 	lb;
@@ -3020,8 +3020,32 @@ After pleading when the location is the 100th-floor-region and the roof stairs i
 		-- 9: converse "Beck: 'Put the diamond in the claw in penthouse west.'";
 		-- 10: converse "Beck: 'DON'T PRESS THE BIG RED BUTTON!'";
 		-- 11: converse "Beck: 'Examine the panel and then press the small black button.'";
-		-- 12: converse "Beck: 'A secret door has now opened in the elevator hall.'";
+		-- otherwise: converse "Beck: 'A secret door has now opened in the elevator hall.'";
 		
+After pleading when the location is the roof stairs:
+	lb;
+	if plead roof stairs is:
+		-- 1: converse "Beck: 'Be careful before going to the roof, there's no turning back.'";
+		-- 2: converse "Beck: 'You need two things.'";
+		-- 3: converse "Beck: 'Not the fork.'";
+		-- 4: converse "Beck: 'The water bottle and the cable.'";
+		-- 5: converse "Beck: 'You can buy the water bottle from the vending machine on the ninth floor.'";
+		-- 6: converse "Beck: 'You can get a coin to buy the water with from the waterfall on the ground floor.'";
+		-- otherwise: converse "Beck: 'You can get the cable by examining the tangled ruin left by the sculpture in the lobby.";
+
+After pleading when the location is in the rooftop:
+	lb;
+	if plead rooftop is:
+		-- 1: converse "Beck: 'Congratulations! You made it this far.'";
+		-- 2: converse "Beck: 'You need to break Europa out of the cage and get her to a rescue flyer.'";
+		-- 3: converse "Beck: 'Don't worry, the rescue flyer will show up on time.'";
+		-- 4: converse "Beck: 'To break open the cage, you'll need to find some way to apply a great force to it.'";
+		-- 5: converse "Beck: 'Hook the cable to the flyer and the cage by saying THROW CABLE AT FLYER.'";
+		-- 6: converse "Beck: 'Come up short? Get higher.'";
+		-- 7: converse "Beck: 'Climb the cage.'";
+		-- 8: converse "Beck: 'Now throw the cable.'";
+		-- 9: converse "Beck: 'Now you're in the cage but Europa is unresponsive. How do you revive her?'";
+		-- 10: converse "Beck: 'The water of course!'";
 
 Chapter 3 - Ask Beck About Game
 
