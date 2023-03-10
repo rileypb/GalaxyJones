@@ -18,7 +18,6 @@ Include Open Spaces by Philip Riley.
 Include Visible Rooms by Philip Riley.
 
 Release along with cover art.
-Release along with a "Quixe" interpreter.
  
 Volume 1 - Technical Stuff
 
@@ -321,6 +320,8 @@ Rule for constructing the status line while Intro is true:
 	do nothing;
 
 When play begins:
+	say "[bold type]*** Note: Play in a web browser is not recommended. Try downloading an interpreter if you don't already have one: https://intfiction.org/t/list-of-glulx-gblorb-interpreters/51243 ***[roman type]";
+	say paragraph break;
 	say "The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.[paragraph break]";
 	say "'Yes?' she says in a voice thick with sleep.[paragraph break]";
 	say "'Hello, is this Galaxy Jones?' comes the voice from the speaker.[paragraph break]";
@@ -2551,6 +2552,8 @@ The description of the flyer pad is "This is what one would expect from a roofto
 Chapter 5 - The Water Bottle
 
 Instead of giving the bottled water to Europa when the cage is broken:
+	score 1;
+	lb;
 	converse "[We] opens the water bottle and brings it to Europa's lips. Even with closed eyes she drinks, first slowly and then with increasing vigor, until her eyes open.
 	
 	'Ga- Galaxy Jones?' she says.
@@ -2566,7 +2569,12 @@ Instead of giving the bottled water to Europa when the cage is broken:
 	converse "...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.";
 	say line break;
 	converse as thallium "And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...";
+	continue;
 	end the story finally saying "The End, For Now..."
+	
+Instead of pouring the bottled water on Europa when the cage is broken:
+	say "It's not elegant, but it works.[paragraph break]";
+	try giving the bottled water to Europa;
 	
 Instead of going during Saving Europa:
 	say "[We] can't leave Europa now!";

@@ -7,6 +7,8 @@
         <result xml:space="preserve">
 
 
+*** Note: Play in a web browser is not recommended. Try downloading an interpreter if you don't already have one: https://intfiction.org/t/list-of-glulx-gblorb-interpreters/51243 ***
+
 The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.
 
 "Yes?" she says in a voice thick with sleep.
@@ -89,13 +91,40 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-2048"></child>
             <child nodeId="node-2295"></child>
             <child nodeId="node-2392"></child>
+            <child nodeId="node-2583"></child>
             <child nodeId="node-2086"></child>
+            <child nodeId="node-2593"></child>
             <child nodeId="node-2580"></child>
         </children>
     </item>
     <item nodeId="node-2580">
         <command xml:space="preserve">x jones</command>
         <result xml:space="preserve">
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2593">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">Jones can't reach into the cage.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2594"></child>
+        </children>
+    </item>
+    <item nodeId="node-2594">
+        <command xml:space="preserve">throw cable at flyer</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2595"></child>
+        </children>
+    </item>
+    <item nodeId="node-2595">
+        <command xml:space="preserve">pour water on europa</command>
+        <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -215,6 +244,158 @@ initial appearance: none
 third-plural-pronoun: They-pronoun
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2583">
+        <command xml:space="preserve">purloin cable and water</command>
+        <result xml:space="preserve">[Purloined.]
+[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2584"></child>
+        </children>
+    </item>
+    <item nodeId="node-2584">
+        <command xml:space="preserve">gonear cage</command>
+        <result xml:space="preserve">(the cage)
+Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+Jones tries the strength of the bars just in case. They don't budge.
+
+South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards Jones.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2585"></child>
+        </children>
+    </item>
+    <item nodeId="node-2585">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">Jones gets onto the cage.
+
+Galaxy Jones is standing on the cage. The closely-set silnium bars seem to dash all hope of a rescue.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+Thallium's flyer hovers over the rooftop. "Jones!"  he bellows. "Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die."
+
+Jones rolls her eyes.
+
+A little ways off, a small red flyer aims for the rooftop and accelerates.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2586"></child>
+        </children>
+    </item>
+    <item nodeId="node-2586">
+        <command xml:space="preserve">throw cable at flyer</command>
+        <result xml:space="preserve">
+Jones throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the flyer and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
+
+The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto.
+
+"Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!"
+
+Europa moans but doesn't show any signs of having understood Jones.
+
+Galaxy Jones is in the cage. The whole structure is tilted, leaving a hole at the eastern end.
+
+Jones is kneeling at Europa Callisto's side, trying to rouse her.
+
+The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2587"></child>
+        </children>
+    </item>
+    <item nodeId="node-2587">
+        <command xml:space="preserve">pour water on europa</command>
+        <result xml:space="preserve">It's not elegant, but it works.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+Jones opens the water bottle and brings it to Europa's lips. Even with closed eyes she drinks, first slowly and then with increasing vigor, until her eyes open.
+
+"Ga- Galaxy Jones?" she says.
+
+Jones nods, but says "We'll have time for introductions later. We have to get out of here before the roof is full of killer robots. Can you crawl? If you can get through that hole I can carry you the rest of the way."
+
+Europa nods. "I think so."
+
+Galaxy Jones helps her through the hole in the cage, then gently picks her up and jogs toward the waiting flyer. Beck's familiar face appears at the door of the aircraft, urging her on.
+
+Not so far away, Admiral Thallium crawls back over the edge of  the roof. As he pulls himself up, he aims a pistol at Jones's back...
+
+...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.
+
+And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...
+
+
+
+    *** The End, For Now... ***
+
+
+In that game you scored 1 out of a possible 0, in 4 turns.
+
+
+Extensions by:
+Standard Rules version 3/120430 by Graham Nelson
+Deluxe Doors version 4 by Emily Short
+Skeleton Keys by Emily Short
+Epistemology version 9 by Eric Eve
+Conversation Framework version 11 by Eric Eve
+Property Checking version 4 by Emily Short
+Gender Options version 3/210331 by Nathanael Nerode
+
+Story by Phil Riley.
+Programming by Phil Riley.
+Playtesting by Leon Lin, Oliver Matthias, and Jade.
+Invaluable inspiration from Laura Taalman.
+
+The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.
+
+Promotional consideration provided by Olympus Springs Inc.
+
+
+...
+
+
+&lt;Black screen&gt;
+
+"Jones! Jones! Wake up! I'm trying to talk to you!"
+
+&lt;Cut to a shot of two closed eyes&gt;
+
+"C'mon, open those eyes."
+
+&lt;The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious&gt;
+
+"This is getting tiresome, Jones. Stop playing dead."
+
+Her eyes flutter open, close again, then open. She winces and brings one hand up to shield her eyes. "Who's that?" she says, hoarsely.
+
+Join Galaxy Jones next time in Galaxy Jones II: Existential Time Crisis!
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2392">
