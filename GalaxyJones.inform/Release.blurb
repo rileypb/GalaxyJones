@@ -15,6 +15,7 @@ storyfile "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Build/output
 ifiction "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Metadata.iFiction" include
 cover "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.materials/Cover.png"
 picture 1 "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.materials/Cover.png"
+picture 3 "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.materials/Figures/Cover Scaled.png"
 
 ! Placeholder variables
 

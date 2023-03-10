@@ -235,6 +235,11 @@ After doing something to yourself:
 
 The description of the player is "Galaxy Jones stands at the ready.".
 
+Figure of Jones is the file "Cover Scaled.png". 
+
+Instead of examining yourself:
+	display Figure of Jones;
+
 The player carries the disruptor pistol. 
 
 Check throwing the disruptor pistol at something:

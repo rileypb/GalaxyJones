@@ -60,7 +60,8 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2005"></child>
+        <children><child nodeId="node-2582"></child>
+            <child nodeId="node-2005"></child>
             <child nodeId="node-2009"></child>
             <child nodeId="node-2026"></child>
             <child nodeId="node-2023"></child>
@@ -89,7 +90,15 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-2295"></child>
             <child nodeId="node-2392"></child>
             <child nodeId="node-2086"></child>
+            <child nodeId="node-2580"></child>
         </children>
+    </item>
+    <item nodeId="node-2580">
+        <command xml:space="preserve">x jones</command>
+        <result xml:space="preserve">
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2086">
         <command xml:space="preserve">showme elevator door</command>
@@ -2494,6 +2503,15 @@ Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallw
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2579"></child>
+        </children>
+    </item>
+    <item nodeId="node-2579">
+        <command xml:space="preserve">x jones</command>
+        <result xml:space="preserve">Galaxy Jones stands at the ready.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2378">
         <command xml:space="preserve">gonear catering</command>
@@ -4435,6 +4453,13 @@ Of course, any game has limitations, so you can't just enter any old sentence an
         <command xml:space="preserve">ask beck about commands</command>
         <result xml:space="preserve">
 Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2582">
+        <command xml:space="preserve"> x jones</command>
+        <result xml:space="preserve">
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
