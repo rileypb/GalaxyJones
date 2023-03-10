@@ -2452,6 +2452,17 @@ The cage-thing is a privately-named enterable supporter in the cage. It is scene
 Instead of climbing the cage-thing:
 	try entering the cage-thing;
 	
+Check going nowhere when the player is not on the cage-thing:
+	if noun is up:
+		try entering the cage-thing;
+		if the player is on the cage-thing:
+			try looking;
+		stop the action;
+	
+Check going nowhere when the player is on the cage-thing:
+	if noun is down:
+		try getting off the cage-thing instead;
+	
 Does the player mean doing something to the cage:
 	it is very unlikely;
 	
