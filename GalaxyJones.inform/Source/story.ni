@@ -512,7 +512,7 @@ A guard robot is a kind of enemy person. It is neuter. The description is "Defin
 There is a guard robot called the guard-robots. It is privately-named. It is scenery. The printed name is "guard robots". Understand "guard/guards/robot/robots/green/red" as the guard-robots. 
 There is a guard robot called the purple guard robot. It is scenery.
 There is a thing called the dead mauve robot. Understand "remains/guard" as the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground." The description is "From the outside there's no sign of what killed the mauve guard robot." It is fixed in place.
-There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground." The description is "The tattered guts of the purple guard robot spill out from it's armored carapace." It is fixed in place.
+There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground." The description is "The tattered guts of the purple guard robot spill out from its armored carapace." It is fixed in place.
 
 Check taking a guard robot:
 	say "An interesting idea." instead;
@@ -1376,9 +1376,9 @@ After deciding the scope of the player when the location is the ninth floor elev
 rule for reaching inside the vending machine while buying the bottled water with the coin:
 	allow access;
 	
-The description of the Ninth Floor North Hallway is "This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door labeled 'Cybernetica Inc.'";
+The description of the Ninth Floor North Hallway is "This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled 'Cybernetica Inc.'";
 	
-The description of the Ninth Floor South Hallway is "This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door labeled 'Martian Chemical'";
+The description of the Ninth Floor South Hallway is "This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled 'Martian Chemical'";
 
 Chapter 1 - Cybernetica office
 
@@ -1406,6 +1406,14 @@ Chapter 2 - Outside
 
 The description of the ledge is "She's plastered up against the wall, trying not to look down[if the floor of the window washing scaffold is 10]. The scaffold is right above [our] head[end if].".
 
+flying is an action applying to nothing. Understand "fly" as flying.
+
+Check flying:
+	say "Not even Galaxy Jones.";
+
+Instead of flying when the location is the ledge:
+	say "Tasteless.";
+
 The ledge-wall is scenery in the ledge. It is privately-named. The printed name is "wall". Understand "wall" as the ledge-wall. "Right now, it's [our] only friend."
 	
 Instead of examining down when the location is the ledge for the first time:
@@ -1414,7 +1422,10 @@ Instead of examining down when the location is the ledge for the first time:
 	converse "Jones: 'Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up.'
 	
 	Beck: 'Take it easy, Jones.'";
+	move the scaffold-scenery to the ledge;
 	now the window washing scaffold is discovered;
+
+The scaffold-scenery is scenery. It is privately-named. The printed name is "scaffold". Understand "scaffold/window/washing" as the scaffold-scenery. "It certainly looks more inviting than this ledge."
 	
 Instead of going down from ledge when the floor of the window washing scaffold is not 8:
 	say "That would be a long fall.";
@@ -1843,6 +1854,8 @@ Instead of taking the untakable bottle:
 	
 Rule for clarifying the parser's choice of the Electrofil quick-setting conductive polymer gel when the untakable bottle is touchable:
 	do nothing;
+	
+The chemical-desks are scenery in the Martian Chemical office. They are privately-named. The printed name is "desks". Understand "desk/desks" as the chemical-desks. "Seen one, seen [']em all. Except for the large desk across the hall, of course."
 
 Book 5 - Tenth Floor
 
