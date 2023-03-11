@@ -1147,6 +1147,9 @@ Chapter 5 - Maintenance Closet
 
 The description of the maintenance closet is "A bare, white-walled room containing various maintenance items."
 
+Instead of exiting when the location is the maintenance closet:
+	try going east;
+
 The maintenance items are scenery in the maintenance closet. "Various uninteresting items, like mops and brooms and the like."
 
 The closet door is closed, lockable, openable, and locked. It is scenery. "A typical white metal utility door. Next to it is a keypad with the digits 0-9."
@@ -1248,6 +1251,9 @@ Instead of using the elevator drop key with the drop-key-hole:
 Chapter 7 - Elevator Room
 
 The description of the elevator room is "This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west."
+
+Instead of exiting when the location is the elevator room:
+	try going west;
 
 The elevator control panel is scenery in the elevator room. "From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on." Understand "wires/circuit/board/boards/indicator/lights/light/component/components/controls" as the elevator control panel.
 
@@ -1992,6 +1998,9 @@ Instead of opening the present:
 Chapter 3 - The Elevator Car
 	
 The golden keyhole is scenery in the elevator car-room. "Inset in the mahogany panel, it looks like real gold and has the shape of an antique 'skeleton' key."
+
+Instead of exiting when the location is the elevator car-room:
+	try going east;
 
 The elevator car-room has a number called the floor. The floor of the elevator car-room is 10.
 The elevator car-room can be in running mode.
