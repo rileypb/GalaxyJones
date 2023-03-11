@@ -173,10 +173,10 @@ After actor doing something when the actor is not in location:
 	
 Before doing something (this is the check object is interactible rule):	
 	if the action requires a touchable noun and the noun is listed in remote people:
-		say "You can't reach [the noun].";
+		say "[We] can't reach [the noun].";
 		stop the action;
 	if the action requires a touchable second noun and the second noun is listed in remote people:
-		say "You can't reach [the second noun].";
+		say "[We] can't reach [the second noun].";
 		stop the action;
 	if the action requires light and the noun is listed in remote people:
 		say "[The noun] is too far away to do that.";

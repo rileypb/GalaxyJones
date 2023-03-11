@@ -421,7 +421,7 @@ When Cybernetica Battle begins:
 	
 	Beck: 'Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses.'";	
 
-Sneaking up on is an action applying to one thing. Understand "sneak up on [something]", "crawl toward [something]", "move toward [something]", "creep up on [something]", "creep toward [something]", "follow [something]" as sneaking up on.
+Sneaking up on is an action applying to one visible thing. Understand "sneak up on [something]", "crawl toward [something]", "move toward [something]", "creep up on [something]", "creep toward [something]", "follow [something]" as sneaking up on.
 
 sneak index is a number that varies. The sneak index is initially 3.
 
@@ -1955,6 +1955,9 @@ The mauve guard robot is a guard robot in microthings-2. The mauve guard robot i
 				
 The mauve guard robot has a room called the goal. The goal of the mauve guard robot is microthings-2.
 The mauve guard robot has a room called the homebase. The homebase of the mauve guard robot is microthings-2.
+
+Instead of sneaking up on the mauve guard robot:
+	say "The room is too open to sneak up effectively." instead;
 
 oldloc is a room that varies.
 

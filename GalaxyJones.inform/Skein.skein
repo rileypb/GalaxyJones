@@ -2199,9 +2199,10 @@ Beck responds, "Monitoring your suit radar."
 &gt;[7] z
 Jones stands around and waits.
 
-Beck: "Robot on your right!"
+One of the robots fires directly above her head.
+Beck: "How's it going in there?"
 
-One robot tries to flank her, but a shot from her disruptor sends it scurrying back.
+"Jones: "You know -- like all art, it's hit or miss."
 
 &gt;[8] shoot art
 Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
@@ -2433,80 +2434,164 @@ Jones: "Aha! No creature is too fearsome for Galaxy Jones!"
 
 Beck: "Congratulations on your victory."
 
-&gt;[47] look behind cabinet
-Jones finds nothing of note.
-
-&gt;[48] e
+&gt;[47] e
 
 Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
 
-&gt;[49] e
+&gt;[48] e
 (first opening the Martian Chemical door)
 (first unlocking the Martian Chemical door)
 (with the black cardkey)
 
 Galaxy Jones is in the martian chemical office. This seems like the business office of the chemical company rather than the lab. Most of the room is taken up by desks and other office stuff. There is a cabinet that looks intriguing, however.
 
-&gt;[50] take gel from cabinet
-Which do you mean, the bottle of Electrofil quick-setting conductive polymer gel or the untakable bottle?
+&gt;[49] take gel from cabinet
+Taken.
 
-&gt;[51] w
-There's nothing like that nearby.
-
-&gt;[52] n
-Jones can't go that way.
-
-&gt;[53] n
-Jones can't go that way.
-
-&gt;[54] e
-Jones can't go that way.
-
-&gt;[55] sneak up on robot
-There's nothing like that nearby.
-
-&gt;[56] sneak up on robot
-There's nothing like that nearby.
-
-&gt;[57] sneak up on robot
-There's nothing like that nearby.
-
-&gt;[58] shoot robot
-There's nothing like that nearby.
-
-&gt;[59] s
-Jones can't go that way.
-
-&gt;[60] n
-Jones can't go that way.
-
-&gt;[61] e
-Jones can't go that way.
-
-&gt;[62] look down
-Jones sees nothing unexpected in that direction.
-
-&gt;[63] look down
-Jones sees nothing unexpected in that direction.
-
-&gt;[64] look down
-Jones sees nothing unexpected in that direction.
-
-&gt;[65] d
-Jones can't go that way.
-
-&gt;[66] press up
-You must name something more substantial.
-
-&gt;[67] press up
-You must name something more substantial.
-
-&gt;[68] open vent with screwdriver
-There's nothing like that nearby.
-
-&gt;[69] w
+&gt;[50] w
 
 Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
+
+&gt;[51] n
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+&gt;[52] n
+
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+
+&gt;[53] e
+(first opening the Cybernetica door)
+(first unlocking the Cybernetica door)
+(with the black cardkey)
+
+Galaxy Jones is in the cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities.
+
+As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
+
+Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
+
+Beck: "What's the situation?"
+
+Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I might get a shot in, but it might just absorb it anyway."
+
+Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
+
+&gt;[54] sneak up on robot
+Jones creeps a little ways toward the guard robot.
+
+&gt;[55] sneak up on robot
+Slowly, slowly, Jones gets a little closer. Just a little more...
+
+She must have poked up her shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out.
+
+&gt;[56] sneak up on robot
+Jones is right up next to the robot, crouched beneath a desk. She'll never get a better shot.
+
+&gt;[57] shoot robot
+Jones aims the pistol upward under the robot's enhanced armor and fires. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones: "Better than a video game. "
+
+Beck: "Nice, but don't forget to credit your handler."
+
+Jones: "Yes, yes, thanks for helping me not get killed."
+
+Beck: "You're welcome."
+
+&gt;[58] s
+Jones can't go that way.
+
+&gt;[59] n
+Jones can't go that way.
+
+&gt;[60] e
+Jones: "I'm going out the window to see if I can find a way to get up to the tenth floor."
+
+Beck: "Whoa whoa whoa, Jones. You know you're not good with heights."
+
+Jones: "Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch."
+
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. She's plastered up against the wall, trying not to look down.
+
+&gt;[61] look down
+Okay, fine. Jones look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below her.
+
+Jones: "Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up."
+
+Beck: "Take it easy, Jones."
+
+&gt;[62] look down
+There's a window cleaner's scaffold about six feet below Jones. Beyond that is a precipitous drop to the streets of New Reykjavik.
+
+&gt;[63] look down
+There's a window cleaner's scaffold about six feet below Jones. Beyond that is a precipitous drop to the streets of New Reykjavik.
+
+&gt;[64] d
+Jones drops off the ledge onto the scaffold. It rocks unnervingly for a moment.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;[65] press up
+(the scaffold up button)
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Beck?"
+
+Beck: "Yes?"
+
+Jones: "I hate it out here."
+
+Beck: "Well, there's the open window right next to you."
+
+&gt;[66] press up
+(the scaffold up button)
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Alright, I'm by the tenth floor now. What's this grill thing here?"
+
+Beck: "That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can get the cover off you should be able to access the whole floor from here."
+
+&gt;[67] open vent with screwdriver
+Jones loosens the screws with the screwdriver and removes the grill from the vent.
+
+&gt;[68] w
+Jones climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+She takes off the Atmo-Suit.
+
+Jones: "Ha! I'm in!"
+
+Beck: "Be careful, you're likely to run into more resistance here. The floor is all one open office, so any guard robots will have good line of sight."
+
+Jones: "Got it."
+
+Beck: "And Jones? Save your game."
 
 &gt;</result>
         <commentary xml:space="preserve">[1] test ledge
@@ -2555,32 +2640,97 @@ Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallw
 [44] take screwdriver
 [45] look behind cabinet
 [46] drop shrimp
-[47] look behind cabinet
+[47] e
 [48] e
-[49] e
-[50] take gel from cabinet
-[51] w
+[49] take gel from cabinet
+[50] w
+[51] n
 [52] n
-[53] n
-[54] e
+[53] e
+[54] sneak up on robot
 [55] sneak up on robot
 [56] sneak up on robot
-[57] sneak up on robot
-[58] shoot robot
-[59] s
-[60] n
-[61] e
+[57] shoot robot
+[58] s
+[59] n
+[60] e
+[61] look down
 [62] look down
 [63] look down
-[64] look down
-[65] d
+[64] d
+[65] press up
 [66] press up
-[67] press up
-[68] open vent with screwdriver
-[69] w
+[67] open vent with screwdriver
+[68] w
 </commentary>
-        <children><child nodeId="node-5541"></child>
+        <children><child nodeId="node-6217"></child>
+            <child nodeId="node-5541"></child>
+            <child nodeId="node-6143"></child>
         </children>
+    </item>
+    <item nodeId="node-6143">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the air handling door)
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6144"></child>
+        </children>
+    </item>
+    <item nodeId="node-6144">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6145"></child>
+        </children>
+    </item>
+    <item nodeId="node-6145">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the Consolidated Microthings office. This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.
+
+Jones sees the mauve guard robot to the west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6146"></child>
+        </children>
+    </item>
+    <item nodeId="node-6146">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">You can't reach the mauve guard robot.
+
+To the west, the mauve guard robot heads east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6147"></child>
+        </children>
+    </item>
+    <item nodeId="node-6147">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">Jones can't reach into the south side of the Consolidated Microthings office.
+
+The mauve guard robot approaches from the west.
+
+The robot electrocutes Jones with its electro-darts.
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 69 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-5541">
         <command xml:space="preserve">               e</command>
@@ -2847,6 +2997,48 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 [46] e
 </commentary>
         <children></children>
+    </item>
+    <item nodeId="node-6217">
+        <command xml:space="preserve">                    w</command>
+        <result xml:space="preserve">(first opening the air handling door)
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6218"></child>
+        </children>
+    </item>
+    <item nodeId="node-6218">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6219"></child>
+        </children>
+    </item>
+    <item nodeId="node-6219">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the Consolidated Microthings office. This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.
+
+Jones sees the mauve guard robot to the west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6220"></child>
+        </children>
+    </item>
+    <item nodeId="node-6220">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">You can't reach the mauve guard robot.
+
+To the west, the mauve guard robot heads east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4392">
         <command xml:space="preserve">test 100</command>
@@ -7848,6 +8040,7 @@ Galaxy Jones is in the air handling room. There is a good number of loud fans an
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3928"></child>
             <child nodeId="node-3906"></child>
+            <child nodeId="node-6222"></child>
             <child nodeId="node-4283"></child>
         </children>
     </item>
@@ -7860,7 +8053,61 @@ Galaxy Jones is on the north side of the Consolidated Microthings office. This i
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-4284"></child>
+            <child nodeId="node-6230"></child>
         </children>
+    </item>
+    <item nodeId="node-6230">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6231"></child>
+        </children>
+    </item>
+    <item nodeId="node-6231">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the Consolidated Microthings office. This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.
+
+Jones sees the mauve guard robot to the west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6232"></child>
+        </children>
+    </item>
+    <item nodeId="node-6232">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">The room is to open to sneak up effectively.
+
+To the west, the mauve guard robot heads east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6233"></child>
+        </children>
+    </item>
+    <item nodeId="node-6233">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+The mauve guard robot approaches from the west.
+
+The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons.
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 0 out of a possible 10, in 6 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4284">
         <command xml:space="preserve">s</command>
@@ -8395,6 +8642,66 @@ The remains of the mauve guard robot are sprawled on the ground.
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">
 Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. Jones can see down into the elevator car from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-6222">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6223"></child>
+        </children>
+    </item>
+    <item nodeId="node-6223">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6224"></child>
+        </children>
+    </item>
+    <item nodeId="node-6224">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the air handling door)
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6225"></child>
+        </children>
+    </item>
+    <item nodeId="node-6225">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6226"></child>
+        </children>
+    </item>
+    <item nodeId="node-6226">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the Consolidated Microthings office. This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.
+
+Jones sees the mauve guard robot to the west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-6227"></child>
+        </children>
+    </item>
+    <item nodeId="node-6227">
+        <command xml:space="preserve">sneak up on robot</command>
+        <result xml:space="preserve">You can't reach the mauve guard robot.
+
+To the west, the mauve guard robot heads east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
