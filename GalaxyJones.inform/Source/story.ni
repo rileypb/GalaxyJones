@@ -1336,6 +1336,8 @@ Instead of examining down when the location is the ledge:
 
 The description of the ground floor elevator shaft is "[We] is at the bottom of a dark well. Shining [our] suit light up, [we] can see that the elevator car is several floors up, unmoving. There is a ladder running up the wall next to the door."
 
+The conversation of the ground floor elevator shaft is "Beck: 'Ooh. It's like we're in an action film.'".
+
 A ladder is a backdrop. It is in ground floor elevator shaft, second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, eighth floor elevator shaft, ninth floor elevator shaft. The description is "A simple steel ladder."
 
 The elevator car-backdrop is a backdrop. It is privately-named. The printed name is "elevator car". Understand "elevator/car" as the elevator car-backdrop. It is in ground floor elevator shaft, second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, eighth floor elevator shaft, ninth floor elevator shaft, elevator car-room, and elevator top. The description is "this is a secret message".
@@ -2736,7 +2738,7 @@ After quizzing Beck about guard-robots when comment on energy absorption is used
 	
 After quizzing Beck about the hook cable:
 	say line break;
-	converse "Beck: 'Could come in handy.";
+	converse "Beck: 'Could come in handy.'";
 	
 After quizzing Beck about the Lobby:
 	say line break;
@@ -2865,6 +2867,10 @@ After quizzing Beck about electronic eye:
 After quizzing Beck about elevator car-room:
 	lb;
 	converse "Beck: 'You gotta admit, this is insane.'";
+	
+After quizzing Beck about elevator drop key:
+	lb;
+	converse "Beck: 'Huh. You learn something every day.'";
 	
 After quizzing Beck about Europa Callisto:
 	lb;
