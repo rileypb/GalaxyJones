@@ -5412,7 +5412,73 @@ Beck: "Blueprints indicate a closet to the west of you. Might be useful."
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-5901"></child>
             <child nodeId="node-5863"></child>
+            <child nodeId="node-5920"></child>
         </children>
+    </item>
+    <item nodeId="node-5920">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the closet door)
+(first unlocking the closet door)
+Jones will have to enter the correct code on the keypad.
+
+Jones: "Door on the east side has a keypad lock."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5921"></child>
+        </children>
+    </item>
+    <item nodeId="node-5921">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5922"></child>
+        </children>
+    </item>
+    <item nodeId="node-5922">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5923"></child>
+        </children>
+    </item>
+    <item nodeId="node-5923">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Jones crosses the floor carefully, disruptor pistol at the ready.
+
+Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5924"></child>
+        </children>
+    </item>
+    <item nodeId="node-5924">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5925"></child>
+        </children>
+    </item>
+    <item nodeId="node-5925">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the utility door)
+(first unlocking the utility door)
+Jones lacks a key that fits the utility door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-5863">
         <command xml:space="preserve">type 0</command>
