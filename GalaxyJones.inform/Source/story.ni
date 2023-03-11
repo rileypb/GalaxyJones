@@ -219,6 +219,23 @@ Check unwrapping something:
 Understand the command "buy" as something new.
 Buying it with is an action applying to one thing and one carried thing. Understand "buy [something] with [something]" as buying it with.
 
+Book 1 - Counting moves
+
+Move Count is a number that varies. 
+Max Move Count is always 10.
+
+Before doing something other than going:
+	now move count is 0;
+
+After going when the location is not in tenth-floor-region:
+	increment move count;
+	if move count is max move count:
+		converse "Beck: '[one of]Boooring.[run paragraph on][or]Yawn.[run paragraph on][or]Where you going, Jones?[run paragraph on][or]Doo dee doo dee doo[or]Slow down, Jones, I'm trying to look at the scenery.[run paragraph on][at random]'
+		
+		Jones: '[one of]Shut up.[run paragraph on][or]I can't take you anywhere.[run paragraph on][or]One more time and I'll turn off the audio.[run paragraph on][or]Settle down or I'll turn this speeder around.[run paragraph on][at random]'";
+		now move count is 0;
+	continue the action;
+
 Volume 3 - The Player Character
 	
 Player's surname is "Jones". 
@@ -280,10 +297,19 @@ Book 2 - Conversation
 An object has a text called the conversation.
 An object can be used or unused. An object is usually unused.
 
+Conversed this turn is a truth state that varies.
+
 To converse (T - a text):
+	now Conversed this turn is true;
 	say "[special-style-1][T][roman type][line break]";
+	
+This is the reset conversed this turn rule:
+	Now conversed this turn is false;
+	
+The reset conversed this turn rule is listed first in the turn sequence rules.
 
 To converse as thallium (T - a text):
+	now Conversed this turn is true;
 	say "[special-style-1][T][roman type][line break]";
 
 report looking:
@@ -688,7 +714,7 @@ Book 4 - The Tenth Floor
 
 the tenth floor elevator hall is a room. It is open space. The preposition is "in".
 
-The tenth-floor-region is a region. It contains the tenth floor elevator hall, the elevator car-room, the air handling room, and the tenth floor stairwell.
+The tenth-floor-region is a region. It contains the tenth floor elevator hall, the elevator car-room, and the tenth floor stairwell.
 
 To say microthings office name of (D - a direction):
 	if D is north or D is south or D is east or D is west:
@@ -1064,6 +1090,10 @@ The elevators-scenery-2 is scenery in the lobby. It is privately-named. The prin
 Section 5 - ground-floor-5
 
 The description of ground-floor-5 is "The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.".
+
+The conversation of ground-floor-5 is "Jones: 'Now this is some choice bullshit here.'
+
+Beck: 'Looks like the record of the good Admiral's long and dedicated service.'".
 
 Some military-detritus are scenery pseudocontainer in ground-floor-5. They are privately-named. The printed name is "medals, ribbons, and all". Understand "uniforms/uniform/medals/ribbons/ribbon/miscellanea/showcases/showcase/cases/case" as military-detritus.
 The contents description is "[We] yawns looking over the assortment of faux honors. They're all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.".
@@ -1960,7 +1990,7 @@ Instead of sneaking up on the mauve guard robot:
 	say "The room is too open to sneak up effectively." instead;
 
 oldloc is a room that varies.
-
+ 
 Before going somewhere when the player is in tenth-floor-region and the mauve guard robot is somewhere:
 	now oldloc is room of stuff;
 	if the location of the mauve guard robot farsees the location:
@@ -1985,9 +2015,17 @@ Every turn when the mauve guard robot is in the tenth-floor-region and the mauve
 		now the goal of the mauve guard robot is the homebase of the mauve guard robot;
 	if the location of the mauve guard robot farsees the location:
 		now the goal of the mauve guard robot is the location;
-		
-Instead of shooting the mauve guard robot with something when the location is in the tenth-floor-region:
-	say "[Our] shot goes wide.";
+		if conversed this turn is false and a random chance of 1 in 6 succeeds:
+			converse "[one of]Beck: 'Come and get us, ugly!'
+			
+			Jones: '[']Us[']? Seems like I'm the only one with her life on the line.'[or]Beck: 'That's one ugly dude.'
+			
+			Jones: 'I wouldn't want to meet it up close.'[or]Beck: 'If I only had a heart, indeed.'[or]Beck: 'I don't think I like Thallium's choice of friends much.'[or]Beck: 'You're programmed to kill, but I'm programmed to kick your metallic ass!'
+			
+			Jones: 'Ah, the bravery of being out of range.'[or]Beck: 'I hope you have a warranty, because you're about to be seriously damaged!'
+			
+			Jones: 'Really, Beck? Is this your best material?'[or]Beck: 'I've seen more intimidating kitchen appliances!'[at random]";
+			now conversed this turn is true;
 
 the describe room gone into rule does nothing when the noun is the mauve guard robot.
 
