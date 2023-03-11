@@ -387,7 +387,7 @@ When Lobby Shootout begins:
 After looking during Lobby Shootout:
 	say "[one of]Two guard robots, red and green, criss-cross the lobby, stalking [us][or]Two guard robots prowl the lobby, trying to outflank [us][or]The guard robots have their head cannons trained on the front desk[at random].";
 	
-Flanking warning is a clip with conversation "Beck: 'Robot on your right!'".
+Flanking warning is a clip with conversation "Beck: 'Robot on your right!'[line break]".
 Fight clip 6 is a clip with conversation "Jones: 'I could use some ideas here!'".
 Fight clip 7 is a clip with conversation "Beck: 'How's it going in there?'
 
@@ -395,24 +395,34 @@ Fight clip 7 is a clip with conversation "Beck: 'How's it going in there?'
 
 Every turn during lobby shootout:
 	let roll be a random number between 1 and 10;
+	let spoken be false;
 	if roll is 1:
 		say "One of the robots fires directly above [our] head.";
+		now spoken is true;
 	if roll is 2:
-		say "The robots intone 'Destroy Jones' in an eerie drone.[line break]";	
+		say "The robots intone 'Destroy Jones' in an eerie drone.";
+		now spoken is true;	
 	if roll is 3:
 		print flanking warning;
-		say line break;
 		say "One robot tries to flank [us], but a shot from [our] disruptor sends it scurrying back.";	
+		now spoken is true;
 	if roll is 4:
 		say "Zip! Disruptor fire scorches a nearby couch.";
+		now spoken is true;
 	if roll is 5:
 		say "A robot fires a blistering shot into the front desk.";
+		now spoken is true;
 	if roll is 6:
 		say "The two robots coordinate fire over the desk, narrowly missing [us]."; 
+		now spoken is true;
 	let roll2 be a random number between 1 and 7;
 	if roll2 is 6:				
+		if spoken is true and fight clip 6 is unused:
+			say line break;
 		print fight clip 6;
 	if roll2 is 7:
+		if spoken is true and fight clip 7 is unused:
+			say line break;
 		print fight clip 7;
 	 
 After quizzing Beck about sculpture during Lobby Shootout:
@@ -446,7 +456,7 @@ When Cybernetica Battle begins:
 	
 	Beck: 'Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses.'";	
 
-Sneaking up on is an action applying to one visible thing. Understand "sneak up on [something]", "crawl toward [something]", "move toward [something]", "creep up on [something]", "creep toward [something]", "follow [something]" as sneaking up on.
+Sneaking up on is an action applying to one visible thing. Understand "sneak up on [something]", "crawl toward [something]", "move toward [something]", "creep up on [something]", "creep toward [something]", "follow [something]", "get closer to [something]" as sneaking up on.
 
 sneak index is a number that varies. The sneak index is initially 3.
 
@@ -455,6 +465,9 @@ check sneaking up on something when the noun is not the purple guard robot:
 	
 carry out sneaking up on the purple guard robot:
 	decrement the sneak index;
+	
+Check exiting during Cybernetica Battle:
+	say "[We] starts to stand, and a shot zips by, way too close. [We] hits the deck." instead;
 	
 Check going during Cybernetica Battle:
 	say "Trying to reach an exit would surely get [us] shot." instead;
@@ -627,7 +640,10 @@ the entry doorway is north of Speeder Dock. The preposition is "at".
 
 the entry door is scenery in entry doorway.
 
-the lobby is north of the entry doorway.
+the lobby is north of the entry doorway. The lobby is inside from the entry doorway.
+
+Instead of entering building entryway:
+	try going north;
 
 the ground floor elevator hall is north of the lobby.
 
@@ -679,7 +695,7 @@ the ninth floor elevator shaft is above the ground floor elevator shaft.
 
 Book 3 - The Ninth Floor
 
-The ninth-floor is a region. It contains the ninth floor stairwell, the ninth floor north hallway, the ninth floor south hallway, the north end of the building management office, the south end of the building management office, the cybernetica office, and the martian chemical office.
+The ninth-floor is a region. It contains the ninth floor stairwell, the ninth floor north hallway, the ninth floor south hallway, the north end of the building management office, the south end of the building management office, the Cybernetica office, and the Martian Chemical office.
 
 The ninth floor elevator door is a door. It is scenery. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall. The description is "A golden sliding door, opening in the middle."
 
@@ -816,6 +832,7 @@ the penthouse south is southwest of penthouse east and south of 100th floor elev
 the penthouse west is northwest of penthouse south and southwest of penthouse north.
 
 the roof stairs is east of 100th floor elevator hall.
+the roof stairs is above 100th floor elevator hall.
 
 The roof access door is a closed, locked, lockable, openable scenery door. It is above the roof stairs and below the penthouse roof. The description of the roof access door is "Looking strangely out of place, it is a common grey metal door with a push bar."
 
@@ -858,7 +875,7 @@ The printed name is "outside".
 
 The description is "Outside the building are the red-dusted streets of New Reykjavik."
 
-Understand "city/reykjavik/planet/mars/outside/out/glass/streets" or "glass wall" or "new reykjavik" as first floor view of New Reykjavik.
+Understand "city/reykjavik/planet/mars/outside/out/glass/streets/wall/walls" or "glass wall" or "glass walls" or "new reykjavik" as first floor view of New Reykjavik.
 
 Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in south end of the building management office, north end of the building management office, ninth floor south hallway, ninth floor north hallway, Martian Chemical office, Cybernetica office.
 
@@ -1182,7 +1199,7 @@ Instead of exiting when the location is the maintenance closet:
 Instead of going out when the location is the maintenance closet:
 	try going east;
 
-The maintenance items are scenery in the maintenance closet. "Various uninteresting items, like mops and brooms and the like."
+The maintenance items are scenery in the maintenance closet. "Various uninteresting items, like mops and brooms and the like." Understand "mops/mop/brooms/broom" as the maintenance items.
 
 The closet door is closed, lockable, openable, and locked. It is scenery. "A typical white metal utility door. Next to it is a keypad with the digits 0-9."
 A keypad is a part of the closet door. The description is "An ordinary numerical keypad."
@@ -1303,11 +1320,10 @@ Chapter 8 - Ground Floor Stairwell
 
 The description of the ground floor stairwell is "this is a secret message."
 
-don't take the stairs is a clip with conversation "Jones: 'In case of fire, don't use the stairs.'"
+don't take the stairs is a clip with conversation "[line break]Jones: 'In case of fire, don't use the stairs.'"
 
 Instead of going to ground floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
-	say line break;
 	print don't take the stairs;
 	try looking;
 	
@@ -1324,6 +1340,8 @@ sixth floor elevator shaft is in elevator shaft-region. "The door here is closed
 seventh floor elevator shaft is in elevator shaft-region. "The door here is closed.".
 eighth floor elevator shaft is in elevator shaft-region. "The door here is closed.".
 ninth floor elevator shaft is in elevator shaft-region. "The door here is [if ninth floor elevator door is open]open[otherwise]closed[end if].".
+
+The conversation of the ninth floor elevator shaft is "Beck: 'Huh. Seems like it should have taken longer than that.'"
 
 Instead of examining up when the location is in elevator shaft-region:
 	try examining the elevator car-backdrop;
@@ -1433,7 +1451,7 @@ The description of the Ninth Floor South Hallway is "This anonymous corporate ha
 
 Chapter 1 - Cybernetica office
 
-The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities[if cybernetica office is window-broken]. One of the windows along the east side of the office is broken[end if].".
+The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities[if Cybernetica office is window-broken]. One of the windows along the east side of the office is broken[end if].".
 
 The description of the Cybernetica door-inside is "This side intentionally left blank.".
 	
@@ -1521,7 +1539,7 @@ window-thing is scenery in the window washing scaffold. It is privately-named. T
 Does the player mean opening the window washing scaffold: it is very unlikely;
 		
 fakeroom10 is west of window washing scaffold and inside from window washing scaffold.
-fakeroom11 is east of air handling room and outside of air handling room. It is atmo-thin.
+fakeroom11 is east of air handling room and outside of air handling room. It is atmo-thin. "This room is really fake."
 The description of fakeroom10 is "this room is fake.".
 
 [Every turn:
@@ -1543,22 +1561,22 @@ Instead of going west from the window washing scaffold when the floor of the win
 	say "[We] will need to remove the vent cover first.";
 		
 Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 9:
-	move player to the cybernetica office;
-	if the location is the cybernetica office:
+	move player to the Cybernetica office;
+	if the location is the Cybernetica office:
 		now the atmo-suit is unneeded;
 		if the player wears the atmo-suit:
 			try taking off the atmo-suit;
 		
 Instead of going west from the ledge:
-	move player to the cybernetica office;
-	if the location is the cybernetica office:
+	move player to the Cybernetica office;
+	if the location is the Cybernetica office:
 		now the atmo-suit is unneeded;
 		if the player wears the atmo-suit:
 			try taking off the atmo-suit;
 		
 Instead of going inside from the ledge:
-	move player to the cybernetica office;
-	if the location is the cybernetica office:
+	move player to the Cybernetica office;
+	if the location is the Cybernetica office:
 		now the atmo-suit is unneeded;
 		if the player wears the atmo-suit:
 			try taking off the atmo-suit;
@@ -1577,7 +1595,7 @@ Instead of going inside from the window washing scaffold when the floor of the w
 	say "[We] will need to remove the vent cover first.";
 		
 Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 9:
-	move player to the cybernetica office;
+	move player to the Cybernetica office;
 	if the location is the cybernetica office:
 		now the atmo-suit is unneeded;
 		if the player wears the atmo-suit:
@@ -1604,7 +1622,7 @@ Instead of going east from the Cybernetica office when the floor of the window w
 		say "[We] needs an Atmo-Suit to go outside." instead;
 	move the player to the ledge;
 	
-Instead of going outside from the Cybernetica office when the floor of the window washing scaffold is 9:
+Instead of going outside from the Cybernetica office when the floor of the window washing scaffold is 9 and the purple guard robot is nowhere:
 	now the atmo-suit is needed;
 	if the atmo-suit is touchable:
 		try wearing the atmo-suit;
@@ -1613,7 +1631,7 @@ Instead of going outside from the Cybernetica office when the floor of the windo
 		say "[We] needs an Atmo-Suit to go outside." instead;
 	move the player to the window washing scaffold;
 	
-Instead of going outside from the Cybernetica office when the floor of the window washing scaffold is not 9:
+Instead of going outside from the Cybernetica office when the floor of the window washing scaffold is not 9 and the purple guard robot is nowhere:
 	now the atmo-suit is needed;
 	if the atmo-suit is touchable:
 		try wearing the atmo-suit;
@@ -1772,13 +1790,15 @@ Chapter 3 - Building Management Office
 
 The description of the north end of the building management office is "The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.";
 
-The large desk is in the north end of the building management office. It is scenery. It is a container. It is closed, openable, locked, and lockable. "It's a pretty utilitarian desk of some plastic material. It has a single drawer with a lock.". Understand "drawer/lock" as the large desk.
+The large desk is in the north end of the building management office. It is scenery. It is a container. It is closed, openable, locked, and lockable. "It's a pretty utilitarian desk of some plastic material. It has a single drawer with a keyed lock.". Understand "drawer/lock" as the large desk.
 
 Instead of unlocking the large desk with the safety pin:
 	say "[We] pushes the pin into the keyhole and wiggles it around. After a few seconds of this the desk drawer pops open[if desk contains something]. It contains [a list of objects contained in the large desk][end if].";
 	now the large desk is unlocked;     
 	now the large desk is open;
 	score 1;
+	lb;
+	converse "Beck: 'Galaxy Jones, master thief!'";
 	
 The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desks" as north-desks. "There are lots of them, none of which are particularly interesting."
 
@@ -2458,6 +2478,14 @@ Chapter 2 - Penthouse Roof
 
 [Check opening the roof access door when the roof access door is unlocked and the location is the roof stairs:]
 Check going east when the location is the 100th floor elevator hall and the roof stairs are not hidden:
+	if DEBUG is false:
+		say "[line break]Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?[line break]>";
+		if the player consents:
+			continue the action;
+		stop the action;
+	continue the action;
+	
+Check going up when the location is the 100th floor elevator hall and the roof stairs are not hidden:
 	if DEBUG is false:
 		say "[line break]Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?[line break]>";
 		if the player consents:
@@ -3266,7 +3294,7 @@ Instead of asking Beck about "commands":
 * [cmd]PUT INTO[xcmd]: [cmd]PUT GOLD COIN INTO TREASURE CHEST[xcmd][line break]
 * [cmd]PUSH[xcmd]: [cmd]PUSH BIG RED BUTTON[xcmd][line break]
 [line break]
-not to mention [cmd]POUR[xcmd], [cmd]TYPE[xcmd], [cmd]OPEN[xcmd], [cmd]CLOSE[xcmd], [cmd]SHOOT[xcmd], and a few others you'll have to figure out for yourself.";
+not to mention [cmd]POUR[xcmd], [cmd]TYPE[xcmd], [cmd]OPEN[xcmd], [cmd]CLOSE[xcmd], [cmd]UNLOCK[xcmd], [cmd]SHOOT[xcmd], and a few others you'll have to figure out for yourself.";
 
 Instead of asking Beck about "credits":
 	lb;
