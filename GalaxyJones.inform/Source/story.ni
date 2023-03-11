@@ -18,6 +18,7 @@ Include Open Spaces by Philip Riley.
 Include Visible Rooms by Philip Riley.
 
 Release along with cover art.
+Release along with an interpreter.
  
 Volume 1 - Technical Stuff
 
@@ -348,8 +349,6 @@ Rule for constructing the status line while Intro is true:
 	do nothing;
 
 When play begins:
-	say "[bold type]*** Note: Play in a web browser is not recommended. Try downloading an interpreter if you don't already have one: https://intfiction.org/t/list-of-glulx-gblorb-interpreters/51243 ***[roman type]";
-	say paragraph break;
 	say "The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.[paragraph break]";
 	say "'Yes?' she says in a voice thick with sleep.[paragraph break]";
 	say "'Hello, is this Galaxy Jones?' comes the voice from the speaker.[paragraph break]";
@@ -974,7 +973,7 @@ The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/gl
 comment on energy absorption is a clip with conversation "[line break]Jones: 'Target seems to be absorbing disruptor fire. This will make things a little harder.'".
 	
 Report shooting a guard robot with the disruptor pistol during Lobby Shootout:
-	say "[one of]Oops! [we] [miss].[or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In [our] haste it goes wide of the target.[or]A barrage of fire from the robots prevents [us] from firing.[or]Oof. Big miss.[or][Our] shot hits [the noun] dead on, but nothing happens, almost as if the robot had absorbed the energy.[print comment on energy absorption][line break][or]A perfect shot! Yet, somehow, the robot is unscathed.[print comment on energy absorption][or][Our] shot goes wide, reflecting off one of the building struts and into the suspended sculpture. The artwork begins to spin wildly, straining its cables.[at random]";
+	say "[one of]Oops! [we] [miss].[or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In [our] haste it goes wide of the target.[or]A barrage of fire from the robots prevents [us] from firing.[or]Oof. Big miss.[or][Our] shot hits [the noun] dead on, but nothing happens, almost as if the robot had absorbed the energy.[print comment on energy absorption][or]A perfect shot! Yet, somehow, the robot is unscathed.[print comment on energy absorption][or][Our] shot goes wide, reflecting off one of the building struts and into the suspended sculpture. The artwork begins to spin wildly, straining its cables.[at random]";
 	
 Check shooting something with the disruptor pistol:
 	if the noun is not a guard robot and the noun is not the giant sculpture:
@@ -2020,7 +2019,7 @@ Every turn when the mauve guard robot is in the tenth-floor-region and the mauve
 			
 			Jones: '[']Us[']? Seems like I'm the only one with her life on the line.'[or]Beck: 'That's one ugly dude.'
 			
-			Jones: 'I wouldn't want to meet it up close.'[or]Beck: 'If I only had a heart, indeed.'[or]Beck: 'I don't think I like Thallium's choice of friends much.'[or]Beck: 'You're programmed to kill, but I'm programmed to kick your metallic ass!'
+			Jones: 'I wouldn't want to meet it up close.'[or]Beck: 'If I only had a heart, indeed.'[or]Beck: 'I don't think I like Thallium's choice of friends much.'[or]Beck: 'You're programmed to kill, but Jones is programmed to kick your metallic ass!'
 			
 			Jones: 'Ah, the bravery of being out of range.'[or]Beck: 'I hope you have a warranty, because you're about to be seriously damaged!'
 			
