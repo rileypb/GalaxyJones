@@ -50,9 +50,8 @@ To say header style:
 	start header style;
 	
 Before printing the banner text:
-	if the screen width is less than 0:
-		start header style; 
-		say "Galaxy Jones[line break]";
+	if accessible is on:
+		say "Galaxy Jones![line break]";
 	otherwise:
 		print the galaxy banner;	
 		say line break;
@@ -102,7 +101,8 @@ The room of stuff is a room. "this is a secret message.".
 	     say "[We] can't go that way. [list the exits]";]
 	
 To score (n - number):
-	print the galaxy banner;
+	if accessible is off:
+		print the galaxy banner;
 	increase score by n;
 	follow the notify score changes rule;
 	
@@ -112,6 +112,8 @@ The parser nothing error internal rule response (B) is "I'm not sure what you're
 
 To lb:
 	say line break;
+	
+accessible is an object. accessible can be on or off. It is off.
 
 Book 1 - Special text substitution code
 
@@ -349,6 +351,10 @@ Rule for constructing the status line while Intro is true:
 	do nothing;
 
 When play begins:
+	say "Would you like to play with accessibility on?";
+	if the player consents:
+		now accessible is on;
+	lb;
 	say "The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.[paragraph break]";
 	say "'Yes?' she says in a voice thick with sleep.[paragraph break]";
 	say "'Hello, is this Galaxy Jones?' comes the voice from the speaker.[paragraph break]";
@@ -2717,7 +2723,8 @@ After printing the player's obituary when the story has ended finally:
 	say "Her eyes flutter open, close again, then open. She winces and brings one hand up to shield her eyes. 'Who's that?' she says, hoarsely.";
 	say line break;
 	converse "Join Galaxy Jones next time in [special-style-2]Galaxy Jones II: Existential Time Crisis![special-style-1]";
-	print the galaxy banner;
+	if accessible is off:
+		print the galaxy banner;
 	
 Volume 10 - Speech
 
