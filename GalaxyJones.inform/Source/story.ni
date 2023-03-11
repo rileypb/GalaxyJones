@@ -1864,17 +1864,18 @@ Chapter 4 - Martian Chemical Office
 
 The description of the martian chemical office is "This seems like the business office of the chemical company rather than the lab. Most of the room is taken up by desks and other office stuff. There is a cabinet that looks intriguing, however.".
 
-The chemical cabinet is scenery in the Martian Chemical office. "The cabinet is full of bottles of [Electrofil quick-setting conductive polymer gel]."
+The chemical cabinet is scenery in the Martian Chemical office. "The cabinet is full of bottles of Electrofil quick-setting conductive polymer gel."
 
 The Electrofil quick-setting conductive polymer gel is in the cabinet. It is undescribed. The description of the Electrofil is "An opaque pink bottle labeled 'Electrofil' in large friendly letters." Understand "bottle" as the Electrofil quick-setting conductive polymer gel.
 
 After taking the Electrofil quick-setting conductive polymer gel: 
 	now the Electrofil quick-setting conductive polymer gel is not undescribed;
+	move the untakable bottle to the chemical cabinet;
 	continue the action;
 	
 Does the player mean taking the untakable bottle: it is very unlikely;
 
-The untakable bottle is in the cabinet. It is undescribed. It is privately-named. Understand "bottle/Electrofil/quick-setting/conductive/polymer/gel" as the untakable bottle. The description is "this is a secret message."
+The untakable bottle is a thing. It is undescribed. It is privately-named. Understand "bottle/Electrofil/quick-setting/conductive/polymer/gel" as the untakable bottle. The description is "this is a secret message."
 
 Instead of taking the untakable bottle:
 	Say "[We] has already taken one bottle of Electrofil from the cabinet. [We] should use it before taking another.";
@@ -3285,7 +3286,7 @@ Volume 15 - Tests
 
 test elevator with "n/n/z/shoot art/x art/e/n/type 0/w/take all/e/x table/take all/n/x medals/take medal/x medal/take pin/w/w/s/e/take all/w/s/x waterfall/take coin/e/n/use drop key with elevator".
 test ninth with "test elevator/w/u/e".
-test mgmt with "test ninth/buy water with coin/n/w/pick desk lock with pin/take black card/s/take screwdriver/look behind cabinet/drop shrimp/look behind cabinet/e".
+test mgmt with "test ninth/buy water with coin/n/w/pick desk lock with pin/take black card/s/take screwdriver/look behind cabinet/drop shrimp/e".
 test ledge with "test mgmt/e/take gel from cabinet/w/n/n/e/sneak up on robot/sneak up on robot/sneak up on robot/shoot robot/s/n/e".
 test air with "test ledge/look down/look down/look down/d/press up/press up/open vent with screwdriver/w".
 test robot with "test air/w/s/w/take panel/e/s/n/w/u/jump on robot/pour gel on robot".
