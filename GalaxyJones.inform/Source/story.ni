@@ -18,7 +18,7 @@ Include Open Spaces by Philip Riley.
 Include Visible Rooms by Philip Riley.
 
 The story title is "Galaxy Jones".
-The story author is "Phil Riley". 
+The story author is "Phil Riley".
 The story headline is "An Interactive Adventure".
 The story genre is "Science Fiction".
 The release number is 2.
@@ -174,6 +174,14 @@ Check asking someone that is not beck about something:
 Check quizzing someone that is not beck about something:
 	now current interlocutor is beck;
 	say "They're not likely to be helpful." instead;
+	
+Check saying hello to someone when the noun is not beck and the noun is not europa:
+	now current interlocutor is beck;
+	say "They're not likely to be helpful." instead;
+	
+Check saying hello to Europa:
+	now current interlocutor is beck;
+	say "She's too out of it to respond." instead;
 	
 Book 4 - Does the player mean
 
@@ -625,7 +633,7 @@ Check taking a guard robot:
 Instead of attacking an enemy thing:
 	say "You'll need to specify how [we] should attack [the noun]. For instance, you might say 'shoot [the noun] with [the disruptor pistol]'." 
 	
-A couch is a kind of enterable supporter. It is usually scenery.
+A couch is a kind of enterable supporter. It is usually scenery. Understand "furniture/seating/seat" as a couch.
 
 A container can be keyed. A door can be keyed. A container is usually not keyed. A door is usually not keyed.
 
@@ -999,7 +1007,7 @@ Some parking bays are scenery in the speeder dock. Understand "bay/spots/spot/pl
 Instead of entering the speeder-vehicle:
 	say "[We] has a job to do here.";
 
-The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.". Understand "entry/doorway/entrance/entranceway/facade/façade/viking" as building entryway. Understand "exit" as building entryway when the location is the lobby.
+The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.". Understand "entry/doorway/entrance/entranceway/facade/façade/viking/glass/steel" as building entryway. Understand "exit" as building entryway when the location is the lobby.
 	
 Chapter 2 - Building Entryway
 
@@ -1017,6 +1025,9 @@ Before going from entry doorway to lobby for the first time:
 	converse "Jones takes a deep breath. 'I[']m going in.'
 	
 	Beck replies, 'You got this, Galaxy.'".
+	
+Check climbing the building:
+	say "Even if that were feasible, Jones is afraid of heights." instead;
 
 Chapter 3 - Lobby
 
@@ -1079,11 +1090,8 @@ Carry out shooting the giant sculpture with the disruptor pistol:
 	move the tangled ruin to the lobby;
 	print battle won;
 	
-entering is acting recklessly.
-taking is acting recklessly.
-jumping is acting recklessly.
 
-Instead of acting recklessly during Lobby Shootout:
+Instead of doing something when (the action requires a touchable noun and the noun is not the player) or (the action requires a touchable second noun and the second noun is not the player) during Lobby Shootout:
 	say "As soon as [we] [start] to act, an energy beam zips past [our] head, forcing [us] back down behind the desk.";
 	
 Instead of dropping the disruptor pistol:
@@ -1444,6 +1452,12 @@ Instead of climbing the ladder when the location is the ground floor elevator sh
 
 Instead of using the ladder when the location is the ground floor elevator shaft:
 	try going up;
+
+Instead of climbing the ladder when the location is the ninth floor elevator shaft:
+	try going down;
+
+Instead of using the ladder when the location is the ninth floor elevator shaft:
+	try going down;
 	
 [The useless elevator doors are a backdrop. It is privately-named. The printed name is "elevator door". Understand "elevator/door" as the useless elevator doors. 
 It is in second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, and eighth floor elevator shaft.]
@@ -3424,6 +3438,51 @@ After going from a room (called R1) to a room (called R2):
 		say "[transition text][paragraph break]"; 	
 		mark transition text for R1 to R2 as used;
 	continue the action;
+	
+Book 2 - You can't go that way
+
+Table of Excuses
+source room (a room)	dirs (a list of directions)	excuse (a text)
+speeder dock	--	"[We] can't just leave Europa in the hands of Admiral Thallium!"
+entry doorway	--	"Jones is already at the main entrance. She's unlikely to find another way in."
+lobby	--	"Jones can go south out of the building or north to the elevator. East or west will take her around the building."
+lobby	{northeast, northwest}	"That would just get Jones lost in a maze of couches."
+ground-floor-1	--	"Jones can't walk through walls. Try north or east."
+ground-floor-1	{northeast}	"Jones is blocked by an impenetrable wall of phildendrons. North or east would be easier."
+ground-floor-2	--	"Jones can't walk through walls. Try north or south, or the door to the east."
+ground-floor-2	{northeast, southeast}	"Instead of plowing through the sea of furniture, Jones should try going north, south, or east."
+ground-floor-3	--	"Jones can't walk through walls. She can go east or south from here."
+ground-floor-3	--	"Jones ends up in a cul-de-sac of couches, and retreats. Clearer passages lie to the east and south."
+ground-floor-4	{north}	"Right into hands of Admiral Thallium?"
+ground-floor-4	--	"The building extends east or west from here. The elevator is to the south."
+ground-floor-4	--	"That would lead Jones right into a wall."
+ground-floor-5	--	"Jones can't walk through walls. She can go south or west from here."
+ground-floor-5	{southwest}	"That way is blocked by the memorabilia display."
+ground-floor-6	{east}	"Jones almost bumps into a glass wall."
+ground-floor-6	--	"Jones can go south or north, or through a door to the east."
+ground-floor-7	{northwest}	"That would lead directly through the Viking 2 lander."
+ground-floor-7	--	"That way leads through the glass wall."
+ground floor elevator hall	--	"That way leads straight into a wall."
+ground floor elevator shaft	--	"You're constrained to a narrow shaft. You can either leave to the east, or climb the ladder up."
+ninth floor elevator shaft	--	"You're constrained to a narrow shaft. You can either leave to the east, or climb the ladder down."
+
+
+
+To decide which text is the excuse for (source - a room) to (dir - a direction):
+	repeat through the Table of Excuses:
+		if there is a dirs entry:
+			if (source room entry is source) and (dir is listed in dirs entry):
+				decide on excuse entry;
+	repeat through the Table of Excuses:
+		if there is no dirs entry:
+			if source room entry is source:
+				decide on excuse entry;
+	decide on "Jones can't go that way.";
+
+Instead of going nowhere:
+	let ex be the excuse for location to the noun;
+	say "[ex][paragraph break]";
+	
 	
 Volume 13 - A few extra descriptions
 
