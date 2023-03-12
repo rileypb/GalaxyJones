@@ -17,6 +17,13 @@ Include Use by Philip Riley.
 Include Open Spaces by Philip Riley.
 Include Visible Rooms by Philip Riley.
 
+The story title is "Galaxy Jones".
+The story author is "Phil Riley". 
+The story headline is "An Interactive Adventure".
+The story genre is "Science Fiction".
+The release number is 2.
+The story creation year is 2023.
+
 Release along with cover art.
 Release along with an interpreter.
  
@@ -136,14 +143,58 @@ the can't take what's fixed in place rule response (A) is "That can't be taken."
 
 the futile to throw things at inanimate objects rule response (A) is "[We] thinks twice and decides not to throw it after all.".
 
-Book 3 - Glulx Styles
+Book 3 - Some default actions
+
+Check informing Beck about something:	
+	say "Don't worry, Galaxy Jones will tell Beck what he needs to know." instead;
+
+Check telling Beck about something:
+	say "Don't worry, Galaxy Jones will tell Beck what he needs to know." instead;
+ 
+Check informing someone about something:
+	now current interlocutor is beck;
+	say "It's doubtful [regarding the noun][they] [are] interested." instead;
+
+Check telling someone about something:
+	now current interlocutor is beck; 
+	say "It's doubtful [regarding the noun][they] [are] interested." instead;
+
+Check imploring:
+	now current interlocutor is beck;
+	say "[We] is more than capable of acquiring things by herself." instead;
+
+Check requesting for:
+	now current interlocutor is beck;
+	say "[We] is more than capable of acquiring things by herself." instead;
+	
+Check asking someone that is not beck about something:
+	now current interlocutor is beck;
+	say "They're not likely to be helpful." instead;
+	
+Check quizzing someone that is not beck about something:
+	now current interlocutor is beck;
+	say "They're not likely to be helpful." instead;
+	
+Book 4 - Does the player mean
+
+Does the player mean doing something to a person: it is very likely;
+
+Does the player mean doing something to the speeder dock: It is very unlikely;
+	
+Book 5 - Some extra actions
+	
+yelling is an action applying to nothing. Understand "yell", "scream" as yelling.
+Check yelling:
+	say "Admiral Thallium certainly already knows Jones is here." instead;
+	
+Book 6 - Glulx Styles
 
 Table of User Styles (continued)
 style name	color	italic	indentation
 special-style-1	"#0000FF"	false	19
 special-style-2	"#0000FF"	true	19
 
-Book 4 - Post-look text queueing
+Book 7 - Post-look text queueing
 
 Post-look is a list of texts that varies.
 
@@ -289,7 +340,7 @@ Volume 4 - NPCs
 
 Book 1 - Beck
 
-Beck is a man in the room of stuff. The description is "Beck isn't exactly handsome, but he exudes a confidence that makes him memorable."
+Beck is a man in the room of stuff. The description is "Beck isn't exactly handsome, but he exudes a confidence that makes him memorable." He is familiar and seen.
 
 Europa Callisto is a woman. The description is "Europa Callisto is a stunningly beautiful woman with long ice-blue hair and piercing blue eyes. Right now she's looking pretty ragged, though." She is familiar and seen.
 
@@ -351,10 +402,11 @@ Rule for constructing the status line while Intro is true:
 	do nothing;
 
 When play begins:
-	say "Would you like to play with accessibility on?";
-	if the player consents:
-		now accessible is on;
-	lb;
+	if DEBUG is false:
+		say "Would you like to play with accessibility on?";
+		if the player consents:
+			now accessible is on;
+		lb;
 	say "The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.[paragraph break]";
 	say "'Yes?' she says in a voice thick with sleep.[paragraph break]";
 	say "'Hello, is this Galaxy Jones?' comes the voice from the speaker.[paragraph break]";
@@ -369,6 +421,7 @@ When play begins:
 	say "'Oh I will,' Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.[paragraph break]";
 	say "Plus she'll get to meet Europa Callisto. That'll be totally sweet.[paragraph break]";
 	now Intro is false;
+	now current interlocutor is beck;
 	continue;
 
 Book 1 - Lobby Shootout
@@ -444,7 +497,7 @@ After pleading when comment on energy absorption is used during Lobby Shootout:
 	if plead Lobby Shootout is:
 		-- 1: converse "Beck: 'Well, if your energy weapon won't hurt them, maybe direct physical force will?'";
 		-- 2: converse "Beck: 'It would have to be something large. Throwing your shoe at them isn't going to cut it.'";
-		-- 3: converse "Beck: 'That sculpture up there seems pretty big.'";
+		-- otherwise: converse "Beck: 'That sculpture up there seems pretty big.'";
 	
 
 Book 2 - Cybernetica Battle		
@@ -718,9 +771,9 @@ The Martian Chemical door is a door. It is scenery. It is east of the ninth floo
 
 The martian chemical logo is part of the Martian Chemical door. The description is "The figure of a beaker holding a red liquid against the backdrop of the planet Mars."
 
-The north-mgmt-doorway is scenery in ninth floor north hallway. It is privately-named. The printed name is "doorway". "An office can be seen past the doorway."
+The north-mgmt-doorway is scenery in ninth floor north hallway. It is privately-named. The printed name is "doorway". "An office can be seen past the doorway." Understand "doorway" as north-mgmt-doorway.
 
-The south-mgmt-doorway is scenery in ninth floor south hallway. It is privately-named. The printed name is "doorway". "An office can be seen past the doorway."
+The south-mgmt-doorway is scenery in ninth floor south hallway. It is privately-named. The printed name is "doorway". "An office can be seen past the doorway." Understand "doorway" as south-mgmt-doorway.
 
 The north end of the building management office is west of the ninth floor north hallway.
 The preposition is "at".
@@ -1010,7 +1063,12 @@ The hook cable is in the tangled ruin.
 	
 battle won is a clip with conversation "Beck: 'What was that crash? What[']s going on?'
 
-Jones: 'That, my friend, was what you'd call a work of art. Targets terminated.'".
+Jones: 'That, my friend, was what you'd call a work of art. Targets terminated.'";
+
+Lobby Shootout Aftermath is a scene. Lobby Shootout Aftermath begins when Lobby Shootout ends. Lobby Shootout Aftermath ends when player is in ground-floor-1 or player is in ground-floor-7 or player is in ground floor elevator hall.
+
+When Lobby Shootout Aftermath Ends:
+	converse as thallium "Admiral Thallium's voice booms from the ceiling. 'Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste.'".
 
 Carry out shooting the giant sculpture with the disruptor pistol:
 	say "[We] [fire] the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.";
@@ -1379,6 +1437,7 @@ Instead of examining the elevator car-backdrop:
 		try looking;
 	otherwise:
 		say "[We] [are] standing on top of the elevator car.";
+		try examining down;
 
 Instead of climbing the ladder when the location is the ground floor elevator shaft:
 	try going up;
@@ -2698,7 +2757,7 @@ To show basic credits:
 	say line break;
 	say "Story by Phil Riley.";
 	say "Programming by Phil Riley.";
-	say "Playtesting by Leon Lin, Oliver Matthias, and Jade.";
+	say "Playtesting by Leon Lin, Oliver Matthias, Jade, John Ziegler, and Kenneth Pedersen.";
 	say "Invaluable inspiration from Laura Taalman.";
 	
 To show extended credits:
@@ -2738,15 +2797,8 @@ Book 1 - Talking to Beck
 
 Understand "ask [someone] about [any visited room]" as quizzing it about.
 Understand "ask about [any visited room]" or "a [any visited room]" as implicit-quizzing.
-Understand the command "tell" as something new.
 
 Understand the command "show", "display", "present" as something new.
-
-Check imploring:
-	say "[We] is more than capable of acquiring things by herself.";
-
-Check requesting for:
-	say "[We] is more than capable of acquiring things by herself.";
 
 After deciding the scope of the player:
 	place beck in scope;
@@ -2834,6 +2886,10 @@ After quizzing Beck about black cat:
 	converse "Beck: 'I'll adopt it.'
 	
 	'Jones: 'After it damn near took off my hand?'";
+	
+After quizzing Beck about building entryway:
+	lb;
+	converse "Beck: 'Extravagant, as always.'";
 	
 After quizzing Beck about bottle of Electrofil quick-setting conductive polymer gel:
 	lb;
@@ -3271,13 +3327,25 @@ After pleading when the location is in the rooftop:
 		-- 7: converse "Beck: 'Climb the cage.'";
 		-- 8: converse "Beck: 'Now throw the cable.'";
 		-- 9: converse "Beck: 'Now you're in the cage but Europa is unresponsive. How do you revive her?'";
-		-- 10: converse "Beck: 'The water of course!'";
+		-- otherwise: converse "Beck: 'The water of course!'";
 
 Chapter 3 - Ask Beck About Game
 
 Instead of asking Beck about "game":
 	lb;
 	converse "Beck: 'Well, you can ask about: [bold type]INTERACTIVE FICTION[special-style-1], [bold type]COMMANDS[special-style-1], or [bold type]CREDITS[special-style-1].'";
+	
+abouting is an action applying to nothing. Understand "about" as abouting.
+Instead of abouting:
+	try asking Beck about "game";
+	
+crediting is an action applying to nothing. Understand "credits" as crediting.
+Instead of crediting:
+	try asking Beck about "credits";
+	
+commanding is an action applying to nothing. Understand "commands", "verbs" as commanding.
+Instead of commanding:
+	try asking Beck about "commands";
 	
 Instead of asking Beck about "interactive fiction":
 	lb;
@@ -3367,7 +3435,7 @@ DEBUG is true.
 
 Understand "* [text]" as a mistake ("Noted.").
 
-Include Property Checking by Emily Short.
+[Include Property Checking by Emily Short].
 
 Volume 15 - Tests
 
