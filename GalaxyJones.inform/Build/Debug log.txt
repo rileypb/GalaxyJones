@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 28790 words long.
+I've now read your source text, which is 27825 words long.
 
 
 -----------------------------------------------------
@@ -34,7 +34,8 @@ I've also read Third Person Narration by Philip Riley, which is 752 words long.
 I've also read Pseudocontainers by Philip Riley, which is 201 words long.
 I've also read Use by Philip Riley, which is 65 words long.
 I've also read Open Spaces by Philip Riley, which is 1856 words long.
-I've also read Visible Rooms by Philip Riley, which is 113 words long.
+I've also read Visible Rooms by Philip Riley, which is 147 words long.
+I've also read Property Checking by Emily Short, which is 394 words long.
 I've also read Locksmith by Emily Short, which is 4122 words long.
 I've also read Gender Options by Nathanael Nerode, which is 7673 words long.
 I've also read Essentials by Philip Riley, which is 110 words long.
@@ -92,25 +93,25 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
-Regional: CONSTANT_VNT'tenth-floor-region'-region(I272_tenth_floor_region)(I186'tenth-floor-region')
+Regional: CONSTANT_VNT'tenth-floor-region'-region(I250_tenth_floor_region)(I165'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'elevator shaft-region'-region(I374_elevator_shaft_region)(I287'elevator shaft-region')
+Regional: CONSTANT_VNT'elevator shaft-region'-region(I333_elevator_shaft_region)(I247'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'elevator shaft-region'-region(I374_elevator_shaft_region)(I287'elevator shaft-region')
+Regional: CONSTANT_VNT'elevator shaft-region'-region(I333_elevator_shaft_region)(I247'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'the elevator shaft-region'-region(I374_elevator_shaft_region)(I287'elevator shaft-region')
+Regional: CONSTANT_VNT'the elevator shaft-region'-region(I333_elevator_shaft_region)(I247'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'tenth-floor-region'-region(I272_tenth_floor_region)(I186'tenth-floor-region')
+Regional: CONSTANT_VNT'tenth-floor-region'-region(I250_tenth_floor_region)(I165'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'tenth-floor-region'-region(I272_tenth_floor_region)(I186'tenth-floor-region')
+Regional: CONSTANT_VNT'tenth-floor-region'-region(I250_tenth_floor_region)(I165'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the ninth-floor'-region(I245_ninth_floor)(I159'ninth-floor')
+Regional: CONSTANT_VNT'the ninth-floor'-region(I231_ninth_floor)(I146'ninth-floor')
  == region
-Regional: CONSTANT_VNT'the tenth-floor-region'-region(I272_tenth_floor_region)(I186'tenth-floor-region')
+Regional: CONSTANT_VNT'the tenth-floor-region'-region(I250_tenth_floor_region)(I165'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I464_rooftop)(I376'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I423_rooftop)(I336'rooftop')
  == region
-Regional: CONSTANT_VNT'the tenth-floor-region'-region(I272_tenth_floor_region)(I186'tenth-floor-region')
+Regional: CONSTANT_VNT'the tenth-floor-region'-region(I250_tenth_floor_region)(I165'tenth-floor-region')
  == region
 
 
@@ -210,8 +211,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 178 files written as streams.
-CPU time: 357 centiseconds
+Total of 175 files written as streams.
+CPU time: 341 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

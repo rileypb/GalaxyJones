@@ -8,8 +8,8 @@
         <bibliographic>
             <title>Galaxy Jones</title>
             <author>Phil Riley</author>
-            <headline>An Interactive Adventure</headline>
-            <genre>Science Fiction</genre>
+            <headline>An Interactive Fiction</headline>
+            <genre>Fiction</genre>
             <firstpublished>2023</firstpublished>
             <language>en</language>
             <group>Inform</group>
@@ -23,8 +23,8 @@
         <releases>
             <attached>
                 <release>
-                    <releasedate>2023-03-12</releasedate>
-                    <version>2</version>
+                    <releasedate>2023-03-11</releasedate>
+                    <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6M62</compilerversion>
                 </release>
@@ -33,11 +33,11 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6M62</generatorversion>
-            <originated>2023-03-12</originated>
+            <originated>2023-03-11</originated>
         </colophon>
         <glulx>
-            <serial>230312</serial>
-            <release>2</release>
+            <serial>230311</serial>
+            <release>1</release>
             <compiler>Inform 7 build 6M62</compiler>
             <coverpicture>1</coverpicture>
         </glulx>

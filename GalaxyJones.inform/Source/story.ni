@@ -17,13 +17,6 @@ Include Use by Philip Riley.
 Include Open Spaces by Philip Riley.
 Include Visible Rooms by Philip Riley.
 
-The story title is "Galaxy Jones".
-The story author is "Phil Riley". 
-The story headline is "An Interactive Adventure".
-The story genre is "Science Fiction".
-The release number is 2.
-The story creation year is 2023.
-
 Release along with cover art.
 Release along with an interpreter.
  
@@ -143,58 +136,14 @@ the can't take what's fixed in place rule response (A) is "That can't be taken."
 
 the futile to throw things at inanimate objects rule response (A) is "[We] thinks twice and decides not to throw it after all.".
 
-Book 3 - Some default actions
-
-Check informing Beck about something:	
-	say "Don't worry, Galaxy Jones will tell Beck what he needs to know." instead;
-
-Check telling Beck about something:
-	say "Don't worry, Galaxy Jones will tell Beck what he needs to know." instead;
- 
-Check informing someone about something:
-	now current interlocutor is beck;
-	say "It's doubtful [regarding the noun][they] [are] interested." instead;
-
-Check telling someone about something:
-	now current interlocutor is beck; 
-	say "It's doubtful [regarding the noun][they] [are] interested." instead;
-
-Check imploring:
-	now current interlocutor is beck;
-	say "[We] is more than capable of acquiring things by herself." instead;
-
-Check requesting for:
-	now current interlocutor is beck;
-	say "[We] is more than capable of acquiring things by herself." instead;
-	
-Check asking someone that is not beck about something:
-	now current interlocutor is beck;
-	say "They're not likely to be helpful." instead;
-	
-Check quizzing someone that is not beck about something:
-	now current interlocutor is beck;
-	say "They're not likely to be helpful." instead;
-	
-Book 4 - Does the player mean
-
-Does the player mean doing something to a person: it is very likely;
-
-Does the player mean doing something to the speeder dock: It is very unlikely;
-	
-Book 5 - Some extra actions
-	
-yelling is an action applying to nothing. Understand "yell", "scream" as yelling.
-Check yelling:
-	say "Admiral Thallium certainly already knows Jones is here." instead;
-	
-Book 6 - Glulx Styles
+Book 3 - Glulx Styles
 
 Table of User Styles (continued)
 style name	color	italic	indentation
 special-style-1	"#0000FF"	false	19
 special-style-2	"#0000FF"	true	19
 
-Book 7 - Post-look text queueing
+Book 4 - Post-look text queueing
 
 Post-look is a list of texts that varies.
 
@@ -340,7 +289,7 @@ Volume 4 - NPCs
 
 Book 1 - Beck
 
-Beck is a man in the room of stuff. The description is "Beck isn't exactly handsome, but he exudes a confidence that makes him memorable." He is familiar and seen.
+Beck is a man in the room of stuff. The description is "Beck isn't exactly handsome, but he exudes a confidence that makes him memorable."
 
 Europa Callisto is a woman. The description is "Europa Callisto is a stunningly beautiful woman with long ice-blue hair and piercing blue eyes. Right now she's looking pretty ragged, though." She is familiar and seen.
 
@@ -402,11 +351,10 @@ Rule for constructing the status line while Intro is true:
 	do nothing;
 
 When play begins:
-	if DEBUG is false:
-		say "Would you like to play with accessibility on?";
-		if the player consents:
-			now accessible is on;
-		lb;
+	say "Would you like to play with accessibility on?";
+	if the player consents:
+		now accessible is on;
+	lb;
 	say "The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.[paragraph break]";
 	say "'Yes?' she says in a voice thick with sleep.[paragraph break]";
 	say "'Hello, is this Galaxy Jones?' comes the voice from the speaker.[paragraph break]";
@@ -421,7 +369,6 @@ When play begins:
 	say "'Oh I will,' Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.[paragraph break]";
 	say "Plus she'll get to meet Europa Callisto. That'll be totally sweet.[paragraph break]";
 	now Intro is false;
-	now current interlocutor is beck;
 	continue;
 
 Book 1 - Lobby Shootout
@@ -497,7 +444,7 @@ After pleading when comment on energy absorption is used during Lobby Shootout:
 	if plead Lobby Shootout is:
 		-- 1: converse "Beck: 'Well, if your energy weapon won't hurt them, maybe direct physical force will?'";
 		-- 2: converse "Beck: 'It would have to be something large. Throwing your shoe at them isn't going to cut it.'";
-		-- otherwise: converse "Beck: 'That sculpture up there seems pretty big.'";
+		-- 3: converse "Beck: 'That sculpture up there seems pretty big.'";
 	
 
 Book 2 - Cybernetica Battle		
@@ -694,21 +641,17 @@ Volume 7 - Geography
 Book 1 - Ground Floor
 
 the speeder dock is a room. The player is in the speeder dock.
-The sdscenery is a location-scenery in the speeder dock. Understand "speeder/dock" as sdscenery.
 
-the entry doorway is north of Speeder Dock. the entry doorway is inside of Speeder Dock. The preposition is "at".
-The entrydoorway is a location-scenery in the speeder dock. Understand "entry/doorway" as entrydoorway.
+the entry doorway is north of Speeder Dock. The preposition is "at".
 
 the entry door is scenery in entry doorway.
 
 the lobby is north of the entry doorway. The lobby is inside from the entry doorway.
-The lobbyscenery is a location-scenery in the lobby. Understand "lobby" as the lobbyscenery.
- 
+
 Instead of entering building entryway:
 	try going north;
 
 the ground floor elevator hall is north of the lobby.
-The gfescenery is a location-scenery in the ground floor elevator hall. Understand "ground/floor/elevator/hall" as the gfescenery.
 
 the ground floor elevator door is a door. It is west of the ground floor elevator hall. The printed name is "elevator door". Through the ground floor elevator door is the ground floor elevator shaft. The ground floor elevator door is closed and unopenable. Understand "elevator/door" as the ground floor elevator door.
 
@@ -726,10 +669,8 @@ To say ground name of (D - a direction):
 A ground-floor is a kind of room. It is privately-named. The printed name is "[ground name of dir]". A ground-floor has a direction called dir.
 
 ground-floor-1 is west of Lobby. It is a ground-floor. The dir is southwest.  The preposition is "at".
-The gf1scenery is a location-scenery in the ground-floor-1. Understand "ground floor" as the gf1scenery.
 
 ground-floor-2 is north of ground-floor-1. It is a ground-floor. The dir is west. The preposition is "on".
-The gf2scenery is a location-scenery in the ground-floor-2. Understand "ground floor" as the gf2scenery.
 
 the elevator-room-door is a door. It is privately-named. It is scenery. The printed name is "utility door". Understand "elevator/room/door/utility" as elevator-room-door. It is east of ground-floor-2. Through the elevator-room-door is the elevator room.
 the elevator-room-door is closed, locked, lockable and openable. The red cardkey unlocks the elevator-room-door.
@@ -739,32 +680,24 @@ the elevator-room-door-inside is a door. It is privately-named. It is scenery. T
 The description is "It's a white metal door, completely typical. It has a card swipe right above the handle.".
 
 ground-floor-3 is north of ground-floor-2. It is a ground-floor. The dir is northwest. The preposition is "at".
-The gf3scenery is a location-scenery in the ground-floor-3. Understand "ground floor" as the gf3scenery.
 
 ground-floor-4 is east of ground-floor-3 and north of the elevator hall. It is a ground-floor. The dir is north. The preposition is "on".
-The gf4scenery is a location-scenery in the ground-floor-4. Understand "ground floor" as the gf4scenery.
 
 ground-floor-5 is east of ground-floor-4. It is a ground-floor. The dir is northeast. The preposition is "at".
-The gf5scenery is a location-scenery in the ground-floor-5. Understand "ground floor" as the gf5scenery.
 
 ground-floor-6 is south of ground-floor-5. It is a ground-floor. The dir is east. The preposition is "on".
-The gf6scenery is a location-scenery in the ground-floor-6. Understand "ground floor" as the gf6scenery.
 
 the closet door is a door. it is west of ground-floor-6. Through the closet door is the maintenance closet. 
 
 the closet-door-inside is a door. It is privately-named. It is scenery. The printed name is "closet door". Understand "closet/door" as the closet-door-inside. It is east of the maintenance closet. Through the closet-door-inside is ground-floor-6. The closet-door-inside is a half-door of the closet door. The description is "A typical white utility door."
 
 ground-floor-7 is south of ground-floor-6 and east of the lobby. It is a ground-floor. The dir is southeast. The preposition is "at".
-The gf7scenery is a location-scenery in the ground-floor-7. Understand "ground floor" as the gf7scenery.
 
 the ground floor stairwell is east of the elevator hall.
 
 Book 2 - Lower Elevator Shaft
 
 the ninth floor elevator shaft is above the ground floor elevator shaft.
-
-The gfes is a location-scenery in the ground floor elevator shaft. Understand "ground/floor/elevator/shaft" as the gfes.
-The ninthfes is a location-scenery in the ninth floor elevator shaft. Understand "ninth/floor/elevator/shaft" as the ninthfes.
 
 Book 3 - The Ninth Floor
 
@@ -773,13 +706,10 @@ The ninth-floor is a region. It contains the ninth floor stairwell, the ninth fl
 The ninth floor elevator door is a door. It is scenery. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall. The description is "A golden sliding door, opening in the middle."
 
 The ninth floor stairwell is east of the ninth floor elevator hall.
-The nfeh is a location-scenery in the ninth floor elevator hall. Understand "ninth/floor/elevator/hall" as the nfeh.
 
 The ninth floor north hallway is north of the ninth floor elevator hall.
-The nfnh is a location-scenery in the ninth floor north hallway. Understand "ninth/floor/north/hallway" as the nfnh.
 
 The ninth floor south hallway is south of the ninth floor elevator hall.
-The nfsh is a location-scenery in the ninth floor south hallway. Understand "ninth/floor/south/hallway" as the nfsh.
 
 The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable. The description is "A slick corporate office door lettered 'Cybernetica'. It has a swipe lock above the handle." Understand "swipe/lock" as the cybernetica door.
 The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door.  
@@ -788,27 +718,22 @@ The Martian Chemical door is a door. It is scenery. It is east of the ninth floo
 
 The martian chemical logo is part of the Martian Chemical door. The description is "The figure of a beaker holding a red liquid against the backdrop of the planet Mars."
 
-The north-mgmt-doorway is scenery in ninth floor north hallway. It is privately-named. The printed name is "doorway". "An office can be seen past the doorway." Understand "doorway" as north-mgmt-doorway.
+The north-mgmt-doorway is scenery in ninth floor north hallway. It is privately-named. The printed name is "doorway". "An office can be seen past the doorway."
 
-The south-mgmt-doorway is scenery in ninth floor south hallway. It is privately-named. The printed name is "doorway". "An office can be seen past the doorway." Understand "doorway" as south-mgmt-doorway.
+The south-mgmt-doorway is scenery in ninth floor south hallway. It is privately-named. The printed name is "doorway". "An office can be seen past the doorway."
 
 The north end of the building management office is west of the ninth floor north hallway.
 The preposition is "at".
-The bmn is a location-scenery in the north end of the building management office. Understand "building/management/office" as the bmn.
 
 the south end of the building management office is south of the north end of the building management office and west of the ninth floor south hallway. The preposition is "at".
-The bms is a location-scenery in the south end of the building management office. Understand "building/management/office" as the bms.
 
 a ledge is a room. The preposition is "on". It is always-indefinite. a ledge is atmo-thin.
-The ledgescenery is a location-scenery in the ledge. Understand "ledge" as the ledgescenery.
 
 a window washing scaffold is a room. The preposition is "on". It is always-indefinite. a window washing scaffold is atmo-thin.
-The wws is a location-scenery in the window washing scaffold. Understand "window/washing/scaffold" as the wws.
 
 Book 4 - The Tenth Floor
 
 the tenth floor elevator hall is a room. It is open space. The preposition is "in".
-The tfeh is a location-scenery in the tenth floor elevator hall. Understand "tenth/floor/elevator/hall" as the tfeh.
 
 The tenth-floor-region is a region. It contains the tenth floor elevator hall, the elevator car-room, and the tenth floor stairwell.
 
@@ -821,28 +746,20 @@ To say microthings office name of (D - a direction):
 A microthings-room is a kind of room. It is privately-named. The printed name is "[microthings office name of dir]". A microthings-room has a direction called dir. 
  
 microthings-1 is a microthings-room. It is open space. It is south of the tenth floor elevator hall. The preposition is "on". It is in the tenth-floor-region. The dir is south.
-The m1 is a location-scenery in the microthings-1. Understand "consolidated/microthings/office" as the m1.
  
 microthings-2 is a microthings-room. It is open space. It is west of microthings-1. The preposition is "at". It is in the tenth-floor-region. The dir is southwest. 
-The m2 is a location-scenery in the microthings-2. Understand "consolidated/microthings/office" as the m2.
  
 microthings-3 is a microthings-room. It is open space. It is north of microthings-2. The preposition is "on". It is in the tenth-floor-region. The dir is west.
-The m3 is a location-scenery in the microthings-3. Understand "consolidated/microthings/office" as the m3.
  
 microthings-4 is a microthings-room. It is open space. It is north of microthings-3. The preposition is "at". It is in the tenth-floor-region. The dir is northwest.
-The m4 is a location-scenery in the microthings-4. Understand "consolidated/microthings/office" as the m4.
  
 microthings-5 is a microthings-room. It is open space. It is east of microthings-4 and north of the tenth floor elevator hall. The preposition is "on".  It is in the tenth-floor-region. The dir is north.
-The m5 is a location-scenery in the microthings-5. Understand "consolidated/microthings/office" as the m5.
  
 microthings-7 is a microthings-room. It is open space. It is southeast of microthings-5. The preposition is "on". It is in the tenth-floor-region. The dir is east.
-The m7 is a location-scenery in the microthings-7. Understand "consolidated/microthings/office" as the m7.
  
 microthings-8 is a microthings-room. It is open space. It is south of microthings-7 and east of microthings-1. The preposition is "at". It is in the tenth-floor-region. The dir is southeast.
-The m8 is a location-scenery in the microthings-8. Understand "consolidated/microthings/office" as the m8.
 
 the air handling door is a door. It is east of microthings-5 and west of the air handling room. The air handling door is scenery. "An ordinary utility door."
-The ahr is a location-scenery in the air handling room. Understand "air/handling/room" as the ahr.
 
 The vent access door is a door. It is inside from the air handling room. It is scenery. Through the vent access door is the window washing scaffold. The description of the vent access door is "A small door leading into the air duct." Understand "opening" as vent access door.
 
@@ -850,7 +767,6 @@ Instead of entering the vent access door:
 	try going east;
 
 The elevator car-room is west of the tenth floor elevator hall. It is open space. It is privately-named. The printed name is "elevator car".  It is in the tenth-floor-region.
-The ecr is a location-scenery in the elevator car-room. Understand "elevator/car" as the ecr.
 
 Instead of going east from the elevator car-room:
 	if floor of the elevator car-room is:
@@ -888,7 +804,6 @@ Instead of going west from the 100th floor elevator hall when the elevator car-r
 		say "The elevator is not at this floor.";
 
 The top of the elevator car is above the elevator car-room. The preposition is "on".
-The tec is a location-scenery in the top of the elevator car. Understand "top" as the tec.
 
 The tenth floor stairwell is east of the tenth floor elevator hall.
 
@@ -913,35 +828,27 @@ the tenth floor elevator hall farsees the elevator car-room, microthings-1, and 
 Book 5 - The 100th Floor 
 
 The 100th floor elevator hall is a room. West of the 100th floor elevator hall is the placeholder room. The description of the placeholder room is "this is another secret message."
-The hfeh is a location-scenery in the 100th floor elevator hall. Understand "100th/100/floor/elevator/hall" as the hfeh.
 
 the penthouse north is north of 100th floor elevator hall.
-The pn is a location-scenery in the penthouse north. Understand "penthouse/north" as the pn.
 
 the penthouse east is southeast of penthouse north.
-The pe is a location-scenery in the penthouse east. Understand "penthouse/east" as the pe.
 
 the penthouse south is southwest of penthouse east and south of 100th floor elevator hall.
-The ps is a location-scenery in the penthouse south. Understand "penthouse/south" as the ps.
 
 the penthouse west is northwest of penthouse south and southwest of penthouse north.
-The pw is a location-scenery in the penthouse west. Understand "penthouse/west" as the pw.
 
 the roof stairs is east of 100th floor elevator hall.
 the roof stairs is above 100th floor elevator hall.
-The roofstairs is a location-scenery in the roof stairs. Understand "roof/stairs" as the roofstairs.
 
 The roof access door is a closed, locked, lockable, openable scenery door. It is above the roof stairs and below the penthouse roof. The description of the roof access door is "Looking strangely out of place, it is a common grey metal door with a push bar."
 
 The preposition of the roof stairs is "on".
 
 The preposition of the penthouse roof is "on".
-The pr is a location-scenery in the penthouse roof. Understand "penthouse/roof" as the pr.
 
 Book 6 - The Roof
 
 the flyer pad is west of the penthouse roof. The preposition is "on".
-The fp is a location-scenery in the flyer pad. Understand "flyer/pad" as the fp.
 
 a cage is north of the penthouse roof. The preposition is "next to". 
 
@@ -1103,12 +1010,7 @@ The hook cable is in the tangled ruin.
 	
 battle won is a clip with conversation "Beck: 'What was that crash? What[']s going on?'
 
-Jones: 'That, my friend, was what you'd call a work of art. Targets terminated.'";
-
-Lobby Shootout Aftermath is a scene. Lobby Shootout Aftermath begins when Lobby Shootout ends. Lobby Shootout Aftermath ends when player is in ground-floor-1 or player is in ground-floor-7 or player is in ground floor elevator hall.
-
-When Lobby Shootout Aftermath Ends:
-	converse as thallium "Admiral Thallium's voice booms from the ceiling. 'Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste.'".
+Jones: 'That, my friend, was what you'd call a work of art. Targets terminated.'".
 
 Carry out shooting the giant sculpture with the disruptor pistol:
 	say "[We] [fire] the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.";
@@ -1477,7 +1379,6 @@ Instead of examining the elevator car-backdrop:
 		try looking;
 	otherwise:
 		say "[We] [are] standing on top of the elevator car.";
-		try examining down;
 
 Instead of climbing the ladder when the location is the ground floor elevator shaft:
 	try going up;
@@ -2797,7 +2698,7 @@ To show basic credits:
 	say line break;
 	say "Story by Phil Riley.";
 	say "Programming by Phil Riley.";
-	say "Playtesting by Leon Lin, Oliver Matthias, Jade, John Ziegler, and Kenneth Pedersen.";
+	say "Playtesting by Leon Lin, Oliver Matthias, and Jade.";
 	say "Invaluable inspiration from Laura Taalman.";
 	
 To show extended credits:
@@ -2837,8 +2738,15 @@ Book 1 - Talking to Beck
 
 Understand "ask [someone] about [any visited room]" as quizzing it about.
 Understand "ask about [any visited room]" or "a [any visited room]" as implicit-quizzing.
+Understand the command "tell" as something new.
 
 Understand the command "show", "display", "present" as something new.
+
+Check imploring:
+	say "[We] is more than capable of acquiring things by herself.";
+
+Check requesting for:
+	say "[We] is more than capable of acquiring things by herself.";
 
 After deciding the scope of the player:
 	place beck in scope;
@@ -2926,10 +2834,6 @@ After quizzing Beck about black cat:
 	converse "Beck: 'I'll adopt it.'
 	
 	'Jones: 'After it damn near took off my hand?'";
-	
-After quizzing Beck about building entryway:
-	lb;
-	converse "Beck: 'Extravagant, as always.'";
 	
 After quizzing Beck about bottle of Electrofil quick-setting conductive polymer gel:
 	lb;
@@ -3367,25 +3271,13 @@ After pleading when the location is in the rooftop:
 		-- 7: converse "Beck: 'Climb the cage.'";
 		-- 8: converse "Beck: 'Now throw the cable.'";
 		-- 9: converse "Beck: 'Now you're in the cage but Europa is unresponsive. How do you revive her?'";
-		-- otherwise: converse "Beck: 'The water of course!'";
+		-- 10: converse "Beck: 'The water of course!'";
 
 Chapter 3 - Ask Beck About Game
 
 Instead of asking Beck about "game":
 	lb;
 	converse "Beck: 'Well, you can ask about: [bold type]INTERACTIVE FICTION[special-style-1], [bold type]COMMANDS[special-style-1], or [bold type]CREDITS[special-style-1].'";
-	
-abouting is an action applying to nothing. Understand "about" as abouting.
-Instead of abouting:
-	try asking Beck about "game";
-	
-crediting is an action applying to nothing. Understand "credits" as crediting.
-Instead of crediting:
-	try asking Beck about "credits";
-	
-commanding is an action applying to nothing. Understand "commands", "verbs" as commanding.
-Instead of commanding:
-	try asking Beck about "commands";
 	
 Instead of asking Beck about "interactive fiction":
 	lb;
@@ -3475,7 +3367,7 @@ DEBUG is true.
 
 Understand "* [text]" as a mistake ("Noted.").
 
-[Include Property Checking by Emily Short].
+Include Property Checking by Emily Short.
 
 Volume 15 - Tests
 
