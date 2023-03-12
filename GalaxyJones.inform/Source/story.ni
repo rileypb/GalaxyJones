@@ -2117,9 +2117,12 @@ Check button pushing a number when the number understood is the floor of the ele
 	
 the elevator car-room has a number called the floor. The floor of the elevator car-room is 10.
 
+whooee is a clip with conversation "[line break]Jones: 'Holy - This thing goes fast.'";
+
 To describe elevator ride from (F - a number) to (T - a number):
 	if T is 100:
 		say "The elevator accelerates upwards at a frightening rate. The numbers cllimb towards 100. Soon the elevator slows, and the door opens on the 100th floor.";
+		print whooee;
 	otherwise if F is 100:
 		say "The ride downward is a terrifying plunge, but at least it's over quickly.";
 	otherwise:
@@ -2406,10 +2409,13 @@ Instead of pushing the large red button:
 	say "[We] presses the red button, but nothing seems to happen. After a few seconds, however, [we] starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die.";
 	end the story saying "Galaxy Jones was killed by poison gas.";
 	
+why not is a clip with conversation "[line break]Beck: 'Why ever did you not press the button that said [']Press Me[']? Maybe we should press it anyway. Please?'";
+
 Instead of pushing the small black button:
 	say "Somewhere beyond this room comes the sound of something heavy being moved.";
 	now the roof access door is unlocked;
 	now the roof stairs are not hidden;
+	print why not;
 	
 The granite floor is scenery in penthouse west. "On Mars, sometimes one gets tired of red." 
 
