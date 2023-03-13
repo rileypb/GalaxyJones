@@ -181,7 +181,9 @@ the futile to throw things at inanimate objects rule response (A) is "[We] think
 The requested actions require persuasion rule response (A) is "[The noun] [refuse] to cooperate with Jones."
 To refuse is a verb.
 
+the block attacking rule response (A) is "Jones only uses violent means when absolutely necessary."
 
+The block sleeping rule response (A) is "There's no lying down on the job for Galaxy Jones!"
 
 Book 3 - Some default actions
 
@@ -222,6 +224,9 @@ Check saying hello to someone when the noun is not beck and the noun is not euro
 Check saying hello to Europa:
 	now current interlocutor is beck;
 	say "She's too out of it to respond." instead;
+	
+Check searching a door:
+	say "Jones will have to go through the door to see what's inside." instead;
 	
 Book 4 - Does the player mean
 
@@ -325,6 +330,8 @@ Check unwrapping something:
 	
 Understand the command "buy" as something new.
 Buying it with is an action applying to one thing and one carried thing. Understand "buy [something] with [something]" as buying it with.
+
+Understand the command "hook" as "tie".
 
 Book 1 - Counting moves
 
@@ -1064,7 +1071,7 @@ Beck: 'Oh, no doubt.'";
 
 The open-space is scenery in the entry doorway. It is privately-named. The printed name is "open space". Understand "open space" as open-space. "On the far side of the glass walls is a large open space serving as the extended lobby of the building."
 
-The description of the entry door is "A glass revolving door emblazoned with the symbol of a Viking king astride the planet Mars."
+The description of the entry door is "A glass revolving door emblazoned with the symbol of a Viking king astride the planet Mars." Understand "revolving" as entry door.
 
 Before going from entry doorway to lobby for the first time:
 	converse "Jones takes a deep breath. 'I[']m going in.'
@@ -1079,7 +1086,7 @@ Chapter 3 - Lobby
 The ground-floor-region is a region. It contains lobby,
 	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7, ground floor elevator hall.
 
-The ground-floor-floor is a backdrop. It is privately-named. The printed name is "floor". Understand "floor" as the ground-floor-floor. It is in ground-floor-region.
+The ground-floor-floor is a backdrop. It is privately-named. The printed name is "floor". Understand "floor/marble" as the ground-floor-floor. It is in ground-floor-region.
 The description of the ground-floor-floor is "Yards and yards of white and grey marble, rare for Mars."
 
 The ground-floor-ceiling is a backdrop. It is privately-named. The printed name is "ceiling". Understand "ceiling" as the ground-floor-ceiling. It is in lobby,
@@ -1207,7 +1214,7 @@ The description of ground-floor-2 is "Semicircular couches open on either side o
 The east semicircular couch is a couch in ground-floor-2. The description is "An inoffensive beige couch, shaped in a half-circle, opening towards the west.".
 The west semicircular couch is a couch in ground-floor-2. The description is "An inoffensive beige couch, shaped in a half-circle, opening towards the east.".
 
-The central carpeted path is scenery in ground-floor-2. The description is "A strip of grey carpet running north to south, in the midst of the marble floor. (Incidentally, the massive expense of moving real marble from Earth to the Mars is just further proof of Thallium's madness, seriously.)". Understand "carpet/rug" as the central carpeted path.
+The central carpeted path is scenery in ground-floor-2. The description is "A strip of grey carpet running north to south, in the midst of the marble floor. (Incidentally, the massive expense of moving real marble from Earth to Mars is just further proof of Thallium's madness, seriously.)". Understand "carpet/rug" as the central carpeted path.
  
 The swipe lock is scenery in ground-floor-2. "An ordinary swipe lock."
 
@@ -1219,9 +1226,9 @@ Instead of using something with swipe lock:
 
 Section 3 - ground-floor-3
 
-The description of ground-floor-3 is "A large relief map of mars is mounted on the north wall here. One can leave here to the south or east.".
+The description of ground-floor-3 is "A large relief map of Mars is mounted on the north wall here. One can leave here to the south or east.".
 
-The large relief map of mars is scenery in ground-floor-3. "The map is crafted of bronze and sports a star at the site of New Reykjavik.";
+The large relief map of Mars is scenery in ground-floor-3. "The map is crafted of bronze and sports a star at the site of New Reykjavik.";
 
 The star is a part of the large relief map. The description is "Ah, New Reykjavik! Even colder than Old Reykjavik!".
 
@@ -1335,7 +1342,7 @@ Instead of going out when the location is the maintenance closet:
 
 The maintenance items are scenery in the maintenance closet. "Various uninteresting items, like mops and brooms and the like." Understand "mops/mop/brooms/broom" as the maintenance items.
 
-The closet door is closed, lockable, openable, and locked. It is scenery. "A typical white metal utility door. Next to it is a keypad with the digits 0-9."
+The closet door is closed, lockable, openable, and locked. It is scenery. "A typical white metal utility door. Next to it is a keypad with the digits 0-9[if the closet door is locked]. An indicator light glows red[otherwise]. An indicator light glows green[end if]."
 A keypad is a part of the closet door. The description is "An ordinary numerical keypad."
 
 Check opening the closet door when the closet door is locked:
@@ -1349,17 +1356,20 @@ Instead of typing doorcode on the keypad:
 	
 Instead of typing a number on the keypad:
 	say "An indicator light blinks red.";	
+	now the closet door is locked;
 	if closet door has not been unlocked:
 		converse "[line break]Jones: 'it[']s not [number understood]...'";
 	
 Instead of typing a number on the keypad for the second time:
 	say "An indicator light blinks red.";	
+	now the closet door is locked;
 	if closet door has not been unlocked:
 		converse "[line break]Jones: 'it[']s not [number understood]...'";
 		converse "[line break]Beck: 'I don[']t think you[']ll get it just typing random numbers.'";
 	
 Instead of typing a number on the keypad for the fourth time:
 	say "An indicator light blinks red.";	
+	now the closet door is locked;
 	if closet door has not been unlocked: 
 		converse "[line break]Jones: 'it[']s not [number understood]...'";
 		converse "[line break]Beck: 'Seriously, Jones.'";
@@ -1448,7 +1458,7 @@ Instead of doing something other than examining to the elevator control panel:
 
 The elevator drop key is in the elevator room. 
 
-The hammer is in the elevator room. "Lying discarded on a table here is a hammer." The description is "An ordinary claw hammer".
+The hammer is in the elevator room. "Lying discarded on a table here is a hammer." The description is "An ordinary claw hammer."
 
 Chapter 8 - Ground Floor Stairwell
 
@@ -1549,7 +1559,7 @@ The description of the ninth floor stairwell is "this is a secret message."
 
 The description of the ninth floor elevator hall is "The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here." Understand "corridor" as ninth floor elevator hall.
 
-The ninth-floor-stairwell is scenery in the ground floor elevator hall. The printed name is "stairwell". Understand "stairwell/stairs" as the ninth-floor-stairwell. The description is "They lead up and down from here."
+The ninth-floor-stairwell is scenery in the ninth floor elevator hall. The printed name is "stairwell". Understand "stairwell/stairs" as the ninth-floor-stairwell. The description is "They lead up and down from here."
 
 Instead of going to ninth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
@@ -2050,6 +2060,9 @@ After dropping the shrimp tea sandwich when black cat is in the location and the
 	
 Instead of giving the shrimp tea sandwich to the black cat:
 	try dropping the shrimp tea sandwich;
+	
+Instead of showing the shrimp tea sandwich to the black cat:
+	try dropping the shrimp tea sandwich;
 
 	
 Chapter 4 - Martian Chemical Office
@@ -2413,7 +2426,7 @@ the penthouse north has description "This is Thallium's bedroom. Apart from the 
 
 The bed is scenery in the penthouse north. "It's round and huge, and it looks supremely comfortable."
 Instead of entering the bed:
-	say "No time for lying down.";	
+	say text of the block sleeping rule response (A);	
 
 Understand "lie on [something]" as entering.
 
@@ -2784,6 +2797,9 @@ Chapter 4 - The Flyer Pad
 The description of the flyer pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background."
 	
 Chapter 5 - The Water Bottle
+
+Instead of waking Europa:
+	say "Europa moans but otherwise does not respond.";
 
 Instead of giving the bottled water to Europa when the cage is broken:
 	score 1;
@@ -3650,7 +3666,7 @@ insignia	"That's carved into the wall."
 ivory buttons	"It's against the law to possess ivory."
 ladder	"That's attached to the wall."
 large desk	"Let's leave the furniture where it is."	"Jones is not here to rearrange the furniture."
-large relief map of mars	"That's permanently attached, and it's gotta be awful heavy."
+large relief map of Mars	"That's permanently attached, and it's gotta be awful heavy."
 ledge-wall	"Why doesn't Jones take the whole building while she's at it?"	"Silly."
 lobby-background	"Jones can't take the entire lobby!"	"Silly."
 lounge area	"That's ridiculous."
@@ -3658,7 +3674,7 @@ maintenance items	"There are too many to lug around."	"Jones moves the maintenan
 Martian Chemical door	"Whatever for?"	"Aside from opening and closing it, what is there to do?"
 Martian Chemical logo	"That's part of the door."
 metal pillar	"Jones doesn't have the time it would take to detach it from the floor."
-military-detritus	"There's too much of it to take!"	"Jones pokes around in it a bit, but discovers nothing interesting."
+military-detritus	"They're all behind glass."	"Jones pokes around in it a bit, but discovers nothing interesting."
 New Reykjavik Botanic Dome	"Taken.[paragraph break]No, sorry, that's ridiculous."
 niches	"That's part of the building."
 ninth floor elevator door	"If Jones took that, innocent people might fall down the elevator shaft."	"Aside from opening and closing it, what is there to do?"

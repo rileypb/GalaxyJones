@@ -89,30 +89,30 @@ Understand "latch [a locked latched door]" or "unlatch [a locked latched door]" 
 
 Section 5 - Keyless Latching and Unlatching
 
-Check an actor unlocking keylessly a latched door (this is the redirect to latching rule):  
+[Check an actor unlocking keylessly a latched door (this is the redirect to latching rule):  
 	if the noun is unlocked:
 		if the actor is the player:
 			say "[The noun] [are] already unlocked." (A) instead;
 		stop the action; 
-	abide by the latching-redirect rule.
+	abide by the latching-redirect rule.]
 
 
 
-Check an actor locking keylessly a latched door (this is the redirect to unlatching rule):
+[Check an actor locking keylessly a latched door (this is the redirect to unlatching rule):
 	if the noun is locked: 
 		if the actor is the player:
 			say "[The noun] [are] already secure." (A) instead;
 		stop the action; 
-	abide by the latching-redirect rule.
+	abide by the latching-redirect rule.]
 
-This is the latching-redirect rule:
+[This is the latching-redirect rule:
 	let target-latch be a random door-latch which is part of the noun;
 	if the target-latch is a thing:
 		try the person asked turning the target-latch instead;
 	otherwise:
 		if the person asked is the player:
 			say "[regarding the noun]The latch [seem] to be missing from [the noun]." (A);
-		stop the action.
+		stop the action.]
 
 Check an actor locking a latched door with something (this is the can't lock latched doors with keys rule): 
 	if the player is the actor:
@@ -129,14 +129,14 @@ Check an actor unlocking a latched door with something (this is the can't unlock
 		stop the action.
 
 
-Carry out an actor turning a door-latch which is part of something (called the parent door) (this is the carry out turning door-latches rule): 
+[Carry out an actor turning a door-latch which is part of something (called the parent door) (this is the carry out turning door-latches rule): 
 	if the parent door is locked:
 		safely unlock parent door;
 	otherwise:
-		safely lock parent door. 
+		safely lock parent door. ]
 		
-Report an actor turning a door-latch which is part of something (called the parent door) (this is the default report unlatching rule):
-	say "[The actor] [if the parent door is locked][otherwise]un[end if][latch] [the parent door]." (A) instead.
+[Report an actor turning a door-latch which is part of something (called the parent door) (this is the default report unlatching rule):
+	say "[The actor] [if the parent door is locked][otherwise]un[end if][latch] [the parent door]." (A) instead.]
 
 Deluxe Doors ends here.
 

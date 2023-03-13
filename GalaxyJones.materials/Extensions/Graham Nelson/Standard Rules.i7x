@@ -1483,11 +1483,11 @@ Rule for deciding whether all includes a person while dropping or throwing
 	or inserting or putting (this is the exclude people from drop all rule):
 	it does not.
 
-Rule for supplying a missing noun while an actor smelling (this is the ambient odour rule):
-	now the noun is the touchability ceiling of the player.
+[Rule for supplying a missing noun while an actor smelling (this is the ambient odour rule):
+	now the noun is the touchability ceiling of the player.]
 
-Rule for supplying a missing noun while an actor listening (this is the ambient sound rule):
-	now the noun is the touchability ceiling of the player.
+[Rule for supplying a missing noun while an actor listening (this is the ambient sound rule):
+	now the noun is the touchability ceiling of the player.]
 
 Rule for supplying a missing noun while an actor going (this is the block vaguely going rule):
 	say "You'll have to say which compass direction to go in." (A).
@@ -2935,7 +2935,7 @@ Report an actor searching (this is the report other people searching rule):
 	if the actor is not the player:
 		say "[The actor] [search] [the noun]." (A).
 
-Consulting it about is an action applying to one thing and one topic.
+[Consulting it about is an action applying to one thing and one topic.
 The consulting it about action translates into I6 as "Consult".
 
 The specification of the consulting it about action is "Consulting is a very
@@ -2953,7 +2953,7 @@ Report an actor consulting something about (this is the block consulting rule):
 	if the actor is the player:
 		say "[We] [discover] nothing of interest in [the noun]." (A);
 	otherwise:
-		say "[The actor] [look] at [the noun]." (B);
+		say "[The actor] [look] at [the noun]." (B);]
 
 Section SR4/5 - Standard actions which change the state of things
 
@@ -3091,7 +3091,7 @@ Report an actor unlocking something with (this is the standard report unlocking 
 		if the actor is visible:
 			say "[The actor] [unlock] [the noun]." (B);
 
-Switching on is an action applying to one thing.
+[Switching on is an action applying to one thing.
 The switching on action translates into I6 as "SwitchOn".
 
 The specification of the switching on action is "The switching on and switching
@@ -3151,7 +3151,7 @@ Carry out an actor switching off (this is the standard switching off rule):
 
 Report an actor switching off (this is the standard report switching off rule):
 	if the action is not silent:
-		say "[The actor] [switch] [the noun] off." (A).
+		say "[The actor] [switch] [the noun] off." (A).]
 
 Opening is an action applying to one thing.
 The opening action translates into I6 as "Open".
@@ -3534,7 +3534,7 @@ Check an actor attacking (this is the block attacking rule):
 		say "Violence [aren't] the answer to this one." (A);
 	stop the action.
 
-Kissing is an action applying to one thing.
+[Kissing is an action applying to one thing.
 The kissing action translates into I6 as "Kiss".
 
 The specification of the kissing action is "Possibly because Inform was
@@ -3552,7 +3552,7 @@ Check an actor kissing (this is the kissing yourself rule):
 Check an actor kissing (this is the block kissing rule):
 	if the actor is the player:
 		say "[The noun] [might not] like that." (A);
-	stop the action.
+	stop the action.]
 
 Answering it that is an action applying to one visible thing and one topic.
 The answering it that action translates into I6 as "Answer".
@@ -3841,7 +3841,7 @@ Report an actor pushing something (this is the report pushing rule):
 	otherwise:
 		say "[The actor] [push] [the noun]." (B).
 
-Turning is an action applying to one thing.
+[Turning is an action applying to one thing.
 The Turning action translates into I6 as "Turn".
 
 The specification of the turning action is "Turning is the act of rotating
@@ -3922,9 +3922,9 @@ Check an actor pushing something to (this is the standard pushing in directions 
 Check an actor pushing something to (this is the block pushing in directions rule):
 	if the actor is the player:
 		say "[The noun] [cannot] be pushed from place to place." (A);
-	stop the action.
+	stop the action.]
 
-Squeezing is an action applying to one thing.
+[Squeezing is an action applying to one thing.
 The Squeezing action translates into I6 as "Squeeze".
 
 The specification of the squeezing action is "Squeezing is an action which
@@ -3948,11 +3948,11 @@ Report an actor squeezing (this is the report squeezing rule):
 		if the action is not silent:
 			say "[We] [achieve] nothing by this." (A);
 	otherwise:
-		say "[The actor] [squeeze] [the noun]." (B).
+		say "[The actor] [squeeze] [the noun]." (B).]
 
 Section SR4/8 - Standard actions which always do nothing unless rules intervene
 
-Saying yes is an action applying to nothing.
+[Saying yes is an action applying to nothing.
 The Saying yes action translates into I6 as "Yes".
 
 The specification of the saying yes action is
@@ -4073,9 +4073,9 @@ Report an actor tasting (this is the report tasting rule):
 		if the action is not silent:
 			say "[We] [taste] nothing unexpected." (A);
 	otherwise:
-		say "[The actor] [taste] [the noun]." (B).
+		say "[The actor] [taste] [the noun]." (B).]
 
-Cutting is an action applying to one thing.
+[Cutting is an action applying to one thing.
 The Cutting action translates into I6 as "Cut".
 
 The specification of the cutting action is
@@ -4089,7 +4089,7 @@ with some further check rules.)"
 Check an actor cutting (this is the block cutting rule):
 	if the actor is the player:
 		say "Cutting [regarding the noun][them] up [would achieve] little." (A);
-	stop the action.
+	stop the action.]
 
 Jumping is an action applying to nothing.
 The Jumping action translates into I6 as "Jump".
@@ -4138,7 +4138,7 @@ Check an actor drinking (this is the block drinking rule):
 		say "[There's] nothing suitable to drink here." (A);
 	stop the action.
 
-Saying sorry is an action applying to nothing.
+[Saying sorry is an action applying to nothing.
 The Saying sorry action translates into I6 as "Sorry".
 
 The specification of the saying sorry action is
@@ -4190,9 +4190,9 @@ Report an actor rubbing (this is the report rubbing rule):
 		if the action is not silent:
 			say "[We] [rub] [the noun]." (A);
 	otherwise:
-		say "[The actor] [rub] [the noun]." (B).
+		say "[The actor] [rub] [the noun]." (B).]
 
-Setting it to is an action applying to one thing and one topic.
+[Setting it to is an action applying to one thing and one topic.
 The Setting it to action translates into I6 as "SetTo".
 
 The specification of the setting it to action is
@@ -4206,9 +4206,9 @@ with some further check rules.)"
 Check an actor setting something to (this is the block setting it to rule):
 	if the actor is the player:
 		say "No, [we] [can't set] [regarding the noun][those] to anything." (A);
-	stop the action.
+	stop the action.]
 
-Waving hands is an action applying to nothing.
+[Waving hands is an action applying to nothing.
 The Waving hands action translates into I6 as "WaveHands".
 
 The specification of the waving hands action is
@@ -4220,7 +4220,7 @@ Report an actor waving hands (this is the report waving hands rule):
 		if the action is not silent:
 			say "[We] [wave]." (A);
 	otherwise:
-		say "[The actor] [wave]." (B).
+		say "[The actor] [wave]." (B).]
 
 Buying is an action applying to one thing.
 The Buying action translates into I6 as "Buy".
@@ -4502,10 +4502,10 @@ Understand "look at [something]" as examining.
 Understand "look [something]" as examining.
 Understand "look inside/in/into/through [something]" as searching.
 Understand "look under [something]" as looking under.
-Understand "look up [text] in [something]" as consulting it about (with nouns reversed).
+[Understand "look up [text] in [something]" as consulting it about (with nouns reversed).]
 Understand the command "l" as "look".
 
-Understand "consult [something] on/about [text]" as consulting it about.
+[Understand "consult [something] on/about [text]" as consulting it about.]
 
 Understand "open [something]" as opening.
 Understand "open [something] with [something preferably held]" as unlocking it with.
@@ -4513,7 +4513,7 @@ Understand the commands "unwrap", "uncover" as "open".
 
 Understand "close [something]" as closing.
 Understand "close up [something]" as closing.
-Understand "close off [something]" as switching off.
+[Understand "close off [something]" as switching off.]
 Understand the commands "shut" and "cover" as "close".
 
 Understand "enter" as entering.
@@ -4530,41 +4530,41 @@ Understand "examine [something]" as examining.
 Understand the commands "x", "watch", "describe" and "check" as "examine".
 
 Understand "read [something]" as examining.
-Understand "read about [text] in [something]" as consulting it about (with nouns reversed).
-Understand "read [text] in [something]" as consulting it about (with nouns reversed).
+[Understand "read about [text] in [something]" as consulting it about (with nouns reversed).]
+[Understand "read [text] in [something]" as consulting it about (with nouns reversed).]
 
-Understand "yes" as saying yes.
-Understand the command "y" as "yes".
+[Understand "yes" as saying yes.]
+[Understand the command "y" as "yes".]
 
-Understand "no" as saying no.
+[Understand "no" as saying no.]
 
-Understand "sorry" as saying sorry.
+[Understand "sorry" as saying sorry.]
 
 Understand "search [something]" as searching.
 
-Understand "wave" as waving hands.
+[Understand "wave" as waving hands.]
 
 Understand "wave [something]" as waving.
 
-Understand "set [something] to [text]" as setting it to.
-Understand the command "adjust" as "set".
+[Understand "set [something] to [text]" as setting it to.]
+[Understand the command "adjust" as "set".]
 
 Understand "pull [something]" as pulling.
 Understand the command "drag" as "pull".
 
 Understand "push [something]" as pushing.
-Understand "push [something] [direction]" or "push [something] to [direction]" as pushing it to.
+[Understand "push [something] [direction]" or "push [something] to [direction]" as pushing it to.]
 Understand the commands "move", "shift", "clear" and "press" as "push".
 
-Understand "turn [something]" as turning.
-Understand "turn [something] on" or "turn on [something]" as switching on.
-Understand "turn [something] off" or "turn off [something]" as switching off.
-Understand the commands "rotate", "twist", "unscrew" and "screw" as "turn".
+[Understand "turn [something]" as turning.]
+[Understand "turn [something] on" or "turn on [something]" as switching on.]
+[Understand "turn [something] off" or "turn off [something]" as switching off.]
+[Understand the commands "rotate", "twist", "unscrew" and "screw" as "turn".]
 
-Understand "switch [something switched on]" as switching off.
-Understand "switch [something]" or "switch on [something]" or "switch [something] on" as
-	switching on.
-Understand "switch [something] off" or "switch off [something]" as switching off.
+[Understand "switch [something switched on]" as switching off.]
+[Understand "switch [something]" or "switch on [something]" or "switch [something] on" as
+	switching on.]
+[Understand "switch [something] off" or "switch off [something]" as switching off.]
 
 Understand "lock [something] with [something preferably held]" as locking it with.
 
@@ -4596,47 +4596,47 @@ Understand the command "scale" as "climb".
 Understand "buy [something]" as buying.
 Understand the command "purchase" as "buy".
 
-Understand "squeeze [something]" as squeezing.
-Understand the command "squash" as "squeeze".
+[Understand "squeeze [something]" as squeezing.]
+[Understand the command "squash" as "squeeze".]
 
-Understand "swing [something]" or "swing on [something]" as swinging.
+[Understand "swing [something]" or "swing on [something]" as swinging.]
 
-Understand "wake" or "wake up" as waking up.
+[Understand "wake" or "wake up" as waking up.]
 Understand "wake [someone]" or "wake [someone] up" or "wake up [someone]" as waking.
 Understand the commands "awake" and "awaken" as "wake".
 
-Understand "kiss [someone]" as kissing.
-Understand the commands "embrace" and "hug" as "kiss".
+[Understand "kiss [someone]" as kissing.]
+[Understand the commands "embrace" and "hug" as "kiss".]
 
-Understand "think" as thinking.
+[Understand "think" as thinking.]
 
-Understand "smell" as smelling.
-Understand "smell [something]" as smelling.
-Understand the command "sniff" as "smell".
+[Understand "smell" as smelling.]
+[Understand "smell [something]" as smelling.]
+[Understand the command "sniff" as "smell".]
 
-Understand "listen" as listening to.
-Understand "hear [something]" as listening to.
-Understand "listen to [something]" as listening to.
+[Understand "listen" as listening to.]
+[Understand "hear [something]" as listening to.]
+[Understand "listen to [something]" as listening to.]
 
-Understand "taste [something]" as tasting.
+[Understand "taste [something]" as tasting.]
 
 Understand "touch [something]" as touching.
 Understand the command "feel" as "touch".
 
-Understand "rub [something]" as rubbing.
-Understand the commands "shine", "polish", "sweep", "clean", "dust", "wipe" and "scrub" as "rub".
+[Understand "rub [something]" as rubbing.]
+[Understand the commands "shine", "polish", "sweep", "clean", "dust", "wipe" and "scrub" as "rub".]
 
 Understand "tie [something] to [something]" as tying it to.
 Understand the commands "attach" and "fasten" as "tie".
 
-Understand "burn [something]" as burning.
-Understand the command "light" as "burn".
+[Understand "burn [something]" as burning.]
+[Understand the command "light" as "burn".]
 
 Understand "drink [something]" as drinking.
 Understand the commands "swallow" and "sip" as "drink".
 
-Understand "cut [something]" as cutting.
-Understand the commands "slice", "prune" and "chop" as "cut".
+[Understand "cut [something]" as cutting.]
+[Understand the commands "slice", "prune" and "chop" as "cut".]
 
 Understand "jump" as jumping.
 Understand the commands "skip" and "hop" as "jump".
