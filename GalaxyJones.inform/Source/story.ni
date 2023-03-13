@@ -185,6 +185,12 @@ Check informing Beck about something:
 
 Check telling Beck about something:
 	say "Don't worry, Galaxy Jones will tell Beck what he needs to know." instead;
+	
+Check informing Europa about something when the cage is broken:
+	say "She's too out of it to respond." instead;
+	
+Check telling Europa about something when the cage is broken:
+	say "She's too out of it to respond." instead;
  
 Check informing someone about something:
 	now current interlocutor is beck;
@@ -206,17 +212,23 @@ Check asking someone that is not beck about something:
 	now current interlocutor is beck;
 	say "They're not likely to be helpful." instead;
 	
+Check asking Europa about something when the cage is broken:
+	say "She's too out of it to respond." instead;
+	
 Check quizzing someone that is not beck about something:
 	now current interlocutor is beck;
 	say "They're not likely to be helpful." instead;
+	
+Check quizzing Europa about something when the cage is broken:
+	say "She's too out of it to respond." instead;
 	
 Check saying hello to someone when the noun is not beck and the noun is not europa and the noun is not the cat:
 	now current interlocutor is beck;
 	say "They're not likely to be helpful." instead;
 	
-Check saying hello to Europa:
+Check saying hello to Europa when the cage is intact:
 	now current interlocutor is beck;
-	say "She's too out of it to respond." instead;
+	say "She's too out of it to respond." instead;	
 	
 Check searching a door:
 	say "Jones will have to go through the door to see what's inside." instead;
@@ -227,6 +239,12 @@ Before examining something:
 	
 Instead of showing something to Beck:
 	try quizzing Beck about the noun;
+	
+Instead of showing something to Europa:
+	say "She doesn't seem to notice.";
+	
+Instead of showing bottled water to Europa:
+	try giving the bottled water to Europa;
 	
 Book 4 - Does the player mean
 
@@ -2751,15 +2769,18 @@ Thallium ultimatum is a scene.
 Thallium ultimatum begins when Thallium alight ends.
 
 At the time when thallium screams one last time:
-	converse as thallium "Thallium: 'Here I go, Jones! Here I go! I'm really leaving this time! Jones! Are you listening? I'm going!'"
+	if the cage is intact:
+		converse as thallium "Thallium: 'Here I go, Jones! Here I go! I'm really leaving this time! Jones! Are you listening? I'm going!'"
 
 At the time when thallium screams again:
-	converse as thallium "Thallium: 'Jones! In a moment I shall leave you to be slaughtered by my minions!'";
-	thallium screams one last time in 5 turns from now;
+	if the cage is intact:
+		converse as thallium "Thallium: 'Jones! In a moment I shall leave you to be slaughtered by my minions!'";
+		thallium screams one last time in 5 turns from now;
 
 At the time when thallium screams:
-	converse as thallium "Thallium's flyer is circling you not too far away. 'Give up, Jones! You'll never get through my silnium bars, haha!'";
-	thallium screams again in 4 turns from now;
+	if the cage is intact:
+		converse as thallium "Thallium's flyer is circling you not too far away. 'Give up, Jones! You'll never get through my silnium bars, haha!'";
+		thallium screams again in 4 turns from now;
 
 When Thallium ultimatum begins:
 	converse as thallium "Thallium's flyer hovers over the rooftop. 'Jones!'  he bellows. 'Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.'
