@@ -103,7 +103,7 @@ This is the show us the people rule:
 	Let segments be a list of texts;
 	let movement segments be a list of texts;
 	Let lazy people be a list of people;
-	Repeat with P running through unmentioned active people who are not the player:
+	Repeat with P running through active people who are not the player:
 		If the notable action of P is doing nothing:
 			add P to lazy people;
 		otherwise if the action name part of the notable action of P is going action:
@@ -135,6 +135,9 @@ This is the show us the people rule:
 		Repeat with AR running through the list of rooms which are farseen by the location:
 			let X be the list of people who are in AR;
 			add X to remote people;
+			repeat with XX running through X:
+				now XX is seen;
+				now XX is familiar;
 			remove not lazy from X;
 			if X is not empty:
 				let D be best route from the location to AR;
@@ -171,19 +174,19 @@ After actor doing something when the actor is not in location:
 		stop;
 	continue the action;
 	
-Before doing something (this is the check object is interactible rule):	
-	if the action requires a touchable noun and the noun is listed in remote people:
+Before doing something to the mauve guard robot (this is the check object is interactible rule):
+	if the action requires a touchable noun and the noun is the mauve guard robot:
 		say "[We] can't reach [the noun].";
 		stop the action;
-	if the action requires a touchable second noun and the second noun is listed in remote people:
+	if the action requires a touchable second noun and the second noun is the mauve guard robot:
 		say "[We] can't reach [the second noun].";
 		stop the action;
-	if the action requires light and the noun is listed in remote people:
+[	if the action requires light and the noun is listed in remote people:
 		say "[The noun] is too far away to do that.";
 		stop the action;
 	if the action requires light and the second noun is listed in remote people:
 		say "[The second noun] is too far away to do that.";
-		stop the action;		
+		stop the action;	]	
 		
 The show us the people rule is listed last in the turn sequence rules.
 

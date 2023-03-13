@@ -58,118 +58,29 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16543"></child>
-            <child nodeId="node-17292"></child>
-            <child nodeId="node-16807"></child>
-            <child nodeId="node-16813"></child>
-            <child nodeId="node-17198"></child>
-            <child nodeId="node-16554"></child>
-            <child nodeId="node-17257"></child>
-            <child nodeId="node-17259"></child>
-            <child nodeId="node-17369"></child>
-            <child nodeId="node-17396"></child>
-            <child nodeId="node-17555"></child>
-            <child nodeId="node-17389"></child>
-            <child nodeId="node-17192"></child>
-            <child nodeId="node-17214"></child>
-            <child nodeId="node-17248"></child>
-            <child nodeId="node-17217"></child>
-            <child nodeId="node-17268"></child>
-            <child nodeId="node-16776"></child>
-            <child nodeId="node-17322"></child>
-            <child nodeId="node-17697"></child>
-            <child nodeId="node-17667"></child>
-            <child nodeId="node-17696"></child>
+        <children><child nodeId="node-19524"></child>
+            <child nodeId="node-19523"></child>
+            <child nodeId="node-19032"></child>
         </children>
     </item>
-    <item nodeId="node-17696">
-        <command xml:space="preserve">show speeder to beck</command>
-        <result xml:space="preserve">(first taking the speeder)
-Stop being silly.
+    <item nodeId="node-19032">
+        <command xml:space="preserve">test air</command>
+        <result xml:space="preserve">(Testing.)
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17667">
-        <command xml:space="preserve">show pistol to beck</command>
-        <result xml:space="preserve">
-Beck: "Uh, you know what that's for, right?"
+&gt;[1] test ledge
+(Testing.)
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17692"></child>
-        </children>
-    </item>
-    <item nodeId="node-17692">
-        <command xml:space="preserve">show speeder to beck</command>
-        <result xml:space="preserve">(first taking the speeder)
-Stop being silly.
+&gt;[2] test mgmt
+(Testing.)
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17693"></child>
-        </children>
-    </item>
-    <item nodeId="node-17693">
-        <command xml:space="preserve">drop pistol</command>
-        <result xml:space="preserve">That would be ill-advised.
+&gt;[3] test ninth
+(Testing.)
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17694"></child>
-        </children>
-    </item>
-    <item nodeId="node-17694">
-        <command xml:space="preserve">actions</command>
-        <result xml:space="preserve">Actions listing on.
+&gt;[4] test elevator
+(Testing.)
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17695"></child>
-        </children>
-    </item>
-    <item nodeId="node-17695">
-        <command xml:space="preserve">show speeder to beck</command>
-        <result xml:space="preserve">[showing the speeder to Beck]
-(first taking the speeder)
-[(1) taking the speeder - silently]
-Stop being silly.
-[(1) taking the speeder - silently - failed the Check taking the speeder-vehicle]
-
-[showing the speeder to Beck - failed the carrying requirements rule]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17697">
-        <command xml:space="preserve">show building to beck</command>
-        <result xml:space="preserve">(first taking the building entryway)
-Not gonna happen.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17322">
-        <command xml:space="preserve">purloin elevator drop key</command>
-        <result xml:space="preserve">Which do you mean, the elevator drop key or the drop key hole?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17323"></child>
-        </children>
-    </item>
-    <item nodeId="node-17323">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">I only understood you as far as wanting to purloin north.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17324"></child>
-        </children>
-    </item>
-    <item nodeId="node-17324">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+&gt;[5] n
+Jones approaches the Viking Building entryway, the dramatic façade towering over her.
 
 Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
 
@@ -177,133 +88,8 @@ Jones peers upwards at the 100 stories of glass and steel. "What do you want to 
 
 Beck: "Oh, no doubt."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17325"></child>
-        </children>
-    </item>
-    <item nodeId="node-17325">
-        <command xml:space="preserve">gonear waterfall</command>
-        <result xml:space="preserve">Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17326"></child>
-        </children>
-    </item>
-    <item nodeId="node-17326">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17327"></child>
-        </children>
-    </item>
-    <item nodeId="node-17327">
-        <command xml:space="preserve">purloin red cardkey</command>
-        <result xml:space="preserve">[Purloined.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17328"></child>
-        </children>
-    </item>
-    <item nodeId="node-17328">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">(first opening the utility door)
-(first unlocking the utility door)
-(with the red cardkey)
-
-Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
-
-Hanging from a hook here is an elevator drop key.
-
-Lying discarded on a table here is a hammer.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17329"></child>
-        </children>
-    </item>
-    <item nodeId="node-17329">
-        <command xml:space="preserve">take key</command>
-        <result xml:space="preserve">(the elevator drop key)
-Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17330"></child>
-        </children>
-    </item>
-    <item nodeId="node-17330">
-        <command xml:space="preserve">a key</command>
-        <result xml:space="preserve">Which do you mean, the elevator drop key or the red cardkey?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17331"></child>
-        </children>
-    </item>
-    <item nodeId="node-17331">
-        <command xml:space="preserve">drop key</command>
-        <result xml:space="preserve">Which do you mean, the elevator drop key or the red cardkey?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17332"></child>
-        </children>
-    </item>
-    <item nodeId="node-17332">
-        <command xml:space="preserve">a drop key</command>
-        <result xml:space="preserve">
-Beck: "I'm not sure what that is."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17333"></child>
-        </children>
-    </item>
-    <item nodeId="node-17333">
-        <command xml:space="preserve">x it</command>
-        <result xml:space="preserve">A drop key is a special device used to open an elevator door from the outside. It consists of a thin shaft which is hinged at th-- oh just Google it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17334"></child>
-        </children>
-    </item>
-    <item nodeId="node-17334">
-        <command xml:space="preserve">a drop key</command>
-        <result xml:space="preserve">
-Beck: "Huh. You learn something every day."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-16776">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
-
-Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
-
-Beck: "Oh, no doubt."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17291"></child>
-            <child nodeId="node-17252"></child>
-            <child nodeId="node-17313"></child>
-            <child nodeId="node-17308"></child>
-            <child nodeId="node-16777"></child>
-        </children>
-    </item>
-    <item nodeId="node-16777">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
+&gt;[6] n
+Jones takes a deep breath. "I'm going in."
 
 Beck replies, "You got this, Galaxy."
 
@@ -317,15 +103,11 @@ Jones shouts, "I'm under fire from two ugly robot things!"
 
 Beck responds, "Monitoring your suit radar."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17172"></child>
-            <child nodeId="node-16778"></child>
-        </children>
-    </item>
-    <item nodeId="node-16778">
-        <command xml:space="preserve">shoot art</command>
-        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+&gt;[7] z
+Jones stands around and waits.
+
+&gt;[8] shoot art
+Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
  _________      __                     _____                     
  __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
  _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
@@ -339,599 +121,30 @@ Beck: "What was that crash? What's going on?"
 
 Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17164"></child>
-            <child nodeId="node-16839"></child>
-        </children>
-    </item>
-    <item nodeId="node-16839">
-        <command xml:space="preserve">x pillar</command>
-        <result xml:space="preserve">The central area where the elevators and utility rooms are.
+&gt;[9] x art
+Jones digs through the ruins and finds a cable with hooks at either end, which she takes.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16840"></child>
-        </children>
-    </item>
-    <item nodeId="node-16840">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16841"></child>
-        </children>
-    </item>
-    <item nodeId="node-16841">
-        <command xml:space="preserve">x rooms</command>
-        <result xml:space="preserve">You can't use multiple objects with that verb.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16842"></child>
-        </children>
-    </item>
-    <item nodeId="node-16842">
-        <command xml:space="preserve">x room</command>
-        <result xml:space="preserve">The utility rooms are somewhere around the central pillar.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16843"></child>
-        </children>
-    </item>
-    <item nodeId="node-16843">
-        <command xml:space="preserve">x utility room</command>
-        <result xml:space="preserve">The utility rooms are somewhere around the central pillar.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16844"></child>
-        </children>
-    </item>
-    <item nodeId="node-16844">
-        <command xml:space="preserve">sw</command>
-        <result xml:space="preserve">Jones can go south out of the building or north to the elevator. The ground floor continues east and west.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16845"></child>
-        </children>
-    </item>
-    <item nodeId="node-16845">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">Jones crosses the floor carefully, disruptor pistol at the ready.
-
-Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16846"></child>
-        </children>
-    </item>
-    <item nodeId="node-16846">
-        <command xml:space="preserve">x pillar</command>
-        <result xml:space="preserve">The central area where the elevators and utility rooms are.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16847"></child>
-        </children>
-    </item>
-    <item nodeId="node-16847">
-        <command xml:space="preserve">x elevators</command>
-        <result xml:space="preserve">They're in the center of the building.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16848"></child>
-        </children>
-    </item>
-    <item nodeId="node-16848">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16849"></child>
-        </children>
-    </item>
-    <item nodeId="node-16849">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">(first opening the utility door)
-(first unlocking the utility door)
-Jones lacks a key that fits the utility door.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16850"></child>
-        </children>
-    </item>
-    <item nodeId="node-16850">
-        <command xml:space="preserve">x pillar</command>
-        <result xml:space="preserve">The central area where the elevators and utility rooms are.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16851"></child>
-        </children>
-    </item>
-    <item nodeId="node-16851">
-        <command xml:space="preserve">x rooms</command>
-        <result xml:space="preserve">The utility rooms are somewhere around the central pillar.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16852"></child>
-        </children>
-    </item>
-    <item nodeId="node-16852">
-        <command xml:space="preserve">x glass wall</command>
-        <result xml:space="preserve">Outside the building are the red-dusted streets of New Reykjavik.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16853"></child>
-        </children>
-    </item>
-    <item nodeId="node-16853">
-        <command xml:space="preserve">x chandeliers</command>
-        <result xml:space="preserve">A baroque conglomeration of gold, silver, and crystal.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16872"></child>
-        </children>
-    </item>
-    <item nodeId="node-16872">
-        <command xml:space="preserve">x struts</command>
-        <result xml:space="preserve">Thin but incredibly strong.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16892"></child>
-        </children>
-    </item>
-    <item nodeId="node-16892">
-        <command xml:space="preserve">x supports</command>
-        <result xml:space="preserve">Thin but incredibly strong.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16913"></child>
-        </children>
-    </item>
-    <item nodeId="node-16913">
-        <command xml:space="preserve">x pyramids</command>
-        <result xml:space="preserve">Angled reflective surfaces on the ceiling meant to disperse light.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16935"></child>
-        </children>
-    </item>
-    <item nodeId="node-16935">
-        <command xml:space="preserve">take elevators</command>
-        <result xml:space="preserve">I mean, Jones can take the elevator, but not in the way you mean.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16936"></child>
-        </children>
-    </item>
-    <item nodeId="node-16936">
-        <command xml:space="preserve">take pyramids</command>
-        <result xml:space="preserve">Jones can't take that.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16937"></child>
-        </children>
-    </item>
-    <item nodeId="node-16937">
-        <command xml:space="preserve">move it</command>
-        <result xml:space="preserve">Jones can't move that.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16938"></child>
-        </children>
-    </item>
-    <item nodeId="node-16938">
-        <command xml:space="preserve">move elevators</command>
-        <result xml:space="preserve">Usually one moves an elevator by pressing a button.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16964"></child>
-        </children>
-    </item>
-    <item nodeId="node-16964">
-        <command xml:space="preserve">drink</command>
-        <result xml:space="preserve">(Jones)
-There's nothing suitable to drink here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16965"></child>
-        </children>
-    </item>
-    <item nodeId="node-16965">
-        <command xml:space="preserve">drink water</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16966"></child>
-        </children>
-    </item>
-    <item nodeId="node-16966">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17016"></child>
-        </children>
-    </item>
-    <item nodeId="node-17016">
-        <command xml:space="preserve">drubj</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17017"></child>
-        </children>
-    </item>
-    <item nodeId="node-17017">
-        <command xml:space="preserve">drink</command>
-        <result xml:space="preserve">(the waterfall)
-Jones decides the water probably isn't clean enough to drink.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17018"></child>
-        </children>
-    </item>
-    <item nodeId="node-17018">
-        <command xml:space="preserve">drink water</command>
-        <result xml:space="preserve">Jones decides the water probably isn't clean enough to drink.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17081"></child>
-            <child nodeId="node-17155"></child>
-        </children>
-    </item>
-    <item nodeId="node-17155">
-        <command xml:space="preserve">take all</command>
-        <result xml:space="preserve">I'm not sure what you're referring to.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17156"></child>
-        </children>
-    </item>
-    <item nodeId="node-17156">
-        <command xml:space="preserve">x water</command>
-        <result xml:space="preserve">The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin.
-
-Jones: "One coin? Not very generous people around here."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17157"></child>
-        </children>
-    </item>
-    <item nodeId="node-17157">
-        <command xml:space="preserve">take coin</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17158"></child>
-        </children>
-    </item>
-    <item nodeId="node-17158">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Galaxy Jones is at the southwest corner of the ground floor.
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17159"></child>
-        </children>
-    </item>
-    <item nodeId="node-17159">
-        <command xml:space="preserve">take all</command>
-        <result xml:space="preserve">I'm not sure what you're referring to.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17160"></child>
-        </children>
-    </item>
-    <item nodeId="node-17160">
-        <command xml:space="preserve">take coin</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17081">
-        <command xml:space="preserve">put gun in water</command>
-        <result xml:space="preserve">The waterfall is closed.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17082"></child>
-        </children>
-    </item>
-    <item nodeId="node-17082">
-        <command xml:space="preserve">x waterfall</command>
-        <result xml:space="preserve">The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin.
-
-Jones: "One coin? Not very generous people around here."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17083"></child>
-        </children>
-    </item>
-    <item nodeId="node-17083">
-        <command xml:space="preserve">put gun in water</command>
-        <result xml:space="preserve">Jones puts the disruptor pistol into the waterfall.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17084"></child>
-        </children>
-    </item>
-    <item nodeId="node-17084">
-        <command xml:space="preserve">take coin</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17085"></child>
-        </children>
-    </item>
-    <item nodeId="node-17085">
-        <command xml:space="preserve">take all</command>
-        <result xml:space="preserve">disruptor pistol: Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17086"></child>
-        </children>
-    </item>
-    <item nodeId="node-17086">
-        <command xml:space="preserve">x waterfall</command>
-        <result xml:space="preserve">The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17087"></child>
-        </children>
-    </item>
-    <item nodeId="node-17087">
-        <command xml:space="preserve">look in waterfall</command>
-        <result xml:space="preserve">The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17088"></child>
-        </children>
-    </item>
-    <item nodeId="node-17088">
-        <command xml:space="preserve">search it</command>
-        <result xml:space="preserve">The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17089"></child>
-        </children>
-    </item>
-    <item nodeId="node-17089">
-        <command xml:space="preserve">put gun in waterfall</command>
-        <result xml:space="preserve">Jones puts the disruptor pistol into the waterfall.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17090"></child>
-        </children>
-    </item>
-    <item nodeId="node-17090">
-        <command xml:space="preserve">search it</command>
-        <result xml:space="preserve">Jones finds nothing of interest.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17091"></child>
-        </children>
-    </item>
-    <item nodeId="node-17091">
-        <command xml:space="preserve">look in waterfall</command>
-        <result xml:space="preserve">The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17092"></child>
-        </children>
-    </item>
-    <item nodeId="node-17092">
-        <command xml:space="preserve">take coin</command>
-        <result xml:space="preserve">Jones already has that.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17164">
-        <command xml:space="preserve">read note</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17165"></child>
-        </children>
-    </item>
-    <item nodeId="node-17165">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">There's not much on the desk other than a note that says "0".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17166"></child>
-        </children>
-    </item>
-    <item nodeId="node-17166">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Jones crosses the floor carefully, disruptor pistol at the ready.
+&gt;[10] e
+Jones crosses the floor carefully, disruptor pistol at the ready.
 
 Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
 
 Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17167"></child>
-        </children>
-    </item>
-    <item nodeId="node-17167">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
+&gt;[11] n
+
 Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
 
 Beck: "Blueprints indicate a closet to the west of you. Might be useful."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17168"></child>
-        </children>
-    </item>
-    <item nodeId="node-17168">
-        <command xml:space="preserve">0</command>
-        <result xml:space="preserve">An indicator light glows green.
-
-Jones: "I've unlocked the east side utility door."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17169"></child>
-        </children>
-    </item>
-    <item nodeId="node-17169">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the closet door)
-
-Galaxy Jones is in the maintenance closet. A bare, white-walled room containing various maintenance items.
-
-There is an Atmo-Suit hanging from a hook here.
-
-On the shelf is a red cardkey.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17172">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
-
-Beck replies, "You got this, Galaxy."
-
-Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
-
-Suddenly two robot guards, green and red, emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring your suit radar."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17173"></child>
-        </children>
-    </item>
-    <item nodeId="node-17173">
-        <command xml:space="preserve">shoot art</command>
-        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-Beck: "What was that crash? What's going on?"
-
-Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17183"></child>
-            <child nodeId="node-17174"></child>
-        </children>
-    </item>
-    <item nodeId="node-17174">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">There's not much on the desk other than a note that says "37914".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17175"></child>
-        </children>
-    </item>
-    <item nodeId="node-17175">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Jones crosses the floor carefully, disruptor pistol at the ready.
-
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
-
-Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17176"></child>
-        </children>
-    </item>
-    <item nodeId="node-17176">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-Beck: "Blueprints indicate a closet to the west of you. Might be useful."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17177"></child>
-        </children>
-    </item>
-    <item nodeId="node-17177">
-        <command xml:space="preserve">type 37914</command>
-        <result xml:space="preserve">(on the keypad)
+&gt;[12] type 0
+(on the keypad)
 An indicator light glows green.
 
 Jones: "I've unlocked the east side utility door."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17178"></child>
-        </children>
-    </item>
-    <item nodeId="node-17178">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the closet door)
+&gt;[13] w
+(first opening the closet door)
 
 Galaxy Jones is in the maintenance closet. A bare, white-walled room containing various maintenance items.
 
@@ -939,1906 +152,119 @@ There is an Atmo-Suit hanging from a hook here.
 
 On the shelf is a red cardkey.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17183">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Jones crosses the floor carefully, disruptor pistol at the ready.
+&gt;[14] take all
+Atmo-Suit: Taken.
+red cardkey: Taken.
 
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
+&gt;[15] e
 
-Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17184"></child>
-        </children>
-    </item>
-    <item nodeId="node-17184">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
-
-Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17185"></child>
-        </children>
-    </item>
-    <item nodeId="node-17185">
-        <command xml:space="preserve">read note</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17186"></child>
-        </children>
-    </item>
-    <item nodeId="node-17186">
-        <command xml:space="preserve">x desk</command>
-        <result xml:space="preserve">There's not much on the desk other than a note that says "94556".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17187"></child>
-        </children>
-    </item>
-    <item nodeId="node-17187">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17188"></child>
-        </children>
-    </item>
-    <item nodeId="node-17188">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
 Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
 
-Beck: "Blueprints indicate a closet to the west of you. Might be useful."
+&gt;[16] x table
+The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17189"></child>
-        </children>
-    </item>
-    <item nodeId="node-17189">
-        <command xml:space="preserve">94556</command>
-        <result xml:space="preserve">An indicator light glows green.
+Jones: "What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?"
 
-Jones: "I've unlocked the east side utility door."
+Beck: "Oh, the shrimp. Definitely get the shrimp."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17190"></child>
-        </children>
-    </item>
-    <item nodeId="node-17190">
-        <command xml:space="preserve">2456</command>
-        <result xml:space="preserve">An indicator light blinks red.
+&gt;[17] take all
+fork: Taken.
+shrimp tea sandwich: Taken.
+poached ostrich eggs in jelly: Don't even.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17191"></child>
-        </children>
-    </item>
-    <item nodeId="node-17191">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">A typical white metal utility door. Next to it is a keypad with the digits 0-9. An indicator light glows green.
+&gt;[18] n
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17308">
-        <command xml:space="preserve">look u</command>
-        <result xml:space="preserve">Jones sees nothing unexpected in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17309"></child>
-        </children>
-    </item>
-    <item nodeId="node-17309">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
-
-Beck replies, "You got this, Galaxy."
-
-Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
-
-Suddenly two robot guards, green and red, emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring your suit radar."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17310"></child>
-        </children>
-    </item>
-    <item nodeId="node-17310">
-        <command xml:space="preserve">look up</command>
-        <result xml:space="preserve">Jones sees nothing unexpected in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17311"></child>
-        </children>
-    </item>
-    <item nodeId="node-17311">
-        <command xml:space="preserve">x ceiling</command>
-        <result xml:space="preserve">The whole ground floor is bright and airy, its ceiling covered with reflective pyramids. Supporting struts criss-cross the area, from which sparkling crystal chandeliers are suspended.
-
-One of the robots fires directly above Jones's head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17313">
-        <command xml:space="preserve">look d</command>
-        <result xml:space="preserve">There's nothing in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17314"></child>
-        </children>
-    </item>
-    <item nodeId="node-17314">
-        <command xml:space="preserve">look u</command>
-        <result xml:space="preserve">There's nothing in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17315"></child>
-        </children>
-    </item>
-    <item nodeId="node-17315">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
-
-Beck replies, "You got this, Galaxy."
-
-Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
-
-Suddenly two robot guards, green and red, emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring your suit radar."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17316"></child>
-        </children>
-    </item>
-    <item nodeId="node-17316">
-        <command xml:space="preserve">look d</command>
-        <result xml:space="preserve">Yards and yards of white and grey marble, rare for Mars.
-
-Beck: "Robot on your right!"
-
-One robot tries to flank Jones, but a shot from her disruptor sends it scurrying back.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17317"></child>
-        </children>
-    </item>
-    <item nodeId="node-17317">
-        <command xml:space="preserve">look u</command>
-        <result xml:space="preserve">The whole ground floor is bright and airy, its ceiling covered with reflective pyramids. Supporting struts criss-cross the area, from which sparkling crystal chandeliers are suspended.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17318"></child>
-        </children>
-    </item>
-    <item nodeId="node-17318">
-        <command xml:space="preserve">look out</command>
-        <result xml:space="preserve">(outside)
-Outside the building are the red-dusted streets of New Reykjavik.
-
-Zip! Disruptor fire scorches a nearby couch.
-
-Beck: "How's it going in there?"
-
-"Jones: "You know -- like all art, it's hit or miss."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17319"></child>
-        </children>
-    </item>
-    <item nodeId="node-17319">
-        <command xml:space="preserve">look in</command>
-        <result xml:space="preserve">What exactly should Jones look into?
-
-A robot fires a blistering shot into the front desk.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17320"></child>
-        </children>
-    </item>
-    <item nodeId="node-17320">
-        <command xml:space="preserve">desk</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17321"></child>
-        </children>
-    </item>
-    <item nodeId="node-17321">
-        <command xml:space="preserve">look in desk</command>
-        <result xml:space="preserve">As soon as Jones starts to act, an energy beam zips past her head, forcing her back down behind the desk.
-
-One of the robots fires directly above her head.
-
-Jones: "I could use some ideas here!"
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17252">
-        <command xml:space="preserve">gonear waterfall</command>
-        <result xml:space="preserve">Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17253"></child>
-        </children>
-    </item>
-    <item nodeId="node-17253">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17254"></child>
-        </children>
-    </item>
-    <item nodeId="node-17254">
-        <command xml:space="preserve">purloin red cardkey</command>
-        <result xml:space="preserve">[Purloined.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17255"></child>
-        </children>
-    </item>
-    <item nodeId="node-17255">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">(first opening the utility door)
-(first unlocking the utility door)
-(with the red cardkey)
-
-Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
-
-Hanging from a hook here is an elevator drop key.
-
-Lying discarded on a table here is a hammer.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17256"></child>
-        </children>
-    </item>
-    <item nodeId="node-17256">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17291">
-        <command xml:space="preserve">exits on</command>
-        <result xml:space="preserve">Exit listing is now on.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17268">
-        <command xml:space="preserve">look north</command>
-        <result xml:space="preserve">Jones sees the entry doorway in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17269"></child>
-        </children>
-    </item>
-    <item nodeId="node-17269">
-        <command xml:space="preserve">look south</command>
-        <result xml:space="preserve">Jones sees nothing in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17270"></child>
-        </children>
-    </item>
-    <item nodeId="node-17270">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
-
-Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
-
-Beck: "Oh, no doubt."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17271"></child>
-        </children>
-    </item>
-    <item nodeId="node-17271">
-        <command xml:space="preserve">look north</command>
-        <result xml:space="preserve">Jones sees the lobby in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17272"></child>
-        </children>
-    </item>
-    <item nodeId="node-17272">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
-
-Beck replies, "You got this, Galaxy."
-
-Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
-
-Suddenly two robot guards, green and red, emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring your suit radar."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17273"></child>
-        </children>
-    </item>
-    <item nodeId="node-17273">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
-
-Jones: "I'm pinned down here!"
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17274"></child>
-        </children>
-    </item>
-    <item nodeId="node-17274">
-        <command xml:space="preserve">shoot art</command>
-        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-Beck: "What was that crash? What's going on?"
-
-Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17275"></child>
-        </children>
-    </item>
-    <item nodeId="node-17275">
-        <command xml:space="preserve">look east</command>
-        <result xml:space="preserve">Jones sees the southeast corner of the ground floor in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17276"></child>
-        </children>
-    </item>
-    <item nodeId="node-17276">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Jones crosses the floor carefully, disruptor pistol at the ready.
-
-Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
-
-Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17277"></child>
-        </children>
-    </item>
-    <item nodeId="node-17277">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-Beck: "Blueprints indicate a closet to the west of you. Might be useful."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17278"></child>
-        </children>
-    </item>
-    <item nodeId="node-17278">
-        <command xml:space="preserve">look west</command>
-        <result xml:space="preserve">Jones sees the closet door in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17279"></child>
-        </children>
-    </item>
-    <item nodeId="node-17279">
-        <command xml:space="preserve">look n</command>
-        <result xml:space="preserve">Jones sees the northeast corner of the ground floor in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17280"></child>
-        </children>
-    </item>
-    <item nodeId="node-17280">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
 Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.
 
 Jones: "Now this is some choice bullshit here."
 
 Beck: "Looks like the record of the good Admiral's long and dedicated service."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17281"></child>
-        </children>
-    </item>
-    <item nodeId="node-17281">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
+&gt;[19] x medals
+Jones yawns looking over the assortment of faux honors. They're all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.
+
+&gt;[20] take medal
+Taken.
+
+&gt;[21] x medal
+While the front looks authentic, the reverse is engraved with Thallium's personal motto "Planetas Vincam". The ribbon conceals a safety pin. It looks like it could be removed.
+
+&gt;[22] take pin
+Taken.
+
+&gt;[23] w
+
 Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17282"></child>
-        </children>
-    </item>
-    <item nodeId="node-17282">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
+&gt;[24] w
+
+Galaxy Jones is at the northwest corner of the ground floor. A large relief map of Mars is mounted on the north wall here. One can leave here to the south or east.
+
+&gt;[25] s
+
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+&gt;[26] e
+(first opening the utility door)
+(first unlocking the utility door)
+(with the red cardkey)
+
+Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
+
+Hanging from a hook here is an elevator drop key.
+
+Lying discarded on a table here is a hammer.
+
+&gt;[27] take all
+elevator drop key: Taken.
+hammer: Taken.
+
+&gt;[28] w
+
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+&gt;[29] s
+
+Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+&gt;[30] x waterfall
+The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin.
+
+Jones: "One coin? Not very generous people around here."
+
+&gt;[31] take coin
+Taken.
+
+&gt;[32] e
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+&gt;[33] n
+
 Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17283"></child>
-        </children>
-    </item>
-    <item nodeId="node-17283">
-        <command xml:space="preserve">look e</command>
-        <result xml:space="preserve">Jones sees the ground floor stairwell in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17284"></child>
-        </children>
-    </item>
-    <item nodeId="node-17284">
-        <command xml:space="preserve">look w</command>
-        <result xml:space="preserve">Jones sees the elevator door in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17285"></child>
-        </children>
-    </item>
-    <item nodeId="node-17285">
-        <command xml:space="preserve">gonear ninth hall</command>
-        <result xml:space="preserve">Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17286"></child>
-        </children>
-    </item>
-    <item nodeId="node-17286">
-        <command xml:space="preserve">look w</command>
-        <result xml:space="preserve">Jones sees the ninth floor elevator door in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17287"></child>
-        </children>
-    </item>
-    <item nodeId="node-17287">
-        <command xml:space="preserve">look down</command>
-        <result xml:space="preserve">Jones sees nothing in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17288"></child>
-        </children>
-    </item>
-    <item nodeId="node-17288">
-        <command xml:space="preserve">gonear ground hall</command>
-        <result xml:space="preserve">Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17289"></child>
-        </children>
-    </item>
-    <item nodeId="node-17289">
-        <command xml:space="preserve">look d</command>
-        <result xml:space="preserve">Jones sees nothing in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17217">
-        <command xml:space="preserve">hook me to speeder</command>
-        <result xml:space="preserve">Jones would achieve nothing by this.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17218"></child>
-        </children>
-    </item>
-    <item nodeId="node-17218">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
-
-Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
-
-Beck: "Oh, no doubt."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17219"></child>
-        </children>
-    </item>
-    <item nodeId="node-17219">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
-
-Beck replies, "You got this, Galaxy."
-
-Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
-
-Suddenly two robot guards, green and red, emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring your suit radar."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17220"></child>
-        </children>
-    </item>
-    <item nodeId="node-17220">
-        <command xml:space="preserve">shoot art</command>
-        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-Beck: "What was that crash? What's going on?"
-
-Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17221"></child>
-        </children>
-    </item>
-    <item nodeId="node-17221">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17222"></child>
-        </children>
-    </item>
-    <item nodeId="node-17222">
-        <command xml:space="preserve">a stairs</command>
-        <result xml:space="preserve">Which do you mean, the stairwell or the stairwell?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17223"></child>
-        </children>
-    </item>
-    <item nodeId="node-17223">
-        <command xml:space="preserve">showme stairs</command>
-        <result xml:space="preserve">Which do you mean, the stairwell, the stairwell, the stairwell, or the roof stairs?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17224"></child>
-        </children>
-    </item>
-    <item nodeId="node-17224">
-        <command xml:space="preserve">stairwell</command>
-        <result xml:space="preserve">Which do you mean, the stairwell, the stairwell, or the stairwell?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17225"></child>
-        </children>
-    </item>
-    <item nodeId="node-17225">
-        <command xml:space="preserve">x stairs</command>
-        <result xml:space="preserve">Which do you mean, the stairwell or the stairwell?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17226"></child>
-        </children>
-    </item>
-    <item nodeId="node-17226">
-        <command xml:space="preserve">all</command>
-        <result xml:space="preserve">Sorry, you can only have one item here. Which exactly?
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17227"></child>
-        </children>
-    </item>
-    <item nodeId="node-17227">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">I only understood you as far as wanting to examine north.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17248">
-        <command xml:space="preserve">hit speeder</command>
-        <result xml:space="preserve">Jones only uses violent means when absolutely necessary.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17249"></child>
-        </children>
-    </item>
-    <item nodeId="node-17249">
-        <command xml:space="preserve">gonear bed</command>
-        <result xml:space="preserve">Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17250"></child>
-        </children>
-    </item>
-    <item nodeId="node-17250">
-        <command xml:space="preserve">sleep</command>
-        <result xml:space="preserve">Jones isn't feeling especially drowsy.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17214">
-        <command xml:space="preserve">gonear uniforms</command>
-        <result xml:space="preserve">Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.
-
-Jones: "Now this is some choice bullshit here."
-
-Beck: "Looks like the record of the good Admiral's long and dedicated service."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17215"></child>
-        </children>
-    </item>
-    <item nodeId="node-17215">
-        <command xml:space="preserve">take uniforms</command>
-        <result xml:space="preserve">The medals, ribbons, and all are behind glass.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17216"></child>
-        </children>
-    </item>
-    <item nodeId="node-17216">
-        <command xml:space="preserve">x medals</command>
-        <result xml:space="preserve">Jones yawns looking over the assortment of faux honors. They're all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17192">
-        <command xml:space="preserve">gonear table</command>
-        <result xml:space="preserve">Which do you mean, the catering table or the vanity table?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17193"></child>
-        </children>
-    </item>
-    <item nodeId="node-17193">
-        <command xml:space="preserve">catering</command>
-        <result xml:space="preserve">Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
-
-Beck: "Blueprints indicate a closet to the west of you. Might be useful."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17194"></child>
-        </children>
-    </item>
-    <item nodeId="node-17194">
-        <command xml:space="preserve">0</command>
-        <result xml:space="preserve">An indicator light glows green.
-
-Jones: "I've unlocked the east side utility door."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17195"></child>
-        </children>
-    </item>
-    <item nodeId="node-17195">
-        <command xml:space="preserve">1</command>
-        <result xml:space="preserve">An indicator light blinks red.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17196"></child>
-        </children>
-    </item>
-    <item nodeId="node-17196">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">A typical white metal utility door. Next to it is a keypad with the digits 0-9. An indicator light glows green.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17197"></child>
-        </children>
-    </item>
-    <item nodeId="node-17197">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the closet door)
-
-Galaxy Jones is in the maintenance closet. A bare, white-walled room containing various maintenance items.
-
-There is an Atmo-Suit hanging from a hook here.
-
-On the shelf is a red cardkey.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17389">
-        <command xml:space="preserve">gonear ninth north</command>
-        <result xml:space="preserve">Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17390"></child>
-        </children>
-    </item>
-    <item nodeId="node-17390">
-        <command xml:space="preserve">unlock door with pistol</command>
-        <result xml:space="preserve">Jones is unable to unlock the Cybernetica door with the disruptor pistol.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17393"></child>
-        </children>
-    </item>
-    <item nodeId="node-17393">
-        <command xml:space="preserve">hit lock</command>
-        <result xml:space="preserve">Jones only uses violent means when absolutely necessary.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17394"></child>
-        </children>
-    </item>
-    <item nodeId="node-17394">
-        <command xml:space="preserve">t lock</command>
-        <result xml:space="preserve">Don't worry, Galaxy Jones will tell Beck what he needs to know.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17395"></child>
-        </children>
-    </item>
-    <item nodeId="node-17395">
-        <command xml:space="preserve">a lock</command>
-        <result xml:space="preserve">
-Beck: "Oh, they make the best games!"
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17555">
-        <command xml:space="preserve">gonear management south</command>
-        <result xml:space="preserve">Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
-
-A screwdriver sits atop the filing cabinet.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17556"></child>
-        </children>
-    </item>
-    <item nodeId="node-17556">
-        <command xml:space="preserve">x cat</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17557"></child>
-        </children>
-    </item>
-    <item nodeId="node-17557">
-        <command xml:space="preserve">take screwdriver</command>
-        <result xml:space="preserve">Jones reaches for the screwdriver, but she fumbles it and it rolls off the back of the filing cabinet.
-
-Jones: "Damn."
-
-Beck: "What? What's going on?"
-
-Jones: "Just being clumsy is all."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17558"></child>
-        </children>
-    </item>
-    <item nodeId="node-17558">
-        <command xml:space="preserve">look behind cabinet</command>
-        <result xml:space="preserve">(taking the screwdriver)
-Jones reaches behind the cabinet to retrieve the screwdriver. A swipe and a hiss make her recoil.
-
-Jones: "Holy --!"
-
-Beck: "What now?"
-
-Jones: "There's a cat here! Behind a filing cabinet. Gotta get behind there to get a screwdriver, so I need a way to drive off the cat."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17559"></child>
-        </children>
-    </item>
-    <item nodeId="node-17559">
-        <command xml:space="preserve">take cat</command>
-        <result xml:space="preserve">No way. That thing is mean.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17560"></child>
-        </children>
-    </item>
-    <item nodeId="node-17560">
-        <command xml:space="preserve">touch cat</command>
-        <result xml:space="preserve">No way. That thing is mean.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17561"></child>
-        </children>
-    </item>
-    <item nodeId="node-17561">
-        <command xml:space="preserve">drop cat</command>
-        <result xml:space="preserve">No way. That thing is mean.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17562"></child>
-        </children>
-    </item>
-    <item nodeId="node-17562">
-        <command xml:space="preserve">x it</command>
-        <result xml:space="preserve">It's really a beautiful cat, sleek and black.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17563"></child>
-        </children>
-    </item>
-    <item nodeId="node-17563">
-        <command xml:space="preserve">unlock cabinet with cat</command>
-        <result xml:space="preserve">(first taking the black cat)
-No way. That thing is mean.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17564"></child>
-        </children>
-    </item>
-    <item nodeId="node-17564">
-        <command xml:space="preserve">show shrimp to cat</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17565"></child>
-        </children>
-    </item>
-    <item nodeId="node-17565">
-        <command xml:space="preserve">show</command>
-        <result xml:space="preserve">(Beck the disruptor pistol)
-Beck is unimpressed.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17566"></child>
-        </children>
-    </item>
-    <item nodeId="node-17566">
-        <command xml:space="preserve">show cat</command>
-        <result xml:space="preserve">(the disruptor pistol)
-The black cat is unimpressed.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17567"></child>
-        </children>
-    </item>
-    <item nodeId="node-17567">
-        <command xml:space="preserve">show cat shrimp</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17568"></child>
-        </children>
-    </item>
-    <item nodeId="node-17568">
-        <command xml:space="preserve">showme cat</command>
-        <result xml:space="preserve">black cat - animal
-location: in the south end of the building management office
-singular-named, improper-named, unused; unlit, inedible, portable, neuter, seen, familiar, examined, non-pourable; not-active; angry
-list grouping key: none
-printed name: "black cat"
-printed plural name: "animals"
-indefinite article: none
-most recent reference: nominal
-third singular pronoun: Singular-they-pronoun
-conversation: none
-description: "It's really a beautiful cat, sleek and black."
-initial appearance: none
-third-plural-pronoun: They-pronoun
-carrying capacity: 100
-first-singular-pronoun: I-pronoun
-first-plural-pronoun: We-pronoun
-second-singular-pronoun: Singular-you-pronoun
-second-plural-pronoun: Plural-you-pronoun
-notable action: doing nothing
-original location: room of stuff
-new location: room of stuff
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17583"></child>
-        </children>
-    </item>
-    <item nodeId="node-17583">
-        <command xml:space="preserve">give shrimp to cat</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17584"></child>
-        </children>
-    </item>
-    <item nodeId="node-17584">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Jones is carrying:
-  a disruptor pistol
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17585"></child>
-        </children>
-    </item>
-    <item nodeId="node-17585">
-        <command xml:space="preserve">purloin shrimp</command>
-        <result xml:space="preserve">[Purloined.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17586"></child>
-        </children>
-    </item>
-    <item nodeId="node-17586">
-        <command xml:space="preserve">show shrimp to cat</command>
-        <result xml:space="preserve">Sensing food, the black cat pokes its head out, grabs the shrimp in its jaws, and races off. Jones takes the screwdriver.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-Jones: "Aha! No creature is too fearsome for Galaxy Jones!"
-
-Beck: "Congratulations on your victory."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17587"></child>
-            <child nodeId="node-17686"></child>
-        </children>
-    </item>
-    <item nodeId="node-17686">
-        <command xml:space="preserve">unlock filing cabinet with cat</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17687"></child>
-        </children>
-    </item>
-    <item nodeId="node-17687">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Galaxy Jones is at the south end of the building management office.
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17688"></child>
-        </children>
-    </item>
-    <item nodeId="node-17688">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Galaxy Jones is at the south end of the building management office.
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17689"></child>
-        </children>
-    </item>
-    <item nodeId="node-17689">
-        <command xml:space="preserve">unlock filing cabinet with cat</command>
-        <result xml:space="preserve">(first taking the black cat)
-No way. That thing is mean.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17690"></child>
-        </children>
-    </item>
-    <item nodeId="node-17690">
-        <command xml:space="preserve">give pistol to beck</command>
-        <result xml:space="preserve">Beck is just a voice in Jones's ear.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17587">
-        <command xml:space="preserve">give shrimp to cat</command>
-        <result xml:space="preserve">Sensing food, the black cat pokes its head out, grabs the shrimp in its jaws, and races off. Jones takes the screwdriver.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-Jones: "Aha! No creature is too fearsome for Galaxy Jones!"
-
-Beck: "Congratulations on your victory."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17610"></child>
-            <child nodeId="node-17588"></child>
-            <child nodeId="node-17631"></child>
-            <child nodeId="node-17659"></child>
-        </children>
-    </item>
-    <item nodeId="node-17659">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Galaxy Jones is at the south end of the building management office.
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17660"></child>
-        </children>
-    </item>
-    <item nodeId="node-17660">
-        <command xml:space="preserve">drop shrimp</command>
-        <result xml:space="preserve">Sensing food, the black cat pokes its head out, grabs the shrimp in its jaws, and races off. Jones takes the screwdriver.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-Jones: "Aha! No creature is too fearsome for Galaxy Jones!"
-
-Beck: "Congratulations on your victory."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17661"></child>
-        </children>
-    </item>
-    <item nodeId="node-17661">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Galaxy Jones is at the south end of the building management office.
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17662"></child>
-        </children>
-    </item>
-    <item nodeId="node-17662">
-        <command xml:space="preserve">show pistol to me</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17663"></child>
-        </children>
-    </item>
-    <item nodeId="node-17663">
-        <command xml:space="preserve">show</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17664"></child>
-        </children>
-    </item>
-    <item nodeId="node-17664">
-        <command xml:space="preserve">trace 5</command>
-        <result xml:space="preserve">[Parser tracing set to level 5.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17665"></child>
-        </children>
-    </item>
-    <item nodeId="node-17665">
-        <command xml:space="preserve">sasdf</command>
-        <result xml:space="preserve">[ "sasdf" ? ]
-   [NounDomain called at word 1
-   seeking definite object
-    Trying the north (1078934) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the northeast (1078966) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the northwest (1078998) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the south (1079030) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the southeast (1079062) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the southwest (1079094) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the east (1079126) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the west (1079158) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the up (1079190) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the down (1079222) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the inside (1079254) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the outside (1079286) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying Beck (1079670) at word 1
-   [ND made 0 matches]
-[Parsing for the verb 'no.verb' (1 lines)]
-
-[line 0 * Routine(369822) Routine(369876) -&gt; A81_typing_it_on]
- [line 0 token 1 word 1 : Routine(369822)]
-  [Outside parsing routine returned -1]
-  [token resulted in failure with error type 1]
-I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17666"></child>
-        </children>
-    </item>
-    <item nodeId="node-17666">
-        <command xml:space="preserve">trace off</command>
-        <result xml:space="preserve">[ "trace" trace / "off" off ]
-[Parsing for the verb 'trace' (4 lines)]
-
-[line 0 * -&gt; TraceOn]
- [line 0 token 1 word 2 : END]
-
-[line 1 * number -&gt; TraceLevel]
- [line 1 token 1 word 2 : number]
-  [token resulted in failure with error type 3]
-
-[line 2 * 'on' -&gt; TraceOn]
-[line rejected for not ending with correct preposition]
-
-[line 3 * 'off' -&gt; TraceOff]
- [line 3 token 1 word 2 : 'off']
-  [token resulted in success]
- [line 3 token 2 word 3 : END]
-[Line successfully parsed]
-Trace off.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17631">
-        <command xml:space="preserve">trace 5</command>
-        <result xml:space="preserve">[Parser tracing set to level 5.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17632"></child>
-        </children>
-    </item>
-    <item nodeId="node-17632">
-        <command xml:space="preserve">show shrimp to cat</command>
-        <result xml:space="preserve">[ "show" ? / "shrimp" shrimp / "to" to / "cat" cat ]
-   [NounDomain called at word 1
-   seeking definite object
-    Trying the north (1079190) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the northeast (1079222) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the northwest (1079254) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the south (1079286) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the southeast (1079318) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the southwest (1079350) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the east (1079382) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the west (1079414) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the up (1079446) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the down (1079478) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the inside (1079510) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying the outside (1079542) at word 1
-Parse_name called
-Pass 1: 0 Pass 2: 0 Pass 3: 0
-    Trying Beck (1079926) at word 1
-   [ND made 0 matches]
-[Parsing for the verb 'no.verb' (1 lines)]
-
-[line 0 * Routine(370012) Routine(370066) -&gt; A81_typing_it_on]
- [line 0 token 1 word 1 : Routine(370012)]
-  [Outside parsing routine returned -1]
-  [token resulted in failure with error type 1]
-I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17633"></child>
-        </children>
-    </item>
-    <item nodeId="node-17633">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">[ "i" i ]
-[Parsing for the verb 'i' (1 lines)]
-
-[line 0 * -&gt; Inv]
- [line 0 token 1 word 2 : END]
-[Line successfully parsed]
-Jones is carrying:
-  a shrimp tea sandwich
-  a disruptor pistol
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17634"></child>
-        </children>
-    </item>
-    <item nodeId="node-17634">
-        <command xml:space="preserve">trace off</command>
-        <result xml:space="preserve">[ "trace" trace / "off" off ]
-[Parsing for the verb 'trace' (4 lines)]
-
-[line 0 * -&gt; TraceOn]
- [line 0 token 1 word 2 : END]
-
-[line 1 * number -&gt; TraceLevel]
- [line 1 token 1 word 2 : number]
-  [token resulted in failure with error type 3]
-
-[line 2 * 'on' -&gt; TraceOn]
-[line rejected for not ending with correct preposition]
-
-[line 3 * 'off' -&gt; TraceOff]
- [line 3 token 1 word 2 : 'off']
-  [token resulted in success]
- [line 3 token 2 word 3 : END]
-[Line successfully parsed]
-Trace off.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17635"></child>
-        </children>
-    </item>
-    <item nodeId="node-17635">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17636"></child>
-        </children>
-    </item>
-    <item nodeId="node-17636">
-        <command xml:space="preserve">x cabinety</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17637"></child>
-        </children>
-    </item>
-    <item nodeId="node-17637">
-        <command xml:space="preserve">x cabinet</command>
-        <result xml:space="preserve">An ordinary filing cabinet, with five drawers. The label on the front says "Personnel Records".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17638"></child>
-        </children>
-    </item>
-    <item nodeId="node-17638">
-        <command xml:space="preserve">look behind cabinet</command>
-        <result xml:space="preserve">(taking the screwdriver)
-Forget it. Jones isn't getting another scratch.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17639"></child>
-        </children>
-    </item>
-    <item nodeId="node-17639">
-        <command xml:space="preserve">give shrimp to cat</command>
-        <result xml:space="preserve">No way. That thing is mean.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17588">
-        <command xml:space="preserve">throw shrimp at car</command>
-        <result xml:space="preserve">There's nothing like that nearby.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17589"></child>
-        </children>
-    </item>
-    <item nodeId="node-17589">
-        <command xml:space="preserve">throw shrimp at cat</command>
-        <result xml:space="preserve">Sensing food, the black cat pokes its head out, grabs the shrimp in its jaws, and races off. Jones takes the screwdriver.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
-[Your score has just gone up by one point.]
-
-Jones: "Aha! No creature is too fearsome for Galaxy Jones!"
-
-Beck: "Congratulations on your victory."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17590"></child>
-        </children>
-    </item>
-    <item nodeId="node-17590">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Galaxy Jones is at the south end of the building management office.
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17610">
-        <command xml:space="preserve">actions</command>
-        <result xml:space="preserve">Actions listing on.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17611"></child>
-        </children>
-    </item>
-    <item nodeId="node-17611">
-        <command xml:space="preserve">give shrimp to cat</command>
-        <result xml:space="preserve">[giving the shrimp tea sandwich to the black cat]
-[(1) saying hello to the black cat]
-They're not likely to be helpful.
-[(1) saying hello to the black cat - failed the Check saying hello to someone when the noun is not beck and the noun is not europa]
-
-[giving the shrimp tea sandwich to the black cat - failed the Check saying hello to someone when the noun is not beck and the noun is not europa]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17396">
-        <command xml:space="preserve">gonear management north</command>
-        <result xml:space="preserve">Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17397"></child>
-        </children>
-    </item>
-    <item nodeId="node-17397">
-        <command xml:space="preserve">purloin red cardkey</command>
-        <result xml:space="preserve">[Purloined.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17398"></child>
-        </children>
-    </item>
-    <item nodeId="node-17398">
-        <command xml:space="preserve">dk</command>
-        <result xml:space="preserve">&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17399"></child>
-        </children>
-    </item>
-    <item nodeId="node-17399">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">Jones is carrying:
-  an elevator drop key
-  a red cardkey
-  a disruptor pistol
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17400"></child>
-        </children>
-    </item>
-    <item nodeId="node-17400">
-        <command xml:space="preserve">unlock drawer with key</command>
-        <result xml:space="preserve">(the red cardkey)
-Jones is unable to unlock the large desk with the red cardkey.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17401"></child>
-        </children>
-    </item>
-    <item nodeId="node-17401">
-        <command xml:space="preserve">drop key</command>
-        <result xml:space="preserve">Which do you mean, the elevator drop key or the red cardkey?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17402"></child>
-        </children>
-    </item>
-    <item nodeId="node-17402">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Jones stands around and waits.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17403"></child>
-        </children>
-    </item>
-    <item nodeId="node-17403">
-        <command xml:space="preserve">unlock drawer with drop key</command>
-        <result xml:space="preserve">Jones is unable to unlock the large desk with the elevator drop key.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17412"></child>
-        </children>
-    </item>
-    <item nodeId="node-17412">
-        <command xml:space="preserve">gonear ground hall</command>
-        <result xml:space="preserve">Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17413"></child>
-        </children>
-    </item>
-    <item nodeId="node-17413">
-        <command xml:space="preserve">unlock elevator door with key</command>
-        <result xml:space="preserve">Which do you mean, the drop key hole, the elevator drop key, or the red cardkey?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17414"></child>
-        </children>
-    </item>
-    <item nodeId="node-17414">
-        <command xml:space="preserve">unlock elevator door with drop key</command>
-        <result xml:space="preserve">(the elevator drop key)
+&gt;[34] use drop key with elevator
+(the elevator drop key with the elevator door)
 Jones inserts the elevator drop key into the drop key hole and turns it, disengaging the lock mechanism. Then she slides the door open.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17426"></child>
-        </children>
-    </item>
-    <item nodeId="node-17426">
-        <command xml:space="preserve">gonear ninth north</command>
-        <result xml:space="preserve">Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+&gt;[35] w
+Jones climbs into the elevator shaft.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17427"></child>
-        </children>
-    </item>
-    <item nodeId="node-17427">
-        <command xml:space="preserve">unlock door with key</command>
-        <result xml:space="preserve">(the red cardkey)
-Jones is unable to unlock the Cybernetica door with the red cardkey.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17428"></child>
-        </children>
-    </item>
-    <item nodeId="node-17428">
-        <command xml:space="preserve">unlock door with key drop</command>
-        <result xml:space="preserve">Jones is unable to unlock the Cybernetica door with the elevator drop key.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17429"></child>
-        </children>
-    </item>
-    <item nodeId="node-17429">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17430"></child>
-        </children>
-    </item>
-    <item nodeId="node-17430">
-        <command xml:space="preserve">x board</command>
-        <result xml:space="preserve">The board says "1. Describe scenery objects on Engineering Deck
- 2. Fix check rule when installing new engine component
- 3. Add more facts to computer database
- 4. Fix Arvax response to rebooting the ship computer
-
-and etc.".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17431"></child>
-        </children>
-    </item>
-    <item nodeId="node-17431">
-        <command xml:space="preserve">write foo</command>
-        <result xml:space="preserve">not blank.
-
-Now the board says "1. Describe scenery objects on Engineering Deck
- 2. Fix check rule when installing new engine component
- 3. Add more facts to computer database
- 4. Fix Arvax response to rebooting the ship computer
-
-and etc. foo".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17432"></child>
-        </children>
-    </item>
-    <item nodeId="node-17432">
-        <command xml:space="preserve">erase board</command>
-        <result xml:space="preserve">Now the board is blank.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17433"></child>
-        </children>
-    </item>
-    <item nodeId="node-17433">
-        <command xml:space="preserve">write foo</command>
-        <result xml:space="preserve">blank.
-
-Now the board says "foo".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17453"></child>
-        </children>
-    </item>
-    <item nodeId="node-17453">
-        <command xml:space="preserve">write "asdfa" on board</command>
-        <result xml:space="preserve">not blank.
-
-Now the board says "foo "asdfa" on board".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17551"></child>
-            <child nodeId="node-17454"></child>
-            <child nodeId="node-17476"></child>
-        </children>
-    </item>
-    <item nodeId="node-17476">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Galaxy Jones is at the north end of the building management office.
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17477"></child>
-        </children>
-    </item>
-    <item nodeId="node-17477">
-        <command xml:space="preserve">x board</command>
-        <result xml:space="preserve">The board says "board".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17478"></child>
-        </children>
-    </item>
-    <item nodeId="node-17478">
-        <command xml:space="preserve">write foo</command>
-        <result xml:space="preserve">not blank.
-
-Now the board says "foo foo".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17479"></child>
-        </children>
-    </item>
-    <item nodeId="node-17479">
-        <command xml:space="preserve">write bar</command>
-        <result xml:space="preserve">not blank.
-
-Now the board says "foo foo bar".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17480"></child>
-        </children>
-    </item>
-    <item nodeId="node-17480">
-        <command xml:space="preserve">erase board</command>
-        <result xml:space="preserve">Now the board is blank.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17481"></child>
-        </children>
-    </item>
-    <item nodeId="node-17481">
-        <command xml:space="preserve">x it</command>
-        <result xml:space="preserve">The board is blank.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17482"></child>
-        </children>
-    </item>
-    <item nodeId="node-17482">
-        <command xml:space="preserve">write asdf</command>
-        <result xml:space="preserve">Now the board says "asdf".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17483"></child>
-        </children>
-    </item>
-    <item nodeId="node-17483">
-        <command xml:space="preserve">write ggg</command>
-        <result xml:space="preserve">Now the board says "ggg ggg".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17484"></child>
-        </children>
-    </item>
-    <item nodeId="node-17484">
-        <command xml:space="preserve">x board</command>
-        <result xml:space="preserve">The board says "ggg ggg".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17454">
-        <command xml:space="preserve">erase board</command>
-        <result xml:space="preserve">Now the board is blank.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17455"></child>
-        </children>
-    </item>
-    <item nodeId="node-17455">
-        <command xml:space="preserve">x it</command>
-        <result xml:space="preserve">The board is blank.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17551">
-        <command xml:space="preserve">erase</command>
-        <result xml:space="preserve">(Jones)
-That can't be erased.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17552"></child>
-        </children>
-    </item>
-    <item nodeId="node-17552">
-        <command xml:space="preserve">erase board</command>
-        <result xml:space="preserve">Now the board is blank.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17553"></child>
-        </children>
-    </item>
-    <item nodeId="node-17553">
-        <command xml:space="preserve">write lflflf</command>
-        <result xml:space="preserve">blank.
-
-Now the board says "lflflf".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17554"></child>
-        </children>
-    </item>
-    <item nodeId="node-17554">
-        <command xml:space="preserve">write jones</command>
-        <result xml:space="preserve">not blank.
-
-Now the board says "lflflf jones".
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17369">
-        <command xml:space="preserve">gonear ground shaft</command>
-        <result xml:space="preserve">Galaxy Jones is in the ground floor elevator shaft. Jones is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder running up the wall next to the door.
+Galaxy Jones is in the ground floor elevator shaft. She is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder running up the wall next to the door.
 
 Beck: "Ooh. It's like we're in an action film."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17370"></child>
-        </children>
-    </item>
-    <item nodeId="node-17370">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">Jones climbs up the shaft, stopping at each floor to test each door. She gets all the way to the ninth floor, directly below the elevator car, before finding one that opens.
+&gt;[36] u
+Jones climbs up the shaft, stopping at each floor to test each door. She gets all the way to the ninth floor, directly below the elevator car, before finding one that opens.
 
 Galaxy Jones is in the ninth floor elevator shaft. The door here is open.
 
 Beck: "Huh. Seems like it should have taken longer than that."
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17376"></child>
-            <child nodeId="node-17371"></child>
-        </children>
-    </item>
-    <item nodeId="node-17371">
-        <command xml:space="preserve">x car</command>
-        <result xml:space="preserve">The elevator car is just above Jones's head.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17372"></child>
-        </children>
-    </item>
-    <item nodeId="node-17372">
-        <command xml:space="preserve">a cvar</command>
-        <result xml:space="preserve">
-Beck: "I'm not sure what you're asking about, Jones."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17373"></child>
-        </children>
-    </item>
-    <item nodeId="node-17373">
-        <command xml:space="preserve">a car</command>
-        <result xml:space="preserve">(the elevator car)
-
-Beck: "Hmm. Don't have much to say about that right now."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17376">
-        <command xml:space="preserve">a car</command>
-        <result xml:space="preserve">(the elevator car)
-
-Beck: "It makes me uncomfortable, it hanging above us like that."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17383"></child>
-        </children>
-    </item>
-    <item nodeId="node-17383">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve"> _________      __                     _____                     
+&gt;[37] e
+ _________      __                     _____                     
  __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
  _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
  / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
@@ -2851,329 +277,496 @@ Jones: "Finally out of the shaft. That was quite a climb."
 
 Beck: "This floor is just offices. Check the building management office to the west. It might have some useful stuff."
 
+Jones exits the shaft, the door sliding closed behind her.
+
 Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17384"></child>
-        </children>
-    </item>
-    <item nodeId="node-17384">
-        <command xml:space="preserve">close door</command>
-        <result xml:space="preserve">That's already closed.
+&gt;[38] buy water with coin
+Jones inserts the coin in the machine and takes the bottle that appears a few seconds later.
+
+&gt;[39] n
+
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+
+&gt;[40] w
+
+Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
+
+&gt;[41] pick desk lock with pin
+Jones pushes the pin into the keyhole and wiggles it around. After a few seconds of this the desk drawer pops open. It contains a black cardkey.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "Galaxy Jones, master thief!"
+
+&gt;[42] take black card
+Taken.
+
+&gt;[43] s
+
+Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
+
+A screwdriver sits atop the filing cabinet.
+
+&gt;[44] take screwdriver
+Jones reaches for the screwdriver, but she fumbles it and it rolls off the back of the filing cabinet.
+
+Jones: "Damn."
+
+Beck: "What? What's going on?"
+
+Jones: "Just being clumsy is all."
+
+&gt;[45] look behind cabinet
+(taking the screwdriver)
+Jones reaches behind the cabinet to retrieve the screwdriver. A swipe and a hiss make her recoil.
+
+Jones: "Holy --!"
+
+Beck: "What now?"
+
+Jones: "There's a cat here! Behind a filing cabinet. Gotta get behind there to get a screwdriver, so I need a way to drive off the cat."
+
+&gt;[46] drop shrimp
+Sensing food, the black cat pokes its head out, grabs the shrimp in its jaws, and races off. Jones takes the screwdriver.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones: "Aha! No creature is too fearsome for Galaxy Jones!"
+
+Beck: "Congratulations on your victory."
+
+&gt;[47] e
+
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
+
+&gt;[48] e
+(first opening the Martian Chemical door)
+(first unlocking the Martian Chemical door)
+(with the black cardkey)
+
+Galaxy Jones is in the Martian Chemical office. This seems like the business office of the chemical company rather than the lab. Most of the room is taken up by desks and other office stuff. There is a cabinet that looks intriguing, however.
+
+&gt;[49] take gel from cabinet
+Taken.
+
+&gt;[50] w
+
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
+
+&gt;[51] n
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+&gt;[52] n
+
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+
+&gt;[53] e
+(first opening the Cybernetica door)
+(first unlocking the Cybernetica door)
+(with the black cardkey)
+
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities.
+
+As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
+
+Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
+
+Beck: "What's the situation?"
+
+Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I might get a shot in, but it might just absorb it anyway."
+
+Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
+
+&gt;[54] sneak up on robot
+Jones creeps a little ways toward the guard robot.
+
+&gt;[55] sneak up on robot
+Slowly, slowly, Jones gets a little closer. Just a little more...
+
+She must have poked up her shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out.
+
+&gt;[56] sneak up on robot
+Jones is right up next to the robot, crouched beneath a desk. She'll never get a better shot.
+
+&gt;[57] shoot robot
+Jones aims the pistol upward under the robot's enhanced armor and fires. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones: "Better than a video game. "
+
+Beck: "Nice, but don't forget to credit your handler."
+
+Jones: "Yes, yes, thanks for helping me not get killed."
+
+Beck: "You're welcome."
+
+&gt;[58] s
+Jones can leave through the door to the west. She can also go east through the broken window.
+
+&gt;[59] n
+Jones can leave through the door to the west. She can also go east through the broken window.
+
+&gt;[60] e
+Jones: "I'm going out the window to see if I can find a way to get up to the tenth floor."
+
+Beck: "Whoa whoa whoa, Jones. You know you're not good with heights."
+
+Jones: "Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch."
+
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. She's plastered up against the wall, trying not to look down.
+
+&gt;[61] look down
+Okay, fine. Jones look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below her.
+
+Jones: "Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up."
+
+Beck: "Take it easy, Jones."
+
+&gt;[62] look down
+There's a window cleaner's scaffold about six feet below Jones. Beyond that is a precipitous drop to the streets of New Reykjavik.
+
+&gt;[63] look down
+There's a window cleaner's scaffold about six feet below Jones. Beyond that is a precipitous drop to the streets of New Reykjavik.
+
+&gt;[64] d
+Jones drops off the ledge onto the scaffold. It rocks unnervingly for a moment.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+&gt;[65] press up
+(the scaffold up button)
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Beck?"
+
+Beck: "Yes?"
+
+Jones: "I hate it out here."
+
+Beck: "Well, there's the open window right next to you."
+
+&gt;[66] press up
+(the scaffold up button)
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Alright, I'm by the tenth floor now. What's this grille thing here?"
+
+Beck: "That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can get the cover off you should be able to access the whole floor from here."
+
+&gt;[67] open vent with screwdriver
+Jones loosens the screws with the screwdriver and open the grille.
+
+&gt;[68] w
+Jones climbs inside the vent, crawls along a short length of ductwork, and emerges through another hinged grille, into the air handling room.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+She takes off the Atmo-Suit.
+
+Jones: "Ha! I'm in!"
+
+Beck: "Be careful, you're likely to run into more resistance here. The floor is all one open office, so any guard robots will have good line of sight."
+
+Jones: "Got it."
+
+Beck: "And Jones? Save your game."
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17385"></child>
+        <commentary xml:space="preserve">[1] test ledge
+[2] test mgmt
+[3] test ninth
+[4] test elevator
+[5] n
+[6] n
+[7] z
+[8] shoot art
+[9] x art
+[10] e
+[11] n
+[12] type 0
+[13] w
+[14] take all
+[15] e
+[16] x table
+[17] take all
+[18] n
+[19] x medals
+[20] take medal
+[21] x medal
+[22] take pin
+[23] w
+[24] w
+[25] s
+[26] e
+[27] take all
+[28] w
+[29] s
+[30] x waterfall
+[31] take coin
+[32] e
+[33] n
+[34] use drop key with elevator
+[35] w
+[36] u
+[37] e
+[38] buy water with coin
+[39] n
+[40] w
+[41] pick desk lock with pin
+[42] take black card
+[43] s
+[44] take screwdriver
+[45] look behind cabinet
+[46] drop shrimp
+[47] e
+[48] e
+[49] take gel from cabinet
+[50] w
+[51] n
+[52] n
+[53] e
+[54] sneak up on robot
+[55] sneak up on robot
+[56] sneak up on robot
+[57] shoot robot
+[58] s
+[59] n
+[60] e
+[61] look down
+[62] look down
+[63] look down
+[64] d
+[65] press up
+[66] press up
+[67] open vent with screwdriver
+[68] w
+</commentary>
+        <children><child nodeId="node-19101"></child>
         </children>
     </item>
-    <item nodeId="node-17385">
+    <item nodeId="node-19101">
         <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the ninth floor elevator door)
+        <result xml:space="preserve">(first opening the air handling door)
 
-Galaxy Jones is in the ninth floor elevator shaft. The door here is closed.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17386"></child>
-        </children>
-    </item>
-    <item nodeId="node-17386">
-        <command xml:space="preserve">close door</command>
-        <result xml:space="preserve">That's already closed.
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17387"></child>
+        <children><child nodeId="node-19434"></child>
         </children>
     </item>
-    <item nodeId="node-17387">
-        <command xml:space="preserve">open it</command>
-        <result xml:space="preserve">Jones opens the ninth floor elevator door.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17388"></child>
-        </children>
-    </item>
-    <item nodeId="node-17388">
-        <command xml:space="preserve">e</command>
+    <item nodeId="node-19434">
+        <command xml:space="preserve">s</command>
         <result xml:space="preserve">
-Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17259">
-        <command xml:space="preserve">gonear ground hall</command>
-        <result xml:space="preserve">Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17336"></child>
-            <child nodeId="node-17260"></child>
+        <children><child nodeId="node-19435"></child>
         </children>
     </item>
-    <item nodeId="node-17260">
-        <command xml:space="preserve">x elevator</command>
-        <result xml:space="preserve">(the elevator door)
-A gleaming gold elevator door. There is a hole near the top for inserting a drop key.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17261"></child>
-            <child nodeId="node-17264"></child>
-        </children>
-    </item>
-    <item nodeId="node-17264">
-        <command xml:space="preserve">x elevator hole</command>
-        <result xml:space="preserve">It's a small hole about half an inch in diameter.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17265"></child>
-        </children>
-    </item>
-    <item nodeId="node-17265">
-        <command xml:space="preserve">x elevator hall</command>
-        <result xml:space="preserve">Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17266"></child>
-        </children>
-    </item>
-    <item nodeId="node-17266">
-        <command xml:space="preserve">x stairs</command>
-        <result xml:space="preserve">They lead up from here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17267"></child>
-        </children>
-    </item>
-    <item nodeId="node-17267">
-        <command xml:space="preserve">x south</command>
-        <result xml:space="preserve">Jones sees nothing unexpected in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17261">
-        <command xml:space="preserve">elevators</command>
-        <result xml:space="preserve">They're in the center of the building.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17336">
-        <command xml:space="preserve">purloin elevator drop key</command>
-        <result xml:space="preserve">Which do you mean, the elevator drop key or the drop key hole?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17337"></child>
-        </children>
-    </item>
-    <item nodeId="node-17337">
-        <command xml:space="preserve">key</command>
-        <result xml:space="preserve">Which do you mean, the elevator drop key or the drop key hole?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17338"></child>
-        </children>
-    </item>
-    <item nodeId="node-17338">
-        <command xml:space="preserve">gonear hammer</command>
-        <result xml:space="preserve">Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
-
-Hanging from a hook here is an elevator drop key.
-
-Lying discarded on a table here is a hammer.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17339"></child>
-        </children>
-    </item>
-    <item nodeId="node-17339">
-        <command xml:space="preserve">take key</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17340"></child>
-        </children>
-    </item>
-    <item nodeId="node-17340">
-        <command xml:space="preserve">gonear ground hall</command>
-        <result xml:space="preserve">Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17341"></child>
-        </children>
-    </item>
-    <item nodeId="node-17341">
-        <command xml:space="preserve">unlock elevator</command>
-        <result xml:space="preserve">(the elevator door)
-Jones inserts the elevator drop key into the drop key hole and turns it, disengaging the lock mechanism. Then she slides the door open.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17342"></child>
-        </children>
-    </item>
-    <item nodeId="node-17342">
-        <command xml:space="preserve">unlock elevator with drop key</command>
-        <result xml:space="preserve">(the elevator door with the elevator drop key)
-The elevator door is already open.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17343"></child>
-        </children>
-    </item>
-    <item nodeId="node-17343">
-        <command xml:space="preserve">open elevator with drop key</command>
-        <result xml:space="preserve">(the elevator door with the elevator drop key)
-The elevator door is already open.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17344"></child>
-        </children>
-    </item>
-    <item nodeId="node-17344">
-        <command xml:space="preserve">unlock elevator door with drop key</command>
-        <result xml:space="preserve">(the elevator door with the elevator drop key)
-The elevator door is already open.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17365"></child>
-        </children>
-    </item>
-    <item nodeId="node-17365">
-        <command xml:space="preserve">close door</command>
-        <result xml:space="preserve">It isn't something Jones can close.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17366"></child>
-        </children>
-    </item>
-    <item nodeId="node-17366">
-        <command xml:space="preserve">se</command>
-        <result xml:space="preserve">That way leads straight into a wall.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17367"></child>
-        </children>
-    </item>
-    <item nodeId="node-17367">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">As soon as Jones enters the stairwell, a disruptor blast from above zings past her shoulder, and she beats a hasty retreat. She won't be going up the stairs until she can clear out the resistance, and she can't do that from here.
-
-Jones: "In case of fire, don't use the stairs."
-
-Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell. The elevator door is open, revealing the bottom of the elevator shaft. Jones could climb into it, if she wished.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17368"></child>
-        </children>
-    </item>
-    <item nodeId="node-17368">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">Should Jones burrow downward?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17257">
-        <command xml:space="preserve">gonear ground floor elevator hall</command>
-        <result xml:space="preserve">Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17258"></child>
-        </children>
-    </item>
-    <item nodeId="node-17258">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">As soon as Jones enters the stairwell, a disruptor blast from above zings past her shoulder, and she beats a hasty retreat. She won't be going up the stairs until she can clear out the resistance, and she can't do that from here.
-
-Jones: "In case of fire, don't use the stairs."
-
-Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-16554">
-        <command xml:space="preserve">gonear first shaft</command>
-        <result xml:space="preserve">There seems to be no such object anywhere in the model world.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16555"></child>
-        </children>
-    </item>
-    <item nodeId="node-16555">
-        <command xml:space="preserve">gonear ground shaft</command>
-        <result xml:space="preserve">Galaxy Jones is in the ground floor elevator shaft. Jones is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder running up the wall next to the door.
-
-Beck: "Ooh. It's like we're in an action film."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16556"></child>
-        </children>
-    </item>
-    <item nodeId="node-16556">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">Jones climbs up the shaft, stopping at each floor to test each door. She gets all the way to the ninth floor, directly below the elevator car, before finding one that opens.
-
-Galaxy Jones is in the ninth floor elevator shaft. The door here is closed.
-
-Beck: "Huh. Seems like it should have taken longer than that."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16557"></child>
-        </children>
-    </item>
-    <item nodeId="node-16557">
-        <command xml:space="preserve">d</command>
+    <item nodeId="node-19435">
+        <command xml:space="preserve">w</command>
         <result xml:space="preserve">
-Galaxy Jones is in the ground floor elevator shaft. Jones is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder running up the wall next to the door.
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons.
+
+One of the ceiling panels looks loose.
+
+Admiral Thallium's voice oozes from concealed speakers: "Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant."
+
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16558"></child>
+        <children><child nodeId="node-19436"></child>
+            <child nodeId="node-19517"></child>
         </children>
     </item>
-    <item nodeId="node-16558">
+    <item nodeId="node-19517">
+        <command xml:space="preserve">press buttons</command>
+        <result xml:space="preserve">You have to specify what button, from 1 to 100.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19518"></child>
+        </children>
+    </item>
+    <item nodeId="node-19518">
+        <command xml:space="preserve">press 100</command>
+        <result xml:space="preserve">Nothing happens.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19519"></child>
+        </children>
+    </item>
+    <item nodeId="node-19519">
+        <command xml:space="preserve">press 101</command>
+        <result xml:space="preserve">Nothing happens.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19520"></child>
+        </children>
+    </item>
+    <item nodeId="node-19520">
+        <command xml:space="preserve">press 3.4</command>
+        <result xml:space="preserve">Nothing happens.
+
+I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19521"></child>
+        </children>
+    </item>
+    <item nodeId="node-19521">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19522"></child>
+        </children>
+    </item>
+    <item nodeId="node-19522">
+        <command xml:space="preserve">press 3.4</command>
+        <result xml:space="preserve">[button pushing 3]
+Nothing happens.
+[button pushing 3 - failed the Check button pushing a number when the number understood is not listed in { 1 , 9 , 10 , 100 } or the elevator car-room is not in running mode]
+
+I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-19436">
+        <command xml:space="preserve">open panel</command>
+        <result xml:space="preserve">(the ceiling panel)
+Jones removes the ceiling panel, exposing a hole wide enough for her to squeeze through.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19437"></child>
+        </children>
+    </item>
+    <item nodeId="node-19437">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">
-Galaxy Jones is in the ninth floor elevator shaft. The door here is closed.
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above here. She can see down into the elevator car from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16559"></child>
+        <children><child nodeId="node-19438"></child>
         </children>
     </item>
-    <item nodeId="node-16559">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">The way up is blocked by the elevator car.
+    <item nodeId="node-19438">
+        <command xml:space="preserve">look up</command>
+        <result xml:space="preserve">There's nothing in that direction.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19439"></child>
+        </children>
+    </item>
+    <item nodeId="node-19439">
+        <command xml:space="preserve">climb up</command>
+        <result xml:space="preserve">You must name something more substantial.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19440"></child>
+        </children>
+    </item>
+    <item nodeId="node-19440">
+        <command xml:space="preserve">go up</command>
+        <result xml:space="preserve">Jones can neither climb walls nor fly.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19441"></child>
+        </children>
+    </item>
+    <item nodeId="node-19441">
+        <command xml:space="preserve">climb up shaft</command>
+        <result xml:space="preserve">Little is to be achieved by that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19442"></child>
+        </children>
+    </item>
+    <item nodeId="node-19442">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19443"></child>
+        </children>
+    </item>
+    <item nodeId="node-19443">
+        <command xml:space="preserve">climb up shaft</command>
+        <result xml:space="preserve">[climbing the elevator shaft]
+Little is to be achieved by that.
+[climbing the elevator shaft - failed the block climbing rule]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19444"></child>
+        </children>
+    </item>
+    <item nodeId="node-19444">
+        <command xml:space="preserve">climb ladder</command>
+        <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-17198">
+    <item nodeId="node-19523">
+        <command xml:space="preserve">push 3</command>
+        <result xml:space="preserve">Nothing happens.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-19524">
         <command xml:space="preserve">gonear catering</command>
         <result xml:space="preserve">Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
 
@@ -3181,434 +774,319 @@ Beck: "Blueprints indicate a closet to the west of you. Might be useful."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17199"></child>
+        <children><child nodeId="node-19533"></child>
+            <child nodeId="node-19525"></child>
         </children>
     </item>
-    <item nodeId="node-17199">
-        <command xml:space="preserve">0</command>
-        <result xml:space="preserve">An indicator light glows green.
+    <item nodeId="node-19525">
+        <command xml:space="preserve">push 3423</command>
+        <result xml:space="preserve">The elevator quickly arrives at its destination.
 
-Jones: "I've unlocked the east side utility door."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17200"></child>
-        </children>
-    </item>
-    <item nodeId="node-17200">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">A typical white metal utility door. Next to it is a keypad with the digits 0-9. An indicator light glows green.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17201"></child>
-        </children>
-    </item>
-    <item nodeId="node-17201">
-        <command xml:space="preserve">2</command>
-        <result xml:space="preserve">An indicator light blinks red.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17202"></child>
-        </children>
-    </item>
-    <item nodeId="node-17202">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">A typical white metal utility door. Next to it is a keypad with the digits 0-9. An indicator light glows red.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17203"></child>
-        </children>
-    </item>
-    <item nodeId="node-17203">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the closet door)
-(first unlocking the closet door)
-Jones will have to enter the correct code on the keypad.
-
-Jones: "Door on the east side has a keypad lock."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17204"></child>
-        </children>
-    </item>
-    <item nodeId="node-17204">
-        <command xml:space="preserve">0</command>
-        <result xml:space="preserve">An indicator light glows green.
-
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17205"></child>
-        </children>
-    </item>
-    <item nodeId="node-17205">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">A typical white metal utility door. Next to it is a keypad with the digits 0-9. An indicator light glows green.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17206"></child>
-        </children>
-    </item>
-    <item nodeId="node-17206">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the closet door)
-
-Galaxy Jones is in the maintenance closet. A bare, white-walled room containing various maintenance items.
-
-There is an Atmo-Suit hanging from a hook here.
-
-On the shelf is a red cardkey.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17207"></child>
-        </children>
-    </item>
-    <item nodeId="node-17207">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17208"></child>
-        </children>
-    </item>
-    <item nodeId="node-17208">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
 Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17209"></child>
+        <children><child nodeId="node-19526"></child>
         </children>
     </item>
-    <item nodeId="node-17209">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.
-
-Jones: "Now this is some choice bullshit here."
-
-Beck: "Looks like the record of the good Admiral's long and dedicated service."
+    <item nodeId="node-19526">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17210"></child>
+        <children><child nodeId="node-19527"></child>
         </children>
     </item>
-    <item nodeId="node-17210">
-        <command xml:space="preserve">take uniforms</command>
-        <result xml:space="preserve">There's too much of it to take!
+    <item nodeId="node-19527">
+        <command xml:space="preserve">push 3423</command>
+        <result xml:space="preserve">[button pushing 3423]
+The elevator quickly arrives at its destination.
+
+[(1) looking]
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+[(1) looking - succeeded]
+
+[button pushing 3423 - succeeded]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17211"></child>
+        <children><child nodeId="node-19528"></child>
         </children>
     </item>
-    <item nodeId="node-17211">
-        <command xml:space="preserve">take medals</command>
-        <result xml:space="preserve">There's too much of it to take!
+    <item nodeId="node-19528">
+        <command xml:space="preserve">actions off</command>
+        <result xml:space="preserve">Actions listing off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17212"></child>
+        <children><child nodeId="node-19529"></child>
         </children>
     </item>
-    <item nodeId="node-17212">
-        <command xml:space="preserve">x medals</command>
-        <result xml:space="preserve">Jones yawns looking over the assortment of faux honors. They're all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.
+    <item nodeId="node-19529">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
 
+[Rule "reset conversed this turn rule" applies.]
+[Rule "clear LPR rule" applies.]
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17213"></child>
+        <children><child nodeId="node-19530"></child>
         </children>
     </item>
-    <item nodeId="node-17213">
-        <command xml:space="preserve">take medal</command>
-        <result xml:space="preserve">Taken.
+    <item nodeId="node-19530">
+        <command xml:space="preserve">actions off</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+Actions listing off.
 
+[Rule "reset conversed this turn rule" applies.]
+[Rule "clear LPR rule" applies.]
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-16813">
-        <command xml:space="preserve">gonear air</command>
-        <result xml:space="preserve">(the air handling room)
-Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16814"></child>
+        <children><child nodeId="node-19531"></child>
         </children>
     </item>
-    <item nodeId="node-16814">
-        <command xml:space="preserve">push door</command>
-        <result xml:space="preserve">Which do you mean, the air handling door or the vent access door?
+    <item nodeId="node-19531">
+        <command xml:space="preserve">push 3423</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "Before doing something other than going" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "Carry out button pushing a number" applies.]
+The elevator quickly arrives at its destination.
+
+[Rule "determine visibility ceiling rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "Before doing something other than going" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "declare everything unmentioned rule" applies.]
+[Rule "new room description heading rule" applies.]
+Galaxy Jones is on the east side of the ground floor. [Rule "room description body text rule" applies.]
+Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+[Rule "room description paragraphs about objects rule" applies.]
+[Rule "initialise locale description rule" applies.]
+[Rule "find notable locale objects rule" applies.]
+[Rule "standard notable locale objects rule" applies.]
+[Rule "Before printing the locale description" applies.]
+[Rule "interesting locale paragraphs rule" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "new you-can-also-see rule" applies.]
+[Rule "check new arrival rule" applies.]
+[Rule "mark items as seen when looking rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "After looking" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "other people looking rule" applies.]
+[Rule "report looking" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack" applies.]
+[Rule "reset protocol rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+[Rule "show us the people rule" applies.]
+[Rule "reset conversed this turn rule" applies.]
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-19533">
+        <command xml:space="preserve">push 234</command>
+        <result xml:space="preserve">An indicator light blinks red.
+
+Jones: "it's not 234..."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16815"></child>
+        <children><child nodeId="node-19534"></child>
         </children>
     </item>
-    <item nodeId="node-16815">
-        <command xml:space="preserve">air</command>
-        <result xml:space="preserve">Aside from opening and closing it, what is there to do?
+    <item nodeId="node-19534">
+        <command xml:space="preserve">push 0</command>
+        <result xml:space="preserve">An indicator light blinks red.
+
+Jones: "it's not 0..."
+
+Beck: "I don't think you'll get it just typing random numbers."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16816"></child>
+        <children><child nodeId="node-19535"></child>
         </children>
     </item>
-    <item nodeId="node-16816">
-        <command xml:space="preserve">gonear 100th</command>
-        <result xml:space="preserve">Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+    <item nodeId="node-19535">
+        <command xml:space="preserve">purloin note</command>
+        <result xml:space="preserve">Which do you mean, the note or the present?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16817"></child>
+        <children><child nodeId="node-19536"></child>
         </children>
     </item>
-    <item nodeId="node-16817">
-        <command xml:space="preserve">push doors</command>
-        <result xml:space="preserve">Aside from opening and closing it, what is there to do?
+    <item nodeId="node-19536">
+        <command xml:space="preserve">the note</command>
+        <result xml:space="preserve">Which do you mean, the note or the present?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16818"></child>
+        <children><child nodeId="node-19537"></child>
         </children>
     </item>
-    <item nodeId="node-16818">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">It's not clear why everything has to be so extravagant.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-16807">
-        <command xml:space="preserve">gonear 100th hall</command>
-        <result xml:space="preserve">Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16808"></child>
-        </children>
-    </item>
-    <item nodeId="node-16808">
-        <command xml:space="preserve">push chandelier</command>
-        <result xml:space="preserve">Jones can't reach it.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16809"></child>
-        </children>
-    </item>
-    <item nodeId="node-16809">
-        <command xml:space="preserve">push doors</command>
-        <result xml:space="preserve">Aside from opening and closing them, what is there to do?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16822"></child>
-        </children>
-    </item>
-    <item nodeId="node-16822">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">It's not clear why everything has to be so extravagant.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16823"></child>
-        </children>
-    </item>
-    <item nodeId="node-16823">
-        <command xml:space="preserve">x doors</command>
-        <result xml:space="preserve">It's not clear why everything has to be so extravagant.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16824"></child>
-        </children>
-    </item>
-    <item nodeId="node-16824">
-        <command xml:space="preserve">showme elevator doors</command>
-        <result xml:space="preserve">elevator doors - thing
-location: in the 100th floor elevator hall
-plural-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, seen, familiar, non-pourable
-list grouping key: none
-printed name: "elevator doors"
-printed plural name: none
-indefinite article: none
-most recent reference: nominal
-third singular pronoun: It-pronoun
-conversation: none
-description: "It's not clear why everything has to be so extravagant."
-initial appearance: none
-third-plural-pronoun: They-pronoun
-elevator door - closed door
-    drop key hole (part of elevator door)
-location: in the ground floor elevator hall
-singular-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, unseen, unfamiliar, non-pourable; closed, unopenable, unlocked
-list grouping key: none
-printed name: "elevator door"
-printed plural name: "doors"
-indefinite article: none
-most recent reference: nominal
-third singular pronoun: It-pronoun
-conversation: none
-description: "A gleaming gold elevator door. There is a hole near the top for inserting a drop key."
-initial appearance: none
-third-plural-pronoun: They-pronoun
-other side: ground floor elevator shaft
-matching key: elevator drop key
-reverse side: elevator door
-elevator door - closed door
-location: in the ground floor elevator shaft
-singular-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, unseen, unfamiliar, non-pourable; closed, openable, unlocked
-list grouping key: none
-printed name: "elevator door"
-printed plural name: "doors"
-indefinite article: none
-most recent reference: nominal
-third singular pronoun: It-pronoun
-conversation: none
-description: "The backside of the elevator door."
-initial appearance: none
-third-plural-pronoun: They-pronoun
-other side: ground floor elevator hall
-reverse side: elevator door
-ninth floor elevator door - closed door
-location: in the ninth floor elevator shaft
-singular-named, improper-named, unused; unlit, inedible, fixed in place, scenery, neuter, unseen, unfamiliar, non-pourable; closed, openable, unlocked
-list grouping key: none
-printed name: "ninth floor elevator door"
-printed plural name: "doors"
-indefinite article: none
-most recent reference: nominal
-third singular pronoun: It-pronoun
-conversation: none
-description: "A golden sliding door, opening in the middle."
-initial appearance: none
-third-plural-pronoun: They-pronoun
-other side: ninth floor elevator shaft
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-17292">
-        <command xml:space="preserve">exits</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17293"></child>
-        </children>
-    </item>
-    <item nodeId="node-17293">
-        <command xml:space="preserve">exits on</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17294"></child>
-        </children>
-    </item>
-    <item nodeId="node-17294">
-        <command xml:space="preserve">exit on</command>
-        <result xml:space="preserve">I only understood you as far as wanting to exit.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17295"></child>
-        </children>
-    </item>
-    <item nodeId="node-17295">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
-
-Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
-
-Beck: "Oh, no doubt."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17296"></child>
-        </children>
-    </item>
-    <item nodeId="node-17296">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">Jones is already at the main entrance. She's unlikely to find another way in.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17297"></child>
-        </children>
-    </item>
-    <item nodeId="node-17297">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">Jones is already at the main entrance. She's unlikely to find another way in.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17298"></child>
-        </children>
-    </item>
-    <item nodeId="node-17298">
+    <item nodeId="node-19537">
         <command xml:space="preserve">s</command>
-        <result xml:space="preserve">Jones slinks back to the speeder dock.
-
-Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
-
-Her speeder, Galaxy One, sits in one of the parking bays.
+        <result xml:space="preserve">I only understood you as far as wanting to purloin south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17299"></child>
+        <children><child nodeId="node-19538"></child>
         </children>
     </item>
-    <item nodeId="node-17299">
-        <command xml:space="preserve">se</command>
-        <result xml:space="preserve">Jones can't just leave Europa in the hands of Admiral Thallium!
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17300"></child>
-        </children>
-    </item>
-    <item nodeId="node-17300">
-        <command xml:space="preserve">look s</command>
-        <result xml:space="preserve">There's nothing in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17301"></child>
-        </children>
-    </item>
-    <item nodeId="node-17301">
-        <command xml:space="preserve">n</command>
+    <item nodeId="node-19538">
+        <command xml:space="preserve">s</command>
         <result xml:space="preserve">
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17302"></child>
+        <children><child nodeId="node-19539"></child>
         </children>
     </item>
-    <item nodeId="node-17302">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
-
-Beck replies, "You got this, Galaxy."
-
-Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
+    <item nodeId="node-19539">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. Jones may go east and west from here, north to the elevators, or south out of the building.
 
 Suddenly two robot guards, green and red, emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
 
@@ -3618,19 +1096,34 @@ Beck responds, "Monitoring your suit radar."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17303"></child>
+        <children><child nodeId="node-19540"></child>
         </children>
     </item>
-    <item nodeId="node-17303">
-        <command xml:space="preserve">look d</command>
-        <result xml:space="preserve">There's nothing in that direction.
+    <item nodeId="node-19540">
+        <command xml:space="preserve">x desk</command>
+        <result xml:space="preserve">There's not much on the desk other than a note that says "0".
+
+Beck: "Robot on your right!"
+
+One robot tries to flank Jones, but a shot from her disruptor sends it scurrying back.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17304"></child>
+        <children><child nodeId="node-19541"></child>
         </children>
     </item>
-    <item nodeId="node-17304">
+    <item nodeId="node-19541">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Trying to reach an exit would surely get Jones shot.
+
+Jones: "I'm pinned down here!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-19542"></child>
+        </children>
+    </item>
+    <item nodeId="node-19542">
         <command xml:space="preserve">shoot art</command>
         <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
  _________      __                     _____                     
@@ -3648,142 +1141,37 @@ Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17305"></child>
+        <children><child nodeId="node-19543"></child>
         </children>
     </item>
-    <item nodeId="node-17305">
-        <command xml:space="preserve">look d</command>
-        <result xml:space="preserve">There's nothing in that direction.
+    <item nodeId="node-19543">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones crosses the floor carefully, disruptor pistol at the ready.
+
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
+
+Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-17306"></child>
+        <children><child nodeId="node-19544"></child>
         </children>
     </item>
-    <item nodeId="node-17306">
-        <command xml:space="preserve">look u</command>
-        <result xml:space="preserve">There's nothing in that direction.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-16543">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">Should Jones burrow downward?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16544"></child>
-        </children>
-    </item>
-    <item nodeId="node-16544">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">Jones can neither climb walls nor fly.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16545"></child>
-        </children>
-    </item>
-    <item nodeId="node-16545">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">Jones can't just leave Europa in the hands of Admiral Thallium!
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16546"></child>
-        </children>
-    </item>
-    <item nodeId="node-16546">
+    <item nodeId="node-19544">
         <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
-
-Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
-
-Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
-
-Beck: "Oh, no doubt."
+        <result xml:space="preserve">
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16547"></child>
+        <children><child nodeId="node-19545"></child>
         </children>
     </item>
-    <item nodeId="node-16547">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">Should Jones burrow downward?
+    <item nodeId="node-19545">
+        <command xml:space="preserve">push 0</command>
+        <result xml:space="preserve">An indicator light glows green.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16548"></child>
-        </children>
-    </item>
-    <item nodeId="node-16548">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
-
-Beck replies, "You got this, Galaxy."
-
-Jones passes through the revolving door and into the lobby, alert to any defenses.
-
-Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
-
-Suddenly two robot guards, green and red, emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
-
-Jones shouts, "I'm under fire from two ugly robot things!"
-
-Beck responds, "Monitoring your suit radar."
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16549"></child>
-        </children>
-    </item>
-    <item nodeId="node-16549">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">Should Jones burrow downward?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16550"></child>
-        </children>
-    </item>
-    <item nodeId="node-16550">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">Jones can neither climb walls nor fly.
-
-The robots intone "Destroy Jones" in an eerie drone.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16551"></child>
-        </children>
-    </item>
-    <item nodeId="node-16551">
-        <command xml:space="preserve">ne</command>
-        <result xml:space="preserve">That would just get Jones lost in a maze of couches.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16552"></child>
-        </children>
-    </item>
-    <item nodeId="node-16552">
-        <command xml:space="preserve">nw</command>
-        <result xml:space="preserve">That would just get Jones lost in a maze of couches.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-16553"></child>
-        </children>
-    </item>
-    <item nodeId="node-16553">
-        <command xml:space="preserve">se</command>
-        <result xml:space="preserve">Jones can go south out of the building or north to the elevator. East or west will take her around the building.
-
-Beck: "Robot on your right!"
-
-One robot tries to flank Jones, but a shot from her disruptor sends it scurrying back.
+Jones: "I've unlocked the east side utility door."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

@@ -576,6 +576,8 @@ Cybernetica Battle is a scene. Cybernetica Battle begins when the player is in t
 
 When Cybernetica Battle begins:
 	move the purple guard robot to the Cybernetica office;
+	now the purple guard robot is seen;
+	now the purple guard robot is familiar;
 	say "As soon as [we] steps into the office, a shot zaps just past [our] nose. [We] dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, [we] takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.";
 	converse "[line break]Jones (whispering): 'We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this [']bot.' 
 	 
@@ -606,6 +608,7 @@ After doing something other than sneaking up on the guard robot during Cyberneti
 		increment sneak index;
 		say "The guard robot moves a little farther away from [us].";
 		stop the action;
+	continue the action;
 		
 Shoot out the window is a descriptive clip with conversation "[We] must have poked up [our] shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out."
 	
@@ -644,7 +647,7 @@ Cybernetica Battle ends when purple guard robot is not in the Cybernetica office
 When Cybernetica Battle ends:
 	score 1;	
 	say line break;
-	converse "Jones: 'Better than a video game. '
+	converse "Jones: 'Better than a video game.	'
 	
 	Beck: 'Nice, but don[']t forget to credit your handler.'
 	
@@ -1153,7 +1156,7 @@ Report shooting a guard robot with the disruptor pistol during Lobby Shootout:
 	
 Check shooting something with the disruptor pistol:
 	if the noun is not a guard robot and the noun is not the giant sculpture:
-		say "[regarding the noun]Shooting [them] would accomplish nothing.";
+		say "[text of the block attacking rule response (A)][line break]" instead;
 	 
 The tangled ruin is a fixed in place pseudocontainer. "Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots." Understand "remains/sculpture/art/glass/crystal/guards/guard/robots/robot/red/green/ruins/ruin" as the tangled ruin. 
 The description is "[We] searches some more, but nothing further turns up."
@@ -1184,6 +1187,18 @@ Instead of doing something other than shooting when (the action requires a touch
 	say "As soon as [we] [start] to act, an energy beam zips past [our] head, forcing [us] back down behind the desk.";
 	
 Instead of dropping the disruptor pistol:
+	say "That would be ill-advised.";
+	
+Instead of inserting the disruptor pistol into something:
+	say "That would be ill-advised.";
+	
+Instead of putting the disruptor pistol on something:
+	say "That would be ill-advised.";
+	
+Instead of giving the disruptor pistol to someone:
+	say "That would be ill-advised.";
+	
+Instead of eating the disruptor pistol:
 	say "That would be ill-advised.";
 	
 The tasteful couch is a couch in the lobby. "Quite tasteful for a homicidal madman, really."
@@ -1648,7 +1663,7 @@ The Cybernetica office can be window-broken.
 Before going from a room (called R1) to an atmo-thin room (called R2) when R1 is not atmo-thin and the Atmo-Suit is not touchable:
 	say "The atmosphere is too thin out there. [We] needs protective gear." instead;
 
-Before going from Cybernetica office to ledge when the Atmo-Suit is touchable for the first time:
+Before going from Cybernetica office to ledge when the Atmo-Suit is touchable and cybernetica battle is not happening for the first time:
 	converse "Jones: 'I'm going out the window to see if I can find a way to get up to the tenth floor.'
 	
 	Beck: 'Whoa whoa whoa, Jones. You know you're not good with heights.'
@@ -1658,6 +1673,9 @@ Before going from Cybernetica office to ledge when the Atmo-Suit is touchable fo
 The cybernetica-desks are scenery in the Cybernetica office. They are privately-named. The printed name is "desks". Understand "desk/desks/chair/chairs" as the cybernetica-desks. "Very nice and good for hiding under and among."
 
 Broken-window is scenery in the Cybernetica office. It is privately-named. The printed name is "broken window". Understand "broken/window/east/eastern" as broken-window. "Looks like [we] could get through if [we're] careful."
+
+Instead of doing something to the purple guard robot when the action requires a touchable noun:
+	say "Fine way for Jones to get herself killed.";
 	
 Chapter 2 - Outside
 
@@ -1671,7 +1689,10 @@ Check flying:
 Instead of flying when the location is the ledge:
 	say "Tasteless.";
 
-The ledge-wall is scenery in the ledge. It is privately-named. The printed name is "wall". Understand "wall" as the ledge-wall. "Right now, it's [our] only friend."
+The ledge-wall is a backdrop. It is in the ledge and the window washing scaffold. It is privately-named. The printed name is "wall". Understand "wall" as the ledge-wall. "Right now, it's [our] only friend."
+
+check climbing the ledge-wall:
+	say "Wall-climbing is not among Galaxy Jones's many talents." instead;
 	
 Instead of examining down when the location is the ledge for the first time:
 	say "Okay, fine. [We] look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below [us].[paragraph break]";
@@ -1681,8 +1702,14 @@ Instead of examining down when the location is the ledge for the first time:
 	Beck: 'Take it easy, Jones.'";
 	move the scaffold-scenery to the ledge;
 	now the window washing scaffold is discovered;
+	
+Instead of jumping on the scaffold-scenery when the location is the ledge: 
+	if the floor of the window washing scaffold is 10:
+		say "Jones can't make that jump.";
+	otherwise:
+		try going down;
 
-The scaffold-scenery is scenery. It is privately-named. The printed name is "scaffold". Understand "scaffold/window/washing" as the scaffold-scenery. "It certainly looks more inviting than this ledge."
+The scaffold-scenery is scenery. It is privately-named. The printed name is "scaffold". Understand "scaffold/window/washing/platform" as the scaffold-scenery. "It certainly looks more inviting than this ledge."
 	
 Instead of going down from ledge when the floor of the window washing scaffold is not 8:
 	say "That would be a long fall.";
@@ -1691,6 +1718,12 @@ The window washing scaffold can be discovered.
 	
 Instead of jumping when the location is the ledge and the window washing scaffold is discovered:
 	try going down;
+	
+Instead of entering the scaffold-scenery:
+	if the floor of the window washing scaffold is 8:
+		try going down;
+	otherwise:
+		say "Jones can't reach the scaffold from here.";
 	
 Instead of jumping when the location is the ledge:
 	say "On a [italic type]ledge?[roman type] Are you crazy?";
@@ -1707,7 +1740,7 @@ Jones: 'I hate it out here.'
 
 Beck: 'Well, there's the open window right next to you.'";
 
-explaining the vent is a clip with conversation "Jones: 'Alright, I'm by the tenth floor now. What's this grill thing here?' 
+explaining the vent is a clip with conversation "Jones: 'Alright, I'm by the tenth floor now. What's this grille thing here?' 
 
 Beck: 'That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can get the cover off you should be able to access the whole floor from here.'"
 
@@ -1722,7 +1755,15 @@ Carry out looking when the location is the window washing scaffold (this is the 
 		say line break;
 		print explaining the vent;
 		
-window-thing is scenery in the window washing scaffold. It is privately-named. The printed name is "window". Understand "window" as the window-thing. "It's a window."
+window-thing is a backdrop. It is in the window washing scaffold and the ledge. It is privately-named. The printed name is "windows". Understand "window/windows" as the window-thing. 
+
+Instead of examining the window-thing:
+	If the location is the ledge or the floor of the window washing scaffold is 9:
+		say "The window here is broken, allowing Jones to reenter the building.";
+	otherwise if the floor of the window washing scaffold is 8:
+		say "It's dark inside, preventing Jones from seeing what's in there.";
+	otherwise:
+		say "You're up against an exhaust vent. There are no windows here.";
 
 Does the player mean opening the window washing scaffold: it is very unlikely;
 		
@@ -1746,6 +1787,9 @@ Instead of going west from the window washing scaffold when the floor of the win
 			try taking off the atmo-suit;
 
 Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is closed:
+	say "[We] will need to remove the vent cover first.";
+
+Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 10 and the exhaust vent is closed:
 	say "[We] will need to remove the vent cover first.";
 		
 Instead of going west from the window washing scaffold when the floor of the window washing scaffold is 9:
@@ -1792,7 +1836,13 @@ Instead of going inside from the window washing scaffold when the floor of the w
 Instead of going inside from the window washing scaffold when the floor of the window washing scaffold is 8:
 	say "None of the windows here are open.";
 	
-Instead of going east from the Cybernetica office when the floor of the window washing scaffold is 9:
+Instead of going east from the Cybernetica office during Cybernetica battle:
+	say "You'll never get out without being shot.";
+	
+Instead of going outside from the Cybernetica office during Cybernetica battle:
+	say "You'll never get out without being shot.";
+	
+Instead of going east from the Cybernetica office when the floor of the window washing scaffold is 9 and Cybernetica battle is not happening:
 	now the atmo-suit is needed;
 	if the atmo-suit is touchable:
 		try wearing the atmo-suit;
@@ -1801,7 +1851,7 @@ Instead of going east from the Cybernetica office when the floor of the window w
 		say "[We] needs an Atmo-Suit to go outside." instead;
 	move the player to the window washing scaffold;
 	
-Instead of going east from the Cybernetica office when the floor of the window washing scaffold is not 9:
+Instead of going east from the Cybernetica office when the floor of the window washing scaffold is not 9 and Cybernetica battle is not happening:
 	now the atmo-suit is needed;
 	if the atmo-suit is touchable:
 		try wearing the atmo-suit;
@@ -1919,20 +1969,23 @@ Report pushing the scaffold down button:
 	try looking;
 	stop the action;
 
-The exhaust vent is a scenery container. It is closed and openable. "It's a white metal grill held in place by four screws.". Understand "screws/grill/cover" as the exhaust vent.
+The exhaust vent is a scenery container. It is closed and openable. "[if closed]It's a hinged white metal grille held in place by two large screws[otherwise]The vent is open; Jones can climb into the building here[end if].". Understand "screws/screw/grill/grille/cover" as the exhaust vent.
 The screws are part of the exhaust vent. The description is "Plain screws painted with white enamel."
 
 Instead of unscrewing the exhaust vent with the screwdriver:
 	if the exhaust vent is closed:
 		now the exhaust vent is open;
-		say "[We] loosens the screws with the screwdriver and removes the grill from the vent.";
+		say "[We] loosens the screws with the screwdriver and open the grille.";
 	otherwise:
 		say "The vent is already open.";
 	
 Instead of closing the exhaust vent:
 	say "After [we] went to so much trouble to open it?";
 
-Instead of opening the exhaust vent:
+Instead of opening the exhaust vent when the player does not carry the screwdriver:
+	say "Jones will need to remove the screws first."
+
+Instead of opening the exhaust vent when the player carries the screwdriver:
 	try unscrewing the exhaust vent with the screwdriver;
 	
 Instead of unlocking the exhaust vent with the screwdriver:
@@ -1941,7 +1994,7 @@ Instead of unlocking the exhaust vent with the screwdriver:
 understand "remove [exhaust vent] with [screwdriver]" as unscrewing it with;
 	
 Instead of entering the exhaust vent when the exhaust vent is open for the first time:
-	say "[We] climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.";
+	say "[We] climbs inside the vent, crawls along a short length of ductwork, and emerges through another hinged grille, into the air handling room.";
 	score 1;
 	now the player is in the air handling room;	
 	try taking off the atmo-suit;
@@ -1954,7 +2007,7 @@ Instead of entering the exhaust vent when the exhaust vent is open for the first
 	Beck: 'And Jones? Save your game.'";
 	
 Instead of entering the exhaust vent when the exhaust vent is open:
-	say "[We] climbs inside the vent, crawls along a short length of duct work, and emerges through another, hinged grill, into the air handling room.";
+	say "[We] climbs inside the vent, crawls along a short length of ductwork, and emerges through another hinged grille, into the air handling room.";
 	now the player is in the air handling room;
 	try taking off the atmo-suit;
 	
@@ -1980,7 +2033,7 @@ The description of the north end of the building management office is "The build
 
 The large desk is in the north end of the building management office. It is scenery. It is a container. It is closed, openable, locked, and lockable. "It's a pretty utilitarian desk of some plastic material. It has a single drawer with a keyed lock.". Understand "drawer/lock" as the large desk.
 
-Instead of unlocking the large desk with the safety pin:
+Instead of unlocking the large desk with the safety pin when the large desk is locked:
 	say "[We] pushes the pin into the keyhole and wiggles it around. After a few seconds of this the desk drawer pops open[if desk contains something]. It contains [a list of objects contained in the large desk][end if].";
 	now the large desk is unlocked;     
 	now the large desk is open;
@@ -2023,6 +2076,9 @@ Carry out picking with safety pin when the large desk is touchable:
 
 Instead of picking the large desk with the safety pin:
 	try unlocking the large desk with the safety pin;
+	
+Check picking the large desk with something that is not the safety pin:
+	say "That doesn't fit into the lock";
 
 The black cardkey is in the large desk. The black cardkey unlocks the Cybernetica door. The black cardkey unlocks the Martian Chemical door. Understand "card/key" as the black cardkey. The black cardkey is a cardkey. The description is "Black like evil, or like secrets?"
 
@@ -2144,7 +2200,7 @@ The description of the tenth floor stairwell is "this is a secret message."
 
 The description of the air handling room is "There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.".
 
-The fans are scenery in the air handling room. "They're loud." Understand "machinery" as fans.
+The fans are scenery in the air handling room. "They're loud." Understand "machinery/fan" as fans.
 
 The ductwork is scenery in the air handling room. "A short length leading from the fans here to the outside." Understand "duct" as ductwork.
 
@@ -2166,7 +2222,7 @@ The description of the tenth floor elevator hall is "[elevator description]. The
 
 The tenth-floor-stairwell is scenery in the tenth floor elevator hall. The printed name is "stairwell". Understand "stairwell/stairs" as the tenth-floor-stairwell. "They lead up and down from here."
 
-The description of microthings-1 is "This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor east and west, and north to the elevator".
+The description of microthings-1 is "This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator".
 
 Reception is scenery in microthings-1. "No one is covering the desk at present."
 
@@ -2192,7 +2248,12 @@ The executive offices are scenery in microthings-4. "It's hard to imagine how an
 
 The description of microthings-5 is "This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.". 
 
-The cafeteria is scenery in microthings-5. "The food looks like it would be delicious, if it weren't hours-old and cold."
+The cafeteria is scenery in microthings-5. "The food looks like it would be delicious, if it weren't hours old and cold."
+
+The food is part of the cafeteria. The description is "It's old and cold."
+
+Instead of eating the food:
+	say "It's not at all appetizing." instead;
 
 The description of microthings-7 is "This part of the office is currently unused. [We] can go northwest or south from here.".
 The description of microthings-8 is "This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.".
@@ -2210,6 +2271,9 @@ Instead of sneaking up on the mauve guard robot:
 	say "The room is too open to sneak up effectively." instead;
 
 oldloc is a room that varies.
+
+Report shooting the mauve guard robot with the disruptor pistol:
+	say "[one of]The shot goes wide[or]The shot is absorbed by the mauve robot[or]The shot narrowly misses the guard robot[or]The strikes a window and reflects at a crazy angle around the room[at random].";
  
 Before going somewhere when the player is in tenth-floor-region and the mauve guard robot is somewhere:
 	now oldloc is room of stuff;
@@ -2267,6 +2331,9 @@ Chapter 3 - The Elevator Car
 	
 The golden keyhole is scenery in the elevator car-room. "Inset in the mahogany panel, it looks like real gold and has the shape of an antique 'skeleton' key."
 
+Check putting something that is not the golden key in the golden keyhole:
+	say "That doesn't fit." instead;
+
 Instead of exiting when the location is the elevator car-room:
 	try going east;
 
@@ -2277,7 +2344,7 @@ The ceiling panel is in the elevator car-room. "One of the ceiling panels looks 
 
 it's real ivory is a taunting clip with conversation "Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant.'".
 
-The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if][if the ceiling panel is nowhere]. There is a hole in the ceiling big enough for Jones to squeeze through[end if].".
+The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if][if the ceiling panel is nowhere]. There is a hole in the ceiling big enough for Jones to squeeze through[end if].".
 
 The elevator-car-door is scenery in the elevator car-room. It is privately-named. The printed name is "elevator car door". Understand "elevator/car/door" as the elevator-car-door. "The door is open."
 
@@ -2302,26 +2369,38 @@ The carpeting is scenery in the elevator car-room. "Soft and velvety in a deep r
 
 button pushing is an action applying to one number. Understand "push [number]" as button pushing. Understand "press [number]" as button pushing.
 
-Check button pushing a number when the number understood is not listed in { 1, 9, 10, 100 } or the elevator car-room is not in running mode:
+Check button pushing a number when the location is the elevator car-room and the number understood is not listed in { 1, 9, 10, 100 } or the elevator car-room is not in running mode:
 	say "Nothing happens." instead;
 	
-Check button pushing a number when the number understood is the floor of the elevator car-room:
+Check button pushing a number when the location is the elevator car-room and the number understood is greater than 100 or the number understood is less than 1: 
+	say "The buttons only run from 1 to 100." instead;
+	
+Check pushing ivory buttons in the elevator car-room:
+	say "You have to specify what button, from 1 to 100." instead;
+	
+Check button pushing a number when the location is the elevator car-room and the number understood is the floor of the elevator car-room:
 	say "[We're] already on that floor." instead;
 	
 the elevator car-room has a number called the floor. The floor of the elevator car-room is 10.
+
+Check button pushing when the location is not the elevator car-room and the location is not ground-floor-6:
+	say "There are no buttons here to push." instead;
+	
+Check button pushing when the location is ground-floor-6:
+	try typing the number understood on the keypad;
 
 whooee is a clip with conversation "[line break]Jones: 'Holy - This thing goes fast.'";
 
 To describe elevator ride from (F - a number) to (T - a number):
 	if T is 100:
-		say "The elevator accelerates upwards at a frightening rate. The numbers cllimb towards 100. Soon the elevator slows, and the door opens on the 100th floor.";
+		say "The elevator accelerates upwards at a frightening rate. The numbers climb towards 100. Soon the elevator slows, and the door opens on the 100th floor.";
 		print whooee;
 	otherwise if F is 100:
 		say "The ride downward is a terrifying plunge, but at least it's over quickly.";
 	otherwise:
 		say "The elevator quickly arrives at its destination.";
 	
-Carry out button pushing a number:
+Carry out button pushing a number when the location is elevator car-room:
 	describe elevator ride from the floor of the elevator car-room to the number understood;
 	now the floor of the elevator car-room is the number understood;
 	try looking;
@@ -2359,9 +2438,9 @@ After deciding the scope of the player when the location is top of the elevator 
 Rule for reaching inside the elevator car-room when the location is top of the elevator and the mauve guard robot is in the elevator car-room:
 	allow access;
 	
-The description of the top of the elevator car is "[if floor of the elevator car-room < 100]The elevator shaft extends many hundreds of feet above here[otherwise]She is right at the top of the shaft[end if]. She can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if confused[end if].";
+The description of the top of the elevator car is "[if floor of the elevator car-room < 100]The elevator shaft extends many hundreds of feet above her  [otherwise]She is right at the top of the shaft[end if]. She can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if confused[end if].";
 
-The upper-shaft is scenery in the top of the elevator car. It is privately-named. The printed name is "elevator shaft". Understand "elevator/shaft" as the upper-shaft. "The shaft extends far up into the darkness. The ladder here is missing, making it impossible to climb up to the eleventh floor and beyond."
+The upper-shaft is scenery in the top of the elevator car. It is privately-named. The printed name is "elevator shaft". Understand "elevator/shaft/ladder" as the upper-shaft. "The shaft extends far up into the darkness. The ladder here is missing, making it impossible to climb up to the eleventh floor and beyond."
 
 Instead of examining down when the location is the top of the elevator car:
 	say "[if the location of the mauve guard robot is the elevator car-room]The mauve guard robot is in the elevator car[otherwise]The elevator car is empty[end if].";
@@ -2373,6 +2452,9 @@ After the mauve guard robot going from the tenth floor elevator hall to the elev
 	say "The mauve guard robot enters the elevator car below.";
 	
 The description of the mauve guard robot is "This one looks, if anything, even meaner than the ones [we] has already seen[if location is top of the elevator car]. It's looking around as if confused[end if]. There is a small vent on the top of its head, probably to dispose of excess heat."
+
+Instead of climbing the upper-shaft:
+	say "The ladder is broken here.";
 
 The mauve guard robot has a number called the attack countdown. 
 The mauve guard robot can be under attack.
