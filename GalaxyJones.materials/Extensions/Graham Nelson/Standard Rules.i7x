@@ -3423,7 +3423,7 @@ Report an actor giving something to (this is the standard report giving rule):
 	otherwise:
 		say "[The actor] [give] [the noun] to [the second noun]." (C).
 
-Showing it to is an action applying to one carried thing and one visible thing.
+Showing it to is an action applying to one visible thing and one visible thing.
 The showing it to action translates into I6 as "Show".
 
 The specification of the showing it to action is "Anyone can show anyone
@@ -4484,8 +4484,8 @@ Understand "give [something preferably held] to [someone]" as giving it to.
 Understand "give [someone] [something preferably held]" as giving it to (with nouns reversed).
 Understand the commands "pay" and "offer" and "feed" as "give".
 
-Understand "show [someone] [something preferably held]" as showing it to (with nouns reversed).
-Understand "show [something preferably held] to [someone]" as showing it to.
+Understand "show [someone] [something]" as showing it to (with nouns reversed).
+Understand "show [something] to [someone]" as showing it to.
 Understand the commands "present" and "display" as "show".
 
 Understand "go" as going.

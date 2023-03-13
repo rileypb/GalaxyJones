@@ -6,13 +6,12 @@ Include Glulx Text Effects by Emily Short.
 Include Skeleton Keys by Emily Short.
 
 Include Epistemology by Eric Eve. 
-[Include Exit Lister by Eric Eve.]
 Include Conversation Framework by Eric Eve.
 
 Include Galaxy Banner by Philip Riley.
 Include Third Person Narration by Philip Riley.       
 Include Pseudocontainers by Philip Riley.
-[Include Look That Way by Philip Riley.]
+Include Look That Way by Philip Riley.
 Include Use by Philip Riley.   
 Include Open Spaces by Philip Riley.
 Include Visible Rooms by Philip Riley.
@@ -68,14 +67,6 @@ left	central (text)	right
 To start header style: 
 	(- VM_Style(HEADER_VMSTY); -)
 
-[X is an object that varies.	
-
-To print base name of (O - an object):
-	now X is O;
-	foo;
-	
-to foo:
-	(- PrintOrRun((+ X +), parse_name, true); -)]
 	
 To decide what number is the number of understood words of/for (obj - object): (- ({obj}.#name)/WORDSIZE -)
 
@@ -185,6 +176,8 @@ the block attacking rule response (A) is "Jones only uses violent means when abs
 
 The block sleeping rule response (A) is "There's no lying down on the job for Galaxy Jones!"
 
+The right second rule response (A) is "[We] [are] unable to unlock [the noun] with [the second noun]." 
+
 Book 3 - Some default actions
 
 Check informing Beck about something:	
@@ -217,7 +210,7 @@ Check quizzing someone that is not beck about something:
 	now current interlocutor is beck;
 	say "They're not likely to be helpful." instead;
 	
-Check saying hello to someone when the noun is not beck and the noun is not europa:
+Check saying hello to someone when the noun is not beck and the noun is not europa and the noun is not the cat:
 	now current interlocutor is beck;
 	say "They're not likely to be helpful." instead;
 	
@@ -228,11 +221,28 @@ Check saying hello to Europa:
 Check searching a door:
 	say "Jones will have to go through the door to see what's inside." instead;
 	
+A thing can be examined. 
+Before examining something:
+	now the noun is examined;
+	
+Instead of showing something to Beck:
+	try quizzing Beck about the noun;
+	
 Book 4 - Does the player mean
 
 Does the player mean doing something to a person: it is very likely;
 
 Does the player mean doing something to beck: it is very unlikely;
+
+Does the player mean unlocking keylessly the elevator drop key: it is very unlikely; 
+
+Does the player mean unlocking the elevator drop key with something: it is very unlikely; 
+
+Does the player mean unlocking the large desk with the elevator drop key: it is unlikely;
+
+Does the player mean unlocking the cybernetica door with the elevator drop key: it is unlikely;
+
+Does the player mean unlocking the martian chemical door with the elevator drop key: it is unlikely;
 	
 Book 5 - Some extra actions
 	
@@ -727,16 +737,28 @@ A white board is a kind of thing. A white board has a text called the writing. T
 
 Writing is an action applying to one topic. Understand "write [text]" as writing.
 
+Writing contentlessly is an action applying to nothing. Understand "write", "write on board" as writing contentlessly.
+
 Check writing when no white board is in the location:
 	say "There's nothing to write on here." instead;
 
 Carry out writing:
+	let newtext be the topic understood;
 	let board be a random white board in the location;
-	now the writing of board is "[writing of board] [topic understood]";
+	if board is blank: 
+		now the writing of board is newtext;
+	otherwise:
+		now the writing of board is "[writing of board] [newtext]";
 	
 Report writing:
 	let board be a random white board in the location;
 	say "Now the board says '[writing of board]'.";
+
+Check writing contentlessly when no white board is in the location:
+	say "There's nothing to write on here." instead;
+
+Check writing contentlessly:
+	say "You must say what you want Jones to write." instead;
 	
 Erasing is an action applying to one thing. Understand "erase [thing]" as erasing.
 
@@ -766,7 +788,7 @@ Instead of entering building entryway:
 
 the ground floor elevator hall is north of the lobby.
 
-the ground floor elevator door is a door. It is west of the ground floor elevator hall. The printed name is "elevator door". Through the ground floor elevator door is the ground floor elevator shaft. The ground floor elevator door is closed and unopenable. Understand "elevator/door" as the ground floor elevator door.
+the ground floor elevator door is a door. It is west of the ground floor elevator hall. The printed name is "elevator door". Through the ground floor elevator door is the ground floor elevator shaft. The ground floor elevator door is closed and unopenable. Understand "elevator/door/gold" as the ground floor elevator door.
 
 the ground floor elevator door-inside is a door. It is east of the ground floor elevator shaft. It is scenery. The printed name is "elevator door". Through the ground floor elevator door-inside is the ground floor elevator hall. The ground floor elevator door-inside is a half-door of the ground floor elevator door. Understand "elevator/door" as the ground floor elevator door-inside. "The backside of the elevator door."
 
@@ -806,7 +828,7 @@ the closet-door-inside is a door. It is privately-named. It is scenery. The prin
 
 ground-floor-7 is south of ground-floor-6 and east of the lobby. It is a ground-floor. The dir is southeast. The preposition is "at".
 
-the ground floor stairwell is east of the elevator hall.
+the ground floor stairwell is east of the elevator hall. the ground floor stairwell is above the elevator hall.
 
 Book 2 - Lower Elevator Shaft
 
@@ -816,15 +838,17 @@ Book 3 - The Ninth Floor
 
 The ninth-floor is a region. It contains the ninth floor stairwell, the ninth floor north hallway, the ninth floor south hallway, the north end of the building management office, the south end of the building management office, the Cybernetica office, and the Martian Chemical office.
 
-The ninth floor elevator door is a door. It is scenery. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall. The description is "A golden sliding door, opening in the middle."
+The ninth floor elevator door is a door. It is scenery. It is east of the ninth floor elevator shaft and west of the ninth floor elevator hall. The description is "A golden sliding door, opening in the middle." It is open.
 
 The ninth floor stairwell is east of the ninth floor elevator hall.
+The ninth floor stairwell is above the ninth floor elevator hall.
+The ninth floor stairwell is below the ninth floor elevator hall.
 
 The ninth floor north hallway is north of the ninth floor elevator hall.
 
 The ninth floor south hallway is south of the ninth floor elevator hall.
 
-The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable. The description is "A slick corporate office door lettered 'Cybernetica'. It has a swipe lock above the handle." Understand "swipe/lock" as the cybernetica door.
+The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable. The description is "A slick corporate office door lettered 'Cybernetica'. It has a swipe lock above the handle." Understand "swipe/lock/handle" as the cybernetica door.
 The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door.  
 
 The Martian Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Martian Chemical door is closed, openable, locked, and lockable. "A slick corporate office door with the fancy company logo of Martian Chemical. It has a swipe lock above the handle." Understand "swipe/lock" as Martian Chemical door.
@@ -919,6 +943,8 @@ Instead of going west from the 100th floor elevator hall when the elevator car-r
 The top of the elevator car is above the elevator car-room. The preposition is "on".
 
 The tenth floor stairwell is east of the tenth floor elevator hall.
+The tenth floor stairwell is above the tenth floor elevator hall.
+The tenth floor stairwell is below the tenth floor elevator hall.
 
 
 Chapter 1 - Lines of Sight
@@ -1084,7 +1110,7 @@ Check climbing the building:
 Chapter 3 - Lobby
 
 The ground-floor-region is a region. It contains lobby,
-	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7, ground floor elevator hall.
+	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7.
 
 The ground-floor-floor is a backdrop. It is privately-named. The printed name is "floor". Understand "floor/marble" as the ground-floor-floor. It is in ground-floor-region.
 The description of the ground-floor-floor is "Yards and yards of white and grey marble, rare for Mars."
@@ -1168,7 +1194,7 @@ The description is "The central area where the elevators and utility rooms are."
 	
 Chapter 4 - Ground Floor
 
-[The room-floor of the lobby is the ground-floor-floor.
+The room-floor of the lobby is the ground-floor-floor.
 The room-floor of the ground-floor-1 is the ground-floor-floor.
 The room-floor of the ground-floor-2 is the ground-floor-floor.
 The room-floor of the ground-floor-3 is the ground-floor-floor.
@@ -1185,7 +1211,7 @@ The room-ceiling of the ground-floor-3 is the ground-floor-ceiling.
 The room-ceiling of the ground-floor-4 is the ground-floor-ceiling.
 The room-ceiling of the ground-floor-5 is the ground-floor-ceiling.
 The room-ceiling of the ground-floor-6 is the ground-floor-ceiling.
-The room-ceiling of the ground-floor-7 is the ground-floor-ceiling.]
+The room-ceiling of the ground-floor-7 is the ground-floor-ceiling.
 
 Section 1 - ground-floor-1
 
@@ -1408,6 +1434,9 @@ Instead of entering the elevator-shaft when the ground floor elevator door is cl
 Instead of entering the elevator-shaft when the ground floor elevator door is open:
 	try going west;
 	
+Does the player mean doing something to the ground floor elevator hall: 
+	It is unlikely;
+	
 Understand "climb into [something]" as entering.
 
 The call button is scenery in the ground floor elevator hall. "A black button mounted on the wall."
@@ -1426,6 +1455,9 @@ Instead of unlocking the ground floor elevator door with the elevator drop key w
 Instead of unlocking the ground floor elevator door with the elevator drop key when the ground floor elevator door is open:
 	say "The [ground floor elevator door] is already open.";
 	
+Instead of unlocking keylessly the ground floor elevator door when the player carries the elevator drop key:
+	try unlocking the ground floor elevator door with the elevator drop key;
+	
 Instead of inserting the elevator drop key into the drop-key-hole:
 	try unlocking the ground floor elevator door with the elevator drop key;
 
@@ -1440,6 +1472,11 @@ Does the player mean using the elevator drop key with the elevator drop key:
 	
 Instead of using the elevator drop key with the drop-key-hole:
 	try unlocking the ground floor elevator door with the elevator drop key;
+	
+Instead of closing the ground floor elevator door:
+	say "Might as well leave it open in case Jones needs to get out.";
+	
+
 
 Chapter 7 - Elevator Room
 
@@ -2019,6 +2056,11 @@ Instead of taking the screwdriver when the screwdriver is not handled and the sc
 	
 The black cat can be angry.
 
+Instead of doing something to the cat when the action requires a touchable noun:
+	say "No way. That thing is mean.";
+
+
+
 Instead of looking behind the filing cabinet when the screwdriver is behind the filing cabinet:
 	say "(taking the screwdriver)[command clarification break]";
 	try taking the screwdriver;	
@@ -2058,10 +2100,13 @@ After dropping the shrimp tea sandwich when black cat is in the location and the
 	
 	Beck: 'Congratulations on your victory.'";
 	
-Instead of giving the shrimp tea sandwich to the black cat:
-	try dropping the shrimp tea sandwich;
+Check giving the shrimp tea sandwich to the black cat:
+	try dropping the shrimp tea sandwich instead;
 	
 Instead of showing the shrimp tea sandwich to the black cat:
+	try dropping the shrimp tea sandwich;
+	
+Instead of throwing the shrimp tea sandwich at the black cat:
 	try dropping the shrimp tea sandwich;
 
 	
@@ -2890,8 +2935,6 @@ Book 1 - Talking to Beck
 Understand "ask [someone] about [any visited room]" as quizzing it about.
 Understand "ask about [any visited room]" or "a [any visited room]" as implicit-quizzing.
 
-Understand the command "show", "display", "present" as something new.
-
 After deciding the scope of the player:
 	place beck in scope;
 	
@@ -3053,11 +3096,19 @@ After quizzing Beck about electronic eye:
 	lb;
 	converse "Beck: 'Looks like light needs to hit it or something.'";
 	
+After quizzing Beck about elevator car-backdrop:
+	lb;
+	converse "Beck: 'It makes me uncomfortable, it hanging above us like that.'";
+	
 After quizzing Beck about elevator car-room:
 	lb;
 	converse "Beck: 'You gotta admit, this is insane.'";
 	
 After quizzing Beck about elevator drop key:
+	lb;
+	converse "Beck: 'I'm not sure what that is. Look closer.'";
+	
+After quizzing Beck about elevator drop key when the elevator drop key is examined:
 	lb;
 	converse "Beck: 'Huh. You learn something every day.'";
 	
@@ -3494,10 +3545,11 @@ entry doorway	lobby	"[We] passes through the revolving door and into the lobby, 
 lobby	entry doorway	"[We] leaves the building."
 lobby	ground-floor-1	"[We] crosses the floor carefully, [disruptor pistol] at the ready."
 lobby	ground-floor-7	"[We] crosses the floor carefully, [disruptor pistol] at the ready."
-ground floor elevator hall	ground floor elevator shaft	"[We] climbs into the elevator shaft"
+ground floor elevator hall	ground floor elevator shaft	"[We] climbs into the elevator shaft."
 the Cybernetica office	ledge	"[We] climbs out the window."
 ledge	window washing scaffold	"[We] drops off the ledge onto the scaffold. It rocks unnervingly for a moment."
 ground floor elevator  shaft	ninth floor elevator shaft	"[We] climbs up the shaft, stopping at each floor to test each door. [We] gets all the way to the ninth floor, directly below the elevator car, before finding one that opens."
+ninth floor elevator shaft	ninth floor elevator hall	"[We] exits the shaft, the door sliding closed behind [us]."
 
 To decide which text is the transition for (source - a room) to (target - a room):
 	repeat through the Table of Transitions:
@@ -3757,6 +3809,10 @@ Volume 14 - Not for release
 DEBUG is true. 
 
 Understand "* [text]" as a mistake ("Noted.").
+
+drop keying is an action applying to nothing. Understand "dk" as drop keying.
+Carry out drop keying:
+	now the player carries the elevator drop key.
 
 [Include Property Checking by Emily Short].
 

@@ -37,31 +37,31 @@ Definition: a room (called target-destination) is darkness-occluded:
 
 Chapter 3 - Exit Lister Tables
 
-The status exit table is a table-name that varies. 
+[The status exit table is a table-name that varies. 
 The status exit table is the Table of Exit Status.
 
 The standard status table is a table-name that varies. 
-The standard status table is the Table of Standard Status.
+The standard status table is the Table of Standard Status.]
 
-Table of Exit Status
+[Table of Exit Status
 left	central	right
 " [left hand status line]"	""	"[right hand status line]"
-" [exit list]"	""	""
+" [exit list]"	""	""]
 
-Table of Standard Status
+[Table of Standard Status
 left	central	right
-" [left hand status line]"	""	"[right hand status line]"
+" [left hand status line]"	""	"[right hand status line]"]
 
 Chapter 4 - Exit Lister Rules
 
-Rule for constructing the status line (this is the exit lister status line rule):
+[Rule for constructing the status line (this is the exit lister status line rule):
    if exit listing is enabled,
      fill status bar with the status exit table;
    otherwise
      fill status bar with the standard status table;
-   rule succeeds.
+   rule succeeds.]
 
-To say exit list:
+[To say exit list:
   let exits count be 0;
   let farplace be location;   
   say "Exits: ";
@@ -78,7 +78,7 @@ To say exit list:
     end if;
   end repeat;
   if exits count is 0,
-  say "[italic type][no-exits][roman type]".
+  say "[italic type][no-exits][roman type]".]
  
 To say no-exits: say "None".
 
@@ -86,7 +86,7 @@ Chapter 5 - Exit Lister Values
 
 A listing_state is a kind of value. The listing_states are enabled and disabled.
 
-Exit listing is a listing_state that varies. Exit Listing is enabled.
+Exit listing is a listing_state that varies. Exit Listing is disabled.
 
 A visiting-mark is a kind of value. The visiting-marks are show-unvisited and dont-show-unvisited.
 
@@ -100,7 +100,7 @@ Chapter 6 - Exit Lister Actions
 
 Section 1 - ExitStarting and ExitStopping
 
-ExitStarting is an action out of world.
+[ExitStarting is an action out of world.
 
 ExitStopping is an action out of world.
 
@@ -121,16 +121,16 @@ Carry out ExitStarting (this is the standard Exit Starting rule):
   now exit listing is enabled.
 
 Report ExitStarting (this is the report exit starting rule):
-  say "Exit listing is now on." (A);
+  say "Exit listing is now on." (A);]
   
 Section 2- ExitListing
   
-ExitListing is an action out of world.
+[ExitListing is an action out of world.
 
 Understand "exits" as ExitListing.
 
 Carry out ExitListing (this is the standard carry out exit listing rule):
-  list the exits.
+  list the exits.]
 
 [ This is defined as a separate phrase so that it can be called from
   user code, e.g. to replace the standard "You can't go that way" message. ]  
@@ -175,10 +175,10 @@ To say obvious-exits: say "The obvious exits are".
 To say and-conjunction: say "and".
 To say to-preposition: say "to".
 
-Report ExitListing when listing explained is false (this is the explain exit listing rule):
+[Report ExitListing when listing explained is false (this is the explain exit listing rule):
   now listing explained is true;
   say "(Use EXITS ON to enable the status line exit lister and EXITS OFF to turn it
- off.)" (A).
+ off.)" (A).]
   
 To say destname (place - a room):
   if the destination name of place is "", say "[the place]" in lower case;
