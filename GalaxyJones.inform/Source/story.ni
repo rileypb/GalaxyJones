@@ -227,13 +227,18 @@ Book 4 - Does the player mean
 
 Does the player mean doing something to a person: it is very likely;
 
-Does the player mean doing something to the speeder dock: It is very unlikely;
+Does the player mean doing something to beck: it is very unlikely;
 	
 Book 5 - Some extra actions
 	
 yelling is an action applying to nothing. Understand "yell", "scream" as yelling.
 Check yelling:
 	say "Admiral Thallium certainly already knows Jones is here." instead;
+	
+Understand "[number]" as typing it on when the location is ground-floor-6.
+
+Rule for supplying a missing second noun when the location is ground-floor-6:
+	now the second noun is the keypad;
 	
 Book 6 - Glulx Styles
 
@@ -602,7 +607,7 @@ report sneaking up on the purple guard robot:
 	otherwise:
 		say "[We] is right up next to the robot, crouched beneath a desk. She'll never get a better shot.";
 		
-useless shooting is a clip with conversation "Beck: 'Are you still shooting at those things? Even if you hit 'em it's not going to leave a scratch.'
+useless shooting is a clip with conversation "Beck: 'Are you still shooting at those things? Even if you hit [']em it's not going to leave a scratch.'
 
 Jones (whispering): 'So what do you propose?'
 
@@ -1071,21 +1076,32 @@ Check climbing the building:
 
 Chapter 3 - Lobby
 
-The ground-floor-floor is a backdrop. It is privately-named. The printed name is "floor". Understand "floor" as the ground-floor-floor. It is in lobby,
-	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7.
+The ground-floor-region is a region. It contains lobby,
+	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7, ground floor elevator hall.
+
+The ground-floor-floor is a backdrop. It is privately-named. The printed name is "floor". Understand "floor" as the ground-floor-floor. It is in ground-floor-region.
 The description of the ground-floor-floor is "Yards and yards of white and grey marble, rare for Mars."
 
 The ground-floor-ceiling is a backdrop. It is privately-named. The printed name is "ceiling". Understand "ceiling" as the ground-floor-ceiling. It is in lobby,
 	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7.
 The description of the ground-floor-ceiling is "The whole ground floor is bright and airy, its ceiling covered with reflective pyramids. Supporting struts criss-cross the area, from which sparkling crystal chandeliers are suspended."
 
+The ground-floor-chandeliers are a backdrop. They are privately-named. The printed name is "chandeliers". Understand "chandelier/chandeliers" as the ground-floor-chandeliers. The description is "A baroque conglomeration of gold, silver, and crystal."
+
+The ground-floor-chandeliers are in lobby,
+	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7.
+
 The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
 
-The lobby-background is scenery in the lobby. It is privately-named. Understand "plants/water/features/feature/stylish/seating" as the lobby-background. "The ground is floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants." The printed name is "lobby"
+The lobby-background is scenery in the lobby. It is privately-named. Understand "plants/water/features/feature/stylish/seating" as the lobby-background. "The ground floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants." The printed name is "lobby"
 
-The supports are scenery in the lobby. "Thin but incredibly strong."
+The supports are a backdrop in the lobby. "Thin but incredibly strong." They are in ground-floor-region. Understand "support/strut/struts" as supports.
 
-The elevators-scenery is scenery in the lobby. It is privately-named. The printed name is "elevators". Understand "elevator/elevators" as the elevators-scenery. "They're in the center of the building, north of here."
+The pyramids are a backdrop in the lobby. "Angled reflective surfaces on the ceiling meant to disperse light." They are in ground-floor-region. Understand "pyramid" as pyramids.
+
+The elevators-scenery is a backdrop in the lobby. It is privately-named. The printed name is "elevators". Understand "elevator/elevators" as the elevators-scenery. "They're in the center of the building." It is in ground-floor-region.
+
+The utility-rooms-scenery is a backdrop in the lobby. It is privately-named. The printed name is "utility rooms". Understand "utility/room/rooms" as the utility-rooms-scenery. "The utility rooms are somewhere around the central pillar." It is in ground-floor-region.
 
 The niches are scenery in the lobby. "Aside from a robot charging station, there's nothing here." Understand "niche" as niches.
 
@@ -1176,7 +1192,13 @@ Understand "water/basin" as waterfall.
 
 The wide-leaved Earth plants are part of the waterfall. The description of the wide-leaved Earth plants is "Imported plants are a must on Mars, to relieve the stress of living on a lifeless world.". Understand "ferns" as the wide-leaved Earth plants.
 
-The coin is in the waterfall. The description is "A One Areo coin, with Ares on the front and the Viking 2 lander on the back.".
+The coin is in the waterfall. The description is "A one-Areo coin, with Ares on the front and the Viking 2 lander on the back.".
+
+Instead of drinking the waterfall:
+	say "Jones decides the water probably isn't clean enough to drink."
+	
+Does the player mean drinking the waterfall:
+	it is very likely;
 
 Section 2 - ground-floor-2
 
@@ -1256,10 +1278,10 @@ After examining the catering table for the first time:
 	Beck: 'Oh, the shrimp. Definitely get the shrimp.'";
 
 Check eating the catering table:
-	say "There are so many things on the table. [We] might want to look at them and decide what [we] want";
+	say "There are so many things on the table. [We] might want to look at them and decide what [we] want." instead;
 	
 Check taking the catering table:
-	say "There are so many things on the table. [We] might want to look at them and decide what [we] want";
+	say "There are so many things on the table. [We] might want to look at them and decide what [we] want." instead;
 
 The conversation is "Jones: 'Well, at least the Admiral treats his guests right. Except me. And Europa.'".
 

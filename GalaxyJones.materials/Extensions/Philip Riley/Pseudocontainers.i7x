@@ -46,6 +46,6 @@ Rule for deciding whether all includes an unseen thing:
 	It does not.]
 	
 Rule for reaching inside a pseudocontainer:
-	allow access;
+	allow access;	
 
 Pseudocontainers ends here.

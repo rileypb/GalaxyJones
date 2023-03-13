@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 31237 words long.
+I've now read your source text, which is 31417 words long.
 
 
 -----------------------------------------------------
@@ -94,11 +94,11 @@ Phase XI ... Phrases and rules
 
 Regional: CONSTANT_VNT'tenth-floor-region'-region(I250_tenth_floor_region)(I165'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'elevator shaft-region'-region(I334_elevator_shaft_region)(I248'elevator shaft-region')
+Regional: CONSTANT_VNT'elevator shaft-region'-region(I338_elevator_shaft_region)(I252'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'elevator shaft-region'-region(I334_elevator_shaft_region)(I248'elevator shaft-region')
+Regional: CONSTANT_VNT'elevator shaft-region'-region(I338_elevator_shaft_region)(I252'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'the elevator shaft-region'-region(I334_elevator_shaft_region)(I248'elevator shaft-region')
+Regional: CONSTANT_VNT'the elevator shaft-region'-region(I338_elevator_shaft_region)(I252'elevator shaft-region')
  == region
 Regional: CONSTANT_VNT'tenth-floor-region'-region(I250_tenth_floor_region)(I165'tenth-floor-region')
  == region
@@ -108,7 +108,7 @@ Regional: CONSTANT_VNT'the ninth-floor'-region(I231_ninth_floor)(I146'ninth-floo
  == region
 Regional: CONSTANT_VNT'the tenth-floor-region'-region(I250_tenth_floor_region)(I165'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I424_rooftop)(I337'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I428_rooftop)(I341'rooftop')
  == region
 Regional: CONSTANT_VNT'the tenth-floor-region'-region(I250_tenth_floor_region)(I165'tenth-floor-region')
  == region
@@ -211,7 +211,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 177 files written as streams.
-CPU time: 351 centiseconds
+CPU time: 370 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
