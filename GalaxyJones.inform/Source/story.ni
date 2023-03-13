@@ -10,7 +10,7 @@ Include Epistemology by Eric Eve.
 Include Conversation Framework by Eric Eve.
 
 Include Galaxy Banner by Philip Riley.
-Include Third Person Narration by Philip Riley.
+Include Third Person Narration by Philip Riley.       
 Include Pseudocontainers by Philip Riley.
 [Include Look That Way by Philip Riley.]
 Include Use by Philip Riley.   
@@ -29,6 +29,21 @@ Release along with an interpreter.
  
 Volume 1 - Technical Stuff
 
+[When play begins:
+	repeat with S running through scenery:
+		if S is a thing:
+			if the can't take message of S is "Jones can't take that.":
+				say "[S] needs a can't take message."; 
+				say the list of texts understood to be S;
+				[print base name of S;]
+				lb;
+
+When play begins:
+	repeat with S running through fixed in place things that are not scenery:
+		if the can't take message of S is "Jones can't take that.":
+			say "[S] needs a can't take message."; ]
+			
+Use MAX_STATIC_DATA of 240000.
 
 DEBUG is a truth state that varies. DEBUG is initially false.
  
@@ -41,7 +56,7 @@ To continue:
 When play begins:
 	now the left hand status line is "[location-title-case]";
 	now the right hand status line is "[score] of [maximum score] points";
-
+ 
 [Table of New Exit Status
 left	central (text)	right
 "[location-title-case]"	""	"[score] points"
@@ -52,6 +67,26 @@ left	central (text)	right
 
 To start header style: 
 	(- VM_Style(HEADER_VMSTY); -)
+
+[X is an object that varies.	
+
+To print base name of (O - an object):
+	now X is O;
+	foo;
+	
+to foo:
+	(- PrintOrRun((+ X +), parse_name, true); -)]
+	
+To decide what number is the number of understood words of/for (obj - object): (- ({obj}.#name)/WORDSIZE -)
+
+To decide what list of texts is the list of texts understood to be (obj - an object):
+    let L be a list of texts;
+    repeat with i running from 1 to the number of understood words for obj begin;
+      add the substituted form of "[understood word i for obj]" to L;
+    end repeat;
+    decide on L
+
+To say understood word (n - a number) of/for (obj - object): (- if ({n} <= ({obj}.#name)/WORDSIZE) print (address) ({obj}.&name)-->({n}-1); -)
 	
 To say header style:
 	start header style;
@@ -142,6 +177,11 @@ Book 2 - Some responses
 the can't take what's fixed in place rule response (A) is "That can't be taken.".
 
 the futile to throw things at inanimate objects rule response (A) is "[We] thinks twice and decides not to throw it after all.".
+
+The requested actions require persuasion rule response (A) is "[The noun] [refuse] to cooperate with Jones."
+To refuse is a verb.
+
+
 
 Book 3 - Some default actions
 
@@ -1041,7 +1081,7 @@ The description of the ground-floor-ceiling is "The whole ground floor is bright
 
 The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
 
-The lobby-background is scenery in the lobby. It is privately-named. Understand "plants/water/features/feature/stylish/seating" as the lobby-background. "The ground is floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants."
+The lobby-background is scenery in the lobby. It is privately-named. Understand "plants/water/features/feature/stylish/seating" as the lobby-background. "The ground is floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants." The printed name is "lobby"
 
 The supports are scenery in the lobby. "Thin but incredibly strong."
 
@@ -1066,7 +1106,7 @@ Check shooting something with the disruptor pistol:
 	if the noun is not a guard robot and the noun is not the giant sculpture:
 		say "[regarding the noun]Shooting [them] would accomplish nothing.";
 	 
-The tangled ruin is a fixed in place pseudocontainer. "Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots." Understand "remains/sculpture/art/glass/guard/robots/robot/red/green/ruins" as the tangled ruin. 
+The tangled ruin is a fixed in place pseudocontainer. "Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots." Understand "remains/sculpture/art/glass/crystal/guards/guard/robots/robot/red/green/ruins/ruin" as the tangled ruin. 
 The description is "[We] searches some more, but nothing further turns up."
 The contents description is "[We] digs through the ruins and finds a cable with hooks at either end, which [we] takes."
 The tangled ruin is auto-take.
@@ -1091,7 +1131,7 @@ Carry out shooting the giant sculpture with the disruptor pistol:
 	print battle won;
 	
 
-Instead of doing something when (the action requires a touchable noun and the noun is not the player) or (the action requires a touchable second noun and the second noun is not the player) during Lobby Shootout:
+Instead of doing something other than shooting when (the action requires a touchable noun and the noun is not the player) or (the action requires a touchable second noun and the second noun is not the player) during Lobby Shootout:
 	say "As soon as [we] [start] to act, an energy beam zips past [our] head, forcing [us] back down behind the desk.";
 	
 Instead of dropping the disruptor pistol:
@@ -1879,7 +1919,7 @@ Instead of unlocking the large desk with the safety pin:
 	lb;
 	converse "Beck: 'Galaxy Jones, master thief!'";
 	
-The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desks" as north-desks. "There are lots of them, none of which are particularly interesting."
+The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desk/desks" as north-desks. "There are lots of them, none of which are particularly interesting."
 
 The north-task-boards are scenery in the north end of the building management office. They are a white board. They are privately-named. The printed name is "task boards". Understand "task/tasks/board/boards" as north-task-boards. The writing is "[italic type]1. Describe scenery objects on Engineering Deck[line break]
 2. Fix check rule when installing new engine component[line break]
@@ -2157,7 +2197,7 @@ The ceiling panel is in the elevator car-room. "One of the ceiling panels looks 
 
 it's real ivory is a taunting clip with conversation "Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant.'".
 
-The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if].".
+The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what looks like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if][if the ceiling panel is nowhere]. There is a hole in the ceiling big enough for Jones to squeeze through[end if].".
 
 The elevator-car-door is scenery in the elevator car-room. It is privately-named. The printed name is "elevator car door". Understand "elevator/car/door" as the elevator-car-door. "The door is open."
 
@@ -2210,12 +2250,12 @@ Report looking when the location is the elevator car-room:
 	print it's real ivory;
 
 Instead of going up from the elevator car-room when the ceiling panel is in the elevator car-room:
-	say text of the can't go that way rule response (A);
+	say "Jones can neither climb walls nor fly.";
 	say line break;
 
 Instead of taking the ceiling panel:
 	remove the ceiling panel from play;	
-	say "[We] removes the ceiling panel, exposing a hole wide enough for [us] to climb through.";
+	say "[We] removes the ceiling panel, exposing a hole wide enough for [us] to squeeze through.";
 	
 Instead of pushing the ceiling panel:
 	try taking the ceiling panel;
@@ -2334,7 +2374,7 @@ The carpet-100 is scenery in the 100th floor elevator hall. It is privately-name
 
 The chandelier is scenery in the 100th floor elevator hall. "An enormously extravagant display of crystal."
 
-The elevator-doors-100 are scenery in the 100th floor elevator hall. They are privately-named. The printed name is "elevator doors". Understand "elevator/door/doors" as elevator-doors-100. "It's not clear why everything has to be so extravagant."
+The elevator-door-100 is scenery in the 100th floor elevator hall. They are privately-named. The printed name is "elevator door". Understand "elevator/door/doors" as elevator-door-100. "It's not clear why everything has to be so extravagant."
 
 stairs appeared is a clip with conversation "Jones: 'Must be the way up to the roof. Beck, you there?'
 
@@ -3445,14 +3485,14 @@ Table of Excuses
 source room (a room)	dirs (a list of directions)	excuse (a text)
 speeder dock	--	"[We] can't just leave Europa in the hands of Admiral Thallium!"
 entry doorway	--	"Jones is already at the main entrance. She's unlikely to find another way in."
-lobby	--	"Jones can go south out of the building or north to the elevator. East or west will take her around the building."
+lobby	--	"Jones can go south out of the building or north to the elevator. The ground floor continues east and west."
 lobby	{northeast, northwest}	"That would just get Jones lost in a maze of couches."
 ground-floor-1	--	"Jones can't walk through walls. Try north or east."
 ground-floor-1	{northeast}	"Jones is blocked by an impenetrable wall of phildendrons. North or east would be easier."
 ground-floor-2	--	"Jones can't walk through walls. Try north or south, or the door to the east."
 ground-floor-2	{northeast, southeast}	"Instead of plowing through the sea of furniture, Jones should try going north, south, or east."
 ground-floor-3	--	"Jones can't walk through walls. She can go east or south from here."
-ground-floor-3	--	"Jones ends up in a cul-de-sac of couches, and retreats. Clearer passages lie to the east and south."
+ground-floor-3	{southeast}	"Jones ends up in a cul-de-sac of couches, and retreats. Clearer passages lie to the east and south."
 ground-floor-4	{north}	"Right into hands of Admiral Thallium?"
 ground-floor-4	--	"The building extends east or west from here. The elevator is to the south."
 ground-floor-4	--	"That would lead Jones right into a wall."
@@ -3463,9 +3503,39 @@ ground-floor-6	--	"Jones can go south or north, or through a door to the east."
 ground-floor-7	{northwest}	"That would lead directly through the Viking 2 lander."
 ground-floor-7	--	"That way leads through the glass wall."
 ground floor elevator hall	--	"That way leads straight into a wall."
-ground floor elevator shaft	--	"You're constrained to a narrow shaft. You can either leave to the east, or climb the ladder up."
-ninth floor elevator shaft	--	"You're constrained to a narrow shaft. You can either leave to the east, or climb the ladder down."
-
+ground floor elevator shaft	--	"Jones is constrained to a narrow shaft. She can either leave to the east, or climb the ladder up."
+ninth floor elevator shaft	--	"Jones is constrained to a narrow shaft. She can either leave to the east, or climb the ladder down."
+ninth floor elevator shaft	{up}	"The way further up is blocked by the elevator car."
+ninth floor elevator hall	--	"The elevator is west and a stairwell is east. The hall continues north and south."
+ninth floor north hallway	--	"There's an open doorway to the west, a door to the east, and a hall leading south."
+ninth floor south hallway	--	"There's an open doorway to the west, a door to the east, and a hall leading north."
+north end of the building management office	--	"Jones can leave through a doorway to the east, or go south to the other end of the office."
+south end of the building management office	--	"Jones can leave through a doorway to the east, or go north to the other end of the office."
+Martian Chemical office	--	"The only way to leave the office is through the door to the west."
+Cybernetica office	--	"Jones can leave through the door to the west[if cybernetica office is window-broken]. She can also go east through the broken window[end if]."
+Ledge	--	"That would send Jones plummeting to her death."
+Ledge	{up, down}	"If only Jones could climb walls."
+Window Washing Scaffold	{up,down}	"If you want to go up and down, use the buttons."
+Window Washing Scaffold	--	"That way leads to a quick death."
+air handling room	--	"Jones can go west through the door, or east back out to the scaffold."
+microthings-1	--	"The elevator is north of here, and the floor extends east and west."
+microthings-2	--	"The path through the desks leads north and east."
+microthings-3	--	"Jones can't walk through walls. She can go north or south from here."
+microthings-4	--	"The floor extends east and south from here."
+microthings-5	--	"The elevator is south of here, and the floor extends west and southeast. The door to the air handling room is to the east."
+microthings-7	--	"Jones can go either northwest or south from here."
+microthings-8	--	"From here, one can go north or west."
+tenth floor elevator hall	--	"The elevator is to the west, the stairs are to the east, and the office floor lies both north and south of here."
+elevator car-room	--	"The exit is to the east."
+(100th floor elevator hall)	--	"The elevator is to the west, and the hall leads into the penthouse to the north and south[if roof stairs are not hidden]. To the east stairs lead to the roof[end if]."
+penthouse north	--	"The diamond-shaped penthouse bends to the southeast and southwest."
+penthouse east	--	"The diamond-shaped penthouse bends to the northwest and southwest."
+penthouse south	--	"The diamond-shaped penthouse bends to the northeast and northwest."
+penthouse west	--	"The diamond-shaped penthouse bends to the northeast and southeast."
+roof stairs	--	"Jones may go west back to the 100th floor, or up to the roof."
+penthouse roof	--	"Jones would plummet to her death that way."
+flyer pad	--	"Jones would plummet to her death that way."
+cage	--	"Jones would plummet to her death that way."
 
 
 To decide which text is the excuse for (source - a room) to (dir - a direction):
@@ -3473,6 +3543,10 @@ To decide which text is the excuse for (source - a room) to (dir - a direction):
 		if there is a dirs entry:
 			if (source room entry is source) and (dir is listed in dirs entry):
 				decide on excuse entry;
+	if dir is up:
+		decide on "Jones can neither climb walls nor fly.";
+	if dir is down:
+		decide on "Should Jones burrow downward?";
 	repeat through the Table of Excuses:
 		if there is no dirs entry:
 			if source room entry is source:
@@ -3483,6 +3557,158 @@ Instead of going nowhere:
 	let ex be the excuse for location to the noun;
 	say "[ex][paragraph break]";
 	
+Book 3 - Can't Take That
+
+Table of Frustrated Taking
+target (a thing)	message (a text)	move message (a text)
+(100th floor view of New Reykjavik)	"Jones can't take that!"	"Don't be silly."
+Admiral Thallium's Flyer	"Jones can't even reach it."	"Don't be silly."
+Air handling door	"No taking doors."	"Aside from opening and closing [regarding the noun][them], what is there to do?"
+bed	"It's too big to take."	"The frame is built into the floor here."
+broken-window	"Broken glass is unlikely to be useful outside of a prison fight or a bar brawl."	"The window isn't going anywhere."
+building entryway	"Not gonna happen."
+cafeteria	"Not likely."
+cage-thing	"It's firmly attached to the roof."
+call button	"Jones could probably pry it loose, but why?"
+carpet-100	"It's glued down."
+carpeting	"It's glued down."
+catering table	"With all that food on it? I don't think so."	"Jones would rather not risk tipping it over."
+central carpeted path	"Are you serious?"
+chandelier	"Jones can't reach it."
+chemical cabinet	"Why take the cabinet when Jones can just take what's in it?"	"Jones pushes it around a little, but doesn't find anything interesting."
+chemical-desks	"No, no desks."	"Jones is not here to rearrange the furniture."
+closet door	"Jones can't just disassemble the building."	"Aside from opening and closing it, what is there to do?"
+closet-door-inside	"Jones can't just disassemble the building."	"Aside from opening and closing it, what is there to do?"
+computer parts	"There's a lot of them, none of which look terribly useful in defeating Thallium, so best leave them alone."
+couches-microthings-1	"More furniture? No, just like last time."	"Jones is not here to rearrange the furniture."
+crystal lighting	"Jones is likely to cut herself trying to take some."	"It's affixed to the ceiling."
+Cybernetica door	"This building may belong to a bad guy, but the Cybernetica people deserve their security."	"Aside from opening and closing it, what is there to do?"
+Cybernetica door-inside	"This building may belong to a bad guy, but the Cybernetica people deserve their security."	"Aside from opening and closing it, what is there to do?"
+cybernetica-desks	"Now why would Jones need a desk?"	"Jones is not here to rearrange the furniture."
+dead mauve robot	"It's too heavy to lift or move."
+destroyed purple robot	"It's too heavy to lift or move."
+desks-microthings-2	"Jones can't take desks, and that's that."	"Jones is not here to rearrange the furniture."
+desks-microthings-3	"Jones can't take desks, and that's that."	"Jones is not here to rearrange the furniture."
+ductwork	"This is part of the building."
+dummies	"They'd be cumbersome to carry around."	"Jones pushes one over just for fun."
+east semicircular couch	"That's too big to take."	"Jones is not here to rearrange the furniture."
+electronic eye	"That's installed in the wall."
+elevator-control-panel	"That's part of the elevator."
+elevator control panel	"That's affixed to the wall."
+elevator car-backdrop	"Jones can't take that."	"That can't be moved."
+elevator-car-door	"That's part of the elevator."	"Aside from opening and closing it, what is there to do?"
+elevator-door-100	"Jones can't take doors."	"Aside from opening and closing [regarding the noun][them], what is there to do?"
+elevator-room-door	"Jones can't just disassemble the building."	"Aside from opening and closing it, what is there to do?"
+elevator-room-door-inside	"Jones can't just disassemble the building."	"Aside from opening and closing it, what is there to do?"
+elevator-shaft	"I'd like to see Jones try."
+elevator-walls	"Think about what you just asked."
+elevators-scenery	"I mean, Jones can [italic type]take[roman type] the elevator, but not in the way you mean."	"Usually one moves an elevator by pressing a button."
+elevators-scenery-2	"You have a weird sense of humor."
+entry door	"That's part of the building."	"Jones pushes it a little. The revolving door spins delightfully."
+executive offices	"Don't be silly."
+exhaust vent	"Jones can remove the cover, but the vent itself is part of the building."
+fans	"Leave the fans alone. They are dangerous machinery."
+filing cabinet	"Do you know how heavy paper is?"
+First floor view of New Reykjavik	"Jones can't take that!"
+ground-floor-ceiling	"Jones can't reach it."
+ground-floor-floor	"Silly."
+front desk	"This desk is attached to the floor."
+giant sculpture	"It's way up in the air! And it's huge!"
+golden keyhole	"That's part of the elevator."	"It doesn't move."
+granite floor	"Jones can't take the floor!"	"Seriously?"
+ground floor central pillar	"That's a structural element of the building."
+ground floor elevator door	"The building needs that."	"Aside from opening and closing it, what is there to do?"
+ground floor elevator door-inside	"The building needs that."	"Aside from opening and closing it, what is there to do?"
+ground floor elevator shaft	"Nonsense."
+ground-floor-stairwell	"Try going inside it first."
+guard-robots	"Jones would only get shot."
+gym	"Jones has a perfectly good setup at home."
+huge desk	"This desk would take three or four people to move."
+insignia	"That's carved into the wall."
+ivory buttons	"It's against the law to possess ivory."
+ladder	"That's attached to the wall."
+large desk	"Let's leave the furniture where it is."	"Jones is not here to rearrange the furniture."
+large relief map of mars	"That's permanently attached, and it's gotta be awful heavy."
+ledge-wall	"Why doesn't Jones take the whole building while she's at it?"	"Silly."
+lobby-background	"Jones can't take the entire lobby!"	"Silly."
+lounge area	"That's ridiculous."
+maintenance items	"There are too many to lug around."	"Jones moves the maintenance items around a bit, but discovers nothing of interest."
+Martian Chemical door	"Whatever for?"	"Aside from opening and closing it, what is there to do?"
+Martian Chemical logo	"That's part of the door."
+metal pillar	"Jones doesn't have the time it would take to detach it from the floor."
+military-detritus	"There's too much of it to take!"	"Jones pokes around in it a bit, but discovers nothing interesting."
+New Reykjavik Botanic Dome	"Taken.[paragraph break]No, sorry, that's ridiculous."
+niches	"That's part of the building."
+ninth floor elevator door	"If Jones took that, innocent people might fall down the elevator shaft."	"Aside from opening and closing it, what is there to do?"
+ninth floor elevator shaft	"What are you even talking about?"
+Ninth floor view of New Reykjavik	"Jones can't take that!"	"Jones can't move that!"
+ninth-floor-stairwell	"Try going inside it first."
+north-desks	"Do you know how many desks Jones would have if she took everyone she saw in this building? A [italic type]lot[roman type] of desks, that's how many."	"Jones is not here to rearrange the furniture."
+North-mgmt-doorway	"Loony."
+north-task-boards	"Do you think maybe Jones will have to communicate with Thallium through a sound-proof glass barrier or something?"	"Jones rearranges the task boards a little, but it's still just a mess."
+open-space	"That's literally the absence of things."
+parking bays	"Don't be silly."
+penthouse control panel	"It's built into the wall."
+Perilous view of New Reykjavik	"Jones can't take that!"	"Jones can't move that!"
+purple guard robot	"The weight is too great to lift."	"It's too heavy to move."
+reception	"I'm sure they'd appreciate it if Jones left it here."	"It's affixed to the floor."
+red flyer	"Interesting concept."
+roof access door	"Jones doesn't want a door."	"Aside from opening and closing it, what is there to do?"
+rooftop seating	"Don't be silly."
+scaffold control panel	"That functions best when it's part of the scaffold."
+scaffold-scenery	"Jones can't take that."	"Jones can't move that."
+shelf	"It's attached to the wall."
+south-desks	"Desks, desks, so many desks..."	"Jones is not here to rearrange the furniture."
+South-mgmt-doorway	"It's part of the building."
+south-task-boards	"Do you think maybe Jones will have to communicate with Thallium through a sound-proof glass barrier or something?"	"Jones rearranges the task boards a little, but it's still just a mess."
+speeder-vehicle	"Don't be silly."
+statue of admiral thallium	"Don't be silly."	"It won't budge."
+supports	"They are structural components of the building."
+swipe lock	"That's part of the door."
+tangled ruin	"Jones might find something useful in the mixture of sculpture and robots, but the thing as a whole is a huge mess."
+tasteful couch	"It's big, and Jones doesn't need it for anything."	"Jones is not here to rearrange the furniture."
+Tenth floor view of New Reykjavik	"Jones can't take that!"	"Jones can't move that!"
+tenth-floor-stairwell	"How can Jones take a stairwell?"	"Don't be silly."
+upper-shaft	"Jones can't take an elevator shaft."	"Ridiculous."
+Utopia Tower	"Go find a souvenir instead."
+vanity table	"It's too big to carry around."	"Jones is not here to rearrange the furniture."
+vending machine	"[if the bottled water is nowhere]Why not buy some water instead?[otherwise]I think the water is all Jones is going to take from the vending machine.[end if]"	"Moving the machine might cause it to topple over. Jones wisely leaves it alone."
+Vent access door	"And what would Jones even use it for?"	"Aside from opening and closing it, what is there to do?"
+video screens	"Those are attached to the wall."
+viking 2 lander	"Although it would be nice to return it to its rightful place at the Museum of Martian History, that will have to wait."	"Really, Jones doesn't even feel good about touching such an important relic."
+walls-100	"Don't be silly."
+waterfall	"That's a permanent display."	"Jones splashes the water a little."
+west semicircular couch	"That's too big to take."	"Jones is not here to rearrange the furniture."
+window-thing	"That's part of the building."	"It's not designed to be opened."
+
+
+
+To decide what text is the can't take message of (T - a thing):
+	if there is a message corresponding to a target of T in the Table of Frustrated Taking:
+		decide on the message corresponding to a target of T in the Table of Frustrated Taking;
+	decide on "Jones can't take that.";
+	
+To decide what text is the can't move message of (T - a thing):
+	if there is a move message corresponding to a target of T in the Table of Frustrated Taking:
+		decide on the move message corresponding to a target of T in the Table of Frustrated Taking;
+	if there is a message corresponding to a target of T in the Table of Frustrated Taking:
+		decide on the message corresponding to a target of T in the Table of Frustrated Taking;
+	decide on "Jones can't move that.";
+
+[A thing has a text called a can't take message. The can't take message of a thing is usually "Jones can't take that.".]
+
+The can't take scenery rule response (A) is "[can't take message of the noun]".
+
+The can't take what's fixed in place rule response (A) is "[can't take message of the noun]".
+
+The can't pull scenery rule response (A) is "[can't move message of the noun]".
+
+The can't pull what's fixed in place rule response (A) is "[can't move message of the noun]".
+
+The can't push scenery rule response (A) is "[can't move message of the noun]".
+
+The can't push what's fixed in place rule response (A) is "[can't move message of the noun]".
+
 	
 Volume 13 - A few extra descriptions
 
