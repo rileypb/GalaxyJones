@@ -175,6 +175,8 @@ After actor doing something when the actor is not in location:
 	continue the action;
 	
 Before doing something to the mauve guard robot (this is the check object is interactible rule):
+	if the action name part of the current action is the jumping on action and the location is the top of the elevator car and the mauve guard robot is in the elevator car-room:
+		continue the action;
 	if the action requires a touchable noun and the noun is the mauve guard robot:
 		say "[We] can't reach [the noun].";
 		stop the action;

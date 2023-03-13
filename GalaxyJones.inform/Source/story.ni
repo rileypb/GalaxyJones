@@ -638,7 +638,7 @@ carry out shooting purple guard robot with the disruptor pistol during Cyberneti
 		say "[We] raises [our] head and fires wide. The robot fires back. Jones ducks and crawls off among the labyrinth of desks.[paragraph break]";
 		print useless shooting;
 	otherwise:
-		say "[We] aims the pistol upward under the robot's enhanced armor and fires. [We] flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead.";
+		say "[We] aims the pistol upward under the robot's enhanced armor and fires. [We] flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead. Jones stands up and surveys her handiwork.";
 		remove the purple guard robot from play;
 		move the destroyed purple robot to the Cybernetica office;
 	
@@ -655,7 +655,7 @@ When Cybernetica Battle ends:
 	
 	Beck: 'You're welcome.'";
 
-Check dropping something when the location is the ledge:
+Check dropping something when the location is the ledge:	
 	say "Bad idea." instead;
 
 Volume 6 - Things
@@ -791,9 +791,9 @@ Instead of entering building entryway:
 
 the ground floor elevator hall is north of the lobby.
 
-the ground floor elevator door is a door. It is west of the ground floor elevator hall. The printed name is "elevator door". Through the ground floor elevator door is the ground floor elevator shaft. The ground floor elevator door is closed and unopenable. Understand "elevator/door/gold" as the ground floor elevator door.
+the ground floor elevator door is a door. It is west of the ground floor elevator hall. The printed name is "elevator door". Through the ground floor elevator door is the ground floor elevator shaft. The ground floor elevator door is closed and unopenable. Understand "elevator/lift/door/gold" as the ground floor elevator door.
 
-the ground floor elevator door-inside is a door. It is east of the ground floor elevator shaft. It is scenery. The printed name is "elevator door". Through the ground floor elevator door-inside is the ground floor elevator hall. The ground floor elevator door-inside is a half-door of the ground floor elevator door. Understand "elevator/door" as the ground floor elevator door-inside. "The backside of the elevator door."
+the ground floor elevator door-inside is a door. It is east of the ground floor elevator shaft. It is scenery. The printed name is "elevator door". Through the ground floor elevator door-inside is the ground floor elevator hall. The ground floor elevator door-inside is a half-door of the ground floor elevator door. Understand "elevator/lift/door" as the ground floor elevator door-inside. "The backside of the elevator door."
 
 Instead of opening the ground floor elevator door:
 	say "[We] can't just open the elevator with [our] hands.";
@@ -810,11 +810,11 @@ ground-floor-1 is west of Lobby. It is a ground-floor. The dir is southwest.  Th
 
 ground-floor-2 is north of ground-floor-1. It is a ground-floor. The dir is west. The preposition is "on".
 
-the elevator-room-door is a door. It is privately-named. It is scenery. The printed name is "utility door". Understand "elevator/room/door/utility" as elevator-room-door. It is east of ground-floor-2. Through the elevator-room-door is the elevator room.
+the elevator-room-door is a door. It is privately-named. It is scenery. The printed name is "utility door". Understand "elevator/lift/room/door/utility" as elevator-room-door. It is east of ground-floor-2. Through the elevator-room-door is the elevator room.
 the elevator-room-door is closed, locked, lockable and openable. The red cardkey unlocks the elevator-room-door.
 The description of the elevator-room-door is "It's a white metal door, completely typical. It has a swipe card lock right above the handle.".
 
-the elevator-room-door-inside is a door. It is privately-named. It is scenery. The printed name is "elevator room door". Understand "elevator/room/door" as elevator-room-door-inside. It is west of the elevator room. The elevator-room-door-inside is a half-door of the elevator-room-door. Through the elevator-room-door-inside is ground-floor-2.
+the elevator-room-door-inside is a door. It is privately-named. It is scenery. The printed name is "elevator room door". Understand "elevator/lift/room/door" as elevator-room-door-inside. It is west of the elevator room. The elevator-room-door-inside is a half-door of the elevator-room-door. Through the elevator-room-door-inside is ground-floor-2.
 The description is "It's a white metal door, completely typical. It has a card swipe right above the handle.".
 
 ground-floor-3 is north of ground-floor-2. It is a ground-floor. The dir is northwest. The preposition is "at".
@@ -906,7 +906,7 @@ The vent access door is a door. It is inside from the air handling room. It is s
 Instead of entering the vent access door:
 	try going east;
 
-The elevator car-room is west of the tenth floor elevator hall. It is open space. It is privately-named. The printed name is "elevator car".  It is in the tenth-floor-region.
+The elevator car-room is west of the tenth floor elevator hall. It is open space. It is privately-named. The printed name is "elevator car".  It is in the tenth-floor-region. Understand "elevator/lift/car" as the elevator car-room.
 
 Instead of going east from the elevator car-room:
 	if floor of the elevator car-room is:
@@ -1023,7 +1023,7 @@ The printed name is "outside".
 
 The description is "Outside the building are the red-dusted streets of New Reykjavik."
 
-Understand "city/reykjavik/planet/mars/outside/out/glass/streets/wall/walls" or "glass wall" or "glass walls" or "new reykjavik" as first floor view of New Reykjavik.
+Understand "city/reykjavik/planet/mars/outside/out/glass/streets/wall/walls/window/windows" or "glass wall" or "glass walls" or "new reykjavik" as first floor view of New Reykjavik.
 
 Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in south end of the building management office, north end of the building management office, ninth floor south hallway, ninth floor north hallway, Martian Chemical office, Cybernetica office.
 
@@ -1031,7 +1031,7 @@ The printed name is "outside".
 
 The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking Building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
 	
-Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain" as ninth floor view of New Reykjavik.
+Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain/window/windows" as ninth floor view of New Reykjavik.
 
 Perilous view of New Reykjavik is a backdrop. It is privately-named. It is in ledge, window washing scaffold.
 
@@ -1047,15 +1047,15 @@ The printed name is "outside".
 
 The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
 
-Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain" as tenth floor view of New Reykjavik.
+Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain/window/windows" as tenth floor view of New Reykjavik.
 
-100th floor view of New Reykjavik is a backdrop. It is privately-named. It is in penthouse south, penthouse east, penthouse west, penthouse south, penthouse roof, cage, and flyer pad.
+100th floor view of New Reykjavik is a backdrop. It is privately-named. It is in penthouse north, penthouse east, penthouse west, penthouse south, penthouse roof, cage, and flyer pad.
 
 The printed name is "outside".
 
 The description is "Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking Building stands near the periphery, overlooking the vast red plain of Utopia Planitia."
 
-Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain" as (100th floor view of New Reykjavik).
+Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain/window/windows" as (100th floor view of New Reykjavik).
 
 Book 2 - Ground Floor
 
@@ -1135,7 +1135,7 @@ The supports are a backdrop in the lobby. "Thin but incredibly strong." They are
 
 The pyramids are a backdrop in the lobby. "Angled reflective surfaces on the ceiling meant to disperse light." They are in ground-floor-region. Understand "pyramid" as pyramids.
 
-The elevators-scenery is a backdrop in the lobby. It is privately-named. The printed name is "elevators". Understand "elevator/elevators" as the elevators-scenery. "They're in the center of the building." It is in ground-floor-region.
+The elevators-scenery is a backdrop in the lobby. It is privately-named. The printed name is "elevators". Understand "elevator/lift/lifts/elevators" as the elevators-scenery. "They're in the center of the building." It is in ground-floor-region.
 
 The utility-rooms-scenery is a backdrop in the lobby. It is privately-named. The printed name is "utility rooms". Understand "utility/room/rooms" as the utility-rooms-scenery. "The utility rooms are somewhere around the central pillar." It is in ground-floor-region.
 
@@ -1283,7 +1283,7 @@ The conversation of the statue of admiral thallium is "Jones groans. 'Be glad yo
 
 Beck chuckles. 'I won't ask.'".
 
-The elevators-scenery-2 is scenery in the lobby. It is privately-named. The printed name is "elevators". Understand "elevator/elevators" as the elevators-scenery. "They're in the center of the building, south of here."
+The elevators-scenery-2 is scenery in the lobby. It is privately-named. The printed name is "elevators". Understand "elevator/lift/lifts/elevators" as the elevators-scenery. "They're in the center of the building, south of here."
 
 Section 5 - ground-floor-5
 
@@ -1326,10 +1326,10 @@ After examining the catering table for the first time:
 	Beck: 'Oh, the shrimp. Definitely get the shrimp.'";
 
 Check eating the catering table:
-	say "There are so many things on the table. [We] might want to look at them and decide what [we] want." instead;
+	say "There are so many things on the table. [We] might want to look at them and decide what [we] wants." instead;
 	
 Check taking the catering table:
-	say "There are so many things on the table. [We] might want to look at them and decide what [we] want." instead;
+	say "There are so many things on the table. [We] might want to look at them and decide what [we] wants." instead;
 
 The conversation is "Jones: 'Well, at least the Admiral treats his guests right. Except me. And Europa.'".
 
@@ -1435,7 +1435,7 @@ The description of the ground floor elevator hall is "This hallway between the n
 
 The ground-floor-stairwell is scenery in the ground floor elevator hall. The printed name is "stairwell". Understand "stairwell/stairs" as the ground-floor-stairwell. "They lead up from here."
 
-The elevator-shaft is scenery in the ground floor elevator hall. It is privately-named. The printed name is "elevator shaft". Understand "elevator/shaft" as the elevator-shaft. The description is "A dark hole beyond the elevator doors."
+The elevator-shaft is scenery in the ground floor elevator hall. It is privately-named. The printed name is "elevator shaft". Understand "elevator/lift/shaft" as the elevator-shaft. The description is "A dark hole beyond the elevator doors."
 
 Does the player mean using drop key with the ground floor elevator door:
 	it is very likely;
@@ -1454,14 +1454,9 @@ Does the player mean doing something to the ground floor elevator hall:
 	
 Understand "climb into [something]" as entering.
 
-The call button is scenery in the ground floor elevator hall. "A black button mounted on the wall."
-
-Instead of pushing the call button:
-	say "[We] presses [the call button], but nothing happens.";
-
 The description of the ground floor elevator door is "A gleaming gold elevator door. There is a hole near the top for inserting a drop key.". The ground floor elevator door has matching key the elevator drop key. It is scenery.
 
-The drop-key-hole is a part of the ground floor elevator door. The printed name is "drop key hole". Understand "elevator/drop/key/hole" as the drop-key-hole. The description is "It's a small hole about half an inch in diameter."
+The drop-key-hole is a part of the ground floor elevator door. The printed name is "drop key hole". Understand "elevator/lift/drop/key/hole" as the drop-key-hole. The description is "It's a small hole about half an inch in diameter."
 	
 Instead of unlocking the ground floor elevator door with the elevator drop key when the ground floor elevator door is closed:
 	safely open the elevator door;
@@ -2082,7 +2077,7 @@ Check picking the large desk with something that is not the safety pin:
 
 The black cardkey is in the large desk. The black cardkey unlocks the Cybernetica door. The black cardkey unlocks the Martian Chemical door. Understand "card/key" as the black cardkey. The black cardkey is a cardkey. The description is "Black like evil, or like secrets?"
 
-A filing cabinet is a container in the south end of the building management office. It is scenery. It is closed and openable. "An ordinary filing cabinet, with five drawers. The label on the front says 'Personnel Records'." Understand "file/files" as the filing cabinet.
+A filing cabinet is a container in the south end of the building management office. It is scenery. It is closed and openable. "An ordinary filing cabinet, with five drawers. The label on the front says 'Personnel Records'." Understand "file/files/drawer/drawers" as the filing cabinet.
 
 Check opening the filing cabinet:
 	say "[We] has better things to do than look through reams of personnel records." instead.
@@ -2222,7 +2217,7 @@ The description of the tenth floor elevator hall is "[elevator description]. The
 
 The tenth-floor-stairwell is scenery in the tenth floor elevator hall. The printed name is "stairwell". Understand "stairwell/stairs" as the tenth-floor-stairwell. "They lead up and down from here."
 
-The description of microthings-1 is "This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator".
+The description of microthings-1 is "This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.".
 
 Reception is scenery in microthings-1. "No one is covering the desk at present."
 
@@ -2331,7 +2326,7 @@ Chapter 3 - The Elevator Car
 	
 The golden keyhole is scenery in the elevator car-room. "Inset in the mahogany panel, it looks like real gold and has the shape of an antique 'skeleton' key."
 
-Check putting something that is not the golden key in the golden keyhole:
+Check inserting something that is not the golden key into the golden keyhole:
 	say "That doesn't fit." instead;
 
 Instead of exiting when the location is the elevator car-room:
@@ -2346,7 +2341,7 @@ it's real ivory is a taunting clip with conversation "Admiral Thallium's voice o
 
 The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if][if the ceiling panel is nowhere]. There is a hole in the ceiling big enough for Jones to squeeze through[end if].".
 
-The elevator-car-door is scenery in the elevator car-room. It is privately-named. The printed name is "elevator car door". Understand "elevator/car/door" as the elevator-car-door. "The door is open."
+The elevator-car-door is scenery in the elevator car-room. It is privately-named. The printed name is "elevator car door". Understand "elevator/lift/car/door" as the elevator-car-door. "The door is open."
 
 Instead of opening the elevator-car-door:
 	say text of the can't open what's already open rule response (A);
@@ -2361,7 +2356,7 @@ The elevator-walls are scenery in the elevator car-room. They are privately-name
 
 The crystal lighting is scenery in the elevator car-room. "Nice. Excessive, but nice."
 
-The elevator-control-panel is scenery in the elevator car-room. It is privately-named. The printed name is "elevator button panel". Understand "elevator/button/control/panel" as the elevator-control-panel. "The button panel is lacquered dark mahogany with what looks like real ivory buttons."
+The elevator-control-panel is scenery in the elevator car-room. It is privately-named. The printed name is "elevator button panel". Understand "elevator/lift/button/control/panel" as the elevator-control-panel. "The button panel is lacquered dark mahogany with what looks like real ivory buttons."
 
 The ivory buttons are scenery in the elevator car-room. "[We] recoils in disgust."
 
@@ -2425,11 +2420,21 @@ Instead of pulling the ceiling panel:
 Instead of opening the ceiling panel:   
 	try taking the ceiling panel;
 
+The golden-key-scenery is scenery. It is privately-named. The printed name is "golden key". Understand "golden/key" as golden-key-scenery.
+
 Instead of inserting the golden key into the golden keyhole:
 	remove the golden key from play;
+	move the golden-key-scenery to the elevator car-room;
 	now the elevator car-room is in running mode;
 	say "[We] puts the key in the keyhole and turns. There is a pleasant chime, and some buttons light up.";
+	score 1;
 	try looking;
+	
+Instead of taking the golden-key-scenery:
+	say "Jones tries to take the key out of the keyhole, but it seems to be stuck there.";
+	
+Instead of removing the golden-key-scenery from the golden keyhole:
+	say "Jones tries to take the key out of the keyhole, but it seems to be stuck there.";
 
 After deciding the scope of the player when the location is top of the elevator car:
 	If the mauve guard robot is in the elevator car-room:
@@ -2438,9 +2443,9 @@ After deciding the scope of the player when the location is top of the elevator 
 Rule for reaching inside the elevator car-room when the location is top of the elevator and the mauve guard robot is in the elevator car-room:
 	allow access;
 	
-The description of the top of the elevator car is "[if floor of the elevator car-room < 100]The elevator shaft extends many hundreds of feet above her  [otherwise]She is right at the top of the shaft[end if]. She can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if confused[end if].";
+The description of the top of the elevator car is "[if floor of the elevator car-room < 100]The elevator shaft extends many hundreds of feet above her[otherwise]She is right at the top of the shaft[end if]. She can see down into the elevator car from here[if the mauve guard robot is in the elevator car-room]. The mauve guard robot is in the car, looking around as if confused[end if].";
 
-The upper-shaft is scenery in the top of the elevator car. It is privately-named. The printed name is "elevator shaft". Understand "elevator/shaft/ladder" as the upper-shaft. "The shaft extends far up into the darkness. The ladder here is missing, making it impossible to climb up to the eleventh floor and beyond."
+The upper-shaft is scenery in the top of the elevator car. It is privately-named. The printed name is "elevator shaft". Understand "elevator/lift/shaft/ladder" as the upper-shaft. "[if floor of the elevator car-room is 1]The shaft extends far up into the darkness. There is ladder here, but there's no reason to use it when the elevator is working[otherwise if floor of the elevator car-room is 9 or floor of the elevator car-room is 10]The shaft extends far up into the darkness. The ladder here is missing, making it impossible to climb up to the eleventh floor and beyond[otherwise]This is the top of the shaft[end if]."
 
 Instead of examining down when the location is the top of the elevator car:
 	say "[if the location of the mauve guard robot is the elevator car-room]The mauve guard robot is in the elevator car[otherwise]The elevator car is empty[end if].";
@@ -2490,8 +2495,7 @@ Report waiting when the mauve guard robot is under attack:
 	stop the action;
 	
 Instead of pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot:
-	say "[We] pours the gel into the	vent on the robot's head. The robot flails around wildly and throws [us] from its back, then lets out a loud crackling sound and stops moving.";
-	score 1;
+	say "[We] pours the gel into the vent on the robot's head. The robot flails around wildly and throws [us] from its back, then lets out a loud crackling sound and stops moving.";
 	now the mauve guard robot is not under attack;
 	remove the mauve guard robot from play;
 	move the dead mauve robot to the elevator car-room;
@@ -2536,7 +2540,7 @@ The carpet-100 is scenery in the 100th floor elevator hall. It is privately-name
 
 The chandelier is scenery in the 100th floor elevator hall. "An enormously extravagant display of crystal."
 
-The elevator-door-100 is scenery in the 100th floor elevator hall. They are privately-named. The printed name is "elevator door". Understand "elevator/door/doors" as elevator-door-100. "It's not clear why everything has to be so extravagant."
+The elevator-door-100 is scenery in the 100th floor elevator hall. They are privately-named. The printed name is "elevator door". Understand "elevator/lift/door/doors" as elevator-door-100. "It's not clear why everything has to be so extravagant."
 
 stairs appeared is a clip with conversation "Jones: 'Must be the way up to the roof. Beck, you there?'
 
@@ -2563,7 +2567,7 @@ The vanity table is scenery in penthouse north. "So aptly named for a man like t
 
 the penthouse east has description "This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.". The printed name is "eastern corner of the penthouse".
 
-The huge desk is scenery in penthouse east. "Bubinga wood, if you must know, is, according to Wikipedia, 'a flowering plant genus in the family [italic type]Fabaceae'[roman type]."
+The huge desk is scenery in penthouse east. "Bubinga wood, if you must know, is, according to Wikipedia, 'a flowering plant genus in the family [italic type]Fabaceae'[roman type]." Understand "pattern/patterns/intricate" as the huge desk.
 
 The video screens are scenery in penthouse east. "They are showing Thallium's logo, the ten planets in order overlaid with the motto 'Planetas Vincam'."
 
@@ -2686,11 +2690,14 @@ Instead of pushing the large red button:
 	
 why not is a clip with conversation "[line break]Beck: 'Why ever did you not press the button that said [']Press Me[']? Maybe we should press it anyway. Please?'";
 
-Instead of pushing the small black button:
+Instead of pushing the small black button for the first time:
 	say "Somewhere beyond this room comes the sound of something heavy being moved.";
 	now the roof access door is unlocked;
 	now the roof stairs are not hidden;
 	print why not;
+	
+Instead of pushing the small black button for the first time:
+	say "Nothing further happens.";
 	
 The granite floor is scenery in penthouse west. "On Mars, sometimes one gets tired of red." 
 
@@ -2743,11 +2750,23 @@ Thallium alight ends when time since Thallium alight began is 2 minutes.
 Thallium ultimatum is a scene.
 Thallium ultimatum begins when Thallium alight ends.
 
+At the time when thallium screams one last time:
+	converse as thallium "Thallium: 'Here I go, Jones! Here I go! I'm really leaving this time! Jones! Are you listening? I'm going!'"
+
+At the time when thallium screams again:
+	converse as thallium "Thallium: 'Jones! In a moment I shall leave you to be slaughtered by my minions!'";
+	thallium screams one last time in 5 turns from now;
+
+At the time when thallium screams:
+	converse as thallium "Thallium's flyer is circling you not too far away. 'Give up, Jones! You'll never get through my silnium bars, haha!'";
+	thallium screams again in 4 turns from now;
+
 When Thallium ultimatum begins:
 	converse as thallium "Thallium's flyer hovers over the rooftop. 'Jones!'  he bellows. 'Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.'
 	
 	Jones rolls her eyes.";
 	converse "[line break]A little ways off, a small red flyer aims for the rooftop and accelerates.";
+	thallium screams in 3 turns from now;
 
 Before going somewhere during Thallium ultimatum:
 	say "Thallium's flyer floats after Jones.";
@@ -3741,7 +3760,6 @@ broken-window	"Broken glass is unlikely to be useful outside of a prison fight o
 building entryway	"Not gonna happen."
 cafeteria	"Not likely."
 cage-thing	"It's firmly attached to the roof."
-call button	"Jones could probably pry it loose, but why?"
 carpet-100	"It's glued down."
 carpeting	"It's glued down."
 catering table	"With all that food on it? I don't think so."	"Jones would rather not risk tipping it over."
@@ -3777,6 +3795,7 @@ elevator-walls	"Think about what you just asked."
 elevators-scenery	"I mean, Jones can [italic type]take[roman type] the elevator, but not in the way you mean."	"Usually one moves an elevator by pressing a button."
 elevators-scenery-2	"You have a weird sense of humor."
 entry door	"That's part of the building."	"Jones pushes it a little. The revolving door spins delightfully."
+Europa Callisto	"Jones could lift her, but she'd never get her through the hole in the cage. Europa needs to be awake to crawl out."
 executive offices	"Don't be silly."
 exhaust vent	"Jones can remove the cover, but the vent itself is part of the building."
 fans	"Leave the fans alone. They are dangerous machinery."
