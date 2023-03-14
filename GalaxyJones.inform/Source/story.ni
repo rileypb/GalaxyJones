@@ -337,7 +337,7 @@ Pouring is an action applying to one carried thing. Understand "pour [something]
 
 Check pouring a non-pourable thing:
 	say "That can't be poured.";
-	
+	 
 Check pouring a pourable thing:
 	say "That would just make a mess.";
 	
@@ -360,6 +360,15 @@ Understand the command "buy" as something new.
 Buying it with is an action applying to one thing and one carried thing. Understand "buy [something] with [something]" as buying it with.
 
 Understand the command "hook" as "tie".
+
+[Recalling it about is an action applying to two visible things. Understand "ask [someone] about [any interesting invisible thing]" as recalling it about.
+Implicit-recalling is an action applying to one visible thing. Understand "ask about [any interesting invisible thing]" or "a [any interesting invisible thing]" as implicit-recalling.
+
+Instead of implicit-recalling something:
+	try quizzing beck about the noun;
+	
+Instead of recalling beck about something:
+	try quizzing beck about the second noun;]
 
 Book 1 - Counting moves
 
@@ -1287,7 +1296,7 @@ Section 3 - ground-floor-3
 
 The description of ground-floor-3 is "A large relief map of Mars is mounted on the north wall here. One can leave here to the south or east.".
 
-The large relief map of Mars is scenery in ground-floor-3. "The map is crafted of bronze and sports a star at the site of New Reykjavik.";
+The large relief map of Mars is scenery in ground-floor-3. "The map is crafted of bronze and sports a star at the site of New Reykjavik." Understand "bronze" as the large relief map of Mars.
 
 The star is a part of the large relief map. The description is "Ah, New Reykjavik! Even colder than Old Reykjavik!".
 
@@ -3093,15 +3102,27 @@ After printing the player's obituary when the story has ended finally:
 		print the galaxy banner;
 	
 Volume 10 - Speech
-
+ 
 Book 1 - Talking to Beck
 
 Understand "ask [someone] about [any visited room]" as quizzing it about.
 Understand "ask about [any visited room]" or "a [any visited room]" as implicit-quizzing.
 
+A thing can be interesting or dull. A thing is usually dull.
+
+Definition: a thing is quizzable if it is interesting or it is visible.
+
+When play begins:
+	repeat through the Table of Interesting Things:
+		now the item entry is interesting;
+		
+Instead of quizzing beck about something that is not quizzable:
+	lb;
+	converse "Beck: 'I don't have much to say about that.'";
+
 After deciding the scope of the player:
-	place beck in scope;
-	
+	place beck in scope; 
+	 
 Instead of doing something other than quizzing to Beck when action requires a touchable noun:
 	say "Beck is just a voice in [our] ear." instead;
 	
@@ -3480,6 +3501,33 @@ After quizzing Beck about the window washing scaffold:
 After quizzing Beck about the yourself:
 	lb;
 	converse "Beck: 'Well, I think you're very nice, Jones.'";
+	
+Table of Interesting Things
+item (a thing)
+Admiral-Thallium
+Atmo-Suit
+Beck
+bed
+black cat
+Electrofil quick-setting conductive polymer gel
+bottled water
+dead mauve robot
+destroyed purple robot
+Europa Callisto
+garish medal
+giant sculpture
+real diamond
+golden key
+guard-robots
+hook cable
+ivory buttons
+poached ostrich eggs in jelly
+shrimp tea sandwich
+speeder-vehicle
+statue of admiral thallium
+tangled ruin
+Viking 2 lander
+
 
 
 Chapter 2 - Pleading / Help

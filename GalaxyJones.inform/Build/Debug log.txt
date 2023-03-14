@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 33397 words long.
+I've now read your source text, which is 33527 words long.
 
 
 -----------------------------------------------------
@@ -28,7 +28,7 @@ I've also read Deluxe Doors by Emily Short, which is 1865 words long.
 I've also read Glulx Text Effects by Emily Short, which is 2182 words long.
 I've also read Skeleton Keys by Emily Short, which is 638 words long.
 I've also read Epistemology by Eric Eve, which is 1500 words long.
-I've also read Conversation Framework by Eric Eve, which is 4994 words long.
+I've also read Conversation Framework by Eric Eve, which is 5015 words long.
 I've also read Galaxy Banner by Philip Riley, which is 132 words long.
 I've also read Third Person Narration by Philip Riley, which is 752 words long.
 I've also read Pseudocontainers by Philip Riley, which is 201 words long.
@@ -219,7 +219,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 162 files written as streams.
-CPU time: 378 centiseconds
+CPU time: 370 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -58,17 +58,29 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-19603"></child>
+        <children><child nodeId="node-21846"></child>
+            <child nodeId="node-21848"></child>
+            <child nodeId="node-21840"></child>
+            <child nodeId="node-21976"></child>
+            <child nodeId="node-21993"></child>
+            <child nodeId="node-22000"></child>
+            <child nodeId="node-21994"></child>
+            <child nodeId="node-19603"></child>
             <child nodeId="node-19524"></child>
             <child nodeId="node-19546"></child>
             <child nodeId="node-21007"></child>
             <child nodeId="node-20977"></child>
             <child nodeId="node-19615"></child>
             <child nodeId="node-19567"></child>
+            <child nodeId="node-21688"></child>
             <child nodeId="node-19523"></child>
+            <child nodeId="node-21981"></child>
+            <child nodeId="node-21973"></child>
+            <child nodeId="node-21997"></child>
             <child nodeId="node-19624"></child>
             <child nodeId="node-19032"></child>
             <child nodeId="node-19726"></child>
+            <child nodeId="node-21979"></child>
             <child nodeId="node-20974"></child>
         </children>
     </item>
@@ -113,6 +125,357 @@ Jones shouts, "I'm under fire from two ugly robot things!"
 Beck responds, "Monitoring your suit radar."
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21979">
+        <command xml:space="preserve">trace 5</command>
+        <result xml:space="preserve">[Parser tracing set to level 5.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21980"></child>
+            <child nodeId="node-22002"></child>
+        </children>
+    </item>
+    <item nodeId="node-22002">
+        <command xml:space="preserve">ask beck about speeder</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21980">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve">[ "a" a / "speeder" speeder ]
+[Parsing for the verb 'a' (4 lines)]
+
+[line 0 * scope=Routine(583634) -&gt; A66_implicit_quizzing]
+ [line 0 token 1 word 2 : scope=Routine(583634)]
+  [Scope routine called at stage 1]
+  [Scope routine returned multiple-flag of 0]
+  [Object list from word 2]
+  [Calling NounDomain on location and actor]
+   [NounDomain called at word 2
+   seeking definite object
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+  [Scope routine called at stage 2]
+Glulxe fatal error: Stack overflow in callstub.
+</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-19726">
@@ -1647,6 +2010,8 @@ Beck responds, "Monitoring your suit radar."
 &gt;[10] z
 Jones stands around and waits.
 
+The two robots coordinate fire over the desk, narrowly missing her.
+
 &gt;[11] shoot art
 Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
  _________      __                     _____                     
@@ -2095,6 +2460,8 @@ The mauve guard robot appears to the south, coming from the west.
 Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. There is a hole in the ceiling big enough for Jones to squeeze through.
 
 The mauve guard robot appears to the east, coming from the south.
+
+Beck: "I don't think I like Thallium's choice of friends much."
 
 &gt;[80] u
 
@@ -2821,9 +3188,174 @@ The red flyer, now recognizable as Galaxy's own, settles down onto the landing p
     </item>
     <item nodeId="node-21566">
         <command xml:space="preserve">move europa</command>
-        <result xml:space="preserve">Europa Callisto might not like that.
+        <result xml:space="preserve">Jones could carry Europa to the hole in the cage, but she'd never get her through without help.
 
 Beck sticks his head out of the door of the flyer and yells "C'mon Jones, get Europa and get in the flyer!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21680"></child>
+        </children>
+    </item>
+    <item nodeId="node-21680">
+        <command xml:space="preserve">offer water to europa</command>
+        <result xml:space="preserve"> _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones opens the water bottle and brings it to Europa's lips. Even with closed eyes she drinks, first slowly and then with increasing vigor, until her eyes open.
+
+"Ga- Galaxy Jones?" she says.
+
+Jones nods, but says "We'll have time for introductions later. We have to get out of here before the roof is full of killer robots. Can you crawl? If you can get through that hole I can carry you the rest of the way."
+
+Europa nods. "I think so."
+
+Galaxy Jones helps her through the hole in the cage, then gently picks her up and jogs toward the waiting flyer. Beck's familiar face appears at the door of the aircraft, urging her on.
+
+Not so far away, Admiral Thallium crawls back over the edge of  the roof. As he pulls himself up, he aims a pistol at Jones's back...
+
+...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.
+
+And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...
+
+
+
+    *** The End, For Now... ***
+
+
+In that game you scored 10 out of a possible 10, in 106 turns.
+
+
+Extensions by:
+Standard Rules version 3/120430 by Graham Nelson
+Deluxe Doors version 4 by Emily Short
+Skeleton Keys by Emily Short
+Epistemology version 9 by Eric Eve
+Conversation Framework version 11 by Eric Eve
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+
+Story by Phil Riley.
+Programming by Phil Riley.
+Playtesting by Leon Lin, Oliver Matthias, Jade, John Ziegler, and Kenneth Pedersen.
+Invaluable inspiration from Laura Taalman.
+
+The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.
+
+Promotional consideration provided by Olympus Springs Inc.
+
+
+...
+
+
+&lt;Black screen&gt;
+
+"Jones! Jones! Wake up! I'm trying to talk to you!"
+
+&lt;Cut to a shot of two closed eyes&gt;
+
+"C'mon, open those eyes."
+
+&lt;The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious&gt;
+
+"This is getting tiresome, Jones. Stop playing dead."
+
+Her eyes flutter open, close again, then open. She winces and brings one hand up to shield her eyes. "Who's that?" she says, hoarsely.
+
+Join Galaxy Jones next time in Galaxy Jones II: Existential Time Crisis!
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21681"></child>
+        </children>
+    </item>
+    <item nodeId="node-21681">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Galaxy Jones is in the cage. 
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21682"></child>
+        </children>
+    </item>
+    <item nodeId="node-21682">
+        <command xml:space="preserve">ask beck about couch</command>
+        <result xml:space="preserve">Which do you mean, the tasteful couch, the east semicircular couch, the west semicircular couch, or the couches?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21683"></child>
+        </children>
+    </item>
+    <item nodeId="node-21683">
+        <command xml:space="preserve">tasteful</command>
+        <result xml:space="preserve">
+Beck: "I don't have much to say about that."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21812"></child>
+            <child nodeId="node-21684"></child>
+        </children>
+    </item>
+    <item nodeId="node-21684">
+        <command xml:space="preserve">ask beck about cage</command>
+        <result xml:space="preserve">
+Beck: "You're going to need a lot of force to get through that."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21685"></child>
+        </children>
+    </item>
+    <item nodeId="node-21685">
+        <command xml:space="preserve">ask beck about mauve</command>
+        <result xml:space="preserve">Which do you mean, the dead mauve robot or the mauve guard robot?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21686"></child>
+        </children>
+    </item>
+    <item nodeId="node-21686">
+        <command xml:space="preserve">dead</command>
+        <result xml:space="preserve">
+Beck: "Nice job, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21687"></child>
+        </children>
+    </item>
+    <item nodeId="node-21687">
+        <command xml:space="preserve">ask about mauve guard robot</command>
+        <result xml:space="preserve">(the mauve guard robot)
+
+Beck: "Maybe you can out-maneuver him."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21812">
+        <command xml:space="preserve">ask about mauve guard robot</command>
+        <result xml:space="preserve">(the mauve guard robot)
+
+Beck: "Maybe you can out-maneuver him."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -3008,9 +3540,396 @@ Admiral Thallium is sulking.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-21997">
+        <command xml:space="preserve">showme speeder</command>
+        <result xml:space="preserve">(the speeder)
+speeder - thing
+    windows (part of speeder)
+    turbines (part of speeder)
+    wings (part of speeder)
+location: in the speeder dock
+singular-named, improper-named, unused; unlit, inedible, fixed in place, neuter, seen, familiar, non-pourable, interesting
+list grouping key: none
+printed name: "speeder"
+printed plural name: none
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+conversation: none
+description: "Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs."
+initial appearance: "Jones's speeder, Galaxy One, sits in one of the parking bays."
+third-plural-pronoun: They-pronoun
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21998"></child>
+        </children>
+    </item>
+    <item nodeId="node-21998">
+        <command xml:space="preserve">s bays</command>
+        <result xml:space="preserve">I only understood you as far as wanting to (go) s.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21999"></child>
+        </children>
+    </item>
+    <item nodeId="node-21999">
+        <command xml:space="preserve">a bays</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21973">
+        <command xml:space="preserve">show speeder</command>
+        <result xml:space="preserve">(to Beck)
+
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21974"></child>
+        </children>
+    </item>
+    <item nodeId="node-21974">
+        <command xml:space="preserve">showme speeder</command>
+        <result xml:space="preserve">(the speeder)
+speeder - thing
+    windows (part of speeder)
+    turbines (part of speeder)
+    wings (part of speeder)
+location: in the speeder dock
+singular-named, improper-named, unused; unlit, inedible, fixed in place, neuter, seen, familiar, non-pourable, interesting
+list grouping key: none
+printed name: "speeder"
+printed plural name: none
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+conversation: none
+description: "Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs."
+initial appearance: "Jones's speeder, Galaxy One, sits in one of the parking bays."
+third-plural-pronoun: They-pronoun
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21975"></child>
+        </children>
+    </item>
+    <item nodeId="node-21975">
+        <command xml:space="preserve">ask beck about speeder</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21981">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "reset conversed this turn rule" applies.]
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21982"></child>
+        </children>
+    </item>
+    <item nodeId="node-21982">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-19523">
         <command xml:space="preserve">push 3</command>
         <result xml:space="preserve">Nothing happens.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21688">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21689"></child>
+            <child nodeId="node-21990"></child>
+        </children>
+    </item>
+    <item nodeId="node-21990">
+        <command xml:space="preserve">trace 5</command>
+        <result xml:space="preserve">[Parser tracing set to level 5.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21991"></child>
+        </children>
+    </item>
+    <item nodeId="node-21991">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21689">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve">Glulxe fatal error: Stack overflow in callstub.
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21690"></child>
+        </children>
+    </item>
+    <item nodeId="node-21690">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
+
+Beck replies, "You got this, Galaxy."
+
+Jones passes through the revolving door and into the lobby, alert to any defenses.
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
+
+Suddenly two robot guards, green and red, emerge from niches in the back wall! She dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring your suit radar."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21691"></child>
+            <child nodeId="node-21816"></child>
+        </children>
+    </item>
+    <item nodeId="node-21816">
+        <command xml:space="preserve">a robot</command>
+        <result xml:space="preserve">
+Beck: "Keep your head down and keep firing."
+
+Zip! Disruptor fire scorches a nearby couch.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21817"></child>
+        </children>
+    </item>
+    <item nodeId="node-21817">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21818"></child>
+        </children>
+    </item>
+    <item nodeId="node-21818">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Jones crosses the floor carefully, disruptor pistol at the ready.
+
+Galaxy Jones is at the southwest corner of the ground floor. A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21819"></child>
+            <child nodeId="node-21826"></child>
+        </children>
+    </item>
+    <item nodeId="node-21826">
+        <command xml:space="preserve">a art\</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21827"></child>
+        </children>
+    </item>
+    <item nodeId="node-21827">
+        <command xml:space="preserve">a art</command>
+        <result xml:space="preserve">
+Beck: "While I normally dislike Rambutan's work, this one has a certain power to it."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21828"></child>
+        </children>
+    </item>
+    <item nodeId="node-21828">
+        <command xml:space="preserve">a hammer</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21829"></child>
+        </children>
+    </item>
+    <item nodeId="node-21829">
+        <command xml:space="preserve">a waterfall</command>
+        <result xml:space="preserve">
+Beck: "Hmm. Don't have much to say about that right now."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21830"></child>
+        </children>
+    </item>
+    <item nodeId="node-21830">
+        <command xml:space="preserve">look in waterfall</command>
+        <result xml:space="preserve">The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin.
+
+Jones: "One coin? Not very generous people around here."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21831"></child>
+        </children>
+    </item>
+    <item nodeId="node-21831">
+        <command xml:space="preserve">a coin</command>
+        <result xml:space="preserve">
+Beck: "Might as well hold on to it. You're not getting paid for this job."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21832"></child>
+        </children>
+    </item>
+    <item nodeId="node-21832">
+        <command xml:space="preserve">take it</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21833"></child>
+        </children>
+    </item>
+    <item nodeId="node-21833">
+        <command xml:space="preserve">a couch</command>
+        <result xml:space="preserve">
+Beck: "Hmm. Don't have much to say about that right now."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21834"></child>
+        </children>
+    </item>
+    <item nodeId="node-21834">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21835"></child>
+        </children>
+    </item>
+    <item nodeId="node-21835">
+        <command xml:space="preserve">a pillar</command>
+        <result xml:space="preserve">
+Beck: "Hmm. Don't have much to say about that right now."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21836"></child>
+        </children>
+    </item>
+    <item nodeId="node-21836">
+        <command xml:space="preserve">a ground floor</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21837"></child>
+        </children>
+    </item>
+    <item nodeId="node-21837">
+        <command xml:space="preserve">a city</command>
+        <result xml:space="preserve">
+Beck: "Hmm. Don't have much to say about that right now."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21838"></child>
+        </children>
+    </item>
+    <item nodeId="node-21838">
+        <command xml:space="preserve">a glass wall</command>
+        <result xml:space="preserve">
+Beck: "Hmm. Don't have much to say about that right now."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21839"></child>
+        </children>
+    </item>
+    <item nodeId="node-21839">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the northwest corner of the ground floor. A large relief map of Mars is mounted on the north wall here. One can leave here to the south or east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21819">
+        <command xml:space="preserve">a art</command>
+        <result xml:space="preserve">(the tangled ruin)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21691">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21692"></child>
+        </children>
+    </item>
+    <item nodeId="node-21692">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21693"></child>
+        </children>
+    </item>
+    <item nodeId="node-21693">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve">
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+A robot fires a blistering shot into the front desk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21694"></child>
+        </children>
+    </item>
+    <item nodeId="node-21694">
+        <command xml:space="preserve">a robot</command>
+        <result xml:space="preserve">
+Beck: "Keep your head down and keep firing."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -4790,6 +5709,325 @@ Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's
 Thallium seems to speak from all around Jones. "You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all."
 
 Jones snorts, "Sure, Thallium."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21994">
+        <command xml:space="preserve">ask europa</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21995"></child>
+        </children>
+    </item>
+    <item nodeId="node-21995">
+        <command xml:space="preserve">a europa</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-22000">
+        <command xml:space="preserve">ask beck about speeder</command>
+        <result xml:space="preserve">
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22020"></child>
+            <child nodeId="node-22012"></child>
+        </children>
+    </item>
+    <item nodeId="node-22012">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22013"></child>
+        </children>
+    </item>
+    <item nodeId="node-22013">
+        <command xml:space="preserve">ask beck about speeder</command>
+        <result xml:space="preserve">
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22014"></child>
+        </children>
+    </item>
+    <item nodeId="node-22014">
+        <command xml:space="preserve">ask beck about bats</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22015"></child>
+        </children>
+    </item>
+    <item nodeId="node-22015">
+        <command xml:space="preserve">ask beck about bays</command>
+        <result xml:space="preserve">
+Beck: "I don't have much to say about that."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22016"></child>
+        </children>
+    </item>
+    <item nodeId="node-22016">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Jones slinks back to the speeder dock.
+
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Her speeder, Galaxy One, sits in one of the parking bays.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22017"></child>
+        </children>
+    </item>
+    <item nodeId="node-22017">
+        <command xml:space="preserve">ask beck about bays</command>
+        <result xml:space="preserve">
+Beck: "Hmm. Don't have much to say about that right now."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-22020">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve">
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22021"></child>
+        </children>
+    </item>
+    <item nodeId="node-22021">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22022"></child>
+        </children>
+    </item>
+    <item nodeId="node-22022">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve">
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22023"></child>
+        </children>
+    </item>
+    <item nodeId="node-22023">
+        <command xml:space="preserve">a bays</command>
+        <result xml:space="preserve">
+Beck: "I don't have much to say about that."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22024"></child>
+        </children>
+    </item>
+    <item nodeId="node-22024">
+        <command xml:space="preserve">a europa</command>
+        <result xml:space="preserve">
+Beck: "I hope she's okay."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22025"></child>
+        </children>
+    </item>
+    <item nodeId="node-22025">
+        <command xml:space="preserve">a speeder dock</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21993">
+        <command xml:space="preserve">ask about speeder</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-22009"></child>
+        </children>
+    </item>
+    <item nodeId="node-22009">
+        <command xml:space="preserve">ask beck about speeder</command>
+        <result xml:space="preserve">
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21976">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21977"></child>
+        </children>
+    </item>
+    <item nodeId="node-21977">
+        <command xml:space="preserve">ask speeder</command>
+        <result xml:space="preserve">You can only do that to something animate.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21978"></child>
+        </children>
+    </item>
+    <item nodeId="node-21978">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21840">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve">Glulxe fatal error: Stack overflow in callstub.
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21841"></child>
+        </children>
+    </item>
+    <item nodeId="node-21841">
+        <command xml:space="preserve">a europa</command>
+        <result xml:space="preserve">
+Beck: "I hope she's okay."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21842"></child>
+        </children>
+    </item>
+    <item nodeId="node-21842">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Jones can't just leave Europa in the hands of Admiral Thallium!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21843"></child>
+        </children>
+    </item>
+    <item nodeId="node-21843">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21844"></child>
+        </children>
+    </item>
+    <item nodeId="node-21844">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve">
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21845"></child>
+        </children>
+    </item>
+    <item nodeId="node-21845">
+        <command xml:space="preserve">a parking bats</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21848">
+        <command xml:space="preserve">a parking bays</command>
+        <result xml:space="preserve"></result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-21846">
+        <command xml:space="preserve">a parking bats</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21850"></child>
+        </children>
+    </item>
+    <item nodeId="node-21850">
+        <command xml:space="preserve">a parking bays</command>
+        <result xml:space="preserve">
+Beck: "Hmm. Don't have much to say about that right now."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21851"></child>
+        </children>
+    </item>
+    <item nodeId="node-21851">
+        <command xml:space="preserve">a speeder</command>
+        <result xml:space="preserve">
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21852"></child>
+        </children>
+    </item>
+    <item nodeId="node-21852">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21853"></child>
+        </children>
+    </item>
+    <item nodeId="node-21853">
+        <command xml:space="preserve">a parking bats</command>
+        <result xml:space="preserve">
+Beck: "I'm not sure what you're asking about, Jones."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-21854"></child>
+        </children>
+    </item>
+    <item nodeId="node-21854">
+        <command xml:space="preserve">a parking bays</command>
+        <result xml:space="preserve">Beck: "I don't have much to say about that."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

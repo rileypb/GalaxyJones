@@ -24,7 +24,8 @@ Understand "ask [someone] for [text]" as imploring it for.
 
 Quizzing it about is an action applying to two visible things.
 
-Understand "ask [someone] about [any known thing]" as quizzing it about.
+Understand "ask [someone] about [any thing]" as quizzing it about.
+Understand "ask [someone] about [any interesting thing]" as quizzing it about.
 
 Informing it about is an action applying to two visible things.
 
@@ -70,7 +71,8 @@ implicit-telling is an action applying to one topic.
 Understand "t [text]" as implicit-telling.
 
 implicit-quizzing is an action applying to one visible thing.
-  Understand "ask about [any known thing]" or "a [any known thing]" as implicit-quizzing.
+  Understand "ask about [any thing]" or "a [any thing]" as implicit-quizzing.
+  Understand "ask about [any interesting thing]" or "a [any interesting thing]" as implicit-quizzing.
 
 implicit-informing is an action applying to one visible thing.
   Understand "t [any known thing]" or "talk about [any known thing]" as implicit-informing.
