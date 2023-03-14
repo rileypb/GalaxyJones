@@ -20,7 +20,7 @@ The story title is "Galaxy Jones".
 The story author is "Phil Riley".
 The story headline is "An Interactive Adventure".
 The story genre is "Science Fiction".
-The release number is 2.
+The release number is 3.
 The story creation year is 2023.
 
 Release along with cover art.
@@ -724,7 +724,7 @@ The elevator drop key is a thing. "Hanging from a hook here is [a elevator drop 
 A thing can be an enemy.
 
 A guard robot is a kind of enemy person. It is neuter. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard/barrel/killer/head" as a guard robot.
-There is a guard robot called the guard-robots. It is privately-named. It is scenery. The printed name is "guard robots". Understand "guard/guards/robot/robots/green/red" as the guard-robots. 
+There is a guard robot called the guard-robots. It is privately-named. It is scenery. The printed name is "red and green guard robots". Understand "guard/guards/robot/robots/green/red/and" as the guard-robots. 
 There is a guard robot called the purple guard robot. It is scenery.
 There is a thing called the dead mauve robot. Understand "remains/guard" as the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground." The description is "From the outside there's no sign of what killed the mauve guard robot." It is fixed in place.
 There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground." The description is "The tattered guts of the purple guard robot spill out from its armored carapace." It is fixed in place.
@@ -2235,7 +2235,7 @@ The description of the martian chemical office is "This seems like the business 
 
 The chemical cabinet is scenery in the Martian Chemical office. "The cabinet is full of bottles of Electrofil quick-setting conductive polymer gel."
 
-The Electrofil quick-setting conductive polymer gel is in the cabinet. It is undescribed. The description of the Electrofil is "An opaque pink bottle labeled 'Electrofil' in large friendly letters." Understand "bottle" as the Electrofil quick-setting conductive polymer gel.
+The Electrofil quick-setting conductive polymer gel is in the cabinet. It is undescribed. The description of the Electrofil is "An opaque pink bottle labeled 'Electrofil' in large friendly letters, it apparently hardens into a conductive substance very quickly." Understand "bottle" as the Electrofil quick-setting conductive polymer gel.
 
 After taking the Electrofil quick-setting conductive polymer gel: 
 	now the Electrofil quick-setting conductive polymer gel is not undescribed;
@@ -2254,10 +2254,12 @@ Rule for clarifying the parser's choice of the Electrofil quick-setting conducti
 	
 The chemical-desks are scenery in the Martian Chemical office. They are privately-named. The printed name is "desks". Understand "desk/desks" as the chemical-desks. "Seen one, seen [']em all. Except for the large desk across the hall, of course."
 
+The office stuff is scenery in the Martian Chemical office. "Chairs, filing cabinets, tables... stuff."
+
 Instead of opening the chemical cabinet:
 	try examining the chemical cabinet;
 
-Book 5 - Tenth Floor
+Book 5 - Tenth Floor  
 
 The description of the tenth floor stairwell is "this is a secret message."
 
@@ -3116,7 +3118,7 @@ To show extended credits:
 	say line break;
 	say "The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.";
 	say line break;
-	say "Promotional consideration provided by Olympus Springs Inc.";
+	say "Promotional consideration provided by Olympus Springs of Mars, Inc.";
 	say paragraph break;
 	say "...";
 	say paragraph break;
@@ -3146,8 +3148,8 @@ Volume 10 - Speech
  
 Book 1 - Talking to Beck
 
-Understand "ask [someone] about [any visited room]" as quizzing it about.
-Understand "ask about [any visited room]" or "a [any visited room]" as implicit-quizzing.
+Understand "ask [someone] about [room]" as quizzing it about.
+Understand "ask about [any visited room]" or "a [room]" as implicit-quizzing.
 
 A thing can be interesting or dull. A thing is usually dull.
 
@@ -3189,6 +3191,10 @@ Instead of quizzing Beck about guard-robots when comment on energy absorption is
 Instead of quizzing Beck about guard-robots when comment on energy absorption is used during Lobby Shootout:
 	say line break;
 	converse "Beck: 'It doesn't look like shooting the robots is doing any good. Is there another way you can hurt them?'";
+
+Instead of quizzing Beck about guard-robots when Lobby Shootout has ended:
+	say line break;
+	converse "Beck: 'I've really come to appreciate art a lot more since then.'";
 	
 Instead of quizzing Beck about the hook cable:
 	say line break;
@@ -4088,10 +4094,10 @@ Carry out drop keying:
 
 Volume 15 - Tests
 
-test elevator with "n/n/z/shoot art/x art/e/n/type 0/w/take all/e/x table/take all/n/x medals/take medal/x medal/take pin/w/w/s/e/take all/w/s/x waterfall/take coin/e/n/use drop key with elevator".
+test elevator with "n/n/z/shoot art/x art/e/n/type 0/w/take all/e/x table/take all/n/x medals/take medal/x medal/take pin/w/w/s/unlock door with red keycard/e/take all/w/s/x waterfall/take coin/e/n/use drop key with elevator".
 test ninth with "test elevator/w/u/e".
 test mgmt with "test ninth/buy water with coin/n/w/pick desk lock with pin/take black card/s/take screwdriver/look behind cabinet/drop shrimp/e".
-test ledge with "test mgmt/e/take gel from cabinet/w/n/n/e/sneak up on robot/sneak up on robot/sneak up on robot/shoot robot/s/n/e".
+test ledge with "test mgmt/unlock door with black cardkey/e/take gel from cabinet/w/n/n/unlock door with black cardkey/e/sneak up on robot/sneak up on robot/sneak up on robot/shoot robot/s/n/e".
 test air with "test ledge/look down/look down/look down/d/press up/press up/open vent with screwdriver/w".
 test robot with "test air/w/s/w/take panel/e/s/n/w/u/jump on robot/pour gel on robot".
 test golden with "test robot/e/s/w/open present/e/n/w/put golden key in keyhole".
