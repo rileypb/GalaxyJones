@@ -99,6 +99,10 @@ Beck responds, "Monitoring your suit radar."
 &gt;[4] z
 Jones stands around and waits.
 
+The robots intone "Destroy Jones" in an eerie drone.
+
+Jones: "I could use some ideas here!"
+
 &gt;[5] shoot art
 Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
  _________      __                     _____                     
@@ -953,7 +957,7 @@ Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallw
     <item nodeId="node-22911">
         <command xml:space="preserve">ask about swipe</command>
         <result xml:space="preserve">
-Beck: "I'm not sure what you're asking about, Jones."
+Beck: "Hmm. Don't have much to say about that right now."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1011,8 +1015,335 @@ Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallw
     </item>
     <item nodeId="node-23041">
         <command xml:space="preserve">x lock</command>
+        <result xml:space="preserve">An ordinary swipe lock.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23163"></child>
+        </children>
+    </item>
+    <item nodeId="node-23163">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23164"></child>
+        </children>
+    </item>
+    <item nodeId="node-23164">
+        <command xml:space="preserve">x lock</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23165"></child>
+        </children>
+    </item>
+    <item nodeId="node-23165">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23166"></child>
+        </children>
+    </item>
+    <item nodeId="node-23166">
+        <command xml:space="preserve">x lock</command>
+        <result xml:space="preserve">An ordinary swipe lock.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23167"></child>
+        </children>
+    </item>
+    <item nodeId="node-23167">
+        <command xml:space="preserve">swipe card through lock</command>
+        <result xml:space="preserve">Which do you mean, the black cardkey or the red cardkey?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23168"></child>
+        </children>
+    </item>
+    <item nodeId="node-23168">
+        <command xml:space="preserve">black</command>
+        <result xml:space="preserve">Jones unlocks the Martian Chemical door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23169"></child>
+        </children>
+    </item>
+    <item nodeId="node-23169">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the Martian Chemical door)
+
+Galaxy Jones is in the Martian Chemical office. This seems like the business office of the chemical company rather than the lab. Most of the room is taken up by desks and other office stuff. There is a cabinet that looks intriguing, however.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23170"></child>
+        </children>
+    </item>
+    <item nodeId="node-23170">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">The only way to leave the office is through the door to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23171"></child>
+        </children>
+    </item>
+    <item nodeId="node-23171">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">The only way to leave the office is through the door to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23172"></child>
+        </children>
+    </item>
+    <item nodeId="node-23172">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23173"></child>
+        </children>
+    </item>
+    <item nodeId="node-23173">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23174"></child>
+        </children>
+    </item>
+    <item nodeId="node-23174">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23175"></child>
+        </children>
+    </item>
+    <item nodeId="node-23175">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "reset conversed this turn rule" applies.]
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-23176"></child>
+        </children>
+    </item>
+    <item nodeId="node-23176">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "standard set going variables rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "opening doors before entering rule" applies.]
+(first opening the Cybernetica door)
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "unlocking before opening rule" applies.]
+(first unlocking the Cybernetica door)
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "Before doing something other than going" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "check keylessly unlocking rule" applies.]
+[Rule "can't unlock without a lock rule" applies.]
+[Rule "can't unlock what's already unlocked rule" applies.]
+[Rule "need a matching key rule" applies.]
+[Rule "must have accessible the second noun rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "standard keylessly unlocking rule" applies.]
+(with the black cardkey)
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "Before doing something other than going" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't unlock without a lock rule" applies.]
+[Rule "can't unlock what's already unlocked rule" applies.]
+[Rule "right second rule" applies.]
+[Rule "must be able to reach the key rule" applies.]
+[Rule "must have accessible the second noun rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "complete unlockings rule" applies.]
+[Rule "standard unlocking rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "Before doing something other than going" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't open unless openable rule" applies.]
+[Rule "can't open what's locked rule" applies.]
+[Rule "can't open what's already open rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "complete openings rule" applies.]
+[Rule "standard opening rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't travel in what's not a vehicle rule" applies.]
+[Rule "can't go through undescribed doors rule" applies.]
+[Rule "can't go through closed doors rule" applies.]
+[Rule "determine map connection rule" applies.]
+[Rule "can't go that way rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "say goodbye when moving rule" applies.]
+[Rule "move player and vehicle rule" applies.]
+[Rule "move floating objects rule" applies.]
+[Rule "check light in new location rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "After an actor going from a room ( called R ) to a room ( called AR )" applies.]
+[Rule "After going from a room ( called R1 ) to a room ( called R2 )" applies.]
+[Rule "After going when the location is not in tenth-floor-region" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "describe room gone into rule" applies.]
+
+[Rule "determine visibility ceiling rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "declare everything unmentioned rule" applies.]
+[Rule "new room description heading rule" applies.]
+Galaxy Jones is in the Cybernetica office. [Rule "room description body text rule" applies.]
+It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities.
+
+[Rule "room description paragraphs about objects rule" applies.]
+[Rule "initialise locale description rule" applies.]
+[Rule "find notable locale objects rule" applies.]
+[Rule "standard notable locale objects rule" applies.]
+[Rule "Before printing the locale description" applies.]
+[Rule "interesting locale paragraphs rule" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "For printing a locale paragraph about a thing ( called the item )" applies.]
+[Rule "new you-can-also-see rule" applies.]
+[Rule "check new arrival rule" applies.]
+[Rule "mark items as seen when looking rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "After looking" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "other people looking rule" applies.]
+[Rule "report looking" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "A first turn sequence rule" applies.]
+[Rule "scene description text rule" applies.]
+[Rule "When Cybernetica Battle begins" applies.]
+As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
+
+Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
+
+Beck: "What's the situation?"
+
+Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I might get a shot in, but it might just absorb it anyway."
+
+Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
+
+[Rule "every turn stage rule" applies.]
+[Rule "Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack" applies.]
+[Rule "reset protocol rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+[Rule "show us the people rule" applies.]
+[Rule "reset conversed this turn rule" applies.]
+[Rule "clear LPR rule" applies.]
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>

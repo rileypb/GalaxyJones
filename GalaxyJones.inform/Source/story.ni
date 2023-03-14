@@ -148,6 +148,8 @@ To lb:
 	
 accessible is an object. accessible can be on or off. It is off.
 
+The unlocking before opening rule is not listed in any rulebook.
+
 Book 1 - Special text substitution code
 
 Include (-
