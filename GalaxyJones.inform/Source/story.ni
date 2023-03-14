@@ -2868,13 +2868,21 @@ Rule for writing a paragraph about Admiral-Thallium when Admiral-Thallium is in 
 
 The description of the penthouse roof is "It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad[if Europa Callisto is in the cage]. Jones can distantly see a woman lying on the floor of the cage[end if][If Admiral-Thallium is in penthouse roof]. A green and black flyer sits on the landing pad[end if]."
 
-The lounge area is scenery in the penthouse roof. "Looks like a good time, if [we] weren't already busy." Understand "fire/pit/bar" as the lounge area.
+The lounge area is scenery in the penthouse roof. "Looks like a good time, if [we] weren't already busy." Understand "fire/pit/bar/hot/tub" as the lounge area.
+
+After looking when the location is in the rooftop and the cage is intact during Thallium alight:
+	say "Admiral Thallium's flyer is hovering above you.";
+
+After looking when the location is in the rooftop and the cage is intact during Thallium ultimatum:
+	say "Admiral Thallium's flyer is hovering above you.";
 
 The rooftop seating is scenery in the penthouse roof. "[We] has other things to focus on."
 
+The electrostatic field is a backdrop in the rooftop. The description is "It can't be seen, but it's comforting to know it's there."
+
 Admiral-Thallium is in penthouse roof.
 
-Admiral Thallium's Flyer is a backdrop. It is in penthouse roof, cage, and flyer pad. The description is "this is a secret message". Understand "rails/gear/landing" as Admiral Thallium's Flyer.
+Admiral Thallium's Flyer is a backdrop. It is in penthouse roof, cage, and flyer pad. The description is "this is a secret message". Understand "rails/gear/landing/thallium" as Admiral Thallium's Flyer.
 
 Instead of examining Admiral Thallium's flyer during On-Rooftop:
 	say "It's big and green and black. Looks like a Sirius XE."
@@ -2908,7 +2916,7 @@ Rule for writing a paragraph about Europa Callisto when Europa Callisto is in th
 Rule for writing a paragraph about Europa Callisto when Europa Callisto is in the cage and the cage is broken:
 	say "Jones is kneeling at Europa Callisto's side, trying to rouse her.";
 	
-The cage-thing is a privately-named enterable supporter in the cage. It is scenery. The printed name is "cage". Understand "cage/bars/silnium" as the cage-thing. "The cage is huge for holding just one prisoner. The silnium bars are grey and iridescent. They run both horizontally and vertically, creating a lattice."
+The cage-thing is a privately-named enterable supporter in the cage. It is scenery. The printed name is "cage". Understand "cage/bars/silnium" as the cage-thing. "The cage is huge for holding just one prisoner. The silnium bars are grey and iridescent. They run both horizontally and vertically, creating a lattice. The floor is hard and cold."
 
 Instead of climbing the cage-thing:
 	try entering the cage-thing;
@@ -2932,6 +2940,25 @@ Does the player mean doing something to the cage-thing:
 	
 Chapter 3 - Hooking the flyer
 
+Instead of going nowhere from the cage:
+	if the noun is up:
+		try entering the cage-thing;
+
+Instead of attacking Admiral Thallium's Flyer:
+	say "It's just too far away.";
+	
+Instead of throwing something at admiral thallium's flyer:
+	say "Throwing [the noun] would hardly be effective.";
+	
+Instead of throwing the screwdriver at admiral thallium's flyer:
+	say "It would just bounce off.";
+	
+Instead of throwing the bottled water at admiral thallium's flyer:
+	say "The water could be useful.";
+	
+Instead of throwing the hammer at admiral thallium's flyer:
+	say "It might leave a dent, but bring down a flyer? Really?";
+
 To break the cage:
 	score 1;
 	say line break;
@@ -2945,7 +2972,7 @@ To break the cage:
 	remove Admiral Thallium's flyer from play;
 	remove the hook cable from play;
 	now the cage is broken;
-	move the player to the cage;
+	move the player to the cage-container;
 
 Instead of throwing the hook cable at admiral thallium's flyer when the player is on the cage-thing:
 	break the cage;
@@ -2964,6 +2991,10 @@ Chapter 4 - The Flyer Pad
 The description of the flyer pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background."
 	
 Chapter 5 - The Water Bottle
+
+Understand the command "lift" as "take".
+
+The cage-container is a transparent open scenery container in the cage. 
 
 Instead of waking Europa:
 	say "Europa moans but otherwise does not respond.";
@@ -3005,6 +3036,17 @@ When Saving Europa begins:
 At the time when Beck shouts:
 	say "Beck sticks his head out of the door of the flyer and yells 'C'mon Jones, get Europa and get in the flyer!'";
 	
+Instead of pulling europa during saving europa:
+	say "Jones could pull Europa up to the hole in the cage, but she'd never get her through without help."
+	
+Instead of taking europa during saving europa:
+	say "Jones could carry Europa to the hole in the cage, but she'd never get her through without help."
+	
+Instead of pushing europa during saving europa:
+	say "Jones could carry Europa to the hole in the cage, but she'd never get her through without help."
+	
+Instead of exiting during saving Europa:
+	say "Jones can't leave Europa now!";
 	
 Volume 9 - The End, etc
 
