@@ -261,6 +261,14 @@ Does the player mean unlocking the large desk with the elevator drop key: it is 
 Does the player mean unlocking the cybernetica door with the elevator drop key: it is unlikely;
 
 Does the player mean unlocking the martian chemical door with the elevator drop key: it is unlikely;
+
+Does the player mean swiping the player through something: it is very unlikely;
+
+Does the player mean swiping something through the player: it is very unlikely;
+
+Does the player mean swiping the player through: it is very unlikely;
+
+
 	
 Book 5 - Some extra actions
 	
@@ -750,7 +758,7 @@ The hook cable is privately-named. The printed name is "cable with hooks at eith
 
 The description is "This is a strong but slender cable, presumably of carbon nanotubes. There are steel hooks at either end.".
 
-A cardkey is a kind of thing.
+A cardkey is a kind of thing. Understand "card/key/keycard" as a cardkey.
 
 Swiping it through is an action applying to one carried thing and one thing. 
 Understand "swipe [something] through/in [something]" as swiping it through.
@@ -878,8 +886,19 @@ The ninth floor north hallway is north of the ninth floor elevator hall.
 
 The ninth floor south hallway is south of the ninth floor elevator hall.
 
-The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable. The description is "A slick corporate office door lettered 'Cybernetica'. It has a swipe lock above the handle." Understand "swipe/lock/handle" as the cybernetica door.
-The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door.  
+The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable. The description is "A slick corporate office door lettered 'Cybernetica'. It has a swipe lock above the handle." Understand "office" as the cybernetica door.
+The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door. 
+ 
+The cybernetica-room-swipe-lock is scenery in ground-floor-2. It is privately-named. The printed name is "swipe lock". Understand "swipe/lock" as cybernetica-room-swipe-lock. "An ordinary swipe lock." 
+
+Instead of inserting something into cybernetica-room-swipe-lock:
+	try unlocking the cybernetica door with the noun;
+
+Instead of using something with cybernetica-room-swipe-lock:
+	try unlocking the cybernetica door with the noun;
+	
+Instead of swiping something through the cybernetica-room-swipe-lock:
+	try unlocking the cybernetica door with the noun; 
 
 The Martian Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Martian Chemical door is closed, openable, locked, and lockable. "A slick corporate office door with the fancy company logo of Martian Chemical. It has a swipe lock above the handle." Understand "swipe/lock" as Martian Chemical door.
 
@@ -1050,7 +1069,7 @@ The printed name is "outside".
 
 The description is "Outside the building are the red-dusted streets of New Reykjavik."
 
-Understand "city/reykjavik/planet/mars/outside/out/glass/streets/wall/walls/window/windows" or "glass wall" or "glass walls" or "new reykjavik" as first floor view of New Reykjavik.
+Understand "city/reykjavik/planet/mars/outside/out/glass/streets/wall/walls/window/windows/dusty/red" or "glass wall" or "glass walls" or "new reykjavik" as first floor view of New Reykjavik.
 
 Ninth floor view of New Reykjavik is a backdrop. It is privately-named. It is in south end of the building management office, north end of the building management office, ninth floor south hallway, ninth floor north hallway, Martian Chemical office, Cybernetica office.
 
@@ -1284,12 +1303,15 @@ The west semicircular couch is a couch in ground-floor-2. The description is "An
 
 The central carpeted path is scenery in ground-floor-2. The description is "A strip of grey carpet running north to south, in the midst of the marble floor. (Incidentally, the massive expense of moving real marble from Earth to Mars is just further proof of Thallium's madness, seriously.)". Understand "carpet/rug" as the central carpeted path.
  
-The swipe lock is scenery in ground-floor-2. "An ordinary swipe lock."
+The elevator-room-swipe-lock is scenery in ground-floor-2. It is privately-named. The printed name is "swipe lock". Understand "swipe/lock" as elevator-room-swipe-lock. "An ordinary swipe lock." 
 
-Instead of inserting something into swipe lock:
+Instead of inserting something into elevator-room-swipe-lock:
 	try unlocking the elevator-room-door with the noun;
 
-Instead of using something with swipe lock:
+Instead of using something with elevator-room-swipe-lock:
+	try unlocking the elevator-room-door with the noun;
+	
+Instead of swiping something through the elevator-room-swipe-lock:
 	try unlocking the elevator-room-door with the noun;
 
 Section 3 - ground-floor-3
@@ -2125,6 +2147,8 @@ Instead of taking the screwdriver when the screwdriver is not handled and the sc
 	now the screwdriver is behind the filing cabinet;
 	now the screwdriver is handled;
 	now the screwdriver is undescribed;
+	if noplead screwdriver < 1:
+		setplead screwdriver to 1;
 	say "[We] reaches for the screwdriver, but [we] fumbles it and it rolls off the back of the filing cabinet.[paragraph break]";
 	converse "Jones: 'Damn.'
 	
@@ -2147,6 +2171,8 @@ Instead of looking behind the filing cabinet when the screwdriver is not behind 
 	say "[We] moves to look behind the filing cabinet, and in doing so, brushes the screwdriver off the back of the filing cabinet.[paragraph break]";
 	move the black cat to the south end of the building management office;
 	now the screwdriver is behind the filing cabinet;
+	if noplead screwdriver < 1:
+		setplead screwdriver to 1;
 	converse "Jones: 'Damn.'
 	
 	Beck: 'What? What's going on?'
@@ -2155,6 +2181,8 @@ Instead of looking behind the filing cabinet when the screwdriver is not behind 
 
 Instead of taking the screwdriver when black cat is in the location and the black cat is not angry:
 	say "[We] reaches behind the cabinet to retrieve the screwdriver. A swipe and a hiss make her recoil.[paragraph break]";
+	if noplead screwdriver < 3:
+		setplead screwdriver to 3;
 	converse "Jones: 'Holy --!'
 	
 	Beck: 'What now?'
@@ -3136,369 +3164,369 @@ After asking Beck about something:
 	say line break;
 	converse "Beck: 'I'm not sure what you're asking about, Jones.'";
 
-Report quizzing Beck about something:
+Instead of quizzing Beck about something:
 	say line break;
 	converse "Beck: 'Hmm. Don't have much to say about that right now.'";
 	stop the action;
 
-After quizzing Beck about guard-robots when comment on energy absorption is unused during Lobby Shootout:
+Instead of quizzing Beck about guard-robots when comment on energy absorption is unused during Lobby Shootout:
 	say line break;
 	converse "Beck: 'Keep your head down and keep firing.'";	
 
-After quizzing Beck about guard-robots when comment on energy absorption is used during Lobby Shootout:
+Instead of quizzing Beck about guard-robots when comment on energy absorption is used during Lobby Shootout:
 	say line break;
 	converse "Beck: 'It doesn't look like shooting the robots is doing any good. Is there another way you can hurt them?'";
 	
-After quizzing Beck about the hook cable:
+Instead of quizzing Beck about the hook cable:
 	say line break;
 	converse "Beck: 'Could come in handy.'";
 	
-After quizzing Beck about the Lobby:
+Instead of quizzing Beck about the Lobby:
 	say line break;
 	converse "Beck: 'Impressive place.'";
 	
-After quizzing Beck about the Speeder Dock:
+Instead of quizzing Beck about the Speeder Dock:
 	say line break;
 	converse "Beck: 'Guess everyone went home when Thallium went ape.'";
 	
-After quizzing Beck about the 100th floor elevator hall:
+Instead of quizzing Beck about the 100th floor elevator hall:
 	say line break;
 	converse "Beck: 'This guy's got some kind of inferiority complex.'";
 	
-After quizzing Beck about the 100th floor view of New Reykjavik:
+Instead of quizzing Beck about the 100th floor view of New Reykjavik:
 	say line break;
 	converse "Beck: 'Wow. Impressive.'";
 	
-After quizzing Beck about Admiral Thallium's Flyer:
+Instead of quizzing Beck about Admiral Thallium's Flyer:
 	say line break;
 	converse "Beck: 'It's a nice vehicle, I'll give him that. Have you ever noticed villains always have ugly houses and beautiful flyers?'";
 	
-After quizzing Beck about Admiral-Thallium:
+Instead of quizzing Beck about Admiral-Thallium:
 	say line break;
 	converse "Beck: 'Wonderful man, can't get enough of him.'";
 	
-After quizzing Beck about the air handling room:
+Instead of quizzing Beck about the air handling room:
 	say line break;
 	converse "Beck: 'Good thing this was here. Don't see why we'd hang around, though.'";
 	
-After quizzing Beck about the Atmo-Suit when the ledge is not visited:
+Instead of quizzing Beck about the Atmo-Suit when the ledge is not visited:
 	say line break;
 	converse "Beck: 'Hope we don't have to use it.'";
 	
-After quizzing Beck about the Atmo-Suit when the ledge is visited:
+Instead of quizzing Beck about the Atmo-Suit when the ledge is visited:
 	say line break;
 	converse "Beck: 'Good thing this was around.'";
 	
-After quizzing Beck about the Atmo-Suit when the ledge is not visited:
+Instead of  quizzing Beck about the Atmo-Suit when the ledge is not visited:
 	say line break;
 	converse "Beck: 'Hope we don't have to use it.'";
 	
-After quizzing Beck about Beck:
+Instead of  quizzing Beck about Beck:
 	say line break;
 	converse "Beck: 'I'm just happy to serve.'";
 	
-After quizzing Beck about bed:
+Instead of  quizzing Beck about bed:
 	lb;
 	converse "Beck: 'No time to rest, Jones.'";
 	
-After quizzing Beck about black cat:
+Instead of  quizzing Beck about black cat:
 	lb;
 	converse "Beck: 'I'll adopt it.'
 	
 	'Jones: 'After it damn near took off my hand?'";
 	
-After quizzing Beck about building entryway:
+Instead of  quizzing Beck about building entryway:
 	lb;
 	converse "Beck: 'Extravagant, as always.'";
 	
-After quizzing Beck about bottle of Electrofil quick-setting conductive polymer gel:
+Instead of  quizzing Beck about bottle of Electrofil quick-setting conductive polymer gel:
 	lb;
-	say "Beck: 'I imagine it does what it says it does.'";
+	converse "Beck: 'I imagine it does what it says it does.'";
 	
-After quizzing Beck about bottled water: 
+Instead of quizzing Beck about bottled water: 
 	lb;
-	say "Beck: 'Say Jones, you could use an endorsement contract. How about Olympus Springs water?'
+	converse "Beck: 'Say Jones, you could use an endorsement contract. How about Olympus Springs water?'
 	
 	Jones: 'Yeah, sure.'";
 	
-After quizzing Beck about cage: 
+Instead of quizzing Beck about cage: 
 	lb;
 	converse "Beck: 'You're going to need a lot of force to get through that.'";
 	
-After quizzing Beck about cage-thing: 
+Instead of quizzing Beck about cage-thing: 
 	lb;
 	converse "Beck: 'You're going to need a lot of force to get through that.'";
 
-After quizzing Beck about claw: 
+Instead of quizzing Beck about claw: 
 	lb;
 	converse "Beck: 'This whole place is like some weird wizard's chamber.'";
 	
-After quizzing Beck about coin:
+Instead of quizzing Beck about coin:
 	lb; 
 	converse "Beck: 'Might as well hold on to it. You're not getting paid for this job.'";
 	
-After quizzing Beck about crystal lighting:
+Instead of quizzing Beck about crystal lighting:
 	lb;
 	converse "Beck: 'And this is just the elevator!'";
 	
-After quizzing Beck about Cybernetica door:
+Instead of quizzing Beck about Cybernetica door:
 	lb;
 	converse "Beck: 'Oh, they make the best games!'";
 	
-After quizzing Beck about Cybernetica office:
+Instead of quizzing Beck about Cybernetica office:
 	lb;
 	converse "Beck: 'Oh, they make the best games!'";
 	
-After quizzing Beck about dead mauve robot:
+Instead of quizzing Beck about dead mauve robot:
 	lb;
 	converse "Beck: 'Nice job, Jones.'";
 	
-After quizzing Beck about desks-microthings-2:
+Instead of quizzing Beck about desks-microthings-2:
 	lb;
 	converse "Beck: 'So many desks. So. many. desks.";
 	
-After quizzing Beck about desks-microthings-3:
+Instead of quizzing Beck about desks-microthings-3:
 	lb;
 	converse "Beck: 'What do all these people even do? I mean, Consolidated Microthings, what do they do?'";
 	
-After quizzing Beck about destroyed purple robot:
+Instead of quizzing Beck about destroyed purple robot:
 	lb;
 	converse "Beck: 'Just can't get a reliable guard robot these days.'";
 	
-After quizzing Beck about disruptor pistol:
+Instead of quizzing Beck about disruptor pistol:
 	lb;
 	converse "Beck: 'Uh, you know what that's for, right?'";
 	
-After quizzing Beck about drop-key-hole:
+Instead of quizzing Beck about drop-key-hole:
 	lb;
 	converse "Beck: 'You insert a drop key in there and then turn it.'";
 	
-After quizzing Beck about ductwork:
+Instead of quizzing Beck about ductwork:
 	lb;
 	converse "Beck: 'You can get back out through there.'";
 	
-After quizzing Beck about electronic eye:
+Instead of quizzing Beck about electronic eye:
 	lb;
 	converse "Beck: 'Looks like light needs to hit it or something.'";
 	
-After quizzing Beck about elevator car-backdrop:
+Instead of quizzing Beck about elevator car-backdrop:
 	lb;
 	converse "Beck: 'It makes me uncomfortable, it hanging above us like that.'";
 	
-After quizzing Beck about elevator car-room:
+Instead of quizzing Beck about elevator car-room:
 	lb;
 	converse "Beck: 'You gotta admit, this is insane.'";
 	
-After quizzing Beck about elevator drop key:
+Instead of quizzing Beck about elevator drop key:
 	lb;
 	converse "Beck: 'I'm not sure what that is. Look closer.'";
 	
-After quizzing Beck about elevator drop key when the elevator drop key is examined:
+Instead of quizzing Beck about elevator drop key when the elevator drop key is examined:
 	lb;
 	converse "Beck: 'Huh. You learn something every day.'";
 	
-After quizzing Beck about Europa Callisto:
+Instead of quizzing Beck about Europa Callisto:
 	lb;
 	converse "Beck: '[if the cage is intact and the cage is visited]We need to break open that cage somehow[otherwise if the cage is broken]You'll need to revive her if you want to get her out of there[otherwise]I hope she's okay[end if].'";
 	
-After quizzing Beck about filing cabinet:
+Instead of quizzing Beck about filing cabinet:
 	lb;
 	converse "Beck: 'I can't imagine there's anything in there of relevance to rescuing Europa Callisto.'";
 	
-After quizzing Beck about flyer pad:
+Instead of quizzing Beck about flyer pad:
 	lb;
 	converse "Beck: 'I'll be there soon.'";
 	
-After quizzing Beck about fork:
+Instead of quizzing Beck about fork:
 	lb;
 	converse "Beck: 'Maybe you can poke Thallium with a fork until he submits?'";
 	
-After quizzing Beck about the garish medal:
+Instead of quizzing Beck about the garish medal:
 	lb;
 	converse "Beck: '[if safety pin is not seen]Might as well take a look at it[otherwise]It's really pretty disgraceful[end if].'";
 
-After quizzing Beck about the giant sculpture:
+Instead of quizzing Beck about the giant sculpture:
 	lb;
 	converse "Beck: 'While I normally dislike Rambutan's work, this one has a certain power to it.'";
 
-After quizzing Beck about the glass diamond when the glass diamond is not discovered:
+Instead of quizzing Beck about the glass diamond when the glass diamond is not discovered:
 	lb;
 	converse "Beck: 'How much do you think it's worth?'";
 
-After quizzing Beck about the glass diamond when the glass diamond is discovered:
+Instead of quizzing Beck about the glass diamond when the glass diamond is discovered:
 	lb;
 	converse "Beck: 'Don't get attached to pretty things, Jones.'";
 
-After quizzing Beck about the real diamond:
+Instead of quizzing Beck about the real diamond:
 	lb;
 	converse "Beck: 'Ooh pretty.'";
 
-After quizzing Beck about the golden key:
+Instead of quizzing Beck about the golden key:
 	lb;
 	converse "Beck: 'Gold is a terrible material for keys.'";
 
-After quizzing Beck about the golden keyhole:
+Instead of quizzing Beck about the golden keyhole:
 	lb;
 	converse "Beck: 'This is just silly.'";
 
-After quizzing Beck about the gym:
+Instead of quizzing Beck about the gym:
 	lb;
 	converse "Beck: 'This place has great perks. Maybe I'll go work for them.'
 	
 	Jones: 'Beck, I'll tell you again: we don't have any place in HQ for a gym.'";
 
-After quizzing Beck about the hammer:
+Instead of quizzing Beck about the hammer:
 	lb;
 	converse "Beck: 'A hammer can't hurt. I mean, it can, but you know what I mean.'";
 
-After quizzing Beck about the hook cable:
+Instead of quizzing Beck about the hook cable:
 	lb;
 	converse "Beck: 'It seems very strong. It can undergo a lot of force without breaking'";
 
-After quizzing Beck about the huge desk:
+Instead of quizzing Beck about the huge desk:
 	lb;
 	converse "Beck: 'Why does Thallium need such a desk? It's not like he can read or write.'";
 
-After quizzing Beck about the insignia:
+Instead of quizzing Beck about the insignia:
 	lb;
 	converse "Beck: '[']I will conquer the planets, eh?[']'";
 
-After quizzing Beck about the ivory buttons:
+Instead of quizzing Beck about the ivory buttons:
 	lb;
 	converse "Beck: 'I keep thinking he can't get any worse, and then he tops himself.'";
 
-After quizzing Beck about the keypad:
+Instead of quizzing Beck about the keypad:
 	lb;
 	converse "Beck: 'Where might you find the code?'";
 
-After quizzing Beck about the large desk:
+Instead of quizzing Beck about the large desk:
 	lb;
 	converse "Beck: 'There must be a way to break into it.'";
 
-After quizzing Beck about the large red button:
+Instead of quizzing Beck about the large red button:
 	lb;
 	converse "Beck: '[']Press Me[']? Who makes a button that says [']Press Me[']?'";
 
-After quizzing Beck about the large relief map of Mars:
+Instead of quizzing Beck about the large relief map of Mars:
 	lb;
 	converse "Beck: 'Well, now we know where we are at least. Other than that, this doesn't seem to help.'";
 
-After quizzing Beck about the ledge:
+Instead of quizzing Beck about the ledge:
 	lb;
 	converse "Beck: 'I wish you weren't out there, Jones. Steady now.'";
 
-After quizzing Beck about the lobby:
+Instead of quizzing Beck about the lobby:
 	lb;
 	converse "Beck: 'It's an impressive building, I'll give Thallium that.'";
 
-After quizzing Beck about the lounge area:
+Instead of quizzing Beck about the lounge area:
 	lb;
 	converse "Beck: 'No time for banter right now, bye!'";
 
-After quizzing Beck about the maintenance items:
+Instead of quizzing Beck about the maintenance items:
 	lb;
 	converse "Beck: 'You're not planning to clean the place, are you?'";
 
-After quizzing Beck about the Martian Chemical office:
+Instead of quizzing Beck about the Martian Chemical office:
 	lb;
 	converse "Beck: 'These guys are one of the worst polluters on Mars. People think we can just go on dumping chemicals everywhere because the place is so empty, but haven't they ever heard of exponential growth? I mean --'
 	
 	Jones: 'Yes! I totally agree. But let's deal with this after we've rescued Europa.'";
 
-After quizzing Beck about the mauve guard robot:
+Instead of quizzing Beck about the mauve guard robot:
 	lb;
 	converse "Beck: 'Maybe you can out-maneuver him.'";
 
-After quizzing Beck about the metal pillar:
+Instead of quizzing Beck about the metal pillar:
 	try quizzing Beck about the claw;
 
-After quizzing Beck about the military-detritus:
+Instead of quizzing Beck about the military-detritus:
 	lb;
 	converse "Beck: 'Who does this guy think he's fooling? On the other hand, maybe you can find a disguise in there and fake your way past the guards.'";
 
-After quizzing Beck about the Martian Chemical office:
+Instead of quizzing Beck about the Martian Chemical office:
 	lb;
 	converse "Beck: 'These guys are one of the worst polluters on Mars. People think we can just go on dumping chemicals everywhere because the place is so empty, but haven't they ever heard of exponential growth? I mean --'
 	
 	Jones: 'Yes! I totally agree. But let's deal with this after we've rescued Europa.'";
 
-After quizzing Beck about the north-task-boards:
+Instead of quizzing Beck about the north-task-boards:
 	lb;
 	converse "Beck: 'Write something on them! Something nasty about Thallium!'";
 
-After quizzing Beck about the south-task-boards:
+Instead of quizzing Beck about the south-task-boards:
 	lb;
 	converse "Beck: 'Write something on them! Something nasty about Thallium!'";
 
-After quizzing Beck about the note:
+Instead of quizzing Beck about the note:
 	lb;
 	converse "Beck: 'Looks useful'";
 
-After quizzing Beck about the penthouse control panel:
+Instead of quizzing Beck about the penthouse control panel:
 	lb;
 	converse "Beck: 'Be careful, don't press the wrong button.'";
 
-After quizzing Beck about the poached ostrich eggs in jelly:
+Instead of quizzing Beck about the poached ostrich eggs in jelly:
 	lb;
 	converse "Beck: 'Where does he keep his ostrich farm?'";
 
-After quizzing Beck about the purple guard robot:
+Instead of quizzing Beck about the purple guard robot:
 	lb;
 	converse "Beck: 'These things are pretty invulnerable from a distance. Try getting closer in.'";
 
-After quizzing Beck about the red flyer:
+Instead of quizzing Beck about the red flyer:
 	lb;
 	converse "Beck: 'I'm flying it! No time to talk!'";
 
-After quizzing Beck about the robot vent:
+Instead of quizzing Beck about the robot vent:
 	lb;
 	converse "Beck: 'Looks like a point of weakness, as you said.'";
 
-After quizzing Beck about the safety pin:
+Instead of quizzing Beck about the safety pin:
 	lb;
 	converse "Beck: 'You never know when you might need something that can get in a very small space.'";
 
-After quizzing Beck about the screwdriver:
+Instead of quizzing Beck about the screwdriver:
 	lb;
 	converse "Beck: 'Always useful.'";
 
-After quizzing Beck about the shrimp tea sandwich:
+Instead of quizzing Beck about the shrimp tea sandwich:
 	lb;
 	converse "Beck: 'I love shrimp, but unfortunately it makes me break out.'";
 
-After quizzing Beck about the small black button:
+Instead of quizzing Beck about the small black button:
 	lb;
 	converse "Beck: 'Inscrutable, but do we have any choice?'";
 
-After quizzing Beck about the speeder-vehicle:
+Instead of quizzing Beck about the speeder-vehicle:
 	lb;
 	converse "Beck: 'I keep reminding you, but you still haven't taken it in for yearly maintenance.'";
 
-After quizzing Beck about the statue of admiral thallium:
+Instead of quizzing Beck about the statue of admiral thallium:
 	lb;
 	converse "Beck: 'We'll come back and knock it over later.'";
 
-After quizzing Beck about the tangled ruin when the hook cable is not familiar:
+Instead of quizzing Beck about the tangled ruin when the hook cable is not familiar:
 	lb;
 	converse "Beck: 'Might be something useful in there.";
 
-After quizzing Beck about the Utopia Tower:
+Instead of quizzing Beck about the Utopia Tower:
 	lb;
 	converse "Beck: 'Sure is big.'";
 
-After quizzing Beck about the vanity table:
+Instead of quizzing Beck about the vanity table:
 	lb;
 	converse "Beck: 'Here's where the magic happens.'";
 
-After quizzing Beck about the Viking 2 lander:
+Instead of quizzing Beck about the Viking 2 lander:
 	lb;
 	converse "Beck: 'I'd heard it was stolen. I can't believe he just flaunts it like this.'";
 
-After quizzing Beck about the window washing scaffold:
+Instead of quizzing Beck about the window washing scaffold:
 	lb;
 	converse "Beck: 'How nice of them to put this here for us.'";
 
-After quizzing Beck about the yourself:
+Instead of quizzing Beck about the yourself:
 	lb;
 	converse "Beck: 'Well, I think you're very nice, Jones.'";
 	
@@ -3555,6 +3583,22 @@ To decide what number is plead (ID - a value):
 		now id entry is ID;
 		now count entry is 1;
 		decide on 1;
+
+To decide what number is noplead (ID - a value):
+	if there is an id of ID in the Table of Pleading Counts:
+		let c be the count corresponding to an id of ID in the Table of Pleading Counts;
+		decide on c;
+	otherwise:
+		decide on 0;
+		
+to setplead (ID - a value) to (N - a number):
+	if there is an id of ID in the Table of Pleading Counts:
+		now the count corresponding to an id of ID in the Table of Pleading Counts is N;
+	otherwise:
+		choose a blank row in the Table of Pleading Counts;
+		now id entry is ID;
+		now count entry is N;
+	
 
 Table of Pleading Counts
 id (value)	count (number)
@@ -3966,7 +4010,8 @@ south-task-boards	"Do you think maybe Jones will have to communicate with Thalli
 speeder-vehicle	"Don't be silly."
 statue of admiral thallium	"Don't be silly."	"It won't budge."
 supports	"They are structural components of the building."
-swipe lock	"That's part of the door."
+elevator-room-swipe-lock	"That's part of the door."
+cybernetica-room-swipe-lock	"That's part of the door."
 tangled ruin	"Jones might find something useful in the mixture of sculpture and robots, but the thing as a whole is a huge mess."
 tasteful couch	"It's big, and Jones doesn't need it for anything."	"Jones is not here to rearrange the furniture."
 Tenth floor view of New Reykjavik	"Jones can't take that!"	"Jones can't move that!"
