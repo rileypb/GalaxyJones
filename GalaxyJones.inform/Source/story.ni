@@ -889,7 +889,7 @@ The ninth floor south hallway is south of the ninth floor elevator hall.
 The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable. The description is "A slick corporate office door lettered 'Cybernetica'. It has a swipe lock above the handle." Understand "office" as the cybernetica door.
 The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door. 
  
-The cybernetica-room-swipe-lock is scenery in ground-floor-2. It is privately-named. The printed name is "swipe lock". Understand "swipe/lock" as cybernetica-room-swipe-lock. "An ordinary swipe lock." 
+The cybernetica-room-swipe-lock is scenery in ninth floor north hallway. It is privately-named. The printed name is "swipe lock". Understand "swipe/lock" as cybernetica-room-swipe-lock. "An ordinary swipe lock." 
 
 Instead of inserting something into cybernetica-room-swipe-lock:
 	try unlocking the cybernetica door with the noun;
@@ -900,7 +900,18 @@ Instead of using something with cybernetica-room-swipe-lock:
 Instead of swiping something through the cybernetica-room-swipe-lock:
 	try unlocking the cybernetica door with the noun; 
 
-The Martian Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Martian Chemical door is closed, openable, locked, and lockable. "A slick corporate office door with the fancy company logo of Martian Chemical. It has a swipe lock above the handle." Understand "swipe/lock" as Martian Chemical door.
+The Martian Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Martian Chemical door is closed, openable, locked, and lockable. "A slick corporate office door with the fancy company logo of Martian Chemical. It has a swipe lock above the handle." Understand "office" as Martian Chemical door. 
+ 
+The Martian-room-swipe-lock is scenery in ninth floor south hallway. It is privately-named. The printed name is "swipe lock". Understand "swipe/lock" as Martian-room-swipe-lock. "An ordinary swipe lock." 
+
+Instead of inserting something into Martian-room-swipe-lock:
+	try unlocking the Martian chemical door with the noun;
+
+Instead of using something with Martian-room-swipe-lock:
+	try unlocking the Martian chemical door with the noun;
+	
+Instead of swiping something through the Martian-room-swipe-lock:
+	try unlocking the Martian chemical door with the noun; 
 
 The martian chemical logo is part of the Martian Chemical door. The description is "The figure of a beaker holding a red liquid against the backdrop of the planet Mars."
 
