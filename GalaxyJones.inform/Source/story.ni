@@ -250,6 +250,15 @@ Instead of showing something to Europa:
 Instead of showing bottled water to Europa:
 	try giving the bottled water to Europa;
 	
+Instead of throwing something at a guard robot when Lobby Shootout has not ended and comment on energy absorption is unused:
+	silently try dropping the noun;
+	if the player does not carry the noun:
+		say "Jones throws [the noun] at the robot. It just bounces off harmlessly.";
+	
+Instead of throwing something at a guard robot when Lobby Shootout has ended or comment on energy absorption is used:
+	say "The thing is invulnerable to disruptor fire! Do you really thing throwing that at it is going to hurt it?"
+	
+	
 Book 4 - Does the player mean
 
 Does the player mean doing something to a person: it is very likely;

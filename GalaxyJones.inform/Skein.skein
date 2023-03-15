@@ -39,7 +39,7 @@ Plus she'll get to meet Europa Callisto. That'll be totally sweet.
  _____________________________/ 
 
 An Interactive Adventure by Phil Riley
-Release 3 / Serial number 230314 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 3 / Serial number 230315 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 
 A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit climbs out of it: Galaxy Jones.
@@ -4448,7 +4448,7 @@ Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way pa
     </item>
     <item nodeId="node-31584">
         <command xml:space="preserve">throw pin at robot</command>
-        <result xml:space="preserve">Jones lacks the nerve when it comes to the crucial moment.
+        <result xml:space="preserve">That's unlikely to accomplish anything.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
