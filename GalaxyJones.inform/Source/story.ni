@@ -3060,7 +3060,7 @@ Instead of throwing the hammer at admiral thallium's flyer:
 To break the cage:
 	score 1;
 	say line break;
-	converse "[We] throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps through the door and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
+	converse "[We] throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the craft and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
 	
 	The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto. 
 	
