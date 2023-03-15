@@ -12,7 +12,7 @@ Include Galaxy Banner by Philip Riley.
 Include Third Person Narration by Philip Riley.       
 Include Pseudocontainers by Philip Riley.
 Include Look That Way by Philip Riley.
-Include Use by Philip Riley.   
+[Include Use by Philip Riley.]   
 Include Open Spaces by Philip Riley.
 Include Visible Rooms by Philip Riley.
 
@@ -184,6 +184,8 @@ The right second rule response (A) is "[We] [are] unable to unlock [the noun] wi
 
 The block throwing at rule response (A) is "That's unlikely to accomplish anything.".
 
+The can't enter what's already entered rule response (A) is "But Jones is already on [the noun].".
+
 Book 3 - Some default actions
 
 Check informing Beck about something:	
@@ -289,6 +291,12 @@ Does the player mean doing something to the elevator drop key when the player is
 
 Does the player mean inserting the elevator drop key into the drop-key-hole: It is very likely;
 Does the player mean inserting the red cardkey into the drop-key-hole: It is very unlikely;
+[Does the player mean using the drop-key-hole with: It is very unlikely;
+Does the player mean using the noun with the noun: It is very unlikely;
+Does the player mean using the elevator drop key with the drop-key-hole: It is very likely;
+Does the player mean using the elevator drop key with the elevator drop key: It is very unlikely;
+Does the player mean using something with the elevator drop key: it is very unlikely;
+Does the player mean using the elevator drop key with the ground floor elevator door: it is very likely;]
 	
 Book 5 - Some extra actions
 	
@@ -920,8 +928,8 @@ The cybernetica-room-swipe-lock is scenery in ninth floor north hallway. It is p
 Instead of inserting something into cybernetica-room-swipe-lock:
 	try unlocking the cybernetica door with the noun;
 
-Instead of using something with cybernetica-room-swipe-lock:
-	try unlocking the cybernetica door with the noun;
+[Instead of using something with cybernetica-room-swipe-lock:
+	try unlocking the cybernetica door with the noun;]
 	
 Instead of swiping something through the cybernetica-room-swipe-lock:
 	try unlocking the cybernetica door with the noun; 
@@ -933,8 +941,8 @@ The Martian-room-swipe-lock is scenery in ninth floor south hallway. It is priva
 Instead of inserting something into Martian-room-swipe-lock:
 	try unlocking the Martian chemical door with the noun;
 
-Instead of using something with Martian-room-swipe-lock:
-	try unlocking the Martian chemical door with the noun;
+[Instead of using something with Martian-room-swipe-lock:
+	try unlocking the Martian chemical door with the noun;]
 	
 Instead of swiping something through the Martian-room-swipe-lock:
 	try unlocking the Martian chemical door with the noun; 
@@ -1348,8 +1356,8 @@ The elevator-room-swipe-lock is scenery in ground-floor-2. It is privately-named
 Instead of inserting something into elevator-room-swipe-lock:
 	try unlocking the elevator-room-door with the noun;
 
-Instead of using something with elevator-room-swipe-lock:
-	try unlocking the elevator-room-door with the noun;
+[Instead of using something with elevator-room-swipe-lock:
+	try unlocking the elevator-room-door with the noun;]
 	
 Instead of swiping something through the elevator-room-swipe-lock:
 	try unlocking the elevator-room-door with the noun;
@@ -1526,8 +1534,8 @@ The ground-floor-stairwell is scenery in the ground floor elevator hall. The pri
 
 The elevator-shaft is scenery in the ground floor elevator hall. It is privately-named. The printed name is "elevator shaft". Understand "elevator/lift/shaft" as the elevator-shaft. The description is "A dark hole beyond the elevator doors."
 
-Does the player mean using drop key with the ground floor elevator door:
-	it is very likely;
+[Does the player mean using drop key with the ground floor elevator door:
+	it is very likely;]
 	
 does the player mean opening the elevator drop key: It is very unlikely;
 	
@@ -1562,7 +1570,7 @@ Instead of unlocking keylessly the ground floor elevator door when the player ca
 Instead of inserting the elevator drop key into the drop-key-hole:
 	try unlocking the ground floor elevator door with the elevator drop key;
 
-Instead of using the elevator drop key when location is the ground floor elevator hall:
+[Instead of using the elevator drop key when location is the ground floor elevator hall:
 	try unlocking the ground floor elevator door with the elevator drop key;
 	
 Instead of using the elevator drop key with the ground floor elevator door:
@@ -1572,7 +1580,7 @@ Does the player mean using the elevator drop key with the elevator drop key:
 	it is very unlikely;
 	
 Instead of using the elevator drop key with the drop-key-hole:
-	try unlocking the ground floor elevator door with the elevator drop key;
+	try unlocking the ground floor elevator door with the elevator drop key;]
 	
 Instead of closing the ground floor elevator door:
 	say "Might as well leave it open in case Jones needs to get out.";
@@ -1660,14 +1668,14 @@ Instead of examining the elevator car-backdrop:
 Instead of climbing the ladder when the location is the ground floor elevator shaft:
 	try going up;
 
-Instead of using the ladder when the location is the ground floor elevator shaft:
-	try going up;
+[Instead of using the ladder when the location is the ground floor elevator shaft:
+	try going up;]
 
 Instead of climbing the ladder when the location is the ninth floor elevator shaft:
 	try going down;
 
-Instead of using the ladder when the location is the ninth floor elevator shaft:
-	try going down;
+[Instead of using the ladder when the location is the ninth floor elevator shaft:
+	try going down;]
 	
 [The useless elevator doors are a backdrop. It is privately-named. The printed name is "elevator door". Understand "elevator/door" as the useless elevator doors. 
 It is in second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, and eighth floor elevator shaft.]
@@ -2709,7 +2717,7 @@ The conversation of the penthouse south is "Thallium seems to speak from all aro
 A gem is a kind of thing. Understand "diamonds/gem/gems" as the gem.
 The glass diamond is a gem. The glass diamond can be discovered. The printed name is "[if discovered]glass diamond[otherwise]diamond". The description is "Worthless.".
 
-The real diamond is a gem in the room of stuff. The description is "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds."
+The real diamond is a gem in the room of stuff. The description is "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds." The printed name is "diamond"
 
 prying is an action applying to one thing. Understand "pry [something] out/--", "pry out [something]", "loosen [something]" as prying.
 
@@ -2895,11 +2903,13 @@ At the time when thallium screams:
 		converse as thallium "Thallium's flyer is circling you not too far away. 'Give up, Jones! You'll never get through my silnium bars, haha!'";
 		thallium screams again in 4 turns from now;
 
+
 When Thallium ultimatum begins:
 	converse as thallium "Thallium's flyer hovers over the rooftop. 'Jones!'  he bellows. 'Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.'
 	
 	Jones rolls her eyes.";
 	converse "[line break]A little ways off, a small red flyer aims for the rooftop and accelerates.";
+	move the red flyer to the rooftop; 
 	thallium screams in 3 turns from now;
 
 Before going somewhere during Thallium ultimatum:
@@ -2908,7 +2918,7 @@ Before going somewhere during Thallium ultimatum:
 Saving Europa is a scene. Thallium ultimatum ends when Admiral Thallium's Flyer is nowhere. 
 Saving Europa begins when Thallium ultimatum ends.
 
-The red flyer is a backdrop. The description is "Jones's little red flyer, Galaxy Two."
+The red flyer is a backdrop. The description is "[If saving europa is happening]Jones's little red flyer, Galaxy Two[otherwise]It's little more than a growing red speck[end if]."
 
 When Saving Europa begins:
 	converse "The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.";
@@ -3005,6 +3015,8 @@ Instead of examining Admiral Thallium's flyer during Thallium alight:
 
 Instead of examining Admiral Thallium's flyer during Thallium ultimatum:
 	say "Hovering above [us], it's distinctly menacing. It's not visibly armed, but it conveys the impression of a beast about to strike. It's flying low, the rails of its landing gear just a few feet above Jones's head.";
+	
+cage-scenery is a backdrop. It is in penthouse roof and flyer pad. "You can see the cage with Europa Callisto in it from here. She's lying on the floor and not moving." It is privately-named. The printed name is "cage". Understand "cage" as cage-scenery.
 
 The description of cage is "[if the cage is not broken]The closely-set silnium bars seem to dash all hope of a rescue.[otherwise]The whole structure is tilted, leaving a hole at the eastern end.[end if]".
 
@@ -3029,7 +3041,9 @@ Rule for writing a paragraph about Europa Callisto when Europa Callisto is in th
 Rule for writing a paragraph about Europa Callisto when Europa Callisto is in the cage and the cage is broken:
 	say "Jones is kneeling at Europa Callisto's side, trying to rouse her.";
 	
-The cage-thing is a privately-named enterable supporter in the cage. It is scenery. The printed name is "cage". Understand "cage/bars/silnium" as the cage-thing. "The cage is huge for holding just one prisoner. The silnium bars are grey and iridescent. They run both horizontally and vertically, creating a lattice. The floor is hard and cold."
+The cage-thing is a privately-named enterable supporter in the cage. It is scenery. The printed name is "cage". Understand "cage/bars/silnium" as the cage-thing. "The cage is huge for holding just one prisoner. The silnium bars are grey and iridescent. They run both horizontally and vertically, creating a lattice. The floor is hard and cold." Understand "lattice/bars/silnium" as the cage-thing.
+
+Understand "prisoner" as Europa Callisto.
 
 Instead of climbing the cage-thing:
 	try entering the cage-thing;
@@ -3056,6 +3070,11 @@ Chapter 3 - Hooking the flyer
 Instead of going nowhere from the cage:
 	if the noun is up:
 		try entering the cage-thing;
+	if the noun is down:
+		if the player is on the cage-thing:
+			try exiting;
+		otherwise: 
+			say "Should Jones burrow downward?";
 
 Instead of attacking Admiral Thallium's Flyer:
 	say "It's just too far away.";
@@ -3101,7 +3120,9 @@ Instead of tying the hook cable to the cage-thing when the player is not on the 
 	
 Chapter 4 - The Flyer Pad
 
-The description of the flyer pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background."
+The description of the flyer pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background." Understand "letter/F/lights/landing/background" as the flyer pad.
+
+
 	
 Chapter 5 - The Water Bottle
 
@@ -3219,6 +3240,12 @@ Definition: a thing is quizzable if it is interesting or it is visible.
 When play begins:
 	repeat through the Table of Interesting Things:
 		now the item entry is interesting;
+		
+Rule for clarifying the parser's choice of something when quizzing and the noun is beck:
+	do nothing;
+
+Before quizzing beck about something:
+	say "([the second noun]).";
 		
 Instead of quizzing beck about something that is not quizzable:
 	lb;
@@ -3749,7 +3776,7 @@ After pleading when the location is the window washing scaffold and the floor of
 		-- 3: converse "Beck: 'To do that you need a screwdriver.'";
 		-- otherwise: converse "Beck: 'Haven't got one? Go back to the building management office.'";
 		
-After pleading when the location is in the tenth-floor-region and the mauve guard robot is somewhere:
+After pleading when (the location is in the tenth-floor-region or the location is the air handling room) and the mauve guard robot is somewhere:
 	lb;
 	if plead tenth-floor-region is:
 		-- 1: converse "Beck: 'Before we begin, save your game. This could get ugly.'";
@@ -3767,7 +3794,7 @@ After pleading when the location is in the tenth-floor-region and the mauve guar
 		-- 13: converse "Beck: 'Jump on the robot!'";
 		-- otherwise: converse "Beck: 'Then pour the gel on the robot.'";
 		
-After pleading when the location is the 100th-floor-region and the roof stairs is hidden:
+After pleading when the location is in the 100th-floor-region and the roof stairs is hidden and penthouse south is visited:
 	lb;
 	if plead 100th-floor-region is:
 		-- 1: converse "Beck: 'You need to get to the roof, but there is no apparent way to get there.'";
@@ -4158,7 +4185,7 @@ Carry out drop keying:
 
 Volume 15 - Tests
 
-test elevator with "n/n/z/shoot art/x art/e/n/type 0/w/take all/e/x table/take all/n/x medals/take medal/x medal/take pin/w/w/s/unlock door with red keycard/e/take all/w/s/x waterfall/take coin/e/n/use drop key with elevator".
+test elevator with "n/n/z/shoot art/x art/e/n/type 0/w/take all/e/x table/take all/n/x medals/take medal/x medal/take pin/w/w/s/unlock door with red keycard/e/take all/w/s/x waterfall/take coin/e/n/open elevator with drop key".
 test ninth with "test elevator/w/u/e".
 test mgmt with "test ninth/buy water with coin/n/w/pick desk lock with pin/take black card/s/take screwdriver/look behind cabinet/drop shrimp/e".
 test ledge with "test mgmt/unlock door with black cardkey/e/take gel from cabinet/w/n/n/unlock door with black cardkey/e/sneak up on robot/sneak up on robot/sneak up on robot/shoot robot/s/n/e".
