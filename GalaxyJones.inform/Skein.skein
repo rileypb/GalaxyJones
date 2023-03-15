@@ -58,7 +58,8 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-31557"></child>
+        <children><child nodeId="node-31632"></child>
+            <child nodeId="node-31557"></child>
             <child nodeId="node-31562"></child>
             <child nodeId="node-26477"></child>
         </children>
@@ -4880,6 +4881,638 @@ He's not likely to be helpful.
     <item nodeId="node-31561">
         <command xml:space="preserve">touch him</command>
         <result xml:space="preserve">Admiral Thallium might not like that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-31632">
+        <command xml:space="preserve">gonear 100th</command>
+        <result xml:space="preserve">Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31633"></child>
+        </children>
+    </item>
+    <item nodeId="node-31633">
+        <command xml:space="preserve">x</command>
+        <result xml:space="preserve">(the disruptor pistol)
+A compact instrument of death, with only one setting: kill.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31634"></child>
+        </children>
+    </item>
+    <item nodeId="node-31634">
+        <command xml:space="preserve">x walls</command>
+        <result xml:space="preserve">Black marble. Wow. It's beautiful.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31635"></child>
+        </children>
+    </item>
+    <item nodeId="node-31635">
+        <command xml:space="preserve">x floors</command>
+        <result xml:space="preserve">Dark black, almost threatening, rounding out the storm cloud atmosphere of the room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31636"></child>
+        </children>
+    </item>
+    <item nodeId="node-31636">
+        <command xml:space="preserve">x floor</command>
+        <result xml:space="preserve">(the carpet)
+Dark black, almost threatening, rounding out the storm cloud atmosphere of the room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31637"></child>
+        </children>
+    </item>
+    <item nodeId="node-31637">
+        <command xml:space="preserve">x ceiling</command>
+        <result xml:space="preserve">An enormously extravagant display of crystal.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31638"></child>
+        </children>
+    </item>
+    <item nodeId="node-31638">
+        <command xml:space="preserve">x chandelier</command>
+        <result xml:space="preserve">An enormously extravagant display of crystal.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31639"></child>
+        </children>
+    </item>
+    <item nodeId="node-31639">
+        <command xml:space="preserve">take it</command>
+        <result xml:space="preserve">Jones can't reach it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31640"></child>
+        </children>
+    </item>
+    <item nodeId="node-31640">
+        <command xml:space="preserve">x elevator</command>
+        <result xml:space="preserve">(the elevator door)
+It's not clear why everything has to be so extravagant.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31641"></child>
+        </children>
+    </item>
+    <item nodeId="node-31641">
+        <command xml:space="preserve">x quarters</command>
+        <result xml:space="preserve">They look just as over-the-top as the hall here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31652"></child>
+        </children>
+    </item>
+    <item nodeId="node-31652">
+        <command xml:space="preserve">take quarters</command>
+        <result xml:space="preserve">Jones can't take that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31653"></child>
+        </children>
+    </item>
+    <item nodeId="node-31653">
+        <command xml:space="preserve">taste it</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31654"></child>
+        </children>
+    </item>
+    <item nodeId="node-31654">
+        <command xml:space="preserve">look behind ir</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31655"></child>
+        </children>
+    </item>
+    <item nodeId="node-31655">
+        <command xml:space="preserve">look behind quarters</command>
+        <result xml:space="preserve">Jones finds nothing of note.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31656"></child>
+        </children>
+    </item>
+    <item nodeId="node-31656">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31657"></child>
+        </children>
+    </item>
+    <item nodeId="node-31657">
+        <command xml:space="preserve">x bedroom</command>
+        <result xml:space="preserve">Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31674"></child>
+        </children>
+    </item>
+    <item nodeId="node-31674">
+        <command xml:space="preserve">x round</command>
+        <result xml:space="preserve">It's round and huge, and it looks supremely comfortable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31675"></child>
+        </children>
+    </item>
+    <item nodeId="node-31675">
+        <command xml:space="preserve">x dummies</command>
+        <result xml:space="preserve">The best outfit is his Napoleon outfit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31676"></child>
+        </children>
+    </item>
+    <item nodeId="node-31676">
+        <command xml:space="preserve">take dummies</command>
+        <result xml:space="preserve">They'd be cumbersome to carry around.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31677"></child>
+        </children>
+    </item>
+    <item nodeId="node-31677">
+        <command xml:space="preserve">knock over dummt</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31678"></child>
+        </children>
+    </item>
+    <item nodeId="node-31678">
+        <command xml:space="preserve">knock over dummy</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31679"></child>
+        </children>
+    </item>
+    <item nodeId="node-31679">
+        <command xml:space="preserve">punch dummies</command>
+        <result xml:space="preserve">Jones lets off a little steam.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31702"></child>
+        </children>
+    </item>
+    <item nodeId="node-31702">
+        <command xml:space="preserve">x clothes</command>
+        <result xml:space="preserve">Hideous.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31703"></child>
+        </children>
+    </item>
+    <item nodeId="node-31703">
+        <command xml:space="preserve">take clothes</command>
+        <result xml:space="preserve">Jones would rather not touch his clothes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31728"></child>
+        </children>
+    </item>
+    <item nodeId="node-31728">
+        <command xml:space="preserve">push irt</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31729"></child>
+        </children>
+    </item>
+    <item nodeId="node-31729">
+        <command xml:space="preserve">push it</command>
+        <result xml:space="preserve">Jones would rather not touch his clothes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31730"></child>
+        </children>
+    </item>
+    <item nodeId="node-31730">
+        <command xml:space="preserve">x room</command>
+        <result xml:space="preserve">Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31758"></child>
+        </children>
+    </item>
+    <item nodeId="node-31758">
+        <command xml:space="preserve">x table</command>
+        <result xml:space="preserve">A vanity table. So aptly named for a man like the Admiral.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31759"></child>
+        </children>
+    </item>
+    <item nodeId="node-31759">
+        <command xml:space="preserve">take it</command>
+        <result xml:space="preserve">It's too big to carry around.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31760"></child>
+        </children>
+    </item>
+    <item nodeId="node-31760">
+        <command xml:space="preserve">hit it</command>
+        <result xml:space="preserve">Jones only uses violent means when absolutely necessary.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31761"></child>
+        </children>
+    </item>
+    <item nodeId="node-31761">
+        <command xml:space="preserve">take mirrors</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31762"></child>
+        </children>
+    </item>
+    <item nodeId="node-31762">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31763"></child>
+        </children>
+    </item>
+    <item nodeId="node-31763">
+        <command xml:space="preserve">x room</command>
+        <result xml:space="preserve">Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31764"></child>
+        </children>
+    </item>
+    <item nodeId="node-31764">
+        <command xml:space="preserve">x carpet</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31765"></child>
+        </children>
+    </item>
+    <item nodeId="node-31765">
+        <command xml:space="preserve">x penthouse</command>
+        <result xml:space="preserve">Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31766"></child>
+        </children>
+    </item>
+    <item nodeId="node-31766">
+        <command xml:space="preserve">x floor</command>
+        <result xml:space="preserve">On Mars, sometimes one gets tired of red.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31767"></child>
+        </children>
+    </item>
+    <item nodeId="node-31767">
+        <command xml:space="preserve">x granite</command>
+        <result xml:space="preserve">On Mars, sometimes one gets tired of red.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31768"></child>
+        </children>
+    </item>
+    <item nodeId="node-31768">
+        <command xml:space="preserve">x red</command>
+        <result xml:space="preserve">Which do you mean, the granite floor or the walls?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31769"></child>
+        </children>
+    </item>
+    <item nodeId="node-31769">
+        <command xml:space="preserve">x windows</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31770"></child>
+        </children>
+    </item>
+    <item nodeId="node-31770">
+        <command xml:space="preserve">x window</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31771"></child>
+        </children>
+    </item>
+    <item nodeId="node-31771">
+        <command xml:space="preserve">x wall</command>
+        <result xml:space="preserve">The outer wall is all of red wood inlaid with ebony, while the inner wall, made of brushed stainless steel, is inset with an electronic eye.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31813"></child>
+        </children>
+    </item>
+    <item nodeId="node-31813">
+        <command xml:space="preserve">x walls</command>
+        <result xml:space="preserve">The outer wall is all of red wood inlaid with ebony, while the inner wall, made of brushed stainless steel, is inset with an electronic eye.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31898"></child>
+        </children>
+    </item>
+    <item nodeId="node-31898">
+        <command xml:space="preserve">x insignia</command>
+        <result xml:space="preserve">"Planetas Vincam", incidentally, means "I will conquer the planets."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31899"></child>
+        </children>
+    </item>
+    <item nodeId="node-31899">
+        <command xml:space="preserve">x motto</command>
+        <result xml:space="preserve">"Planetas Vincam", incidentally, means "I will conquer the planets."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31900"></child>
+        </children>
+    </item>
+    <item nodeId="node-31900">
+        <command xml:space="preserve">x words</command>
+        <result xml:space="preserve">"Planetas Vincam", incidentally, means "I will conquer the planets."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31901"></child>
+        </children>
+    </item>
+    <item nodeId="node-31901">
+        <command xml:space="preserve">x planet</command>
+        <result xml:space="preserve">"Planetas Vincam", incidentally, means "I will conquer the planets."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31948"></child>
+        </children>
+    </item>
+    <item nodeId="node-31948">
+        <command xml:space="preserve">x pillar</command>
+        <result xml:space="preserve">It's actually wrought iron, and it holds up the claw.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31949"></child>
+        </children>
+    </item>
+    <item nodeId="node-31949">
+        <command xml:space="preserve">x column</command>
+        <result xml:space="preserve">It's actually wrought iron, and it holds up the claw.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31950"></child>
+        </children>
+    </item>
+    <item nodeId="node-31950">
+        <command xml:space="preserve">x electronic eye</command>
+        <result xml:space="preserve">Looks like it might be a sensor of some sort.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-31951"></child>
+        </children>
+    </item>
+    <item nodeId="node-31951">
+        <command xml:space="preserve">x sensor</command>
+        <result xml:space="preserve">Looks like it might be a sensor of some sort.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32002"></child>
+        </children>
+    </item>
+    <item nodeId="node-32002">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
+
+Thallium seems to speak from all around Jones. "You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all."
+
+Jones snorts, "Sure, Thallium."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32003"></child>
+        </children>
+    </item>
+    <item nodeId="node-32003">
+        <command xml:space="preserve">x room</command>
+        <result xml:space="preserve">Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32004"></child>
+        </children>
+    </item>
+    <item nodeId="node-32004">
+        <command xml:space="preserve">x treasure</command>
+        <result xml:space="preserve">A wall of diamonds is treasure enough, don't you think?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32005"></child>
+        </children>
+    </item>
+    <item nodeId="node-32005">
+        <command xml:space="preserve">x wealth</command>
+        <result xml:space="preserve">A wall of diamonds is treasure enough, don't you think?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32006"></child>
+        </children>
+    </item>
+    <item nodeId="node-32006">
+        <command xml:space="preserve">x array</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32007"></child>
+        </children>
+    </item>
+    <item nodeId="node-32007">
+        <command xml:space="preserve">x penthouse</command>
+        <result xml:space="preserve">Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32008"></child>
+        </children>
+    </item>
+    <item nodeId="node-32008">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the eastern corner of the penthouse. This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32009"></child>
+        </children>
+    </item>
+    <item nodeId="node-32009">
+        <command xml:space="preserve">x office</command>
+        <result xml:space="preserve">Galaxy Jones is in the eastern corner of the penthouse. This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32010"></child>
+        </children>
+    </item>
+    <item nodeId="node-32010">
+        <command xml:space="preserve">x desk</command>
+        <result xml:space="preserve">Bubinga wood, if you must know, is, according to Wikipedia, "a flowering plant genus in the family Fabaceae".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32011"></child>
+        </children>
+    </item>
+    <item nodeId="node-32011">
+        <command xml:space="preserve">x huge</command>
+        <result xml:space="preserve">Bubinga wood, if you must know, is, according to Wikipedia, "a flowering plant genus in the family Fabaceae".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32012"></child>
+        </children>
+    </item>
+    <item nodeId="node-32012">
+        <command xml:space="preserve">x bubinga</command>
+        <result xml:space="preserve">Bubinga wood, if you must know, is, according to Wikipedia, "a flowering plant genus in the family Fabaceae".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32013"></child>
+        </children>
+    </item>
+    <item nodeId="node-32013">
+        <command xml:space="preserve">x logo</command>
+        <result xml:space="preserve">The ten planets in order overlaid with the motto "Planetas Vincam".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32014"></child>
+        </children>
+    </item>
+    <item nodeId="node-32014">
+        <command xml:space="preserve">x motto</command>
+        <result xml:space="preserve">The ten planets in order overlaid with the motto "Planetas Vincam".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32015"></child>
+        </children>
+    </item>
+    <item nodeId="node-32015">
+        <command xml:space="preserve">x walls</command>
+        <result xml:space="preserve">The walls here are of the same black marble as elsewhere.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32080"></child>
+        </children>
+    </item>
+    <item nodeId="node-32080">
+        <command xml:space="preserve">x admiral logo</command>
+        <result xml:space="preserve">The ten planets in order overlaid with the motto "Planetas Vincam".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32081"></child>
+        </children>
+    </item>
+    <item nodeId="node-32081">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32082"></child>
+        </children>
+    </item>
+    <item nodeId="node-32082">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32083"></child>
+        </children>
+    </item>
+    <item nodeId="node-32083">
+        <command xml:space="preserve">x gold-plated</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-32084"></child>
+        </children>
+    </item>
+    <item nodeId="node-32084">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">It's not clear why everything has to be so extravagant.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

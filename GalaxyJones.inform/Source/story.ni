@@ -150,6 +150,8 @@ accessible is an object. accessible can be on or off. It is off.
 
 The unlocking before opening rule is not listed in any rulebook.
 
+Understand "room" as a room.
+
 Book 1 - Special text substitution code
 
 Include (-
@@ -1130,7 +1132,7 @@ The description is "Looking down at New Reykjavik, one can trace the history of 
 
 Understand "city/planet/mars/outside/out/new/reykjavik/utopia/planitia/red/plain/window/windows" as tenth floor view of New Reykjavik.
 
-100th floor view of New Reykjavik is a backdrop. It is privately-named. It is in penthouse north, penthouse east, penthouse west, penthouse south, penthouse roof, cage, and flyer pad.
+100th floor view of New Reykjavik is a backdrop. It is privately-named. It is in penthouse north, penthouse east, penthouse south, penthouse roof, cage, and flyer pad.
 
 The printed name is "outside".
 
@@ -2649,15 +2651,17 @@ The description of the 100th floor elevator hall is "The luxury is staggering.  
 
 The walls-100 is scenery in the 100th floor elevator hall. They are privately-named. The printed name is "walls". Understand "wall/walls" as the walls-100. "Black marble. Wow. It's beautiful."
 
-The carpet-100 is scenery in the 100th floor elevator hall. It is privately-named. The printed name is "carpet". Understand "carpet/carpeting/rug/floor" as the carpet-100. "Dark black, almost threatening, rounding out the storm cloud atmosphere of the room."
+The carpet-100 is scenery in the 100th floor elevator hall. It is privately-named. The printed name is "carpet". Understand "carpet/carpeting/rug/floor/floors" as the carpet-100. "Dark black, almost threatening, rounding out the storm cloud atmosphere of the room."
+ 
+The chandelier is scenery in the 100th floor elevator hall. "An enormously extravagant display of crystal." Understand "ceiling" as chandelier.
 
-The chandelier is scenery in the 100th floor elevator hall. "An enormously extravagant display of crystal."
-
-The elevator-door-100 is scenery in the 100th floor elevator hall. They are privately-named. The printed name is "elevator door". Understand "elevator/lift/door/doors" as elevator-door-100. "It's not clear why everything has to be so extravagant."
+The elevator-door-100 is scenery in the 100th floor elevator hall. They are privately-named. The printed name is "elevator door". Understand "elevator/lift/door/doors/gold/gold-plated/plated" as elevator-door-100. "It's not clear why everything has to be so excessive."
 
 stairs appeared is a clip with conversation "Jones: 'Must be the way up to the roof. Beck, you there?'
 
 Beck: 'Yep, I'm here, just a bit busy is all. I[']ll meet you on that roof.'".
+
+The living quarters are scenery in the 100th floor elevator hall. "They look just as over-the-top as the hall here."
 
 After looking when the location is the 100th floor elevator hall and the roof stairs are not hidden:
 	print stairs appeared;
@@ -2666,28 +2670,37 @@ Check going from the 100th floor elevator hall to the roof stairs when the roof 
 	say text of the can't go that way rule response (A);
 	lb instead;
 
-the penthouse north has description "This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.". The printed name is "northern corner of the penthouse".
+the penthouse north has description "This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.". The printed name is "northern corner of the penthouse". Understand "bedroom" as the penthouse north.
 
-The bed is scenery in the penthouse north. "It's round and huge, and it looks supremely comfortable."
-Instead of entering the bed:
+The expensive round bed is scenery in the penthouse north. "It's round and huge, and it looks supremely comfortable."
+Instead of entering the expensive round bed:
 	say text of the block sleeping rule response (A);	
 	lb;
 
 Understand "lie on [something]" as entering.
 
-The dummies are scenery in penthouse north. "The best outfit is his Napoleon outfit." Understand "clothes/clothing/outfits/suits" as dummies.
+The dummies are scenery in penthouse north. "The best outfit is his Napoleon outfit." Understand "dummy" as dummies.
+
+Admiral Thallium's clothes are scenery in penthouse north. "Hideous." Understand "clothing/suits/outfits/outfit/suit" as Admiral Thallium's clothes.
+
+Instead of attacking the dummies:
+	say "Jones lets off a little steam.";
 
 The vanity table is scenery in penthouse north. "A vanity table. So aptly named for a man like the Admiral."
 
-the penthouse east has description "This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.". The printed name is "eastern corner of the penthouse".
+the penthouse east has description "This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.". The printed name is "eastern corner of the penthouse". Understand "office" as penthouse east. 
 
-The huge desk is scenery in penthouse east. "Bubinga wood, if you must know, is, according to Wikipedia, 'a flowering plant genus in the family [italic type]Fabaceae'[roman type]." Understand "pattern/patterns/intricate" as the huge desk.
+The huge desk is scenery in penthouse east. "Bubinga wood, if you must know, is, according to Wikipedia, 'a flowering plant genus in the family [italic type]Fabaceae'[roman type]." Understand "pattern/patterns/intricate/bubinga/wood" as the huge desk.
 
 The video screens are scenery in penthouse east. "They are showing Thallium's logo, the ten planets in order overlaid with the motto 'Planetas Vincam'." Understand "screen/tv/tvs" as video screens.
 
-Thallium's logo is scenery in penthouse east. "The ten planets in order overlaid with the motto 'Planetas Vincam'."
+The penthouse-east-walls is scenery in penthouse east. It is privately-named. The printed name is "walls". Understand "wall/walls" as penthouse-east-walls. "The walls here are of the same black marble as elsewhere."
+
+Admiral Thallium's logo is scenery in penthouse east. "The ten planets in order overlaid with the motto 'Planetas Vincam'." Understand "motto/planets/planet/ten" as Thallium's logo.
 
 the penthouse south has description "This must be Thallium's 'treasure room', to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.". The printed name is "southern corner of the penthouse".
+
+The treasure is scenery in penthouse south. "A wall of diamonds is treasure enough, don't you think?" Understand "wealth" as treasure.
 
 The conversation of the penthouse south is "Thallium seems to speak from all around [us]. 'You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all.'
 	
@@ -2771,7 +2784,7 @@ Instead of taking the real diamond when the glass diamond is discovered and the 
 
 the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
 
-The metal pillar is scenery in the penthouse west. "It's actually wrought iron, and it holds up the claw."
+The metal pillar is scenery in the penthouse west. "It's actually wrought iron, and it holds up the claw." Understand "column" as pillar.
 The claw is part of the metal pillar. It is a container with carrying capacity 1. The description is "It looks like it could grip a small object.". It is fixed in place.
 
 Instead of inserting something that is not a gem into the claw:
@@ -2815,13 +2828,15 @@ Instead of pushing the small black button for the first time:
 Instead of pushing the small black button for the first time:
 	say "Nothing further happens.";
 	
-The granite floor is scenery in penthouse west. "On Mars, sometimes one gets tired of red." 
+The granite floor is scenery in penthouse west. "On Mars, sometimes one gets tired of red.". Understand "red/floors" as granite floor.
 
-The insignia is scenery in penthouse west. "'Planetas Vincam', incidentally, means 'I will conquer the planets.'" 
+The penthouse-west-walls are scenery in penthouse west. "The outer wall is all of red wood inlaid with ebony, while the inner wall, made of brushed stainless steel, is inset with an electronic eye." They are privately-named. The printed name is "walls". Understand "wall/walls/red/wood/brushed/stainless/steel" as penthouse-west-walls.
 
-The electronic eye is scenery in penthouse west. "Looks like it might be a sensor of some sort."
+The insignia is scenery in penthouse west. "'Planetas Vincam', incidentally, means 'I will conquer the planets.'" Understand "motto/words/planets/planet" as the insignia.
+
+The electronic eye is scenery in penthouse west. "Looks like it might be a sensor of some sort." Understand "sensor" as electronic eye.
 	
-The description of the roof stairs is "Thick slabs of marble lead from the hall to the west to the rooftop door above.";
+The description of the roof stairs is "Thick slabs of marble lead from the hall to the west to the rooftop door above."; 
 
 Book 7 - The Rooftop
 
@@ -3974,6 +3989,7 @@ Table of Frustrated Taking
 target (a thing)	message (a text)	move message (a text)
 (100th floor view of New Reykjavik)	"Jones can't take that!"	"Don't be silly."
 Admiral Thallium's Flyer	"Jones can't even reach it."	"Don't be silly."
+Admiral Thallium's clothes	"Jones would rather not touch his clothes."
 Air handling door	"No taking doors."	"Aside from opening and closing [regarding the noun][them], what is there to do?"
 bed	"It's too big to take."	"The frame is built into the floor here."
 broken-window	"Broken glass is unlikely to be useful outside of a prison fight or a bar brawl."	"The window isn't going anywhere."
@@ -4093,6 +4109,7 @@ walls-100	"Don't be silly."
 waterfall	"That's a permanent display."	"Jones splashes the water a little."
 west semicircular couch	"That's too big to take."	"Jones is not here to rearrange the furniture."
 window-thing	"That's part of the building."	"It's not designed to be opened."
+
 
 
 
