@@ -180,6 +180,8 @@ The block sleeping rule response (A) is "There's no lying down on the job for Ga
 
 The right second rule response (A) is "[We] [are] unable to unlock [the noun] with [the second noun]." 
 
+The block throwing at rule response (A) is "That's unlikely to accomplish anything.".
+
 Book 3 - Some default actions
 
 Check informing Beck about something:	
@@ -212,21 +214,21 @@ Check requesting for:
 	
 Check asking someone that is not beck about something:
 	now current interlocutor is beck;
-	say "They're not likely to be helpful." instead;
+	say "[regarding the noun][They're] not likely to be helpful." instead;
 	
 Check asking Europa about something when the cage is broken:
 	say "She's too out of it to respond." instead;
 	
 Check quizzing someone that is not beck about something:
 	now current interlocutor is beck;
-	say "They're not likely to be helpful." instead;
+	say "[regarding the noun][They're] not likely to be helpful." instead;
 	
 Check quizzing Europa about something when the cage is broken:
 	say "She's too out of it to respond." instead;
 	
 Check saying hello to someone when the noun is not beck and the noun is not europa and the noun is not the cat:
 	now current interlocutor is beck;
-	say "They're not likely to be helpful." instead;
+	say "[regarding the noun][They're] not likely to be helpful." instead;
 	
 Check saying hello to Europa when the cage is intact:
 	now current interlocutor is beck;
@@ -270,7 +272,12 @@ Does the player mean swiping something through the player: it is very unlikely;
 
 Does the player mean swiping the player through: it is very unlikely;
 
+Does the player mean doing something to the player: it is unlikely;
 
+Does the player mean doing something to the elevator drop key when the player is not in the ground-floor-region: It is unlikely;
+
+Does the player mean inserting the elevator drop key into the drop-key-hole: It is very likely;
+Does the player mean inserting the red cardkey into the drop-key-hole: It is very unlikely;
 	
 Book 5 - Some extra actions
 	
@@ -445,13 +452,19 @@ Instead of shooting yourself with something:
 	
 Volume 4 - NPCs
 
-Book 1 - Beck
+Book 1 - People
 
 Beck is a man in the room of stuff. The description is "Beck isn't exactly handsome, but he exudes a confidence that makes him memorable." He is familiar and seen.
 
 Europa Callisto is a woman. The description is "Europa Callisto is a stunningly beautiful woman with long ice-blue hair and piercing blue eyes. Right now she's looking pretty ragged, though." She is familiar and seen.
 
 Admiral-Thallium is a man. He is privately-named. The printed name is "Admiral Thallium". Understand "Admiral/Thallium" as Admiral-Thallium. He is familiar. He is seen. The description is "The 'Admiral' is a disctinctly ridiculous figure. He dresses in a mockery of a Martian admiral's uniform, plastered with medals. His hair is slicked back and his mustache is painstakingly waxed."
+
+Instead of doing something to admiral-thallium when the action requires a touchable noun:
+	say "Jones would rather not touch Thallium.";
+	
+Instead of throwing something at admiral-thallium:
+	say "Jones would rather not sully [the noun].";
 
 Book 2 - Conversation
 
@@ -624,7 +637,7 @@ When Cybernetica Battle begins:
 	
 	Beck: 'Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses.'";	
 
-Sneaking up on is an action applying to one visible thing. Understand "sneak up on [something]", "crawl toward [something]", "move toward [something]", "creep up on [something]", "creep toward [something]", "follow [something]", "get closer to [something]" as sneaking up on.
+Sneaking up on is an action applying to one visible thing. Understand "sneak up on [something]", "sneak toward [something]", "crawl toward [something]", "move toward [something]", "creep up on [something]", "creep toward [something]", "follow [something]", "get closer to [something]" as sneaking up on.
 
 sneak index is a number that varies. The sneak index is initially 3.
 
@@ -727,7 +740,7 @@ A guard robot is a kind of enemy person. It is neuter. The description is "Defin
 There is a guard robot called the guard-robots. It is privately-named. It is scenery. The printed name is "red and green guard robots". Understand "guard/guards/robot/robots/green/red/and" as the guard-robots. 
 There is a guard robot called the purple guard robot. It is scenery.
 There is a thing called the dead mauve robot. Understand "remains/guard" as the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground." The description is "From the outside there's no sign of what killed the mauve guard robot." It is fixed in place.
-There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground." The description is "The tattered guts of the purple guard robot spill out from its armored carapace." It is fixed in place.
+There is a thing called the destroyed purple robot. "The remains of the purple guard robot are sprawled on the ground." The description is "The tattered guts of the purple guard robot spill out from its armored carapace." It is fixed in place. Understand "remains/guts/guard/carapace/armor" as the destroyed purple robot.
 
 Check taking a guard robot:
 	say "An interesting idea." instead;
@@ -1188,7 +1201,7 @@ The ground-floor-chandeliers are in lobby,
 
 The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
 
-The lobby-background is scenery in the lobby. It is privately-named. Understand "plants/water/features/feature/stylish/seating" as the lobby-background. "The ground floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants." The printed name is "lobby"
+The lobby-background is scenery in the lobby. It is privately-named. Understand "plants/water/features/feature/stylish" as the lobby-background. "The ground floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants." The printed name is "lobby"
 
 The supports are a backdrop in the lobby. "Thin but incredibly strong." They are in ground-floor-region. Understand "support/strut/struts" as supports.
 
@@ -1292,6 +1305,9 @@ Section 1 - ground-floor-1
 The description of ground-floor-1 is "A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east."
 
 The waterfall is a scenery pseudocontainer in ground-floor-1. "The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again." The contents description is "The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin." 
+
+Instead of inserting something into the waterfall:
+	say "Why pollute this little oasis in Thallium's den of iniquity?";
 
 The conversation of the waterfall is "Jones: 'One coin? Not very generous people around here.'";
 
@@ -1501,6 +1517,8 @@ The elevator-shaft is scenery in the ground floor elevator hall. It is privately
 
 Does the player mean using drop key with the ground floor elevator door:
 	it is very likely;
+	
+does the player mean opening the elevator drop key: It is very unlikely;
 	
 Does the player mean doing something to the elevator-shaft:
 	it is very unlikely;
@@ -1727,12 +1745,14 @@ Before going from Cybernetica office to ledge when the Atmo-Suit is touchable an
 	
 	Jones: 'Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch.'";
 
-The cybernetica-desks are scenery in the Cybernetica office. They are privately-named. The printed name is "desks". Understand "desk/desks/chair/chairs" as the cybernetica-desks. "Very nice and good for hiding under and among."
+The cybernetica-desks are scenery in the Cybernetica office. They are privately-named. The printed name is "desks". Understand "desk/desks/chair/chairs/furniture" as the cybernetica-desks. "Very nice and good for hiding under and among."
 
 Broken-window is scenery in the Cybernetica office. It is privately-named. The printed name is "broken window". Understand "broken/window/east/eastern" as broken-window. "Looks like [we] could get through if [we're] careful."
 
 Instead of doing something to the purple guard robot when the action requires a touchable noun:
 	say "Fine way for Jones to get herself killed.";
+	
+The open area is scenery in the Cybernetica office. "A rectangular region free of desks in the middle of the office."
 	
 Chapter 2 - Outside
 
@@ -2032,7 +2052,7 @@ The screws are part of the exhaust vent. The description is "Plain screws painte
 Instead of unscrewing the exhaust vent with the screwdriver:
 	if the exhaust vent is closed:
 		now the exhaust vent is open;
-		say "[We] loosens the screws with the screwdriver and open the grille.";
+		say "[We] loosens the screws with the screwdriver and opens the grille.";
 	otherwise:
 		say "The vent is already open.";
 	
@@ -2098,7 +2118,7 @@ Instead of unlocking the large desk with the safety pin when the large desk is l
 	lb;
 	converse "Beck: 'Galaxy Jones, master thief!'";
 	
-The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desk/desks" as north-desks. "There are lots of them, none of which are particularly interesting."
+The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desks" as north-desks. "There are lots of them, none of which are particularly interesting."
 
 The north-task-boards are scenery in the north end of the building management office. They are a white board. They are privately-named. The printed name is "task boards". Understand "task/tasks/board/boards" as north-task-boards. The writing is "[italic type]1. Describe scenery objects on Engineering Deck[line break]
 2. Fix check rule when installing new engine component[line break]
@@ -2223,6 +2243,7 @@ Check giving the shrimp tea sandwich to the black cat:
 	try dropping the shrimp tea sandwich instead;
 	
 Instead of showing the shrimp tea sandwich to the black cat:
+	now the current interlocutor is Beck;
 	try dropping the shrimp tea sandwich;
 	
 Instead of throwing the shrimp tea sandwich at the black cat:
@@ -2236,6 +2257,9 @@ The description of the martian chemical office is "This seems like the business 
 The chemical cabinet is scenery in the Martian Chemical office. "The cabinet is full of bottles of Electrofil quick-setting conductive polymer gel."
 
 The Electrofil quick-setting conductive polymer gel is in the cabinet. It is undescribed. The description of the Electrofil is "An opaque pink bottle labeled 'Electrofil' in large friendly letters, it apparently hardens into a conductive substance very quickly." Understand "bottle" as the Electrofil quick-setting conductive polymer gel.
+
+Instead of inserting something into the chemical cabinet:
+	say "The cabinet is already full of bottles.";
 
 After taking the Electrofil quick-setting conductive polymer gel: 
 	now the Electrofil quick-setting conductive polymer gel is not undescribed;
@@ -2265,9 +2289,12 @@ The description of the tenth floor stairwell is "this is a secret message."
 
 The description of the air handling room is "There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.".
 
-The fans are scenery in the air handling room. "They're loud." Understand "machinery/fan" as fans.
+The fans are scenery in the air handling room. "They're loud." Understand "machine/machines/machinery/fan" as fans.
 
-The ductwork is scenery in the air handling room. "A short length leading from the fans here to the outside." Understand "duct" as ductwork.
+Instead of doing something other than examining to the fans:
+	say "Those are too dangerous to fiddle with."
+
+The ductwork is scenery in the air handling room. "A short length leading from the fans here to the outside." Understand "duct/work" as ductwork.
 
 Instead of going to tenth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
@@ -2375,6 +2402,10 @@ Every turn when the mauve guard robot is in the tenth-floor-region and the mauve
 			
 			Jones: 'Really, Beck? Is this your best material?'[or]Beck: 'I've seen more intimidating kitchen appliances!'[at random]";
 			now conversed this turn is true;
+			continue the action;
+	if the location is in tenth-floor-region and a random chance of 1 in 6 succeeds:
+		converse "[one of]Thallium's voice booms over the office PA: 'You can run, Jones, but you can't - well, there aren't very many places you can hide.'[or]Thallium: 'Jones, you still hanging around with that loser Beck?'[or]Thallium: 'Don't you just hate it, Jones -- not knowing when death will just jump out at you?'[or]Thallium: 'I bet you're just [special-style-2]dying[special-style-1] to meet Europa, right, Jones?'[then at random]"
+
 
 the describe room gone into rule does nothing when the noun is the mauve guard robot.
 
@@ -2426,9 +2457,12 @@ The elevator-walls are scenery in the elevator car-room. They are privately-name
 
 The crystal lighting is scenery in the elevator car-room. "Nice. Excessive, but nice."
 
-The elevator-control-panel is scenery in the elevator car-room. It is privately-named. The printed name is "elevator button panel". Understand "elevator/lift/button/control/panel" as the elevator-control-panel. "The button panel is lacquered dark mahogany with what looks like real ivory buttons."
+The elevator-control-panel is scenery in the elevator car-room. It is privately-named. The printed name is "elevator control panel". Understand "elevator/lift/control/panel" as the elevator-control-panel. "The button panel is lacquered dark mahogany with what looks like real ivory buttons."
 
-The ivory buttons are scenery in the elevator car-room. "[We] recoils in disgust."
+The ivory buttons are scenery in the elevator car-room. "Real ivory. [We] recoils in disgust." Understand "button" as the ivory buttons.
+
+Instead of pushing the elevator-control-panel:
+	try pushing the ivory buttons;
 
 The carpeting is scenery in the elevator car-room. "Soft and velvety in a deep red."
 
@@ -2628,18 +2662,21 @@ the penthouse north has description "This is Thallium's bedroom. Apart from the 
 The bed is scenery in the penthouse north. "It's round and huge, and it looks supremely comfortable."
 Instead of entering the bed:
 	say text of the block sleeping rule response (A);	
+	lb;
 
 Understand "lie on [something]" as entering.
 
 The dummies are scenery in penthouse north. "The best outfit is his Napoleon outfit." Understand "clothes/clothing/outfits/suits" as dummies.
 
-The vanity table is scenery in penthouse north. "So aptly named for a man like the Admiral."
+The vanity table is scenery in penthouse north. "A vanity table. So aptly named for a man like the Admiral."
 
 the penthouse east has description "This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.". The printed name is "eastern corner of the penthouse".
 
 The huge desk is scenery in penthouse east. "Bubinga wood, if you must know, is, according to Wikipedia, 'a flowering plant genus in the family [italic type]Fabaceae'[roman type]." Understand "pattern/patterns/intricate" as the huge desk.
 
-The video screens are scenery in penthouse east. "They are showing Thallium's logo, the ten planets in order overlaid with the motto 'Planetas Vincam'."
+The video screens are scenery in penthouse east. "They are showing Thallium's logo, the ten planets in order overlaid with the motto 'Planetas Vincam'." Understand "screen/tv/tvs" as video screens.
+
+Thallium's logo is scenery in penthouse east. "The ten planets in order overlaid with the motto 'Planetas Vincam'."
 
 the penthouse south has description "This must be Thallium's 'treasure room', to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.". The printed name is "southern corner of the penthouse".
 
@@ -2726,7 +2763,7 @@ Instead of taking the real diamond when the glass diamond is discovered and the 
 the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
 
 The metal pillar is scenery in the penthouse west. "It's actually wrought iron, and it holds up the claw."
-The claw is part of the metal pillar. It is a container with carrying capacity 1. The description is "It looks like it could grip a small object.".
+The claw is part of the metal pillar. It is a container with carrying capacity 1. The description is "It looks like it could grip a small object.". It is fixed in place.
 
 Instead of inserting something that is not a gem into the claw:
 	say "That won't fit in the claw.";
@@ -3302,7 +3339,7 @@ Instead of quizzing Beck about dead mauve robot:
 	
 Instead of quizzing Beck about desks-microthings-2:
 	lb;
-	converse "Beck: 'So many desks. So. many. desks.";
+	converse "Beck: 'So many desks. So. many. desks.'";
 	
 Instead of quizzing Beck about desks-microthings-3:
 	lb;
@@ -3941,6 +3978,7 @@ central carpeted path	"Are you serious?"
 chandelier	"Jones can't reach it."
 chemical cabinet	"Why take the cabinet when Jones can just take what's in it?"	"Jones pushes it around a little, but doesn't find anything interesting."
 chemical-desks	"No, no desks."	"Jones is not here to rearrange the furniture."
+claw	"It's attached to the pillar which is attached to the floor."
 closet door	"Jones can't just disassemble the building."	"Aside from opening and closing it, what is there to do?"
 closet-door-inside	"Jones can't just disassemble the building."	"Aside from opening and closing it, what is there to do?"
 computer parts	"There's a lot of them, none of which look terribly useful in defeating Thallium, so best leave them alone."

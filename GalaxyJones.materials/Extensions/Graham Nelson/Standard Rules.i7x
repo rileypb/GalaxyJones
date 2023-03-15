@@ -3215,7 +3215,7 @@ Report an actor opening (this is the reveal any newly visible interior rule):
 				say ".";
 		stop the action.
 
-Report an actor opening (this is the standard report opening rule):
+Report an actor opening (this is the standard report opening rule):	
 	if the actor is the player:
 		if the action is not silent:
 			say "[We] [open] [the noun]." (A);
