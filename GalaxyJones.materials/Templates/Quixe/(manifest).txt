@@ -54,7 +54,7 @@ g
 
 <script type="text/javascript">
 game_options = {
-  image_info_map: { 4: { "image": 4, "url": "Cover Scaled.png", "width": 512, "height": 512 },  // image data is here, not in blorb
+  image_info_map: { 3: { "image": 3, "url": "Cover_Scaled.png", "width": 512, "height": 512 }, }, // image data is here, not in blorb
   use_query_story: false,
   set_page_title: false,
   inspacing: 0,     // gap between windows

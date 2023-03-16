@@ -23,8 +23,9 @@ The story genre is "Science Fiction".
 The release number is 3.
 The story creation year is 2023.
 
-Release along with cover art.
+Release along with a website.
 Release along with an interpreter.
+Release along with cover art.
  
 Volume 1 - Technical Stuff
 
@@ -440,10 +441,13 @@ After doing something to yourself:
 
 The description of the player is "Galaxy Jones stands at the ready.".
 
-Figure of Jones is the file "Cover Scaled.png". 
+Figure of Jones is the file "Cover_Scaled.png". 
 
 Instead of examining yourself:
-	display Figure of Jones;
+	if accessible is on:
+		say "Galaxy Jones is tall and strong, dressed in a black bodysuit. She carries a disruptor pistol.";
+	otherwise:
+		display Figure of Jones;
 
 The player carries the disruptor pistol. 
 
@@ -542,7 +546,7 @@ Rule for constructing the status line while Intro is true:
 
 When play begins:
 	if DEBUG is false:
-		say "Would you like to play with accessibility on?";
+		say "Would you like to play with accessibility on? (recommended for mobile)";
 		if the player consents:
 			now accessible is on;
 		lb;

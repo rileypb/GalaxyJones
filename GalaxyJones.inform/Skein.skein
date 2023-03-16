@@ -1,45 +1,28 @@
 <?xml version="1.0"?>
 
-<Skein rootNode="node-1002">
+<Skein rootNode="node-3401">
     <generator>Inform Mac Client (Inform version )</generator>
-    <item nodeId="node-1002">
+    <item nodeId="node-3401">
         <command xml:space="preserve">GalaxyJones</command>
         <result xml:space="preserve">
 
 
-The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.
-
-"Yes?" she says in a voice thick with sleep.
-
-"Hello, is this Galaxy Jones?" comes the voice from the speaker.
-
-"Yes, this is she. To whom am I speaking?"
-
-"Oh, hi, Ms Jones. This is Patty, I work for Admiral P. X. Thallium, CEO of Diversified Entanglements, LLC. He asked me to forward a message to you."
-
-"He did, did he? Now what would the Admiral want to say to me?"
-
-"Oh, it's not from the Admiral himself. It's from one Miss Europa Callisto. I must say, the Admiral was quite surprised when I said I didn't know who she is. Apparently she's famous."
-
-"Yes, quite famous, but why would she send a message to me, and why on Mars would she send it through Thallium? But never mind, what's the message?"
-
-Patty can be heard rustling paper. "Let's see... it's here somewhere. Oh yes, here it is. The message is 'Help.'"
-
-Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken hostage the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's inevitable demise. The Admiral has most cordially invited Ms Jones to break into his building and attempt a rescue.
-
-"Oh I will," Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.
-
-Plus she'll get to meet Europa Callisto. That'll be totally sweet.
-
- _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
-
+Would you like to play with accessibility on?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3431"></child>
+            <child nodeId="node-3420"></child>
+            <child nodeId="node-3405"></child>
+            <child nodeId="node-3402"></child>
+            <child nodeId="node-3453"></child>
+            <child nodeId="node-3454"></child>
+        </children>
+    </item>
+    <item nodeId="node-3454">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">Galaxy Jones!
 An Interactive Adventure by Phil Riley
-Release 3 / Serial number 230315 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 3 / Serial number 230316 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 
 A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit climbs out of it: Galaxy Jones.
@@ -58,13 +41,24 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1249"></child>
-            <child nodeId="node-1238"></child>
-            <child nodeId="node-1272"></child>
-            <child nodeId="node-1269"></child>
+        <children><child nodeId="node-3455"></child>
         </children>
     </item>
-    <item nodeId="node-1269">
+    <item nodeId="node-3455">
+        <command xml:space="preserve">x me</command>
+        <result xml:space="preserve">Galaxy Jones is tall and strong, dressed in a black bodysuit. She carries a disruptor pistol.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3453">
+        <command xml:space="preserve">x me</command>
+        <result xml:space="preserve">
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3402">
         <command xml:space="preserve">gonear penthouse roof</command>
         <result xml:space="preserve">Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
 
@@ -72,36 +66,36 @@ Admiral Thallium is sulking.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1270"></child>
+        <children><child nodeId="node-3403"></child>
         </children>
     </item>
-    <item nodeId="node-1270">
+    <item nodeId="node-3403">
         <command xml:space="preserve">ask for help</command>
         <result xml:space="preserve">
 Beck: "Congratulations! You made it this far."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1271"></child>
+        <children><child nodeId="node-3404"></child>
         </children>
     </item>
-    <item nodeId="node-1271">
+    <item nodeId="node-3404">
         <command xml:space="preserve">x cage</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1272">
+    <item nodeId="node-3405">
         <command xml:space="preserve">gonear penthouse rood</command>
         <result xml:space="preserve">There seems to be no such object anywhere in the model world.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1273"></child>
+        <children><child nodeId="node-3406"></child>
         </children>
     </item>
-    <item nodeId="node-1273">
+    <item nodeId="node-3406">
         <command xml:space="preserve">gonear penthouse roof</command>
         <result xml:space="preserve">Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
 
@@ -109,19 +103,19 @@ Admiral Thallium is sulking.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1274"></child>
+        <children><child nodeId="node-3407"></child>
         </children>
     </item>
-    <item nodeId="node-1274">
+    <item nodeId="node-3407">
         <command xml:space="preserve">x cage</command>
         <result xml:space="preserve">You can see the cage with Europa Callisto in it from here. She's lying on the floor and not moving.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1275"></child>
+        <children><child nodeId="node-3408"></child>
         </children>
     </item>
-    <item nodeId="node-1275">
+    <item nodeId="node-3408">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue.
@@ -134,10 +128,10 @@ South of the cage, Thallium crosses the roof to the flyer pad, where he boards t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1276"></child>
+        <children><child nodeId="node-3409"></child>
         </children>
     </item>
-    <item nodeId="node-1276">
+    <item nodeId="node-3409">
         <command xml:space="preserve">get on cage</command>
         <result xml:space="preserve">Jones gets onto the cage.
 
@@ -149,28 +143,28 @@ A little ways off, a small red flyer aims for the rooftop and accelerates.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1282"></child>
+        <children><child nodeId="node-3410"></child>
         </children>
     </item>
-    <item nodeId="node-1282">
+    <item nodeId="node-3410">
         <command xml:space="preserve">x flyer</command>
         <result xml:space="preserve">Which do you mean, the red flyer or Admiral Thallium's Flyer?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1283"></child>
+        <children><child nodeId="node-3411"></child>
         </children>
     </item>
-    <item nodeId="node-1283">
+    <item nodeId="node-3411">
         <command xml:space="preserve">red</command>
         <result xml:space="preserve">It's little more than a growing red speck.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1284"></child>
+        <children><child nodeId="node-3412"></child>
         </children>
     </item>
-    <item nodeId="node-1284">
+    <item nodeId="node-3412">
         <command xml:space="preserve">d</command>
         <result xml:space="preserve">Jones gets off the cage.
 
@@ -182,20 +176,20 @@ Admiral Thallium's flyer is hovering above you.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1285"></child>
-            <child nodeId="node-1297"></child>
+        <children><child nodeId="node-3418"></child>
+            <child nodeId="node-3413"></child>
         </children>
     </item>
-    <item nodeId="node-1297">
+    <item nodeId="node-3413">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">Jones gets onto the cage.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1298"></child>
+        <children><child nodeId="node-3414"></child>
         </children>
     </item>
-    <item nodeId="node-1298">
+    <item nodeId="node-3414">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">But Jones is already on the cage.
 
@@ -203,35 +197,35 @@ Thallium's flyer is circling you not too far away. "Give up, Jones! You'll never
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1319"></child>
+        <children><child nodeId="node-3415"></child>
         </children>
     </item>
-    <item nodeId="node-1319">
+    <item nodeId="node-3415">
         <command xml:space="preserve">x flyer</command>
         <result xml:space="preserve">Which do you mean, the red flyer or Admiral Thallium's Flyer?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1320"></child>
+        <children><child nodeId="node-3416"></child>
         </children>
     </item>
-    <item nodeId="node-1320">
+    <item nodeId="node-3416">
         <command xml:space="preserve">admiral</command>
         <result xml:space="preserve">Hovering above Jones, it's distinctly menacing. It's not visibly armed, but it conveys the impression of a beast about to strike. It's flying low, the rails of its landing gear just a few feet above Jones's head.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1321"></child>
+        <children><child nodeId="node-3417"></child>
         </children>
     </item>
-    <item nodeId="node-1321">
+    <item nodeId="node-3417">
         <command xml:space="preserve">x lattice</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1285">
+    <item nodeId="node-3418">
         <command xml:space="preserve">get off</command>
         <result xml:space="preserve">Jones gets off the cage.
 
@@ -243,10 +237,10 @@ Admiral Thallium's flyer is hovering above you.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1286"></child>
+        <children><child nodeId="node-3419"></child>
         </children>
     </item>
-    <item nodeId="node-1286">
+    <item nodeId="node-3419">
         <command xml:space="preserve">get on cage</command>
         <result xml:space="preserve">Jones gets onto the cage.
 
@@ -255,94 +249,94 @@ Thallium's flyer is circling you not too far away. "Give up, Jones! You'll never
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1238">
+    <item nodeId="node-3420">
         <command xml:space="preserve">gonear 100th hall</command>
         <result xml:space="preserve">Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1239"></child>
+        <children><child nodeId="node-3421"></child>
         </children>
     </item>
-    <item nodeId="node-1239">
+    <item nodeId="node-3421">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Galaxy Jones is in the placeholder room. this is another secret message.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1240"></child>
+        <children><child nodeId="node-3422"></child>
         </children>
     </item>
-    <item nodeId="node-1240">
+    <item nodeId="node-3422">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1241"></child>
+        <children><child nodeId="node-3423"></child>
         </children>
     </item>
-    <item nodeId="node-1241">
+    <item nodeId="node-3423">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1242"></child>
+        <children><child nodeId="node-3424"></child>
         </children>
     </item>
-    <item nodeId="node-1242">
+    <item nodeId="node-3424">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">The diamond-shaped penthouse bends to the southeast and southwest.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1243"></child>
+        <children><child nodeId="node-3425"></child>
         </children>
     </item>
-    <item nodeId="node-1243">
+    <item nodeId="node-3425">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1244"></child>
+        <children><child nodeId="node-3426"></child>
         </children>
     </item>
-    <item nodeId="node-1244">
+    <item nodeId="node-3426">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Jones can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1245"></child>
+        <children><child nodeId="node-3427"></child>
         </children>
     </item>
-    <item nodeId="node-1245">
+    <item nodeId="node-3427">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1246"></child>
+        <children><child nodeId="node-3428"></child>
         </children>
     </item>
-    <item nodeId="node-1246">
+    <item nodeId="node-3428">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1247"></child>
+        <children><child nodeId="node-3429"></child>
         </children>
     </item>
-    <item nodeId="node-1247">
+    <item nodeId="node-3429">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
@@ -353,10 +347,10 @@ Jones snorts, "Sure, Thallium."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1248"></child>
+        <children><child nodeId="node-3430"></child>
         </children>
     </item>
-    <item nodeId="node-1248">
+    <item nodeId="node-3430">
         <command xml:space="preserve">a diamonds</command>
         <result xml:space="preserve">(the real diamond).
 
@@ -366,16 +360,16 @@ Beck: "Ooh pretty."
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1249">
+    <item nodeId="node-3431">
         <command xml:space="preserve">gonear 100th</command>
         <result xml:space="preserve">Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1250"></child>
+        <children><child nodeId="node-3432"></child>
         </children>
     </item>
-    <item nodeId="node-1250">
+    <item nodeId="node-3432">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
@@ -386,10 +380,10 @@ Jones snorts, "Sure, Thallium."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1251"></child>
+        <children><child nodeId="node-3433"></child>
         </children>
     </item>
-    <item nodeId="node-1251">
+    <item nodeId="node-3433">
         <command xml:space="preserve">ask about diamond</command>
         <result xml:space="preserve">(the diamond).
 
@@ -398,10 +392,10 @@ Beck: "Ooh pretty."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1252"></child>
+        <children><child nodeId="node-3434"></child>
         </children>
     </item>
-    <item nodeId="node-1252">
+    <item nodeId="node-3434">
         <command xml:space="preserve">ask about speeder</command>
         <result xml:space="preserve">(the speeder).
 
@@ -410,115 +404,115 @@ Beck: "I keep reminding you, but you still haven't taken it in for yearly mainte
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1253"></child>
+        <children><child nodeId="node-3435"></child>
         </children>
     </item>
-    <item nodeId="node-1253">
+    <item nodeId="node-3435">
         <command xml:space="preserve">a parking</command>
         <result xml:space="preserve">
 Beck: "I'm not sure what you're asking about, Jones."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1254"></child>
+        <children><child nodeId="node-3436"></child>
         </children>
     </item>
-    <item nodeId="node-1254">
+    <item nodeId="node-3436">
         <command xml:space="preserve">a dock</command>
         <result xml:space="preserve">
 Beck: "I'm not sure what you're asking about, Jones."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1255"></child>
+        <children><child nodeId="node-3437"></child>
         </children>
     </item>
-    <item nodeId="node-1255">
+    <item nodeId="node-3437">
         <command xml:space="preserve">a speeder dock</command>
         <result xml:space="preserve">
 Beck: "I'm not sure what you're asking about, Jones."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1256"></child>
+        <children><child nodeId="node-3438"></child>
         </children>
     </item>
-    <item nodeId="node-1256">
+    <item nodeId="node-3438">
         <command xml:space="preserve">goto speeder dock</command>
         <result xml:space="preserve">I didn't understand that sentence.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1257"></child>
+        <children><child nodeId="node-3439"></child>
         </children>
     </item>
-    <item nodeId="node-1257">
+    <item nodeId="node-3439">
         <command xml:space="preserve">go to speeder dock</command>
         <result xml:space="preserve">There's nothing like that nearby.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1258"></child>
+        <children><child nodeId="node-3440"></child>
         </children>
     </item>
-    <item nodeId="node-1258">
+    <item nodeId="node-3440">
         <command xml:space="preserve">ask about panel</command>
         <result xml:space="preserve">
 Beck: "I'm not sure what you're asking about, Jones."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1259"></child>
+        <children><child nodeId="node-3441"></child>
         </children>
     </item>
-    <item nodeId="node-1259">
+    <item nodeId="node-3441">
         <command xml:space="preserve">gonear roof stairs</command>
         <result xml:space="preserve">Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1260"></child>
+        <children><child nodeId="node-3442"></child>
         </children>
     </item>
-    <item nodeId="node-1260">
+    <item nodeId="node-3442">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1261"></child>
+        <children><child nodeId="node-3443"></child>
         </children>
     </item>
-    <item nodeId="node-1261">
+    <item nodeId="node-3443">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Jones can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1262"></child>
+        <children><child nodeId="node-3444"></child>
         </children>
     </item>
-    <item nodeId="node-1262">
+    <item nodeId="node-3444">
         <command xml:space="preserve">gonear roof stairs</command>
         <result xml:space="preserve">Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1263"></child>
+        <children><child nodeId="node-3445"></child>
         </children>
     </item>
-    <item nodeId="node-1263">
+    <item nodeId="node-3445">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">(first opening the roof access door)
 It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1264"></child>
+        <children><child nodeId="node-3446"></child>
         </children>
     </item>
-    <item nodeId="node-1264">
+    <item nodeId="node-3446">
         <command xml:space="preserve">gonear penthouse roof</command>
         <result xml:space="preserve">Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
 
@@ -526,37 +520,37 @@ Admiral Thallium is sulking.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1265"></child>
+        <children><child nodeId="node-3447"></child>
         </children>
     </item>
-    <item nodeId="node-1265">
+    <item nodeId="node-3447">
         <command xml:space="preserve">x flyer</command>
         <result xml:space="preserve">It's big and green and black. Looks like a Sirius XE.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1266"></child>
+        <children><child nodeId="node-3448"></child>
         </children>
     </item>
-    <item nodeId="node-1266">
+    <item nodeId="node-3448">
         <command xml:space="preserve">x tub</command>
         <result xml:space="preserve">Looks like a good time, if Jones weren't already busy.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1267"></child>
+        <children><child nodeId="node-3449"></child>
         </children>
     </item>
-    <item nodeId="node-1267">
+    <item nodeId="node-3449">
         <command xml:space="preserve">x field</command>
         <result xml:space="preserve">It can't be seen, but it's comforting to know it's there.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1268"></child>
+        <children><child nodeId="node-3450"></child>
         </children>
     </item>
-    <item nodeId="node-1268">
+    <item nodeId="node-3450">
         <command xml:space="preserve">x cage</command>
         <result xml:space="preserve">There's nothing like that nearby.
 

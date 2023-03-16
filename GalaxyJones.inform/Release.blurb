@@ -15,7 +15,7 @@ storyfile "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Build/output
 ifiction "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Metadata.iFiction" include
 cover "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.materials/Cover.png"
 picture 1 "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.materials/Cover.png"
-picture 3 "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.materials/Figures/Cover Scaled.png"
+picture 3 "/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.materials/Figures/Cover_Scaled.png"
 
 ! Placeholder variables
 
@@ -48,6 +48,7 @@ css
 website "Standard"
 status instruction ||&nbsp;<a href="source:story.ni#line26"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status instruction ||&nbsp;<a href="source:story.ni#line27"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line28"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
