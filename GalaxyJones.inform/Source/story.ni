@@ -2718,36 +2718,34 @@ The conversation of the penthouse south is "Thallium seems to speak from all aro
 	
 	Jones snorts, 'Sure, Thallium.'".
 	
-A gem is a kind of thing. Understand "diamonds/gem/gems" as the gem.
-The glass diamond is a gem. The glass diamond can be discovered. The printed name is "[if discovered]glass diamond[otherwise]diamond". The description is "Worthless.".
+[DIAMONDS]
 
-The real diamond is a gem in the room of stuff. The description is "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds." The printed name is "diamond"
+The array of diamonds is scenery in penthouse south. Understand "diamond/gem/gems" as the array of diamonds. "[if glass diamond is not discovered]So many of them, from the tiny to the obscenely large. It looks like it wouldn't be hard to pry one out[otherwise]It's impossible to tell which ones are real and which are glass without prying each one out separately[end if]."
+
+A gem is a kind of thing.
+The glass diamond is a gem. It is privately-named. The glass diamond can be discovered. The printed name is "[if discovered]glass diamond[otherwise]diamond". The description is "Worthless.". Understand "diamond/gem" as the glass diamond.
+
+The real diamond is a gem. The description is "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds." The printed name is "diamond"
 
 prying is an action applying to one thing. Understand "pry [something] out/--", "pry out [something]", "loosen [something]" as prying.
 
 Check prying (this is the block prying rule):
 	say "That can't be pried out." instead;
 	
-Instead of prying the real diamond:
-	try taking the real diamond;
-
-Instead of examining the real diamond when the real diamond is in the room of stuff:
-	say "So many of them, from the tiny to the obscenely large. It looks like it wouldn't be hard to pry one out.";
-
-Rule for clarifying the parser's choice of something when doing something to the glass diamond:
-	do nothing;
-
-After deciding the scope of the player when the location is penthouse south and the real diamond is in the room of stuff:
-	place the real diamond in scope;
-	
-Instead of taking the real diamond when the glass diamond is nowhere and the glass diamond is not discovered:
+Instead of prying the array of diamonds when the real diamond is nowhere and the glass diamond is nowhere and the glass diamond is not discovered:
 	now the player carries the glass diamond;
 	now the glass diamond is seen;
 	now the glass diamond is familiar;
-	say text of the standard report taking rule response (A);
+	say "You pry one of the diamonds out of the wall.";
 	say paragraph break;
 	set pronouns from glass diamond;
 	converse as thallium "Thallium giggles. 'Oh, I hope you're not disappointed, Jones.'";
+	
+Instead of taking the array of diamonds when the real diamond is nowhere and the glass diamond is nowhere and the glass diamond is not discovered:
+	try prying the array of diamonds;
+
+Rule for clarifying the parser's choice of something when doing something to the glass diamond:
+	do nothing;
 	
 Instead of examining the glass diamond when the glass diamond is not discovered: 
 	say line break;
@@ -2766,10 +2764,10 @@ Check attacking something with something:
 	say text of the block attacking rule response (A);
 	say line break instead;
 	
-Instead of attacking the real diamond with something:
+Instead of attacking the array of diamonds with something:
 	say "That doesn't accomplish much.";
 
-Instead of attacking the real diamond with the hammer for the first time:
+Instead of attacking the array of diamonds with the hammer for the first time:
 	say "[We] commences to smash all of the diamonds. After destroying several dozen fraudulent gems, [we] finds one that won't break. [We] takes the real diamond.[paragraph break]";
 	now the player carries the real diamond;
 	now the real diamond is seen;
@@ -2778,20 +2776,20 @@ Instead of attacking the real diamond with the hammer for the first time:
 	
 	Jones: 'I appreciate your concern.'";
 
-Instead of attacking the real diamond with the hammer:
+Instead of attacking the array of diamonds with the hammer:
 	say "Whoa, that's enough.";
 	
-Instead of attacking the real diamond:
+Instead of attacking the array of diamonds:
 	if the player carries the hammer: 
 		say "(with the hammer)[command clarification break]";
-		try attacking the real diamond with the hammer;
+		try attacking the array of diamonds with the hammer;
 	otherwise:
 		say "What do you want to attack the diamonds with?";
 	
-Instead of taking the real diamond when the glass diamond is somewhere:
+Instead of taking the array of diamonds when the glass diamond is somewhere:
 	say "[We] has already taken a diamond. Isn't one enough?";
 
-Instead of taking the real diamond when the glass diamond is discovered and the real diamond is in the room of stuff:
+Instead of taking the array of diamonds when the glass diamond is discovered and the glass diamond is nowhere and the real diamond is nowhere:
 	say "[We] will never find the real diamond this way.".
 
 the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
