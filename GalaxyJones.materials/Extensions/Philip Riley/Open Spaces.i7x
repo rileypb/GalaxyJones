@@ -46,17 +46,36 @@ Report an actor going a direction (called dir) when the actor is not the player:
 
 Movement text is an object-based rulebook producing texts.
 
+To decide what text is the distance text of (n - a number):
+	if n is 1:
+		decide on "Nearby to";
+	if n is 2:
+		decide on "A couple of steps to";
+	if n is 3:
+		decide on "Far off tp";
+		
+To decide what text is the lcase distance text of (n - a number):
+	if n is 1:
+		decide on "nearby to";
+	if n is 2:
+		decide on "a couple of steps to";
+	if n is 3:
+		decide on "far off tp";
+
 Movement text for a person (called P) (this is the standard movement text rule):
 	let ol be original location of P;
 	let nl be new location of P;
+	let odist be the number of moves from the location to ol;
+	let ndist be the number of moves from the location to nl;
+	let dir be the noun part of the notable action of P;
 	if ol is the location:
 		if ol is open space and nl is not open space:
-			rule succeeds with result "[The P] [head] [noun part of the notable action of P] into [the building of nl].";
+			rule succeeds with result "[The P] [head] [dir] into [the building of nl].";
 		otherwise if ol is not open space and nl is open space:
-			rule succeeds with result "[The P] [head] [noun part of the notable action of P] out of [the building of ol].";
+			rule succeeds with result "[The P] [head] [dir] out of [the building of ol].";
 		otherwise if ol is not open space and nl is not open space and building of ol is not building of nl:
-			rule succeeds with result "[The P] [head] [noun part of the notable action of P] into [the building of nl].";
-		rule succeeds with result "[The P] [head] [noun part of the notable action of P].";
+			rule succeeds with result "[The P] [head] [dir] into [the building of nl].";
+		rule succeeds with result "[The P] [head] [dir].";
 	otherwise if nl is the location:
 		if ol is open space and nl is not open space:
 			rule succeeds with result "[The P] [enter] [the building of nl] from the [best route from location to ol].";
@@ -64,33 +83,33 @@ Movement text for a person (called P) (this is the standard movement text rule):
 			rule succeeds with result "[The P] [emerge] from [the building of ol] to the [best route from location to ol].";
 		otherwise if ol is not open space and nl is not open space and building of ol is not building of nl:
 			rule succeeds with result "[The P] [enter] [the building of nl] from [the building of ol] to the [best route from location to ol].";
-		rule succeeds with result "[The P] [approach] from the [opposite of noun part of the notable action of P].";
+		rule succeeds with result "[The P] [approach] from the [opposite of dir].";
 	otherwise if location farsees ol and location farsees nl:
-		rule succeeds with result "To the [best route from location to ol], [the P] [head] [noun part of the notable action of P].";
+		rule succeeds with result "[distance text of odist] the [best route from location to ol], [the P] [head] [dir].";
 	otherwise if location farsees ol and location does not farsee nl:
 		if building of ol is not building of nl and ol is not open space and nl is not open space:
-			rule succeeds with result "To the [best route from location to ol], [the P] [head] [noun part of the notable action of P] into [the building of nl].";
+			rule succeeds with result "[distance text of odist] the [best route from location to ol], [the P] [head] [dir] into [the building of nl].";
 		otherwise if ol is open space and nl is open space:
-			rule succeeds with result "To the [best route from location to ol], [the P] [head] [noun part of the notable action of P] and out of sight.";
+			rule succeeds with result "[distance text of odist] the [best route from location to ol], [the P] [head] [dir] and out of sight.";
 		otherwise if ol is open space and nl is not open space:
-			rule succeeds with result "To the [best route from location to ol], [the P] [head] [noun part of the notable action of P] into [the building of nl].";
+			rule succeeds with result "[distance text of odist] the [best route from location to ol], [the P] [head] [dir] into [the building of nl].";
 		otherwise if ol is not open space and nl is open space:
-			rule succeeds with result "To the [best route from location to ol], [the P] [head] [noun part of the notable action of P] out of [the building of ol].";
+			rule succeeds with result "[distance text of odist] the [best route from location to ol], [the P] [head] [dir] out of [the building of ol].";
 		otherwise if ol is not open space and nl is open space:
-			rule succeeds with result "To the [best route from location to ol], [the P] [head] [noun part of the notable action of P] and out of sight.";
+			rule succeeds with result "[distance text of odist] the [best route from location to ol], [the P] [head] [dir] and out of sight.";
 		otherwise if ol is not open space and nl is not open space:
-			rule succeeds with result "To the [best route from location to ol], [the P] [head] [noun part of the notable action of P] and out of sight.";
+			rule succeeds with result "[distance text of odist] the [best route from location to ol], [the P] [head] [dir] and out of sight.";
 	otherwise if location does not farsee ol and location farsees nl:
 		if ol is not open space and nl is open space:
-			rule succeeds with result "To the [best route from location to nl], [the P] [emerge] from [the building of ol].";
+			rule succeeds with result "[distance text of ndist] the [best route from location to nl], [the P] [emerge] from [the building of ol].";
 		otherwise if ol is open space and nl is open space:
-			rule succeeds with result "[The P] [appear] to the [best route from location to nl], coming from the [opposite of best route from ol to nl].";
+			rule succeeds with result "[The P] [appear] [lcase distance text of ndist] the [best route from location to nl], coming from the [opposite of best route from ol to nl].";
 		otherwise if ol is open space and nl is not open space:
-			rule succeeds with result "To the [Best Route From Location To Nl], [the P] [enter] [the building of nl] from the [best route from nl to ol].";
+			rule succeeds with result "[distance text of ndist] the [Best Route From Location To Nl], [the P] [enter] [the building of nl] from the [best route from nl to ol].";
 		otherwise if building of ol is not building of nl and ol is not open space and nl is not open space:
-			rule succeeds with result "To the [Best route from location to nl], [the P] [enter] [the building of nl] from [the building of ol] to the [best route from nl to ol].";
+			rule succeeds with result "[distance text of ndist] the [Best route from location to nl], [the P] [enter] [the building of nl] from [the building of ol] to the [best route from nl to ol].";
 		otherwise if nl is not open space and nl is not open space:
-			rule succeeds with result "[The P] [appear] to the [best route from location to nl], coming from the [opposite of best route from ol to nl].";
+			rule succeeds with result "[The P] [appear] [distance text of ndist] the [best route from location to nl], coming from the [opposite of best route from ol to nl].";
 
 Remote People is a list of objects that varies.
 
@@ -124,14 +143,8 @@ This is the show us the people rule:
 			add "[We] [see] [Y] here." to segments;
 	if LPNH is not empty:
 		Let remote segments be a list of texts;
-		now the peeps corresponding to a dir of north in Table of Direction Segments is { };
-		now the peeps corresponding to a dir of northeast in Table of Direction Segments is { };
-		now the peeps corresponding to a dir of east in Table of Direction Segments is { };
-		now the peeps corresponding to a dir of southeast in Table of Direction Segments is { };
-		now the peeps corresponding to a dir of south in Table of Direction Segments is { };
-		now the peeps corresponding to a dir of southwest in Table of Direction Segments is { };
-		now the peeps corresponding to a dir of west in Table of Direction Segments is { };
-		now the peeps corresponding to a dir of northwest in Table of Direction Segments is { };
+		repeat through the Table of Direction Segments:
+			now the peeps entry is {};
 		Repeat with AR running through the list of rooms which are farseen by the location:
 			let X be the list of people who are in AR;
 			add X to remote people;
@@ -141,14 +154,26 @@ This is the show us the people rule:
 			remove not lazy from X;
 			if X is not empty:
 				let D be best route from the location to AR;
-				choose the row with dir of D in Table of Direction Segments;
-				add X to peeps entry;
+				let S be the number of moves from the location to AR;
+				repeat through the Table of Direction Segments:
+					if dir entry is D:
+						if S is 1 and distance entry is 1:
+							add X to peeps entry;
+						if S is 2 and distance entry is 2:
+							add X to peeps entry;
+						if S > 2 and distance entry is 3:
+							add X to peeps entry;
 		Repeat through Table of Direction Segments:
 			if peeps entry is not empty:
 				let Y be a list of texts;
 				Repeat with P running through peeps entry:
 					add "[the P]" to Y;
-				add "[Y] to the [dir entry]" to remote segments;
+				if distance entry is 1:
+					add "[Y] nearby to the [dir entry]" to remote segments;
+				if distance entry is 2:
+					add "[Y] a couple of steps to the [dir entry]" to remote segments;
+				if distance entry is 3:
+					add "[Y] far off to the [dir entry]" to remote segments;
 		If remote segments is not empty:
 			add "[We] [see] [the remote segments]." to segments;
 	if segments is not empty:
@@ -193,15 +218,31 @@ Before doing something to the mauve guard robot (this is the check object is int
 The show us the people rule is listed last in the turn sequence rules.
 
 Table of Direction Segments
-dir (a direction)	peeps (a list of people)
-north	--
-northeast	--
-east	--
-southeast	--
-south	--
-southwest	--
-west	--
-northwest	--
+dir (a direction)	distance	peeps (a list of people)
+north	1	--
+north	2	--
+north	3	--
+northeast	1	--
+northeast	2	--
+northeast	3	--
+east	1	--
+east	2	--
+east	3	--
+southeast	1	--
+southeast	2	--
+southeast	3	--
+south	1	--
+south	2	--
+south	3	--
+southwest	1	--
+southwest	2	--
+southwest	3	--
+west	1	--
+west	2	--
+west	3	--
+northwest	1	--
+northwest	2	--
+northwest	3	--
 
 A person can be marked to be listed last.
 

@@ -2777,14 +2777,14 @@ Instead of attacking the array of diamonds with the hammer for the first time:
 	Jones: 'I appreciate your concern.'";
 
 Instead of attacking the array of diamonds with the hammer:
-	say "Whoa, that's enough.";
+	say "Whoa, once is enough.";
 	
 Instead of attacking the array of diamonds:
 	if the player carries the hammer: 
 		say "(with the hammer)[command clarification break]";
 		try attacking the array of diamonds with the hammer;
 	otherwise:
-		say "What do you want to attack the diamonds with?";
+		say "You're not carrying anything sufficient to smash the diamonds.";
 	
 Instead of taking the array of diamonds when the glass diamond is somewhere:
 	say "[We] has already taken a diamond. Isn't one enough?";

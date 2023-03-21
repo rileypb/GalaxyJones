@@ -59,7 +59,389 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1921"></child>
+            <child nodeId="node-1956"></child>
         </children>
+    </item>
+    <item nodeId="node-1956">
+        <command xml:space="preserve">gonear tenth hall</command>
+        <result xml:space="preserve">Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1962"></child>
+            <child nodeId="node-1958"></child>
+        </children>
+    </item>
+    <item nodeId="node-1958">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+Thallium's voice booms over the office PA: "You can run, Jones, but you can't - well, there aren't very many places you can hide."
+
+Jones sees the mauve guard robot nearby to the west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1959"></child>
+        </children>
+    </item>
+    <item nodeId="node-1959">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+The mauve guard robot appears to the south, coming from the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1960"></child>
+        </children>
+    </item>
+    <item nodeId="node-1960">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+To the south, the mauve guard robot heads north.
+
+Thallium: "Jones, you still hanging around with that loser Beck?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1962">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1963"></child>
+        </children>
+    </item>
+    <item nodeId="node-1963">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+Jones sees the mauve guard robot a couple of steps to the south. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1964"></child>
+        </children>
+    </item>
+    <item nodeId="node-1964">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears to the south, coming from the west.
+
+Beck: "If I only had a heart, indeed."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1965"></child>
+        </children>
+    </item>
+    <item nodeId="node-1965">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the air handling door)
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1966"></child>
+        </children>
+    </item>
+    <item nodeId="node-1966">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot approaches from the south.
+
+The robot slaughters Jones.
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 0 out of a possible 10, in 6 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1967"></child>
+        </children>
+    </item>
+    <item nodeId="node-1967">
+        <command xml:space="preserve">unfo</command>
+        <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1968"></child>
+        </children>
+    </item>
+    <item nodeId="node-1968">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Galaxy Jones is in the air handling room.
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1969"></child>
+        </children>
+    </item>
+    <item nodeId="node-1969">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1970"></child>
+        </children>
+    </item>
+    <item nodeId="node-1970">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1971"></child>
+        </children>
+    </item>
+    <item nodeId="node-1971">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1972"></child>
+        </children>
+    </item>
+    <item nodeId="node-1972">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1973"></child>
+        </children>
+    </item>
+    <item nodeId="node-1973">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+To the south, the mauve guard robot heads north.
+
+Beck: "I've seen more intimidating kitchen appliances!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1974"></child>
+        </children>
+    </item>
+    <item nodeId="node-1974">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1975"></child>
+        </children>
+    </item>
+    <item nodeId="node-1975">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1976"></child>
+        </children>
+    </item>
+    <item nodeId="node-1976">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1977"></child>
+        </children>
+    </item>
+    <item nodeId="node-1977">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1978"></child>
+        </children>
+    </item>
+    <item nodeId="node-1978">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1979"></child>
+        </children>
+    </item>
+    <item nodeId="node-1979">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1980"></child>
+        </children>
+    </item>
+    <item nodeId="node-1980">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1981"></child>
+        </children>
+    </item>
+    <item nodeId="node-1981">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+Jones sees the mauve guard robot a couple of steps to the south. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1982"></child>
+        </children>
+    </item>
+    <item nodeId="node-1982">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears to the south, coming from the west.
+
+Beck: "I hope you have a warranty, because you're about to be seriously damaged!"
+
+Jones: "Really, Beck? Is this your best material?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1983"></child>
+        </children>
+    </item>
+    <item nodeId="node-1983">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+The mauve guard robot appears to the south, coming from the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1984"></child>
+        </children>
+    </item>
+    <item nodeId="node-1984">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears to the south, coming from the west.
+
+Beck: "Come and get us, ugly!"
+
+Jones: "'Us'? Seems like I'm the only one with her life on the line."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1985"></child>
+        </children>
+    </item>
+    <item nodeId="node-1985">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+The mauve guard robot appears nearby to the south, coming from the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1986"></child>
+        </children>
+    </item>
+    <item nodeId="node-1986">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears nearby to the southeast, coming from the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1987"></child>
+        </children>
+    </item>
+    <item nodeId="node-1987">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+The mauve guard robot appears nearby to the east, coming from the southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1988"></child>
+        </children>
+    </item>
+    <item nodeId="node-1988">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the west side of the Consolidated Microthings office. This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where Jones is now. One can go north or south.
+
+The mauve guard robot appears nearby to the north, coming from the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1989"></child>
+        </children>
+    </item>
+    <item nodeId="node-1989">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southwest corner of the Consolidated Microthings office. This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. Jones can go north or east from here.
+
+There is a present with a note attached sitting on a desk here.
+
+To the north, the mauve guard robot heads south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1990"></child>
+        </children>
+    </item>
+    <item nodeId="node-1990">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+The mauve guard robot appears nearby to the west, coming from the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1921">
         <command xml:space="preserve">gonear array of diamonds</command>
@@ -140,11 +522,12 @@ Jones tosses the fake away.
     </item>
     <item nodeId="node-1928">
         <command xml:space="preserve">x diamonds</command>
-        <result xml:space="preserve">So many of them, from the tiny to the obscenely large. It looks like it wouldn't be hard to pry one out.
+        <result xml:space="preserve">It's impossible to tell which ones are real and which are glass without prying each one out separately.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1929"></child>
+        <children><child nodeId="node-1940"></child>
+            <child nodeId="node-1929"></child>
         </children>
     </item>
     <item nodeId="node-1929">
@@ -177,6 +560,173 @@ Jones: "I appreciate your concern."
         <command xml:space="preserve">x diamond</command>
         <result xml:space="preserve">(the diamond)
 Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1940">
+        <command xml:space="preserve">purloin hammer</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1941"></child>
+        </children>
+    </item>
+    <item nodeId="node-1941">
+        <command xml:space="preserve">smash diamonds</command>
+        <result xml:space="preserve">(with the hammer)
+Jones commences to smash all of the diamonds. After destroying several dozen fraudulent gems, she finds one that won't break. She takes the real diamond.
+
+Thallium: "Wow, clever solution. Be careful you don't cut yourself."
+
+Jones: "I appreciate your concern."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1942"></child>
+        </children>
+    </item>
+    <item nodeId="node-1942">
+        <command xml:space="preserve">smash diamonds</command>
+        <result xml:space="preserve">(with the hammer)
+Whoa, that's enough.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1943"></child>
+        </children>
+    </item>
+    <item nodeId="node-1943">
+        <command xml:space="preserve">smash diamond</command>
+        <result xml:space="preserve">(the diamond)
+Jones only uses violent means when absolutely necessary.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1944"></child>
+        </children>
+    </item>
+    <item nodeId="node-1944">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1945"></child>
+        </children>
+    </item>
+    <item nodeId="node-1945">
+        <command xml:space="preserve">put diamond in claw</command>
+        <result xml:space="preserve">As soon as insert the diamond into the claw, laser beams spring from five emitters on the walls. They hit the diamond and join into a single more powerful beam that strikes the electronic eye on the wall. A sound like a sliding door comes from behind Jones, and she spins around to see the red wall slide down into the floor. It exposes a control panel of sorts, featuring a large red button labeled "Press Me".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1946"></child>
+        </children>
+    </item>
+    <item nodeId="node-1946">
+        <command xml:space="preserve">take it</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1947"></child>
+        </children>
+    </item>
+    <item nodeId="node-1947">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  a diamond
+  a hammer
+  a disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1948"></child>
+        </children>
+    </item>
+    <item nodeId="node-1948">
+        <command xml:space="preserve">press red button</command>
+        <result xml:space="preserve">Thallium's voice startles Jones, and she forgets the button for a moment.
+
+"Yes, yes, press it!", Thallium squeaks.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1949"></child>
+        </children>
+    </item>
+    <item nodeId="node-1949">
+        <command xml:space="preserve">press red button</command>
+        <result xml:space="preserve">Jones presses the red button, but nothing seems to happen. After a few seconds, however, she starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die.
+
+
+
+    *** Galaxy Jones was killed by poison gas. ***
+
+
+In that game you scored 0 out of a possible 10, in 16 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1950"></child>
+        </children>
+    </item>
+    <item nodeId="node-1950">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Galaxy Jones is in the western corner of the penthouse.
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1951"></child>
+        </children>
+    </item>
+    <item nodeId="node-1951">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1952"></child>
+        </children>
+    </item>
+    <item nodeId="node-1952">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">The diamond-shaped penthouse bends to the northeast and northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1953"></child>
+        </children>
+    </item>
+    <item nodeId="node-1953">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">The diamond-shaped penthouse bends to the northeast and northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1954"></child>
+        </children>
+    </item>
+    <item nodeId="node-1954">
+        <command xml:space="preserve">x diamonds</command>
+        <result xml:space="preserve">It's impossible to tell which ones are real and which are glass without prying each one out separately.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1955"></child>
+        </children>
+    </item>
+    <item nodeId="node-1955">
+        <command xml:space="preserve">smash diamonds</command>
+        <result xml:space="preserve">(with the hammer)
+Whoa, that's enough.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
