@@ -1089,6 +1089,8 @@ the flyer pad is west of the penthouse roof. The preposition is "on".
 
 a cage is north of the penthouse roof. The preposition is "next to". 
 
+the cage is northeast of the flyer pad.
+
 Carry out looking when the location is the cage (this is the cage description heading rule): 
 	if the player is not supported by the cage-thing:
 		if the cage is broken:
@@ -2918,7 +2920,7 @@ When Thallium ultimatum begins:
 Before going somewhere during Thallium ultimatum:
 	say "Thallium's flyer floats after Jones.";
 	
-Saving Europa is a scene. Thallium ultimatum ends when Admiral Thallium's Flyer is nowhere. 
+Saving Europa is a scene. Thallium ultimatum ends when Admiral Thallium's flyer is nowhere. 
 Saving Europa begins when Thallium ultimatum ends.
 
 The red flyer is a backdrop. The description is "[If saving europa is happening]Jones's little red flyer, Galaxy Two[otherwise]It's little more than a growing red speck[end if]."
@@ -2991,6 +2993,12 @@ Report going to penthouse roof for the first time:
 
 Rule for writing a paragraph about Admiral-Thallium when Admiral-Thallium is in penthouse roof:
 	say "[Admiral-Thallium] is sulking.";
+	
+Instead of jumping during Thallium alight:
+	say "[Our] jump comes up pathetically short of the Admiral's flyer.";
+	
+Instead of jumping during Thallium ultimatum:
+	say "[Our] jump comes up pathetically short of the Admiral's flyer.";
 
 The description of the penthouse roof is "It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad[if Europa Callisto is in the cage]. Jones can distantly see a woman lying on the floor of the cage[end if][If Admiral-Thallium is in penthouse roof]. A green and black flyer sits on the landing pad[end if]."
 
@@ -3008,7 +3016,7 @@ The electrostatic field is a backdrop in the rooftop. The description is "It can
 
 Admiral-Thallium is in penthouse roof.
 
-Admiral Thallium's Flyer is a backdrop. It is in penthouse roof, cage, and flyer pad. The description is "this is a secret message". Understand "rails/gear/landing/thallium" as Admiral Thallium's Flyer.
+Admiral Thallium's flyer is a backdrop. It is in penthouse roof, cage, and flyer pad. The description is "this is a secret message". Understand "rails/gear/landing/thallium" as Admiral Thallium's flyer.
 
 Instead of examining Admiral Thallium's flyer during On-Rooftop:
 	say "It's big and green and black. Looks like a Sirius XE."
@@ -3021,7 +3029,7 @@ Instead of examining Admiral Thallium's flyer during Thallium ultimatum:
 	
 cage-scenery is a backdrop. It is in penthouse roof and flyer pad. "You can see the cage with Europa Callisto in it from here. She's lying on the floor and not moving." It is privately-named. The printed name is "cage". Understand "cage" as cage-scenery.
 
-The description of cage is "[if the cage is not broken]The closely-set silnium bars seem to dash all hope of a rescue.[otherwise]The whole structure is tilted, leaving a hole at the eastern end.[end if]".
+The description of cage is "[if the cage is not broken]The closely-set silnium bars seem to dash all hope of a rescue.[otherwise]The whole structure is tilted, leaving a hole at the eastern end.[end if] The flyer pad is to the southwest and the rest of the rooftop to the south.".
 
 Bars don't budge is a descriptive clip with conversation "Jones tries the strength of the bars just in case. They don't budge.".
 
@@ -3079,20 +3087,23 @@ Instead of going nowhere from the cage:
 		otherwise: 
 			say "Should Jones burrow downward?";
 
-Instead of attacking Admiral Thallium's Flyer:
+Instead of attacking Admiral Thallium's flyer:
 	say "It's just too far away.";
 	
-Instead of throwing something at admiral thallium's flyer:
+Instead of throwing something at Admiral Thallium's flyer:
 	say "Throwing [the noun] would hardly be effective.";
 	
-Instead of throwing the screwdriver at admiral thallium's flyer:
+Instead of throwing the screwdriver at Admiral Thallium's flyer:
 	say "It would just bounce off.";
 	
-Instead of throwing the bottled water at admiral thallium's flyer:
+Instead of throwing the bottled water at Admiral Thallium's flyer:
 	say "The water could be useful.";
 	
-Instead of throwing the hammer at admiral thallium's flyer:
+Instead of throwing the hammer at Admiral Thallium's flyer:
 	say "It might leave a dent, but bring down a flyer? Really?";
+	
+Does the player mean throwing something at the red flyer:
+	it is very unlikely;
 
 To break the cage:
 	score 1;
@@ -3109,13 +3120,13 @@ To break the cage:
 	now the cage is broken;
 	move the player to the cage-container;
 
-Instead of throwing the hook cable at admiral thallium's flyer when the player is on the cage-thing:
+Instead of throwing the hook cable at Admiral Thallium's flyer when the player is on the cage-thing:
 	break the cage;
 		
 Instead of tying the hook cable to the cage-thing when the player is on the cage-thing:
 	break the cage;
 
-Instead of throwing the hook cable at admiral thallium's flyer:
+Instead of throwing the hook cable at Admiral Thallium's flyer:
 	say "[We] throws the cable, but it comes up short. [We] gathers it up again.";
 	
 Instead of tying the hook cable to the cage-thing:
@@ -3126,7 +3137,7 @@ Instead of tying the hook cable to the cage-thing when the player is not on the 
 	
 Chapter 4 - The Flyer Pad
 
-The description of the flyer pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background." Understand "letter/F/lights/landing/background" as the flyer pad.
+The description of the flyer pad is "This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background. Europa's cage is to the northeast and the rest of the rooftop is to the east." Understand "letter/F/lights/landing/background" as the flyer pad.
 
 
 	
@@ -3316,7 +3327,7 @@ Instead of quizzing Beck about the 100th floor view of New Reykjavik:
 	say line break;
 	converse "Beck: 'Wow. Impressive.'";
 	
-Instead of quizzing Beck about Admiral Thallium's Flyer:
+Instead of quizzing Beck about Admiral Thallium's flyer:
 	say line break;
 	converse "Beck: 'It's a nice vehicle, I'll give him that. Have you ever noticed villains always have ugly houses and beautiful flyers?'";
 	
@@ -4027,7 +4038,7 @@ Book 3 - Can't Take That
 Table of Frustrated Taking
 target (a thing)	message (a text)	move message (a text)
 (100th floor view of New Reykjavik)	"Jones can't take that!"	"Don't be silly."
-Admiral Thallium's Flyer	"Jones can't even reach it."	"Don't be silly."
+Admiral Thallium's flyer	"Jones can't even reach it."	"Don't be silly."
 Admiral Thallium's clothes	"Jones would rather not touch his clothes."
 Air handling door	"No taking doors."	"Aside from opening and closing [regarding the noun][them], what is there to do?"
 bed	"It's too big to take."	"The frame is built into the floor here."
