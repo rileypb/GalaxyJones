@@ -2725,7 +2725,7 @@ The array of diamonds is scenery in penthouse south. Understand "diamond/gem/gem
 A gem is a kind of thing.
 The glass diamond is a gem. It is privately-named. The glass diamond can be discovered. The printed name is "[if discovered]glass diamond[otherwise]diamond". The description is "Worthless.". Understand "diamond/gem" as the glass diamond.
 
-The real diamond is a gem. The description is "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds." The printed name is "diamond"
+The real diamond is a gem. Understand "gem" as the real diamond. The description is "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds." The printed name is "diamond"
 
 prying is an action applying to one thing. Understand "pry [something] out/--", "pry out [something]", "loosen [something]" as prying.
 
@@ -2764,10 +2764,11 @@ Check attacking something with something:
 	say text of the block attacking rule response (A);
 	say line break instead;
 	
-Instead of attacking the array of diamonds with something:
-	say "That doesn't accomplish much.";
+Check attacking the array of diamonds when the glass diamond is not discovered:
+	say text of the block attacking rule response (A);
+	say line break instead;
 
-Instead of attacking the array of diamonds with the hammer for the first time:
+Instead of attacking the array of diamonds with the hammer when the glass diamond is discovered for the first time:
 	say "[We] commences to smash all of the diamonds. After destroying several dozen fraudulent gems, [we] finds one that won't break. [We] takes the real diamond.[paragraph break]";
 	now the player carries the real diamond;
 	now the real diamond is seen;
@@ -2776,7 +2777,7 @@ Instead of attacking the array of diamonds with the hammer for the first time:
 	
 	Jones: 'I appreciate your concern.'";
 
-Instead of attacking the array of diamonds with the hammer:
+Instead of attacking the array of diamonds with the hammer when the glass diamond is discovered:
 	say "Whoa, once is enough.";
 	
 Instead of attacking the array of diamonds:
@@ -2827,7 +2828,7 @@ Instead of pushing the large red button:
 	say "[We] presses the red button, but nothing seems to happen. After a few seconds, however, [we] starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die.";
 	end the story saying "Galaxy Jones was killed by poison gas.";
 	
-why not is a clip with conversation "[line break]Beck: 'Why ever did you not press the button that said [']Press Me[']? Maybe we should press it anyway. Please?'";
+why not is a clip with conversation "[line break]Beck: 'Why didn't you press the button that said [']Press Me[']? Maybe we should press it anyway. Please?'";
 
 Instead of pushing the small black button for the first time:
 	say "Somewhere beyond this room comes the sound of something heavy being moved.";
@@ -3117,6 +3118,9 @@ Instead of tying the hook cable to the cage-thing when the player is on the cage
 Instead of throwing the hook cable at admiral thallium's flyer:
 	say "[We] throws the cable, but it comes up short. [We] gathers it up again.";
 	
+Instead of tying the hook cable to the cage-thing:
+	say "[We] can't get close enough to the flyer to tie the cable to it.";
+	
 Instead of tying the hook cable to the cage-thing when the player is not on the cage-thing:
 	say "It doesn't seem useful to attach the cable to this part of the cage.";
 	
@@ -3160,10 +3164,16 @@ Instead of pouring the bottled water on Europa when the cage is broken:
 	say "It's not elegant, but it works.[paragraph break]";
 	try giving the bottled water to Europa;
 	
-Instead of going during Saving Europa:
+Instead of going nowhere from the cage during Saving Europa:
+	say "[We] can't leave Europa now!";
+	
+Instead of going south from the cage during Saving Europa:
 	say "[We] can't leave Europa now!";
 	
 Instead of entering during Saving Europa:
+	say "[We] can't leave Europa now!";
+	
+Instead of exiting during Saving Europa:
 	say "[We] can't leave Europa now!";
 	
 When Saving Europa begins:
@@ -4194,5 +4204,5 @@ test ledge with "test mgmt/unlock door with black cardkey/e/take gel from cabine
 test air with "test ledge/look down/look down/look down/d/press up/press up/open vent with screwdriver/w".
 test robot with "test air/w/s/w/take panel/e/s/n/w/u/jump on robot/pour gel on robot".
 test golden with "test robot/e/s/w/open present/e/n/w/put golden key in keyhole".
-test 100 with "test golden/press 100/e/s/smash diamonds with hammer/w/nw/put gem in claw/x panel/press black button/ne/s".
+test 100 with "test golden/press 100/e/s/take diamond/x it/smash diamonds with hammer/nw/put gem in claw/x panel/press black button/ne/s".
 test endgame with "test 100/e/u/n/climb cage/throw cable at flyer/give water to europa".
