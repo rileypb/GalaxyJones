@@ -2550,6 +2550,9 @@ Instead of taking the ceiling panel:
 	remove the ceiling panel from play;	
 	say "[We] removes the ceiling panel, exposing a hole wide enough for [us] to squeeze through.";
 	
+Instead of prying the ceiling panel:
+	try taking the ceiling panel;
+	
 Instead of pushing the ceiling panel:
 	try taking the ceiling panel;
 	
@@ -2558,6 +2561,8 @@ Instead of pulling the ceiling panel:
 
 Instead of opening the ceiling panel:   
 	try taking the ceiling panel;
+	
+Understand "remove [the ceiling panel]" as taking;
 
 The golden-key-scenery is scenery. It is privately-named. The printed name is "golden key". Understand "golden/key" as golden-key-scenery.
 
