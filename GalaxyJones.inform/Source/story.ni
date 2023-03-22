@@ -270,15 +270,15 @@ Does the player mean doing something to a person: it is very likely;
 
 Does the player mean doing something to beck: it is very unlikely;
 
-Does the player mean unlocking keylessly the elevator drop key: it is very unlikely; 
+Does the player mean unlocking keylessly the drop key: it is very unlikely; 
 
-Does the player mean unlocking the elevator drop key with something: it is very unlikely; 
+Does the player mean unlocking the drop key with something: it is very unlikely; 
 
-Does the player mean unlocking the large desk with the elevator drop key: it is unlikely;
+Does the player mean unlocking the large desk with the drop key: it is unlikely;
 
-Does the player mean unlocking the cybernetica door with the elevator drop key: it is unlikely;
+Does the player mean unlocking the cybernetica door with the drop key: it is unlikely;
 
-Does the player mean unlocking the martian chemical door with the elevator drop key: it is unlikely;
+Does the player mean unlocking the martian chemical door with the drop key: it is unlikely;
 
 Does the player mean swiping the player through something: it is very unlikely;
 
@@ -288,16 +288,18 @@ Does the player mean swiping the player through: it is very unlikely;
 
 Does the player mean doing something to the player: it is unlikely;
 
-Does the player mean doing something to the elevator drop key when the player is not in the ground-floor-region: It is unlikely;
+Does the player mean doing something to the drop key when the player is not in the ground-floor-region: It is unlikely;
 
-Does the player mean inserting the elevator drop key into the drop-key-hole: It is very likely;
+Does the player mean inserting the drop key into the elevator shaft: It is very unlikely;
+
+Does the player mean inserting the drop key into the drop-key-hole: It is very likely;
 Does the player mean inserting the red cardkey into the drop-key-hole: It is very unlikely;
 [Does the player mean using the drop-key-hole with: It is very unlikely;
 Does the player mean using the noun with the noun: It is very unlikely;
-Does the player mean using the elevator drop key with the drop-key-hole: It is very likely;
-Does the player mean using the elevator drop key with the elevator drop key: It is very unlikely;
-Does the player mean using something with the elevator drop key: it is very unlikely;
-Does the player mean using the elevator drop key with the ground floor elevator door: it is very likely;]
+Does the player mean using the drop key with the drop-key-hole: It is very likely;
+Does the player mean using the drop key with the drop key: It is very unlikely;
+Does the player mean using something with the drop key: it is very unlikely;
+Does the player mean using the drop key with the ground floor elevator door: it is very likely;]
 	
 Book 5 - Some extra actions
 	
@@ -730,6 +732,11 @@ When Cybernetica Battle ends:
 
 Check dropping something when the location is the ledge:	
 	say "Bad idea." instead;
+	
+dithering is an action applying to nothing. 
+Understand "stand up", "get up", "stand" as dithering when the location is the cybernetica office.
+Instead of dithering:
+	say "You are already standing up.";
 
 Volume 6 - Things
 
@@ -755,7 +762,7 @@ The atmo-suit can be needed or unneeded.
 Check wearing the atmo-suit when the atmo-suit is unneeded:
 	say "[We] needs to be able to move around quickly. Better not wear the [Atmo-Suit]." instead;
 		
-The elevator drop key is a thing. "Hanging from a hook here is [a elevator drop key]." The description is "A drop key is a special device used to open an elevator door from the outside. It consists of a thin shaft which is hinged at th-- oh just Google it." 
+The drop key is a thing. "Hanging from a hook here is [a drop key]." The description is "A drop key is a special device used to open an elevator door from the outside. It consists of a thin shaft which is hinged at th-- oh just Google it." 
 
 A thing can be an enemy.
 
@@ -1543,7 +1550,7 @@ The elevator-shaft is scenery in the ground floor elevator hall. It is privately
 [Does the player mean using drop key with the ground floor elevator door:
 	it is very likely;]
 	
-does the player mean opening the elevator drop key: It is very unlikely;
+does the player mean opening the drop key: It is very unlikely;
 	
 Does the player mean doing something to the elevator-shaft:
 	it is very unlikely;
@@ -1559,34 +1566,37 @@ Does the player mean doing something to the ground floor elevator hall:
 	
 Understand "climb into [something]" as entering.
 
-The description of the ground floor elevator door is "A gleaming gold elevator door. There is a hole near the top for inserting a drop key.". The ground floor elevator door has matching key the elevator drop key. It is scenery.
+The description of the ground floor elevator door is "A gleaming gold elevator door. There is a hole near the top for inserting a drop key.". The ground floor elevator door has matching key the drop key. It is scenery.
 
-The drop-key-hole is a part of the ground floor elevator door. The printed name is "drop key hole". Understand "elevator/lift/drop/key/hole" as the drop-key-hole. The description is "It's a small hole about half an inch in diameter."
+The drop-key-hole is a part of the ground floor elevator door. It is privately-named. The printed name is "small hole". Understand "small/hole" as the drop-key-hole. The description is "It's a small hole about half an inch in diameter."
 	
-Instead of unlocking the ground floor elevator door with the elevator drop key when the ground floor elevator door is closed:
+Instead of unlocking the ground floor elevator door with the drop key when the ground floor elevator door is closed:
 	safely open the elevator door;
-	say "[We] inserts [the elevator drop key] into [the drop-key-hole] and turns it, disengaging the lock mechanism. Then [we] slides the door open."
+	say "[We] inserts [the drop key] into [the drop-key-hole] and turns it, disengaging the lock mechanism. Then [we] slides the door open."
 	
-Instead of unlocking the ground floor elevator door with the elevator drop key when the ground floor elevator door is open:
+Instead of unlocking the ground floor elevator door with the drop key when the ground floor elevator door is open:
 	say "The [ground floor elevator door] is already open.";
 	
-Instead of unlocking keylessly the ground floor elevator door when the player carries the elevator drop key:
-	try unlocking the ground floor elevator door with the elevator drop key;
+Instead of unlocking keylessly the ground floor elevator door when the player carries the drop key:
+	try unlocking the ground floor elevator door with the drop key;
 	
-Instead of inserting the elevator drop key into the drop-key-hole:
-	try unlocking the ground floor elevator door with the elevator drop key;
+Instead of inserting the drop key into the drop-key-hole:
+	try unlocking the ground floor elevator door with the drop key;
+	
+Instead of inserting the drop key into the elevator door:
+	try unlocking the ground floor elevator door with the drop key;
 
-[Instead of using the elevator drop key when location is the ground floor elevator hall:
-	try unlocking the ground floor elevator door with the elevator drop key;
+[Instead of using the drop key when location is the ground floor elevator hall:
+	try unlocking the ground floor elevator door with the drop key;
 	
-Instead of using the elevator drop key with the ground floor elevator door:
-	try unlocking the ground floor elevator door with the elevator drop key;
+Instead of using the drop key with the ground floor elevator door:
+	try unlocking the ground floor elevator door with the drop key;
 	
-Does the player mean using the elevator drop key with the elevator drop key:
+Does the player mean using the drop key with the drop key:
 	it is very unlikely;
 	
-Instead of using the elevator drop key with the drop-key-hole:
-	try unlocking the ground floor elevator door with the elevator drop key;]
+Instead of using the drop key with the drop-key-hole:
+	try unlocking the ground floor elevator door with the drop key;]
 	
 Instead of closing the ground floor elevator door:
 	say "Might as well leave it open in case Jones needs to get out.";
@@ -1608,7 +1618,7 @@ The elevator control panel is scenery in the elevator room. "From the looks of i
 Instead of doing something other than examining to the elevator control panel:
 	say "Playing with the controls for a dangerous piece of equipment she doesn't understand is not something Jones would do.";
 
-The elevator drop key is in the elevator room. 
+The drop key is in the elevator room. 
 
 The hammer is in the elevator room. "Lying discarded on a table here is a hammer." The description is "An ordinary claw hammer."
 
@@ -3447,11 +3457,11 @@ Instead of quizzing Beck about elevator car-room:
 	lb;
 	converse "Beck: 'You gotta admit, this is insane.'";
 	
-Instead of quizzing Beck about elevator drop key:
+Instead of quizzing Beck about drop key:
 	lb;
 	converse "Beck: 'I'm not sure what that is. Look closer.'";
 	
-Instead of quizzing Beck about elevator drop key when the elevator drop key is examined:
+Instead of quizzing Beck about drop key when the drop key is examined:
 	lb;
 	converse "Beck: 'Huh. You learn something every day.'";
 	
@@ -3748,14 +3758,14 @@ After pleading when lobby shootout has ended and the maintenance closet is not v
 			otherwise:
 				converse "Beck: 'Check the front desk.'";
 
-After pleading when the elevator drop key is seen and the ground floor elevator door is closed:
+After pleading when the drop key is seen and the ground floor elevator door is closed:
 	lb;
-	if plead elevator drop key is:
+	if plead drop key is:
 		-- 1: converse "Beck: 'You should probably be heading up the building by now.'";
 		-- 2: converse "Beck: 'Time to open the elevator door.'";
 		-- otherwise: converse "Beck: 'Use the drop key you found in the elevator room.'";
 
-After pleading when the elevator drop key is not seen and the ground floor elevator door is closed and the red cardkey is handled:
+After pleading when the drop key is not seen and the ground floor elevator door is closed and the red cardkey is handled:
 	lb;
 	converse "Beck: 'You should look for a door where you can use that cardkey.'";
 	
@@ -3774,7 +3784,9 @@ After pleading when the location is in the ninth-floor and the black cardkey is 
 		-- 1: converse "Beck: 'You've probably noticed the two locked doors on this floor. You need to get them open.'";
 		-- 2: converse "Beck: 'The cardkey for both of them is in the large desk in the building management office.'";
 		-- 3: converse "Beck: 'You don't have a key for the desk. Maybe you can pick the lock?'";
-		-- otherwise: converse "Beck: 'Pick the desk lock with the safety pin.'";
+		-- 4: converse "Beck: 'Pick the desk lock with the safety pin.'";
+		-- 5: converse "Beck: 'You'll find it inside the medal.'";
+		-- otherwise: converse "Beck: 'You'll find the medal with the other military junk on the first floor.'";
 
 After pleading when the location is the cybernetica office and the purple guard robot is in the cybernetica office:
 	lb;
@@ -4202,7 +4214,7 @@ Understand "* [text]" as a mistake ("Noted.").
 
 drop keying is an action applying to nothing. Understand "dk" as drop keying.
 Carry out drop keying:
-	now the player carries the elevator drop key.
+	now the player carries the drop key.
 
 [Include Property Checking by Emily Short].
 
