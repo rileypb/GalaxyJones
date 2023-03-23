@@ -1611,7 +1611,7 @@ The drop-key-hole is a part of the ground floor elevator door. It is privately-n
 	
 Instead of unlocking the ground floor elevator door with the drop key when the ground floor elevator door is closed:
 	safely open the elevator door;
-	say "[We] inserts [the drop key] into [the drop-key-hole] and turns it, disengaging the lock mechanism. Then [we] slides the door open."
+	say "[We] inserts [the drop key] into [the drop-key-hole] and turns it, disengaging the lock mechanism. Then [we] slides the door open, exposing an empty elevator shaft to the west.";
 	
 Instead of unlocking the ground floor elevator door with the drop key when the ground floor elevator door is open:
 	say "The [ground floor elevator door] is already open.";
@@ -3993,15 +3993,19 @@ To decide which text is the excuse for (source - a room) to (dir - a direction):
 			if (source room entry is source) and (dir is listed in dirs entry):
 				decide on excuse entry;
 	if dir is up:
-		decide on "Jones can neither climb walls nor fly.";
-	if dir is down:
-		decide on "Should Jones burrow downward?";
-	repeat through the Table of Excuses:
+		decide on "[We] [can] neither climb walls nor fly.";
+	if dir is down:		
+		decide on "[regarding the player][Are] [we] going to burrow downward?" in sentence case;
+	if dir is inside:
+		decide on "What [regarding the player][do] [we] want to enter?";
+	if dir is outside:
+		decide on "[text of the can't exit when not inside anything rule response (A)]";
+	repeat through the Table of Excuses:		
 		if there is no dirs entry:
 			if source room entry is source:
 				decide on excuse entry;
-	decide on "Jones can't go that way.";
-
+	decide on "[We] [can't] go that way.";
+	
 Instead of going nowhere:
 	let ex be the excuse for location to the noun;
 	say "[ex][paragraph break]";
