@@ -3322,7 +3322,12 @@ Rule for clarifying the parser's choice of something when quizzing and the noun 
 	do nothing;
 
 Before quizzing beck about something:
-	say "([the second noun]).";
+	lb;
+	converse "Jones: 'Beck, [one of]what do you think about [the second noun]?[or]tell me about [the second noun].[or]how about [the second noun]?[at random]'[run paragraph on]";
+
+Before quizzing beck about a room:
+	lb;
+	converse "Jones: 'Beck, [one of]what do you think about [the second noun]?[or]tell me about [the second noun].[or]how about [the second noun]?[at random]'[run paragraph on]";
 		
 Instead of quizzing beck about something that is not quizzable:
 	lb;
@@ -3371,7 +3376,7 @@ Instead of quizzing Beck about the Lobby:
 	
 Instead of quizzing Beck about the Speeder Dock:
 	say line break;
-	converse "Beck: 'Guess everyone went home when Thallium went ape.'";
+	converse "Beck: 'It's almost empty. Guess everyone went home when Thallium went ape.'";
 	
 Instead of quizzing Beck about the 100th floor elevator hall:
 	say line break;
@@ -3480,6 +3485,10 @@ Instead of quizzing Beck about destroyed purple robot:
 Instead of quizzing Beck about disruptor pistol:
 	lb;
 	converse "Beck: 'Uh, you know what that's for, right?'";
+	
+Instead of quizzing Beck about black jumpsuit:
+	lb;
+	converse "Beck: 'That allows me to see and hear what's going on there.'";
 	
 Instead of quizzing Beck about drop-key-hole:
 	lb;

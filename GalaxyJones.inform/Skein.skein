@@ -60,6 +60,11 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1458"></child>
             <child nodeId="node-1453"></child>
+            <child nodeId="node-1500"></child>
+            <child nodeId="node-1502"></child>
+            <child nodeId="node-1501"></child>
+            <child nodeId="node-1509"></child>
+            <child nodeId="node-1497"></child>
             <child nodeId="node-1449"></child>
             <child nodeId="node-1265"></child>
             <child nodeId="node-1466"></child>
@@ -69,6 +74,7 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-1469"></child>
             <child nodeId="node-1298"></child>
             <child nodeId="node-1465"></child>
+            <child nodeId="node-1476"></child>
             <child nodeId="node-1471"></child>
             <child nodeId="node-1460"></child>
             <child nodeId="node-1273"></child>
@@ -242,6 +248,199 @@ Jones needs the jumpsuit to complete her mission.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1476">
+        <command xml:space="preserve">take light</command>
+        <result xml:space="preserve">That seems to be a part of the black jumpsuit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1477"></child>
+        </children>
+    </item>
+    <item nodeId="node-1477">
+        <command xml:space="preserve">x it</command>
+        <result xml:space="preserve">It automatically goes on when it gets dark. Cool.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1478"></child>
+        </children>
+    </item>
+    <item nodeId="node-1478">
+        <command xml:space="preserve">ask beck about admiral</command>
+        <result xml:space="preserve">(Admiral Thallium).
+
+
+Beck: "Wonderful man, can't get enough of him."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1479"></child>
+        </children>
+    </item>
+    <item nodeId="node-1479">
+        <command xml:space="preserve">ask beck about the admiral</command>
+        <result xml:space="preserve">(Admiral Thallium).
+
+
+Beck: "Wonderful man, can't get enough of him."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1480"></child>
+        </children>
+    </item>
+    <item nodeId="node-1480">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1481"></child>
+        </children>
+    </item>
+    <item nodeId="node-1481">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
+
+Beck replies, "You got this, Galaxy."
+
+Jones passes through the revolving door and into the lobby, alert to any defenses.
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1482"></child>
+        </children>
+    </item>
+    <item nodeId="node-1482">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">Suddenly two robot guards, green and red, emerge from niches in the back wall! Jones dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring your suit radar."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1483"></child>
+        </children>
+    </item>
+    <item nodeId="node-1483">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1484"></child>
+        </children>
+    </item>
+    <item nodeId="node-1484">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1485"></child>
+        </children>
+    </item>
+    <item nodeId="node-1485">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1486"></child>
+        </children>
+    </item>
+    <item nodeId="node-1486">
+        <command xml:space="preserve">ask beck about admiral</command>
+        <result xml:space="preserve">(the statue of admiral thallium)
+(the statue of admiral thallium).
+
+
+Beck: "We'll come back and knock it over later."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1487"></child>
+        </children>
+    </item>
+    <item nodeId="node-1487">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+[Rule "reset conversed this turn rule" applies.]
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1488"></child>
+        </children>
+    </item>
+    <item nodeId="node-1488">
+        <command xml:space="preserve">ask beck about admiral</command>
+        <result xml:space="preserve">[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "Does the player mean doing something to beck" applies.]
+[Rule "Does the player mean doing something to beck" applies.]
+(the statue of admiral thallium)
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "Before quizzing beck about something" applies.]
+(the statue of admiral thallium).
+
+[Rule "Before doing something other than going" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "Instead of quizzing Beck about the statue of admiral thallium" applies.]
+
+Beck: "We'll come back and knock it over later."
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack" applies.]
+[Rule "reset protocol rule" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+[Rule "show us the people rule" applies.]
+[Rule "reset conversed this turn rule" applies.]
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1465">
         <command xml:space="preserve">take jumpsuit</command>
         <result xml:space="preserve">Jones already has that.
@@ -384,30 +583,13 @@ Galaxy Jones is on the top of the elevator car. The elevator shaft extends many 
     </item>
     <item nodeId="node-1278">
         <command xml:space="preserve">n</command>
-        <result xml:space="preserve"> _________      __                     _____                     
- __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
- _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
- \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
- _____________________________/ 
+        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
 
-An Interactive Adventure by Phil Riley
-Release 3 / Serial number 230322 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
 
+Jones peers upwards at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
 
-A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit climbs out of it: Galaxy Jones.
-
-Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
-
-Jones's speeder, Galaxy One, sits in one of the parking bays.
-
-Jones's handler Beck comes over her headset. "Alright, what's going on?"
-
-She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
-
-"Blueprints show the ground floor is one big empty space with elevators in the center. Not a lot of places for resistance to hide, but you can never tell. Be careful.
-
-"And one other thing, Jones: if you need help you can ASK BECK FOR HELP. You can also ASK BECK ABOUT things or ASK BECK ABOUT GAME for more information about the game. Finally, you can cause help to repeat from the beginning by saying ASK BECK TO RESET HELP"
+Beck: "Oh, no doubt."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -566,13 +748,79 @@ Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
     </item>
     <item nodeId="node-1280">
         <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+        <result xml:space="preserve">Suddenly two robot guards, green and red, emerge from niches in the back wall! Jones dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring your suit radar."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1281"></child>
+            <child nodeId="node-1492"></child>
         </children>
+    </item>
+    <item nodeId="node-1492">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1493"></child>
+        </children>
+    </item>
+    <item nodeId="node-1493">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1494"></child>
+        </children>
+    </item>
+    <item nodeId="node-1494">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1495"></child>
+        </children>
+    </item>
+    <item nodeId="node-1495">
+        <command xml:space="preserve">ask about admiral</command>
+        <result xml:space="preserve">(Admiral Thallium)
+
+Beck: "Wonderful man, can't get enough of him."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1496"></child>
+        </children>
+    </item>
+    <item nodeId="node-1496">
+        <command xml:space="preserve">ask about statue</command>
+        <result xml:space="preserve">
+Beck: "We'll come back and knock it over later."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1281">
         <command xml:space="preserve">s</command>
@@ -4277,6 +4525,149 @@ Although you complete the spell, nothing seems to have happened.
     <item nodeId="node-1452">
         <command xml:space="preserve">frotz jones</command>
         <result xml:space="preserve">Jones is bathed in a sickly yellow light, bright enough to read by. 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1497">
+        <command xml:space="preserve">ask beck about speeder</command>
+        <result xml:space="preserve">
+Jones: "Beck, what do you think about the speeder?
+
+
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1499"></child>
+        </children>
+    </item>
+    <item nodeId="node-1499">
+        <command xml:space="preserve">ask about speeder</command>
+        <result xml:space="preserve">
+Jones: "Beck, tell me about the speeder.
+
+
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1509">
+        <command xml:space="preserve">ask beck about pistol</command>
+        <result xml:space="preserve">
+Jones: "Beck, tell me about the disruptor pistol."
+
+Beck: "Uh, you know what that's for, right?"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1510"></child>
+        </children>
+    </item>
+    <item nodeId="node-1510">
+        <command xml:space="preserve">ask beck about suit</command>
+        <result xml:space="preserve">(the black jumpsuit)
+
+Jones: "Beck, how about the black jumpsuit?"
+
+Beck: "Hmm. Don't have much to say about that right now."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1501">
+        <command xml:space="preserve">ask about speeder</command>
+        <result xml:space="preserve">
+Jones: "Beck, how about the speeder?"
+
+
+
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1502">
+        <command xml:space="preserve">ask about dock</command>
+        <result xml:space="preserve">
+Jones: "Beck, what do you think about the speeder dock?"
+
+Beck: "Guess everyone went home when Thallium went ape."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1503"></child>
+        </children>
+    </item>
+    <item nodeId="node-1503">
+        <command xml:space="preserve">ask about speeder</command>
+        <result xml:space="preserve">
+Jones: "Beck, how about the speeder?"
+
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1504"></child>
+        </children>
+    </item>
+    <item nodeId="node-1504">
+        <command xml:space="preserve">ask about dock</command>
+        <result xml:space="preserve">
+Beck: "Guess everyone went home when Thallium went ape."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1505"></child>
+        </children>
+    </item>
+    <item nodeId="node-1505">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1506"></child>
+        </children>
+    </item>
+    <item nodeId="node-1506">
+        <command xml:space="preserve">ask about dock</command>
+        <result xml:space="preserve">[implicit-quizzing the speeder dock]
+[(1) quizzing Beck about the speeder dock]
+
+Beck: "Guess everyone went home when Thallium went ape."
+[(1) quizzing Beck about the speeder dock - failed]
+
+[implicit-quizzing the speeder dock - failed]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1507"></child>
+        </children>
+    </item>
+    <item nodeId="node-1507">
+        <command xml:space="preserve">ask about speeder</command>
+        <result xml:space="preserve">[implicit-quizzing the speeder]
+[(1) quizzing Beck about the speeder]
+
+Jones: "Beck, what do you think about the speeder?"
+
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+[(1) quizzing Beck about the speeder - failed]
+
+[implicit-quizzing the speeder - failed]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1500">
+        <command xml:space="preserve">ask about bays</command>
+        <result xml:space="preserve">
+Jones: "Beck, how about the parking bays?"
+
+
+Beck: "Hmm. Don't have much to say about that right now."
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>

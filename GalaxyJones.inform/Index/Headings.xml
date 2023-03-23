@@ -459,84 +459,84 @@
     </dict>
     <key>65</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3745</integer>
+        <key>Line</key><integer>3754</integer>
         <key>Title</key><string>Chapter 2 - Pleading / Help</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>66</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3791</integer>
+        <key>Line</key><integer>3800</integer>
         <key>Title</key><string>Section 1 - Examples</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>67</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3917</integer>
+        <key>Line</key><integer>3926</integer>
         <key>Title</key><string>Chapter 3 - Ask Beck About Game</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>68</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3972</integer>
+        <key>Line</key><integer>3981</integer>
         <key>Title</key><string>Volume 11 - Language</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>69</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3974</integer>
+        <key>Line</key><integer>3983</integer>
         <key>Title</key><string>Book 1 - Verbs</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>70</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3978</integer>
+        <key>Line</key><integer>3987</integer>
         <key>Title</key><string>Volume 12 - Prettiness</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>71</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>3980</integer>
+        <key>Line</key><integer>3989</integer>
         <key>Title</key><string>Book 1 - Moving Between Rooms</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>72</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>4014</integer>
+        <key>Line</key><integer>4023</integer>
         <key>Title</key><string>Book 2 - You can't go that way</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>73</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>4092</integer>
+        <key>Line</key><integer>4101</integer>
         <key>Title</key><string>Book 3 - Can't Take That</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>74</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>4248</integer>
+        <key>Line</key><integer>4257</integer>
         <key>Title</key><string>Volume 13 - A few extra descriptions</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>75</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>4252</integer>
+        <key>Line</key><integer>4261</integer>
         <key>Title</key><string>Volume 14 - Not for release</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>76</key><dict>
         <key>Filename</key><string>/Users/rileypb/dev/Inform/GalaxyJones/GalaxyJones.inform/Source/story.ni</string>
-        <key>Line</key><integer>4264</integer>
+        <key>Line</key><integer>4273</integer>
         <key>Title</key><string>Volume 15 - Tests</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
