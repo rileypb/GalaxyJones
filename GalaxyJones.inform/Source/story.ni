@@ -456,6 +456,13 @@ Understand "Galaxy/Jones/woman" as yourself.
 
 [After deciding the scope of the player:
 	place the player-actual in scope; ]
+	
+The black jumpsuit is worn by yourself. Understand "suit" as the black jumpsuit. The description is "It's an advanced Smart Suit, able to communicate sound, vision, and radar back to Beck at Galaxy Base. Also it has a neat light."
+
+The suit light is part of the black jumpsuit. The description is "It automatically goes on when it gets dark. Cool."
+
+Instead of taking off the black jumpsuit:
+	say "Jones needs the jumpsuit to complete her mission.";
 	 
 After doing something to yourself:
 	set pronouns from yourself;
@@ -4238,7 +4245,6 @@ The can't push scenery rule response (A) is "[can't move message of the noun]".
 
 The can't push what's fixed in place rule response (A) is "[can't move message of the noun]".
 
-	
 Volume 13 - A few extra descriptions
 
 the description of light-meter is "no need for a description".
