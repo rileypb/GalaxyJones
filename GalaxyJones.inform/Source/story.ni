@@ -408,6 +408,26 @@ Instead of implicit-recalling something:
 	
 Instead of recalling beck about something:
 	try quizzing beck about the second noun;]
+	
+Frotzing is an action applying to one thing. Understand "frotz [something]" as frotzing.
+
+Check frotzing scenery:
+	say "Although you complete the spell, nothing seems to have happened." instead;
+
+Check frotzing something fixed in place:
+	say "Although you complete the spell, nothing seems to have happened." instead;
+	
+Carry out frotzing something:
+	now the noun is lit;
+
+Report frotzing the player:
+	say "Jones is bathed in a sickly yellow light, bright enough to read by.";
+
+To begin is a verb. To fade is a verb.
+
+Report frotzing something when the noun is not the player:
+	say "There is an almost blinding flash of light as [the noun] [begin] to glow! [They] slowly [fade] to a less painful level, but [the noun] [are] now quite usable as a light source.";
+	
 
 Book 1 - Counting moves
 

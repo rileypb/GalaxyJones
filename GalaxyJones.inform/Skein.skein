@@ -58,7 +58,8 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1265"></child>
+        <children><child nodeId="node-1449"></child>
+            <child nodeId="node-1265"></child>
             <child nodeId="node-1003"></child>
             <child nodeId="node-1278"></child>
             <child nodeId="node-1268"></child>
@@ -353,6 +354,60 @@ One of the robots fires directly above her head.
 Jones: "Target seems to be absorbing disruptor fire. This will make things a little harder."
 
 One of the robots fires directly above Jones's head.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1344"></child>
+        </children>
+    </item>
+    <item nodeId="node-1344">
+        <command xml:space="preserve">shoot robots</command>
+        <result xml:space="preserve">Jones sticks her head out from behind the desk and squeezes off a shot at the red and green guard robots. In Jones's haste it goes wide of the target.
+
+Jones: "I could use some ideas here!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1345"></child>
+        </children>
+    </item>
+    <item nodeId="node-1345">
+        <command xml:space="preserve">shoot robots</command>
+        <result xml:space="preserve">Jones's shot goes wide, reflecting off one of the building struts and into the suspended sculpture. The artwork begins to spin wildly, straining its cables.
+
+The robots intone "Destroy Jones" in an eerie drone.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1346"></child>
+        </children>
+    </item>
+    <item nodeId="node-1346">
+        <command xml:space="preserve">shoot robots</command>
+        <result xml:space="preserve">A perfect shot! Yet, somehow, the robot is unscathed.
+
+The robots intone "Destroy Jones" in an eerie drone.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1347"></child>
+        </children>
+    </item>
+    <item nodeId="node-1347">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -4006,6 +4061,41 @@ Admiral Thallium's voice oozes from concealed speakers: "Yes, Jones, that is rea
         <result xml:space="preserve">(the ceiling panel)
 Jones isn't wearing the ceiling panel.
 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1449">
+        <command xml:space="preserve">frotz speeder</command>
+        <result xml:space="preserve">(the speeder)
+Although you complete the spell, nothing seems to have happened.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1450"></child>
+        </children>
+    </item>
+    <item nodeId="node-1450">
+        <command xml:space="preserve">frotz pistol</command>
+        <result xml:space="preserve">There is an almost blinding flash of light as the disruptor pistol begins to glow! It slowly fades to a less painful level, but the disruptor pistol is now quite usable as a light source.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1451"></child>
+        </children>
+    </item>
+    <item nodeId="node-1451">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  a disruptor pistol (providing light)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1452"></child>
+        </children>
+    </item>
+    <item nodeId="node-1452">
+        <command xml:space="preserve">frotz jones</command>
+        <result xml:space="preserve">Jones is bathed in a sickly yellow light, bright enough to read by. 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
