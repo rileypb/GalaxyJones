@@ -1181,7 +1181,7 @@ The description is "Galaxy One is a Dust Runner, a top-of-the-line model from Ol
 Check taking the speeder-vehicle:
 	say "Stop being silly." instead;
 
-Some windows are part of the speeder-vehicle. The description is "The tint is too dark to see through.".
+Some tinted speeder windows are part of the speeder-vehicle. The description is "The tint is too dark to see through." 
 
 Some turbines are part of the speeder-vehicle. The description is "The engines cause [us] to recoil from the waves of heat rolling off of them." Understand "engines/thrusters/turbine/engine/thruster" as turbines.
  
