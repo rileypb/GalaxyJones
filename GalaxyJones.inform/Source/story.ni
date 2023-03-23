@@ -572,14 +572,17 @@ When play begins:
 Book 1 - Lobby Shootout
 
 Lobby Shootout is a scene. Lobby Shootout begins when the player is in the lobby for two turns.
-Lobby Shootout ends when the location of the guard-robots is not the lobby.
+Lobby Shootout ends when the location of the guard-robots is not the lobby and attack begun is true.
 
 pinned down is a clip with conversation "[line break]Jones: 'I[']m pinned down here!'".
 Check going during lobby shootout:
 	say "Trying to reach an exit would surely get [us] shot.";
 	print pinned down instead;
-	
-When Lobby Shootout begins:
+
+Attack begun is a truth state that varies.	
+
+At the time when the attack begins:
+	now attack begun is true;
 	Move the guard-robots to the lobby;
 	now guard-robots are seen;
 	now guard-robots are familiar;
@@ -587,6 +590,12 @@ When Lobby Shootout begins:
 	converse "Jones shouts, 'I'm under fire from two ugly robot things!'
 	
 	Beck responds, 'Monitoring your suit radar.'";	
+	
+When Lobby Shootout begins:
+	the attack begins in zero turns from now;
+	
+Instead of doing something when attack begun is false during lobby shootout:
+	do nothing;
 	
 After looking during Lobby Shootout:
 	say "[one of]Two guard robots, red and green, criss-cross the lobby, stalking [us][or]Two guard robots prowl the lobby, trying to outflank [us][or]The guard robots have their head cannons trained on the front desk[at random].";
