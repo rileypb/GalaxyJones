@@ -568,10 +568,13 @@ Rule for constructing the status line while Intro is true:
 
 When play begins:
 	if DEBUG is false:
-		say "Would you like to play with accessibility on? (recommended for mobile)";
+		say "Would you like to play with accessibility on? (recommended for mobile) > ";
 		if the player consents:
 			now accessible is on;
 		lb;
+		if accessible is off:
+			say "If the dashes below fit all on one line, your screen is wide enough. Otherwise, make it wider!";
+			say "[fixed letter spacing]-----------------------------------------------------------------[variable letter spacing][paragraph break]";
 	say "The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.[paragraph break]";
 	say "'Yes?' she says in a voice thick with sleep.[paragraph break]";
 	say "'Hello, is this Galaxy Jones?' comes the voice from the speaker.[paragraph break]";
