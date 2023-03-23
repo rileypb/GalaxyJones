@@ -597,7 +597,7 @@ When Lobby Shootout begins:
 Instead of doing something when attack begun is false during lobby shootout:
 	do nothing;
 	
-After looking during Lobby Shootout:
+After looking when attack begun is true during Lobby Shootout:
 	say "[one of]Two guard robots, red and green, criss-cross the lobby, stalking [us][or]Two guard robots prowl the lobby, trying to outflank [us][or]The guard robots have their head cannons trained on the front desk[at random].";
 	
 Flanking warning is a clip with conversation "Beck: 'Robot on your right!'[line break]".
@@ -606,7 +606,7 @@ Fight clip 7 is a clip with conversation "Beck: 'How's it going in there?'
 
 'Jones: 'You know -- like all art, it's hit or miss.'".
 
-Every turn during lobby shootout:
+Every turn when attack begun is true during lobby shootout:
 	let roll be a random number between 1 and 10;
 	let spoken be false;
 	if roll is 1:
@@ -638,11 +638,11 @@ Every turn during lobby shootout:
 			say line break;
 		print fight clip 7;
 	 
-After quizzing Beck about sculpture during Lobby Shootout:
+After quizzing Beck about sculpture when attack begun is true during Lobby Shootout:
 	say line break;
 	converse "Beck: 'It's huge. Imagine if it fell on you.'";
 	
-After pleading when comment on energy absorption is unused during Lobby Shootout:
+After pleading when attack begun is true and comment on energy absorption is unused during Lobby Shootout:
 	say line break; 
 	converse "Beck: 'I dunno, maybe shoot the robots?'";
 	
@@ -1265,7 +1265,7 @@ The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/gl
 comment on energy absorption is a clip with conversation "[line break]Jones: 'Target seems to be absorbing disruptor fire. This will make things a little harder.'".
 	
 Report shooting a guard robot with the disruptor pistol during Lobby Shootout:
-	say "[one of]Oops! [we] [miss].[or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In [our] haste it goes wide of the target.[or]A barrage of fire from the robots prevents [us] from firing.[or]Oof. Big miss.[or][Our] shot hits [the noun] dead on, but nothing happens, almost as if the robot had absorbed the energy.[print comment on energy absorption][or]A perfect shot! Yet, somehow, the robot is unscathed.[print comment on energy absorption][or][Our] shot goes wide, reflecting off one of the building struts and into the suspended sculpture. The artwork begins to spin wildly, straining its cables.[at random]";
+	say "[one of]Oops! [we] [miss].[or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In her haste it goes wide of the target.[or]A barrage of fire from the robots prevents [us] from firing.[or]Oof. Big miss.[or][Our] shot hits [the noun] dead on, but nothing happens, almost as if the robot had absorbed the energy.[print comment on energy absorption][or]A perfect shot! Yet, somehow, the robot is unscathed.[print comment on energy absorption][or][Our] shot goes wide, reflecting off one of the building struts and into the suspended sculpture. The artwork begins to spin wildly, straining its cables.[at random]";
 	
 Check shooting something with the disruptor pistol:
 	if the noun is not a guard robot and the noun is not the giant sculpture:
