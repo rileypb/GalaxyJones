@@ -4728,11 +4728,12 @@ Although you complete the spell, nothing seems to have happened.
     </item>
     <item nodeId="node-1576">
         <command xml:space="preserve">d</command>
-        <result xml:space="preserve">Jones can't go that way.
+        <result xml:space="preserve">Is jones going to burrow downward?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1577"></child>
+        <children><child nodeId="node-1591"></child>
+            <child nodeId="node-1577"></child>
         </children>
     </item>
     <item nodeId="node-1577">
@@ -4909,6 +4910,49 @@ Jones can't go that way.
 [Rule "show us the people rule" applies.]
 [Rule "reset conversed this turn rule" applies.]
 [Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1591">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">What does Jones want to enter?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1592"></child>
+        </children>
+    </item>
+    <item nodeId="node-1592">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">But Jones isn't in anything at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1593"></child>
+        </children>
+    </item>
+    <item nodeId="node-1593">
+        <command xml:space="preserve">gonear ground hall</command>
+        <result xml:space="preserve">Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1594"></child>
+        </children>
+    </item>
+    <item nodeId="node-1594">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">What does Jones want to enter?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1595"></child>
+        </children>
+    </item>
+    <item nodeId="node-1595">
+        <command xml:space="preserve">out</command>
+        <result xml:space="preserve">But Jones isn't in anything at the moment.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>

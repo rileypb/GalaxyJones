@@ -1684,7 +1684,7 @@ fifth floor elevator shaft is in elevator shaft-region. "The door here is closed
 sixth floor elevator shaft is in elevator shaft-region. "The door here is closed.".
 seventh floor elevator shaft is in elevator shaft-region. "The door here is closed.".
 eighth floor elevator shaft is in elevator shaft-region. "The door here is closed.".
-ninth floor elevator shaft is in elevator shaft-region. "The door here is [if ninth floor elevator door is open]open[otherwise]closed[end if].".
+ninth floor elevator shaft is in elevator shaft-region. "The door here is [if ninth floor elevator door is open]open[otherwise]closed[end if]. It is to the east.".
 
 The conversation of the ninth floor elevator shaft is "Beck: 'Huh. Seems like it should have taken longer than that.'"
 
