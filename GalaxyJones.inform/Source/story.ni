@@ -91,7 +91,7 @@ Before printing the banner text:
 		say line break;
 		
 Before looking for the first time:
-	say "[line break]A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit climbs out of it: [header style]Galaxy Jones.[roman type][line break]";
+	say "[line break]A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit and carrying a disruptor pistol climbs out of it: [header style]Galaxy Jones.[roman type][line break]";
 
 Include (-
 [ Banner;
@@ -474,7 +474,7 @@ Figure of Jones is the file "Cover_Scaled.png".
 
 Instead of examining yourself:
 	if accessible is on:
-		say "Galaxy Jones is tall and strong, dressed in a black bodysuit. She carries a disruptor pistol.";
+		say "Galaxy Jones looks ready to kick ass, dressed in a black bodysuit and carrying a disruptor pistol.";
 	otherwise:
 		display Figure of Jones;
 
@@ -1284,8 +1284,10 @@ The utility-rooms-scenery is a backdrop in the lobby. It is privately-named. The
 
 The niches are scenery in the lobby. "Aside from a robot charging station, there's nothing here." Understand "niche" as niches.
 
-The front desk is scenery in the lobby. It is a pseudocontainer. The contents description is "There's not much on the desk other than a note that says '[doorcode]'.". "There is nothing of interest on the front desk." 
-The note is in the front desk. The description is "The note says '[doorcode]'.".
+The charging stations are scenery in the lobby. "The charging station is a socket fitted in a depression contoured to fit one of those robots." 
+
+The front desk is scenery in the lobby. It is a pseudocontainer. The contents description is "There's not much on the desk other than a sticky note that says '[doorcode]'.". "There is nothing of interest on the front desk." 
+The sticky note is in the front desk. The description is "The note says '[doorcode]'.".
 
 Instead of opening the front desk:
 	say "[We] opens a few drawers, all of which contain paper, pens, and other things of little interest.";
@@ -1398,8 +1400,8 @@ Section 2 - ground-floor-2
 
 The description of ground-floor-2 is "Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west."
 
-The east semicircular couch is a couch in ground-floor-2. The description is "An inoffensive beige couch, shaped in a half-circle, opening towards the west.".
-The west semicircular couch is a couch in ground-floor-2. The description is "An inoffensive beige couch, shaped in a half-circle, opening towards the east.".
+The semicircular couch is a couch in ground-floor-2. The description is "An inoffensive beige couch, shaped in a half-circle.". Understand "couches" as the semicircular couch.
+
 
 The central carpeted path is scenery in ground-floor-2. The description is "A strip of grey carpet running north to south, in the midst of the marble floor. (Incidentally, the massive expense of moving real marble from Earth to Mars is just further proof of Thallium's madness, seriously.)". Understand "carpet/rug" as the central carpeted path.
  
@@ -1520,9 +1522,12 @@ The description of ground-floor-7 is "The centerpiece of this area is the actual
 
 The Viking 2 lander is scenery in ground-floor-7.  "The lander is such a big, ungainly object it's hard to imagine it was once a pinnacle of human achievement."
 
+Instead of entering the Viking 2 lander:
+	say "It's wasn't a manned craft.";
+
 Chapter 5 - Maintenance Closet
 
-The description of the maintenance closet is "A bare, white-walled room containing various maintenance items."
+The description of the maintenance closet is "A bare, white-walled room containing various maintenance items. The exit is to the east."
 
 Instead of exiting when the location is the maintenance closet:
 	try going east;
@@ -1539,26 +1544,26 @@ Check opening the closet door when the closet door is locked:
 	say "[We] will have to enter the correct code on the keypad first." instead;
 	
 Instead of typing doorcode on the keypad:
-	say "An indicator light glows green.";
+	say "An indicator light by the door to the west glows green.";
 	now the closet door is unlocked;
 	say line break;
 	print opened maintenance closet;
 	
 Instead of typing a number on the keypad:
-	say "An indicator light blinks red.";	
+	say "An indicator light by the door to the west blinks red.";	
 	now the closet door is locked;
 	if closet door has not been unlocked:
 		converse "[line break]Jones: 'it[']s not [number understood]...'";
 	
 Instead of typing a number on the keypad for the second time:
-	say "An indicator light blinks red.";	
+	say "An indicator light by the door to the west blinks red.";	
 	now the closet door is locked;
 	if closet door has not been unlocked:
 		converse "[line break]Jones: 'it[']s not [number understood]...'";
 		converse "[line break]Beck: 'I don[']t think you[']ll get it just typing random numbers.'";
 	
 Instead of typing a number on the keypad for the fourth time:
-	say "An indicator light blinks red.";	
+	say "An indicator light by the door to the west blinks red.";	
 	now the closet door is locked;
 	if closet door has not been unlocked: 
 		converse "[line break]Jones: 'it[']s not [number understood]...'";
@@ -4045,7 +4050,7 @@ desks-microthings-2	"Jones can't take desks, and that's that."	"Jones is not her
 desks-microthings-3	"Jones can't take desks, and that's that."	"Jones is not here to rearrange the furniture."
 ductwork	"This is part of the building."
 dummies	"They'd be cumbersome to carry around."	"Jones pushes one over just for fun."
-east semicircular couch	"That's too big to take."	"Jones is not here to rearrange the furniture."
+semicircular couch	"That's too big to take."	"Jones is not here to rearrange the furniture."
 electronic eye	"That's installed in the wall."
 elevator-control-panel	"That's part of the elevator."
 elevator control panel	"That's affixed to the wall."
@@ -4134,7 +4139,6 @@ video screens	"Those are attached to the wall."
 viking 2 lander	"Although it would be nice to return it to its rightful place at the Museum of Martian History, that will have to wait."	"Really, Jones doesn't even feel good about touching such an important relic."
 walls-100	"Don't be silly."
 waterfall	"That's a permanent display."	"Jones splashes the water a little."
-west semicircular couch	"That's too big to take."	"Jones is not here to rearrange the furniture."
 window-thing	"That's part of the building."	"It's not designed to be opened."
 
 
