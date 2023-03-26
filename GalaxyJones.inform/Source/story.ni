@@ -1672,9 +1672,13 @@ The description of the ground floor stairwell is "this is a secret message."
 
 don't take the stairs is a clip with conversation "[line break]Jones: 'In case of fire, don't use the stairs.'"
 
+stairwell trouble is a clip with conversation "[line break]Jones: 'I've got gunfire from somewhere up the stairs. I'll have to get above them and take them out from behind.'
+
+Beck: 'Sounds like a plan.'"
+
 Instead of going to ground floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
-	print don't take the stairs;
+	print stairwell trouble;
 	try looking;
 	
 
@@ -1769,21 +1773,17 @@ The ninth-floor-stairwell is scenery in the ninth floor elevator hall. The print
 
 Instead of going to ninth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
-	say line break;
 	print don't take the stairs;
 	try looking;
 	
-The vending machine is scenery in the ninth floor elevator hall. The vending machine is a transparent, closed container. The bottled water is in the vending machine. The description of the vending machine is "This is a secret message."
+The vending machine is scenery in the ninth floor elevator hall. The vending machine is a transparent, closed container. The bottled water is in the vending machine. "It's a Olympus Springs bottled water machine."
 
 Instead of examining the vending machine:
-	if the vending machine contains the bottled water:
-		say "There is one bottle left.";
-	otherwise:
-		say "The machine is empty.";
+	say "It's an Olympus Springs bottled water machine, well-stocked.";
 
 This is the can't reach inside the vending machine rule:
 	if the container in question is the vending machine:
-		say "[We] willl have to buy it first.";
+		say "[We] will have to buy it first.";
 		deny access;
 
 The can't reach inside the vending machine rule is listed before the can't reach inside closed containers rule in the reaching inside rules.
@@ -1796,10 +1796,13 @@ Instead of buying the bottled water with the coin:
 	remove the coin from play;
 	say "[We] inserts the coin in the machine and takes the bottle that appears a few seconds later.";
 	
+Instead of buying the bottled water with something:
+	say "[The second noun] is not negotiable currency.";
+	
 After deciding the scope of the player when the location is the ninth floor elevator hall and the bottled water is in the vending machine:
 	place the bottled water in scope;
 	
-rule for reaching inside the vending machine while buying the bottled water with the coin:
+rule for reaching inside the vending machine while buying the bottled water with something:
 	allow access;
 	
 The description of the Ninth Floor North Hallway is "This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled 'Cybernetica Inc.'";
@@ -2147,7 +2150,7 @@ Instead of opening the exhaust vent when the player carries the screwdriver:
 Instead of unlocking the exhaust vent with the screwdriver:
 	try unscrewing the exhaust vent with the screwdriver;
 	
-understand "remove [exhaust vent] with [screwdriver]" as unscrewing it with;
+understand "remove [exhaust vent] with [screwdriver]" or "take off [exhaust vent] with [screwdriver]" as unscrewing it with;
 	
 Instead of entering the exhaust vent when the exhaust vent is open for the first time:
 	say "[We] climbs inside the vent, crawls along a short length of ductwork, and emerges through another hinged grille, into the air handling room.";
@@ -2377,7 +2380,6 @@ The ductwork is scenery in the air handling room. "A short length leading from t
 
 Instead of going to tenth floor stairwell:
 	say "As soon as [we] enters the stairwell, a disruptor blast from above zings past [our] shoulder, and [we] beats a hasty retreat. [We] won't be going up the stairs until [we] can clear out the resistance, and [we] can't do that from here.";
-	say line break;
 	print don't take the stairs;
 	try looking;
 	
