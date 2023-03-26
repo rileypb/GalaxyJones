@@ -1375,7 +1375,7 @@ The room-ceiling of the ground-floor-7 is the ground-floor-ceiling.
 
 Section 1 - ground-floor-1
 
-The description of ground-floor-1 is "A lush waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east."
+The description of ground-floor-1 is "A lush indoor waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east."
 
 The waterfall is a scenery pseudocontainer in ground-floor-1. "The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again." The contents description is "The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin." 
 
@@ -1689,7 +1689,7 @@ fifth floor elevator shaft is in elevator shaft-region. "The door here is closed
 sixth floor elevator shaft is in elevator shaft-region. "The door here is closed.".
 seventh floor elevator shaft is in elevator shaft-region. "The door here is closed.".
 eighth floor elevator shaft is in elevator shaft-region. "The door here is closed.".
-ninth floor elevator shaft is in elevator shaft-region. "The door here is [if ninth floor elevator door is open]open[otherwise]closed[end if]. It is to the east.".
+ninth floor elevator shaft is in elevator shaft-region. "The door to the east is [if ninth floor elevator door is open]open[otherwise]closed[end if].".
 
 The conversation of the ninth floor elevator shaft is "Beck: 'Huh. Seems like it should have taken longer than that.'"
 
@@ -3326,9 +3326,17 @@ When play begins:
 Rule for clarifying the parser's choice of something when quizzing and the noun is beck:
 	do nothing;
 
-Before quizzing beck about something:
+Before quizzing beck about something when the noun is not beck and the noun is not the player:
 	lb;
 	converse "Jones: 'Beck, [one of]what do you think about [the second noun]?[or]tell me about [the second noun].[or]how about [the second noun]?[at random]'[run paragraph on][line break]";
+
+Before quizzing beck about beck:
+	lb;
+	converse "Jones: 'How're you doing, Beck?'";
+
+Before quizzing beck about the player:
+	lb;
+	converse "Jones: 'How's my status?'";
 
 Before quizzing beck about a room:
 	lb;
@@ -3634,7 +3642,7 @@ Instead of quizzing Beck about the window washing scaffold:
 	converse "Beck: 'How nice of them to put this here for us.'";
 
 Instead of quizzing Beck about the yourself:
-	converse "Beck: 'Well, I think you're very nice, Jones.'";
+	converse "Beck: 'All systems look good.'";
 	
 Table of Interesting Things
 item (a thing)
