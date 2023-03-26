@@ -697,11 +697,11 @@ When Cybernetica Battle begins:
 	 
 	Beck: 'What's the situation?'
 	
-	Jones: 'I[']m on the floor with desks and chairs all around. The target is a few yards off, coming this way. I might get a shot in, but it might just absorb it anyway.'
+	Jones: 'I[']m on the floor with desks and chairs all around. The target is a few yards off, coming this way. I can get a shot in, but it might just absorb it anyway.'
 	
 	Beck: 'Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses.'";	
 
-Sneaking up on is an action applying to one visible thing. Understand "sneak up on [something]", "sneak toward [something]", "crawl toward [something]", "move toward [something]", "creep up on [something]", "creep toward [something]", "follow [something]", "get closer to [something]" as sneaking up on.
+Sneaking up on is an action applying to one visible thing. Understand "sneak up on [something]", "sneak toward [something]", "crawl toward [something]", "move toward [something]", "creep up on [something]", "creep toward [something]", "follow [something]", "get closer to [something]", "move closer to [something]" as sneaking up on.
 
 sneak index is a number that varies. The sneak index is initially 3.
 
@@ -739,7 +739,7 @@ report sneaking up on the purple guard robot:
 		change inside exit of ledge to Cybernetica office;
 		now the Cybernetica office is window-broken;
 	otherwise:
-		say "[We] is right up next to the robot, crouched beneath a desk. She'll never get a better shot.";
+		say "[We] is right up next to the robot, crouched beneath a desk. She can see right up under its armor.";
 		
 useless shooting is a clip with conversation "Beck: 'Are you still shooting at those things? Even if you hit [']em it's not going to leave a scratch.'
 
@@ -774,8 +774,11 @@ Check dropping something when the location is the ledge:
 	
 dithering is an action applying to nothing. 
 Understand "stand up", "get up", "stand" as dithering when the location is the cybernetica office.
-Instead of dithering:
-	say "You are already standing up.";
+Instead of dithering when cybernetica battle has ended:
+	say "Jones is already standing up.";
+
+Instead of dithering during cybernetica battle:
+	say "That would be suicide.";
 
 Volume 6 - Things
 
@@ -855,7 +858,7 @@ Carry out swiping:
 	
 Definition: a white board is blank if the writing of it is empty.
 
-A white board is a kind of thing. A white board has a text called the writing. The description is "[if not blank]The board says '[writing]'[otherwise]The board is blank[end if].".
+A white board is a kind of thing. A white board has a text called the writing. The description is "[if not blank]The board says '[writing]'[otherwise]The board is blank[end if]. A black marker with an eraser at the end is tied to the board.".
 
 Writing is an action applying to one topic. Understand "write [text]" as writing.
 
@@ -1237,7 +1240,7 @@ Chapter 2 - Building Entryway
 
 The description of the entry doorway is "A glass revolving door leads into a large open space north of here. The speeder dock is to the south.".
 
-The conversation of the entry doorway is "Jones peers upwards at the 100 stories of glass and steel. 'What do you want to bet Thallium's got Europa all the way at the top?'
+The conversation of the entry doorway is "Jones looks up at the 100 stories of glass and steel. 'What do you want to bet Thallium's got Europa all the way at the top?'
 
 Beck: 'Oh, no doubt.'";
 
@@ -1252,6 +1255,9 @@ Before going from entry doorway to lobby for the first time:
 	
 Check climbing the building:
 	say "Even if that were feasible, Jones is afraid of heights." instead;
+
+Instead of examining up when the location is the entry doorway:
+	say "Beyond the glass ceiling, the building looms 100 stories tall.";
 
 Chapter 3 - Lobby
 
@@ -1829,7 +1835,7 @@ Before going from Cybernetica office to ledge when the Atmo-Suit is touchable an
 
 The cybernetica-desks are scenery in the Cybernetica office. They are privately-named. The printed name is "desks". Understand "desk/desks/chair/chairs/furniture" as the cybernetica-desks. "Very nice and good for hiding under and among."
 
-Broken-window is scenery in the Cybernetica office. It is privately-named. The printed name is "broken window". Understand "broken/window/east/eastern" as broken-window. "Looks like [we] could get through if [we're] careful."
+Broken-window is scenery in the Cybernetica office. It is privately-named. The printed name is "broken window". Understand "broken/window/east/eastern" as broken-window. "Looks like [we] could get through if [we're] careful. There's a ledge outside."
 
 Instead of doing something to the purple guard robot when the action requires a touchable noun:
 	say "Fine way for Jones to get herself killed.";
@@ -1838,7 +1844,9 @@ The open area is scenery in the Cybernetica office. "A rectangular region free o
 	
 Chapter 2 - Outside
 
-The description of the ledge is "She's plastered up against the wall, trying not to look down[if the floor of the window washing scaffold is 10]. The scaffold is right above [our] head[end if].".
+The description of the ledge is "The ledge runs north and south. Jones is plastered up against the wall, trying not to look down[if the floor of the window washing scaffold is 10]. The scaffold is right above [our] head[end if][if the window washing scaffold is discovered and the floor of the window washing scaffold is 8]. The scaffold is right below [us][end if].".
+
+The metal cables are scenery in the ledge. Understand "cable" as the metal cables. "They look very tense. They run up and down."
 
 flying is an action applying to nothing. Understand "fly" as flying.
 
@@ -1901,7 +1909,7 @@ Beck: 'Well, there's the open window right next to you.'";
 
 explaining the vent is a clip with conversation "Jones: 'Alright, I'm by the tenth floor now. What's this grille thing here?' 
 
-Beck: 'That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can get the cover off you should be able to access the whole floor from here.'"
+Beck: 'That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can remove the cover you should be able to access the whole floor from here.'"
 
 Carry out looking when the location is the window washing scaffold (this is the describe the scaffold rule):
 	if the floor of the window washing scaffold is 8:
@@ -2104,7 +2112,7 @@ To set exits from scaffold:
 
 Check pushing the scaffold up button:
 	if the floor of the window washing scaffold is 10:
-		say "Nothing happens." instead;
+		say "The scaffold is as far up as it will go." instead;
 		
 Carry out pushing the scaffold up button:
 	increment the floor of the window washing scaffold;
@@ -2117,7 +2125,7 @@ Report pushing the scaffold up button:
 
 Check pushing the scaffold down button:
 	if the floor of the window washing scaffold is 8:
-		say "Nothing happens." instead;
+		say "The scaffold is as far down as it will do." instead;
 		
 Carry out pushing the scaffold down button:
 	decrement the floor of the window washing scaffold;
@@ -3328,9 +3336,9 @@ When play begins:
 Rule for clarifying the parser's choice of something when quizzing and the noun is beck:
 	do nothing;
 
-Before quizzing beck about something when the noun is not beck and the noun is not the player:
-	lb;
-	converse "Jones: 'Beck, [one of]what do you think about [the second noun]?[or]tell me about [the second noun].[or]how about [the second noun]?[at random]'[run paragraph on][line break]";
+Before quizzing beck about something when the second noun is not beck and the second noun is not the player:
+	say "";
+[	converse "Jones: 'Beck, [one of]what do you think about [the second noun]?[or]tell me about [the second noun].[or]how about [the second noun]?[at random]'[run paragraph on][line break]";]
 
 Before quizzing beck about beck:
 	lb;
@@ -3506,7 +3514,7 @@ Instead of quizzing Beck about the garish medal:
 	converse "Beck: '[if safety pin is not seen]Might as well take a look at it[otherwise]It's really pretty disgraceful[end if].'";
 
 Instead of quizzing Beck about the giant sculpture:
-	converse "Beck: 'While I normally dislike Rambutan's work, this one has a certain power to it.'";
+	converse "Beck: 'While I normally dislike Rambutan's work, this one has a certain power to it[if the giant sculpture is nowhere]. It's even better in thousands of tiny pieces[end if].'";
 
 Instead of quizzing Beck about the glass diamond when the glass diamond is not discovered:
 	converse "Beck: 'How much do you think it's worth?'";
@@ -3629,7 +3637,7 @@ Instead of quizzing Beck about the statue of admiral thallium:
 	converse "Beck: 'We'll come back and knock it over later.'";
 
 Instead of quizzing Beck about the tangled ruin when the hook cable is not familiar:
-	converse "Beck: 'Might be something useful in there.";
+	converse "Beck: 'Might be something useful in there.'";
 
 Instead of quizzing Beck about the Utopia Tower:
 	converse "Beck: 'Sure is big.'";
@@ -3977,8 +3985,10 @@ north end of the building management office	--	"Jones can leave through a doorwa
 south end of the building management office	--	"Jones can leave through a doorway to the east, or go north to the other end of the office."
 Martian Chemical office	--	"The only way to leave the office is through the door to the west."
 Cybernetica office	--	"Jones can leave through the door to the west[if cybernetica office is window-broken]. She can also go east through the broken window[end if]."
+Ledge	{north, south}	"A metal cable running up and down halts Jones's progress in that direction."
 Ledge	--	"That would send Jones plummeting to her death."
-Ledge	{up, down}	"If only Jones could climb walls."
+Ledge	{up}	"If only Jones could climb walls."
+Ledge	{down}	"Go down? Jones doesn't even want to [italic type]look[roman type] down."
 Window Washing Scaffold	{up,down}	"If you want to go up and down, use the buttons."
 Window Washing Scaffold	--	"That way leads to a quick death."
 air handling room	--	"Jones can go west through the door, or east back out to the scaffold."
