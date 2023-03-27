@@ -316,8 +316,8 @@ Book 6 - Glulx Styles
 
 Table of User Styles (continued)
 style name	color	italic	indentation
-special-style-1	"#0000FF"	false	19
-special-style-2	"#0000FF"	true	19
+special-style-1	"#0000FF"	false	0
+special-style-2	"#0000FF"	true	0
 
 Book 7 - Post-look text queueing
 
@@ -701,7 +701,7 @@ When Cybernetica Battle begins:
 	
 	Beck: 'Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses.'";	
 
-Sneaking up on is an action applying to one visible thing. Understand "sneak up on [something]", "sneak toward [something]", "crawl toward [something]", "move toward [something]", "creep up on [something]", "creep toward [something]", "follow [something]", "get closer to [something]", "move closer to [something]" as sneaking up on.
+Sneaking up on is an action applying to one visible thing. Understand "sneak up on [something]", "sneak toward/towards [something]", "crawl toward/towards [something]", "move toward/towards [something]", "creep up on [something]", "creep toward/towards [something]", "follow [something]", "get closer to [something]", "move closer to [something]" as sneaking up on.
 
 sneak index is a number that varies. The sneak index is initially 3.
 
@@ -1300,10 +1300,12 @@ Instead of opening the front desk:
 	
 The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/glass/crystal/abstraction/cables/installation" as the giant sculpture. "It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan. It's held up by metal cables."
 
-comment on energy absorption is a clip with conversation "[line break]Jones: 'Target seems to be absorbing disruptor fire. This will make things a little harder.'".
+comment on energy absorption is a clip with conversation "[line break]Jones: 'Target seems to be absorbing disruptor fire. This will make things a little harder.'
+
+Beck: 'Got it.'".
 	
 Report shooting a guard robot with the disruptor pistol during Lobby Shootout:
-	say "[one of]Oops! [we] [miss].[or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In her haste it goes wide of the target.[or]A barrage of fire from the robots prevents [us] from firing.[or]Oof. Big miss.[or][Our] shot hits [the noun] dead on, but nothing happens, almost as if the robot had absorbed the energy.[print comment on energy absorption][or]A perfect shot! Yet, somehow, the robot is unscathed.[print comment on energy absorption][or][Our] shot goes wide, reflecting off one of the building struts and into the suspended sculpture. The artwork begins to spin wildly, straining its cables.[at random]";
+	say "[one of]Oops! [we] [miss].[or][We] [stick] [our] head out from behind the desk and squeezes off a shot at [the noun]. In her haste it goes wide of the target.[or]A barrage of fire from the robots prevents [us] from firing.[or]Oof. Big miss.[or][Our] shot hits a robot dead on, but nothing happens, almost as if the robot had absorbed the energy.[print comment on energy absorption][or]A perfect shot! Yet, somehow, the robot is unscathed.[print comment on energy absorption][or][Our] shot goes wide, reflecting off one of the building struts and into the suspended sculpture. The artwork begins to spin wildly, straining its cables.[at random]";
 	
 Check shooting something with the disruptor pistol:
 	if the noun is not a guard robot and the noun is not the giant sculpture:
@@ -1394,7 +1396,7 @@ Understand "water/basin" as waterfall.
 
 The wide-leaved Earth plants are part of the waterfall. The description of the wide-leaved Earth plants is "Imported plants are a must on Mars, to relieve the stress of living on a lifeless world.". Understand "ferns" as the wide-leaved Earth plants.
 
-The coin is in the waterfall. The description is "A one-Areo coin, with Ares on the front and the Viking 2 lander on the back.".
+The coin is in the waterfall. The description is "A one-Areo coin, with Ares on the front and the Viking 2 lander on the back.". Understand "money/cash" as the coin.
 
 Instead of drinking the waterfall:
 	say "Jones decides the water probably isn't clean enough to drink."
@@ -1595,7 +1597,7 @@ The description of the ground floor elevator hall is "This hallway between the n
 
 The ground-floor-stairwell is scenery in the ground floor elevator hall. The printed name is "stairwell". Understand "stairwell/stairs" as the ground-floor-stairwell. "They lead up from here."
 
-The elevator-shaft is scenery in the ground floor elevator hall. It is privately-named. The printed name is "elevator shaft". Understand "elevator/lift/shaft" as the elevator-shaft. The description is "A dark hole beyond the elevator doors."
+The elevator-shaft is scenery. It is privately-named. The printed name is "elevator shaft". Understand "elevator/lift/shaft" as the elevator-shaft. The description is "A dark hole beyond the elevator doors."
 
 [Does the player mean using drop key with the ground floor elevator door:
 	it is very likely;]
@@ -1623,6 +1625,7 @@ The drop-key-hole is a part of the ground floor elevator door. It is privately-n
 Instead of unlocking the ground floor elevator door with the drop key when the ground floor elevator door is closed:
 	safely open the elevator door;
 	say "[We] inserts [the drop key] into [the drop-key-hole] and turns it, disengaging the lock mechanism. Then [we] slides the door open, exposing an empty elevator shaft to the west.";
+	now the elevator-shaft is in the ground floor elevator hall.
 	
 Instead of unlocking the ground floor elevator door with the drop key when the ground floor elevator door is open:
 	say "The [ground floor elevator door] is already open.";
@@ -1846,7 +1849,7 @@ Chapter 2 - Outside
 
 The description of the ledge is "The ledge runs north and south. Jones is plastered up against the wall, trying not to look down[if the floor of the window washing scaffold is 10]. The scaffold is right above [our] head[end if][if the window washing scaffold is discovered and the floor of the window washing scaffold is 8]. The scaffold is right below [us][end if].".
 
-The metal cables are scenery in the ledge. Understand "cable" as the metal cables. "They look very tense. They run up and down."
+The metal cables are scenery in the ledge. Understand "cable" as the metal cables. "It looks very tense. It runs up and down."
 
 flying is an action applying to nothing. Understand "fly" as flying.
 
@@ -1862,7 +1865,10 @@ check climbing the ledge-wall:
 	say "Wall-climbing is not among Galaxy Jones's many talents." instead;
 	
 Instead of examining down when the location is the ledge for the first time:
-	say "Okay, fine. [We] look down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below [us].[paragraph break]";
+	say "Are you sure? Jones is really afraid of heights.";
+	
+Instead of examining down when the location is the ledge for the second time:
+	say "Okay, fine. [We] looks down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below [us].[paragraph break]";
 	change down exit of the ledge to window washing scaffold;
 	converse "Jones: 'Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up.'
 	
@@ -2260,6 +2266,7 @@ The south-desks are scenery in the south end of the building management office. 
 
 The south-task-boards are scenery in the south end of the building management office. They are privately-named. They are a white board. The printed name is "task boards". Understand "task/tasks/board/boards" as south-task-boards. The writing is "Jones is coming, surprise day off!".	
 A screwdriver is in the south end of the building management office. "A screwdriver sits atop the filing cabinet." The description is "A standard Phillips screwdriver with a red plastic handle."
+Understand "tool" as a screwdriver.
 
 The black cat is an animal. The description is "It's really a beautiful cat, sleek and black.". It is undescribed.
 
@@ -2454,7 +2461,7 @@ Instead of sneaking up on the mauve guard robot:
 oldloc is a room that varies.
 
 Report shooting the mauve guard robot with the disruptor pistol:
-	say "[one of]The shot goes wide[or]The shot is absorbed by the mauve robot[or]The shot narrowly misses the guard robot[or]The strikes a window and reflects at a crazy angle around the room[at random].";
+	say "[one of]The shot goes wide[or]The shot is absorbed by the mauve robot[or]The shot narrowly misses the guard robot[or]The beam strikes a window and reflects at a crazy angle around the room[at random].";
  
 Before going somewhere when the player is in tenth-floor-region and the mauve guard robot is somewhere:
 	now oldloc is room of stuff;
@@ -2514,7 +2521,7 @@ Instead of opening the present:
 
 Chapter 3 - The Elevator Car
 	
-The golden keyhole is scenery in the elevator car-room. "Inset in the mahogany panel, it looks like real gold and has the shape of an antique 'skeleton' key."
+The golden keyhole is scenery in the elevator car-room. "Inset in the mahogany panel, it looks like real gold and has the shape of an antique 'skeleton' key." Understand "hole" as the golden keyhole.
 
 Check inserting something that is not the golden key into the golden keyhole:
 	say "That doesn't fit." instead;
@@ -2781,7 +2788,7 @@ The penthouse-east-walls is scenery in penthouse east. It is privately-named. Th
 
 Admiral Thallium's logo is scenery in penthouse east. "The ten planets in order overlaid with the motto 'Planetas Vincam'." Understand "motto/planets/planet/ten" as Thallium's logo.
 
-the penthouse south has description "This must be Thallium's 'treasure room', to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.". The printed name is "southern corner of the penthouse".
+the penthouse south has description "This must be Thallium's 'treasure room', to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. [if the glass shards are in penthouse south]Broken glass litters the floor. [end if]The penthouse continues to the northwest, north, and northeast.". The printed name is "southern corner of the penthouse".
 
 The treasure is scenery in penthouse south. "A wall of diamonds is treasure enough, don't you think?" Understand "wealth" as treasure.
 
@@ -2838,12 +2845,15 @@ Check attacking something with something:
 Check attacking the array of diamonds when the glass diamond is not discovered:
 	say text of the block attacking rule response (A);
 	say line break instead;
+	
+Some glass shards are scenery. "The remains of dozens of glass diamonds litter the floor."
 
 Instead of attacking the array of diamonds with the hammer when the glass diamond is discovered for the first time:
 	say "[We] commences to smash all of the diamonds. After destroying several dozen fraudulent gems, [we] finds one that won't break. [We] takes the real diamond.[paragraph break]";
 	now the player carries the real diamond;
 	now the real diamond is seen;
 	now the real diamond is familiar;
+	now the glass shards are in penthouse south;
 	converse "Thallium: 'Wow, clever solution. Be careful you don't cut yourself.'
 	
 	Jones: 'I appreciate your concern.'";
@@ -2864,7 +2874,7 @@ Instead of taking the array of diamonds when the glass diamond is somewhere:
 Instead of taking the array of diamonds when the glass diamond is discovered and the glass diamond is nowhere and the real diamond is nowhere:
 	say "[We] will never find the real diamond this way.".
 
-the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
+the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. [if the control panel is nowhere]Thallium's personal insignia, the ten planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. [else]A control panel is set into the outer wall. [end if]In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
 
 The metal pillar is scenery in the penthouse west. "It's actually wrought iron, and it holds up the claw." Understand "column" as pillar.
 The claw is part of the metal pillar. It is a container with carrying capacity 1. The description is "It looks like it could grip a small object.". It is fixed in place.
@@ -3237,6 +3247,7 @@ Instead of giving the bottled water to Europa when the cage is broken:
 	converse "...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.";
 	say line break;
 	converse as thallium "And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...";
+	say line break; 
 	continue;
 	end the story finally saying "The End, For Now..."
 	
@@ -3322,8 +3333,8 @@ Volume 10 - Speech
  
 Book 1 - Talking to Beck
 
-Understand "ask [someone] about [room]" as quizzing it about.
-Understand "ask about [any visited room]" or "a [room]" as implicit-quizzing.
+Understand "ask [someone] about [any visited room]" as quizzing it about.
+Understand "ask about [any visited room]" or "a [any visited room]" as implicit-quizzing.
 
 A thing can be interesting or dull. A thing is usually dull.
 
@@ -3335,6 +3346,10 @@ When play begins:
 		
 Rule for clarifying the parser's choice of something when quizzing and the noun is beck:
 	do nothing;
+	
+
+Before quizzing beck about a room:
+	say "";
 
 Before quizzing beck about something when the second noun is not beck and the second noun is not the player:
 	say "";
@@ -3348,11 +3363,14 @@ Before quizzing beck about the player:
 	lb;
 	converse "Jones: 'How's my status?'";
 
-Before quizzing beck about a room:
+[Before quizzing beck about a room:
 	lb;
-	converse "Jones: 'Beck, [one of]what do you think about [the second noun]?[or]tell me about [the second noun].[or]how about [the second noun]?[at random]'[run paragraph on][line break]";
+	converse "Jones: 'Beck, [one of]what do you think about [the second noun]?[or]tell me about [the second noun].[or]how about [the second noun]?[at random]'[run paragraph on][line break]";]
 		
 Instead of quizzing beck about something that is not quizzable:
+	converse "Beck: 'I don't have much to say about that.'";
+	
+Instead of quizzing beck about a room: 
 	converse "Beck: 'I don't have much to say about that.'";
 
 After deciding the scope of the player:
@@ -3904,7 +3922,7 @@ not to mention [cmd]POUR[xcmd], [cmd]TYPE[xcmd], [cmd]OPEN[xcmd], [cmd]CLOSE[xcm
 
 Instead of asking Beck about "credits":
 	lb;
-	converse "'Here are the credits:'";
+	converse "'The people responsible:'";
 	lb;
 	show basic credits;
 
@@ -4196,7 +4214,7 @@ the description of light-meter is "no need for a description".
 	
 Volume 14 - Not for release
 
-DEBUG is true. 
+DEBUG is true . 
 
 Understand "* [text]" as a mistake ("Noted.").
 
@@ -4208,7 +4226,7 @@ Carry out drop keying:
 
 Volume 15 - Tests
 
-test elevator with "n/n/z/shoot art/x art/e/n/type 0/w/take all/e/x table/take all/n/x medals/take medal/x medal/take pin/w/w/s/unlock door with red keycard/e/take all/w/s/x waterfall/take coin/e/n/open elevator with drop key".
+test elevator with "n/n/z/z/shoot art/x art/e/n/type 0/w/take all/e/x table/take all/n/x medals/take medal/x medal/take pin/w/w/s/unlock door with red keycard/e/take all/w/s/x waterfall/take coin/e/n/open elevator with drop key".
 test ninth with "test elevator/w/u/e".
 test mgmt with "test ninth/buy water with coin/n/w/pick desk lock with pin/take black card/s/take screwdriver/look behind cabinet/drop shrimp/e".
 test ledge with "test mgmt/unlock door with black cardkey/e/take gel from cabinet/w/n/n/unlock door with black cardkey/e/sneak up on robot/sneak up on robot/sneak up on robot/shoot robot/s/n/e".

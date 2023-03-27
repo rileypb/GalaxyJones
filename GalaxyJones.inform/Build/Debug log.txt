@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 35544 words long.
+I've now read your source text, which is 35641 words long.
 
 
 -----------------------------------------------------
@@ -69,7 +69,7 @@ Phase VI ... Semantic analysis III
 Phase VII ... First pass through assertions
 -----------------------------------------------------
 
-    Regional: CONSTANT_VNT'the rooftop'-region()(I362'rooftop')
+    Regional: CONSTANT_VNT'the rooftop'-region()(I363'rooftop')
      == region
 
 
@@ -109,9 +109,9 @@ Regional: CONSTANT_VNT'tenth-floor-region'-region(I261_tenth_floor_region)(I174'
  == region
 Regional: CONSTANT_VNT'tenth-floor-region'-region(I261_tenth_floor_region)(I174'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I451_rooftop)(I362'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I452_rooftop)(I363'rooftop')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I451_rooftop)(I362'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I452_rooftop)(I363'rooftop')
  == region
 Regional: CONSTANT_VNT'the ninth-floor'-region(I240_ninth_floor)(I153'ninth-floor')
  == region
@@ -119,7 +119,7 @@ Regional: CONSTANT_VNT'the tenth-floor-region'-region(I261_tenth_floor_region)(I
  == region
 Regional: CONSTANT_VNT'the 100th-floor-region'-region(I421_100th_floor_region)(I333'100th-floor-region')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I451_rooftop)(I362'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I452_rooftop)(I363'rooftop')
  == region
 Regional: CONSTANT_VNT'the tenth-floor-region'-region(I261_tenth_floor_region)(I174'tenth-floor-region')
  == region
@@ -227,7 +227,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 162 files written as streams.
-CPU time: 371 centiseconds
+CPU time: 359 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
