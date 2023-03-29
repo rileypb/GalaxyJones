@@ -432,7 +432,7 @@ Report frotzing something when the noun is not the player:
 Book 1 - Counting moves
 
 Move Count is a number that varies. 
-Max Move Count is always 10.
+Max Move Count is always 6.
 
 Before doing something other than going:
 	now move count is 0;
@@ -548,7 +548,7 @@ report examining something:
 		converse the conversation of the noun;
 		now the noun is used;
 		
-A clip is a kind of thing. A clip is privately-named. A clip can be conversational or descriptive or taunting. A clip is usually conversational. The description is "no need for a description".
+A clip is a kind of object. A clip can be conversational or descriptive or taunting. A clip is usually conversational.
 
 To say print (C - a clip):
 	print C;
@@ -565,6 +565,7 @@ To print (C - a clip):
 			converse as thallium the conversation of C;
 			say line break;
 		if not expanding text for comparison purposes, now C is used;
+		now clip this turn is true;
 	
 Volume 5 - Plot
 
@@ -630,6 +631,10 @@ Instead of doing something when attack begun is false during lobby shootout:
 After looking when attack begun is true during Lobby Shootout:
 	say "[one of]Two guard robots, red and green, criss-cross the lobby, stalking [us][or]Two guard robots prowl the lobby, trying to outflank [us][or]The guard robots have their head cannons trained on the front desk[at random].";
 	
+Clip this turn is a truth state that varies.
+Every turn:
+	now clip this turn is false;
+	
 Flanking warning is a clip with conversation "Beck: 'Robot on your right!'[line break]".
 Fight clip 6 is a clip with conversation "Jones: 'I could use some ideas here!'".
 Fight clip 7 is a clip with conversation "Beck: 'How's it going in there?'
@@ -658,15 +663,16 @@ Every turn when attack begun is true during lobby shootout:
 	if roll is 6:
 		say "The two robots coordinate fire over the desk, narrowly missing [us]."; 
 		now spoken is true;
-	let roll2 be a random number between 1 and 7;
-	if roll2 is 6:				
-		if spoken is true and fight clip 6 is unused:
-			say line break;
-		print fight clip 6;
-	if roll2 is 7:
-		if spoken is true and fight clip 7 is unused:
-			say line break;
-		print fight clip 7;
+	if clip this turn is false:
+		let roll2 be a random number between 1 and 7;
+		if roll2 is 6:				
+			if spoken is true and fight clip 6 is unused:
+				say line break;
+			print fight clip 6;
+		if roll2 is 7:
+			if spoken is true and fight clip 7 is unused:
+				say line break;
+			print fight clip 7;
 	 
 After quizzing Beck about sculpture when attack begun is true during Lobby Shootout:
 	say line break;
@@ -3978,7 +3984,7 @@ entry doorway	--	"Jones is already at the main entrance. She's unlikely to find 
 lobby	--	"Jones can go south out of the building or north to the elevator. The ground floor continues east and west."
 lobby	{northeast, northwest}	"That would just get Jones lost in a maze of couches."
 ground-floor-1	--	"Jones can't walk through walls. Try north or east."
-ground-floor-1	{northeast}	"Jones is blocked by an impenetrable wall of phildendrons. North or east would be easier."
+ground-floor-1	{northeast}	"Jones is blocked by an impenetrable wall of philodendrons. North or east would be easier."
 ground-floor-2	--	"Jones can't walk through walls. Try north or south, or the door to the east."
 ground-floor-2	{northeast, southeast}	"Instead of plowing through the sea of furniture, Jones should try going north, south, or east."
 ground-floor-3	--	"Jones can't walk through walls. She can go east or south from here."
@@ -3989,7 +3995,7 @@ ground-floor-4	--	"That would lead Jones right into a wall."
 ground-floor-5	--	"Jones can't walk through walls. She can go south or west from here."
 ground-floor-5	{southwest}	"That way is blocked by the memorabilia display."
 ground-floor-6	{east}	"Jones almost bumps into a glass wall."
-ground-floor-6	--	"Jones can go south or north, or through a door to the east."
+ground-floor-6	--	"Jones can go south or north, or through a door to the west."
 ground-floor-7	{northwest}	"That would lead directly through the Viking 2 lander."
 ground-floor-7	--	"That way leads through the glass wall."
 ground floor elevator hall	--	"That way leads straight into a wall."
