@@ -732,7 +732,6 @@ After doing something other than sneaking up on the guard robot during Cyberneti
 	if sneak index < 3 and the purple guard robot is in the Cybernetica office:
 		increment sneak index;
 		say "The guard robot moves a little farther away from [us].";
-		stop the action;
 	continue the action;
 		
 Shoot out the window is a descriptive clip with conversation "[We] must have poked up [our] shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out."
@@ -744,13 +743,19 @@ report sneaking up on the purple guard robot:
 		say "Slowly, slowly, [we] gets a little closer. Just a little more...";
 		say line break;
 		print shoot out the window;
-		change east exit of Cybernetica office to ledge;
-		change west exit of ledge to Cybernetica office;
-		change outside exit of Cybernetica office to ledge;
-		change inside exit of ledge to Cybernetica office;
+		now bwindow is in Cybernetica office;
 		now the Cybernetica office is window-broken;	
 	otherwise:
 		say "[We] is right up next to the robot, crouched beneath a desk. She can see right up under its armor.";
+		
+A thing can be navigable.
+		
+After examining the bwindow:
+	change east exit of Cybernetica office to ledge;
+	change west exit of ledge to Cybernetica office;
+	change outside exit of Cybernetica office to ledge;
+	change inside exit of ledge to Cybernetica office;
+	now bwindow is navigable;
 		
 useless shooting is a clip with conversation "Beck: 'Are you still shooting at those things? Even if you hit [']em it's not going to leave a scratch.'
 
@@ -1849,7 +1854,9 @@ Before going from Cybernetica office to ledge when the Atmo-Suit is touchable an
 
 The cybernetica-desks are scenery in the Cybernetica office. They are privately-named. The printed name is "desks". Understand "desk/desks/chair/chairs/furniture" as the cybernetica-desks. "Very nice and good for hiding under and among."
 
-Broken-window is scenery in the Cybernetica office. It is privately-named. The printed name is "broken window". Understand "broken/window/east/eastern" as broken-window. "Looks like [we] could get through if [we're] careful. There's a ledge outside."
+bwindow is scenery. It is privately-named. The printed name is "broken window". Understand "broken/window/east/eastern" as bwindow. "Looks like [we] could get through if [we're] careful. There's a ledge outside."
+
+Does the player mean examining the bwindow: it is very likely;
 
 Instead of doing something to the purple guard robot when the action requires a touchable noun:
 	say "Fine way for Jones to get herself killed.";
@@ -4030,7 +4037,7 @@ ninth floor south hallway	--	"There's an open doorway to the west, a door to the
 north end of the building management office	--	"Jones can leave through a doorway to the east, or go south to the other end of the office."
 south end of the building management office	--	"Jones can leave through a doorway to the east, or go north to the other end of the office."
 Martian Chemical office	--	"The only way to leave the office is through the door to the west."
-Cybernetica office	--	"Jones can leave through the door to the west[if cybernetica office is window-broken]. She can also go east through the broken window[end if]."
+Cybernetica office	--	"Jones can leave through the door to the west[if the bwindow is navigable]. She can also go east through the broken window[end if]."
 Ledge	{north, south}	"A metal cable running up and down halts Jones's progress in that direction."
 Ledge	--	"That would send Jones plummeting to her death."
 Ledge	{up}	"If only Jones could climb walls."
@@ -4090,7 +4097,7 @@ Admiral Thallium's flyer	"Jones can't even reach it."	"Don't be silly."
 Admiral Thallium's clothes	"Jones would rather not touch his clothes."
 Air handling door	"No taking doors."	"Aside from opening and closing [regarding the noun][them], what is there to do?"
 bed	"It's too big to take."	"The frame is built into the floor here."
-broken-window	"Broken glass is unlikely to be useful outside of a prison fight or a bar brawl."	"The window isn't going anywhere."
+bwindow	"Broken glass is unlikely to be useful outside of a prison fight or a bar brawl."	"The window isn't going anywhere."
 building entryway	"Not gonna happen."
 cafeteria	"Not likely."
 cage-thing	"It's firmly attached to the roof."
