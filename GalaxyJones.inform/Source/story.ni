@@ -153,6 +153,8 @@ The unlocking before opening rule is not listed in any rulebook.
 
 Understand "room" as a room.
 
+the can't drop what's already dropped rule does nothing.
+
 Book 1 - Special text substitution code
 
 Include (-
@@ -626,6 +628,9 @@ When Lobby Shootout begins:
 	the attack begins in zero turns from now;
 	
 Instead of doing something when attack begun is false during lobby shootout:
+	do nothing;
+	
+Instead of doing something to something when attack begun is false during lobby shootout:
 	do nothing;
 	
 After looking when attack begun is true during Lobby Shootout:
@@ -1223,17 +1228,17 @@ The conversation of the speeder dock is "[reset LPR][Our] handler Beck comes ove
 
 'And one other thing, Jones: if you need help you can [bold type]ASK BECK FOR HELP[special-style-1]. You can also [bold type]ASK BECK ABOUT[special-style-1] things or [bold type]ASK BECK ABOUT GAME[special-style-1] for more information about the game. Finally, you can cause help to repeat from the beginning by saying [bold type]ASK BECK TO RESET HELP[special-style-1]'".
 
-The speeder-vehicle is a fixed in place thing in the speeder dock. It is privately-named. The printed name is "speeder". Understand "speeder/vehicle/car/landspeeder/galaxy/one" as speeder-vehicle. "[Our] speeder, Galaxy One, sits in one of the parking bays.".
+The speeder-vehicle is a fixed in place thing in the speeder dock. It is privately-named. The printed name is "speeder". Understand "speeder/vehicle/car/landspeeder/galaxy/one/dust/runner" as speeder-vehicle. "[Our] speeder, Galaxy One, sits in one of the parking bays.".
 The description is "Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.".
 
 Check taking the speeder-vehicle:
 	say "Stop being silly." instead;
 
-Some tinted speeder windows are part of the speeder-vehicle. The description is "The tint is too dark to see through." 
+Some tinted speeder windows are part of the speeder-vehicle. The description is "The tint is too dark to see through." Understand "window" as tinted speeder windows.
 
 Some turbines are part of the speeder-vehicle. The description is "The engines cause [us] to recoil from the waves of heat rolling off of them." Understand "engines/thrusters/turbine/engine/thruster" as turbines.
  
-Some wings are part of the speeder-vehicle. The description is "Not technically necessary as the speeder works via anti-gravity, the blade-like wings nonetheless give the vehicle a certain flair unobtainable by other means.". Understand "arcs" as wings.
+Some wings are part of the speeder-vehicle. The description is "Not technically necessary as the speeder works via anti-gravity, the blade-like wings nonetheless give the vehicle a certain flair unobtainable by other means.". Understand "arcs/arc/wing" as wings.
 
 Some parking bays are scenery in the speeder dock. Understand "bay/spots/spot/places/place" as parking bays. "Most of the parking bays are unfilled."
 
@@ -1252,7 +1257,7 @@ Beck: 'Oh, no doubt.'";
 
 The open-space is scenery in the entry doorway. It is privately-named. The printed name is "open space". Understand "open space" as open-space. "On the far side of the glass walls is a large open space serving as the extended lobby of the building."
 
-The description of the entry door is "A glass revolving door emblazoned with the symbol of a Viking king astride the planet Mars." Understand "revolving" as entry door.
+The description of the entry door is "A glass revolving door emblazoned with the symbol of a Viking king astride the planet Mars." Understand "revolving/symbol" as entry door.
 
 Before going from entry doorway to lobby for the first time:
 	converse "Jones takes a deep breath. 'I[']m going in.'
@@ -2883,7 +2888,7 @@ Instead of taking the array of diamonds when the glass diamond is discovered and
 the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. [if the control panel is nowhere]Thallium's personal insignia, the ten planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. [else]A control panel is set into the outer wall. [end if]In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
 
 The metal pillar is scenery in the penthouse west. "It's actually wrought iron, and it holds up the claw." Understand "column" as pillar.
-The claw is part of the metal pillar. It is a container with carrying capacity 1. The description is "It looks like it could grip a small object.". It is fixed in place.
+The claw is part of the metal pillar. It is a container with carrying capacity 1. The description is "[if the claw contains nothing]It looks like it could grip a small object.[end if]". It is fixed in place.
 
 Instead of inserting something that is not a gem into the claw:
 	say "That won't fit in the claw.";
@@ -2928,7 +2933,7 @@ Instead of pushing the small black button for the first time:
 	
 The granite floor is scenery in penthouse west. "On Mars, sometimes one gets tired of red.". Understand "red/floors" as granite floor.
 
-The penthouse-west-walls are scenery in penthouse west. "The outer wall is all of red wood inlaid with ebony, while the inner wall, made of brushed stainless steel, is inset with an electronic eye." They are privately-named. The printed name is "walls". Understand "wall/walls/red/wood/brushed/stainless/steel" as penthouse-west-walls.
+The penthouse-west-walls are scenery in penthouse west. "[if the penthouse control panel is in penthouse west]The outer wall has moved to expose a control panel,[else]The outer wall is all of red wood inlaid with ebony,[end if] while the inner wall, made of brushed stainless steel, is inset with an electronic eye." They are privately-named. The printed name is "walls". Understand "wall/walls/red/wood/brushed/stainless/steel" as penthouse-west-walls.
 
 The insignia is scenery in penthouse west. "'Planetas Vincam', incidentally, means 'I will conquer the planets.'" Understand "motto/words/planets/planet" as the insignia.
 
