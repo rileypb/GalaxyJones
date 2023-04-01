@@ -637,7 +637,7 @@ After looking when attack begun is true during Lobby Shootout:
 	say "[one of]Two guard robots, red and green, criss-cross the lobby, stalking [us][or]Two guard robots prowl the lobby, trying to outflank [us][or]The guard robots have their head cannons trained on the front desk[at random].";
 	
 Clip this turn is a truth state that varies.
-Every turn:
+Every turn:	
 	now clip this turn is false;
 	
 Flanking warning is a clip with conversation "Beck: 'Robot on your right!'[line break]".
@@ -748,7 +748,7 @@ report sneaking up on the purple guard robot:
 		change west exit of ledge to Cybernetica office;
 		change outside exit of Cybernetica office to ledge;
 		change inside exit of ledge to Cybernetica office;
-		now the Cybernetica office is window-broken;
+		now the Cybernetica office is window-broken;	
 	otherwise:
 		say "[We] is right up next to the robot, crouched beneath a desk. She can see right up under its armor.";
 		
@@ -2487,31 +2487,34 @@ After going somewhere when the player is in tenth-floor-region and the mauve gua
 Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack: 
 	if the mauve guard robot is in the location:
 		say "[one of]The robot slaughters Jones[or]The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons[or]Jones doesn't stand a chance against the mauve guard robot's terrible knives[or]The robot electrocutes Jones with its electro-darts[purely at random].";		
+		lb;
 		end the story saying "Jones was killed by the mauve guard robot";
 	otherwise if the goal of the mauve guard robot is not the location of the mauve guard robot:
 		let D be the best route from the location of the mauve guard robot to the goal of the mauve guard robot;
 		try the mauve guard robot going D;
 		if the location of the mauve guard robot is the location:
 			say "[one of]The robot slaughters Jones[or]The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons[or]Jones doesn't stand a chance against the mauve guard robot's terrible knives[or]The robot electrocutes Jones with its electro-darts[purely at random].";	
+			lb;
 			end the story saying "Jones was killed by the mauve guard robot";
 	otherwise:
 		now the goal of the mauve guard robot is the homebase of the mauve guard robot;
-	if the location of the mauve guard robot farsees the location:
-		now the goal of the mauve guard robot is the location;
-		if conversed this turn is false and a random chance of 1 in 6 succeeds:
-			converse "[one of]Beck: 'Come and get us, ugly!'
-			
-			Jones: '[']Us[']? Seems like I'm the only one with her life on the line.'[or]Beck: 'That's one ugly dude.'
-			
-			Jones: 'I wouldn't want to meet it up close.'[or]Beck: 'If I only had a heart, indeed.'[or]Beck: 'I don't think I like Thallium's choice of friends much.'[or]Beck: 'You're programmed to kill, but Jones is programmed to kick your metallic ass!'
-			
-			Jones: 'Ah, the bravery of being out of range.'[or]Beck: 'I hope you have a warranty, because you're about to be seriously damaged!'
-			
-			Jones: 'Really, Beck? Is this your best material?'[or]Beck: 'I've seen more intimidating kitchen appliances!'[at random]";
-			now conversed this turn is true;
-			continue the action;
-	if the location is in tenth-floor-region and a random chance of 1 in 6 succeeds:
-		converse "[one of]Thallium's voice booms over the office PA: 'You can run, Jones, but you can't - well, there aren't very many places you can hide.'[or]Thallium: 'Jones, you still hanging around with that loser Beck?'[or]Thallium: 'Don't you just hate it, Jones -- not knowing when death will just jump out at you?'[or]Thallium: 'I bet you're just [special-style-2]dying[special-style-1] to meet Europa, right, Jones?'[then at random]"
+	if story has not ended and clip this turn is false:
+		if the location of the mauve guard robot farsees the location:
+			now the goal of the mauve guard robot is the location;
+			if conversed this turn is false and a random chance of 1 in 6 succeeds:
+				converse "[one of]Beck: 'Come and get us, ugly!'
+				
+				Jones: '[']Us[']? Seems like I'm the only one with her life on the line.'[or]Beck: 'That's one ugly dude.'
+				
+				Jones: 'I wouldn't want to meet it up close.'[or]Beck: 'If I only had a heart, indeed.'[or]Beck: 'I don't think I like Thallium's choice of friends much.'[or]Beck: 'You're programmed to kill, but Jones is programmed to kick your metallic ass!'
+				
+				Jones: 'Ah, the bravery of being out of range.'[or]Beck: 'I hope you have a warranty, because you're about to be seriously damaged!'
+				
+				Jones: 'Really, Beck? Is this your best material?'[or]Beck: 'I've seen more intimidating kitchen appliances!'[at random]";
+				now conversed this turn is true;
+				continue the action;
+		if the location is in tenth-floor-region and a random chance of 1 in 6 succeeds:
+			converse "[one of]Thallium's voice booms over the office PA: 'You can run, Jones, but you can't - well, there aren't very many places you can hide.'[or]Thallium: 'Jones, you still hanging around with that loser Beck?'[or]Thallium: 'Don't you just hate it, Jones -- not knowing when death will just jump out at you?'[or]Thallium: 'I bet you're just [special-style-2]dying[special-style-1] to meet Europa, right, Jones?'[then at random]"
 
 
 the describe room gone into rule does nothing when the noun is the mauve guard robot.
@@ -2748,7 +2751,9 @@ The 100th-floor-region is a region. It contains the 100th floor elevator hall, p
 
 The roof stairs can be hidden. The roof stairs are hidden.
 
-The description of the 100th floor elevator hall is "The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south[if roof stairs are not hidden]. A portion of the eastern wall has slid away to reveal a stunning white marble staircase[end if].".
+The description of the 100th floor elevator hall is "The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south[if roof stairs are not hidden].
+
+A portion of the eastern wall has slid away to reveal a stunning white marble staircase[end if].".
 
 The walls-100 is scenery in the 100th floor elevator hall. They are privately-named. The printed name is "walls". Understand "wall/walls" as the walls-100. "Black marble. Wow. It's beautiful."
 
@@ -2791,7 +2796,7 @@ The vanity table is scenery in penthouse north. "A vanity table. So aptly named 
 
 the penthouse east has description "This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.". The printed name is "eastern corner of the penthouse". Understand "office" as penthouse east. 
 
-The huge desk is scenery in penthouse east. "Bubinga wood, if you must know, is, according to Wikipedia, 'a flowering plant genus in the family [italic type]Fabaceae'[roman type]." Understand "pattern/patterns/intricate/bubinga/wood" as the huge desk.
+The huge desk is scenery in penthouse east. "The desk is really too big for a human-sized person. Bubinga wood, if you're unfamiliar with it, is according to Wikipedia, 'a flowering plant genus in the family [italic type]Fabaceae'[roman type]." Understand "pattern/patterns/intricate/bubinga/wood" as the huge desk.
 
 The video screens are scenery in penthouse east. "They are showing Thallium's logo, the ten planets in order overlaid with the motto 'Planetas Vincam'." Understand "screen/tv/tvs" as video screens.
 
@@ -2826,7 +2831,7 @@ Instead of prying the array of diamonds when the real diamond is nowhere and the
 	now the glass diamond is seen;
 	now the glass diamond is familiar;
 	say "You pry one of the diamonds out of the wall.";
-	say paragraph break;
+	say line break;
 	set pronouns from glass diamond;
 	converse as thallium "Thallium giggles. 'Oh, I hope you're not disappointed, Jones.'";
 	
@@ -2859,6 +2864,9 @@ Check attacking the array of diamonds when the glass diamond is not discovered:
 	
 Some glass shards are scenery. "The remains of dozens of glass diamonds litter the floor."
 
+Instead of taking the glass shards:
+	say "[We] would just cut [our] hands.";
+
 Instead of attacking the array of diamonds with the hammer when the glass diamond is discovered for the first time:
 	say "[We] commences to smash all of the diamonds. After destroying several dozen fraudulent gems, [we] finds one that won't break. [We] takes the real diamond.[paragraph break]";
 	now the player carries the real diamond;
@@ -2878,6 +2886,9 @@ Instead of attacking the array of diamonds:
 		try attacking the array of diamonds with the hammer;
 	otherwise:
 		say "You're not carrying anything sufficient to smash the diamonds.";
+		
+Instead of shooting the array of diamonds with something when the glass diamond is discovered:
+	say "Shooting one diamond at a time would be too slow.";
 	
 Instead of taking the array of diamonds when the glass diamond is somewhere:
 	say "[We] has already taken a diamond. Isn't one enough?";
@@ -3235,7 +3246,10 @@ Chapter 5 - The Water Bottle
 
 Understand the command "lift" as "take".
 
-The cage-container is a transparent open scenery container in the cage. 
+The cage-container is a transparent open scenery container in the cage. It is privately-named.
+
+Rule for clarifying the parser's choice of the cage-thing:
+	do nothing;
 
 Instead of waking Europa:
 	say "Europa moans but otherwise does not respond.";
@@ -3253,7 +3267,7 @@ Instead of giving the bottled water to Europa when the cage is broken:
 	
 	Galaxy Jones helps her through the hole in the cage, then gently picks her up and jogs toward the waiting flyer. Beck's familiar face appears at the door of the aircraft, urging her on.";
 	say line break;
-	converse as thallium "Not so far away, Admiral Thallium crawls back over the edge of  the roof. As he pulls himself up, he aims a pistol at Jones's back...";
+	converse as thallium "Not so far away, Admiral Thallium crawls back over the edge of the roof. As he pulls himself up, he aims a pistol at Jones's back...";
 	say line break;
 	converse "...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.";
 	say line break;
