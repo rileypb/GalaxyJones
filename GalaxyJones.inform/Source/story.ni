@@ -1732,7 +1732,7 @@ The conversation of the ground floor elevator shaft is "Beck: 'Ooh. It's like we
 
 A ladder is a backdrop. It is in ground floor elevator shaft, second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, eighth floor elevator shaft, ninth floor elevator shaft. The description is "A simple steel ladder."
 
-The elevator car-backdrop is a backdrop. It is privately-named. The printed name is "elevator car". Understand "elevator/car" as the elevator car-backdrop. It is in ground floor elevator shaft, second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, eighth floor elevator shaft, ninth floor elevator shaft, elevator car-room, and elevator top. The description is "this is a secret message".
+The elevator car-backdrop is a backdrop. It is privately-named. The printed name is "elevator car". Understand "elevator/car" as the elevator car-backdrop. It is in ground floor elevator shaft, second floor elevator shaft, third floor elevator shaft, fourth floor elevator shaft, fifth floor elevator shaft, sixth floor elevator shaft, seventh floor elevator shaft, eighth floor elevator shaft, ninth floor elevator shaft, and elevator top. The description is "this is a secret message".
 
 Instead of examining the elevator car-backdrop:
 	if location is ground floor elevator shaft or location is second floor elevator shaft or location is third floor elevator shaft or location is fourth floor elevator shaft:
@@ -2421,9 +2421,9 @@ The description of the tenth floor elevator hall is "[elevator description]. The
 
 The tenth-floor-stairwell is scenery in the tenth floor elevator hall. The printed name is "stairwell". Understand "stairwell/stairs" as the tenth-floor-stairwell. "They lead up and down from here."
 
-The description of microthings-1 is "This is reception. It has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.".
+The description of microthings-1 is "This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.".
 
-Reception is scenery in microthings-1. "No one is covering the desk at present."
+Reception is scenery in microthings-1. "No one is covering the desk at present." Understand "front/desk" as reception.
 
 The couches-microthings-1 are scenery enterable supporters in microthings-1. They are privately-named. The printed name is "couches". Understand "couch/couches/seat/seats/seating" as the couches-microthings-1. The description is "Tan leather couches, very expensive."
 
@@ -2431,7 +2431,7 @@ The New Reykjavik Botanic Dome is scenery in microthings-1. "A large geodesic do
 
 The description of microthings-2 is "This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. [We] can go north or east from here.".
 
-The desks-microthings-2 is scenery in microthings-2. It is privately-named. The printed name is "desks". Understand "desk/desks" as desks-microthings-2. "How dull."
+[The desks-microthings-2 is scenery in microthings-2. It is privately-named. The printed name is "desks". Understand "desk/desks" as desks-microthings-2. "How dull."]
 
 The computer parts are scenery in microthings-2. "Of no use to [us]."
 
@@ -2550,7 +2550,9 @@ The ceiling panel is in the elevator car-room. "One of the ceiling panels looks 
 
 it's real ivory is a taunting clip with conversation "Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant.'".
 
-The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if][if the ceiling panel is nowhere]. There is a hole in the ceiling big enough for Jones to squeeze through[end if].".
+The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if][if the ceiling panel is nowhere]. There is a hole in the ceiling big enough for Jones to squeeze through[end if]. You can leave the elevator to the east.".
+
+Does the player mean examining the elevator car-room: It is very likely;
 
 The elevator-car-door is scenery in the elevator car-room. It is privately-named. The printed name is "elevator car door". Understand "elevator/lift/car/door" as the elevator-car-door. "The door is open."
 
@@ -2929,6 +2931,8 @@ Instead of pushing the large red button for the first time:
 	
 Instead of pushing the large red button:
 	say "[We] presses the red button, but nothing seems to happen. After a few seconds, however, [we] starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die.";
+	lb;
+	converse "Thallium's voice is thick with feigned concern. 'Oh, my poor, poor Galaxy Jones. And you were so close.'";
 	end the story saying "Galaxy Jones was killed by poison gas.";
 	
 why not is a clip with conversation "[line break]Beck: 'Why didn't you press the button that said [']Press Me[']? Maybe we should press it anyway. Please?'";
@@ -3014,7 +3018,7 @@ When Thallium ultimatum begins:
 	converse as thallium "Thallium's flyer hovers over the rooftop. 'Jones!'  he bellows. 'Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die.'
 	
 	Jones rolls her eyes.";
-	converse "[line break]A little ways off, a small red flyer aims for the rooftop and accelerates.";
+	converse "[line break]A little ways off, another flyer, small and red, aims for the rooftop and accelerates.";
 	move the red flyer to the rooftop; 
 	thallium screams in 3 turns from now;
 
@@ -3255,8 +3259,6 @@ Instead of waking Europa:
 	say "Europa moans but otherwise does not respond.";
 
 Instead of giving the bottled water to Europa when the cage is broken:
-	score 1;
-	lb;
 	converse "[We] opens the water bottle and brings it to Europa's lips. Even with closed eyes she drinks, first slowly and then with increasing vigor, until her eyes open.
 	
 	'Ga- Galaxy Jones?' she says.
@@ -3266,10 +3268,11 @@ Instead of giving the bottled water to Europa when the cage is broken:
 	Europa nods. 'I think so.'
 	
 	Galaxy Jones helps her through the hole in the cage, then gently picks her up and jogs toward the waiting flyer. Beck's familiar face appears at the door of the aircraft, urging her on.";
+	score 1;
 	say line break;
 	converse as thallium "Not so far away, Admiral Thallium crawls back over the edge of the roof. As he pulls himself up, he aims a pistol at Jones's back...";
 	say line break;
-	converse "...and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.";
+	converse "The shot hits her full in the back and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.";
 	say line break;
 	converse as thallium "And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...";
 	say line break; 
@@ -3505,8 +3508,8 @@ Instead of quizzing Beck about Cybernetica office:
 Instead of quizzing Beck about dead mauve robot:
 	converse "Beck: 'Nice job, Jones.'";
 	
-Instead of quizzing Beck about desks-microthings-2:
-	converse "Beck: 'So many desks. So. many. desks.'";
+[Instead of quizzing Beck about desks-microthings-2:
+	converse "Beck: 'So many desks. So. many. desks.'";]
 	
 Instead of quizzing Beck about desks-microthings-3:
 	converse "Beck: 'What do all these people even do? I mean, Consolidated Microthings, what do they do?'";
@@ -4109,7 +4112,7 @@ Cybernetica door-inside	"This building may belong to a bad guy, but the Cybernet
 cybernetica-desks	"Now why would Jones need a desk?"	"Jones is not here to rearrange the furniture."
 dead mauve robot	"It's too heavy to lift or move."
 destroyed purple robot	"It's too heavy to lift or move."
-desks-microthings-2	"Jones can't take desks, and that's that."	"Jones is not here to rearrange the furniture."
+[desks-microthings-2	"Jones can't take desks, and that's that."	"Jones is not here to rearrange the furniture."]
 desks-microthings-3	"Jones can't take desks, and that's that."	"Jones is not here to rearrange the furniture."
 ductwork	"This is part of the building."
 dummies	"They'd be cumbersome to carry around."	"Jones pushes one over just for fun."

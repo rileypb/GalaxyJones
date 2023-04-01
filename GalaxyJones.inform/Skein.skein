@@ -64,7 +64,10 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-1740"></child>
             <child nodeId="node-2174"></child>
             <child nodeId="node-2038"></child>
+            <child nodeId="node-2219"></child>
+            <child nodeId="node-2199"></child>
             <child nodeId="node-1765"></child>
+            <child nodeId="node-2205"></child>
             <child nodeId="node-2060"></child>
             <child nodeId="node-1003"></child>
             <child nodeId="node-1220"></child>
@@ -4418,6 +4421,60 @@ Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way pa
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-2205">
+        <command xml:space="preserve">gonear tenth hall</command>
+        <result xml:space="preserve">Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2206"></child>
+        </children>
+    </item>
+    <item nodeId="node-2206">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. You can leave the elevator to the east.
+
+One of the ceiling panels looks loose.
+
+Admiral Thallium's voice oozes from concealed speakers: "Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant."
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2207"></child>
+        </children>
+    </item>
+    <item nodeId="node-2207">
+        <command xml:space="preserve">x car</command>
+        <result xml:space="preserve">(the elevator car)
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. You can leave the elevator to the east.
+
+One of the ceiling panels looks loose.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2211"></child>
+        </children>
+    </item>
+    <item nodeId="node-2211">
+        <command xml:space="preserve">x car door</command>
+        <result xml:space="preserve">The door is open.
+
+Thallium's voice booms over the office PA: "You can run, Jones, but you can't - well, there aren't very many places you can hide."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2212"></child>
+        </children>
+    </item>
+    <item nodeId="node-2212">
+        <command xml:space="preserve">close car door</command>
+        <result xml:space="preserve">Jones can't close them by hand, and the elevator seems to be off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1765">
         <command xml:space="preserve">gonear penthouse west</command>
         <result xml:space="preserve">Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
@@ -5693,6 +5750,159 @@ The cage is huge for holding just one prisoner. The silnium bars are grey and ir
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-2199">
+        <command xml:space="preserve">gonear elevator car-room</command>
+        <result xml:space="preserve">There seems to be no such object anywhere in the model world.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2200"></child>
+        </children>
+    </item>
+    <item nodeId="node-2200">
+        <command xml:space="preserve">gonear tenth hall</command>
+        <result xml:space="preserve">Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2201"></child>
+        </children>
+    </item>
+    <item nodeId="node-2201">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. You can leave the elevator to the east.
+
+One of the ceiling panels looks loose.
+
+Admiral Thallium's voice oozes from concealed speakers: "Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant."
+
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2202"></child>
+        </children>
+    </item>
+    <item nodeId="node-2202">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">elevator car - room
+    elevator car - backdrop
+    Jones - person
+        black jumpsuit (worn)
+            suit light (part of black jumpsuit)
+        disruptor pistol
+    golden keyhole
+    ceiling panel
+    elevator car door
+    walls
+    crystal lighting
+    elevator control panel
+    ivory buttons
+    carpeting
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2203"></child>
+        </children>
+    </item>
+    <item nodeId="node-2203">
+        <command xml:space="preserve">x car</command>
+        <result xml:space="preserve">Which do you mean, the elevator car, the elevator car door, or the elevator car?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2204"></child>
+        </children>
+    </item>
+    <item nodeId="node-2204">
+        <command xml:space="preserve">showme all elevator car</command>
+        <result xml:space="preserve">(the elevator car)
+elevator car - room
+    elevator car - backdrop
+    Jones - person
+        black jumpsuit (worn)
+            suit light (part of black jumpsuit)
+        disruptor pistol
+    golden keyhole
+    ceiling panel
+    elevator car door
+    walls
+    crystal lighting
+    elevator control panel
+    ivory buttons
+    carpeting
+singular-named, improper-named, unused; lighted, visited, apparent, open space, safe; list grouping key: none
+printed name: "elevator car"
+printed plural name: none
+indefinite article: none
+most recent reference: nominal
+third singular pronoun: It-pronoun
+conversation: none
+description: "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. You can leave the elevator to the east."
+map region: tenth-floor-region
+preposition: "in"
+destination name: none
+floor: 10
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2219">
+        <command xml:space="preserve">gonear claw</command>
+        <result xml:space="preserve">Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2220"></child>
+        </children>
+    </item>
+    <item nodeId="node-2220">
+        <command xml:space="preserve">purloin real</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2221"></child>
+        </children>
+    </item>
+    <item nodeId="node-2221">
+        <command xml:space="preserve">put it in claw</command>
+        <result xml:space="preserve">As soon as insert the diamond into the claw, laser beams spring from five emitters on the walls. They hit the diamond and join into a single more powerful beam that strikes the electronic eye on the wall. A sound like a sliding door comes from behind Jones, and she spins around to see the red wall slide down into the floor. It exposes a control panel of sorts, featuring a large red button labeled "Press Me".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2222"></child>
+        </children>
+    </item>
+    <item nodeId="node-2222">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">Thallium's voice startles Jones, and she forgets the button for a moment.
+
+"Yes, yes, press it!", Thallium squeaks.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2223"></child>
+        </children>
+    </item>
+    <item nodeId="node-2223">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">Jones presses the red button, but nothing seems to happen. After a few seconds, however, she starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die.
+
+Thallium's voice is thick with feigned concern. "Oh, my poor, poor Galaxy Jones. And you were so close."
+
+
+
+    *** Galaxy Jones was killed by poison gas. ***
+
+
+In that game you scored 0 out of a possible 10, in 4 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-2038">
         <command xml:space="preserve">gonear cage</command>
         <result xml:space="preserve">Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue. The flyer pad is to the southwest and the rest of the rooftop to the south.
@@ -5991,7 +6201,8 @@ Jones snorts, "Sure, Thallium."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2175"></child>
+        <children><child nodeId="node-2214"></child>
+            <child nodeId="node-2175"></child>
         </children>
     </item>
     <item nodeId="node-2175">
@@ -6033,6 +6244,62 @@ Jones tosses the fake away.
         <result xml:space="preserve">Shooting one diamond at a time would be too slow.
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2214">
+        <command xml:space="preserve">purloin real</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2215"></child>
+        </children>
+    </item>
+    <item nodeId="node-2215">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2216"></child>
+        </children>
+    </item>
+    <item nodeId="node-2216">
+        <command xml:space="preserve">put diamond in claw</command>
+        <result xml:space="preserve">As soon as insert the diamond into the claw, laser beams spring from five emitters on the walls. They hit the diamond and join into a single more powerful beam that strikes the electronic eye on the wall. A sound like a sliding door comes from behind Jones, and she spins around to see the red wall slide down into the floor. It exposes a control panel of sorts, featuring a large red button labeled "Press Me".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2217"></child>
+        </children>
+    </item>
+    <item nodeId="node-2217">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">Thallium's voice startles Jones, and she forgets the button for a moment.
+
+"Yes, yes, press it!", Thallium squeaks.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2218"></child>
+        </children>
+    </item>
+    <item nodeId="node-2218">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">Jones presses the red button, but nothing seems to happen. After a few seconds, however, she starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die.
+Thallium's voice is thick with feigned concern. Oh, my poor, poor Galaxy Jones. And you were so close.
+
+
+
+    *** Galaxy Jones was killed by poison gas. ***
+
+
+In that game you scored 0 out of a possible 10, in 5 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1740">
