@@ -18,9 +18,9 @@ Include Visible Rooms by Philip Riley.
 
 The story title is "Galaxy Jones".
 The story author is "Phil Riley".
-The story headline is "An Interactive Adventure".
+The story headline is "An Interactive Rescue Mission".
 The story genre is "Science Fiction".
-The release number is 3.
+The release number is 5.
 The story creation year is 2023.
 
 Release along with a website.
@@ -4249,7 +4249,7 @@ the description of light-meter is "no need for a description".
 	
 Volume 14 - Not for release
 
-DEBUG is true . 
+DEBUG is false . 
 
 Understand "* [text]" as a mistake ("Noted.").
 
