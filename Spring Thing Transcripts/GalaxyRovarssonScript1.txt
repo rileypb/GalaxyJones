@@ -1,0 +1,604 @@
+Start of a transcript of
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+An Interactive Rescue Mission by Phil Riley
+Release 5 / Serial number 230401 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) 
+Identification number: //8E621A76-873D-4820-82FC-12FC699572B3//
+Interpreter version 0.5.4 / VM 3.1.2 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Deluxe Doors version 4 by Emily Short
+Skeleton Keys by Emily Short
+Epistemology version 9 by Eric Eve
+Conversation Framework version 11 by Eric Eve
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+
+>l
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+>* && Hello, your friendly galactic playscripter here. I won't be going into full Test-Mode, but I thought a transcript might be welcome.
+You seem to want to talk to someone, but I can't see whom.
+
+>* && Forst of all, the deep blue text in the prologue is very hard to read on dark background. I prefer dark on bright myself, but some people like it the other way.
+You seem to want to talk to someone, but I can't see whom.
+
+>x dock
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+>x me
+
+
+>* && Tadaa! Reminds me of Naomi Nagata in the Expanse tv-version. High bar ...
+I didn't understand that sentence.
+
+>i
+Jones is carrying:
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>x jumpsuit
+It's an advanced Smart Suit, able to communicate sound, vision, and radar back to Beck at Galaxy Base. Also it has a neat light.
+
+>* && Any reason why it has to be skin-tight? Protecting the body from atmospheric pressure-drop?
+I didn't understand that sentence.
+
+>turn on light
+I didn't understand that sentence.
+
+>turn on neat light
+I didn't understand that sentence.
+
+>x disruptor
+A compact instrument of death, with only one setting: kill.
+
+>shoot me
+Suicide is not an option.
+
+>l
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+>jump
+Jones jumps on the spot.
+
+>* && I like the 3rd person. 
+I didn't understand that sentence.
+
+>xyzzy
+I didn't understand that sentence.
+
+>smell
+I didn't understand that sentence.
+
+>listen
+I didn't understand that sentence.
+
+>* && As an expert agent, detecting small nasal or earal sensations might be wished for. But her suit does that for her perhaps...
+You seem to want to talk to someone, but I can't see whom.
+
+>l
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+>shoot disruptor at facade
+Jones only uses violent means when absolutely necessary.
+
+>x entryway
+The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.
+
+>x facade
+The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.
+
+>x king
+There's nothing like that nearby.
+
+>x viking
+The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.
+
+>* && Wielding an axe? Runes on his beard that Jones's suit translates to "Do not enter, you who know not of geometry. Uhm, I mean, you who cannot quaff your mede against the berserkers?"
+You seem to want to talk to someone, but I can't see whom.
+
+>* && or, more seriously: X VIKING: The Viking King stares down at you, his stone-hewn eyes blind but seemingly all-seeing." ? Or is that too much Odin?
+You seem to want to talk to someone, but I can't see whom.
+
+>l
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+>x bays
+Most of the parking bays are unfilled.
+
+>x speeders
+There's nothing like that nearby.
+
+>* && If "a few" of them are filled, that means there are speeders there.
+You seem to want to talk to someone, but I can't see whom.
+
+>x filled bays
+There's nothing like that nearby.
+
+>x bay
+Most of the parking bays are unfilled.
+
+>* && singular bay refers to the one bay where Galaxy's speeder is parked.
+I didn't understand that sentence.
+
+>x speeder
+(the speeder)
+Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.
+
+>x turbines
+The engines cause Jones to recoil from the waves of heat rolling off of them.
+
+>x wings
+Not technically necessary as the speeder works via anti-gravity, the blade-like wings nonetheless give the vehicle a certain flair unobtainable by other means.
+
+>* && Another reason SF fandom gives for wings is weapons-platforms.
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+>s
+Jones can't just leave Europa in the hands of Admiral Thallium!
+
+>n
+Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones looks up at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+>talk to jones
+Jones's not likely to be helpful.
+
+>*&& Yeah, A lone agent... I'm not going to be helpful to myself. I meant:
+You seem to want to talk to someone, but I can't see whom.
+
+>talk to beck
+Jones is already talking to Beck.
+
+>as ke beck about his family
+I didn't understand that sentence.
+
+>ask beck about his family
+Beck: "I'm not sure what you're asking about, Jones."
+
+>ask beck about me
+
+Jones: "How's my status?"
+
+Beck: "All systems look good."
+
+>ask beck about speeder
+
+Beck: "I keep reminding you, but you still haven't taken it in for yearly maintenance."
+
+>tell beck it's a too late for that now
+There is no reply.
+
+>smell beck
+I didn't understand that sentence.
+
+>ask beck about tower
+Beck: "I'm not sure what you're asking about, Jones."
+
+>l
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+>ask beck about callisto
+
+Beck: "I hope she's okay."
+
+>ask beck about thallium
+
+Beck: "Wonderful man, can't get enough of him."
+
+>* && Oh. Beck's a dry one...
+I didn't understand that sentence.
+
+>x doorway
+(the building entryway)
+The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.
+
+>s
+Jones slinks back to the speeder dock.
+
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Her speeder, Galaxy One, sits in one of the parking bays.
+
+>u
+Jones can neither climb walls nor fly.
+
+>* && An agent who doesn't even try to scale the walls of the looming tower?
+I didn't understand that sentence.
+
+>n
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+>u
+Jones can neither climb walls nor fly.
+
+>fly
+Not even Galaxy Jones.
+
+>x door
+A glass revolving door emblazoned with the symbol of a Viking king astride the planet Mars.
+
+>x doorway
+(the building entryway)
+The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.
+
+>* && reserve "entryway" for the view from the docks. "doorway" is right here and revolving.
+I didn't understand that sentence.
+
+>n
+Jones takes a deep breath. "I'm going in."
+
+Beck replies, "You got this, Galaxy."
+
+Jones passes through the revolving door and into the lobby, alert to any defenses.
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
+
+>* && I like the message about the PC moving through the doors. The text would flow better if either "Jones" or "Galaxy jones" were replaced by "She" though.
+I didn't understand that sentence.
+
+>x lobby
+Suddenly two robot guards, green and red, emerge from niches in the back wall! Jones dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring your suit radar."
+
+>undo
+Galaxy Jones is in the lobby.
+[Previous turn undone.]
+
+>* && Sorry for the UNDO. I wanted to scroll back and HIDE immediately. hise Robot Things scared me.
+I didn't understand that sentence.
+
+>HIDE
+I didn't understand that sentence.
+
+>duck behind desk
+I didn't understand that sentence.
+
+>l
+Suddenly two robot guards, green and red, emerge from niches in the back wall! Jones dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring your suit radar."
+
+>* && Hmm... could I get that statue swinging?
+I didn't understand that sentence.
+
+>shoot cables
+Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
+
+>undo
+Galaxy Jones is in the lobby.
+[Previous turn undone.]
+
+>*&& 
+I didn't understand that sentence.
+
+>*&& I've got to see what else would happen...
+I didn't understand that sentence.
+
+>shoot red robot
+Jones's shot goes wide, reflecting off one of the building struts and into the suspended sculpture. The artwork begins to spin wildly, straining its cables.
+
+Jones: "I could use some ideas here!"
+
+>x plants
+The ground floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants.
+
+Beck: "Robot on your right!"
+
+One robot tries to flank Jones, but a shot from her disruptor sends it scurrying back.
+
+>shoot plants
+Jones only uses violent means when absolutely necessary.
+
+>l
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+The guard robots have their head cannons trained on the front desk.
+
+The two robots coordinate fire over the desk, narrowly missing her.
+
+>roll behind pillar
+I didn't understand that sentence.
+
+>duck under plants
+I didn't understand that sentence.
+
+>x water
+The ground floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants.
+
+A robot fires a blistering shot into the front desk.
+
+>shoot water
+Jones only uses violent means when absolutely necessary.
+
+The two robots coordinate fire over the desk, narrowly missing Jones.
+
+>*&& A splash of water would perhaps electrify the robots?
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Two guard robots, red and green, criss-cross the lobby, stalking her.
+
+>shoot glass walls
+Jones only uses violent means when absolutely necessary.
+
+>* && Crystal shrapnel from the walls shattering might pierce the robots? But then the building would crash down?
+I didn't understand that sentence.
+
+>x seating
+Quite tasteful for a homicidal madman, really.
+
+Zip! Disruptor fire scorches a nearby couch.
+
+>sit on couch
+As soon as Jones starts to act, an energy beam zips past her head, forcing her back down behind the desk.
+
+The robots intone "Destroy Jones" in an eerie drone.
+
+>ask green robot about red robot
+That's not likely to be helpful.
+
+Zip! Disruptor fire scorches a nearby couch.
+
+>l
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Two guard robots prowl the lobby, trying to outflank her.
+
+>run to elevators
+There's nothing like that nearby.
+
+>e
+Trying to reach an exit would surely get Jones shot.
+
+Jones: "I'm pinned down here!"
+
+>run east
+Trying to reach an exit would surely get Jones shot.
+
+A robot fires a blistering shot into the front desk.
+
+>* && I'm just trying everything an action heroine ould do under these circumstances
+I didn't understand that sentence.
+
+>jump to cables
+There's nothing like that nearby.
+
+>x cables
+It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan. It's held up by metal cables.
+
+>jump cables
+As soon as Jones starts to act, an energy beam zips past her head, forcing her back down behind the desk.
+
+Zip! Disruptor fire scorches a nearby couch.
+
+>climb cables
+As soon as Jones starts to act, an energy beam zips past her head, forcing her back down behind the desk.
+
+Beck: "How's it going in there?"
+
+"Jones: "You know -- like all art, it's hit or miss."
+
+>* && So the cables are part of the "sculpture"-object. So if I SHOOT SCULPTURE, it should have the same effect.
+You seem to want to talk to someone, but I can't see whom.
+
+>shoot sculpture
+Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
+
+>* && Maybe a layer of difficulty more? She's hiding safely anyway.
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>x remains
+Jones digs through the ruins and finds a cable with hooks at either end, which she takes.
+
+>x robots
+Jones searches some more, but nothing further turns up.
+
+>* && no difference between crystal and mech?
+I didn't understand that sentence.
+
+>x supports
+Thin but incredibly strong.
+
+>x walls
+Outside the building are the red-dusted streets of New Reykjavik.
+
+>x elevators
+They're in the center of the building.
+
+>l
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>x plants
+The ground floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants.
+
+>sit
+What should Jones sit on?
+
+>sit on couch
+She gets onto the tasteful couch.
+
+>sleep
+There's no lying down on the job for Galaxy Jones!
+
+>lie down
+I didn't understand that sentence.
+
+>lie on couch
+But Jones is already on the tasteful couch.
+
+>stand
+Jones gets off the tasteful couch.
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. She may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>x desk
+There's not much on the desk other than a sticky note that says "84908".
+
+>* && Ok, so I've got a cable now. A grappling hook?
+You seem to want to talk to someone, but I can't see whom.
+
+>i
+Jones is carrying:
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>*&& maybe a death ride?
+I didn't understand that sentence.
+
+>get note
+Taken.
+
+>stic note to nose
+I didn't understand that sentence.
+
+>stick note to nose
+I didn't understand that sentence.
+
+>eat note
+That's plainly inedible.
+
+>l
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>search plants
+Jones finds nothing of interest.
+
+>* && looking for lost ID-cards.
+I didn't understand that sentence.
+
+>search seats
+There's nothing like that nearby.
+
+>search seating
+There is nothing on the tasteful couch.
+
+>look under couch
+Jones finds nothing of interest.
+
+>l
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>look behind desk
+Jones finds nothing of note.
+
+>s
+Jones leaves the building.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+>s
+
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+>throw cable at facade
+Jones thinks twice and decides not to throw it after all.
+
+>n
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+>throw cable at facade
+Jones thinks twice and decides not to throw it after all.
+
+>* && In my mental image, I don't know how different the Dock is from the Entry Doorway. The revolving door is closer to the tower, but am I still outside? How much of the tower is visible/reachable from the Docks? That's why I tried the grappling hook
+You seem to want to talk to someone, but I can't see whom.
+
+>* && shortcut in both locations.
+I didn't understand that sentence.
+
+>n
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>x water features
+The ground floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants.
+
+>w
+Jones crosses the floor carefully, disruptor pistol at the ready.
+
+Galaxy Jones is at the southwest corner of the ground floor. A lush indoor waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
+
+>* && Galaxy rumbles under her breath: "Oh no, little  wolfy, I haven't even licked you yet."
+You seem to want to talk to someone, but I can't see whom.
+
+>script off
+
+End of transcript.

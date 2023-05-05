@@ -11,8 +11,7 @@ Include Conversation Framework by Eric Eve.
 Include Galaxy Banner by Philip Riley.
 Include Third Person Narration by Philip Riley.       
 Include Pseudocontainers by Philip Riley.
-Include Look That Way by Philip Riley.
-[Include Use by Philip Riley.]   
+Include Look That Way by Philip Riley.   
 Include Open Spaces by Philip Riley.
 Include Visible Rooms by Philip Riley.
 
@@ -20,7 +19,7 @@ The story title is "Galaxy Jones".
 The story author is "Phil Riley".
 The story headline is "An Interactive Rescue Mission".
 The story genre is "Science Fiction".
-The release number is 5.
+The release number is 6.
 The story creation year is 2023.
 
 Release along with a website.
@@ -28,20 +27,6 @@ Release along with an interpreter.
 Release along with cover art.
  
 Volume 1 - Technical Stuff
-
-[When play begins:
-	repeat with S running through scenery:
-		if S is a thing:
-			if the can't take message of S is "Jones can't take that.":
-				say "[S] needs a can't take message."; 
-				say the list of texts understood to be S;
-				[print base name of S;]
-				lb;
-
-When play begins:
-	repeat with S running through fixed in place things that are not scenery:
-		if the can't take message of S is "Jones can't take that.":
-			say "[S] needs a can't take message."; ]
 			
 Use MAX_STATIC_DATA of 240000.
 
@@ -56,29 +41,9 @@ To continue:
 When play begins:
 	now the left hand status line is "[location-title-case]";
 	now the right hand status line is "[score] of [maximum score] points";
- 
-[Table of New Exit Status
-left	central (text)	right
-"[location-title-case]"	""	"[score] points"
-""	"[exit list]"	""]
-
-[when play begins: 
-	now status exit table is Table of New Exit Status;]
 
 To start header style: 
 	(- VM_Style(HEADER_VMSTY); -)
-
-	
-To decide what number is the number of understood words of/for (obj - object): (- ({obj}.#name)/WORDSIZE -)
-
-To decide what list of texts is the list of texts understood to be (obj - an object):
-    let L be a list of texts;
-    repeat with i running from 1 to the number of understood words for obj begin;
-      add the substituted form of "[understood word i for obj]" to L;
-    end repeat;
-    decide on L
-
-To say understood word (n - a number) of/for (obj - object): (- if ({n} <= ({obj}.#name)/WORDSIZE) print (address) ({obj}.&name)-->({n}-1); -)
 	
 To say header style:
 	start header style;
@@ -314,12 +279,37 @@ Understand "[number]" as typing it on when the location is ground-floor-6.
 Rule for supplying a missing second noun when the location is ground-floor-6:
 	now the second noun is the keypad;
 	
-Book 6 - Glulx Styles
+Book 6 - Styling Text
 
 Table of User Styles (continued)
 style name	color	italic	indentation
 special-style-1	"#0000FF"	false	0
 special-style-2	"#0000FF"	true	0
+
+Colored text is a truth state that varies. Colored text is initially true.
+
+To say style1:
+	if colored text is true:
+		say special-style-1;
+	otherwise:
+		say bold type;
+
+To say style2:
+	if colored text is true:
+		say special-style-2;
+	otherwise:
+		say italic type;
+		
+coloring off is an action out of world. Understand "color off" as coloring off.
+Carry out coloring off:
+	now colored text is false;
+	say "Colored text turned off.";
+		
+coloring on is an action out of world. Understand "color on" as coloring on.
+Carry out coloring on:
+	now colored text is true;
+	say "Colored text turned on.";
+
 
 Book 7 - Post-look text queueing
 
@@ -529,7 +519,7 @@ Conversed this turn is a truth state that varies.
 
 To converse (T - a text):
 	now Conversed this turn is true;
-	say "[special-style-1][T][roman type][line break]";
+	say "[style1][T][roman type][line break]";
 	
 This is the reset conversed this turn rule:
 	Now conversed this turn is false;
@@ -538,7 +528,7 @@ The reset conversed this turn rule is listed first in the turn sequence rules.
 
 To converse as thallium (T - a text):
 	now Conversed this turn is true;
-	say "[special-style-1][T][roman type][line break]";
+	say "[style1][T][roman type][line break]";
 
 report looking:
 	if the conversation of the location is not empty and the location is unused:
@@ -585,6 +575,12 @@ When play begins:
 		if accessible is off:
 			say "If the dashes below fit all on one line, your screen is wide enough. Otherwise, make it wider!";
 			say "[fixed letter spacing]-----------------------------------------------------------------[variable letter spacing][paragraph break]";
+		lb;
+		say "Would you like to turn off [special-style-1]colored text[roman type]? [no line break]";
+		if the player consents:
+			now colored text is false;
+		lb;
+		say "You may turn color on and off at any time using COLOR ON and COLOR OFF.";
 	say "The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.[paragraph break]";
 	say "'Yes?' she says in a voice thick with sleep.[paragraph break]";
 	say "'Hello, is this Galaxy Jones?' comes the voice from the speaker.[paragraph break]";
@@ -695,6 +691,9 @@ After pleading when comment on energy absorption is used during Lobby Shootout:
 		-- otherwise: converse "Beck: 'That sculpture up there seems pretty big.'";
 	
 
+Instead of shooting something with the disruptor pistol when the noun is not a guard robot during Lobby Shootout:
+	say "Focus on the robots instead.";
+
 Book 2 - Cybernetica Battle		
 
 Cybernetica Battle is a scene. Cybernetica Battle begins when the player is in the Cybernetica office.
@@ -795,6 +794,10 @@ Instead of dithering when cybernetica battle has ended:
 
 Instead of dithering during cybernetica battle:
 	say "That would be suicide.";
+
+Instead of shooting something with the disruptor pistol when the noun is not the purple robot during Cybernetica Battle:
+	say "Focus on the robot instead.";
+
 
 Volume 6 - Things
 
@@ -1231,9 +1234,9 @@ The conversation of the speeder dock is "[reset LPR][Our] handler Beck comes ove
 
 'Blueprints show the ground floor is one big empty space with elevators in the center. Not a lot of places for resistance to hide, but you can never tell. Be careful.
 
-'And one other thing, Jones: if you need help you can [bold type]ASK BECK FOR HELP[special-style-1]. You can also [bold type]ASK BECK ABOUT[special-style-1] things or [bold type]ASK BECK ABOUT GAME[special-style-1] for more information about the game. Finally, you can cause help to repeat from the beginning by saying [bold type]ASK BECK TO RESET HELP[special-style-1]'".
+'And one other thing, Jones: if you need help you can [bold type]ASK BECK FOR HELP[style1]. You can also [bold type]ASK BECK ABOUT[style1] things or [bold type]ASK BECK ABOUT GAME[style1] for more information about the game. Finally, you can cause help to repeat from the beginning by saying [bold type]ASK BECK TO RESET HELP[style1]'".
 
-The speeder-vehicle is a fixed in place thing in the speeder dock. It is privately-named. The printed name is "speeder". Understand "speeder/vehicle/car/landspeeder/galaxy/one/dust/runner" as speeder-vehicle. "[Our] speeder, Galaxy One, sits in one of the parking bays.".
+The speeder-vehicle is a fixed in place thing in the speeder dock. It is privately-named. The printed name is "speeder". Understand "bay/speeder/vehicle/car/landspeeder/galaxy/one/dust/runner" as speeder-vehicle. "[Our] speeder, Galaxy One, sits in one of the parking bays.".
 The description is "Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.".
 
 Check taking the speeder-vehicle:
@@ -1245,12 +1248,14 @@ Some turbines are part of the speeder-vehicle. The description is "The engines c
  
 Some wings are part of the speeder-vehicle. The description is "Not technically necessary as the speeder works via anti-gravity, the blade-like wings nonetheless give the vehicle a certain flair unobtainable by other means.". Understand "arcs/arc/wing" as wings.
 
-Some parking bays are scenery in the speeder dock. Understand "bay/spots/spot/places/place" as parking bays. "Most of the parking bays are unfilled."
+Some parking bays are scenery in the speeder dock. Understand "spots/spot/places/place" as parking bays. "Most of the parking bays are unfilled."
 
 Instead of entering the speeder-vehicle:
 	say "[We] has a job to do here.";
 
-The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.". Understand "entry/doorway/entrance/entranceway/facade/façade/viking/glass/steel" as building entryway. Understand "exit" as building entryway when the location is the lobby.
+The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.". Understand "entry/entrance/entranceway/facade/façade/viking/glass/steel" as building entryway. Understand "exit" as building entryway when the location is the lobby.
+
+Some speeders are scenery in the speeder dock. "None of these are half as cool as Galaxy One."
 	
 Chapter 2 - Building Entryway
 
@@ -1262,7 +1267,7 @@ Beck: 'Oh, no doubt.'";
 
 The open-space is scenery in the entry doorway. It is privately-named. The printed name is "open space". Understand "open space" as open-space. "On the far side of the glass walls is a large open space serving as the extended lobby of the building."
 
-The description of the entry door is "A glass revolving door emblazoned with the symbol of a Viking king astride the planet Mars." Understand "revolving/symbol" as entry door.
+The description of the entry door is "A glass revolving door emblazoned with the symbol of a Viking king astride the planet Mars." Understand "revolving/symbol/doorway" as entry door.
 
 Before going from entry doorway to lobby for the first time:
 	converse "Jones takes a deep breath. 'I[']m going in.'
@@ -2521,7 +2526,7 @@ Every turn when the mauve guard robot is in the tenth-floor-region and the mauve
 				now conversed this turn is true;
 				continue the action;
 		if the location is in tenth-floor-region and a random chance of 1 in 6 succeeds:
-			converse "[one of]Thallium's voice booms over the office PA: 'You can run, Jones, but you can't - well, there aren't very many places you can hide.'[or]Thallium: 'Jones, you still hanging around with that loser Beck?'[or]Thallium: 'Don't you just hate it, Jones -- not knowing when death will just jump out at you?'[or]Thallium: 'I bet you're just [special-style-2]dying[special-style-1] to meet Europa, right, Jones?'[then at random]"
+			converse "[one of]Thallium's voice booms over the office PA: 'You can run, Jones, but you can't - well, there aren't very many places you can hide.'[or]Thallium: 'Jones, you still hanging around with that loser Beck?'[or]Thallium: 'Don't you just hate it, Jones -- not knowing when death will just jump out at you?'[or]Thallium: 'I bet you're just [style2]dying[style1] to meet Europa, right, Jones?'[then at random]"
 
 
 the describe room gone into rule does nothing when the noun is the mauve guard robot.
@@ -2854,7 +2859,7 @@ Instead of examining the glass diamond when the glass diamond is not discovered:
 	say line break;
 	converse "Jones: 'Hmm. This is made of glass.'
 	
-	Thallium: 'Poor, sad Jones. But here's the thing. There [special-style-2]is[special-style-1] a real diamond in there; it's just you'll never find it before the building's defenses flood the whole floor with poisonous gas. Or maybe I'm bluffing. Maybe I'm not. Can you afford to gamble?'";
+	Thallium: 'Poor, sad Jones. But here's the thing. There [style2]is[style1] a real diamond in there; it's just you'll never find it before the building's defenses flood the whole floor with poisonous gas. Or maybe I'm bluffing. Maybe I'm not. Can you afford to gamble?'";
 	say line break;
 	say "Jones tosses the fake away.";
 	remove the glass diamond from play;
@@ -2985,7 +2990,7 @@ When Thallium alight begins:
 Before going to flyer pad during On-Rooftop:
 	say "Thallium trails after Jones.";
 	say line break;
-	converse as Thallium "Um, Jones -- that harlot you're so bent on freeing from captivity is over [special-style-2]there[special-style-1]. Now get out of the way, I'm trying to escape.'
+	converse as Thallium "Um, Jones -- that harlot you're so bent on freeing from captivity is over [style2]there[style1]. Now get out of the way, I'm trying to escape.'
 	
 	Thallium pushes past [us]. [We] attempts to grab his shoulder, but [we] is thrown back by an unseen force.
 	
@@ -3070,7 +3075,7 @@ After going to the penthouse roof for the first time:
 
 Report going to penthouse roof for the first time:
 	say line break;
-	converse as thallium "Jones walks out onto the luxurious penthouse roof. Admiral Thallium turns from the railing to face [us]. He is dressed in an absurd elaboration of a Martian Admiral's uniform. He looks Jones up and down with a lecherous leer. 'Ah, Galaxy Jones, as lovely as ever. If it weren't so unbearably cliché I[']d ask you to join me in my rise to greatness. But alas, you are too habituated to the smug high of [']goodness['].' He sighs dramatically. 'We've trodden similar ground before; no need to discuss it further. Although I would challenge any of your various [special-style-2]amoureux[special-style-1] to conjugate [']tread['] correctly.
+	converse as thallium "Jones walks out onto the luxurious penthouse roof. Admiral Thallium turns from the railing to face [us]. He is dressed in an absurd elaboration of a Martian Admiral's uniform. He looks Jones up and down with a lecherous leer. 'Ah, Galaxy Jones, as lovely as ever. If it weren't so unbearably cliché I[']d ask you to join me in my rise to greatness. But alas, you are too habituated to the smug high of [']goodness['].' He sighs dramatically. 'We've trodden similar ground before; no need to discuss it further. Although I would challenge any of your various [style2]amoureux[style1] to conjugate [']tread['] correctly.
 	
 	'Anyway, I guess this is the time where you do something predictably undignified and violent. Before you do I feel I should inform you that your sidearm has been rendered quite ineffective by my personal security field. But do go ahead and try it.'
 	
@@ -3360,7 +3365,7 @@ After printing the player's obituary when the story has ended finally:
 	say line break;
 	say "Her eyes flutter open, close again, then open. She winces and brings one hand up to shield her eyes. 'Who's that?' she says, hoarsely.";
 	say line break;
-	converse "Join Galaxy Jones next time in [special-style-2]Galaxy Jones II: Existential Time Crisis![special-style-1]";
+	converse "Join Galaxy Jones next time in [style2]Galaxy Jones II: Existential Time Crisis![style1]";
 	if accessible is off:
 		print the galaxy banner;
 	
@@ -3837,7 +3842,7 @@ After pleading when the location is the ledge and the window washing scaffold is
 	if plead ledge is:
 		-- 1: converse "Beck: 'Is there anything out there useful?'";
 		-- 2: converse "Beck: 'Have you looked everywhere?'";
-		-- 3: converse "Beck: '[special-style-2]everywhere?[special-style-1]'";
+		-- 3: converse "Beck: '[style2]everywhere?[style1]'";
 		-- otherwise: converse "Beck: 'Look down.'";
 		
 After pleading when the location is the window washing scaffold and the floor of the window washing scaffold is 10 and the exhaust vent is closed:
@@ -3911,7 +3916,7 @@ Chapter 3 - Ask Beck About Game
 
 Instead of asking Beck about "game":
 	lb;
-	converse "Beck: 'Well, you can ask about: [bold type]INTERACTIVE FICTION[special-style-1], [bold type]COMMANDS[special-style-1], or [bold type]CREDITS[special-style-1].'";
+	converse "Beck: 'Well, you can ask about: [bold type]INTERACTIVE FICTION[style1], [bold type]COMMANDS[style1], or [bold type]CREDITS[style1].'";
 	
 abouting is an action applying to nothing. Understand "about" as abouting.
 Instead of abouting:
@@ -3927,17 +3932,17 @@ Instead of commanding:
 	
 Instead of asking Beck about "interactive fiction":
 	lb;
-	converse "Beck: 'According to Wikipedia, [']Interactive fiction, often abbreviated IF, is software simulating environments in which players use text commands to control characters and influence the environment.['] In more plain language, in this game you'll explore places, acquire objects, and defeat enemies all by typing commands. For instance, if you found an axe, you would type [bold type]TAKE AXE[special-style-1] to take it, and [bold type]DROP AXE[special-style-1] to drop it again.'
+	converse "Beck: 'According to Wikipedia, [']Interactive fiction, often abbreviated IF, is software simulating environments in which players use text commands to control characters and influence the environment.['] In more plain language, in this game you'll explore places, acquire objects, and defeat enemies all by typing commands. For instance, if you found an axe, you would type [bold type]TAKE AXE[style1] to take it, and [bold type]DROP AXE[style1] to drop it again.'
 	
-	You can move around in the world by typing commands like [bold type]GO NORTH[special-style-1], which can be abbreviated as [bold type]N[special-style-1]. If you need to refresh your memory about your surroundings you can say [bold type]LOOK[special-style-1], or just [bold type]L[special-style-1]. To see what you're holding, use [bold type]INVENTORY[special-style-1], or [bold type]I[special-style-1]. You can find out more about that axe from before by typing [bold type]EXAMINE AXE[special-style-1], or just [bold type]X AXE[special-style-1].'
+	You can move around in the world by typing commands like [bold type]GO NORTH[style1], which can be abbreviated as [bold type]N[style1]. If you need to refresh your memory about your surroundings you can say [bold type]LOOK[style1], or just [bold type]L[style1]. To see what you're holding, use [bold type]INVENTORY[style1], or [bold type]I[style1]. You can find out more about that axe from before by typing [bold type]EXAMINE AXE[style1], or just [bold type]X AXE[style1].'
 	
-	Of course, any game has limitations, so you can't just enter any old sentence and expect to have it understood. [bold type]ASK BECK ABOUT COMMANDS[special-style-1] for a partial list of commands that will work.'";
+	Of course, any game has limitations, so you can't just enter any old sentence and expect to have it understood. [bold type]ASK BECK ABOUT COMMANDS[style1] for a partial list of commands that will work.'";
 
 To say cmd:
 	say bold type;
 
 to say xcmd:
-	say special-style-1; 
+	say style1; 
 
 Instead of asking Beck about "commands":
 	lb;
@@ -4249,7 +4254,7 @@ the description of light-meter is "no need for a description".
 	
 Volume 14 - Not for release
 
-DEBUG is false . 
+DEBUG is true. 
 
 Understand "* [text]" as a mistake ("Noted.").
 

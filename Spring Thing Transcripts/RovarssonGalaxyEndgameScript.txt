@@ -1,0 +1,1159 @@
+Start of a transcript of
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+An Interactive Rescue Mission by Phil Riley
+Release 5 / Serial number 230401 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) 
+Identification number: //8E621A76-873D-4820-82FC-12FC699572B3//
+Interpreter version 0.5.4 / VM 3.1.2 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Deluxe Doors version 4 by Emily Short
+Skeleton Keys by Emily Short
+Epistemology version 9 by Eric Eve
+Conversation Framework version 11 by Eric Eve
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+
+>* && Alright. Let's do this for real.
+I didn't understand that sentence.
+
+>w
+(first opening the air handling door)
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+Thallium's voice booms over the office PA: "You can run, Jones, but you can't - well, there aren't very many places you can hide."
+
+>s
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+>w
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. You can leave the elevator to the east.
+
+One of the ceiling panels looks loose.
+
+Admiral Thallium's voice oozes from concealed speakers: "Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant."
+
+
+>pull panel
+(the ceiling panel)
+Jones removes the ceiling panel, exposing a hole wide enough for her to squeeze through.
+
+>s
+The exit is to the east.
+
+>e
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+>s
+
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+Jones sees the mauve guard robot nearby to the west. 
+
+>e
+
+Galaxy Jones is at the southeast corner of the Consolidated Microthings office. This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.
+
+A couple of steps to the west, the mauve guard robot heads east.
+
+>n
+
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+The mauve guard robot appears nearby to the south, coming from the west.
+
+Beck: "That's one ugly dude."
+
+Jones: "I wouldn't want to meet it up close."
+
+>nw
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears nearby to the southeast, coming from the south.
+
+Beck: "If I only had a heart, indeed."
+
+>s
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+The mauve guard robot appears nearby to the north, coming from the southeast.
+
+Beck: "I don't think I like Thallium's choice of friends much."
+
+>w
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+The mauve guard robot appears nearby to the east, coming from the north.
+
+>u
+
+Galaxy Jones is on the top of the elevator car. The elevator shaft extends many hundreds of feet above her. She can see down into the elevator car from here.
+
+The mauve guard robot enters the elevator car below.
+
+>jump robot
+Jones drops down through the ceiling and on to the guard robot. It swings around looking for her, obviously panicked that it can't bring its gun to bear on its attacker. Jones manages to hang on.
+
+The mauve guard robot struggles against her hold on it, to no avail.
+
+>pour gel on robot
+Jones pours the gel into the vent on the robot's head. The robot flails around wildly and throws her from its back, then lets out a loud crackling sound and stops moving.
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+>x robot
+From the outside there's no sign of what killed the mauve guard robot.
+
+>open robot
+It isn't something Jones can open.
+
+>shoot robot
+Jones only uses violent means when absolutely necessary.
+
+>s
+The exit is to the east.
+
+>e
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+>s
+
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+>w
+
+Galaxy Jones is at the southwest corner of the Consolidated Microthings office. This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. Jones can go north or east from here.
+
+There is a present with a note attached sitting on a desk here.
+
+>read note
+(the sticky note)
+The note says "84908".
+
+>* && I meant the note on the present
+I didn't understand that sentence.
+
+>x present
+The note on the present says "For Galaxy -- see you soon! -- Your friend, the Admiral."
+
+>open present
+Jones rips the package open and discovers a golden key.
+
+>get key
+(the drop key)
+Jones already has that.
+
+>if there are two keys, one carried and one for grabs, doesn't Inform automatically choose the loose key for a TAKE command?
+You seem to want to talk to someone, but I can't see whom.
+
+>take golden key
+Jones already has that.
+
+>i
+Jones is carrying:
+  a golden key
+  a black cardkey
+  a screwdriver
+  a full water bottle
+  a red cardkey
+  a drop key
+  a hammer
+  a safety pin
+  a garish medal
+  an Atmo-Suit
+  a fork
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>drop golden key
+Dropped.
+
+>take key
+(the golden key)
+Taken.
+
+>* && I misunderstood.
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is at the southwest corner of the Consolidated Microthings office. This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. Jones can go north or east from here.
+
+>e
+
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+>n
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+>w
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+>push robot east
+I didn't understand that number.
+
+>* && Uhmmm...
+I didn't understand that sentence.
+
+>move robot
+It's too heavy to lift or move.
+
+>* && Oh, I get it. PUSH is reserved for the numbered lift buttons in this location.
+You seem to want to talk to someone, but I can't see whom.
+
+>x buttons
+Real ivory. Jones recoils in disgust.
+
+>push button
+You have to specify what button, from 1 to 100.
+
+>push 100
+Nothing happens.
+
+>put key in lock
+Which do you mean, the golden key, the black cardkey, the red cardkey, or the drop key?
+
+>put golden key in keyhole
+Jones puts the key in the keyhole and turns. There is a pleasant chime, and some buttons light up.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+>press 99
+Nothing happens.
+
+>save
+Ok.
+
+>press 9
+The elevator quickly arrives at its destination.
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+>e
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>w
+(first opening the ninth floor elevator door)
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+>press 100
+The elevator accelerates upwards at a frightening rate. The numbers climb towards 100. Soon the elevator slows, and the door opens on the 100th floor.
+
+Jones: "Holy - This thing goes fast."
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+>u
+
+Galaxy Jones is on the top of the elevator car. She is right at the top of the shaft. She can see down into the elevator car from here.
+
+>x shaft
+This is the top of the shaft.
+
+>* && Nothing to sabotage here?
+I didn't understand that sentence.
+
+>i
+Jones is carrying:
+  a black cardkey
+  a screwdriver
+  a full water bottle
+  a red cardkey
+  a drop key
+  a hammer
+  a safety pin
+  a garish medal
+  an Atmo-Suit
+  a fork
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>d
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+>e
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+>x marble
+There's nothing like that nearby.
+
+>x floors
+Dark black, almost threatening, rounding out the storm cloud atmosphere of the room.
+
+>x chandelier
+An enormously extravagant display of crystal.
+
+>swing on chandelier
+I didn't understand that sentence.
+
+>swing chandelier
+I didn't understand that sentence.
+
+>* && How to distract Rovarsson: present him with a chandelier and watch him try to SWING.
+I didn't understand that sentence.
+
+>climb chandelier
+Little is to be achieved by that.
+
+>jump to chandelier
+There's nothing like that nearby.
+
+>jump on chandelier
+Sounds like fun. Maybe later after Jones has saved Europa.
+
+>l
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+>throw cable at chandelier
+Jones thinks twice and decides not to throw it after all.
+
+>x doors
+It's not clear why everything has to be so excessive.
+
+>s
+
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
+
+Thallium seems to speak from all around Jones. "You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all."
+
+Jones snorts, "Sure, Thallium."
+
+>x diamonds
+So many of them, from the tiny to the obscenely large. It looks like it wouldn't be hard to pry one out.
+
+>i
+Jones is carrying:
+  a black cardkey
+  a screwdriver
+  a full water bottle
+  a red cardkey
+  a drop key
+  a hammer
+  a safety pin
+  a garish medal
+  an Atmo-Suit
+  a fork
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>pry diamond with screwdriver
+I only understood you as far as wanting to pry the array of diamonds.
+
+>pry diamond
+You pry one of the diamonds out of the wall.
+
+Thallium giggles. "Oh, I hope you're not disappointed, Jones."
+
+>x diamond
+(the diamond)
+
+Jones: "Hmm. This is made of glass."
+
+Thallium: "Poor, sad Jones. But here's the thing. There is a real diamond in there; it's just you'll never find it before the building's defenses flood the whole floor with poisonous gas. Or maybe I'm bluffing. Maybe I'm not. Can you afford to gamble?"
+
+Jones tosses the fake away.
+
+>pry diamond
+That can't be pried out.
+
+>x diamonds
+It's impossible to tell which ones are real and which are glass without prying each one out separately.
+
+>pry diamond
+That can't be pried out.
+
+>* && This should at least have some disparaging response to make the Galaxy and the player abandon the idea of indeed prying every single diamond out.
+I didn't understand that sentence.
+
+>get diamond
+Jones will never find the real diamond this way.
+
+>l
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
+
+>* && remind me: why am I interested in finding the real diamond. I'm here to save the girl, right? If I still need a diamond for my ring (or to cut through glass) after that, then I might be interested.
+I didn't understand that sentence.
+
+>x array
+It's impossible to tell which ones are real and which are glass without prying each one out separately.
+
+>i
+Jones is carrying:
+  a black cardkey
+  a screwdriver
+  a full water bottle
+  a red cardkey
+  a drop key
+  a hammer
+  a safety pin
+  a garish medal
+  an Atmo-Suit
+  a fork
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>hit array with hammer
+Jones commences to smash all of the diamonds. After destroying several dozen fraudulent gems, she finds one that won't break. She takes the real diamond.
+
+Thallium: "Wow, clever solution. Be careful you don't cut yourself."
+
+Jones: "I appreciate your concern."
+
+>* && Nice!
+I didn't understand that sentence.
+
+>* && I I had a laser gun instead of a disruptor, I could have watched for differing light dispersion. A tad more elegant, but I like hammering!
+You seem to want to talk to someone, but I can't see whom.
+
+>nw
+
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+>* && Medal + code.
+I didn't understand that sentence.
+
+>restore
+Ok.
+
+>l
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+>press 100
+The elevator accelerates upwards at a frightening rate. The numbers climb towards 100. Soon the elevator slows, and the door opens on the 100th floor.
+
+Jones: "Holy - This thing goes fast."
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+The remains of the mauve guard robot are sprawled on the ground.
+
+>e
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+>* && just making sure I have a close enough save-spot.
+I didn't understand that sentence.
+
+>s
+
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
+
+Thallium seems to speak from all around Jones. "You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all."
+
+Jones snorts, "Sure, Thallium."
+
+>hit diamonds
+(with the hammer)
+Jones only uses violent means when absolutely necessary.
+
+>pry diamond
+You pry one of the diamonds out of the wall.
+
+Thallium giggles. "Oh, I hope you're not disappointed, Jones."
+
+>x it
+
+Jones: "Hmm. This is made of glass."
+
+Thallium: "Poor, sad Jones. But here's the thing. There is a real diamond in there; it's just you'll never find it before the building's defenses flood the whole floor with poisonous gas. Or maybe I'm bluffing. Maybe I'm not. Can you afford to gamble?"
+
+Jones tosses the fake away.
+
+>hit diamonds
+(with the hammer)
+Jones commences to smash all of the diamonds. After destroying several dozen fraudulent gems, she finds one that won't break. She takes the real diamond.
+
+Thallium: "Wow, clever solution. Be careful you don't cut yourself."
+
+Jones: "I appreciate your concern."
+
+>ne
+
+Galaxy Jones is in the eastern corner of the penthouse. This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.
+
+>x window
+Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking Building stands near the periphery, overlooking the vast red plain of Utopia Planitia.
+
+>shoot window
+Jones only uses violent means when absolutely necessary.
+
+>x screens
+They are showing Thallium's logo, the ten planets in order overlaid with the motto "Planetas Vincam".
+
+>x desk
+The desk is really too big for a human-sized person. Bubinga wood, if you're unfamiliar with it, is according to Wikipedia, "a flowering plant genus in the family Fabaceae".
+
+>sit at desk
+I didn't understand that sentence.
+
+>look under desk
+Jones finds nothing of interest.
+
+>open desk
+It isn't something Jones can open.
+
+>climb on desk
+There's nothing like that nearby.
+
+>i
+Jones is carrying:
+  a diamond
+  a black cardkey
+  a screwdriver
+  a full water bottle
+  a red cardkey
+  a drop key
+  a hammer
+  a safety pin
+  a garish medal
+  an Atmo-Suit
+  a fork
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>l
+Galaxy Jones is in the eastern corner of the penthouse. This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.
+
+>sw
+
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. Broken glass litters the floor. The penthouse continues to the northwest, north, and northeast.
+
+>nw
+
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+>x claw
+It looks like it could grip a small object.
+
+>touch claw
+Jones feels nothing unexpected.
+
+>x eye
+Looks like it might be a sensor of some sort.
+
+>ne
+
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+>x bed
+It's round and huge, and it looks supremely comfortable.
+
+>look under bed
+Jones finds nothing of interest.
+
+>lie on bed
+There's no lying down on the job for Galaxy Jones!
+
+>jump on bed
+Sounds like fun. Maybe later after Jones has saved Europa.
+
+>search bed
+Jones finds nothing of interest.
+
+>x dummies
+The best outfit is his Napoleon outfit.
+
+>x clothes
+Hideous.
+
+>l
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+>x tabler
+There's nothing like that nearby.
+
+>x table
+A vanity table. So aptly named for a man like the Admiral.
+
+>x napoleon outfit
+There's nothing like that nearby.
+
+>* && *ahem* points to response to X DUMMIES *hum*
+I didn't understand that sentence.
+
+>search clothes
+Jones finds nothing of interest.
+
+>x table
+A vanity table. So aptly named for a man like the Admiral.
+
+>x ceiling
+There's nothing like that nearby.
+
+>l
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+>sw
+
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+>put medal in claw
+That won't fit in the claw.
+
+>i
+Jones is carrying:
+  a diamond
+  a black cardkey
+  a screwdriver
+  a full water bottle
+  a red cardkey
+  a drop key
+  a hammer
+  a safety pin
+  a garish medal
+  an Atmo-Suit
+  a fork
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>x medal
+While the front looks authentic, the reverse is engraved with Thallium's personal motto "Planetas Vincam". Earlier Jones removed the safety pin.
+
+>put diamond in claw
+As soon as insert the diamond into the claw, laser beams spring from five emitters on the walls. They hit the diamond and join into a single more powerful beam that strikes the electronic eye on the wall. A sound like a sliding door comes from behind Jones, and she spins around to see the red wall slide down into the floor. It exposes a control panel of sorts, featuring a large red button labeled "Press Me".
+
+>* && "As soon as JONES insertS ..."
+I didn't understand that sentence.
+
+>save
+Ok.
+
+>take diamond
+Taken.
+
+>l
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. A control panel is set into the outer wall. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+>x button
+It's labeled "Press Me".
+
+>x panel
+Jones discovers a secret panel, which when opened exposes a small black button.
+
+>x black button
+Very nondescript.
+
+>l
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. A control panel is set into the outer wall. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+>x red button
+It's labeled "Press Me".
+
+>x black button
+Very nondescript.
+
+>the big scary red button isn't mentioned in the room description.
+I didn't understand that sentence.
+
+>save
+Ok.
+
+>*&& Well, here goes. Just because I really want to know how much KaBoom is going to happen.
+You seem to want to talk to someone, but I can't see whom.
+
+>press red button
+Thallium's voice startles Jones, and she forgets the button for a moment.
+
+"Yes, yes, press it!", Thallium squeaks.
+
+>press red button
+Jones presses the red button, but nothing seems to happen. After a few seconds, however, she starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die.
+
+Thallium's voice is thick with feigned concern. "Oh, my poor, poor Galaxy Jones. And you were so close."
+
+
+
+    *** Galaxy Jones was killed by poison gas. ***
+
+
+In that game you scored 7 out of a possible 10, in 511 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is in the western corner of the penthouse.
+[Previous turn undone.]
+
+>press black button
+Somewhere beyond this room comes the sound of something heavy being moved.
+
+Beck: "Why didn't you press the button that said 'Press Me'? Maybe we should press it anyway. Please?"
+
+>press red button
+Jones presses the red button, but nothing seems to happen. After a few seconds, however, she starts to feel light-headed, and shortly after she starts to suffocate. It's not a nice way to die.
+
+Thallium's voice is thick with feigned concern. "Oh, my poor, poor Galaxy Jones. And you were so close."
+
+
+
+    *** Galaxy Jones was killed by poison gas. ***
+
+
+In that game you scored 7 out of a possible 10, in 512 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is in the western corner of the penthouse.
+[Previous turn undone.]
+
+>* && Fuck you Beck.
+I didn't understand that sentence.
+
+>ne
+
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+>se
+
+Galaxy Jones is in the eastern corner of the penthouse. This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.
+
+>sw
+
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. Broken glass litters the floor. The penthouse continues to the northwest, north, and northeast.
+
+>ne
+
+Galaxy Jones is in the eastern corner of the penthouse. This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.
+
+>x desk
+The desk is really too big for a human-sized person. Bubinga wood, if you're unfamiliar with it, is according to Wikipedia, "a flowering plant genus in the family Fabaceae".
+
+>push desk
+This desk would take three or four people to move.
+
+>nw
+
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+>x bed
+It's round and huge, and it looks supremely comfortable.
+
+>x dummies
+The best outfit is his Napoleon outfit.
+
+>x table
+A vanity table. So aptly named for a man like the Admiral.
+
+>x ceiling
+There's nothing like that nearby.
+
+>se
+
+Galaxy Jones is in the eastern corner of the penthouse. This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.
+
+>x screens
+They are showing Thallium's logo, the ten planets in order overlaid with the motto "Planetas Vincam".
+
+>look under desk
+Jones finds nothing of interest.
+
+>nw
+
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+>sw
+
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. A control panel is set into the outer wall. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+>press black button
+Nothing obvious happens.
+
+>x black button
+Very nondescript.
+
+>Ah. I went back to the transcript: somewhere BEYOND this room something heavy moved.
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. A control panel is set into the outer wall. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+>ne
+
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+>s
+
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+A portion of the eastern wall has slid away to reveal a stunning white marble staircase.
+
+Jones: "Must be the way up to the roof. Beck, you there?"
+
+Beck: "Yep, I'm here, just a bit busy is all. I'll meet you on that roof."
+
+>ask beck about roof
+Beck: "I'm not sure what you're asking about, Jones."
+
+>* && Is Beck going to be Thallium?
+I didn't understand that sentence.
+
+>e
+
+Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?
+>n
+
+>save
+Ok.
+
+>e
+
+Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?
+>y
+
+Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
+
+>u
+(first opening the roof access door)
+Jones opens the door and steps through onto the roof. The door crashes shut, and a lock audibly clicks.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+
+Jones walks out onto the luxurious penthouse roof. Admiral Thallium turns from the railing to face her. He is dressed in an absurd elaboration of a Martian Admiral's uniform. He looks Jones up and down with a lecherous leer. "Ah, Galaxy Jones, as lovely as ever. If it weren't so unbearably cliché I'd ask you to join me in my rise to greatness. But alas, you are too habituated to the smug high of 'goodness'." He sighs dramatically. "We've trodden similar ground before; no need to discuss it further. Although I would challenge any of your various amoureux to conjugate 'tread' correctly.
+
+"Anyway, I guess this is the time where you do something predictably undignified and violent. Before you do I feel I should inform you that your sidearm has been rendered quite ineffective by my personal security field. But do go ahead and try it."
+
+Jones sneers. "I wouldn't give you the satisfaction," she says, looking around. "I see you don't have any of your robot pets up here. How are you going to stop me from rescuing Europa?"
+
+"Oh please, while we're trying things, try that too. I wish you luck breaking the silnium bars of the cage."
+
+"What's silnium?"
+
+"A superstrong material invented here in my Martian Chemical laboratory. We had a press conference for it -- weren't you watching?"
+
+"Couldn't be bothered."
+
+"Oh for frotz sake, Jones, you're so frustrating!"
+
+Thallium turns his back on Jones and stares out over the city.
+
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
+
+Admiral Thallium is sulking.
+
+>x lounge
+Looks like a good time, if Jones weren't already busy.
+
+>x fire pit
+Looks like a good time, if Jones weren't already busy.
+
+>x tub
+Looks like a good time, if Jones weren't already busy.
+
+>x bar
+Looks like a good time, if Jones weren't already busy.
+
+>x field
+It can't be seen, but it's comforting to know it's there.
+
+>x pad
+There's nothing like that nearby.
+
+>w
+Thallium trails after Jones.
+
+Um, Jones -- that harlot you're so bent on freeing from captivity is over there. Now get out of the way, I'm trying to escape."
+
+Thallium pushes past Jones. She attempts to grab his shoulder, but she is thrown back by an unseen force.
+
+Thallium smirks. "Personal security field, remember? Now I must be off."
+
+Jones watches as Thallium boards the flyer. It takes off a moment later.
+
+Galaxy Jones is on the flyer pad. This is what one would expect from a rooftop flyer pad: landing lights surrounding a large letter F painted in white on a red background. Europa's cage is to the northeast and the rest of the rooftop is to the east.
+
+>undo
+Galaxy Jones is on the penthouse roof.
+[Previous turn undone.]
+
+>x flyer
+It's big and green and black. Looks like a Sirius XE.
+
+>shoot it
+Jones's disruptor does nothing. Looks like Thallium was telling the truth.
+
+>throw hammer at flyer
+It might leave a dent, but bring down a flyer? Really?
+
+>yes
+I didn't understand that sentence.
+
+>i
+Jones is carrying:
+  a diamond
+  a black cardkey
+  a screwdriver
+  a full water bottle
+  a red cardkey
+  a drop key
+  a hammer
+  a safety pin
+  a garish medal
+  an Atmo-Suit
+  a fork
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>throw hooks at flyer
+Jones throws the cable, but it comes up short. She gathers it up again.
+
+>throw hooks at cage
+Jones thinks twice and decides not to throw it after all.
+
+>l
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
+
+Admiral Thallium is sulking.
+
+>e
+Jones would plummet to her death that way.
+
+>s
+Jones would plummet to her death that way.
+
+>x thallium
+(Admiral Thallium)
+The "Admiral" is a disctinctly ridiculous figure. He dresses in a mockery of a Martian admiral's uniform, plastered with medals. His hair is slicked back and his mustache is painstakingly waxed.
+
+>talk to admiral
+(Admiral Thallium)
+He's not likely to be helpful.
+
+>ask thallium about mommy
+(Admiral Thallium about that)
+He's not likely to be helpful.
+
+>* && It's annoying that the game informs me what's going on in its synonym synapses. Yes, I know that you substituted "Admiral Thallium" for "thallium". Here's a doggy treat.
+You seem to want to talk to someone, but I can't see whom.
+
+>x mustache
+There's nothing like that nearby.
+
+>ask thallium about mustache
+(Admiral Thallium about that)
+He's not likely to be helpful.
+
+>push thallium
+(Admiral Thallium)
+Jones would rather not touch Thallium.
+
+>* && It would quickly take care of a nasty problem though...
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
+
+Admiral Thallium is sulking.
+
+>x cage
+You can see the cage with Europa Callisto in it from here. She's lying on the floor and not moving.
+
+>x europa
+There's nothing like that nearby.
+
+>n
+
+Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+Jones tries the strength of the bars just in case. They don't budge.
+
+South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards Jones.
+
+>attach hooks to bars
+It doesn't seem useful to attach the cable to this part of the cage.
+
+Thallium's flyer hovers over the rooftop. "Jones!"  he bellows. "Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die."
+
+Jones rolls her eyes.
+
+A little ways off, another flyer, small and red, aims for the rooftop and accelerates.
+
+>put hooks on cage
+Jones puts the cable with hooks at either end on the cage.
+
+>* && Why not allow attaching the cable to the bars?
+I didn't understand that sentence.
+
+>throw cable at flyer
+(Admiral Thallium's flyer)
+(first taking the cable with hooks at either end)
+Jones throws the cable, but it comes up short. She gathers it up again.
+
+>climb cage
+Jones gets onto the cage.
+
+>throw cable at flyer
+(Admiral Thallium's flyer)
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the craft and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
+
+The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto.
+
+"Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!"
+
+Europa moans but doesn't show any signs of having understood Jones.
+
+Galaxy Jones is in the cage. The whole structure is tilted, leaving a hole at the eastern end. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Jones is kneeling at Europa Callisto's side, trying to rouse her.
+
+The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.
+
+>wake europa
+Europa moans but otherwise does not respond.
+
+>pour water on europa
+It's not elegant, but it works.
+
+Jones opens the water bottle and brings it to Europa's lips. Even with closed eyes she drinks, first slowly and then with increasing vigor, until her eyes open.
+
+"Ga- Galaxy Jones?" she says.
+
+Jones nods, but says "We'll have time for introductions later. We have to get out of here before the roof is full of killer robots. Can you crawl? If you can get through that hole I can carry you the rest of the way."
+
+Europa nods. "I think so."
+
+Galaxy Jones helps her through the hole in the cage, then gently picks her up and jogs toward the waiting flyer. Beck's familiar face appears at the door of the aircraft, urging her on.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Not so far away, Admiral Thallium crawls back over the edge of the roof. As he pulls himself up, he aims a pistol at Jones's back...
+
+The shot hits her full in the back and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.
+
+And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...
+
+[continue]
+
+
+
+    *** The End, For Now... ***
+
+
+In that game you scored 10 out of a possible 10, in 564 turns.
+
+
+Extensions by:
+Standard Rules version 3/120430 by Graham Nelson
+Deluxe Doors version 4 by Emily Short
+Skeleton Keys by Emily Short
+Epistemology version 9 by Eric Eve
+Conversation Framework version 11 by Eric Eve
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+
+Story by Phil Riley.
+Programming by Phil Riley.
+Playtesting by Leon Lin, Oliver Matthias, Jade, John Ziegler, and Kenneth Pedersen.
+Invaluable inspiration from Laura Taalman.
+
+The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.
+
+Promotional consideration provided by Olympus Springs of Mars, Inc.
+
+
+...
+
+
+<Black screen>
+
+"Jones! Jones! Wake up! I'm trying to talk to you!"
+
+<Cut to a shot of two closed eyes>
+
+"C'mon, open those eyes."
+
+<The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious>
+
+"This is getting tiresome, Jones. Stop playing dead."
+
+Her eyes flutter open, close again, then open. She winces and brings one hand up to shield her eyes. "Who's that?" she says, hoarsely.
+
+Join Galaxy Jones next time in Galaxy Jones II: Existential Time Crisis!
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> amusing
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> quit

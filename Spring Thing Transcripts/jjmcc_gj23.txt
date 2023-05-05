@@ -1,0 +1,3349 @@
+Start of a transcript of
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+An Interactive Rescue Mission by Phil Riley
+Release 5 / Serial number 230401 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) 
+Identification number: //8E621A76-873D-4820-82FC-12FC699572B3//
+Interpreter version 1.3.6 / VM 3.1.2 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Deluxe Doors version 4 by Emily Short
+Skeleton Keys by Emily Short
+Epistemology version 9 by Eric Eve
+Conversation Framework version 11 by Eric Eve
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+
+>l
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+>x speeders
+There's nothing like that nearby.
+
+>x speeder
+(the speeder)
+Galaxy One is a Dust Runner, a top-of-the-line model from Olympus Speedworks. It's deep crimson with tinted windows. Powerful turbines adorn vestigial wings that sweep back in severe rearward arcs.
+
+>x sky
+There's nothing like that nearby.
+
+>x viking
+The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.
+
+>n
+Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones looks up at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+>enter
+You must supply a noun.
+
+>enter building
+Jones takes a deep breath. "I'm going in."
+
+Beck replies, "You got this, Galaxy."
+
+Jones passes through the revolving door and into the lobby, alert to any defenses.
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
+
+>x sculpture
+Suddenly two robot guards, green and red, emerge from niches in the back wall! Jones dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring your suit radar."
+
+>shoot green robot
+Jones's shot goes wide, reflecting off one of the building struts and into the suspended sculpture. The artwork begins to spin wildly, straining its cables.
+
+Beck: "Robot on your right!"
+
+One robot tries to flank her, but a shot from her disruptor sends it scurrying back.
+
+>crawl east
+I didn't understand that sentence.
+
+>e
+Trying to reach an exit would surely get Jones shot.
+
+Jones: "I'm pinned down here!"
+
+One of the robots fires directly above her head.
+
+>shoot sculpture
+Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
+
+>* lol, love the logo repreis
+You seem to want to talk to someone, but I can't see whom.
+
+>l
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>x niche
+Aside from a robot charging station, there's nothing here.
+
+>get charging station
+I only understood you as far as wanting to get the charging stations.
+
+>w
+Jones crosses the floor carefully, disruptor pistol at the ready.
+
+Galaxy Jones is at the southwest corner of the ground floor. A lush indoor waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+Admiral Thallium's voice booms from the ceiling. "Little Galaxy thinks she's beaten the big bad Admiral. Sorry dear, that was only a taste."
+
+>l
+Galaxy Jones is at the southwest corner of the ground floor. A lush indoor waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+>x waterfall
+The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin.
+
+Jones: "One coin? Not very generous people around here."
+
+>get coin
+Taken.
+
+>n
+
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+>x utility door
+It's a white metal door, completely typical. It has a swipe card lock right above the handle.
+
+>n
+
+Galaxy Jones is at the northwest corner of the ground floor. A large relief map of Mars is mounted on the north wall here. One can leave here to the south or east.
+
+>x map
+The map is crafted of bronze and sports a star at the site of New Reykjavik.
+
+>get star
+That seems to be a part of the large relief map of Mars.
+
+>e
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>x statue
+His nauseating visage seems to leer at Jones, and she suppresses a shiver of disgust.
+
+Jones groans. "Be glad you're not here, Beck. This is revolting."
+
+Beck chuckles. "I won't ask."
+
+>break statue
+Jones only uses violent means when absolutely necessary.
+
+>e
+
+Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.
+
+Jones: "Now this is some choice bullshit here."
+
+Beck: "Looks like the record of the good Admiral's long and dedicated service."
+
+>x medals
+Jones yawns looking over the assortment of faux honors. They're all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.
+
+>get medal
+Taken.
+
+>break glass
+Jones only uses violent means when absolutely necessary.
+
+>s
+
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+Beck: "Blueprints indicate a closet to the west of you. Might be useful."
+
+>get canape
+There are so many things on the table. Jones might want to look at them and decide what she wants.
+
+>x table
+The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.
+
+Jones: "What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?"
+
+Beck: "Oh, the shrimp. Definitely get the shrimp."
+
+>get shrimp
+Taken.
+
+>get fork
+Taken.
+
+>get egg
+Don't even.
+
+>w
+(first opening the closet door)
+Jones will have to enter the correct code on the keypad first.
+
+>x closet door
+A typical white metal utility door. Next to it is a keypad with the digits 0-9. An indicator light glows red.
+
+>s
+
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
+
+>x lander
+The lander is such a big, ungainly object it's hard to imagine it was once a pinnacle of human achievement.
+
+>open lander
+It isn't something Jones can open.
+
+>w
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>x robot
+Jones digs through the ruins and finds a cable with hooks at either end, which she takes.
+
+>x sculpture
+Jones searches some more, but nothing further turns up.
+
+>i
+Jones is carrying:
+  a cable with hooks at either end
+  a fork
+  a shrimp tea sandwich
+  a garish medal
+  a coin
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>n
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+>n
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>x statue
+His nauseating visage seems to leer at Jones, and she suppresses a shiver of disgust.
+
+>e
+
+Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.
+
+>count medals
+I didn't understand that sentence.
+
+>w
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>w
+
+Galaxy Jones is at the northwest corner of the ground floor. A large relief map of Mars is mounted on the north wall here. One can leave here to the south or east.
+
+>x mars
+Which do you mean, outside or the large relief map of Mars?
+
+>outside
+Outside the building are the red-dusted streets of New Reykjavik.
+
+>x map of mars
+The map is crafted of bronze and sports a star at the site of New Reykjavik.
+
+>lookup star on map
+I didn't understand that sentence.
+
+>w
+Jones can't walk through walls. She can go east or south from here.
+
+>s
+
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+>e
+(first opening the utility door)
+It seems to be locked.
+
+>x door
+It's a white metal door, completely typical. It has a swipe card lock right above the handle.
+
+>l
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+>search couches
+There is nothing on the semicircular couch.
+
+>n
+
+Galaxy Jones is at the northwest corner of the ground floor. A large relief map of Mars is mounted on the north wall here. One can leave here to the south or east.
+
+>look behind map
+Jones finds nothing of note.
+
+>e
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>look behind statue
+Jones finds nothing of note.
+
+>e
+
+Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.
+
+>x uniforms
+There's a remarkable array of faux honors here, all behind glass. One of the display cases is partly open and empty of the medal it once held.
+
+>s
+
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+>look under table
+Jones finds nothing of interest.
+
+>s
+
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
+
+>look in lander
+Jones finds nothing of interest.
+
+>look behind lander
+Jones finds nothing of note.
+
+>search lander
+Jones finds nothing of interest.
+
+>push lander
+Really, Jones doesn't even feel good about touching such an important relic.
+
+>n
+
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+>w
+(first opening the closet door)
+Jones will have to enter the correct code on the keypad first.
+
+>n
+
+Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.
+
+>w
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>push statue
+It won't budge.
+
+>s
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+>s
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>x water features
+The ground floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants.
+
+>search seats
+There's nothing like that nearby.
+
+>search plants
+Jones finds nothing of interest.
+
+>n
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+>e
+As soon as Jones enters the stairwell, a disruptor blast from above zings past her shoulder, and she beats a hasty retreat. She won't be going up the stairs until she can clear out the resistance, and she can't do that from here.
+
+Jones: "I've got gunfire from somewhere up the stairs. I'll have to get above them and take them out from behind."
+
+Beck: "Sounds like a plan."
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+>w
+(first opening the elevator door)
+Jones can't just open the elevator with her hands.
+
+>x elevator door
+A gleaming gold elevator door. There is a hole near the top for inserting a drop key.
+
+>i
+Jones is carrying:
+  a cable with hooks at either end
+  a fork
+  a shrimp tea sandwich
+  a garish medal
+  a coin
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>put fork in hole
+That can't contain things.
+
+>insert fork
+What should Jones insert the fork in?
+
+>elevator door
+That can't contain things.
+
+>put coin in hole
+That can't contain things.
+
+>s
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>x desk
+There's not much on the desk other than a sticky note that says "75125".
+
+>take note
+Taken.
+
+>search desk
+There is nothing of interest on the front desk.
+
+>look under desk
+Jones finds nothing of interest.
+
+>e
+Jones crosses the floor carefully, disruptor pistol at the ready.
+
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
+
+>n
+
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+>x door
+A typical white metal utility door. Next to it is a keypad with the digits 0-9. An indicator light glows red.
+
+>enter 75125
+(on the keypad)
+An indicator light by the door to the west glows green.
+
+Jones: "I've unlocked the east side utility door."
+
+>open door
+Jones opens the closet door.
+
+>l
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+>w
+
+Galaxy Jones is in the maintenance closet. A bare, white-walled room containing various maintenance items. The exit is to the east.
+
+There is an Atmo-Suit hanging from a hook here.
+
+On the shelf is a red cardkey.
+
+>get cardkey
+Taken.
+
+>get suit
+(the Atmo-Suit)
+Taken.
+
+>i
+Jones is carrying:
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a shrimp tea sandwich
+  a garish medal
+  a coin
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>l
+Galaxy Jones is in the maintenance closet. A bare, white-walled room containing various maintenance items. The exit is to the east.
+
+>x items
+Various uninteresting items, like mops and brooms and the like.
+
+>get broom
+There are too many to lug around.
+
+>e
+
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+>s
+
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
+
+>w
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>w
+
+Galaxy Jones is at the southwest corner of the ground floor. A lush indoor waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+>n
+
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+>swipe card
+What should Jones swipe the red cardkey through?
+
+>reader
+There's nothing like that nearby.
+
+>l
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+>x door
+It's a white metal door, completely typical. It has a swipe card lock right above the handle.
+
+>swipe card through lock
+Jones unlocks the utility door.
+
+>open door
+Jones opens the utility door.
+
+>e
+
+Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
+
+Hanging from a hook here is a drop key.
+
+Lying discarded on a table here is a hammer.
+
+>get hammer
+Taken.
+
+>get key
+(the drop key)
+Taken.
+
+>x panel
+From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on.
+
+>turn on panel
+I didn't understand that sentence.
+
+>w
+
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+>s
+
+Galaxy Jones is at the southwest corner of the ground floor. A lush indoor waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+>e
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>n
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+>use key
+I didn't understand that sentence.
+
+>put key in hole
+(the drop key in the small hole)
+Jones inserts the drop key into the small hole and turns it, disengaging the lock mechanism. Then she slides the door open, exposing an empty elevator shaft to the west.
+
+>x shaft
+A dark hole beyond the elevator doors.
+
+>i
+Jones is carrying:
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a shrimp tea sandwich
+  a garish medal
+  a coin
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>x cable
+This is a strong but slender cable, presumably of carbon nanotubes. There are steel hooks at either end.
+
+>attach cable
+What should Jones attach the cable with hooks at either end to?
+
+>elevator
+Which do you mean, the elevator shaft, the elevator door, or the elevator door?
+
+>shaft
+She would achieve nothing by this.
+
+>w
+Jones climbs into the elevator shaft.
+
+Galaxy Jones is in the ground floor elevator shaft. She is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder running up the wall next to the door.
+
+Beck: "Ooh. It's like we're in an action film."
+
+>climb ladder
+Jones climbs up the shaft, stopping at each floor to test each door. She gets all the way to the ninth floor, directly below the elevator car, before finding one that opens.
+
+Galaxy Jones is in the ninth floor elevator shaft. The door to the east is open.
+
+Beck: "Huh. Seems like it should have taken longer than that."
+
+>attach cable to elevator car
+Jones would achieve nothing by this.
+
+>e
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones: "Finally out of the shaft. That was quite a climb."
+
+Beck: "This floor is just offices. Check the building management office to the west. It might have some useful stuff."
+
+Jones exits the shaft, the door sliding closed behind her.
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>x machine
+It's an Olympus Springs bottled water machine, well-stocked.
+
+>put coin in machine
+Jones inserts the coin in the machine and takes the bottle that appears a few seconds later.
+
+>i
+Jones is carrying:
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a shrimp tea sandwich
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>l
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>n
+
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+
+>w
+
+Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
+
+>x large desk
+It's a pretty utilitarian desk of some plastic material. It has a single drawer with a keyed lock.
+
+>x task board
+The board says "1. Describe scenery objects on Engineering Deck
+ 2. Fix check rule when installing new engine component
+ 3. Add more facts to computer database
+ 4. Fix Arvax response to rebooting the ship computer
+
+and etc.". A black marker with an eraser at the end is tied to the board.
+
+>get marker
+There's nothing like that nearby.
+
+>get eraser
+There's nothing like that nearby.
+
+>/ its right there!
+I didn't understand that sentence.
+
+>x board
+The board says "1. Describe scenery objects on Engineering Deck
+ 2. Fix check rule when installing new engine component
+ 3. Add more facts to computer database
+ 4. Fix Arvax response to rebooting the ship computer
+
+and etc.". A black marker with an eraser at the end is tied to the board.
+
+>add task to board
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
+
+>x desks
+There are lots of them, none of which are particularly interesting.
+
+>s
+
+Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
+
+A screwdriver sits atop the filing cabinet.
+
+>x cabinet
+An ordinary filing cabinet, with five drawers. The label on the front says "Personnel Records".
+
+>get screwdriver
+Jones reaches for the screwdriver, but she fumbles it and it rolls off the back of the filing cabinet.
+
+Jones: "Damn."
+
+Beck: "What? What's going on?"
+
+Jones: "Just being clumsy is all."
+
+>move cabinte
+There's nothing like that nearby.
+
+>move cabinet
+Do you know how heavy paper is?
+
+>get screwdriver with cable
+I only understood you as far as wanting to get the screwdriver.
+
+>use cable to get screwdriver
+I didn't understand that sentence.
+
+>climb cabinet
+Little is to be achieved by that.
+
+>l
+Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
+
+>x task board
+The board says "Jones is coming, surprise day off!". A black marker with an eraser at the end is tied to the board.
+
+>get eraser
+There's nothing like that nearby.
+
+>i
+Jones is carrying:
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a shrimp tea sandwich
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>knock cabinet over
+I didn't understand that sentence.
+
+>push cabinet
+Do you know how heavy paper is?
+
+>e
+
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
+
+>n
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>e
+As soon as Jones enters the stairwell, a disruptor blast from above zings past her shoulder, and she beats a hasty retreat. She won't be going up the stairs until she can clear out the resistance, and she can't do that from here.
+
+Jones: "In case of fire, don't use the stairs."
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>n
+
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+
+>swipe lock 
+What should Jones swipe the swipe lock through?
+
+>swipe card through lock
+She is unable to unlock the Cybernetica door with the red cardkey.
+
+>s
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>s
+
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
+
+>swipe card through lock
+Jones is unable to unlock the Martian Chemical door with the red cardkey.
+
+>w
+
+Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
+
+>look behind cabinet
+(taking the screwdriver)
+Jones reaches behind the cabinet to retrieve the screwdriver. A swipe and a hiss make her recoil.
+
+Jones: "Holy --!"
+
+Beck: "What now?"
+
+Jones: "There's a cat here! Behind a filing cabinet. Gotta get behind there to get a screwdriver, so I need a way to drive off the cat."
+
+>i
+Jones is carrying:
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a shrimp tea sandwich
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>give sandwich to cat
+Sensing food, the black cat pokes its head out, grabs the shrimp in its jaws, and races off. Jones takes the screwdriver.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones: "Aha! No creature is too fearsome for Galaxy Jones!"
+
+Beck: "Congratulations on your victory."
+
+>n
+
+Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
+
+>open drawer with screwdriver
+Jones is unable to unlock the large desk with the screwdriver.
+
+>l
+Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
+
+>x large desk
+It's a pretty utilitarian desk of some plastic material. It has a single drawer with a keyed lock.
+
+>break lock with hammer
+Jones only uses violent means when absolutely necessary.
+
+>i
+Jones is carrying:
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>open drawer with key
+(the red cardkey)
+Jones is unable to unlock the large desk with the red cardkey.
+
+>open drawer with drop key
+Jones is unable to unlock the large desk with the drop key.
+
+>open drawer with fork
+Jones is unable to unlock the large desk with the fork.
+
+>x window
+Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking Building stands near the periphery, overlooking the vast red plain of Utopia Planitia.
+
+>open window
+It isn't something Jones can open.
+
+>l
+Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
+
+>x board
+The board says "1. Describe scenery objects on Engineering Deck
+ 2. Fix check rule when installing new engine component
+ 3. Add more facts to computer database
+ 4. Fix Arvax response to rebooting the ship computer
+
+and etc.". A black marker with an eraser at the end is tied to the board.
+
+>write on board
+You must say what you want Jones to write.
+
+>write "unlock desk" on board
+Now the board says "1. Describe scenery objects on Engineering Deck
+ 2. Fix check rule when installing new engine component
+ 3. Add more facts to computer database
+ 4. Fix Arvax response to rebooting the ship computer
+
+and etc. "unlock desk" on board".
+
+>// I SO wanted that to work :]
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
+
+>s
+
+Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
+
+>open cabinet
+Jones has better things to do than look through reams of personnel records.
+
+>search cabinet
+Jones can't see inside, since the filing cabinet is closed.
+
+>look behind cabinet
+Jones finds nothing of note.
+
+>l
+Galaxy Jones is at the south end of the building management office. The building management office is a bunch of desks and task boards. There is a filing cabinet against the east wall. The office exit is to the east, and the office continues to the north.
+
+>read board
+The board says "Jones is coming, surprise day off!". A black marker with an eraser at the end is tied to the board.
+
+>get eraser
+There's nothing like that nearby.
+
+>e
+
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
+
+>x door
+A slick corporate office door with the fancy company logo of Martian Chemical. It has a swipe lock above the handle.
+
+>n
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>x machine
+It's an Olympus Springs bottled water machine, well-stocked.
+
+>climb on machine
+There's nothing like that nearby.
+
+>x water bottle
+A full bottle of Olympus Springs water.
+
+>taste water
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>i
+Jones is carrying:
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>w
+(first opening the ninth floor elevator door)
+
+Galaxy Jones is in the ninth floor elevator shaft. The door to the east is closed.
+
+>climb down
+You must name something more substantial.
+
+>climb down shaft
+I only understood you as far as wanting to climb down.
+
+>down
+
+Galaxy Jones is in the ground floor elevator shaft. Jones is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder running up the wall next to the door.
+
+>e
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell. The elevator door is open, revealing the bottom of the elevator shaft. Jones could climb into it, if she wished.
+
+>s
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>s
+Jones leaves the building.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+>out
+But Jones isn't in anything at the moment.
+
+>e
+Jones is already at the main entrance. She's unlikely to find another way in.
+
+>w
+Jones is already at the main entrance. She's unlikely to find another way in.
+
+>s
+Jones slinks back to the speeder dock.
+
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Her speeder, Galaxy One, sits in one of the parking bays.
+
+>search speeder
+(the speeder)
+Jones finds nothing of interest.
+
+>n
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+>n
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>search plants
+Jones finds nothing of interest.
+
+>search seating
+There is nothing on the tasteful couch.
+
+>x niches
+Aside from a robot charging station, there's nothing here.
+
+>x charging station
+I only understood you as far as wanting to examine the charging stations.
+
+>yes
+I didn't understand that sentence.
+
+>n
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell. The elevator door is open, revealing the bottom of the elevator shaft. Jones could climb into it, if she wished.
+
+>n
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>x statue
+His nauseating visage seems to leer at Jones, and she suppresses a shiver of disgust.
+
+>push statue
+It won't budge.
+
+>w
+
+Galaxy Jones is at the northwest corner of the ground floor. A large relief map of Mars is mounted on the north wall here. One can leave here to the south or east.
+
+>x map
+The map is crafted of bronze and sports a star at the site of New Reykjavik.
+
+>i
+Jones is carrying:
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>pry star with screwdriver
+I only understood you as far as wanting to pry the star.
+
+>pry star
+That can't be pried out.
+
+>x medal
+While the front looks authentic, the reverse is engraved with Thallium's personal motto "Planetas Vincam". The ribbon conceals a safety pin. It looks like it could be removed.
+
+>get safety pin
+Taken.
+
+>e
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>s
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell. The elevator door is open, revealing the bottom of the elevator shaft. Jones could climb into it, if she wished.
+
+>w
+
+Galaxy Jones is in the ground floor elevator shaft. Jones is at the bottom of a dark well. Shining her suit light up, she can see that the elevator car is several floors up, unmoving. There is a ladder running up the wall next to the door.
+
+>up
+
+Galaxy Jones is in the ninth floor elevator shaft. The door to the east is closed.
+
+>n
+Jones is constrained to a narrow shaft. She can either leave to the east, or climb the ladder down.
+
+>w
+Jones is constrained to a narrow shaft. She can either leave to the east, or climb the ladder down.
+
+>unlock drawer with pin
+There's nothing like that nearby.
+
+>i
+Jones is carrying:
+  a safety pin
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>unlock drawer with safety pin
+There's nothing like that nearby.
+
+>put pin in lock
+There's nothing like that nearby.
+
+>x desk
+There's nothing like that nearby.
+
+>l
+Galaxy Jones is in the ninth floor elevator shaft. The door to the east is closed.
+
+>open door
+Jones opens the ninth floor elevator door.
+
+>e
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>n
+
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+
+>w
+
+Galaxy Jones is at the north end of the building management office. The building management office is a bunch of desks and task boards. There is a particularly large desk against the west window. The office exit is to the east, and the office continues to the south.
+
+>open drawer with pin
+Jones pushes the pin into the keyhole and wiggles it around. After a few seconds of this the desk drawer pops open. It contains a black cardkey.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Beck: "Galaxy Jones, master thief!"
+
+>x drawer
+It's a pretty utilitarian desk of some plastic material. It has a single drawer with a keyed lock.
+
+In the large desk is a black cardkey.
+
+>get cardkey
+(the black cardkey)
+Taken.
+
+>e
+
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+
+>s
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>s
+
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
+
+>e
+(first opening the Martian Chemical door)
+It seems to be locked.
+
+>swipe black cardkey through lock
+Jones unlocks the Martian Chemical door.
+
+>open door
+Jones opens the Martian Chemical door.
+
+>e
+
+Galaxy Jones is in the Martian Chemical office. This seems like the business office of the chemical company rather than the lab. Most of the room is taken up by desks and other office stuff. There is a cabinet that looks intriguing, however.
+
+>x desks
+Seen one, seen 'em all. Except for the large desk across the hall, of course.
+
+>x cabinet
+The cabinet is full of bottles of Electrofil quick-setting conductive polymer gel.
+
+>get gel
+Taken.
+
+>i
+Jones is carrying:
+  a bottle of Electrofil quick-setting conductive polymer gel
+  a black cardkey
+  a safety pin
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>l
+Galaxy Jones is in the Martian Chemical office. This seems like the business office of the chemical company rather than the lab. Most of the room is taken up by desks and other office stuff. There is a cabinet that looks intriguing, however.
+
+>x gel
+An opaque pink bottle labeled "Electrofil" in large friendly letters, it apparently hardens into a conductive substance very quickly.
+
+>l
+Galaxy Jones is in the Martian Chemical office. This seems like the business office of the chemical company rather than the lab. Most of the room is taken up by desks and other office stuff. There is a cabinet that looks intriguing, however.
+
+>search cabinet
+The chemical cabinet is empty.
+
+>w
+
+Galaxy Jones is in the ninth floor south hallway. This anonymous corporate hallway ends here at the south end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Martian Chemical."
+
+>n
+
+Galaxy Jones is in the ninth floor elevator hall. The elevator is to the west, the stairwell is to the east, and a corridor leads north and south. There is a bottled water vending machine here.
+
+>n
+
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+
+>e
+(first opening the Cybernetica door)
+It seems to be locked.
+
+>swipe cardkey
+Which do you mean, the black cardkey or the red cardkey?
+
+>black
+What should Jones swipe the black cardkey through?
+
+>lock
+(the Cybernetica door)
+That's locked at the moment.
+
+>break lock
+Jones only uses violent means when absolutely necessary.
+
+>i
+Jones is carrying:
+  a bottle of Electrofil quick-setting conductive polymer gel
+  a black cardkey
+  a safety pin
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>open door with screwdriver
+Jones is unable to unlock the Cybernetica door with the screwdriver.
+
+>open door with black cardkey
+Jones unlocks the Cybernetica door.
+
+>// ??
+I didn't understand that sentence.
+
+>open door
+Jones opens the Cybernetica door.
+
+>e
+
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities.
+
+As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
+
+Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
+
+Beck: "What's the situation?"
+
+Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I can get a shot in, but it might just absorb it anyway."
+
+Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
+
+>push chair
+Jones is not here to rearrange the furniture.
+
+>l
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities.
+
+>sneak
+(toward the purple guard robot)
+Jones creeps a little ways toward the guard robot.
+
+>l
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities.
+
+The guard robot moves a little farther away from Jones.
+
+>sneak
+(toward the purple guard robot)
+Jones creeps a little ways toward the guard robot.
+
+>shoot robot
+Jones raises her head and fires wide. The robot fires back. Jones ducks and crawls off among the labyrinth of desks.
+
+Beck: "Are you still shooting at those things? Even if you hit 'em it's not going to leave a scratch."
+
+Jones (whispering): "So what do you propose?"
+
+Beck: "Get closer. Keep your head down, but move in closer to it until you can get a good shot in."
+
+The guard robot moves a little farther away from her.
+
+>sneak
+(toward the purple guard robot)
+Jones creeps a little ways toward the guard robot.
+
+>sneak
+(toward the purple guard robot)
+Slowly, slowly, Jones gets a little closer. Just a little more...
+
+She must have poked up her shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out.
+
+>x window
+(broken window)
+Looks like Jones could get through if she's careful. There's a ledge outside.
+
+The guard robot moves a little farther away from her.
+
+>go through window
+Which do you mean, broken window or outside?
+
+>broken
+That's not something Jones can enter.
+
+>go outside
+You'll never get out without being shot.
+
+>sneak
+(toward the purple guard robot)
+Slowly, slowly, Jones gets a little closer. Just a little more...
+
+
+>sneak
+(toward the purple guard robot)
+Jones is right up next to the robot, crouched beneath a desk. She can see right up under its armor.
+
+>put gel in armor
+There's nothing like that nearby.
+
+>put gel on robot
+Putting things on the purple guard robot would achieve nothing.
+
+>shoot robot
+Jones aims the pistol upward under the robot's enhanced armor and fires. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead. Jones stands up and surveys her handiwork.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones: "Better than a video game. "
+
+Beck: "Nice, but don't forget to credit your handler."
+
+Jones: "Yes, yes, thanks for helping me not get killed."
+
+Beck: "You're welcome."
+
+>l
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+>search robot
+Jones finds nothing of interest.
+
+>out
+Jones: "I'm going out the window to see if I can find a way to get up to the tenth floor."
+
+Beck: "Whoa whoa whoa, Jones. You know you're not good with heights."
+
+Jones: "Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch."
+
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. The ledge runs north and south. Jones is plastered up against the wall, trying not to look down.
+
+>n
+A metal cable running up and down halts Jones's progress in that direction.
+
+>climb cable
+(the cable with hooks at either end)
+Little is to be achieved by that.
+
+>x metal cable
+It looks very tense. It runs up and down.
+
+>climb metal cable
+Little is to be achieved by that.
+
+>up
+If only Jones could climb walls.
+
+>up cable
+I only understood you as far as wanting to (go) up.
+
+>n
+A metal cable running up and down halts Jones's progress in that direction.
+
+>s
+A metal cable running up and down halts Jones's progress in that direction.
+
+>s
+A metal cable running up and down halts Jones's progress in that direction.
+
+>l
+Galaxy Jones is on a ledge. The ledge runs north and south. Jones is plastered up against the wall, trying not to look down.
+
+>attach hook to metal cable
+Jones would achieve nothing by this.
+
+>x metal cable
+It looks very tense. It runs up and down.
+
+>down
+Go down? Jones doesn't even want to look down.
+
+>climb down
+You must name something more substantial.
+
+>climb metal cable
+Little is to be achieved by that.
+
+>swing on cable
+I didn't understand that sentence.
+
+>ask beck about cable
+
+Beck: "Could come in handy."
+
+>ask beck about metal cable
+
+Beck: "Hmm. Don't have much to say about that right now."
+
+>pull metal cable
+Jones can't move that.
+
+>x metal cable
+It looks very tense. It runs up and down.
+
+>up
+If only Jones could climb walls.
+
+>pull metal cable
+Jones can't move that.
+
+>swing on metal cable
+I didn't understand that sentence.
+
+>e
+That would send Jones plummeting to her death.
+
+>w
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+Jones takes off the Atmo-Suit.
+
+>e
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. The ledge runs north and south. Jones is plastered up against the wall, trying not to look down.
+
+>s
+A metal cable running up and down halts Jones's progress in that direction.
+
+>n
+A metal cable running up and down halts Jones's progress in that direction.
+
+>climb cable
+(the cable with hooks at either end)
+Little is to be achieved by that.
+
+>i
+Jones is carrying:
+  a bottle of Electrofil quick-setting conductive polymer gel
+  a black cardkey
+  a safety pin
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit (being worn)
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>put gel on cable
+(the cable with hooks at either end)
+Putting things on the cable with hooks at either end would achieve nothing.
+
+>put gel on metal cable
+Putting things on the metal cables would achieve nothing.
+
+>x cables
+It looks very tense. It runs up and down.
+
+>climb down
+You must name something more substantial.
+
+>climb metal cable down
+I only understood you as far as wanting to climb the metal cables.
+
+>up
+If only Jones could climb walls.
+
+>down
+Go down? Jones doesn't even want to look down.
+
+>grab metal cable
+I didn't understand that sentence.
+
+>get metal cable
+Jones can't take that.
+
+>touch metal cable
+Jones feels nothing unexpected.
+
+>i
+Jones is carrying:
+  a bottle of Electrofil quick-setting conductive polymer gel
+  a black cardkey
+  a safety pin
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit (being worn)
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>e
+That would send Jones plummeting to her death.
+
+>w
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+Jones takes off the Atmo-Suit.
+
+>x desks
+Very nice and good for hiding under and among.
+
+>search desks
+Jones finds nothing of interest.
+
+>search chairs
+Jones finds nothing of interest.
+
+>x broken window
+Looks like Jones could get through if she's careful. There's a ledge outside.
+
+>get glass shard
+There's nothing like that nearby.
+
+>get glass
+There's nothing like that nearby.
+
+>get shard
+There's nothing like that nearby.
+
+>w
+
+Galaxy Jones is in the ninth floor north hallway. This anonymous corporate hallway ends here at the north end of the building. An open doorway leads west. To the east is a door with a swipe lock, labeled "Cybernetica Inc."
+
+>e
+
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+>e
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. The ledge runs north and south. Jones is plastered up against the wall, trying not to look down.
+
+>n
+A metal cable running up and down halts Jones's progress in that direction.
+
+>w
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+Jones takes off the Atmo-Suit.
+
+>e
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. The ledge runs north and south. Jones is plastered up against the wall, trying not to look down.
+
+>s
+A metal cable running up and down halts Jones's progress in that direction.
+
+>grab cable
+I didn't understand that sentence.
+
+>ask beck about climb
+Beck: "I'm not sure what you're asking about, Jones."
+
+>hint
+I didn't understand that sentence.
+
+>x metal cable
+It looks very tense. It runs up and down.
+
+>climb donw
+There's nothing like that nearby.
+
+>climb down
+You must name something more substantial.
+
+>climb metal cable
+Little is to be achieved by that.
+
+>screw cable
+I didn't understand that sentence.
+
+>secure cable with screwdriver
+I didn't understand that sentence.
+
+>i
+Jones is carrying:
+  a bottle of Electrofil quick-setting conductive polymer gel
+  a black cardkey
+  a safety pin
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit (being worn)
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>x screwdriver
+A standard Phillips screwdriver with a red plastic handle.
+
+>x suit
+Which do you mean, the Atmo-Suit, the black jumpsuit, or the suit light?
+
+>atmo
+The Atmo-Suit is a pressure suit ideal for outside work in thin atmospheres like that of Mars.
+
+>x suit light
+It automatically goes on when it gets dark. Cool.
+
+>x jumpsuit
+It's an advanced Smart Suit, able to communicate sound, vision, and radar back to Beck at Galaxy Base. Also it has a neat light.
+
+>x metal cable
+It looks very tense. It runs up and down.
+
+>put screwdriver in cable
+(the cable with hooks at either end)
+That can't contain things.
+
+>put screwdriver in metal cable
+That can't contain things.
+
+>x ledge
+Galaxy Jones is on a ledge. The ledge runs north and south. Jones is plastered up against the wall, trying not to look down.
+
+>look up
+There's nothing in that direction.
+
+>look down
+Are you sure? Jones is really afraid of heights.
+
+>look down
+Okay, fine. Jones looks down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below her.
+
+Jones: "Okay, so. There's a window washing platform right below me. I might be able to drop down to it, but I won't be able to get back up."
+
+Beck: "Take it easy, Jones."
+
+>drop down
+You must name something more substantial.
+
+>climb down
+You must name something more substantial.
+
+>climb cable
+(the cable with hooks at either end)
+Little is to be achieved by that.
+
+>climb metal cable
+Little is to be achieved by that.
+
+>down
+Jones drops off the ledge onto the scaffold. It rocks unnervingly for a moment.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the eighth floor window. There doesn't seem to be any way to get into the building here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+>push up button
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the ninth floor window. She could climb back into the building through the window here. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Beck?"
+
+Beck: "Yes?"
+
+Jones: "I hate it out here."
+
+Beck: "Well, there's the open window right next to you."
+
+>push up button
+Jones presses the button, and the scaffold begins to rise.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+Jones: "Alright, I'm by the tenth floor now. What's this grille thing here?"
+
+Beck: "That's an exhaust vent. There's an air handling room on this floor which it leads into. If you can remove the cover you should be able to access the whole floor from here."
+
+>remove cover with screwdriver
+Jones loosens the screws with the screwdriver and opens the grille.
+
+>in
+Jones climbs inside the vent, crawls along a short length of ductwork, and emerges through another hinged grille, into the air handling room.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+She takes off the Atmo-Suit.
+
+Jones: "Ha! I'm in!"
+
+Beck: "Be careful, you're likely to run into more resistance here. The floor is all one open office, so any guard robots will have good line of sight."
+
+Jones: "Got it."
+
+Beck: "And Jones? Save your game."
+
+>save
+Ok.
+
+>open door
+Which do you mean, the air handling door or the vent access door?
+
+>air
+Jones opens the air handling door.
+
+>l
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+>w
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+Jones sees the mauve guard robot a couple of steps to the south. 
+
+>x robot
+This one looks, if anything, even meaner than the ones Jones has already seen. There is a small vent on the top of its head, probably to dispose of excess heat.
+
+A couple of steps to the south, the mauve guard robot heads north.
+
+>e
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears nearby to the west, coming from the south.
+
+Beck: "I hope you have a warranty, because you're about to be seriously damaged!"
+
+Jones: "Really, Beck? Is this your best material?"
+
+>w
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+The robot slaughters Jones.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 362 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is on the north side of the Consolidated Microthings office.
+[Previous turn undone.]
+
+>e
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+>close door
+Which do you mean, the air handling door or the vent access door?
+
+>air
+Jones closes the air handling door.
+
+>wait
+Jones stands around and waits.
+
+>open door
+Which do you mean, the air handling door or the vent access door?
+
+>air
+Jones opens the air handling door.
+
+>e
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a window washing scaffold. It's lined up with the tenth floor. Instead of a window, there's what appears to be an exhaust vent. If it's for forced air, though, the fan is currently not running. Mounted on the scaffold is a control panel with two buttons: one indicating up and one indicating down.
+
+
+>w
+Jones climbs inside the vent, crawls along a short length of ductwork, and emerges through another hinged grille, into the air handling room.
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+She takes off the Atmo-Suit.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+>w
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+Thallium's voice booms over the office PA: "You can run, Jones, but you can't - well, there aren't very many places you can hide."
+
+Jones sees the mauve guard robot a couple of steps to the south. 
+
+>e
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears a couple of steps to the south, coming from the west.
+
+>s
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+The mauve guard robot approaches from the south.
+
+The robot electrocutes Jones with its electro-darts.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 371 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is on the north side of the Consolidated Microthings office.
+[Previous turn undone.]
+
+>w
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+The mauve guard robot appears a couple of steps to the south, coming from the east.
+
+>s
+
+Galaxy Jones is on the west side of the Consolidated Microthings office. This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where Jones is now. One can go north or south.
+
+The mauve guard robot approaches from the south.
+
+Jones doesn't stand a chance against the mauve guard robot's terrible knives.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 372 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office.
+[Previous turn undone.]
+
+>e
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears a couple of steps to the south, coming from the west.
+
+>e
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+Jones doesn't stand a chance against the mauve guard robot's terrible knives.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 375 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is in the air handling room.
+[Previous turn undone.]
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 376 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is in the air handling room.
+[Previous turn undone.]
+
+>x robot
+There's nothing like that nearby.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+>s
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+>w
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. You can leave the elevator to the east.
+
+One of the ceiling panels looks loose.
+
+Admiral Thallium's voice oozes from concealed speakers: "Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant."
+
+
+>e
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+Thallium: "Jones, you still hanging around with that loser Beck?"
+
+>s
+
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+Thallium: "Don't you just hate it, Jones -- not knowing when death will just jump out at you?"
+
+Jones sees the mauve guard robot nearby to the west. 
+
+>hide
+I didn't understand that sentence.
+
+>hide behind couch
+I didn't understand that sentence.
+
+>sneak
+(toward the mauve guard robot)
+The room is too open to sneak up effectively.
+
+The mauve guard robot approaches from the west.
+
+The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 384 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is on the south side of the Consolidated Microthings office.
+[Previous turn undone.]
+
+>n
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+The mauve guard robot appears nearby to the south, coming from the west.
+
+>n
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+A couple of steps to the south, the mauve guard robot heads north.
+
+>w
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+The mauve guard robot appears nearby to the east, coming from the south.
+
+Beck: "You're programmed to kill, but Jones is programmed to kick your metallic ass!"
+
+Jones: "Ah, the bravery of being out of range."
+
+>s
+
+Galaxy Jones is on the west side of the Consolidated Microthings office. This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where Jones is now. One can go north or south.
+
+The mauve guard robot appears nearby to the north, coming from the east.
+
+Beck: "I hope you have a warranty, because you're about to be seriously damaged!"
+
+Jones: "Really, Beck? Is this your best material?"
+
+>s
+
+Galaxy Jones is at the southwest corner of the Consolidated Microthings office. This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. Jones can go north or east from here.
+
+There is a present with a note attached sitting on a desk here.
+
+A couple of steps to the north, the mauve guard robot heads south.
+
+>get present
+Taken.
+
+The mauve guard robot approaches from the north.
+
+The robot electrocutes Jones with its electro-darts.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 389 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is at the southwest corner of the Consolidated Microthings office.
+[Previous turn undone.]
+
+>e
+
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+The mauve guard robot appears nearby to the west, coming from the north.
+
+>e
+
+Galaxy Jones is at the southeast corner of the Consolidated Microthings office. This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.
+
+A couple of steps to the west, the mauve guard robot heads east.
+
+Beck: "Come and get us, ugly!"
+
+Jones: "'Us'? Seems like I'm the only one with her life on the line."
+
+>n
+
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+The mauve guard robot appears nearby to the south, coming from the west.
+
+>nw
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears nearby to the southeast, coming from the south.
+
+>e
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot approaches from the south.
+
+The guard robot moves in on Jones with its slashing knife arms, slicing her to ribbons.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 396 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is in the air handling room.
+[Previous turn undone.]
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+>w
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+Jones sees the mauve guard robot a couple of steps to the south. 
+
+>undo
+Galaxy Jones is on the north side of the Consolidated Microthings office.
+[Previous turn undone.]
+
+>s
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+>s
+
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+Jones sees the mauve guard robot nearby to the west. 
+
+>n
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+The mauve guard robot appears nearby to the south, coming from the west.
+
+Beck: "I've seen more intimidating kitchen appliances!"
+
+>n
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+A couple of steps to the south, the mauve guard robot heads north.
+
+>e
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+A couple of steps to the south, the mauve guard robot heads north.
+
+>undo
+Galaxy Jones is in the air handling room.
+[Previous turn undone.]
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+>s
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+>s
+
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+Jones sees the mauve guard robot nearby to the west. 
+
+>n
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+The mauve guard robot appears nearby to the south, coming from the west.
+
+>n
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+A couple of steps to the south, the mauve guard robot heads north.
+
+>e
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>wai
+I didn't understand that sentence.
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+>w
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+Jones sees the mauve guard robot a couple of steps to the south. 
+
+>undo
+Galaxy Jones is on the north side of the Consolidated Microthings office.
+[Previous turn undone.]
+
+>s
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+>s
+
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+Beck: "I don't think I like Thallium's choice of friends much."
+
+Jones sees the mauve guard robot nearby to the west. 
+
+>undo
+Galaxy Jones is in the tenth floor elevator hall.
+[Previous turn undone.]
+
+>n
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+>w
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+Jones sees the mauve guard robot a couple of steps to the south. 
+
+>e
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears a couple of steps to the south, coming from the west.
+
+>s
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+The mauve guard robot approaches from the south.
+
+The robot electrocutes Jones with its electro-darts.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 423 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is on the north side of the Consolidated Microthings office.
+[Previous turn undone.]
+
+>e
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The robot slaughters Jones.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 426 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is in the air handling room.
+[Previous turn undone.]
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot approaches from the south.
+
+The robot electrocutes Jones with its electro-darts.
+
+
+
+
+    *** Jones was killed by the mauve guard robot ***
+
+
+In that game you scored 6 out of a possible 10, in 427 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Galaxy Jones is in the air handling room.
+[Previous turn undone.]
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+A couple of steps to the south, the mauve guard robot heads north.
+
+>e
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+A couple of steps to the south, the mauve guard robot heads north.
+
+>w
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+The mauve guard robot appears nearby to the east, coming from the south.
+
+>s
+
+Galaxy Jones is on the west side of the Consolidated Microthings office. This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where Jones is now. One can go north or south.
+
+The mauve guard robot appears nearby to the north, coming from the east.
+
+>s
+
+Galaxy Jones is at the southwest corner of the Consolidated Microthings office. This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. Jones can go north or east from here.
+
+There is a present with a note attached sitting on a desk here.
+
+A couple of steps to the north, the mauve guard robot heads south.
+
+>e
+
+Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
+
+The mauve guard robot appears nearby to the west, coming from the north.
+
+Beck: "Come and get us, ugly!"
+
+Jones: "'Us'? Seems like I'm the only one with her life on the line."
+
+>e
+
+Galaxy Jones is at the southeast corner of the Consolidated Microthings office. This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.
+
+A couple of steps to the west, the mauve guard robot heads east.
+
+>n
+
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+The mauve guard robot appears nearby to the south, coming from the west.
+
+Beck: "If I only had a heart, indeed."
+
+>nw
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears nearby to the southeast, coming from the south.
+
+>e
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+>se
+
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+>l
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+Thallium: "I bet you're just dying to meet Europa, right, Jones?"
+
+>s
+
+Galaxy Jones is at the southeast corner of the Consolidated Microthings office. This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.
+
+Jones sees the mauve guard robot a couple of steps to the west. 
+
+>n
+
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+>put gel on floor
+There's nothing like that nearby.
+
+>l
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+The mauve guard robot appears nearby to the south, coming from the west.
+
+>undo
+Galaxy Jones is on the east side of the Consolidated Microthings office.
+[Previous turn undone.]
+
+>nw
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+A couple of steps to the south, the mauve guard robot heads east and out of sight.
+
+>w
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+Thallium's voice booms over the office PA: "You can run, Jones, but you can't - well, there aren't very many places you can hide."
+
+>s
+
+Galaxy Jones is on the west side of the Consolidated Microthings office. This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where Jones is now. One can go north or south.
+
+>s
+
+Galaxy Jones is at the southwest corner of the Consolidated Microthings office. This looks like the IT area of the office. Numerous desks and an abundance of computer parts are here. Jones can go north or east from here.
+
+There is a present with a note attached sitting on a desk here.
+
+The mauve guard robot appears a couple of steps to the east, coming from the north.
+
+Beck: "I've seen more intimidating kitchen appliances!"
+
+>get present
+Taken.
+
+A couple of steps to the east, the mauve guard robot heads west.
+
+>n
+
+Galaxy Jones is on the west side of the Consolidated Microthings office. This ocean of desks looks out toward the Utopia Tower, twice the height of the Viking Building, where Jones is now. One can go north or south.
+
+The mauve guard robot appears nearby to the south, coming from the east.
+
+>n
+
+Galaxy Jones is at the northwest corner of the Consolidated Microthings office. Various executive offices line the north and west walls here. Jones can go east or south.
+
+A couple of steps to the south, the mauve guard robot heads north.
+
+Beck: "Come and get us, ugly!"
+
+Jones: "'Us'? Seems like I'm the only one with her life on the line."
+
+>e
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+The mauve guard robot appears nearby to the west, coming from the south.
+
+>e
+
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+>open present
+Jones rips the package open and discovers a golden key.
+
+>get key
+(the drop key)
+Jones already has that.
+
+>get gold key
+There's nothing like that nearby.
+
+>i
+Jones is carrying:
+  a golden key
+  a bottle of Electrofil quick-setting conductive polymer gel
+  a black cardkey
+  a safety pin
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+A couple of steps to the south, the mauve guard robot heads north.
+
+>undo
+Galaxy Jones is in the air handling room.
+[Previous turn undone.]
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>wait
+Jones stands around and waits.
+
+>w
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+>s
+
+Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+>w
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. You can leave the elevator to the east.
+
+One of the ceiling panels looks loose.
+
+>put key in hole
+Which do you mean, the golden key, the black cardkey, the drop key, or the red cardkey?
+
+>golden
+Jones puts the key in the keyhole and turns. There is a pleasant chime, and some buttons light up.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated. You can leave the elevator to the east.
+
+One of the ceiling panels looks loose.
+
+>press 100
+The elevator accelerates upwards at a frightening rate. The numbers climb towards 100. Soon the elevator slows, and the door opens on the 100th floor.
+
+Jones: "Holy - This thing goes fast."
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated. You can leave the elevator to the east.
+
+One of the ceiling panels looks loose.
+
+>x ceiling panel
+Asbestos? In this day and age?
+
+>push panel
+(the ceiling panel)
+Jones removes the ceiling panel, exposing a hole wide enough for her to squeeze through.
+
+>climb through hole
+There's nothing like that nearby.
+
+>up
+
+Galaxy Jones is on the top of the elevator car. She is right at the top of the shaft. She can see down into the elevator car from here.
+
+>l
+Galaxy Jones is on the top of the elevator car. She is right at the top of the shaft. She can see down into the elevator car from here.
+
+>w
+Jones can't go that way.
+
+>e
+Jones can't go that way.
+
+>n
+Jones can't go that way.
+
+>s
+Jones can't go that way.
+
+>down
+
+Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
+
+>e
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+>n
+
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+>x dummies
+The best outfit is his Napoleon outfit.
+
+>get outfit
+Jones would rather not touch his clothes.
+
+>search outfit
+Jones finds nothing of interest.
+
+>x table
+A vanity table. So aptly named for a man like the Admiral.
+
+>search table
+Jones finds nothing of interest.
+
+>x bed
+It's round and huge, and it looks supremely comfortable.
+
+>look under bed
+Jones finds nothing of interest.
+
+>sw
+
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+>x eye
+Looks like it might be a sensor of some sort.
+
+>x claw
+It looks like it could grip a small object.
+
+>put cable in claw
+That won't fit in the claw.
+
+>se
+
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. The penthouse continues to the northwest, north, and northeast.
+
+Thallium seems to speak from all around Jones. "You like diamonds, Jones? Of course you do -- they're a girl's best friend, after all."
+
+Jones snorts, "Sure, Thallium."
+
+>x diamonds
+So many of them, from the tiny to the obscenely large. It looks like it wouldn't be hard to pry one out.
+
+>get diamond
+You pry one of the diamonds out of the wall.
+
+Thallium giggles. "Oh, I hope you're not disappointed, Jones."
+
+>x diamons
+There's nothing like that nearby.
+
+>x diamond
+(the diamond)
+
+Jones: "Hmm. This is made of glass."
+
+Thallium: "Poor, sad Jones. But here's the thing. There is a real diamond in there; it's just you'll never find it before the building's defenses flood the whole floor with poisonous gas. Or maybe I'm bluffing. Maybe I'm not. Can you afford to gamble?"
+
+Jones tosses the fake away.
+
+>i
+Jones is carrying:
+  a bottle of Electrofil quick-setting conductive polymer gel
+  a black cardkey
+  a safety pin
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>smash diamonds with hammer
+Jones commences to smash all of the diamonds. After destroying several dozen fraudulent gems, she finds one that won't break. She takes the real diamond.
+
+Thallium: "Wow, clever solution. Be careful you don't cut yourself."
+
+Jones: "I appreciate your concern."
+
+>i
+Jones is carrying:
+  a diamond
+  a bottle of Electrofil quick-setting conductive polymer gel
+  a black cardkey
+  a safety pin
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>l
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. Broken glass litters the floor. The penthouse continues to the northwest, north, and northeast.
+
+>ne
+
+Galaxy Jones is in the eastern corner of the penthouse. This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.
+
+>x screens
+They are showing Thallium's logo, the ten planets in order overlaid with the motto "Planetas Vincam".
+
+>s desk
+I only understood you as far as wanting to (go) s the array of diamonds.
+
+>x desk
+The desk is really too big for a human-sized person. Bubinga wood, if you're unfamiliar with it, is according to Wikipedia, "a flowering plant genus in the family Fabaceae".
+
+>search desk
+Jones finds nothing of interest.
+
+>x pattern
+The desk is really too big for a human-sized person. Bubinga wood, if you're unfamiliar with it, is according to Wikipedia, "a flowering plant genus in the family Fabaceae".
+
+>l
+Galaxy Jones is in the eastern corner of the penthouse. This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.
+
+>x window
+Looking down at New Reykjavik, one can trace the history of the city, as it expanded radially from its original domes, the multiple frontiers colliding and interfering like ripples in a pond, until eventually, the map gave way to rectangular regularity. The Viking Building stands near the periphery, overlooking the vast red plain of Utopia Planitia.
+
+>x logo
+The ten planets in order overlaid with the motto "Planetas Vincam".
+
+>ne
+The diamond-shaped penthouse bends to the northwest and southwest.
+
+>nw
+
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+>sw
+
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+>put diamond in claw
+As soon as insert the diamond into the claw, laser beams spring from five emitters on the walls. They hit the diamond and join into a single more powerful beam that strikes the electronic eye on the wall. A sound like a sliding door comes from behind Jones, and she spins around to see the red wall slide down into the floor. It exposes a control panel of sorts, featuring a large red button labeled "Press Me".
+
+>x panel
+Jones discovers a secret panel, which when opened exposes a small black button.
+
+>press button
+Which do you mean, the small black button or the large red button?
+
+>black
+Somewhere beyond this room comes the sound of something heavy being moved.
+
+Beck: "Why didn't you press the button that said 'Press Me'? Maybe we should press it anyway. Please?"
+
+>press red
+(the red cardkey)
+Nothing obvious happens.
+
+>press red button
+Thallium's voice startles Jones, and she forgets the button for a moment.
+
+"Yes, yes, press it!", Thallium squeaks.
+
+>se
+
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. Broken glass litters the floor. The penthouse continues to the northwest, north, and northeast.
+
+>se
+The diamond-shaped penthouse bends to the northeast and northwest.
+
+>ne
+
+Galaxy Jones is in the eastern corner of the penthouse. This is apparently an office. A huge desk constructed of bubinga wood and carved in intricate patterns sits before the panoramic window. Video screens, currently displaying Thallium's logo, line the walls. Jones can go northwest or southwest.
+
+>nw
+
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+>s
+
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+A portion of the eastern wall has slid away to reveal a stunning white marble staircase.
+
+Jones: "Must be the way up to the roof. Beck, you there?"
+
+Beck: "Yep, I'm here, just a bit busy is all. I'll meet you on that roof."
+
+>up
+
+Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?
+>save
+Please answer yes or no.> no
+
+>save
+Ok.
+
+>up
+
+Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?
+>y
+
+Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
+
+>l
+Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
+
+>open door
+Jones opens the roof access door.
+
+>out
+But Jones isn't in anything at the moment.
+
+>w
+
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+A portion of the eastern wall has slid away to reveal a stunning white marble staircase.
+
+>e
+
+Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?
+>y
+
+Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
+
+>w
+
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+A portion of the eastern wall has slid away to reveal a stunning white marble staircase.
+
+>e
+
+Are you sure you wish to face the evil Admiral Thallium? Are you ready to pass the point of no return?
+>y
+
+Galaxy Jones is on the roof stairs. Thick slabs of marble lead from the hall to the west to the rooftop door above.
+
+>up
+Jones opens the door and steps through onto the roof. The door crashes shut, and a lock audibly clicks.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+
+Jones walks out onto the luxurious penthouse roof. Admiral Thallium turns from the railing to face her. He is dressed in an absurd elaboration of a Martian Admiral's uniform. He looks Jones up and down with a lecherous leer. "Ah, Galaxy Jones, as lovely as ever. If it weren't so unbearably cliché I'd ask you to join me in my rise to greatness. But alas, you are too habituated to the smug high of 'goodness'." He sighs dramatically. "We've trodden similar ground before; no need to discuss it further. Although I would challenge any of your various amoureux to conjugate 'tread' correctly.
+
+"Anyway, I guess this is the time where you do something predictably undignified and violent. Before you do I feel I should inform you that your sidearm has been rendered quite ineffective by my personal security field. But do go ahead and try it."
+
+Jones sneers. "I wouldn't give you the satisfaction," she says, looking around. "I see you don't have any of your robot pets up here. How are you going to stop me from rescuing Europa?"
+
+"Oh please, while we're trying things, try that too. I wish you luck breaking the silnium bars of the cage."
+
+"What's silnium?"
+
+"A superstrong material invented here in my Martian Chemical laboratory. We had a press conference for it -- weren't you watching?"
+
+"Couldn't be bothered."
+
+"Oh for frotz sake, Jones, you're so frustrating!"
+
+Thallium turns his back on Jones and stares out over the city.
+
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
+
+Admiral Thallium is sulking.
+
+>x cage
+You can see the cage with Europa Callisto in it from here. She's lying on the floor and not moving.
+
+>x bars
+There's nothing like that nearby.
+
+>open cage
+It isn't something Jones can open.
+
+>x seating
+Jones has other things to focus on.
+
+>put gel on cage
+Putting things on cage would achieve nothing.
+
+>l
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
+
+Admiral Thallium is sulking.
+
+>x flyer
+It's big and green and black. Looks like a Sirius XE.
+
+>search flyer
+Jones finds nothing of interest.
+
+>x pad
+There's nothing like that nearby.
+
+>n
+
+Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+Jones tries the strength of the bars just in case. They don't budge.
+
+South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards Jones.
+
+>shoot flyer
+Jones's disruptor does nothing. Looks like Thallium was telling the truth.
+
+Thallium's flyer hovers over the rooftop. "Jones!"  he bellows. "Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die."
+
+Jones rolls her eyes.
+
+A little ways off, another flyer, small and red, aims for the rooftop and accelerates.
+
+>x cage
+The cage is huge for holding just one prisoner. The silnium bars are grey and iridescent. They run both horizontally and vertically, creating a lattice. The floor is hard and cold.
+
+>i
+Jones is carrying:
+  a bottle of Electrofil quick-setting conductive polymer gel
+  a black cardkey
+  a safety pin
+  a screwdriver
+  a full water bottle
+  a drop key
+  a hammer
+  an Atmo-Suit
+  a red cardkey
+  a sticky note
+  a cable with hooks at either end
+  a fork
+  a garish medal
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>attach cable to cage
+It doesn't seem useful to attach the cable to this part of the cage.
+
+>attach cable to lock
+There's nothing like that nearby.
+
+>x door
+There's nothing like that nearby.
+
+>x cage
+The cage is huge for holding just one prisoner. The silnium bars are grey and iridescent. They run both horizontally and vertically, creating a lattice. The floor is hard and cold.
+
+Thallium's flyer is circling you not too far away. "Give up, Jones! You'll never get through my silnium bars, haha!"
+
+>glue cable to cage
+I didn't understand that sentence.
+
+>gel cable to cage
+I didn't understand that sentence.
+
+>s
+Thallium's flyer floats after Jones.
+
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage.
+
+Admiral Thallium's flyer is hovering above you.
+
+>attach hook to flyer
+Which do you mean, Admiral Thallium's flyer or the red flyer?
+
+>admiral
+Jones would achieve nothing by this.
+
+>attach hook to red flyer
+Jones would achieve nothing by this.
+
+>l
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage.
+
+Admiral Thallium's flyer is hovering above you.
+
+>x bar
+Looks like a good time, if Jones weren't already busy.
+
+Thallium: "Jones! In a moment I shall leave you to be slaughtered by my minions!"
+
+>search bar
+Jones finds nothing of interest.
+
+>search hot tub
+Jones finds nothing of interest.
+
+>x fire pit
+Looks like a good time, if Jones weren't already busy.
+
+>search fire pit
+Jones finds nothing of interest.
+
+>l
+Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage.
+
+Admiral Thallium's flyer is hovering above you.
+
+>n
+Thallium's flyer floats after Jones.
+
+Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+Admiral Thallium's flyer is hovering above you.
+
+Thallium: "Here I go, Jones! Here I go! I'm really leaving this time! Jones! Are you listening? I'm going!"
+
+>talk to europa
+She's too out of it to respond.
+
+>climb cage
+Jones gets onto the cage.
+
+>attach cable to cage
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the craft and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
+
+The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto.
+
+"Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!"
+
+Europa moans but doesn't show any signs of having understood Jones.
+
+Galaxy Jones is in the cage. The whole structure is tilted, leaving a hole at the eastern end. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Jones is kneeling at Europa Callisto's side, trying to rouse her.
+
+The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.
+
+>pour water on europa
+It's not elegant, but it works.
+
+Jones opens the water bottle and brings it to Europa's lips. Even with closed eyes she drinks, first slowly and then with increasing vigor, until her eyes open.
+
+"Ga- Galaxy Jones?" she says.
+
+Jones nods, but says "We'll have time for introductions later. We have to get out of here before the roof is full of killer robots. Can you crawl? If you can get through that hole I can carry you the rest of the way."
+
+Europa nods. "I think so."
+
+Galaxy Jones helps her through the hole in the cage, then gently picks her up and jogs toward the waiting flyer. Beck's familiar face appears at the door of the aircraft, urging her on.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Not so far away, Admiral Thallium crawls back over the edge of the roof. As he pulls himself up, he aims a pistol at Jones's back...
+
+The shot hits her full in the back and she falls sprawling on the landing pad, Europa Callisto tumbling from her arms. Beck is by Callisto's side in a moment, lifting her and carrying her into the flyer.
+
+And then the robots swarm the roof like a mechanical rainbow tide. By the time Beck returns to the door it is already too late. A group of robots surrounds Jones, while another robot carries Thallium triumphantly. Beck has no choice but to take off, leaving Jones behind, not knowing if she still lives...
+
+[continue]
+
+
+
+    *** The End, For Now... ***
+
+
+In that game you scored 10 out of a possible 10, in 559 turns.
+
+
+Extensions by:
+Standard Rules version 3/120430 by Graham Nelson
+Deluxe Doors version 4 by Emily Short
+Skeleton Keys by Emily Short
+Epistemology version 9 by Eric Eve
+Conversation Framework version 11 by Eric Eve
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+
+Story by Phil Riley.
+Programming by Phil Riley.
+Playtesting by Leon Lin, Oliver Matthias, Jade, John Ziegler, and Kenneth Pedersen.
+Invaluable inspiration from Laura Taalman.
+
+The story, all names, characters, and incidents portrayed in this production are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.
+
+Promotional consideration provided by Olympus Springs of Mars, Inc.
+
+
+...
+
+
+<Black screen>
+
+"Jones! Jones! Wake up! I'm trying to talk to you!"
+
+<Cut to a shot of two closed eyes>
+
+"C'mon, open those eyes."
+
+<The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious>
+
+"This is getting tiresome, Jones. Stop playing dead."
+
+Her eyes flutter open, close again, then open. She winces and brings one hand up to shield her eyes. "Who's that?" she says, hoarsely.
+
+Join Galaxy Jones next time in Galaxy Jones II: Existential Time Crisis!
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+>  // lol nice
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> script off
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> quit

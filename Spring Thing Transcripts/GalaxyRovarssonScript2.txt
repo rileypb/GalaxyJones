@@ -1,0 +1,837 @@
+Start of a transcript of
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ />  </ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+An Interactive Rescue Mission by Phil Riley
+Release 5 / Serial number 230401 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) 
+Identification number: //8E621A76-873D-4820-82FC-12FC699572B3//
+Interpreter version 0.5.4 / VM 3.1.2 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Deluxe Doors version 4 by Emily Short
+Skeleton Keys by Emily Short
+Epistemology version 9 by Eric Eve
+Conversation Framework version 11 by Eric Eve
+Gender Options version 3/210331 by Nathanael Nerode
+Exit Lister version 11 by Eric Eve
+
+>l
+Galaxy Jones is at the southwest corner of the ground floor. A lush indoor waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+>* && The robot hurdle taken, Galaxy investigates further...
+You seem to want to talk to someone, but I can't see whom.
+
+>x waterfall
+The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin.
+
+Jones: "One coin? Not very generous people around here."
+
+>x rocks
+There's nothing like that nearby.
+
+>x rock
+There's nothing like that nearby.
+
+>x ferns
+Imported plants are a must on Mars, to relieve the stress of living on a lifeless world.
+
+>smell ferns
+I didn't understand that sentence.
+
+>lick ferns
+I didn't understand that sentence.
+
+>obligatory LICK ferns
+I didn't understand that sentence.
+
+>x water
+The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin.
+
+>drink water
+Jones decides the water probably isn't clean enough to drink.
+
+>swim
+I didn't understand that sentence.
+
+>dive in waterfall
+I didn't understand that sentence.
+
+>
+I beg your pardon?
+
+>x waterfall
+The waterfall descends the length of an artificial rock formation fringed by wide-leaved Earth plants and ferns. The water collects in a basin at the bottom, where it begins its journey again. A single coin sits on the bottom of the basin.
+
+>climb rock formation
+There's nothing like that nearby.
+
+>c limb waterfall
+I didn't understand that sentence.
+
+>climb waterfall
+Little is to be achieved by that.
+
+>* && In the low gravity of Mars, climbing would be quite easy? Especially with a plant-fringed rock formation right here. (I mean, the whole "rock formation" just shouts CLIMB to me.)
+You seem to want to talk to someone, but I can't see whom.
+
+>x coin
+A one-Areo coin, with Ares on the front and the Viking 2 lander on the back.
+
+>get coin
+Taken.
+
+>i
+Jones is carrying:
+  a coin
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>stick  note to coin
+I didn't understand that sentence.
+
+>put note on coin
+Putting things on the coin would achieve nothing.
+
+>* && I'm sorry. Slipping into Test-Mode and hunting for combinatorial explosives.
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is at the southwest corner of the ground floor. A lush indoor waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+>* && I'll get me coat and go north. 
+I didn't understand that sentence.
+
+>GET COAT
+There's nothing like that nearby.
+
+>GO NORTH
+
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+>x coin
+A one-Areo coin, with Ares on the front and the Viking 2 lander on the back.
+
+>x couches
+An inoffensive beige couch, shaped in a half-circle.
+
+>search semicircular couch
+There is nothing on the semicircular couch.
+
+>w
+Jones can't walk through walls. Try north or south, or the door to the east.
+
+>e
+(first opening the utility door)
+It seems to be locked.
+
+>look under couch
+Jones finds nothing of interest.
+
+>x door
+It's a white metal door, completely typical. It has a swipe card lock right above the handle.
+
+>l
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+>x card lock
+There's nothing like that nearby.
+
+>x lock
+An ordinary swipe lock.
+
+>x swipe lock
+An ordinary swipe lock.
+
+>x card
+There's nothing like that nearby.
+
+>* && I'll try the east side before progressing northwards.
+I didn't understand that sentence.
+
+>s
+
+Galaxy Jones is at the southwest corner of the ground floor. A lush indoor waterfall here contrasts with the dusty red streets of New Reykjavik beyond the glass walls. The ground floor extends north and east.
+
+>e
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>*&& You might want to trim the initial description of this admittedly grand room down a bit. 
+I didn't understand that sentence.
+
+>x niches
+Aside from a robot charging station, there's nothing here.
+
+>x charging station
+I only understood you as far as wanting to examine the charging stations.
+
+>x charging stations
+The charging station is a socket fitted in a depression contoured to fit one of those robots.
+
+>* && plural & singular?
+I didn't understand that sentence.
+
+>x socket
+There's nothing like that nearby.
+
+>l
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>x pillar
+The central area where the elevators and utility rooms are.
+
+>e
+Jones crosses the floor carefully, disruptor pistol at the ready.
+
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. She can go north or west from here.
+
+>* && Ijust pulled up the Wikipedia page on the Viking 2 lander module. Wow. What an adventurous journey that beast had. It was apparently also renamed a Station in 2001: The Gerald Soffen Memorial Station after the leading scientist of the Viking 
+I didn't understand that sentence.
+
+>* && who died in 2000. (Nerd reference?)
+I didn't understand that sentence.
+
+>x centerpiece
+There's nothing like that nearby.
+
+>x lander
+The lander is such a big, ungainly object it's hard to imagine it was once a pinnacle of human achievement.
+
+>x viking 2
+The lander is such a big, ungainly object it's hard to imagine it was once a pinnacle of human achievement.
+
+>enter viking 2
+It's wasn't a manned craft.
+
+>x antennae
+There's nothing like that nearby.
+
+>x batteries
+There's nothing like that nearby.
+
+>l
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
+
+>put hook on lander
+Putting things on the Viking 2 lander would achieve nothing.
+
+>hook cable onto lander
+I didn't understand that sentence.
+
+>i
+Jones is carrying:
+  a coin
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>hook hooks onto lander
+I didn't understand that sentence.
+
+>* && I'm looking to jumpstart the Viking by attaching the cable to it and then plugging it into the robot sockets...
+I didn't understand that sentence.
+
+>look under lander
+Jones finds nothing of interest.
+
+>l
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
+
+>x walls
+Outside the building are the red-dusted streets of New Reykjavik.
+
+>x reykjavik
+Outside the building are the red-dusted streets of New Reykjavik.
+
+>* && I love this detail: New Reykjavik built right around Viking 2's touchdown spot.
+I didn't understand that sentence.
+
+>nw
+That would lead directly through the Viking 2 lander.
+
+>n
+
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+Beck: "Blueprints indicate a closet to the west of you. Might be useful."
+
+>x canapes
+The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.
+
+Jones: "What would you like me to bring you, Beck? Shrimp tea sandwiches, or poached ostrich eggs?"
+
+Beck: "Oh, the shrimp. Definitely get the shrimp."
+
+>get eggs
+Don't even.
+
+>eat eggs
+Sorry, no.
+
+>x sandwiches
+Simply delightful.
+
+>eat them
+Jones can't see 'them' (nothing) at the moment.
+
+>x shrimp
+Simply delightful.
+
+>get shrimp tea sandwiches
+Taken.
+
+>i
+Jones is carrying:
+  a shrimp tea sandwich
+  a coin
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>eat sandwiches
+Jones is not hungry.
+
+>* && Silly (?) commands like this would make for good characterisation opportunities.
+I didn't understand that number.
+
+>* && And I feel my inside-brain parser trying to disambiguate between tea-sandwiches topped with some kind of seafood-and-mayo salad, or a small double slice of toast served with a light broth made from simmered shrimp-heads. In both cases: Yum!
+I didn't understand that number.
+
+>l
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+>x forks
+A very stylish silver-plated fork.
+
+>get fork
+Taken.
+
+>i
+Jones is carrying:
+  a fork
+  a shrimp tea sandwich
+  a coin
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>s
+
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
+
+>w
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>x socket
+There's nothing like that nearby.
+
+>x sockets
+There's nothing like that nearby.
+
+>x niches
+Aside from a robot charging station, there's nothing here.
+
+>x charging station
+I only understood you as far as wanting to examine the charging stations.
+
+>x charging stations
+The charging station is a socket fitted in a depression contoured to fit one of those robots.
+
+>* && lots of synonyms explicitly and implicitly here.
+I didn't understand that sentence.
+
+>
+I beg your pardon?
+
+>* && especially when the player has Xed this before and doesn't remember the precise nouns to X
+I didn't understand that sentence.
+
+>put fork in charging station
+There's nothing like that nearby.
+
+>put fork in charging stations
+That can't contain things.
+
+>
+I beg your pardon?
+
+>* && Trying to fry the electronics, burn the plugs, spark some overload into the security systems.
+You seem to want to talk to someone, but I can't see whom.
+
+>e
+
+Galaxy Jones is at the southeast corner of the ground floor. The centerpiece of this area is the actual Viking 2 lander, which landed right here on Utopia Planitia. The glass walls look out onto the city. Jones can go north or west from here.
+
+>n
+
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+>x catering table
+The table is covered with a wide array of treats from the ridiculously expensive, such as shrimp tea sandwiches (where do you get shrimp on Mars?), to the just plain ridiculous, like poached ostrich eggs in jelly. A good number of forks are laid out to one side.
+
+Jones: "Well, at least the Admiral treats his guests right. Except me. And Europa."
+
+>push catering table
+Jones would rather not risk tipping it over.
+
+>lift table
+There are so many things on the table. Jones might want to look at them and decide what she wants.
+
+>* && I was ondering if this was a serving table on wheels that I could use to put something heavy on later in the game.
+I didn't understand that number.
+
+>x cabinet
+There's nothing like that nearby.
+
+>l
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+>*&& sorry. Not "cabinet".
+I didn't understand that number.
+
+>x closet
+A typical white metal utility door. Next to it is a keypad with the digits 0-9. An indicator light glows red.
+
+>w
+(first opening the closet door)
+Jones will have to enter the correct code on the keypad first.
+
+>enter: THE CORRECT CODE ON KEYPAD FIRST.
+I didn't understand that number.
+
+>enter 84908
+(on the keypad)
+An indicator light by the door to the west glows green.
+
+Jones: "I've unlocked the east side utility door."
+
+>x west door
+I only understood you as far as wanting to examine west.
+
+>x door
+A typical white metal utility door. Next to it is a keypad with the digits 0-9. An indicator light glows green.
+
+>open it
+Jones opens the closet door.
+
+>x it
+A typical white metal utility door. Next to it is a keypad with the digits 0-9. An indicator light glows green.
+
+>look in closet
+Jones will have to go through the door to see what's inside.
+
+>w
+
+Galaxy Jones is in the maintenance closet. A bare, white-walled room containing various maintenance items. The exit is to the east.
+
+There is an Atmo-Suit hanging from a hook here.
+
+On the shelf is a red cardkey.
+
+>x items
+Various uninteresting items, like mops and brooms and the like.
+
+>x mops
+Various uninteresting items, like mops and brooms and the like.
+
+>x brooms
+Various uninteresting items, like mops and brooms and the like.
+
+>x suit
+(the black jumpsuit)
+It's an advanced Smart Suit, able to communicate sound, vision, and radar back to Beck at Galaxy Base. Also it has a neat light.
+
+>x atmo
+The Atmo-Suit is a pressure suit ideal for outside work in thin atmospheres like that of Mars.
+
+>* && I'm not sure about this one: Both are commonly recognised as "suits". Putting a disambiguation request in would be disruptive. Maybe a workable alternate name for the atmostpheric suit would be an "Atmo-Rig"? Although that does 
+I didn't understand that sentence.
+
+>* && suggest something more heavy. If you're in a far-future setting, an atmo-fleece?
+You seem to want to talk to someone, but I can't see whom.
+
+>search atmo
+Jones finds nothing of interest.
+
+>get atmo
+Taken.
+
+>wear it
+Jones needs to be able to move around quickly. Better not wear the Atmo-Suit.
+
+>* && saving it for later...
+I didn't understand that sentence.
+
+>l
+Galaxy Jones is in the maintenance closet. A bare, white-walled room containing various maintenance items. The exit is to the east.
+
+On the shelf is a red cardkey.
+
+>x key
+An anonymous red card with a magnetic stripe.
+
+>get card
+Taken.
+
+>search items
+Jones finds nothing of interest.
+
+>e
+
+Galaxy Jones is on the east side of the ground floor. Apparently some kind of function was happening here before Admiral Thallium emptied the building, for there is an array of canapes on a catering table here. The floor stretches north and south, and there's a closet door to the west.
+
+>e
+Jones almost bumps into a glass wall.
+
+>n
+
+Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.
+
+Jones: "Now this is some choice bullshit here."
+
+Beck: "Looks like the record of the good Admiral's long and dedicated service."
+
+>x uniforms
+Jones yawns looking over the assortment of faux honors. They're all behind glass, but one of the display cases is partly open, leaving the rather garish medal inside unprotected.
+
+>x medal
+While the front looks authentic, the reverse is engraved with Thallium's personal motto "Planetas Vincam". The ribbon conceals a safety pin. It looks like it could be removed.
+
+>* && But is it security-protected? Should I swap the Coin with the Medal in an Indiana-move?
+I didn't understand that sentence.
+
+>save
+Ok.
+
+>swap medal with coin
+I didn't understand that sentence.
+
+>replace medal with coin
+I didn't understand that sentence.
+
+>get medal
+Taken.
+
+>* && Or that...
+I didn't understand that sentence.
+
+>i
+Jones is carrying:
+  a garish medal
+    a safety pin
+  a red cardkey
+  an Atmo-Suit
+  a fork
+  a shrimp tea sandwich
+  a coin
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>wear medal
+Jones declines to wear a fake medal from a fake Admiral.
+
+>x pin
+A standard silver metal safety pin.
+
+>take pin fron madal
+I only understood you as far as wanting to take the safety pin.
+
+>take pin fron medal
+I only understood you as far as wanting to take the safety pin.
+
+>take pin 
+Taken.
+
+>i
+Jones is carrying:
+  a safety pin
+  a garish medal
+  a red cardkey
+  an Atmo-Suit
+  a fork
+  a shrimp tea sandwich
+  a coin
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>x medal
+While the front looks authentic, the reverse is engraved with Thallium's personal motto "Planetas Vincam". Earlier Jones removed the safety pin.
+
+>x pin
+A standard silver metal safety pin.
+
+>pick teeth with pin
+There's nothing like that nearby.
+
+>l
+Galaxy Jones is at the northeast corner of the ground floor. The area is dedicated to celebrating the military career of Admiral Thallium. Uniforms, medals, ribbons, and other miscellanea are mounted on the wall or in showcases. All this despite the fact that no one has turned up any evidence that Thallium served in any navy of any country on any planet. One can escape to the west or south.
+
+>x showcases
+There's a remarkable array of faux honors here, all behind glass. One of the display cases is partly open and empty of the medal it once held.
+
+>close case
+They aren't something Jones can close.
+
+>Open display case
+There's nothing like that nearby.
+
+>open case
+There's a remarkable array of faux honors here, all behind glass. One of the display cases is partly open and empty of the medal it once held.
+
+> x display case
+There's nothing like that nearby.
+
+> x display cases
+There's nothing like that nearby.
+
+>x cases
+There's a remarkable array of faux honors here, all behind glass. One of the display cases is partly open and empty of the medal it once held.
+
+>* &&
+I didn't understand that sentence.
+
+>* && DISPLAY CASES. (I don't know if I'm the only one, but when I want to immerse myself more fully in the experience, I often use the longer descriptions. X GREY-STRIPED ARMOURED-HELMET WEARING ORC GUARD for example...)
+You seem to want to talk to someone, but I can't see whom.
+
+>* && Ok, So I think I found the SWIPE CARD for the security door on the west side. But I'm boing to try pressing on Northwards.
+You seem to want to talk to someone, but I can't see whom.
+
+>n
+Jones can't walk through walls. She can go south or west from here.
+
+>w
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>x statue
+His nauseating visage seems to leer at Jones, and she suppresses a shiver of disgust.
+
+Jones groans. "Be glad you're not here, Beck. This is revolting."
+
+Beck chuckles. "I won't ask."
+
+>topple statue
+I didn't understand that sentence.
+
+>shoot statue
+Jones only uses violent means when absolutely necessary.
+
+>look behind statue
+Jones finds nothing of note.
+
+>* && I'm still looking for things under or behind things because that seems like the thing Galaxy would do.
+I didn't understand that sentence.
+
+>x pedestal
+There's nothing like that nearby.
+
+>l
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>x north wall
+I only understood you as far as wanting to examine north.
+
+>* && Plus: a wall behind a statue is a great way to conceal a hidden passage.
+I didn't understand that sentence.
+
+>s
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+>s
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. Jones may go east and west from here, north to the elevators, or south out of the building. There are two niches in the central wall from which the guard robots emerged.
+
+Spread across the floor in a tangled ruin are the remains of a giant crystal sculpture and two guard robots.
+
+>n
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+>n
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>s
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+>* && Just mapping.
+I didn't understand that sentence.
+
+>w
+(first opening the elevator door)
+Jones can't just open the elevator with her hands.
+
+>e
+As soon as Jones enters the stairwell, a disruptor blast from above zings past her shoulder, and she beats a hasty retreat. She won't be going up the stairs until she can clear out the resistance, and she can't do that from here.
+
+Jones: "I've got gunfire from somewhere up the stairs. I'll have to get above them and take them out from behind."
+
+Beck: "Sounds like a plan."
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+>x elevator
+(the elevator door)
+A gleaming gold elevator door. There is a hole near the top for inserting a drop key.
+
+>* && a drop key? is this like a coin or a weight or a medal?
+I didn't understand that sentence.
+
+>* && I want to try the swipe card first.
+I didn't understand that sentence.
+
+>n
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>w
+
+Galaxy Jones is at the northwest corner of the ground floor. A large relief map of Mars is mounted on the north wall here. One can leave here to the south or east.
+
+>s
+
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+>e
+(first opening the utility door)
+It seems to be locked.
+
+>x utility door
+It's a white metal door, completely typical. It has a swipe card lock right above the handle.
+
+>swipe card
+What should Jones swipe the red cardkey through?
+
+>jones should swipe the red cardkey through the swipe card lock
+I only understood you as far as wanting to swipe the red cardkey through Jones.
+
+>put card in lock
+Jones unlocks the utility door.
+
+>* && "It beeps once."
+I didn't understand that sentence.
+
+>open utility door
+Jones opens the utility door.
+
+>x utility door
+It's a white metal door, completely typical. It has a swipe card lock right above the handle.
+
+>enter utility room
+Which do you mean, the utility rooms or the utility door?
+
+>* && both please.
+There's nothing like that nearby.
+
+>e
+
+Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
+
+Hanging from a hook here is a drop key.
+
+Lying discarded on a table here is a hammer.
+
+>x panel
+From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on.
+
+>x wires
+From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on.
+
+>x circuit boards
+From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on.
+
+>x lights
+From the looks of it, elevator technology hasn't evolved much since it was first developed. This control panel is a primitive collection of wires, circuit boards, indicator lights, and other components. It also seems to be completely inactive -- none of the lights are on.
+
+>turn on circuit boards
+I didn't understand that sentence.
+
+>i
+Jones is carrying:
+  a safety pin
+  a garish medal
+  a red cardkey
+  an Atmo-Suit
+  a fork
+  a shrimp tea sandwich
+  a coin
+  a sticky note
+  a cable with hooks at either end
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+>get hammer
+Taken.
+
+>hit boards with hammer
+Playing with the controls for a dangerous piece of equipment she doesn't understand is not something Jones would do.
+
+> l
+Galaxy Jones is in the elevator room. This is a utility room related to the operation of the elevator, on the other side of the east wall here. There is a control panel on the wall, and a door leading west.
+
+Hanging from a hook here is a drop key.
+
+>get key
+(the drop key)
+Taken.
+
+>x key
+(the red cardkey)
+An anonymous red card with a magnetic stripe.
+
+>x drop key
+A drop key is a special device used to open an elevator door from the outside. It consists of a thin shaft which is hinged at th-- oh just Google it.
+
+>* && No. I strongly disagree with you choice to put a "Google It"-joke directed at the player in here. Perhaps refer to the flying cars she used to steal for joyriding with a similar device?
+I didn't understand that sentence.
+
+>x red drop key
+I only understood you as far as wanting to examine the red cardkey.
+
+>w
+
+Galaxy Jones is on the west side of the ground floor. Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west.
+
+>n
+
+Galaxy Jones is at the northwest corner of the ground floor. A large relief map of Mars is mounted on the north wall here. One can leave here to the south or east.
+
+>e
+
+Galaxy Jones is on the north side of the ground floor. The area is dominated by a towering statue of Admiral Thallium against the north wall. The ground floor extends west and east from here. The elevator is to the south.
+
+>s
+
+Galaxy Jones is in the ground floor elevator hall. This hallway between the north and south ends of the ground floor is home to the elevator to the west. To the east is the entrance to a stairwell.
+
+>save
+Ok.
+
+>*&& I think I investigated the entire ground floor. I like it. A bit of action, some intriguing leftovers and decorations. Not completely drawn into the atmosphere though, although that may be because I'm too keen on searching thoroughly?
+You seem to want to talk to someone, but I can't see whom.
+
+>script off
+
+End of transcript.
