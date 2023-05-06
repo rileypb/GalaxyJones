@@ -419,7 +419,6 @@ To begin is a verb. To fade is a verb.
 
 Report frotzing something when the noun is not the player:
 	say "There is an almost blinding flash of light as [the noun] [begin] to glow! [They] slowly [fade] to a less painful level, but [the noun] [are] now quite usable as a light source.";
-	
 
 Book 1 - Counting moves
 
@@ -1436,7 +1435,7 @@ Does the player mean drinking the waterfall:
 
 Section 2 - ground-floor-2
 
-The description of ground-floor-2 is "Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door. The city looms beyond the glass wall to the west."
+The description of ground-floor-2 is "Semicircular couches open on either side of a central carpeted path leading north and south. Set in the central pillar of the building to the east is a utility door with a swipe lock. The city looms beyond the glass wall to the west."
 
 The semicircular couch is a couch in ground-floor-2. The description is "An inoffensive beige couch, shaped in a half-circle.". Understand "couches" as the semicircular couch.
 
@@ -1561,7 +1560,7 @@ The description of ground-floor-7 is "The centerpiece of this area is the actual
 The Viking 2 lander is scenery in ground-floor-7.  "The lander is such a big, ungainly object it's hard to imagine it was once a pinnacle of human achievement."
 
 Instead of entering the Viking 2 lander:
-	say "It's wasn't a manned craft.";
+	say "It wasn't a manned craft.";
 
 Chapter 5 - Maintenance Closet
 
@@ -2484,6 +2483,17 @@ The mauve guard robot is a guard robot in microthings-2. The mauve guard robot i
 The mauve guard robot has a room called the goal. The goal of the mauve guard robot is microthings-2.
 The mauve guard robot has a room called the homebase. The homebase of the mauve guard robot is microthings-2.
 
+Instead of shooting the robot vent with something:
+	try shooting the mauve guard robot with the second noun;
+
+Check shooting something with something when the location is in the tenth-floor-region or the location is the top of the elevator car:
+	if the noun is not the robot vent and the noun is not the mauve guard robot:
+		say "Jones should focus on disabling the robot." instead;
+
+Check attacking something when the location is in the tenth-floor-region or the location is the top of the elevator car:
+	if the noun is not the robot vent and the noun is not the mauve guard robot:
+		say "Jones should focus on disabling the robot." instead;
+
 Instead of sneaking up on the mauve guard robot:
 	say "The room is too open to sneak up effectively." instead;
 
@@ -2502,7 +2512,7 @@ After going somewhere when the player is in tenth-floor-region and the mauve gua
 		now the goal of the mauve guard robot is the location;
 	continue the action;
 	
-Instead of shooting something with the disruptor pistol when the location of the mauve guard robot farsees the location:
+Instead of shooting something with the disruptor pistol when the location of the mauve guard robot farsees the location and the noun is not the mauve guard robot:
 	say "Focus on the robot instead.";
 
 Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack: 
@@ -4223,7 +4233,7 @@ vanity table	"It's too big to carry around."	"Jones is not here to rearrange the
 vending machine	"[if the bottled water is nowhere]Why not buy some water instead?[otherwise]I think the water is all Jones is going to take from the vending machine.[end if]"	"Moving the machine might cause it to topple over. Jones wisely leaves it alone."
 Vent access door	"And what would Jones even use it for?"	"Aside from opening and closing it, what is there to do?"
 video screens	"Those are attached to the wall."
-viking 2 lander	"Although it would be nice to return it to its rightful place at the Museum of Martian History, that will have to wait."	"Really, Jones doesn't even feel good about touching such an important relic."
+viking 2 lander	"Although it would be nice to return it to its rightful place at the Museum of Martian History, that will have to wait."	"Really, Jones doesn't feel good about even touching such an important relic."
 walls-100	"Don't be silly."
 waterfall	"That's a permanent display."	"Jones splashes the water a little."
 window-thing	"That's part of the building."	"It's not designed to be opened."
