@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 35934 words long.
+I've now read your source text, which is 35968 words long.
 
 
 -----------------------------------------------------
@@ -69,7 +69,7 @@ Phase VI ... Semantic analysis III
 Phase VII ... First pass through assertions
 -----------------------------------------------------
 
-    Regional: CONSTANT_VNT'the rooftop'-region()(I363'rooftop')
+    Regional: CONSTANT_VNT'the rooftop'-region()(I366'rooftop')
      == region
 
 
@@ -95,33 +95,33 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
-Regional: CONSTANT_VNT'the ground-floor-region'-region(I300_ground_floor_region)(I212'ground-floor-region')
+Regional: CONSTANT_VNT'the ground-floor-region'-region(I302_ground_floor_region)(I212'ground-floor-region')
  == region
-Regional: CONSTANT_VNT'tenth-floor-region'-region(I261_tenth_floor_region)(I174'tenth-floor-region')
+Regional: CONSTANT_VNT'tenth-floor-region'-region(I263_tenth_floor_region)(I174'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'elevator shaft-region'-region(I350_elevator_shaft_region)(I262'elevator shaft-region')
+Regional: CONSTANT_VNT'elevator shaft-region'-region(I352_elevator_shaft_region)(I262'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'elevator shaft-region'-region(I350_elevator_shaft_region)(I262'elevator shaft-region')
+Regional: CONSTANT_VNT'elevator shaft-region'-region(I352_elevator_shaft_region)(I262'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'the elevator shaft-region'-region(I350_elevator_shaft_region)(I262'elevator shaft-region')
+Regional: CONSTANT_VNT'the elevator shaft-region'-region(I352_elevator_shaft_region)(I262'elevator shaft-region')
  == region
-Regional: CONSTANT_VNT'tenth-floor-region'-region(I261_tenth_floor_region)(I174'tenth-floor-region')
+Regional: CONSTANT_VNT'tenth-floor-region'-region(I263_tenth_floor_region)(I174'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'tenth-floor-region'-region(I261_tenth_floor_region)(I174'tenth-floor-region')
+Regional: CONSTANT_VNT'tenth-floor-region'-region(I263_tenth_floor_region)(I174'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I452_rooftop)(I363'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I457_rooftop)(I366'rooftop')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I452_rooftop)(I363'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I457_rooftop)(I366'rooftop')
  == region
-Regional: CONSTANT_VNT'the ninth-floor'-region(I240_ninth_floor)(I153'ninth-floor')
+Regional: CONSTANT_VNT'the ninth-floor'-region(I242_ninth_floor)(I153'ninth-floor')
  == region
-Regional: CONSTANT_VNT'the tenth-floor-region'-region(I261_tenth_floor_region)(I174'tenth-floor-region')
+Regional: CONSTANT_VNT'the tenth-floor-region'-region(I263_tenth_floor_region)(I174'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the 100th-floor-region'-region(I421_100th_floor_region)(I333'100th-floor-region')
+Regional: CONSTANT_VNT'the 100th-floor-region'-region(I426_100th_floor_region)(I336'100th-floor-region')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I452_rooftop)(I363'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I457_rooftop)(I366'rooftop')
  == region
-Regional: CONSTANT_VNT'the tenth-floor-region'-region(I261_tenth_floor_region)(I174'tenth-floor-region')
+Regional: CONSTANT_VNT'the tenth-floor-region'-region(I263_tenth_floor_region)(I174'tenth-floor-region')
  == region
 
 
@@ -153,9 +153,9 @@ Phase XII ... Code generation
 
 ==== Phase XII.6 ... Compiling first block of phrases ====
 
-        Regional: CONSTANT_VNT'tenth-floor-region'-region(I261_tenth_floor_region)(I174'tenth-floor-region')
+        Regional: CONSTANT_VNT'tenth-floor-region'-region(I263_tenth_floor_region)(I174'tenth-floor-region')
          == region
-        Regional: CONSTANT_VNT'tenth-floor-region'-region(I261_tenth_floor_region)(I174'tenth-floor-region')
+        Regional: CONSTANT_VNT'tenth-floor-region'-region(I263_tenth_floor_region)(I174'tenth-floor-region')
          == region
 0 = object. 1 = number
                                 0 = action. 1 = object
@@ -227,7 +227,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 164 files written as streams.
-CPU time: 370 centiseconds
+CPU time: 388 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

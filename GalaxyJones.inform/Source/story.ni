@@ -691,7 +691,7 @@ After pleading when comment on energy absorption is used during Lobby Shootout:
 		-- otherwise: converse "Beck: 'That sculpture up there seems pretty big.'";
 	
 
-Instead of shooting something with the disruptor pistol when the noun is not a guard robot during Lobby Shootout:
+Instead of shooting something with the disruptor pistol when the noun is not a guard robot and the noun is not the sculpture during Lobby Shootout:
 	say "Focus on the robots instead.";
 
 Book 2 - Cybernetica Battle		
@@ -823,7 +823,7 @@ The atmo-suit can be needed or unneeded.
 Check wearing the atmo-suit when the atmo-suit is unneeded:
 	say "[We] needs to be able to move around quickly. Better not wear the [Atmo-Suit]." instead;
 		
-The drop key is a thing. "Hanging from a hook here is [a drop key]." The description is "A drop key is a special device used to open an elevator door from the outside. It consists of a thin shaft which is hinged at th-- oh just Google it." 
+The drop key is a thing. "Hanging from a hook here is [a drop key]." The description is "A drop key is a special device used to open an elevator door from the outside."  Understand "dropkey" as the drop key.
 
 A thing can be an enemy.
 
@@ -878,6 +878,12 @@ Carry out swiping:
 Definition: a white board is blank if the writing of it is empty.
 
 A white board is a kind of thing. A white board has a text called the writing. The description is "[if not blank]The board says '[writing]'[otherwise]The board is blank[end if]. A black marker with an eraser at the end is tied to the board.".
+
+A black marker is a kind of thing.
+Every white board incorporates a black marker.
+
+An eraser is a kind of thing.
+Every black marker incorporates an eraser.
 
 Writing is an action applying to one topic. Understand "write [text]" as writing.
 
@@ -1297,7 +1303,7 @@ The ground-floor-chandeliers are a backdrop. They are privately-named. The print
 The ground-floor-chandeliers are in lobby,
 	ground-floor-1, ground-floor-2, ground-floor-3, ground-floor-4, ground-floor-5, ground-floor-6, ground-floor-7.
 
-The description of the lobby is "The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
+The description of the lobby is "[first time]The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. [only]Near the entryway is a front desk[if the giant sculpture is in the lobby]. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables[end if]. [We] may go east and west from here, north to the elevators, or south out of the building[if lobby shootout is happening or lobby shootout has happened]. There are two niches in the central wall from which the guard robots emerged[end if].".
 
 The lobby-background is scenery in the lobby. It is privately-named. Understand "plants/water/features/feature/stylish" as the lobby-background. "The ground floor is huge and made for holding people comfortably. Thus the hundreds of seats amidst Earth pleasures such as water and living green plants." The printed name is "lobby"
 
@@ -1311,7 +1317,10 @@ The utility-rooms-scenery is a backdrop in the lobby. It is privately-named. The
 
 The niches are scenery in the lobby. "Aside from a robot charging station, there's nothing here." Understand "niche" as niches.
 
-The charging stations are scenery in the lobby. "The charging station is a socket fitted in a depression contoured to fit one of those robots." 
+Some charging stations are scenery in the lobby. "The charging station is a socket fitted in a depression contoured to fit one of those robots." Understand "station/socket/sockets" as charging stations.
+
+Instead of inserting something into the charging stations:
+	say "Jones doesn't play with electrical sockets!";
 
 The front desk is scenery in the lobby. It is a pseudocontainer. The contents description is "There's not much on the desk other than a sticky note that says '[doorcode]'.". "There is nothing of interest on the front desk." 
 The sticky note is in the front desk. The description is "The note says '[doorcode]'.".
@@ -1319,7 +1328,7 @@ The sticky note is in the front desk. The description is "The note says '[doorco
 Instead of opening the front desk:
 	say "[We] opens a few drawers, all of which contain paper, pens, and other things of little interest.";
 	
-The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/glass/crystal/abstraction/cables/installation" as the giant sculpture. "It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan. It's held up by metal cables."
+The giant sculpture is scenery in the lobby. Understand "art/artwork/Rambutan/glass/crystal/abstraction/cables/cable/installation" as the giant sculpture. "It's a huge crystal abstraction, provocative in its arrogance but evocative of nothing. A typical public installation by the artist Rambutan. It's held up by metal cables."
 
 comment on energy absorption is a clip with conversation "[line break]Jones: 'Target seems to be absorbing disruptor fire. This will make things a little harder.'
 
@@ -1841,7 +1850,7 @@ The description of the Ninth Floor South Hallway is "This anonymous corporate ha
 
 Chapter 1 - Cybernetica office
 
-The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities[if Cybernetica office is window-broken]. One of the windows along the east side of the office is broken[end if].".
+The description of the Cybernetica office is "It[']s spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities[if Cybernetica office is window-broken]. One of the windows along the east side of the office is broken[end if][if purple guard robot is somewhere]. There is a menacing purple guard robot here, looking for Jones[end if].".
 
 The description of the Cybernetica door-inside is "This side intentionally left blank.".
 	
@@ -1872,16 +1881,13 @@ Chapter 2 - Outside
 
 The description of the ledge is "The ledge runs north and south. Jones is plastered up against the wall, trying not to look down[if the floor of the window washing scaffold is 10]. The scaffold is right above [our] head[end if][if the window washing scaffold is discovered and the floor of the window washing scaffold is 8]. The scaffold is right below [us][end if].".
 
-The metal cables are scenery in the ledge. Understand "cable" as the metal cables. "It looks very tense. It runs up and down."
+[The metal cables are scenery in the ledge. Understand "cable" as the metal cables. "It looks very tense. It runs up and down."]
 
 flying is an action applying to nothing. Understand "fly" as flying.
 
 Check flying:
 	say "Not even Galaxy Jones.";
-
-Instead of flying when the location is the ledge:
-	say "Tasteless.";
-
+	
 The ledge-wall is a backdrop. It is in the ledge and the window washing scaffold. It is privately-named. The printed name is "wall". Understand "wall" as the ledge-wall. "Right now, it's [our] only friend."
 
 check climbing the ledge-wall:
@@ -2154,7 +2160,7 @@ Report pushing the scaffold up button:
 
 Check pushing the scaffold down button:
 	if the floor of the window washing scaffold is 8:
-		say "The scaffold is as far down as it will do." instead;
+		say "The scaffold is as far down as it will go." instead;
 		
 Carry out pushing the scaffold down button:
 	decrement the floor of the window washing scaffold;
@@ -2239,7 +2245,7 @@ Instead of unlocking the large desk with the safety pin when the large desk is l
 	
 The north-desks are scenery in the north end of the building management office. They are privately-named. The printed name is "desks". Understand "desks" as north-desks. "There are lots of them, none of which are particularly interesting."
 
-The north-task-boards are scenery in the north end of the building management office. They are a white board. They are privately-named. The printed name is "task boards". Understand "task/tasks/board/boards" as north-task-boards. The writing is "[italic type]1. Describe scenery objects on Engineering Deck[line break]
+The north-task-boards are scenery in the north end of the building management office. They are a white board. They are privately-named. The printed name is "task board". Understand "task/tasks/board/boards" as north-task-boards. The writing is "[italic type]1. Describe scenery objects on Engineering Deck[line break]
 2. Fix check rule when installing new engine component[line break]
 3. Add more facts to computer database[line break]
 4. Fix Arvax response to rebooting the ship computer[roman type]
@@ -2255,8 +2261,8 @@ Check picking something with something:
 Check unlocking a locked lockable thing with the safety pin when the noun is keyed:
 	say "[We] gives it a shot, but the lock won't turn." instead;
 
-Check unlocking a locked lockable thing with the safety pin when the noun is not keyed:
-	say "The lock doesn't take a regular key." instead;
+[Check unlocking a locked lockable thing with the safety pin when the noun is not keyed:
+	say "The lock doesn't take a regular key." instead;]
 
 Check picking a locked lockable thing with the safety pin when the noun is keyed:
 	try unlocking the noun with the safety pin instead;
@@ -2287,7 +2293,7 @@ The description of the south end of the building management office is "The build
 	
 The south-desks are scenery in the south end of the building management office. They are privately-named. The printed name is "desks". Understand "desk/desks" as south-desks. "There are lots of them, none of which are particularly interesting."
 
-The south-task-boards are scenery in the south end of the building management office. They are privately-named. They are a white board. The printed name is "task boards". Understand "task/tasks/board/boards" as south-task-boards. The writing is "Jones is coming, surprise day off!".	
+The south-task-boards are scenery in the south end of the building management office. They are privately-named. They are a white board. The printed name is "task board". Understand "task/tasks/board/boards" as south-task-boards. The writing is "Jones is coming, surprise day off!".	
 A screwdriver is in the south end of the building management office. "A screwdriver sits atop the filing cabinet." The description is "A standard Phillips screwdriver with a red plastic handle."
 Understand "tool" as a screwdriver.
 
@@ -2495,6 +2501,9 @@ After going somewhere when the player is in tenth-floor-region and the mauve gua
 	if oldloc is not the room of stuff and the location of the mauve guard robot farsees oldloc:
 		now the goal of the mauve guard robot is the location;
 	continue the action;
+	
+Instead of shooting something with the disruptor pistol when the location of the mauve guard robot farsees the location:
+	say "Focus on the robot instead.";
 
 Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack: 
 	if the mauve guard robot is in the location:
@@ -3818,7 +3827,7 @@ After pleading when the location is south end of building management office and 
 		-- 2: converse "Beck: 'Oops. Getting the screwdriver didn't turn out well. Look behind the cabinet to get the screwdriver.'";
 		-- 3: converse "Beck: 'Looks like you'll need to get rid of the cat. What do cats like?'";
 		-- 4: converse "Beck: 'Give the shrimp tea sandwich to the cat.'";
-		-- otherwise: converse "Beck: 'What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor. Time to go back there.'"
+		-- otherwise: converse "Beck: 'What? You don't have a shrimp tea sandwich? Didn't you examine the catering table on the ground floor? Time to go back there.'"
 		
 After pleading when the location is in the ninth-floor and the black cardkey is not seen and the ninth floor north hallway is visited and the ninth floor south hallway is visited:
 	lb;
@@ -3853,7 +3862,7 @@ After pleading when the location is the window washing scaffold and the floor of
 		-- 3: converse "Beck: 'To do that you need a screwdriver.'";
 		-- otherwise: converse "Beck: 'Haven't got one? Go back to the building management office.'";
 		
-After pleading when (the location is in the tenth-floor-region or the location is the air handling room) and the mauve guard robot is somewhere:
+After pleading when (the location is in the tenth-floor-region or the location is the air handling room or the location is top of the elevator car) and the mauve guard robot is somewhere:
 	lb;
 	if plead tenth-floor-region is:
 		-- 1: converse "Beck: 'Before we begin, save your game. This could get ugly.'";
@@ -4043,7 +4052,7 @@ north end of the building management office	--	"Jones can leave through a doorwa
 south end of the building management office	--	"Jones can leave through a doorway to the east, or go north to the other end of the office."
 Martian Chemical office	--	"The only way to leave the office is through the door to the west."
 Cybernetica office	--	"Jones can leave through the door to the west[if the bwindow is navigable]. She can also go east through the broken window[end if]."
-Ledge	{north, south}	"A metal cable running up and down halts Jones's progress in that direction."
+Ledge	{north, south}	"The wall juts out and blocks Jones's progress."
 Ledge	--	"That would send Jones plummeting to her death."
 Ledge	{up}	"If only Jones could climb walls."
 Ledge	{down}	"Go down? Jones doesn't even want to [italic type]look[roman type] down."
