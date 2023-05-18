@@ -3534,7 +3534,7 @@ Check an actor attacking (this is the block attacking rule):
 		say "Violence [aren't] the answer to this one." (A);
 	stop the action.
 
-[Kissing is an action applying to one thing.
+Kissing is an action applying to one thing.
 The kissing action translates into I6 as "Kiss".
 
 The specification of the kissing action is "Possibly because Inform was
@@ -3552,7 +3552,7 @@ Check an actor kissing (this is the kissing yourself rule):
 Check an actor kissing (this is the block kissing rule):
 	if the actor is the player:
 		say "[The noun] [might not] like that." (A);
-	stop the action.]
+	stop the action.
 
 Answering it that is an action applying to one visible thing and one topic.
 The answering it that action translates into I6 as "Answer".
@@ -4605,8 +4605,8 @@ Understand the command "purchase" as "buy".
 Understand "wake [someone]" or "wake [someone] up" or "wake up [someone]" as waking.
 Understand the commands "awake" and "awaken" as "wake".
 
-[Understand "kiss [someone]" as kissing.]
-[Understand the commands "embrace" and "hug" as "kiss".]
+Understand "kiss [someone]" as kissing.
+Understand the commands "embrace" and "hug" as "kiss".
 
 [Understand "think" as thinking.]
 

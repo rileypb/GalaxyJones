@@ -742,7 +742,12 @@ report sneaking up on the purple guard robot:
 		say line break;
 		print shoot out the window;
 		now bwindow is in Cybernetica office;
-		now the Cybernetica office is window-broken;	
+		now the Cybernetica office is window-broken;
+		change east exit of Cybernetica office to ledge;
+		change west exit of ledge to Cybernetica office;
+		change outside exit of Cybernetica office to ledge;
+		change inside exit of ledge to Cybernetica office;
+		now bwindow is navigable;	
 	otherwise:
 		say "[We] is right up next to the robot, crouched beneath a desk. She can see right up under its armor.";
 		
@@ -1147,12 +1152,7 @@ the penthouse south is southwest of penthouse east and south of 100th floor elev
 
 the penthouse west is northwest of penthouse south and southwest of penthouse north.
 
-the roof stairs is east of 100th floor elevator hall.
-the roof stairs is above 100th floor elevator hall.
-
-The roof access door is a closed, locked, lockable, openable scenery door. It is above the roof stairs and below the penthouse roof. The description of the roof access door is "Looking strangely out of place, it is a common grey metal door with a push bar."
-
-The preposition of the roof stairs is "on".
+The roof access door is a closed, locked, lockable, openable scenery door. It is below the penthouse roof. The description of the roof access door is "Looking strangely out of place, it is a common grey metal door with a push bar."
 
 The preposition of the penthouse roof is "on".
 
@@ -2494,6 +2494,14 @@ Check attacking something when the location is in the tenth-floor-region or the 
 	if the noun is not the robot vent and the noun is not the mauve guard robot:
 		say "Jones should focus on disabling the robot." instead;
 
+Check shooting a room with something when the location is in the tenth-floor-region or the location is the top of the elevator car:
+	if the noun is not the robot vent and the noun is not the mauve guard robot:
+		say "Jones should focus on disabling the robot." instead;
+
+Check attacking a room when the location is in the tenth-floor-region or the location is the top of the elevator car:
+	if the noun is not the robot vent and the noun is not the mauve guard robot:
+		say "Jones should focus on disabling the robot." instead;
+
 Instead of sneaking up on the mauve guard robot:
 	say "The room is too open to sneak up effectively." instead;
 
@@ -2782,6 +2790,9 @@ Book 6 - 100th Floor
 
 The 100th-floor-region is a region. It contains the 100th floor elevator hall, penthouse north, penthouse east, penthouse south, and penthouse west.
 
+The penthouse roof is above the 100th floor elevator hall.
+
+The roof stairs is an object.
 The roof stairs can be hidden. The roof stairs are hidden.
 
 The description of the 100th floor elevator hall is "The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south[if roof stairs are not hidden].
@@ -2805,7 +2816,7 @@ The living quarters are scenery in the 100th floor elevator hall. "They look jus
 After looking when the location is the 100th floor elevator hall and the roof stairs are not hidden:
 	print stairs appeared;
 	
-Check going from the 100th floor elevator hall to the roof stairs when the roof stairs are hidden:
+Check going from the 100th floor elevator hall to the penthouse when the roof stairs are hidden:
 	say text of the can't go that way rule response (A);
 	lb instead;
 
@@ -2819,6 +2830,7 @@ Instead of entering the expensive round bed:
 Understand "lie on [something]" as entering.
 
 The dummies are scenery in penthouse north. "The best outfit is his Napoleon outfit." Understand "dummy" as dummies.
+The Napoleon outfit is scenery in penthouse north. "Poster boy for megalomaniacs everywhere."
 
 Admiral Thallium's clothes are scenery in penthouse north. "Hideous." Understand "clothing/suits/outfits/outfit/suit" as Admiral Thallium's clothes.
 
@@ -3009,7 +3021,7 @@ When Thallium alight begins:
 Before going to flyer pad during On-Rooftop:
 	say "Thallium trails after Jones.";
 	say line break;
-	converse as Thallium "Um, Jones -- that harlot you're so bent on freeing from captivity is over [style2]there[style1]. Now get out of the way, I'm trying to escape.'
+	converse as Thallium "'Um, Jones -- that harlot you're so bent on freeing from captivity is over [style2]there[style1]. Now get out of the way, I'm trying to escape.'
 	
 	Thallium pushes past [us]. [We] attempts to grab his shoulder, but [we] is thrown back by an unseen force.
 	
@@ -3056,7 +3068,7 @@ When Thallium ultimatum begins:
 Before going somewhere during Thallium ultimatum:
 	say "Thallium's flyer floats after Jones.";
 	
-Saving Europa is a scene. Thallium ultimatum ends when Admiral Thallium's flyer is nowhere. 
+Saving Europa is a scene. Thallium ultimatum ends when the green flyer is nowhere. 
 Saving Europa begins when Thallium ultimatum ends.
 
 The red flyer is a backdrop. The description is "[If saving europa is happening]Jones's little red flyer, Galaxy Two[otherwise]It's little more than a growing red speck[end if]."
@@ -3141,10 +3153,10 @@ The description of the penthouse roof is "It is an extravagant and opulent space
 The lounge area is scenery in the penthouse roof. "Looks like a good time, if [we] weren't already busy." Understand "fire/pit/bar/hot/tub" as the lounge area.
 
 After looking when the location is in the rooftop and the cage is intact during Thallium alight:
-	say "Admiral Thallium's flyer is hovering above you.";
+	say "The green flyer is hovering above you.";
 
 After looking when the location is in the rooftop and the cage is intact during Thallium ultimatum:
-	say "Admiral Thallium's flyer is hovering above you.";
+	say "The green flyer is hovering above you.";
 
 The rooftop seating is scenery in the penthouse roof. "[We] has other things to focus on."
 
@@ -3152,16 +3164,16 @@ The electrostatic field is a backdrop in the rooftop. The description is "It can
 
 Admiral-Thallium is in penthouse roof.
 
-Admiral Thallium's flyer is a backdrop. It is in penthouse roof, cage, and flyer pad. The description is "this is a secret message". Understand "rails/gear/landing/thallium" as Admiral Thallium's flyer.
+The green flyer is a backdrop. It is in penthouse roof, cage, and flyer pad. The description is "this is a secret message". Understand "rails/gear/landing/thallium" as The green flyer.
 
-Instead of examining Admiral Thallium's flyer during On-Rooftop:
-	say "It's big and green and black. Looks like a Sirius XE."
+Instead of examining The green flyer during On-Rooftop:
+	say "It's big and green. Looks like a Sirius XE."
 
-Instead of examining Admiral Thallium's flyer during Thallium alight:
-	say "Hovering above [us], it's distinctly menacing. It's not visibly armed, but it conveys the impression of a beast about to strike. It's flying low, the rails of its landing gear just a few feet above Jones's head.";
+Instead of examining The green flyer during Thallium alight:
+	say "Hovering above [us], Thallium's flyer is distinctly menacing. It's not visibly armed, but it conveys the impression of a beast about to strike. It's flying low, the rails of its landing gear just a few feet above Jones's head.";
 
-Instead of examining Admiral Thallium's flyer during Thallium ultimatum:
-	say "Hovering above [us], it's distinctly menacing. It's not visibly armed, but it conveys the impression of a beast about to strike. It's flying low, the rails of its landing gear just a few feet above Jones's head.";
+Instead of examining The green flyer during Thallium ultimatum:
+	say "Hovering above [us], Thallium's flyer is distinctly menacing. It's not visibly armed, but it conveys the impression of a beast about to strike. It's flying low, the rails of its landing gear just a few feet above Jones's head.";
 	
 cage-scenery is a backdrop. It is in penthouse roof and flyer pad. "You can see the cage with Europa Callisto in it from here. She's lying on the floor and not moving." It is privately-named. The printed name is "cage". Understand "cage" as cage-scenery.
 
@@ -3223,23 +3235,26 @@ Instead of going nowhere from the cage:
 		otherwise: 
 			say "Should Jones burrow downward?";
 
-Instead of attacking Admiral Thallium's flyer:
+Instead of attacking The green flyer:
 	say "It's just too far away.";
 	
-Instead of throwing something at Admiral Thallium's flyer:
+Instead of throwing something at The green flyer:
 	say "Throwing [the noun] would hardly be effective.";
 	
-Instead of throwing the screwdriver at Admiral Thallium's flyer:
+Instead of throwing the screwdriver at The green flyer:
 	say "It would just bounce off.";
 	
-Instead of throwing the bottled water at Admiral Thallium's flyer:
-	say "The water could be useful.";
+Instead of throwing the bottled water at The green flyer:
+	say "The water could be useful elsewhere.";
 	
-Instead of throwing the hammer at Admiral Thallium's flyer:
+Instead of throwing the hammer at The green flyer:
 	say "It might leave a dent, but bring down a flyer? Really?";
 	
 Does the player mean throwing something at the red flyer:
 	it is very unlikely;
+	
+Instead of tying the cable to the green flyer when the player is not on the cage-thing:
+	say "Jones is not close enough to do that."
 
 To break the cage:
 	score 1;
@@ -3251,22 +3266,22 @@ To break the cage:
 	'Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!'
 	
 	Europa moans but doesn't show any signs of having understood Jones.";
-	remove Admiral Thallium's flyer from play;
+	remove The green flyer from play;
 	remove the hook cable from play;
 	now the cage is broken;
 	move the player to the cage-container;
 
-Instead of throwing the hook cable at Admiral Thallium's flyer when the player is on the cage-thing:
+Instead of throwing the hook cable at The green flyer when the player is on the cage-thing:
 	break the cage;
 		
 Instead of tying the hook cable to the cage-thing when the player is on the cage-thing:
 	break the cage;
 
-Instead of throwing the hook cable at Admiral Thallium's flyer:
+Instead of throwing the hook cable at The green flyer:
 	say "[We] throws the cable, but it comes up short. [We] gathers it up again.";
 	
-Instead of tying the hook cable to the cage-thing:
-	say "[We] can't get close enough to the flyer to tie the cable to it.";
+[Instead of tying the hook cable to the cage-thing:
+	say "[We] can't get close enough to the flyer to tie the cable to it.";]
 	
 Instead of tying the hook cable to the cage-thing when the player is not on the cage-thing:
 	say "It doesn't seem useful to attach the cable to this part of the cage.";
@@ -3314,6 +3329,12 @@ Instead of pouring the bottled water on Europa when the cage is broken:
 	say "It's not elegant, but it works.[paragraph break]";
 	try giving the bottled water to Europa;
 	
+Instead of kissing Europa Callisto:
+	say "That would be totally inappropriate, given the circumstances.";
+	
+Instead of kissing Admiral Thallium:
+	say "Ewwwww.";
+
 Instead of going nowhere from the cage during Saving Europa:
 	say "[We] can't leave Europa now!";
 	
@@ -3475,7 +3496,7 @@ Instead of quizzing Beck about the 100th floor elevator hall:
 Instead of quizzing Beck about the 100th floor view of New Reykjavik:
 	converse "Beck: 'Wow. Impressive.'";
 	
-Instead of quizzing Beck about Admiral Thallium's flyer:
+Instead of quizzing Beck about The green flyer:
 	converse "Beck: 'It's a nice vehicle, I'll give him that. Have you ever noticed villains always have ugly houses and beautiful flyers?'";
 	
 Instead of quizzing Beck about Admiral-Thallium:
@@ -4078,7 +4099,7 @@ microthings-7	--	"Jones can go either northwest or south from here."
 microthings-8	--	"From here, one can go north or west."
 tenth floor elevator hall	--	"The elevator is to the west, the stairs are to the east, and the office floor lies both north and south of here."
 elevator car-room	--	"The exit is to the east."
-(100th floor elevator hall)	--	"The elevator is to the west, and the hall leads into the penthouse to the north and south[if roof stairs are not hidden]. To the east stairs lead to the roof[end if]."
+(100th floor elevator hall)	--	"The elevator is to the west, and the hall leads into the penthouse to the north and south[if roof stairs are not hidden]. A marble staircase leads to the roof[end if]."
 penthouse north	--	"The diamond-shaped penthouse bends to the southeast and southwest."
 penthouse east	--	"The diamond-shaped penthouse bends to the northwest and southwest."
 penthouse south	--	"The diamond-shaped penthouse bends to the northeast and northwest."
@@ -4117,7 +4138,7 @@ Book 3 - Can't Take That
 Table of Frustrated Taking
 target (a thing)	message (a text)	move message (a text)
 (100th floor view of New Reykjavik)	"Jones can't take that!"	"Don't be silly."
-Admiral Thallium's flyer	"Jones can't even reach it."	"Don't be silly."
+The green flyer	"Jones can't even reach it."	"Don't be silly."
 Admiral Thallium's clothes	"Jones would rather not touch his clothes."
 Air handling door	"No taking doors."	"Aside from opening and closing [regarding the noun][them], what is there to do?"
 bed	"It's too big to take."	"The frame is built into the floor here."
@@ -4194,13 +4215,14 @@ Martian Chemical door	"Whatever for?"	"Aside from opening and closing it, what i
 Martian Chemical logo	"That's part of the door."
 metal pillar	"Jones doesn't have the time it would take to detach it from the floor."
 military-detritus	"They're all behind glass."	"Jones pokes around in it a bit, but discovers nothing interesting."
+Napoleon outfit	"That's unlikely to be useful."	"Jones doesn't have time to reorganize Thallium's wardrobe."
 New Reykjavik Botanic Dome	"Taken.[paragraph break]No, sorry, that's ridiculous."
 niches	"That's part of the building."
 ninth floor elevator door	"If Jones took that, innocent people might fall down the elevator shaft."	"Aside from opening and closing it, what is there to do?"
 ninth floor elevator shaft	"What are you even talking about?"
 Ninth floor view of New Reykjavik	"Jones can't take that!"	"Jones can't move that!"
 ninth-floor-stairwell	"Try going inside it first."
-north-desks	"Do you know how many desks Jones would have if she took everyone she saw in this building? A [italic type]lot[roman type] of desks, that's how many."	"Jones is not here to rearrange the furniture."
+north-desks	"Do you know how many desks Jones would have if she took every desk she saw in this building? A [italic type]lot[roman type] of desks, that's how many."	"Jones is not here to rearrange the furniture."
 North-mgmt-doorway	"Loony."
 north-task-boards	"Do you think maybe Jones will have to communicate with Thallium through a sound-proof glass barrier or something?"	"Jones rearranges the task boards a little, but it's still just a mess."
 open-space	"That's literally the absence of things."
@@ -4293,4 +4315,4 @@ test air with "test ledge/look down/look down/look down/d/press up/press up/open
 test robot with "test air/w/s/w/take panel/e/s/n/w/u/jump on robot/pour gel on robot".
 test golden with "test robot/e/s/w/open present/e/n/w/put golden key in keyhole".
 test 100 with "test golden/press 100/e/s/take diamond/x it/smash diamonds with hammer/nw/put gem in claw/x panel/press black button/ne/s".
-test endgame with "test 100/e/u/n/climb cage/throw cable at flyer/give water to europa".
+test endgame with "test 100/u/n/climb cage/throw cable at flyer/give water to europa".
