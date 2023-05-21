@@ -3797,7 +3797,7 @@ Carry out resetting help:
 	blank out the whole of Table of Pleading Counts;
 	say "Resetting all help messages.";
 
-Pleading is an action applying to nothing. Understand "ask beck for help", "ask beck what to do", "ask for help" as pleading.
+Pleading is an action applying to nothing. Understand "ask beck for help", "ask beck what to do", "ask for help" as pleading. Understand "hint", "hints" as pleading.
 
 Report pleading: 
 	say line break;

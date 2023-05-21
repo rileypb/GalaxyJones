@@ -3109,7 +3109,13 @@ A couple of steps to the west, the mauve guard robot heads east.
     </item>
     <item nodeId="node-1630">
         <command xml:space="preserve">attack me</command>
-        <result xml:space="preserve">Jones only uses violent means when absolutely necessary.
+        <result xml:space="preserve">Focus on the robot.
+
+Zip! Disruptor fire scorches a nearby couch.
+
+Beck: "How's it going in there?"
+
+"Jones: "You know -- like all art, it's hit or miss."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
