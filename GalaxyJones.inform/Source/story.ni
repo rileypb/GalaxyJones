@@ -1011,7 +1011,7 @@ The ninth floor south hallway is south of the ninth floor elevator hall.
 The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable. The description is "A slick corporate office door lettered 'Cybernetica'. It has a swipe lock above the handle." Understand "office" as the cybernetica door.
 The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door. 
  
-The cybernetica-room-swipe-lock is scenery in ninth floor north hallway. It is privately-named. The printed name is "swipe lock". Understand "swipe/lock" as cybernetica-room-swipe-lock. "An ordinary swipe lock." 
+The cybernetica-room-swipe-lock is scenery in ninth floor north hallway. It is privately-named. The printed name is "swipe lock". Understand "swipe/card/lock" as cybernetica-room-swipe-lock. "An ordinary swipe lock." 
 
 Instead of inserting something into cybernetica-room-swipe-lock:
 	try unlocking the cybernetica door with the noun;
@@ -1024,7 +1024,7 @@ Instead of swiping something through the cybernetica-room-swipe-lock:
 
 The Martian Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Martian Chemical door is closed, openable, locked, and lockable. "A slick corporate office door with the fancy company logo of Martian Chemical. It has a swipe lock above the handle." Understand "office" as Martian Chemical door. 
  
-The Martian-room-swipe-lock is scenery in ninth floor south hallway. It is privately-named. The printed name is "swipe lock". Understand "swipe/lock" as Martian-room-swipe-lock. "An ordinary swipe lock." 
+The Martian-room-swipe-lock is scenery in ninth floor south hallway. It is privately-named. The printed name is "swipe lock". Understand "swipe/card/lock" as Martian-room-swipe-lock. "An ordinary swipe lock." 
 
 Instead of inserting something into Martian-room-swipe-lock:
 	try unlocking the Martian chemical door with the noun;
@@ -1448,7 +1448,7 @@ The semicircular couch is a couch in ground-floor-2. The description is "An inof
 
 The central carpeted path is scenery in ground-floor-2. The description is "A strip of grey carpet running north to south, in the midst of the marble floor. (Incidentally, the massive expense of moving real marble from Earth to Mars is just further proof of Thallium's madness, seriously.)". Understand "carpet/rug" as the central carpeted path.
  
-The elevator-room-swipe-lock is scenery in ground-floor-2. It is privately-named. The printed name is "swipe lock". Understand "swipe/lock" as elevator-room-swipe-lock. "An ordinary swipe lock." 
+The elevator-room-swipe-lock is scenery in ground-floor-2. It is privately-named. The printed name is "swipe lock". Understand "swipe/card/lock" as elevator-room-swipe-lock. "An ordinary swipe lock." 
 
 Instead of inserting something into elevator-room-swipe-lock:
 	try unlocking the elevator-room-door with the noun;
@@ -1534,7 +1534,7 @@ The shrimp tea sandwich is edible. The poached ostrich eggs in jelly is edible. 
 Understand "egg" as the poached ostrich eggs in jelly.
 
 Check eating the shrimp tea sandwich:
-	say "[We] is not hungry." instead;
+	say "Jones can't stand shellfish." instead;
 
 Check taking the poached ostrich eggs: 
 	say "Don't even." instead; 
@@ -2572,6 +2572,9 @@ Chapter 2 - The Microthings Offices
 The present is a thing in microthings-2. The description is "The note on the present says 'For Galaxy -- see you soon! -- Your friend, the Admiral.'". "There is a present with a note attached sitting on a desk here.". Understand "note/gift/box" as the present.
 The golden key is a thing. The description is "It's a beautiful solid gold antique-style 'skeleton' key.".
 
+Does the player mean examining the present:
+	it is likely;
+
 Instead of unwrapping the present:
 	try opening the present;
 	
@@ -2790,7 +2793,7 @@ Instead of inserting the Electrofil quick-setting conductive polymer gel into th
 	try pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot;
 	
 Instead of pouring the Electrofil quick-setting conductive polymer gel on the mauve guard robot when the location is the top of the elevator car:
-	say "[We] tries, but [we] can't get close enough to the robot.";
+	say "[We] tries, but [we] can't get close enough to the robot from up here.";
 
 Instead of shooting the mauve guard robot with the disruptor pistol when the mauve guard robot is under attack:
 	say "Firing would be too risky at this close range. [We] could easily hit [ourselves] with the rebound.";
@@ -2807,6 +2810,15 @@ The roof stairs can be hidden. The roof stairs are hidden.
 The description of the 100th floor elevator hall is "The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south[if roof stairs are not hidden].
 
 A portion of the eastern wall has slid away to reveal a stunning white marble staircase[end if].".
+	
+Swinging on is an action applying to one thing. Understand "swing on [something]" as swinging on.
+
+Check swinging on something:
+	say "That wouldn't be terribly productive.";
+	
+Instead of swinging on the chandelier:
+	print the galaxy banner;
+	say "Jones leaps up and grabs hold of the chandelier, starts it swinging back and forth, does a 180º spin, and then releases into a somersault, sticking the landing!"
 
 The walls-100 is scenery in the 100th floor elevator hall. They are privately-named. The printed name is "walls". Understand "wall/walls" as the walls-100. "Black marble. Wow. It's beautiful."
 
@@ -2876,11 +2888,21 @@ The glass diamond is a gem. It is privately-named. The glass diamond can be disc
 The real diamond is a gem. Understand "gem" as the real diamond. The description is "Maybe 2.5 carats, it's a beautiful gem, if you're into diamonds." The printed name is "diamond"
 
 prying is an action applying to one thing. Understand "pry [something] out/--", "pry out [something]", "loosen [something]" as prying.
+prying it with is an action applying to one thing and one carried thing. Understand "pry [something] with [something preferably held]", "pry [something] out with [something preferably held]" as prying it with.
 
 Check prying (this is the block prying rule):
 	say "That can't be pried out." instead;
 	
-Instead of prying the array of diamonds when the real diamond is nowhere and the glass diamond is nowhere and the glass diamond is not discovered:
+Instead of prying the array of diamonds when the real diamond is nowhere and the glass diamond is not discovered and the location is penthouse south:
+	say "[We] has already taken a diamond. Isn't one enough?";
+	
+Instead of prying the glass diamond when the real diamond is nowhere and the glass diamond is not discovered and the location is penthouse south:
+	say "[We] has already taken a diamond. Isn't one enough?";
+	
+Instead of prying the real diamond when the location is penthouse south:
+	say "[We] has already taken a diamond. Isn't one enough?";
+	
+Instead of prying the array of diamonds when the real diamond is nowhere and the glass diamond is nowhere and the glass diamond is not discovered and the location is penthouse south:
 	now the player carries the glass diamond;
 	now the glass diamond is seen;
 	now the glass diamond is familiar;
@@ -2889,8 +2911,35 @@ Instead of prying the array of diamonds when the real diamond is nowhere and the
 	set pronouns from glass diamond;
 	converse as thallium "Thallium giggles. 'Oh, I hope you're not disappointed, Jones.'";
 	
-Instead of taking the array of diamonds when the real diamond is nowhere and the glass diamond is nowhere and the glass diamond is not discovered:
+Check prying something with something (this is the block prying it with rule):
+	say "That can't be pried out that way, if at all." instead;
+	
+Instead of prying the array of diamonds with the screwdriver when the real diamond is nowhere and the glass diamond is not discovered and the location is penthouse south:
+	say "[We] has already taken a diamond. Isn't one enough?";
+	
+Instead of prying the glass diamond with screwdriver when the real diamond is nowhere and the glass diamond is not discovered and the location is penthouse south:
+	say "[We] has already taken a diamond. Isn't one enough?";
+	
+Instead of prying the real diamond with screwdriver when the location is penthouse south:
+	say "[We] has already taken a diamond. Isn't one enough?";
+	
+Instead of prying the array of diamonds with the screwdriver when the real diamond is nowhere and the glass diamond is nowhere and the glass diamond is not discovered and the location is penthouse south:
+	now the player carries the glass diamond;
+	now the glass diamond is seen;
+	now the glass diamond is familiar;
+	say "You pry one of the diamonds out of the wall.";
+	say line break;
+	set pronouns from glass diamond;
+	converse as thallium "Thallium giggles. 'Oh, I hope you're not disappointed, Jones.'";
+	
+Instead of taking the array of diamonds when the real diamond is nowhere and the glass diamond is nowhere and the glass diamond is not discovered and the location is penthouse south:
 	try prying the array of diamonds;
+	
+Instead of prying the array of diamonds when the real diamond is somewhere and the location is penthouse south:
+	say "[We] has already taken a diamond. Isn't one enough?";
+	
+Instead of prying the array of diamonds with the screwdriver when the real diamond is somewhere and the location is penthouse south:
+	say "[We] has already taken a diamond. Isn't one enough?";
 
 Rule for clarifying the parser's choice of something when doing something to the glass diamond:
 	do nothing;
@@ -2948,6 +2997,12 @@ Instead of taking the array of diamonds when the glass diamond is somewhere:
 	say "[We] has already taken a diamond. Isn't one enough?";
 
 Instead of taking the array of diamonds when the glass diamond is discovered and the glass diamond is nowhere and the real diamond is nowhere:
+	say "[We] will never find the real diamond this way.".
+	
+Instead of prying the array of diamonds when the glass diamond is discovered and the glass diamond is nowhere and the real diamond is nowhere:
+	say "[We] will never find the real diamond this way.".
+	
+Instead of prying the array of diamonds with the screwdriver when the glass diamond is discovered and the glass diamond is nowhere and the real diamond is nowhere:
 	say "[We] will never find the real diamond this way.".
 
 the penthouse west has description "The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. [if the control panel is nowhere]Thallium's personal insignia, the ten planets in order overlaid with the motto 'Planetas Vincam', is carved into the deep red wood outer wall, and inlaid with ebony. [else]A control panel is set into the outer wall. [end if]In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.". The printed name is "western corner of the penthouse".
