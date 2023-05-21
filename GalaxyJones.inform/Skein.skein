@@ -629,7 +629,7 @@ Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's
     </item>
     <item nodeId="node-1832">
         <command xml:space="preserve">pry array</command>
-        <result xml:space="preserve">That can't be pried out.
+        <result xml:space="preserve">Jones has already taken a diamond. Isn't one enough?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -667,7 +667,7 @@ Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's
     </item>
     <item nodeId="node-1836">
         <command xml:space="preserve">pry diamond</command>
-        <result xml:space="preserve">That can't be pried out.
+        <result xml:space="preserve">Jones has already taken a diamond. Isn't one enough?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -677,6 +677,164 @@ Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's
     <item nodeId="node-2213">
         <command xml:space="preserve">pry diamond with screwdriver</command>
         <result xml:space="preserve">Jones has already taken a diamond. Isn't one enough?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2245"></child>
+        </children>
+    </item>
+    <item nodeId="node-2245">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">The diamond-shaped penthouse bends to the northeast and northwest.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2246"></child>
+        </children>
+    </item>
+    <item nodeId="node-2246">
+        <command xml:space="preserve">pry diamond</command>
+        <result xml:space="preserve">Jones has already taken a diamond. Isn't one enough?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2247"></child>
+        </children>
+    </item>
+    <item nodeId="node-2247">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2248"></child>
+        </children>
+    </item>
+    <item nodeId="node-2248">
+        <command xml:space="preserve">pry diamond</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2249"></child>
+        </children>
+    </item>
+    <item nodeId="node-2249">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the northern corner of the penthouse. This is Thallium's bedroom. Apart from the expansive round bed in the center of the room, notable features include the line of dummies displaying his various suits of clothes, a large vanity table, and the complete lack of mirrors on the ceiling, thankfully. One may leave the room to the southwest, south, and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2250"></child>
+        </children>
+    </item>
+    <item nodeId="node-2250">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+Also here is a diamond.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2251"></child>
+        </children>
+    </item>
+    <item nodeId="node-2251">
+        <command xml:space="preserve">pry diamond</command>
+        <result xml:space="preserve">That can't be pried out.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2252"></child>
+        </children>
+    </item>
+    <item nodeId="node-2252">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  a hammer
+  a screwdriver
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2253"></child>
+        </children>
+    </item>
+    <item nodeId="node-2253">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is in the 100th floor elevator hall. The luxury is staggering.  The walls are made of polished black marble, and the floors are covered in plush black carpeting that muffles the sound of footsteps. The ceiling is high and adorned with a crystal chandelier. The elevator doors to the west are gold-plated. Sumptuous living quarters are visible to the north and south.
+
+Also here is a diamond.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2254"></child>
+        </children>
+    </item>
+    <item nodeId="node-2254">
+        <command xml:space="preserve">take</command>
+        <result xml:space="preserve">(the diamond)
+Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2255"></child>
+        </children>
+    </item>
+    <item nodeId="node-2255">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">Jones can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2256"></child>
+        </children>
+    </item>
+    <item nodeId="node-2256">
+        <command xml:space="preserve">sw</command>
+        <result xml:space="preserve">The elevator is to the west, and the hall leads into the penthouse to the north and south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2257"></child>
+        </children>
+    </item>
+    <item nodeId="node-2257">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the southern corner of the penthouse. This must be Thallium's "treasure room", to go by the obscene display of wealth. The most notable feature is the array of diamonds lining the walls. Everything else here pales in comparison. Broken glass litters the floor. The penthouse continues to the northwest, north, and northeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2258"></child>
+        </children>
+    </item>
+    <item nodeId="node-2258">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">
+Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. Thallium's personal insignia, the ten planets in order overlaid with the motto "Planetas Vincam", is carved into the deep red wood outer wall, and inlaid with ebony. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2259"></child>
+        </children>
+    </item>
+    <item nodeId="node-2259">
+        <command xml:space="preserve">put diamond in claw</command>
+        <result xml:space="preserve">As soon as insert the diamond into the claw, laser beams spring from five emitters on the walls. They hit the diamond and join into a single more powerful beam that strikes the electronic eye on the wall. A sound like a sliding door comes from behind Jones, and she spins around to see the red wall slide down into the floor. It exposes a control panel of sorts, featuring a large red button labeled "Press Me".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2260"></child>
+        </children>
+    </item>
+    <item nodeId="node-2260">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is in the western corner of the penthouse. The purpose of this room is unclear. Instead of the black carpet that plagues the rest of the penthouse, the floor is fashioned from a striking polished red granite. Instead of windows, there are walls. A control panel featuring the large red button is set into the outer wall. In the center of the room is a thin metal pillar ending in a claw, which looks like it's meant to hold something. Finally, there is something that looks like an electronic eye set into the inner wall. One may leave to the northeast or southeast.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
