@@ -226,6 +226,9 @@ Instead of throwing something at a guard robot when Lobby Shootout has not ended
 	silently try dropping the noun;
 	if the player does not carry the noun:
 		say "Jones throws [the noun] at the robot. It just bounces off harmlessly.";
+
+Check attacking something which is not the purple guard robot during Lobby Shootout:
+	say "Focus on the robot." instead;	
 	
 Instead of throwing something at a guard robot when Lobby Shootout has ended or comment on energy absorption is used:
 	say "The thing is invulnerable to disruptor fire! Do you really thing throwing that at it is going to hurt it?"
@@ -731,6 +734,9 @@ After doing something other than sneaking up on the guard robot during Cyberneti
 		increment sneak index;
 		say "The guard robot moves a little farther away from [us].";
 	continue the action;
+	
+Check attacking the robot during Cybernetica Battle:
+	say "You'll need to specify how [we] should attack [the noun]. For instance, you might say 'shoot [the noun] with [the disruptor pistol]'." instead;
 		
 Shoot out the window is a descriptive clip with conversation "[We] must have poked up [our] shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out."
 	
@@ -1365,7 +1371,7 @@ Carry out shooting the giant sculpture with the disruptor pistol:
 	print battle won;
 	
 
-Instead of doing something other than shooting when (the action requires a touchable noun and the noun is not the player) or (the action requires a touchable second noun and the second noun is not the player) during Lobby Shootout:
+Instead of doing something other than shooting or attacking when (the action requires a touchable noun and the noun is not the player) or (the action requires a touchable second noun and the second noun is not the player) during Lobby Shootout:
 	say "As soon as [we] [start] to act, an energy beam zips past [our] head, forcing [us] back down behind the desk.";
 	
 Instead of dropping the disruptor pistol:
@@ -1871,9 +1877,12 @@ bwindow is scenery. It is privately-named. The printed name is "broken window". 
 
 Does the player mean examining the bwindow: it is very likely;
 
-Instead of doing something to the purple guard robot when the action requires a touchable noun:
+Instead of doing something other than attacking to the purple guard robot when the action requires a touchable noun:
 	say "Fine way for Jones to get herself killed.";
-	
+
+Check attacking something which is not the purple guard robot during Cybernetica Battle:
+	say "Focus on the robot." instead;	
+
 The open area is scenery in the Cybernetica office. "A rectangular region free of desks in the middle of the office."
 	
 Chapter 2 - Outside
