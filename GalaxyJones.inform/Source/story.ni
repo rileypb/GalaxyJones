@@ -693,7 +693,7 @@ After pleading when comment on energy absorption is used during Lobby Shootout:
 		-- otherwise: converse "Beck: 'That sculpture up there seems pretty big.'";
 	
 
-Instead of shooting something with the disruptor pistol when the noun is not a guard robot and the noun is not the sculpture during Lobby Shootout:
+Instead of shooting something with the disruptor pistol when the noun is not a guard robot and the noun is not the sculpture and the noun is not armor during Lobby Shootout:
 	say "Focus on the robots instead.";
 
 Book 2 - Cybernetica Battle		
@@ -816,8 +816,12 @@ Instead of dithering when cybernetica battle has ended:
 Instead of dithering during cybernetica battle:
 	say "That would be suicide.";
 
-Instead of shooting something with the disruptor pistol when the noun is not the purple robot during Cybernetica Battle:
+Instead of shooting something with the disruptor pistol when the noun is not the purple robot and the noun is not the purple robot's armor during Cybernetica Battle:
 	say "Focus on the robot instead.";
+	
+Instead of shooting armor with the disruptor pistol when the noun is incorporated by a guard robot:
+	let R be a random guard robot incorporating the noun;
+	try shooting R with the disruptor pistol;
 
 
 Volume 6 - Things
