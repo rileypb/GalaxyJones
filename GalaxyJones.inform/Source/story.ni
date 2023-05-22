@@ -1011,7 +1011,7 @@ The ninth floor south hallway is south of the ninth floor elevator hall.
 The Cybernetica door is a door. It is east of the ninth floor north hallway. It is scenery. Through the Cybernetica door is the Cybernetica office. The cybernetica door is closed, openable, locked, and lockable. The description is "A slick corporate office door lettered 'Cybernetica'. It has a swipe lock above the handle." Understand "office" as the cybernetica door.
 The Cybernetica door-inside is a door. It is west of the Cybernetica office. It is privately-named. The printed name is "Cybernetica door". It is scenery. Through the Cybernetica door-inside is the ninth floor north hallway. The Cybernetica door-inside is a half-door of the Cybernetica door. 
  
-The cybernetica-room-swipe-lock is scenery in ninth floor north hallway. It is privately-named. The printed name is "swipe lock". Understand "swipe/card/lock" as cybernetica-room-swipe-lock. "An ordinary swipe lock." 
+The cybernetica-room-swipe-lock is scenery in ninth floor north hallway. It is privately-named. The printed name is "swipe lock". Understand "swipe/card/lock/reader" as cybernetica-room-swipe-lock. "An ordinary swipe lock." 
 
 Instead of inserting something into cybernetica-room-swipe-lock:
 	try unlocking the cybernetica door with the noun;
@@ -1024,7 +1024,7 @@ Instead of swiping something through the cybernetica-room-swipe-lock:
 
 The Martian Chemical door is a door. It is scenery. It is east of the ninth floor south hallway and west of the Martian Chemical office. The Martian Chemical door is closed, openable, locked, and lockable. "A slick corporate office door with the fancy company logo of Martian Chemical. It has a swipe lock above the handle." Understand "office" as Martian Chemical door. 
  
-The Martian-room-swipe-lock is scenery in ninth floor south hallway. It is privately-named. The printed name is "swipe lock". Understand "swipe/card/lock" as Martian-room-swipe-lock. "An ordinary swipe lock." 
+The Martian-room-swipe-lock is scenery in ninth floor south hallway. It is privately-named. The printed name is "swipe lock". Understand "swipe/card/lock/reader" as Martian-room-swipe-lock. "An ordinary swipe lock." 
 
 Instead of inserting something into Martian-room-swipe-lock:
 	try unlocking the Martian chemical door with the noun;
@@ -1448,7 +1448,7 @@ The semicircular couch is a couch in ground-floor-2. The description is "An inof
 
 The central carpeted path is scenery in ground-floor-2. The description is "A strip of grey carpet running north to south, in the midst of the marble floor. (Incidentally, the massive expense of moving real marble from Earth to Mars is just further proof of Thallium's madness, seriously.)". Understand "carpet/rug" as the central carpeted path.
  
-The elevator-room-swipe-lock is scenery in ground-floor-2. It is privately-named. The printed name is "swipe lock". Understand "swipe/card/lock" as elevator-room-swipe-lock. "An ordinary swipe lock." 
+The elevator-room-swipe-lock is scenery in ground-floor-2. It is privately-named. The printed name is "swipe lock". Understand "swipe/card/lock/reader" as elevator-room-swipe-lock. "An ordinary swipe lock." 
 
 Instead of inserting something into elevator-room-swipe-lock:
 	try unlocking the elevator-room-door with the noun;
@@ -1775,11 +1775,17 @@ Instead of examining the elevator car-backdrop:
 
 Instead of climbing the ladder when the location is the ground floor elevator shaft:
 	try going up;
+	
+Instead of climbing the ground floor elevator shaft:
+	try going up;
 
 [Instead of using the ladder when the location is the ground floor elevator shaft:
 	try going up;]
 
 Instead of climbing the ladder when the location is the ninth floor elevator shaft:
+	try going down;
+	
+Instead of climbing the ninth floor elevator shaft:
 	try going down;
 
 [Instead of using the ladder when the location is the ninth floor elevator shaft:
@@ -2328,7 +2334,8 @@ The black cat can be angry.
 Instead of doing something to the cat when the action requires a touchable noun:
 	say "No way. That thing is mean.";
 
-
+Instead of pushing the filing cabinet when the screwdriver is behind the filing cabinet:
+	say "Jones can't move it, but she might be able to look behind it.";
 
 Instead of looking behind the filing cabinet when the screwdriver is behind the filing cabinet:
 	say "(taking the screwdriver)[command clarification break]";
@@ -2771,7 +2778,9 @@ Instead of pouring the Electrofil quick-setting conductive polymer gel on the ma
 	now the mauve guard robot is not under attack;
 	remove the mauve guard robot from play;
 	move the dead mauve robot to the elevator car-room;
-	remove the Electrofil quick-setting conductive polymer gel from play;
+	move the Electrofil quick-setting conductive polymer gel to the chemical cabinet;
+	now the Electrofil quick-setting conductive polymer gel is undescribed;
+	remove the untakable bottle from play;
 	try looking;
 	
 Instead of going when the mauve guard robot is under attack:
@@ -3016,9 +3025,9 @@ Instead of inserting something that is not a gem into the claw:
 Instead of inserting a gem into the claw:
 	now the noun is in the claw;
 	if the noun is the glass diamond:
-		say "As soon as [We] inserts [the noun] into the claw, laser beams spring from five emitters on the walls. They hit the diamond and refract and disperse without any effect.";
+		say "As soon as [we] inserts [the noun] into the claw, laser beams spring from five emitters on the walls. They hit the diamond and refract and disperse without any effect.";
 	otherwise:
-		say "As soon as insert [the noun] into the claw, laser beams spring from five emitters on the walls. They hit the diamond and join into a single more powerful beam that strikes the electronic eye on the wall. A sound like a sliding door comes from behind [us], and [we] spins around to see the red wall slide down into the floor. It exposes a control panel of sorts, featuring a large red button labeled 'Press Me'.";
+		say "As soon as [we] inserts [the noun] into the claw, laser beams spring from five emitters on the walls. They hit the diamond and join into a single more powerful beam that strikes the electronic eye on the wall. A sound like a sliding door comes from behind [us], and [we] spins around to see the red wall slide down into the floor. It exposes a control panel of sorts, featuring a large red button labeled 'Press Me'.";
 		now the control panel is in the penthouse west;
 		
 The penthouse control panel is a scenery thing. The penthouse control panel can be discovered. "The panel features two buttons, one a large red button labeled 'Press Me', and the other a small black button without a label.'".
