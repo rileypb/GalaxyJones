@@ -757,6 +757,17 @@ report sneaking up on the purple guard robot:
 	otherwise:
 		say "[We] is right up next to the robot, crouched beneath a desk. She can see right up under its armor.";
 		
+Instead of examining the purple guard robot when sneak index is 0 during Cybernetica Battle:
+	say "[We] can see up under the robot's armor. A shot here might be effective.";
+		
+Instead of examining the purple guard robot's armor when sneak index is 0 during Cybernetica Battle:
+	try examining the purple guard robot;
+	
+Shooting under is an action applying to two things. Understand "shoot under [the purple guard robot's armor] with [the disruptor pistol]" as shooting under when the sneak index is 0 and cybernetica battle is happening.
+
+Instead of shooting under:
+	try shooting the purple guard robot with the disruptor pistol; 
+
 A thing can be navigable.
 		
 After examining the bwindow:
@@ -838,6 +849,11 @@ The drop key is a thing. "Hanging from a hook here is [a drop key]." The descrip
 A thing can be an enemy.
 
 A guard robot is a kind of enemy person. It is neuter. The description is "Definitely not a friendly android. More of a spiny killer with a disruptor barrel mounted on its head.". Understand "guard/barrel/killer/head" as a guard robot.
+
+Armor is a kind of thing.
+
+Every guard robot incorporates armor. The description is "[if comment on energy absorption is unused]A formidable, nigh-impenetrable barrier[otherwise]The armor seems to absorb disruptor fire[end if]."
+
 There is a guard robot called the guard-robots. It is privately-named. It is scenery. The printed name is "red and green guard robots". Understand "guard/guards/robot/robots/green/red/and" as the guard-robots. 
 There is a guard robot called the purple guard robot. It is scenery.
 There is a thing called the dead mauve robot. Understand "remains/guard" as the dead mauve robot. "The remains of the mauve guard robot are sprawled on the ground." The description is "From the outside there's no sign of what killed the mauve guard robot." It is fixed in place.

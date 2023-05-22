@@ -39,7 +39,7 @@ Plus she'll get to meet Europa Callisto. That'll be totally sweet.
  _____________________________/ 
 
 An Interactive Rescue Mission by Phil Riley
-Release 6 / Serial number 230521 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+Release 6 / Serial number 230522 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
 
 
 A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit and carrying a disruptor pistol climbs out of it: Galaxy Jones.
@@ -59,8 +59,10 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1764"></child>
+            <child nodeId="node-2519"></child>
             <child nodeId="node-1667"></child>
             <child nodeId="node-1722"></child>
+            <child nodeId="node-2524"></child>
             <child nodeId="node-2428"></child>
             <child nodeId="node-2434"></child>
             <child nodeId="node-2442"></child>
@@ -558,8 +560,6 @@ Admiral Thallium's voice oozes from concealed speakers: "Yes, Jones, that is rea
         <result xml:space="preserve">(the ceiling panel)
 Jones removes the ceiling panel, exposing a hole wide enough for her to squeeze through.
 
-Thallium's voice booms over the office PA: "You can run, Jones, but you can't - well, there aren't very many places you can hide."
-
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2470"></child>
@@ -568,6 +568,8 @@ Thallium's voice booms over the office PA: "You can run, Jones, but you can't - 
     <item nodeId="node-2470">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Galaxy Jones is in the tenth floor elevator hall. The elevator car to the west stands open. There is a stairwell to the east. The hall runs north and south into a sumptuous corporate office.
+
+Thallium's voice booms over the office PA: "You can run, Jones, but you can't - well, there aren't very many places you can hide."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -578,8 +580,6 @@ Thallium's voice booms over the office PA: "You can run, Jones, but you can't - 
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Galaxy Jones is on the south side of the Consolidated Microthings office. This is reception. The front desk has a great view of the New Reykjavik Botanic Dome. Couches are lined up to take advantage. The floor extends east and west, and north to the elevator.
-
-Beck: "If I only had a heart, indeed."
 
 Jones sees the mauve guard robot nearby to the west. 
 
@@ -606,6 +606,8 @@ The mauve guard robot appears nearby to the south, coming from the west.
 Galaxy Jones is in the elevator car. It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush. A golden keyhole sits above the buttons. There is a hole in the ceiling big enough for Jones to squeeze through. You can leave the elevator to the east.
 
 The mauve guard robot appears nearby to the east, coming from the south.
+
+Thallium: "Jones, you still hanging around with that loser Beck?"
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -660,7 +662,7 @@ Galaxy Jones is in the Martian Chemical office. This seems like the business off
     </item>
     <item nodeId="node-2478">
         <command xml:space="preserve">take gel</command>
-        <result xml:space="preserve">Jones has already taken one bottle of Electrofil from the cabinet. She should use it before taking another.
+        <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -670,7 +672,7 @@ Galaxy Jones is in the Martian Chemical office. This seems like the business off
     <item nodeId="node-2479">
         <command xml:space="preserve">showme gel</command>
         <result xml:space="preserve">bottle of Electrofil quick-setting conductive polymer gel - thing
-location: out of play
+location: carried by Jones in the Martian Chemical office
 singular-named, improper-named, unused; unlit, inedible, portable, handled, neuter, seen, familiar, pourable, interesting
 list grouping key: none
 printed name: "bottle of Electrofil quick-setting conductive polymer gel"
@@ -682,6 +684,27 @@ conversation: none
 description: "An opaque pink bottle labeled "Electrofil" in large friendly letters, it apparently hardens into a conductive substance very quickly."
 initial appearance: none
 third-plural-pronoun: They-pronoun
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2518"></child>
+        </children>
+    </item>
+    <item nodeId="node-2518">
+        <command xml:space="preserve">scope</command>
+        <result xml:space="preserve">1: Jones (1157368)
+2: outside (1162936)
+3: a Martian Chemical door (1160344)
+4: a martian chemical logo (1160376)
+5: a chemical cabinet (1160056)
+6: an untakable bottle (1164760)
+7: a desks (1160120)
+8: an office stuff (1160152)
+9: a bottle of Electrofil quick-setting conductive polymer gel (1160088)
+10: a black jumpsuit (1157400)
+11: a suit light (1156984)
+12: a disruptor pistol (1157432)
+13: Beck (1156920)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -827,6 +850,161 @@ Jones: "There's a cat here! Behind a filing cabinet. Gotta get behind there to g
         <command xml:space="preserve">look behind cabinet</command>
         <result xml:space="preserve">(taking the screwdriver)
 Forget it. Jones isn't getting another scratch.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2524">
+        <command xml:space="preserve">gonear cybernetica</command>
+        <result xml:space="preserve">(the Cybernetica office)
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities.
+
+As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
+
+Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
+
+Beck: "What's the situation?"
+
+Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I can get a shot in, but it might just absorb it anyway."
+
+Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2525"></child>
+        </children>
+    </item>
+    <item nodeId="node-2525">
+        <command xml:space="preserve">sneak</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Jones creeps a little ways toward the guard robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2526"></child>
+        </children>
+    </item>
+    <item nodeId="node-2526">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">The guard robot moves a little farther away from Jones.
+
+She stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2527"></child>
+        </children>
+    </item>
+    <item nodeId="node-2527">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve">Jones stands around and waits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2528"></child>
+        </children>
+    </item>
+    <item nodeId="node-2528">
+        <command xml:space="preserve">sneak</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Jones creeps a little ways toward the guard robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2529"></child>
+        </children>
+    </item>
+    <item nodeId="node-2529">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Slowly, slowly, Jones gets a little closer. Just a little more...
+
+She must have poked up her shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2530"></child>
+        </children>
+    </item>
+    <item nodeId="node-2530">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Jones is right up next to the robot, crouched beneath a desk. She can see right up under its armor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2531"></child>
+        </children>
+    </item>
+    <item nodeId="node-2531">
+        <command xml:space="preserve">x armor</command>
+        <result xml:space="preserve">Jones can see up under the robot's armor. A shot here might be effective.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2532"></child>
+        </children>
+    </item>
+    <item nodeId="node-2532">
+        <command xml:space="preserve">x desk</command>
+        <result xml:space="preserve">Very nice and good for hiding under and among.
+
+The guard robot moves a little farther away from Jones.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2533"></child>
+        </children>
+    </item>
+    <item nodeId="node-2533">
+        <command xml:space="preserve">sneak</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Jones is right up next to the robot, crouched beneath a desk. She can see right up under its armor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2534"></child>
+        </children>
+    </item>
+    <item nodeId="node-2534">
+        <command xml:space="preserve">shoot under armor</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2535"></child>
+        </children>
+    </item>
+    <item nodeId="node-2535">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">Jones aims the pistol upward under the robot's enhanced armor and fires. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead. Jones stands up and surveys her handiwork.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones: "Better than a video game. "
+
+Beck: "Nice, but don't forget to credit your handler."
+
+Jones: "Yes, yes, thanks for helping me not get killed."
+
+Beck: "You're welcome."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2536"></child>
+        </children>
+    </item>
+    <item nodeId="node-2536">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Galaxy Jones is in the Cybernetica office.
+[Previous turn undone.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2057,6 +2235,65 @@ The note on the present says "For Galaxy -- see you soon! -- Your friend, the Ad
         <command xml:space="preserve">take</command>
         <result xml:space="preserve">(the present)
 Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2519">
+        <command xml:space="preserve"> gonear cybernetica</command>
+        <result xml:space="preserve">(the Cybernetica office)
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities.
+
+As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
+
+Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
+
+Beck: "What's the situation?"
+
+Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I can get a shot in, but it might just absorb it anyway."
+
+Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2520"></child>
+        </children>
+    </item>
+    <item nodeId="node-2520">
+        <command xml:space="preserve">sneak</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Jones creeps a little ways toward the guard robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2521"></child>
+        </children>
+    </item>
+    <item nodeId="node-2521">
+        <command xml:space="preserve">sneak</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Slowly, slowly, Jones gets a little closer. Just a little more...
+
+She must have poked up her shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2522"></child>
+        </children>
+    </item>
+    <item nodeId="node-2522">
+        <command xml:space="preserve">sneak</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Jones is right up next to the robot, crouched beneath a desk. She can see right up under its armor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2523"></child>
+        </children>
+    </item>
+    <item nodeId="node-2523">
+        <command xml:space="preserve">x robot</command>
+        <result xml:space="preserve">Jones can see up under the robot's armor. A shot here might be effective.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
