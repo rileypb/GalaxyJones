@@ -1917,7 +1917,7 @@ The open area is scenery in the Cybernetica office. "A rectangular region free o
 Chapter 2 - Outside
 
 To say ledge description:
-	say "The ledge runs north and south. Jones is plastered up against the wall to the west";
+	say "It runs north and south. Jones is plastered up against the wall to the west";
 	if the window washing scaffold is not discovered:
 		say ", trying not to look down. Four thick, tense wires run vertically from above to below her. One of them is within reach";
 	otherwise:
@@ -1927,7 +1927,7 @@ To say ledge description:
 
 The description of the ledge is "[ledge description]".
 
-The metal cables are scenery in the ledge. Understand "cable" as the metal cables. "It looks very tense. It runs up and down."
+The wires are scenery in the ledge. Understand "wire" as the wires. "[The wires] look very tense. They run up and down."
 
 flying is an action applying to nothing. Understand "fly" as flying.
 
@@ -1965,9 +1965,13 @@ The scaffold-scenery is scenery. It is privately-named. The printed name is "sca
 Instead of going down from ledge when the floor of the window washing scaffold is not 8:
 	say "That would be a long fall.";
 	
-Section 1 - Climbing the wires
+Section 1 - The wires
 
-
+Instead of climbing the wires: 
+	say "The Atmo-Suit's gloves have neither enough friction nor enough durability for Jones to climb the wire. Even if she did manage to maintain a grip on the wire, she'd shred the gloves and then her hands.";
+	
+Instead of tying the hook cable to the wires:
+	say "The wire's diameter is a little too big for the hook."
 
 Section 2 - The Scaffold
 	
