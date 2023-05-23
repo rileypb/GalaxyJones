@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app_old.app/Contents/Reso
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 37164 words long.
+I've now read your source text, which is 37314 words long.
 
 
 -----------------------------------------------------
@@ -69,7 +69,7 @@ Phase VI ... Semantic analysis III
 Phase VII ... First pass through assertions
 -----------------------------------------------------
 
-    Regional: CONSTANT_VNT'the rooftop'-region()(I370'rooftop')
+    Regional: CONSTANT_VNT'the rooftop'-region()(I371'rooftop')
      == region
 
 
@@ -117,17 +117,17 @@ Regional: CONSTANT_VNT'tenth-floor-region'-region(I266_tenth_floor_region)(I176'
  == region
 Regional: CONSTANT_VNT'tenth-floor-region'-region(I266_tenth_floor_region)(I176'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I462_rooftop)(I370'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I463_rooftop)(I371'rooftop')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I462_rooftop)(I370'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I463_rooftop)(I371'rooftop')
  == region
 Regional: CONSTANT_VNT'the ninth-floor'-region(I245_ninth_floor)(I155'ninth-floor')
  == region
 Regional: CONSTANT_VNT'the tenth-floor-region'-region(I266_tenth_floor_region)(I176'tenth-floor-region')
  == region
-Regional: CONSTANT_VNT'the 100th-floor-region'-region(I429_100th_floor_region)(I338'100th-floor-region')
+Regional: CONSTANT_VNT'the 100th-floor-region'-region(I430_100th_floor_region)(I339'100th-floor-region')
  == region
-Regional: CONSTANT_VNT'the rooftop'-region(I462_rooftop)(I370'rooftop')
+Regional: CONSTANT_VNT'the rooftop'-region(I463_rooftop)(I371'rooftop')
  == region
 Regional: CONSTANT_VNT'the tenth-floor-region'-region(I266_tenth_floor_region)(I176'tenth-floor-region')
  == region
@@ -235,7 +235,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 173 files written as streams.
-CPU time: 384 centiseconds
+CPU time: 399 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

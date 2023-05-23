@@ -60,6 +60,7 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1764"></child>
             <child nodeId="node-2519"></child>
+            <child nodeId="node-2734"></child>
             <child nodeId="node-2620"></child>
             <child nodeId="node-1667"></child>
             <child nodeId="node-1722"></child>
@@ -68,6 +69,7 @@ She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
             <child nodeId="node-2434"></child>
             <child nodeId="node-2442"></child>
             <child nodeId="node-2420"></child>
+            <child nodeId="node-2827"></child>
             <child nodeId="node-1659"></child>
         </children>
     </item>
@@ -83,7 +85,8 @@ Beck: "Oh, no doubt."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1660"></child>
+        <children><child nodeId="node-2824"></child>
+            <child nodeId="node-1660"></child>
         </children>
     </item>
     <item nodeId="node-1660">
@@ -99,7 +102,147 @@ Galaxy Jones is in the lobby. The ground floor of the Viking Building is breatht
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1661"></child>
+            <child nodeId="node-2814"></child>
         </children>
+    </item>
+    <item nodeId="node-2814">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">Suddenly two robot guards, green and red, emerge from niches in the back wall! Jones dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring your suit radar."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2815"></child>
+        </children>
+    </item>
+    <item nodeId="node-2815">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2816"></child>
+        </children>
+    </item>
+    <item nodeId="node-2816">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+The phone rings. Galaxy Jones, the solar system's greatest hero, rolls over in bed and presses the talk button.
+
+"Yes?" she says in a voice thick with sleep.
+
+"Hello, is this Galaxy Jones?" comes the voice from the speaker.
+
+"Yes, this is she. To whom am I speaking?"
+
+"Oh, hi, Ms Jones. This is Patty, I work for Admiral P. X. Thallium, CEO of Diversified Entanglements, LLC. He asked me to forward a message to you."
+
+"He did, did he? Now what would the Admiral want to say to me?"
+
+"Oh, it's not from the Admiral himself. It's from one Miss Europa Callisto. I must say, the Admiral was quite surprised when I said I didn't know who she is. Apparently she's famous."
+
+"Yes, quite famous, but why would she send a message to me, and why on Mars would she send it through Thallium? But never mind, what's the message?"
+
+Patty can be heard rustling paper. "Let's see... it's here somewhere. Oh yes, here it is. The message is 'Help.'"
+
+Ten minutes later, Galaxy Jones, in her speeder Galaxy One, races across the desolate expanse of Utopia Planitia, Mars. Her nemesis, the thoroughly execrable Admiral Thallium, has taken hostage the exquisite Europa Callisto, singer and actress renowned throughout a dozen solar systems. As Patty has quite helpfully explained, Miss Callisto is imprisoned at the top of the Viking Building in New Reykjavik, guarded by an impressive number of killer robots and other diabolical instruments of Jones's inevitable demise. The Admiral has most cordially invited Ms Jones to break into his building and attempt a rescue.
+
+"Oh I will," Galaxy mutters to herself. This time, she vows silently, Thallium won't escape.
+
+Plus she'll get to meet Europa Callisto. That'll be totally sweet.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+An Interactive Rescue Mission by Phil Riley
+Release 6 / Serial number 230522 / Inform 7 build 6M62 (I6/v6.34 lib 6/12N) SD
+
+
+A sleek dark red speeder roars into the dock of the Viking Building. A tall woman in a battle-ready jumpsuit and carrying a disruptor pistol climbs out of it: Galaxy Jones.
+
+Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+Jones's handler Beck comes over her headset. "Alright, what's going on?"
+
+She replies, "I'm in the speeder dock. No movement. What can I expect inside?"
+
+"Blueprints show the ground floor is one big empty space with elevators in the center. Not a lot of places for resistance to hide, but you can never tell. Be careful.
+
+"And one other thing, Jones: if you need help you can ASK BECK FOR HELP. You can also ASK BECK ABOUT things or ASK BECK ABOUT GAME for more information about the game. Finally, you can cause help to repeat from the beginning by saying ASK BECK TO RESET HELP"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2817"></child>
+        </children>
+    </item>
+    <item nodeId="node-2817">
+        <command xml:space="preserve">enter door</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2818"></child>
+        </children>
+    </item>
+    <item nodeId="node-2818">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2819"></child>
+        </children>
+    </item>
+    <item nodeId="node-2819">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is in the speeder dock. A safe harbor from the periodic dust storms of Utopia Planitia, the dock features several dozen speeder bays. Only a few are filled right now. The building entryway is to the north, under a red stone façade carved into the likeness of a fearsome Viking.
+
+Jones's speeder, Galaxy One, sits in one of the parking bays.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2820"></child>
+        </children>
+    </item>
+    <item nodeId="node-2820">
+        <command xml:space="preserve">enter</command>
+        <result xml:space="preserve">You must supply a noun.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2821"></child>
+        </children>
+    </item>
+    <item nodeId="node-2821">
+        <command xml:space="preserve">enter building</command>
+        <result xml:space="preserve">Jones approaches the Viking Building entryway, the dramatic façade towering over her.
+
+Galaxy Jones is at the entry doorway. A glass revolving door leads into a large open space north of here. The speeder dock is to the south.
+
+Jones looks up at the 100 stories of glass and steel. "What do you want to bet Thallium's got Europa all the way at the top?"
+
+Beck: "Oh, no doubt."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2822"></child>
+        </children>
+    </item>
+    <item nodeId="node-2822">
+        <command xml:space="preserve">enter door</command>
+        <result xml:space="preserve">That's not something Jones can enter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1661">
         <command xml:space="preserve">n</command>
@@ -171,6 +314,134 @@ Galaxy Jones is on the west side of the ground floor. Semicircular couches open 
         <command xml:space="preserve">swipe card through card lock</command>
         <result xml:space="preserve">(the red cardkey through the swipe lock)
 Jones unlocks the utility door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2824">
+        <command xml:space="preserve">enter door</command>
+        <result xml:space="preserve">Jones takes a deep breath. "I'm going in."
+
+Beck replies, "You got this, Galaxy."
+
+Jones passes through the revolving door and into the lobby, alert to any defenses.
+
+Galaxy Jones is in the lobby. The ground floor of the Viking Building is breathtaking. Low-G architecture means more glass and thinner supports, and the building takes advantage of that. Four walls of glass surround a central pillar in which are set the utility rooms and elevators. In between is an expanse of plants, water features, and stylish seating. Near the entryway is a front desk. A giant crystal sculpture floats above the center of the area, suspended on almost invisible cables. She may go east and west from here, north to the elevators, or south out of the building.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2825"></child>
+        </children>
+    </item>
+    <item nodeId="node-2825">
+        <command xml:space="preserve">gonear cage</command>
+        <result xml:space="preserve">South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards Jones.
+
+Suddenly two robot guards, green and red, emerge from niches in the back wall! Jones dives behind the front desk and draws her disruptor pistol.
+
+Jones shouts, "I'm under fire from two ugly robot things!"
+
+Beck responds, "Monitoring your suit radar."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2826"></child>
+        </children>
+    </item>
+    <item nodeId="node-2826">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+The green flyer is hovering above you.
+
+Thallium's flyer hovers over the rooftop. "Jones!"  he bellows. "Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die."
+
+Jones rolls her eyes.
+
+A little ways off, another flyer, small and red, aims for the rooftop and accelerates.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2827">
+        <command xml:space="preserve">gonear penthouse roof</command>
+        <result xml:space="preserve">Galaxy Jones is on the penthouse roof. It is an extravagant and opulent space, designed to showcase Thallium's wealth and power. Much of the rooftop is devoted to an outdoor lounge area, with comfortable seating and a fire pit, centered around a hot tub and flanked by a bar. All around is the city of New Reykjavik, and beyond that the red Martian landscape. Around the entirety of the roof is an electrostatic field designed to keep air in and particulates out. To the north is a large cage, and to the west is a landing pad. Jones can distantly see a woman lying on the floor of the cage. A green and black flyer sits on the landing pad.
+
+Admiral Thallium is sulking.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2828"></child>
+        </children>
+    </item>
+    <item nodeId="node-2828">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+Jones tries the strength of the bars just in case. They don't budge.
+
+South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards Jones.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2829"></child>
+        </children>
+    </item>
+    <item nodeId="node-2829">
+        <command xml:space="preserve">purloin cable</command>
+        <result xml:space="preserve">(the cable with hooks at either end)
+[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2830"></child>
+        </children>
+    </item>
+    <item nodeId="node-2830">
+        <command xml:space="preserve">throw cable at flyer</command>
+        <result xml:space="preserve">Jones throws the cable, but it comes up short. She gathers it up again.
+
+Thallium's flyer hovers over the rooftop. "Jones!"  he bellows. "Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die."
+
+Jones rolls her eyes.
+
+A little ways off, another flyer, small and red, aims for the rooftop and accelerates.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2831"></child>
+        </children>
+    </item>
+    <item nodeId="node-2831">
+        <command xml:space="preserve">attach cable to cage</command>
+        <result xml:space="preserve">It doesn't seem useful to attach the cable to this part of the cage.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2832"></child>
+        </children>
+    </item>
+    <item nodeId="node-2832">
+        <command xml:space="preserve">climb cage</command>
+        <result xml:space="preserve">Jones gets onto the cage.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2833"></child>
+        </children>
+    </item>
+    <item nodeId="node-2833">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Galaxy Jones is standing on the cage. The closely-set silnium bars seem to dash all hope of a rescue. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+The green flyer is hovering above you.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2778,7 +3049,11 @@ Beck responds, "Monitoring your suit radar."
     </item>
     <item nodeId="node-2623">
         <command xml:space="preserve">shoot armor</command>
-        <result xml:space="preserve">Focus on the robots instead.
+        <result xml:space="preserve">Oops! Jones misses.
+
+Beck: "How's it going in there?"
+
+"Jones: "You know -- like all art, it's hit or miss."
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -2823,14 +3098,29 @@ Beck responds, "Monitoring your suit radar."
 [Rule "Before doing something other than going" applies.]
 [Rule "keychain-aware carrying requirements rule" applies.]
 [Rule "instead stage rule" applies.]
-[Rule "Instead of shooting something with the disruptor pistol when the noun is not a guard robot and the noun is not the sculpture during Lobby Shootout" applies.]
-Focus on the robots instead.
+[Rule "Instead of shooting armor with the disruptor pistol when the noun is incorporated by a guard robot" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "Before doing something other than going" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "Check shooting something with the disruptor pistol" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "Report shooting a guard robot with the disruptor pistol during Lobby Shootout" applies.]
+Oof. Big miss.
 
+[Rule "last specific action-processing rule" applies.]
 [Rule "A first turn sequence rule" applies.]
 [Rule "every turn stage rule" applies.]
 [Rule "Every turn when attack begun is true during lobby shootout" applies.]
-One of the robots fires directly above Jones's head.
-
 Jones: "I could use some ideas here!"
 
 [Rule "Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack" applies.]
@@ -2841,6 +3131,731 @@ Jones: "I could use some ideas here!"
 [Rule "show us the people rule" applies.]
 [Rule "reset conversed this turn rule" applies.]
 [Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2634"></child>
+        </children>
+    </item>
+    <item nodeId="node-2634">
+        <command xml:space="preserve">shoot art</command>
+        <result xml:space="preserve">[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "Rule for supplying a missing second noun while shooting" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "After deciding the scope of the player" applies.]
+[Rule "assign alternative door targets rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "Before doing something other than going" applies.]
+[Rule "keychain-aware carrying requirements rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "Check shooting something with the disruptor pistol" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "Carry out shooting the giant sculpture with the disruptor pistol" applies.]
+Jones fires the disruptor into the sculpture's main support cable, snapping it. The huge crystal blob starts to sag, straining the other cables. In quick succession they break as well, and the whole installation plummets to the ground, right on top of the hapless guard robots.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Rule "notify score changes rule" applies.]
+[Your score has just gone up by one point.]
+
+Beck: "What was that crash? What's going on?"
+
+Jones: "That, my friend, was what you'd call a work of art. Targets terminated."
+[Rule "after stage rule" applies.]
+
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "A first turn sequence rule" applies.]
+[Rule "scene description text rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "Every turn when the mauve guard robot is in the tenth-floor-region and the mauve guard robot is not under attack" applies.]
+[Rule "reset protocol rule" applies.]
+[Rule "Every turn" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+[Rule "show us the people rule" applies.]
+[Rule "reset conversed this turn rule" applies.]
+[Rule "clear LPR rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2635"></child>
+        </children>
+    </item>
+    <item nodeId="node-2635">
+        <command xml:space="preserve"> rules off</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "assign alternative door targets rule" applies.]
+Rules tracing now switched off. Type "rules" to switch it on again.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2636"></child>
+        </children>
+    </item>
+    <item nodeId="node-2636">
+        <command xml:space="preserve">gonear air</command>
+        <result xml:space="preserve">(the air handling room)
+Galaxy Jones is in the air handling room. There is a good number of loud fans and other air handling machinery here. A small hinged vent opening leads into some ductwork, and from there to the outside. A door leads west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2637"></child>
+        </children>
+    </item>
+    <item nodeId="node-2637">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the air handling door)
+
+Galaxy Jones is on the north side of the Consolidated Microthings office. This is the company cafeteria. The elevator is south, the air handling room is to the east, and the office continues to the west and southeast.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2638"></child>
+        </children>
+    </item>
+    <item nodeId="node-2638">
+        <command xml:space="preserve">se</command>
+        <result xml:space="preserve">
+Galaxy Jones is on the east side of the Consolidated Microthings office. This part of the office is currently unused. Jones can go northwest or south from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2639"></child>
+        </children>
+    </item>
+    <item nodeId="node-2639">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Galaxy Jones is at the southeast corner of the Consolidated Microthings office. This corner of the floor contains the gym and other company amenities. Reception is to the west, and an empty area lies to the north.
+
+Jones sees the mauve guard robot a couple of steps to the west. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2640"></child>
+        </children>
+    </item>
+    <item nodeId="node-2640">
+        <command xml:space="preserve">shoot armor</command>
+        <result xml:space="preserve">The beam strikes a window and reflects at a crazy angle around the room.
+
+A couple of steps to the west, the mauve guard robot heads east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2641"></child>
+        </children>
+    </item>
+    <item nodeId="node-2641">
+        <command xml:space="preserve">gonear cybernetica</command>
+        <result xml:space="preserve">(the Cybernetica office)
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities.
+
+As soon as Jones steps into the office, a shot zaps just past her nose. She dives to the ground, protected by the maze of desks and chairs. Peeking through the mesh back of one of the chairs, she takes notice of both the purple guard robot training its disruptor on the room, and the chair's fine construction and lumbar support.
+
+Jones (whispering): "We've got another one! I'm out of sight for now, but it's going to be hard to get a shot off at this 'bot."
+
+Beck: "What's the situation?"
+
+Jones: "I'm on the floor with desks and chairs all around. The target is a few yards off, coming this way. I can get a shot in, but it might just absorb it anyway."
+
+Beck: "Well, see if you can sneak up on it. Maybe close up you can find a way past its defenses."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2642"></child>
+        </children>
+    </item>
+    <item nodeId="node-2642">
+        <command xml:space="preserve">shoot armor</command>
+        <result xml:space="preserve">Jones raises her head and fires wide. The robot fires back. Jones ducks and crawls off among the labyrinth of desks.
+
+Beck: "Are you still shooting at those things? Even if you hit 'em it's not going to leave a scratch."
+
+Jones (whispering): "So what do you propose?"
+
+Beck: "Get closer. Keep your head down, but move in closer to it until you can get a good shot in."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2643"></child>
+        </children>
+    </item>
+    <item nodeId="node-2643">
+        <command xml:space="preserve">gonear cybernetica</command>
+        <result xml:space="preserve">(the Cybernetica office)
+Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. There is a menacing purple guard robot here, looking for Jones.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2644"></child>
+        </children>
+    </item>
+    <item nodeId="node-2644">
+        <command xml:space="preserve">sneak</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Jones creeps a little ways toward the guard robot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2645"></child>
+        </children>
+    </item>
+    <item nodeId="node-2645">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Slowly, slowly, Jones gets a little closer. Just a little more...
+
+She must have poked up her shoulder or something, for the guard robot fires his disruptor. The shot takes out a window on the east side of the room. The electrostatic field around the building keeps the atmosphere from pouring out.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2646"></child>
+        </children>
+    </item>
+    <item nodeId="node-2646">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve">(toward the purple guard robot)
+Jones is right up next to the robot, crouched beneath a desk. She can see right up under its armor.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2647"></child>
+        </children>
+    </item>
+    <item nodeId="node-2647">
+        <command xml:space="preserve">shoot robot</command>
+        <result xml:space="preserve">Jones aims the pistol upward under the robot's enhanced armor and fires. She flinches back when the robot's innards explode downward in a shower of sparks. It topples over, dead. Jones stands up and surveys her handiwork.
+
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+Jones: "Better than a video game. "
+
+Beck: "Nice, but don't forget to credit your handler."
+
+Jones: "Yes, yes, thanks for helping me not get killed."
+
+Beck: "You're welcome."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2648"></child>
+            <child nodeId="node-2672"></child>
+        </children>
+    </item>
+    <item nodeId="node-2672">
+        <command xml:space="preserve">purloin atmo</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2673"></child>
+        </children>
+    </item>
+    <item nodeId="node-2673">
+        <command xml:space="preserve">remove jumpsuit</command>
+        <result xml:space="preserve">Jones needs the jumpsuit to complete her mission.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2674"></child>
+        </children>
+    </item>
+    <item nodeId="node-2674">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones: "I'm going out the window to see if I can find a way to get up to the tenth floor."
+
+Beck: "Whoa whoa whoa, Jones. You know you're not good with heights."
+
+Jones: "Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch."
+
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. The ledge runs north and south. Jones is plastered up against the wall, trying not to look down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2675"></child>
+        </children>
+    </item>
+    <item nodeId="node-2675">
+        <command xml:space="preserve">x window</command>
+        <result xml:space="preserve">The window here is broken, allowing Jones to reenter the building.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2676"></child>
+        </children>
+    </item>
+    <item nodeId="node-2676">
+        <command xml:space="preserve">in</command>
+        <result xml:space="preserve">Galaxy Jones is in the Cybernetica office. It's spacious and luxurious, designed to make developers forget how spent they are from months of overwork and abuse. Ergonomic desks and chairs fill space like a furniture fractal, before giving way to an open area, presumably for group activities. One of the windows along the east side of the office is broken.
+
+The remains of the purple guard robot are sprawled on the ground.
+
+Jones takes off the Atmo-Suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2677"></child>
+        </children>
+    </item>
+    <item nodeId="node-2677">
+        <command xml:space="preserve">x window</command>
+        <result xml:space="preserve">(broken window)
+Looks like Jones could get through if she's careful. There's a ledge outside.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2678"></child>
+        </children>
+    </item>
+    <item nodeId="node-2678">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. The ledge runs north and south. Jones is plastered up against the wall, trying not to look down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2679"></child>
+        </children>
+    </item>
+    <item nodeId="node-2679">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Go down? Jones doesn't even want to look down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2680"></child>
+        </children>
+    </item>
+    <item nodeId="node-2680">
+        <command xml:space="preserve">x cable</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2681"></child>
+        </children>
+    </item>
+    <item nodeId="node-2681">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  an Atmo-Suit (being worn)
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2682"></child>
+        </children>
+    </item>
+    <item nodeId="node-2682">
+        <command xml:space="preserve">scopr</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2683"></child>
+        </children>
+    </item>
+    <item nodeId="node-2683">
+        <command xml:space="preserve">scope</command>
+        <result xml:space="preserve">1: Jones (1161725)
+2: windows (1168733)
+3: a wall (1168605)
+4: the city (1167325)
+5: an Atmo-Suit (1163357)
+6: a black jumpsuit (1161757)
+7: a suit light (1161277)
+8: a disruptor pistol (1161789)
+9: Beck (1161213)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2684"></child>
+        </children>
+    </item>
+    <item nodeId="node-2684">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">The wall juts out and blocks Jones's progress.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2685"></child>
+        </children>
+    </item>
+    <item nodeId="node-2685">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">The wall juts out and blocks Jones's progress.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2686"></child>
+        </children>
+    </item>
+    <item nodeId="node-2686">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Go down? Jones doesn't even want to look down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2687"></child>
+        </children>
+    </item>
+    <item nodeId="node-2687">
+        <command xml:space="preserve">look up</command>
+        <result xml:space="preserve">There's nothing in that direction.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2688"></child>
+        </children>
+    </item>
+    <item nodeId="node-2688">
+        <command xml:space="preserve">look out</command>
+        <result xml:space="preserve">(the city)
+From this perilous location, outside the comforting electrostatic field trapping the atmosphere of the building, one can see with striking clarity the lights of the city. The surrounding plains go on forever.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2689"></child>
+        </children>
+    </item>
+    <item nodeId="node-2689">
+        <command xml:space="preserve">gonear cage</command>
+        <result xml:space="preserve">Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+Jones tries the strength of the bars just in case. They don't budge.
+
+South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards Jones.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2690"></child>
+        </children>
+    </item>
+    <item nodeId="node-2690">
+        <command xml:space="preserve">open cage</command>
+        <result xml:space="preserve">There is no discernable door.
+
+Thallium's flyer hovers over the rooftop. "Jones!"  he bellows. "Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die."
+
+Jones rolls her eyes.
+
+A little ways off, another flyer, small and red, aims for the rooftop and accelerates.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2691"></child>
+        </children>
+    </item>
+    <item nodeId="node-2691">
+        <command xml:space="preserve">scope</command>
+        <result xml:space="preserve">1: a red flyer (1169789)
+2: a green flyer (1169853)
+3: an electrostatic field (1169821)
+4: outside (1167389)
+5: Jones (1161725)
+6: Europa Callisto (1167165)
+7: a cage (1167197)
+8: a cage-container (1167229)
+9: an Atmo-Suit (1163357)
+10: a black jumpsuit (1161757)
+11: a suit light (1161277)
+12: a disruptor pistol (1161789)
+13: Beck (1161213)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2733"></child>
+        </children>
+    </item>
+    <item nodeId="node-2733">
+        <command xml:space="preserve">look down</command>
+        <result xml:space="preserve">There's nothing in that direction.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2648">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">The atmosphere is too thin out there. Jones needs protective gear.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2649"></child>
+        </children>
+    </item>
+    <item nodeId="node-2649">
+        <command xml:space="preserve">purloin atmo</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2650"></child>
+        </children>
+    </item>
+    <item nodeId="node-2650">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Jones: "I'm going out the window to see if I can find a way to get up to the tenth floor."
+
+Beck: "Whoa whoa whoa, Jones. You know you're not good with heights."
+
+Jones: "Ask Thallium how how much that matters once I've kicked his ass. Watch me, I'll look down and not even flinch."
+
+Jones puts on the Atmo-Suit.
+
+Galaxy Jones is on a ledge. The ledge runs north and south. Jones is plastered up against the wall, trying not to look down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2734">
+        <command xml:space="preserve"> gonear ledge</command>
+        <result xml:space="preserve">Galaxy Jones is on a ledge. The ledge runs north and south. Jones is plastered up against the wall to the west, trying not to look down. Four thick, tense wires run vertically from above to below her. One of them is within reach.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2735"></child>
+        </children>
+    </item>
+    <item nodeId="node-2735">
+        <command xml:space="preserve">look down</command>
+        <result xml:space="preserve">Are you sure? Jones is really afraid of heights.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2736"></child>
+        </children>
+    </item>
+    <item nodeId="node-2736">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">Go down? Jones doesn't even want to look down.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2737"></child>
+        </children>
+    </item>
+    <item nodeId="node-2737">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">Jones is carrying:
+  a black jumpsuit (being worn)
+  a disruptor pistol
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2738"></child>
+        </children>
+    </item>
+    <item nodeId="node-2738">
+        <command xml:space="preserve">purloin coin</command>
+        <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2739"></child>
+        </children>
+    </item>
+    <item nodeId="node-2739">
+        <command xml:space="preserve">drop it</command>
+        <result xml:space="preserve">It would probably just fall off the ledge.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2746"></child>
+        </children>
+    </item>
+    <item nodeId="node-2746">
+        <command xml:space="preserve">gonear cage</command>
+        <result xml:space="preserve">Galaxy Jones is next to the cage. The closely-set silnium bars seem to dash all hope of a rescue. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Europa Callisto is lying at the center of the cage, out of Jones's reach.
+
+Jones tries the strength of the bars just in case. They don't budge.
+
+South of the cage, Thallium crosses the roof to the flyer pad, where he boards the waiting flyer. The flyer lifts off and moves towards Jones.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2747"></child>
+        </children>
+    </item>
+    <item nodeId="node-2747">
+        <command xml:space="preserve">open cage</command>
+        <result xml:space="preserve">There is no discernable door.
+
+Thallium's flyer hovers over the rooftop. "Jones!"  he bellows. "Play time is over. I grow weary of your intransigence. In a moment this roof will be swarmed by guard robots -- of many different colors -- so many robots you couldn't possibly vandalize them all.  Say your prayers, Jones, or whatever you do when you're about to die."
+
+Jones rolls her eyes.
+
+A little ways off, another flyer, small and red, aims for the rooftop and accelerates.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2748"></child>
+        </children>
+    </item>
+    <item nodeId="node-2748">
+        <command xml:space="preserve">attach hook to red flyer</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2749"></child>
+        </children>
+    </item>
+    <item nodeId="node-2749">
+        <command xml:space="preserve">attach hook to green flyer</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2750"></child>
+        </children>
+    </item>
+    <item nodeId="node-2750">
+        <command xml:space="preserve">hook green flyer</command>
+        <result xml:space="preserve">What should Jones hook the green flyer to?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2751"></child>
+        </children>
+    </item>
+    <item nodeId="node-2751">
+        <command xml:space="preserve">cable</command>
+        <result xml:space="preserve">There's nothing like that nearby.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2752"></child>
+        </children>
+    </item>
+    <item nodeId="node-2752">
+        <command xml:space="preserve">purloin cable</command>
+        <result xml:space="preserve">(the cable with hooks at either end)
+[Purloined.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2753"></child>
+        </children>
+    </item>
+    <item nodeId="node-2753">
+        <command xml:space="preserve">attach hook to red flyer</command>
+        <result xml:space="preserve">Jones is not close enough to do that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2754"></child>
+        </children>
+    </item>
+    <item nodeId="node-2754">
+        <command xml:space="preserve">attach hook to green flyer</command>
+        <result xml:space="preserve">Jones is not close enough to do that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2770"></child>
+        </children>
+    </item>
+    <item nodeId="node-2770">
+        <command xml:space="preserve">get on cage</command>
+        <result xml:space="preserve">Jones gets onto the cage.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2771"></child>
+        </children>
+    </item>
+    <item nodeId="node-2771">
+        <command xml:space="preserve">attach cable to cage</command>
+        <result xml:space="preserve">Jones throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the craft and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto.
+
+"Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!"
+
+Europa moans but doesn't show any signs of having understood Jones.
+
+Galaxy Jones is in the cage. The whole structure is tilted, leaving a hole at the eastern end. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Jones is kneeling at Europa Callisto's side, trying to rouse her.
+
+The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2772"></child>
+        </children>
+    </item>
+    <item nodeId="node-2772">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Galaxy Jones is standing on the cage. 
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2773"></child>
+        </children>
+    </item>
+    <item nodeId="node-2773">
+        <command xml:space="preserve">throw cable at green flyer</command>
+        <result xml:space="preserve">Jones throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the craft and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
+ _________      __                     _____                     
+ __/ ____/___ _/ /___ __  ____  __     __/ /___  ____  ___  _____
+ _/ / __/ __ `/ / __ `/ |/ / / / /____ _/ / __ \/ __ \/ _ \/ ___/
+ / /_/ / /_/ / / /_/ /&gt;  &lt;/ /_/ / _/ /_/ / /_/ / / / /  __(__  ) 
+ \____/\__,_/_/\__,_/_/|_|\__, /  _\____/\____/_/ /_/\___/____/  
+ _____________________________/ 
+
+[Your score has just gone up by one point.]
+
+The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto.
+
+"Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!"
+
+Europa moans but doesn't show any signs of having understood Jones.
+
+Galaxy Jones is in the cage. The whole structure is tilted, leaving a hole at the eastern end. The flyer pad is to the southwest and the rest of the rooftop to the south.
+
+Jones is kneeling at Europa Callisto's side, trying to rouse her.
+
+The red flyer, now recognizable as Galaxy's own, settles down onto the landing pad.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>

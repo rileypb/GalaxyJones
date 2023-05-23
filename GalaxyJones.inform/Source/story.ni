@@ -231,7 +231,7 @@ Check attacking something which is not the purple guard robot during Lobby Shoot
 	say "Focus on the robot." instead;	
 	
 Instead of throwing something at a guard robot when Lobby Shootout has ended or comment on energy absorption is used:
-	say "The thing is invulnerable to disruptor fire! Do you really thing throwing that at it is going to hurt it?"
+	say "The thing is invulnerable to disruptor fire! Do you really think throwing that at it is going to hurt it?"
 	
 	
 Book 4 - Does the player mean
@@ -407,10 +407,10 @@ Instead of recalling beck about something:
 Frotzing is an action applying to one thing. Understand "frotz [something]" as frotzing.
 
 Check frotzing scenery:
-	say "Although you complete the spell, nothing seems to have happened." instead;
+	say "Although Jones completes the spell, nothing seems to have happened." instead;
 
 Check frotzing something fixed in place:
-	say "Although you complete the spell, nothing seems to have happened." instead;
+	say "Although Jones completes the spell, nothing seems to have happened." instead;
 	
 Carry out frotzing something:
 	now the noun is lit;
@@ -806,7 +806,7 @@ When Cybernetica Battle ends:
 	Beck: 'You're welcome.'";
 
 Check dropping something when the location is the ledge:	
-	say "Bad idea." instead;
+	say "It would probably just fall off the ledge." instead;
 	
 dithering is an action applying to nothing. 
 Understand "stand up", "get up", "stand" as dithering when the location is the cybernetica office.
@@ -938,7 +938,7 @@ Check writing contentlessly when no white board is in the location:
 	say "There's nothing to write on here." instead;
 
 Check writing contentlessly:
-	say "You must say what you want Jones to write." instead;
+	say "You must say what Jones should write." instead;
 	
 Erasing is an action applying to one thing. Understand "erase [thing]" as erasing.
 
@@ -964,6 +964,9 @@ the entry door is scenery in entry doorway.
 the lobby is north of the entry doorway. The lobby is inside from the entry doorway.
 
 Instead of entering building entryway:
+	try going north;
+
+Instead of entering entry door:
 	try going north;
 
 the ground floor elevator hall is north of the lobby.
@@ -1284,7 +1287,7 @@ Some parking bays are scenery in the speeder dock. Understand "spots/spot/places
 Instead of entering the speeder-vehicle:
 	say "[We] has a job to do here.";
 
-The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, namesake of the building itself.". Understand "entry/entrance/entranceway/facade/façade/viking/glass/steel" as building entryway. Understand "exit" as building entryway when the location is the lobby.
+The building entryway is a backdrop. It is in the speeder dock, entry doorway, and lobby. "[If the location is the lobby]The entryway (exit actually) leads out to the speeder dock.[otherwise]The entryway is dominated by the towering façade of a Viking king, symbol of the building itself.". Understand "entry/entrance/entranceway/facade/façade/viking/glass/steel" as building entryway. Understand "exit" as building entryway when the location is the lobby.
 
 Some speeders are scenery in the speeder dock. "None of these are half as cool as Galaxy One."
 	
@@ -1913,9 +1916,18 @@ The open area is scenery in the Cybernetica office. "A rectangular region free o
 	
 Chapter 2 - Outside
 
-The description of the ledge is "The ledge runs north and south. Jones is plastered up against the wall, trying not to look down[if the floor of the window washing scaffold is 10]. The scaffold is right above [our] head[end if][if the window washing scaffold is discovered and the floor of the window washing scaffold is 8]. The scaffold is right below [us][end if].".
+To say ledge description:
+	say "The ledge runs north and south. Jones is plastered up against the wall to the west";
+	if the window washing scaffold is not discovered:
+		say ", trying not to look down. Four thick, tense wires run vertically from above to below her. One of them is within reach";
+	otherwise:
+		say "[if the floor of the window washing scaffold is 10]. The scaffold is right above [our] head[end if][if the window washing scaffold is discovered and the floor of the window washing scaffold is 8]. The scaffold is right below [us][end if]";
+	say ".[run paragraph on]";
+	
 
-[The metal cables are scenery in the ledge. Understand "cable" as the metal cables. "It looks very tense. It runs up and down."]
+The description of the ledge is "[ledge description]".
+
+The metal cables are scenery in the ledge. Understand "cable" as the metal cables. "It looks very tense. It runs up and down."
 
 flying is an action applying to nothing. Understand "fly" as flying.
 
@@ -1929,6 +1941,9 @@ check climbing the ledge-wall:
 	
 Instead of examining down when the location is the ledge for the first time:
 	say "Are you sure? Jones is really afraid of heights.";
+	
+Instead of examining up when the location is the ledge:
+	say "At approximately the tenth floor is what appears to be some kind of vent.";
 	
 Instead of examining down when the location is the ledge for the second time:
 	say "Okay, fine. [We] looks down, slowly, slowly... and there's a window cleaner's scaffold, about six feet below [us].[paragraph break]";
@@ -1949,6 +1964,12 @@ The scaffold-scenery is scenery. It is privately-named. The printed name is "sca
 	
 Instead of going down from ledge when the floor of the window washing scaffold is not 8:
 	say "That would be a long fall.";
+	
+Section 1 - Climbing the wires
+
+
+
+Section 2 - The Scaffold
 	
 The window washing scaffold can be discovered.
 	
@@ -2073,10 +2094,10 @@ Instead of going inside from the window washing scaffold when the floor of the w
 	say "None of the windows here are open.";
 	
 Instead of going east from the Cybernetica office during Cybernetica battle:
-	say "You'll never get out without being shot.";
+	say "Jones will never get out without being shot.";
 	
 Instead of going outside from the Cybernetica office during Cybernetica battle:
-	say "You'll never get out without being shot.";
+	say "Jones will never get out without being shot.";
 	
 Instead of going east from the Cybernetica office when the floor of the window washing scaffold is 9 and Cybernetica battle is not happening:
 	now the atmo-suit is needed;
@@ -2628,7 +2649,7 @@ The ceiling panel is in the elevator car-room. "One of the ceiling panels looks 
 
 it's real ivory is a taunting clip with conversation "Admiral Thallium's voice oozes from concealed speakers: 'Yes, Jones, that is real ivory. I imported the elephant here myself for a hunt on my estate. You have no idea how much money it takes to simulate an African jungle on Mars. In retrospect I should have gotten an Indian elephant.'".
 
-The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if][if the ceiling panel is nowhere]. There is a hole in the ceiling big enough for Jones to squeeze through[end if]. You can leave the elevator to the east.".
+The description of the elevator car-room is "It's luxurious, with gold-plated walls and crystal lighting on the ceiling. The button panel is lacquered dark mahogany with what look like real ivory buttons. The carpeting is soft and plush[If elevator car-room is in running mode]. A golden key rests in a golden keyhole above the buttons. The buttons 1, 9, 10, and 100 are illuminated[otherwise]. A golden keyhole sits above the buttons[end if][if the ceiling panel is nowhere]. There is a hole in the ceiling big enough for Jones to squeeze through[end if]. She can leave the elevator to the east.".
 
 Does the player mean examining the elevator car-room: It is very likely;
 
@@ -2641,7 +2662,7 @@ Instead of closing the elevator-car-door when the elevator is not in running mod
 	say "[We] can't close them by hand, and the elevator seems to be off."
 
 Instead of closing the elevator-car-door when the elevator is in running mode:
-	say "You don't need to explicitly open and close the elevator door."
+	say "Jones doesn't need to explicitly open and close the elevator door."
 
 The elevator-walls are scenery in the elevator car-room. They are privately-named. The printed name is "walls". Understand "walls/wall/gold/plated", "gold-plated" as elevator-walls. "Yes, that's real gold-plating."
 
@@ -3017,7 +3038,7 @@ Instead of attacking the array of diamonds:
 		say "(with the hammer)[command clarification break]";
 		try attacking the array of diamonds with the hammer;
 	otherwise:
-		say "You're not carrying anything sufficient to smash the diamonds.";
+		say "Jones is not carrying anything sufficient to smash the diamonds.";
 		
 Instead of shooting the array of diamonds with something when the glass diamond is discovered:
 	say "Shooting one diamond at a time would be too slow.";
@@ -3146,7 +3167,7 @@ At the time when thallium screams again:
 
 At the time when thallium screams:
 	if the cage is intact:
-		converse as thallium "Thallium's flyer is circling you not too far away. 'Give up, Jones! You'll never get through my silnium bars, haha!'";
+		converse as thallium "Thallium's flyer is circling Jones not too far away. 'Give up, Jones! You'll never get through my silnium bars, haha!'";
 		thallium screams again in 4 turns from now;
 
 
@@ -3246,10 +3267,10 @@ The description of the penthouse roof is "It is an extravagant and opulent space
 The lounge area is scenery in the penthouse roof. "Looks like a good time, if [we] weren't already busy." Understand "fire/pit/bar/hot/tub" as the lounge area.
 
 After looking when the location is in the rooftop and the cage is intact during Thallium alight:
-	say "The green flyer is hovering above you.";
+	say "The green flyer is hovering above Jones.";
 
 After looking when the location is in the rooftop and the cage is intact during Thallium ultimatum:
-	say "The green flyer is hovering above you.";
+	say "The green flyer is hovering above Jones.";
 
 The rooftop seating is scenery in the penthouse roof. "[We] has other things to focus on."
 
@@ -3268,7 +3289,7 @@ Instead of examining The green flyer during Thallium alight:
 Instead of examining The green flyer during Thallium ultimatum:
 	say "Hovering above [us], Thallium's flyer is distinctly menacing. It's not visibly armed, but it conveys the impression of a beast about to strike. It's flying low, the rails of its landing gear just a few feet above Jones's head.";
 	
-cage-scenery is a backdrop. It is in penthouse roof and flyer pad. "You can see the cage with Europa Callisto in it from here. She's lying on the floor and not moving." It is privately-named. The printed name is "cage". Understand "cage" as cage-scenery.
+cage-scenery is a backdrop. It is in penthouse roof and flyer pad. "One can see the cage with Europa Callisto in it from here. She's lying on the floor and not moving." It is privately-named. The printed name is "cage". Understand "cage" as cage-scenery.
 
 The description of cage is "[if the cage is not broken]The closely-set silnium bars seem to dash all hope of a rescue.[otherwise]The whole structure is tilted, leaving a hole at the eastern end.[end if] The flyer pad is to the southwest and the rest of the rooftop to the south.".
 
@@ -3294,6 +3315,9 @@ Rule for writing a paragraph about Europa Callisto when Europa Callisto is in th
 	say "Jones is kneeling at Europa Callisto's side, trying to rouse her.";
 	
 The cage-thing is a privately-named enterable supporter in the cage. It is scenery. The printed name is "cage". Understand "cage/bars/silnium" as the cage-thing. "The cage is huge for holding just one prisoner. The silnium bars are grey and iridescent. They run both horizontally and vertically, creating a lattice. The floor is hard and cold." Understand "lattice/bars/silnium" as the cage-thing.
+
+Instead of opening the cage-thing:
+	say "There is no discernable door.";
 
 Understand "prisoner" as Europa Callisto.
 
@@ -3348,13 +3372,15 @@ Does the player mean throwing something at the red flyer:
 	
 Instead of tying the cable to the green flyer when the player is not on the cage-thing:
 	say "Jones is not close enough to do that."
+	
+Instead of tying the cable to the red flyer:
+	say "Jones is not close enough to do that."
 
 To break the cage:
+	converse "[We] throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the craft and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.";
 	score 1;
 	say line break;
-	converse "[We] throws the cable up to the flyer where it hooks around the rail, and attaches the other end to the cage, then jumps off the cage to escape the aftermath. Seeing his flyer's predicament, Thallium jumps out of the craft and disappears below the edge of the roof. The flyer reaches the end of its tether and slingshots downwards, slamming into side of the building.
-	
-	The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto. 
+	converse "The cage has tilted to the side, one attachment torn loose from the rooftop. Jones crawls into the cage to see to Europa Callisto. 
 	
 	'Europa! Can you hear me? I need you to move to get out of this cage. I can't carry you through that small opening. Europa!'
 	
@@ -4180,7 +4206,7 @@ Ledge	{north, south}	"The wall juts out and blocks Jones's progress."
 Ledge	--	"That would send Jones plummeting to her death."
 Ledge	{up}	"If only Jones could climb walls."
 Ledge	{down}	"Go down? Jones doesn't even want to [italic type]look[roman type] down."
-Window Washing Scaffold	{up,down}	"If you want to go up and down, use the buttons."
+Window Washing Scaffold	{up,down}	"If you want the scaffold to go up and down, use the buttons."
 Window Washing Scaffold	--	"That way leads to a quick death."
 air handling room	--	"Jones can go west through the door, or east back out to the scaffold."
 microthings-1	--	"The elevator is north of here, and the floor extends east and west."
