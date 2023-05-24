@@ -3518,17 +3518,15 @@ After printing the player's obituary when the story has ended finally:
 	say paragraph break;
 	show extended credits;
 	screen print "Black screen";
-	say "'Jones! Jones! Wake up! I'm trying to talk to you!'";
-	say line break;
-	screen print "Cut to a shot of two closed eyes";
-	say "'C'mon, open those eyes.'";
-	say line break;
-	screen print "The shot widens to show Galaxy Jones, the Solar System's greatest hero, flat on the floor, seemingly unconscious";
-	say "'This is getting tiresome, Jones. Stop playing dead.'";
-	say line break;
-	say "Her eyes flutter open, close again, then open. She winces and brings one hand up to shield her eyes. 'Who's that?' she says, hoarsely.";
-	say line break;
+	say paragraph break;
+	screen print "Cut to --";
+	say "[bold type]Nameless Void[roman type][line break]";
+	say "It is pitch dark, and I can't see a thing.[paragraph break]";
+	screen print "A voice --";
+	converse "Good mooorning! Time to wake uh-upp!";
+	say paragraph break;
 	converse "Join Galaxy Jones next time in [style2]Galaxy Jones II: Existential Time Crisis![style1]";
+	say paragraph break;
 	if accessible is off:
 		print the galaxy banner;
 	
