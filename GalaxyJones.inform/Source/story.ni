@@ -3517,6 +3517,7 @@ To screen print (T - a text):
 After printing the player's obituary when the story has ended finally:
 	say paragraph break;
 	show extended credits;
+	lb;
 	screen print "Black screen";
 	say paragraph break;
 	screen print "Cut to --";
